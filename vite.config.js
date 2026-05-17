@@ -1,9 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import path from 'path' // 👈 追加
+import { fileURLToPath } from 'url'
+import path from 'path'
 
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+// https://vite.dev
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  root: path.resolve(__dirname, './'), // 👈 Vercelにコードの場所を教える魔法の1行
+  root: path.resolve(__dirname, './'),
 })
