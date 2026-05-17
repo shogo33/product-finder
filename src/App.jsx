@@ -582,9 +582,9 @@ export default function App() {
     const cards = filteredDeck.slice(0, 3);
 
     return (
-      <div className="flex-1 flex flex-col items-center justify-start px-2 pt-2 pb-2 overflow-hidden relative">
+      <div className="flex-1 flex flex-col items-center justify-start px-2 pt-1 pb-1 overflow-hidden relative min-h-0">
         {/* カードスタックエリア */}
-        <div className="w-full relative flex-1" style={{ minHeight: '400px' }}>
+        <div className="w-full relative flex-1 min-h-0">
           {/* 後ろのカードから先に描画（zIndexで前面に配置） */}
           {cards.map((card, index) => {
             if (index === 0) {
@@ -959,7 +959,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="flex-1 flex flex-col overflow-hidden">
+        <div className="flex-1 flex flex-col overflow-hidden min-h-0">
           {view === 'swipe' && <SwipeView />}
           {view === 'budget' && <BudgetView />}
           {view === 'liked' && <LikedView />}
