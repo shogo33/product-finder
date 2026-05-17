@@ -1,10 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo, memo } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 import { Heart, X, Package, Sparkles, TrendingUp, Layers, Filter, BarChart3, Smartphone } from 'lucide-react';
 
 
 // 画像ギャラリー独立コンポーネント
-const ImageGallery = React.memo(({ images, image, emoji, name }) => {
+const ImageGallery = memo(({ images, image, emoji, name }) => {
   const [idx, setIdx] = useState(0);
   
   if (!images || images.length === 0) {
@@ -62,7 +62,7 @@ const ImageGallery = React.memo(({ images, image, emoji, name }) => {
 });
 
 // 背景カード（2,3枚目）
-const BackgroundCard = React.memo(({ card, index, x }) => {
+const BackgroundCard = memo(({ card, index, x }) => {
   // index 1: 2枚目 - 通常 scale 0.95, y 20。 スワイプ中(|x|>100) → scale 1, y 0
   // index 2: 3枚目 - 通常 scale 0.9, y 40。 スワイプ中(|x|>100) → scale 0.95, y 20
   const baseScale = index === 1 ? 0.95 : 0.9;
