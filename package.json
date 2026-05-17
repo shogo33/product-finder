@@ -1,5 +1,4 @@
 {
-  "packageManager": "npm@9.0.0",
   "name": "product-finder",
   "private": true,
   "version": "0.0.0",
