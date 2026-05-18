@@ -9,17 +9,51 @@ import path from 'path';
 
 const allProducts = JSON.parse(fs.readFileSync(path.resolve('data/products.json'), 'utf8'));
 
-// 非表示（削除済み・アフィリエイト対象外）を除外してから¥10,000以下に絞り込み
+const PRICE_TIER_GAP   = 1500;   // ¥1,500以上差があれば別価格帯として複数表示
+const TOP_PERCENT      = 0.30;   // 人気スコア上位30%のみ
+const NO_DEDUP_TAGS    = new Set(['ボードゲーム']); // タイトルが全部異なるカテゴリは重複排除しない
+
+// ① active かつ ¥10,000以下
 const under10k = allProducts.filter(p => p.active !== false && parseFloat(p.price_jpy) <= 10000);
 
-// 人気順ソート: 販売数 × 評価率スコア
-const products = under10k.sort((a, b) => {
-  const scoreA = (Number(a.sales_count) || 0) * (parseFloat(a.evaluate_rate) || 0);
-  const scoreB = (Number(b.sales_count) || 0) * (parseFloat(b.evaluate_rate) || 0);
-  return scoreB - scoreA;
-});
+// ② 人気スコアで全体をソート
+const scored = under10k
+  .map(p => ({ ...p, _score: (Number(p.sales_count) || 0) * (parseFloat(p.evaluate_rate) || 0) }))
+  .sort((a, b) => b._score - a._score);
 
-console.log(`全${allProducts.length}件 → ¥10,000以下: ${products.length}件`);
+// ③ 上位30%に絞り込み
+const topN    = Math.max(3, Math.ceil(scored.length * TOP_PERCENT));
+const popular = scored.slice(0, topN);
+
+// ④ 同機能・同価格帯の重複を排除（ボードゲームは除外）
+//    さらにカテゴリごとに最低1件は必ず残す（データが少ない時の保険）
+const seen     = {};  // key: `${tag}_${priceTier}`
+const products = [];
+
+// popular に入らなかった残り（カテゴリ保険用）
+const rest     = scored.slice(topN);
+
+for (const p of [...popular, ...rest]) {
+  const tag      = p.tag ?? 'その他';
+  const isPopular = popular.includes(p);
+
+  if (NO_DEDUP_TAGS.has(tag)) {
+    if (isPopular) products.push(p); // ボードゲームは上位30%のみ
+    continue;
+  }
+
+  const tier = Math.floor(parseFloat(p.price_jpy) / PRICE_TIER_GAP);
+  const key  = `${tag}_${tier}`;
+
+  // 上位30%内 or そのカテゴリがまだ1件も出ていない(最低1件保証) → 採用
+  const tagHasEntry = products.some(q => (q.tag ?? 'その他') === tag);
+  if (!seen[key] && (isPopular || !tagHasEntry)) {
+    seen[key] = true;
+    products.push(p);
+  }
+}
+
+console.log(`全${allProducts.length}件 → ¥10,000以下: ${under10k.length}件 → 上位${topN}件 → 重複排除後: ${products.length}件`);
 
 const cards = products.map(p => {
   const desc = (p.description_ja ?? '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
