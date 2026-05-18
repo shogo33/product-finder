@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ========== SEO ========== -->
+  <title>AliExpress標準配送とは？送料・日数・追跡の仕組みを初心者向け解説【2025年最新】 | Product Finder｜アリエクの格安商品・お得情報研究所</title>
+  <meta name="description" content="AliExpress標準配送の送料・到着日数・追跡方法・届かないときの対処法まで初心者向けにわかりやすく解説。再配達や返金対応も網羅。" />
+  <meta name="keywords" content="AliExpress 標準配送, アリエクスプレス 配送, 追跡, 日数, 送料無料, 届かない" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="AliExpress標準配送とは？送料・日数・追跡の仕組みを初心者向け解説" />
+  <meta property="og:description" content="AliExpress標準配送の送料・到着日数・追跡方法・返金対応まで徹底解説。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/aliexpress-standard-shipping.html" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/images/ogp.jpg" />
+  <!-- ============================ -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    760px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .site-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--red);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .header-cta {
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .header-cta:hover { background: var(--red-dk); }
+
+    .article-hero {
+      background: linear-gradient(135deg, #fff1f2 0%, #fff 60%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 20px 36px;
+      text-align: center;
+    }
+    .article-hero .tag {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .article-hero h1 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      line-height: 1.4;
+      max-width: 640px;
+      margin: 0 auto 16px;
+    }
+    .article-hero .meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .article-hero .meta span + span::before { content: " · "; }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .toc {
+      background: #fff8f8;
+      border: 1px solid #fecdcf;
+      border-left: 4px solid var(--red);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .toc-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+      color: var(--red);
+    }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin: 6px 0; }
+    .toc a { color: var(--text); text-decoration: none; font-size: 0.9rem; }
+    .toc a:hover { color: var(--red); }
+
+    .article-body { padding: 24px 0 48px; }
+
+    .article-body h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-left: 4px solid var(--red);
+      padding-left: 12px;
+      margin: 40px 0 16px;
+      scroll-margin-top: 80px;
+    }
+    .article-body h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+      scroll-margin-top: 80px;
+    }
+
+    .article-body p { margin: 12px 0; }
+
+    .article-body ul, .article-body ol {
+      padding-left: 24px;
+      margin: 12px 0;
+    }
+    .article-body li { margin: 6px 0; }
+
+    .article-body strong { color: var(--red-dk); }
+
+    .callout {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+    .callout::before { content: "💡 "; }
+
+    .article-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+    .article-body th {
+      background: var(--red);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+    }
+    .article-body td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .article-body tr:nth-child(even) td { background: #fafaf8; }
+
+    .steps { margin: 20px 0; display: flex; flex-direction: column; gap: 12px; }
+    .step {
+      display: flex;
+      gap: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      align-items: flex-start;
+    }
+    .step-num {
+      background: var(--red);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-body { flex: 1; }
+    .step-body strong { display: block; font-size: 0.95rem; margin-bottom: 4px; color: var(--text); }
+    .step-body p { font-size: 0.88rem; color: var(--muted); margin: 0; }
+
+    /* FAQ */
+    .faq { margin: 20px 0; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 14px 20px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      background: #fff8f8;
+      border-left: 4px solid var(--red);
+    }
+    .faq-q::before { content: "Q. "; color: var(--red); }
+    .faq-a {
+      padding: 14px 20px;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    .faq-a::before { content: "A. "; font-weight: 700; color: var(--muted); }
+
+    /* Code / example block */
+    .example-block {
+      background: #f3f4f6;
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      font-size: 0.88rem;
+      margin: 12px 0;
+      line-height: 1.7;
+    }
+
+    .cta-inline {
+      background: linear-gradient(135deg, var(--red) 0%, #ff6b35 100%);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+      margin: 40px 0;
+      color: #fff;
+    }
+    .cta-inline .cta-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+      margin-bottom: 8px;
+    }
+    .cta-inline h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; }
+    .cta-inline p { font-size: 0.85rem; opacity: 0.9; margin-bottom: 20px; }
+    .cta-inline a {
+      display: inline-block;
+      background: #fff;
+      color: var(--red);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 12px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .cta-inline a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    .cta-sticky {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--red);
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      z-index: 200;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    }
+    .cta-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.92rem; }
+    .cta-sticky .sub { font-size: 0.72rem; opacity: 0.85; margin-top: 2px; }
+    @media (max-width: 640px) { .cta-sticky { display: block; } }
+
+    .related { margin: 48px 0 24px; }
+    .related-title { font-weight: 700; font-size: 1rem; margin-bottom: 16px; }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 480px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .related-card:hover { border-color: var(--red); box-shadow: 0 2px 12px rgba(232,37,58,0.1); }
+    .related-card .rc-tag { font-size: 0.7rem; color: var(--red); font-weight: 700; margin-bottom: 6px; }
+    .related-card .rc-title { font-size: 0.88rem; font-weight: 700; line-height: 1.4; }
+
+    .site-footer {
+      background: #1a1a1a;
+      color: #9ca3af;
+      text-align: center;
+      padding: 32px 20px 60px;
+      font-size: 0.8rem;
+    }
+    .site-footer a { color: #9ca3af; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-aff-notice { margin-top: 12px; font-size: 0.72rem; opacity: 0.6; line-height: 1.6; }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+  </style>
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/aliexpress-standard-shipping.html" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <a href="/index.html" class="site-logo">Product Finder｜アリエクの格安商品・お得情報研究所</a>
+  <a href="https://product-finder-three-liard.vercel.app/" class="header-cta" target="_blank" rel="noopener">
+    おすすめ商品はこちら
+  </a>
+</header>
+
+
+<!-- ===== HERO ===== -->
+<div class="article-hero">
+  <div class="tag">配送ガイド</div>
+  <h1>AliExpress標準配送とは？<br>送料・日数・追跡の仕組みを<br>初心者向け解説【2025年最新】</h1>
+  <div class="meta">
+    <span>2025年5月17日</span>
+    <span>読了目安：10分</span>
+    <span>監修：アリエクパパ</span>
+  </div>
+</div>
+
+
+<!-- ===== MAIN ===== -->
+<main class="container">
+
+  <!-- 目次 -->
+  <nav class="toc">
+    <div class="toc-title">📋 この記事の目次</div>
+    <ol>
+      <li><a href="#overview">標準配送とは？概要と他の配送方法との違い</a></li>
+      <li><a href="#days">配送日数・到着までの目安</a></li>
+      <li><a href="#tracking">追跡方法と「追跡できない」ときの対処</a></li>
+      <li><a href="#redelivery">再配達・受取トラブルのケース別対応ガイド</a></li>
+      <li><a href="#faq">よくある疑問（FAQ）</a></li>
+      <li><a href="#tools">配送状況を把握する実用テクニックと便利ツール</a></li>
+      <li><a href="#summary">まとめ：購入前チェックリスト</a></li>
+    </ol>
+  </nav>
+
+  <article class="article-body">
+
+    <p>AliExpress標準配送について知りたい初心者の方に向けて、送料の仕組み、到着までの日数、追跡方法、届かないときの対処法までをわかりやすくまとめた記事です。「標準配送は遅いのか」「無料なのに大丈夫なのか」「日本ではどの配送業者が配るのか」といった不安を解消できるよう、実際の流れに沿って整理しています。</p>
+
+
+    <!-- SECTION 1 -->
+    <h2 id="overview">AliExpress標準配送とは？概要と他の配送方法との違い</h2>
+
+    <p>AliExpress標準配送とは、AliExpressが提携する物流ネットワークを使って商品を海外から購入者へ届ける代表的な配送方法です。商品ページでは「AliExpress Standard Shipping」や「標準配送」と表示されることが多く、比較的安価で追跡番号が付くケースが多いのが特徴です。送料・追跡性・到着スピードのバランスを重視する人に向いています。</p>
+
+    <table>
+      <tr><th>配送方法</th><th>送料</th><th>到着速度</th><th>追跡性</th><th>向いている人</th></tr>
+      <tr><td>AliExpress標準配送</td><td>無料〜低価格</td><td>普通</td><td>比較的高い</td><td>初心者・コスパ重視</td></tr>
+      <tr><td>AliExpress Premium Shipping</td><td>やや高め</td><td>標準より速い</td><td>高い</td><td>早く受け取りたい人</td></tr>
+      <tr><td>セラー独自配送</td><td>安いことが多い</td><td>ばらつき大</td><td>低い場合あり</td><td>価格最優先の人</td></tr>
+      <tr><td>DHL/FedEx/UPS</td><td>高い</td><td>速い</td><td>非常に高い</td><td>納期重視・高額商品向け</td></tr>
+    </table>
+
+    <h3>標準配送の基本仕組みとメリット・デメリット</h3>
+
+    <p>AliExpress標準配送は、出品者が発送したあと、提携する物流会社や国際郵便ルートを通じて輸送し、日本到着後は日本郵便や宅配会社へ引き継がれて配達される仕組みです。最大のメリットは送料が安いわりに追跡しやすく、未着時のトラブル対応もしやすい点です。</p>
+
+    <ul>
+      <li>メリット：送料が安い</li>
+      <li>メリット：追跡番号が付くことが多い</li>
+      <li>メリット：未着時に紛争申請しやすい</li>
+      <li>デメリット：到着日数に幅がある</li>
+      <li>デメリット：追跡更新が遅れることがある</li>
+      <li><strong>デメリット：繁忙期は大きく遅延しやすい</strong></li>
+    </ul>
+
+    <h3>なぜ無料・低価格になるのか：物流・発送の仕組み</h3>
+
+    <p>AliExpress標準配送が無料または低価格で提供される理由は、大量の荷物をまとめて処理する物流モデルを採用しているためです。中国国内で集荷された荷物は仕分けセンターでまとめられ、航空便や提携輸送網で各国へ送られます。プラットフォーム全体で大量発送することで1件あたりの輸送コストを下げています。</p>
+
+    <ul>
+      <li>大量発送で1件あたりのコストを圧縮</li>
+      <li>提携物流会社を使って中間コストを削減</li>
+      <li>商品価格に送料の一部を含める場合がある</li>
+      <li>配送速度よりコスト効率を優先している</li>
+    </ul>
+
+    <h3>国内（日本）での扱いと各配送業者との違い</h3>
+
+    <p>AliExpress標準配送で日本に届いた荷物は、国内到着後に日本郵便・佐川急便・ヤマト運輸などへ引き継がれます。小型荷物では日本郵便が担当するケースが多く、郵便受け投函で完了することもあります。海外区間はAliExpressや外部追跡サイト、国内入り後は国内配送業者のサイトで確認するのが一般的な流れです。</p>
+
+    <table>
+      <tr><th>国内配送業者</th><th>主な受取方法</th><th>特徴</th></tr>
+      <tr><td>日本郵便</td><td>郵便受け投函・対面</td><td>小型荷物で使われやすい</td></tr>
+      <tr><td>ヤマト運輸</td><td>対面・宅配ボックス</td><td>比較的追跡が見やすい</td></tr>
+      <tr><td>佐川急便</td><td>対面受取中心</td><td>大型や宅配便扱いで使われることがある</td></tr>
+    </table>
+
+
+    <!-- SECTION 2 -->
+    <h2 id="days">配送日数・到着までの目安：通常はどれくらい？</h2>
+
+    <p>AliExpress標準配送の日数は、商品・発送地域・時期によってかなり差がありますが、日本向けではおおむね<strong>1〜4週間程度</strong>が目安です。早ければ1週間前後で届くこともありますが、一般的には10日〜20日前後で考えると現実的です。繁忙期や税関混雑が重なると3〜5週間かかることもあります。</p>
+
+    <div class="callout">
+      AliExpress標準配送は「早いこともあるが、確実に短納期とは言えない配送方法」と理解しておくのが失敗しにくい考え方です。
+    </div>
+
+    <h3>注文〜発送〜到着までのタイムライン</h3>
+
+    <table>
+      <tr><th>段階</th><th>目安日数</th><th>確認ポイント</th></tr>
+      <tr><td>注文処理</td><td>1〜7日</td><td>セラーの発送予定日</td></tr>
+      <tr><td>中国国内輸送</td><td>2〜5日</td><td>集荷・仕分け表示</td></tr>
+      <tr><td>国際輸送</td><td>3〜10日</td><td>航空便・出国表示</td></tr>
+      <tr><td>日本通関</td><td>1〜5日</td><td>到着国で処理中</td></tr>
+      <tr><td>国内配達</td><td>1〜3日</td><td>国内業者の追跡</td></tr>
+    </table>
+
+    <h3>「遅い」と感じる原因と到着を早めるポイント</h3>
+
+    <p>AliExpress標準配送が遅いと感じる主な理由は、国内通販の感覚で注文してしまうことにあります。到着を早めたい場合は以下の工夫が有効です。</p>
+
+    <ul>
+      <li>発送までの日数が短いセラーを選ぶ</li>
+      <li>注文前にレビューで到着実績を確認する</li>
+      <li>大型セール直後の注文を避ける</li>
+      <li><strong>急ぎならPremium Shippingや国際宅配便を検討する</strong></li>
+    </ul>
+
+    <p>特に影響が大きいのは、中国の大型セール・日本の年末年始・旧正月・通関混雑です。購入時は「注文日」ではなく「実際の発送日」を基準に考えることが重要です。</p>
+
+
+    <!-- インラインCTA -->
+    <div class="cta-inline">
+      <div class="cta-label">✨ PICK UP</div>
+      <h3>AIが今話題の商品をスワイプで提案</h3>
+      <p>TikTokで見たアレ、AliExpressで見つかるかも。<br>スワイプするだけで掘り出し物に出会えます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+        無料で商品を見てみる →
+      </a>
+    </div>
+
+
+    <!-- SECTION 3 -->
+    <h2 id="tracking">追跡（tracking）方法と「追跡できない」ときの対処</h2>
+
+    <p>AliExpress標準配送の大きな利点は、比較的追跡しやすいことです。ただし、追跡番号が発行されてもすぐ反映されるとは限らず、最初の数日間は「情報なし」と表示されることがあります。更新が止まっても即トラブルとは限らないため、段階ごとの見方を知っておくと不安を減らせます。</p>
+
+    <h3>追跡番号の確認手順</h3>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>AliExpressで追跡番号を確認する</strong>
+          <p>アプリまたはWebの注文詳細を開き、「Track Order」から追跡番号をコピーします。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>17TRACKなど外部サイトで確認する</strong>
+          <p>AliExpress内より詳細な国際物流履歴が表示されることがあります。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>日本到着後は国内業者サイトも確認する</strong>
+          <p>日本郵便・ヤマト運輸・佐川急便の各サイトで同じ番号を試してみましょう。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>国内配送業者や追跡サービスの見方の違い</h3>
+
+    <p>AliExpressや17TRACKでは「出国」「到着国で処理中」「通関完了」など国際物流向けの表現が使われますが、日本郵便や宅配会社のサイトでは「引受」「持ち出し中」「配達完了」といった国内向けの表現になります。同じ荷物でも見るサイトによってステータスの粒度が違うため、複数のサイトで照らし合わせるのが基本です。</p>
+
+    <table>
+      <tr><th>確認先</th><th>見やすい情報</th><th>注意点</th></tr>
+      <tr><td>AliExpress</td><td>注文全体の進行</td><td>詳細が粗い場合がある</td></tr>
+      <tr><td>17TRACK</td><td>国際物流の履歴</td><td>更新タイミングに差がある</td></tr>
+      <tr><td>日本郵便・宅配会社</td><td>国内配達状況</td><td>引継ぎ前は検索できないことがある</td></tr>
+    </table>
+
+    <h3>追跡できない・更新されないときの対策</h3>
+
+    <ul>
+      <li>発送後3〜7日は追跡反映待ちをする</li>
+      <li>10日以上更新がない場合は外部サイトでも確認する</li>
+      <li>セラーへ発送状況を問い合わせる</li>
+      <li><strong>購入者保護期間の残日数を確認する</strong></li>
+      <li>未着なら期限前に紛争申請を行う</li>
+    </ul>
+
+    <div class="callout">
+      追跡履歴のスクリーンショット・注文番号・セラーとのやり取りを保存しておくと、返金交渉がスムーズになります。
+    </div>
+
+
+    <!-- SECTION 4 -->
+    <h2 id="redelivery">再配達・受取トラブル：日本でのケース別対応ガイド</h2>
+
+    <p>日本国内に入ったあとは通常の郵便や宅配便と同じように再配達や受取トラブルが発生します。こうした場面では、<strong>国内配送業者の確認 → 住所情報の見直し → セラーへの連絡 → AliExpressへの申請</strong>という順番で対応すると整理しやすいです。</p>
+
+    <h3>不在時の再配達手続きと注意点（配送業者別）</h3>
+
+    <ul>
+      <li>日本郵便：不在票または追跡番号で再配達依頼、郵便局窓口受取も可能</li>
+      <li>ヤマト運輸：Web会員サービスで日時変更しやすい</li>
+      <li>佐川急便：営業所受取や再配達依頼が可能</li>
+      <li><strong>住所の建物名・部屋番号漏れが受取失敗の大きな原因になるため注意</strong></li>
+    </ul>
+
+    <h3>配送業者不明・行方不明時の確認事項</h3>
+
+    <ul>
+      <li>AliExpressと外部追跡サイトの両方を確認する</li>
+      <li>主要国内配送業者サイトで番号検索する</li>
+      <li>セラーに最終配送業者を問い合わせる</li>
+      <li>郵便受け・宅配ボックス・家族受取を確認する</li>
+      <li>配達完了なのに未着なら早めに連絡する</li>
+    </ul>
+
+    <h3>紛失・遅延時のセラー問い合わせ例</h3>
+
+    <p>紛失や大幅遅延が起きた場合は、注文番号・追跡番号・現在の状況を簡潔に伝えるほうが解決しやすくなります。レビューは事実ベースで日付や対応内容を具体的に書くと信頼性が高まります。</p>
+
+    <div class="example-block">
+      <strong>問い合わせ例：</strong><br>
+      Hello, my order has not arrived yet. The tracking has not updated since ○○. Could you please check the shipment status?<br><br>
+      <strong>レビュー例：</strong><br>
+      Ordered on ○○, shipped on ○○, tracking stopped for several days, but item arrived after ○○ days. Seller communication was good.
+    </div>
+
+
+    <!-- SECTION 5 -->
+    <h2 id="faq">よくある疑問（FAQ）</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">標準配送は遅い？</div>
+        <div class="faq-a">国内通販と比べれば遅いですが、海外通販の中では標準的な部類です。日本向けでは1〜4週間程度が目安で、早ければ1週間前後で届くこともあります。急ぎのプレゼントや使用日が決まっている商品には向きませんが、価格重視で多少待てるなら十分実用的です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">追跡できない・到着しない場合の返金・補償の流れは？</div>
+        <div class="faq-a">まず発送直後かどうか・購入者保護期間が残っているかを確認します。発送直後なら数日待つ、長期間更新がないならセラーへ連絡、それでも解決しないならAliExpressで紛争申請という流れが基本です。<strong>保護期間終了後は不利になるため、期限管理が非常に重要</strong>です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">注文キャンセルやセラー対応のベストプラクティスは？</div>
+        <div class="faq-a">キャンセルはセラーが未発送の段階なら通りやすいですが、発送後は基本的に難しくなります。間違えて注文した場合はできるだけ早くキャンセル申請を。セラー対応では感情的な表現より、注文番号・問題点・希望する対応を明記したほうが話が早く進みます。</div>
+      </div>
+    </div>
+
+
+    <!-- SECTION 6 -->
+    <h2 id="tools">配送状況を把握するための実用テクニックと便利ツール</h2>
+
+    <h3>おすすめの外部トラッキングサービス</h3>
+
+    <ul>
+      <li><strong>17TRACK</strong>：定番で対応配送会社が多い</li>
+      <li><strong>ParcelApp</strong>：表示が見やすく補足情報も多い</li>
+      <li><strong>AliExpressアプリ</strong>：注文管理と併用しやすい</li>
+    </ul>
+
+    <h3>追跡番号から配送業者を特定する手順</h3>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>注文詳細から追跡番号をコピーする</strong>
+          <p>AliExpressアプリまたはWebの注文詳細から番号を取得します。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>17TRACKなどでCarrier情報を確認する</strong>
+          <p>CainiaoやSunYou、Yanwenなどの国際物流会社名が表示されます。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>日本郵便・ヤマト・佐川の各サイトでも検索する</strong>
+          <p>同じ番号でヒットすることがあります。変換後番号の場合もあります。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>必要ならセラーに最終配送業者を確認する</strong>
+          <p>特に「配達完了なのに届かない」ケースでは最終配送業者の特定が最優先です。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>トラブル時のログ保存・証拠の残し方</h3>
+
+    <p>海外通販では<strong>「証拠を残した人が強い」</strong>と考えておくと失敗しにくいです。以下の情報を保存しておきましょう。</p>
+
+    <ul>
+      <li>追跡履歴のスクリーンショットを保存する</li>
+      <li>注文番号と商品ページを控える</li>
+      <li>セラーとのメッセージ履歴を残す</li>
+      <li>未着や破損時は写真・動画も保存する</li>
+      <li>保護期間終了前の状態を記録する</li>
+    </ul>
+
+
+    <!-- SECTION 7 -->
+    <h2 id="summary">まとめ：購入前チェックリストと安全に使うための徹底ガイド</h2>
+
+    <p>AliExpress標準配送は、送料の安さと追跡のしやすさのバランスがよく、初心者にも使いやすい配送方法です。大切なのは、購入前に配送方法・セラー評価・到着目安・追跡の有無を確認し、注文後は保護期間を意識しながら状況を見守ることです。</p>
+
+    <h3>標準配送を選ぶべきケースと判断基準</h3>
+
+    <p>アクセサリー・スマホ小物・日用品・趣味用品など、多少待てても問題ない商品に向いています。使用日が決まっているもの・高額商品・紛失時のダメージが大きいものは、Premium Shippingや国際宅配便を検討したほうが安心です。</p>
+
+    <h3>購入前チェックリスト</h3>
+
+    <ul>
+      <li>配送方法がAliExpress Standard Shippingか確認する</li>
+      <li>追跡番号の有無を確認する</li>
+      <li>レビューで実際の到着日数を確認する</li>
+      <li>セラー評価と注文実績を見る</li>
+      <li><strong>発送予定日と推定到着日を確認する</strong></li>
+    </ul>
+
+    <p>信頼できるショップを選び、配送状況を適切に確認し、証拠を残す習慣を持てば、AliExpress標準配送は十分安全に活用できます。</p>
+
+    <hr />
+
+    <!-- 記事末尾CTA -->
+    <div class="cta-inline">
+      <div class="cta-label">🔥 今すぐ試す</div>
+      <h3>スワイプしてAliExpressの<br>お宝商品を発見しよう</h3>
+      <p>AIが厳選したバズり商品をTikTok感覚で探せる。<br>登録不要・完全無料でご利用いただけます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+        🛍 今すぐスワイプして探す
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- ===== 関連記事 ===== -->
+  <div class="related">
+    <div class="related-title">📚 関連記事</div>
+    <div class="related-grid">
+      <a href="/safety/aliexpress-safety.html" class="related-card">
+        <div class="rc-tag">安全性・詐欺対策</div>
+        <div class="rc-title">AliExpress 安全性は本当？詐欺・偽物対策10選</div>
+      </a>
+      <a href="/shipping/aliexpress-tsuiseki.html" class="related-card">
+        <div class="rc-tag">配送・追跡</div>
+        <div class="rc-title">AliExpress追跡の完全ガイド【初心者向け】追跡番号の見方・できない時の対処法</div>
+      </a>
+      <a href="/basics/aliexpress-what-is.html" class="related-card">
+        <div class="rc-tag">基礎知識</div>
+        <div class="rc-title">AliExpressとは？仕組み・安全性・使い方を初心者向けに解説</div>
+      </a>
+      <a href="/shipping/aliexpress-nannichi.html" class="related-card">
+        <div class="rc-tag">配送ガイド</div>
+        <div class="rc-title">配送別に解説：アリエク到着目安と最短術完全ガイド</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+
+<!-- ===== STICKY CTA (スマホのみ表示) ===== -->
+<div class="cta-sticky">
+  <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+    🛍 スワイプで商品を探す（無料）
+  </a>
+  <div class="sub">AIが厳選したバズり商品をチェック</div>
+</div>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/info/privacy.html">プライバシーポリシー</a>
+    <a href="/info/contact.html">お問い合わせ</a>
+    <a href="/info/about.html">運営者情報</a>
+    <a href="/sitemap.html">サイトマップ</a>
+  </div>
+  <div>© 2025 Product Finder｜アリエクの格安商品・お得情報研究所. All rights reserved.</div>
+  <div class="footer-aff-notice">
+    本サイトはAliExpressのアフィリエイトプログラムに参加しています。
+    記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。
+    ただし、商品の評価・内容は独自の基準で作成しています。
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ | Product Finder｜アリエクの格安商品・お得情報研究所</title>
+  <meta name="description" content="Product Finder｜アリエクの格安商品・お得情報研究所へのお問い合わせはこちら。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    600px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    /* Header */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 2px solid var(--red);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .site-logo {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+      text-decoration: none;
+    }
+    .header-cta {
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    /* Main */
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .breadcrumb a { color: var(--red); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .lead {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    /* Form card */
+    .form-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    label .required {
+      color: var(--red);
+      margin-left: 4px;
+      font-size: 0.75rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.93rem;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(232, 37, 58, 0.1);
+      background: #fff;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    /* Submit button */
+    .btn-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      font-family: inherit;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 8px;
+    }
+    .btn-submit:hover { background: var(--red-dk); }
+    .btn-submit:active { transform: scale(0.98); }
+    .btn-submit:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Success message */
+    .success-box {
+      display: none;
+      text-align: center;
+      padding: 48px 24px;
+    }
+    .success-box .success-icon {
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+    }
+    .success-box h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .success-box p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .btn-back {
+      display: inline-block;
+      padding: 10px 24px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .btn-back:hover { border-color: var(--red); color: var(--red); }
+
+    /* Footer */
+    .site-footer {
+      background: #1a1a1a;
+      color: #9ca3af;
+      text-align: center;
+      padding: 32px 20px 60px;
+      font-size: 0.8rem;
+    }
+    .site-footer a { color: #9ca3af; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-aff-notice { margin-top: 12px; font-size: 0.72rem; opacity: 0.6; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/index.html" class="site-logo">Product Finder｜アリエクの格安商品・お得情報研究所</a>
+  <a href="https://product-finder-three-liard.vercel.app/" class="header-cta" target="_blank" rel="noopener">おすすめ商品はこちら</a>
+</header>
+
+<main>
+  <div class="breadcrumb">
+    <a href="/index.html">ホーム</a> &rsaquo; お問い合わせ
+  </div>
+
+  <h1>お問い合わせ</h1>
+  <p class="lead">ご質問・ご意見・ご要望などお気軽にお送りください。</p>
+
+  <div class="form-card">
+    <!-- フォーム -->
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">お名前<span class="required">必須</span></label>
+        <input type="text" id="name" name="name" placeholder="例：田中 太郎" required />
+      </div>
+      <div class="form-group">
+        <label for="email">メールアドレス<span class="required">必須</span></label>
+        <input type="email" id="email" name="email" placeholder="例：example@email.com" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">件名<span class="required">必須</span></label>
+        <input type="text" id="subject" name="subject" placeholder="例：商品について" required />
+      </div>
+      <div class="form-group">
+        <label for="message">本文<span class="required">必須</span></label>
+        <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください。" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">送信する</button>
+    </form>
+
+    <!-- 送信完了メッセージ -->
+    <div class="success-box" id="successBox">
+      <div class="success-icon">✅</div>
+      <h2>送信しました（ダミー）</h2>
+      <p>お問い合わせありがとうございます。<br>通常2〜3営業日以内にご返信いたします。</p>
+      <button class="btn-back" onclick="resetForm()">もどる</button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/info/privacy.html">プライバシーポリシー</a>
+    <a href="/info/contact.html">お問い合わせ</a>
+    <a href="/info/about.html">運営者情報</a>
+    <a href="/sitemap.html">サイトマップ</a>
+  </div>
+  <div>© 2026 Product Finder｜アリエクの格安商品・お得情報研究所. All rights reserved.</div>
+  <div class="footer-aff-notice">
+    本サイトはAliExpressのアフィリエイトプログラムに参加しています。
+    記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。
+    ただし、商品の評価・内容は独自の基準で作成しています。
+  </div>
+</footer>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('successBox').style.display = 'block';
+  });
+
+  function resetForm() {
+    document.getElementById('contactForm').reset();
+    document.getElementById('contactForm').style.display = 'block';
+    document.getElementById('successBox').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Finder｜アリエクの格安商品・お得情報研究所</title>
+  <meta name="description" content="AliExpress（アリエクスプレス）を安全に使い倒すための日本語情報サイト。支払い方法・配送・追跡・安全性・おすすめ商品まで完全網羅。" />
+  <meta name="keywords" content="AliExpress, アリエクスプレス, アリエク, 使い方, 支払い方法, 追跡, 安全性, おすすめ" />
+  <meta property="og:title" content="Product Finder｜アリエクの格安商品・お得情報研究所" />
+  <meta property="og:description" content="AliExpressを安全に使い倒すための日本語情報サイト。支払い・配送・追跡・安全性・おすすめ商品まで完全網羅。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/images/ogp.jpg" />
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    900px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+    /* ─── Header ─── */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .site-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--red); text-decoration: none; white-space: nowrap; }
+    .header-cta { background: var(--red); color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; transition: background 0.2s; }
+    .header-cta:hover { background: var(--red-dk); }
+
+    /* ─── Hero ─── */
+    .hero {
+      background: linear-gradient(135deg, #fff1f2 0%, #fff8f0 50%, #fff 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 20px 52px;
+      text-align: center;
+    }
+    .hero-badge { display: inline-block; background: var(--red); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 14px; border-radius: 999px; margin-bottom: 20px; }
+    .hero h1 { font-weight: 700; font-size: clamp(1.5rem, 5vw, 2.4rem); line-height: 1.4; max-width: 680px; margin: 0 auto 20px; }
+    .hero p { color: var(--muted); font-size: 0.95rem; max-width: 560px; margin: 0 auto 32px; }
+    .hero-cta { display: inline-block; background: var(--red); color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 999px; font-weight: 700; font-size: 1rem; transition: background 0.2s; }
+    .hero-cta:hover { background: var(--red-dk); }
+
+    /* ─── Category Nav ─── */
+    .category-nav {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      justify-content: center;
+      padding: 24px 20px;
+      max-width: var(--max); margin: 0 auto;
+    }
+    .cat-btn {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 999px; padding: 7px 18px; font-size: 0.82rem; font-weight: 700;
+      color: var(--text); cursor: pointer; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .cat-btn:hover, .cat-btn.active { background: var(--red); color: #fff; border-color: var(--red); }
+
+    /* ─── Main ─── */
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px 64px; }
+
+    .section-title {
+      font-size: 1.1rem; font-weight: 700;
+      border-left: 4px solid var(--red); padding-left: 12px;
+      margin: 40px 0 20px;
+    }
+
+    /* ─── Article Grid ─── */
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .article-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-decoration: none; color: var(--text);
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .article-card:hover { border-color: var(--red); box-shadow: 0 4px 16px rgba(232,37,58,0.1); transform: translateY(-2px); }
+    .card-tag { font-size: 0.68rem; font-weight: 700; color: var(--red); letter-spacing: 0.05em; }
+    .card-title { font-size: 0.9rem; font-weight: 700; line-height: 1.5; }
+    .card-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+    .card-arrow { font-size: 0.75rem; color: var(--red); margin-top: auto; padding-top: 4px; }
+
+    /* ─── Featured Card ─── */
+    .featured-card {
+      background: linear-gradient(135deg, #fff1f2, #fff);
+      border: 2px solid var(--red);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-decoration: none; color: var(--text);
+      transition: box-shadow 0.2s;
+      display: flex; flex-direction: column; gap: 8px;
+      grid-column: 1 / -1;
+    }
+    @media (min-width: 600px) { .featured-card { flex-direction: row; align-items: center; gap: 24px; } }
+    .featured-card:hover { box-shadow: 0 4px 24px rgba(232,37,58,0.15); }
+    .featured-label { font-size: 0.68rem; font-weight: 700; color: var(--red); letter-spacing: 0.1em; }
+    .featured-title { font-size: 1.05rem; font-weight: 700; line-height: 1.5; flex: 1; }
+    .featured-btn { background: var(--red); color: #fff; padding: 10px 20px; border-radius: 999px; font-size: 0.82rem; font-weight: 700; white-space: nowrap; }
+
+    /* ─── Footer ─── */
+    .site-footer {
+      background: #1a1a1a; color: #9ca3af;
+      padding: 40px 20px;
+      text-align: center; font-size: 0.82rem;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 20px; }
+    .footer-links a { color: #9ca3af; text-decoration: none; }
+    .footer-links a:hover { color: #fff; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--red); margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="site-logo" href="/index.html">Product Finder｜アリエクの格安商品・お得情報研究所</a>
+    <a class="header-cta" href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">おすすめ商品はこちら</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">🇯🇵 日本人向け アリエク攻略サイト</div>
+    <h1>AliExpressを<br>もっと安全に、もっとお得に</h1>
+    <p>支払い方法・配送追跡・安全性・おすすめ商品まで、初心者から上級者まで使える完全ガイドを無料公開。</p>
+    <a class="hero-cta" href="/basics/aliexpress-what-is.html">まずはここから →</a>
+  </section>
+
+  <!-- Category Nav -->
+  <nav class="category-nav">
+    <a class="cat-btn active" href="#all">すべて</a>
+    <a class="cat-btn" href="#beginner">入門・基礎</a>
+    <a class="cat-btn" href="#payment">支払い・決済</a>
+    <a class="cat-btn" href="#shipping">配送・追跡</a>
+    <a class="cat-btn" href="#safety">安全性</a>
+    <a class="cat-btn" href="#tips">TIPS・節約</a>
+  </nav>
+
+  <main class="container">
+
+    <!-- 入門・基礎 -->
+    <h2 class="section-title" id="beginner">📘 入門・基礎</h2>
+    <div class="article-grid">
+      <a href="/basics/aliexpress-what-is.html" class="featured-card">
+        <div>
+          <div class="featured-label">⭐ まず読む</div>
+          <div class="featured-title">AliExpressとは？仕組み・安全性・使い方を初心者向けに解説【2025年最新】</div>
+        </div>
+        <div class="featured-btn">読む →</div>
+      </a>
+      <a href="/basics/aliexpress-choice.html" class="article-card">
+        <div class="card-tag">使い方ガイド</div>
+        <div class="card-title">アリエクのChoiceとは何？安い・早い・安心の理由を徹底解説</div>
+        <div class="card-desc">Choice商品が特別な理由・配送の速さ・買えないときの対処法</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/basics/aliexpress-osusume.html" class="article-card">
+        <div class="card-tag">おすすめ商品</div>
+        <div class="card-title">アリエク おすすめ商品50選【2026年最新】神アイテムまとめ</div>
+        <div class="card-desc">ガジェット・インテリア・ファッション・コスメをカテゴリ別に紹介</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+    </div>
+
+    <!-- 支払い・決済 -->
+    <h2 class="section-title" id="payment">💳 支払い・決済</h2>
+    <div class="article-grid">
+      <a href="/payment/aliexpress-shiharai.html" class="article-card">
+        <div class="card-tag">支払い・決済</div>
+        <div class="card-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</div>
+        <div class="card-desc">PayPal・カード・PayPayなど7種類を比較。手数料・返金対応も解説</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/payment/aliexpress-payment.html" class="article-card">
+        <div class="card-tag">支払い・決済</div>
+        <div class="card-title">【2025年版】AliExpressの支払い方法おすすめ順位と注意点</div>
+        <div class="card-desc">クレカ・PayPal・PayPay・コンビニ払いの対応状況と返金の注意点</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/payment/aliexpress-paypal.html" class="article-card">
+        <div class="card-tag">支払い・決済</div>
+        <div class="card-title">【2026年最新】AliExpressでPayPalは使える？日本向け最新状況</div>
+        <div class="card-desc">使えない原因・対処法・手数料・返金まで日本ユーザー向けに解説</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/payment/aliexpress-paypay.html" class="article-card">
+        <div class="card-tag">支払い・決済</div>
+        <div class="card-title">2026年版 アリエク ペイペイ決済の全手順</div>
+        <div class="card-desc">PayPay使用条件・手順・表示されない原因・安全性まで初心者向け解説</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/payment/aliexpress-coupon.html" class="article-card">
+        <div class="card-tag">TIPS・節約</div>
+        <div class="card-title">初心者でも安心！AliExpress クーポンコード使い方【2025年最新】</div>
+        <div class="card-desc">クーポンの種類・探し方・入力手順・使えないときの対処法</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+    </div>
+
+    <!-- 配送・追跡 -->
+    <h2 class="section-title" id="shipping">📦 配送・追跡</h2>
+    <div class="article-grid">
+      <a href="/shipping/aliexpress-nannichi.html" class="article-card">
+        <div class="card-tag">配送・追跡</div>
+        <div class="card-title">配送別に解説：アリエク到着目安と最短術完全ガイド</div>
+        <div class="card-desc">Standard Shipping・無料配送の違い、最短受け取りのコツ</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/shipping/aliexpress-standard-shipping.html" class="article-card">
+        <div class="card-tag">配送・追跡</div>
+        <div class="card-title">AliExpress標準配送とは？送料・日数・追跡の仕組みを初心者向け解説</div>
+        <div class="card-desc">標準配送の送料・到着日数・追跡方法・届かないときの返金対応</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/shipping/aliexpress-tsuiseki.html" class="article-card">
+        <div class="card-tag">配送・追跡</div>
+        <div class="card-title">AliExpress追跡の完全ガイド【初心者向け】追跡番号の見方・できない時の対処法</div>
+        <div class="card-desc">LP・Eから始まる番号の違い、日本郵便・ヤマトでの追跡方法</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/shipping/aliexpress-tracking-number.html" class="article-card">
+        <div class="card-tag">配送・追跡</div>
+        <div class="card-title">AliExpress追跡番号はどこ？確認場所と見方を完全解説</div>
+        <div class="card-desc">注文番号との違い・追跡ステータスの意味・追跡できないときの対処</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/shipping/aliexpress-tracking-guide.html" class="article-card">
+        <div class="card-tag">配送・追跡</div>
+        <div class="card-title">AliExpress Trackingで荷物追跡｜届かない時の確認手順7選</div>
+        <div class="card-desc">17TRACK・Cainiao比較、遅延パターン、返金申請の進め方</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+    </div>
+
+    <!-- 安全性 -->
+    <h2 class="section-title" id="safety">🔒 安全性・トラブル対策</h2>
+    <div class="article-grid">
+      <a href="/safety/aliexpress-safety.html" class="article-card">
+        <div class="card-tag">安全性</div>
+        <div class="card-title">AliExpress 安全性は本当？詐欺・偽物対策10選【2025年最新】</div>
+        <div class="card-desc">怪しい・やばいと言われる理由、詐欺・偽物対策10選、返金方法</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/safety/aliexpress-ayashii.html" class="article-card">
+        <div class="card-tag">安全性</div>
+        <div class="card-title">【2026年版】AliExpressは怪しい？届かない・偽物の実態を解説</div>
+        <div class="card-desc">届かない・偽物・品質不良・支払いの安全性を総合解説</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+      <a href="/safety/aliexpress-hyoban.html" class="article-card">
+        <div class="card-tag">評判・口コミ</div>
+        <div class="card-title">【2026年版】AliExpressの評判を徹底検証｜やばい噂の真相</div>
+        <div class="card-desc">良い口コミ・悪い口コミを整理、詐欺・返金トラブルの実態</div>
+        <div class="card-arrow">→ 読む</div>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-logo">Product Finder｜アリエクの格安商品・お得情報研究所</div>
+    <div class="footer-links">
+      <a href="/info/privacy.html">プライバシーポリシー</a>
+      <a href="/info/contact.html">お問い合わせ</a>
+      <a href="/info/about.html">運営者情報</a>
+      <a href="/sitemap.html">サイトマップ</a>
+    </div>
+    <p>© 2026 Product Finder｜アリエクの格安商品・お得情報研究所. 当サイトはAliExpressの公式サイトではありません。</p>
+  </footer>
+
+</body>
+</html>

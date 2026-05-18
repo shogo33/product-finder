@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>運営者情報 | Product Finder｜アリエクの格安商品・お得情報研究所</title>
+  <meta name="description" content="Product Finder｜アリエクの格安商品・お得情報研究所の運営者プロフィールと当サイトについてご紹介します。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    720px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    /* Header */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 2px solid var(--red);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .site-logo {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--red);
+      text-decoration: none;
+    }
+    .header-cta {
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    /* Main */
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .breadcrumb a { color: var(--red); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* Profile card */
+    .profile-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 500px) {
+      .profile-card { flex-direction: column; align-items: center; text-align: center; }
+    }
+    .profile-avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fbbf24, #f97316);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      flex-shrink: 0;
+    }
+    .profile-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .profile-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .profile-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .profile-tag {
+      font-size: 0.72rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: #fee2e2;
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    /* Section */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--red);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #fee2e2;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section p { margin-bottom: 12px; }
+    .section p:last-child { margin-bottom: 0; }
+
+    /* Concern box */
+    .concern-box {
+      background: #fafaf8;
+      border-left: 3px solid var(--red);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-style: italic;
+      color: var(--muted);
+    }
+    .concern-box p { margin-bottom: 6px; }
+    .concern-box p:last-child { margin-bottom: 0; }
+
+    /* Hobby list */
+    .hobby-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .hobby-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #1a1a1a;
+      color: #9ca3af;
+      text-align: center;
+      padding: 32px 20px 60px;
+      font-size: 0.8rem;
+    }
+    .site-footer a { color: #9ca3af; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-aff-notice { margin-top: 12px; font-size: 0.72rem; opacity: 0.6; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/index.html" class="site-logo">Product Finder｜アリエクの格安商品・お得情報研究所</a>
+  <a href="https://product-finder-three-liard.vercel.app/" class="header-cta" target="_blank" rel="noopener">おすすめ商品はこちら</a>
+</header>
+
+<main>
+  <div class="breadcrumb">
+    <a href="/index.html">ホーム</a> &rsaquo; 運営者情報
+  </div>
+
+  <!-- プロフィールカード -->
+  <div class="profile-card">
+    <div class="profile-avatar">👨‍👧</div>
+    <div>
+      <div class="profile-name">アリエクパパ</div>
+      <div class="profile-meta">都内在住・30歳・一児のパパ</div>
+      <div class="profile-tags">
+        <span class="profile-tag">⛺ キャンプ</span>
+        <span class="profile-tag">📱 ガジェット</span>
+        <span class="profile-tag">🚴 自転車</span>
+        <span class="profile-tag">🛒 アリエクヘビーユーザー</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 自己紹介 -->
+  <div class="section">
+    <div class="section-title">👋 はじめまして</div>
+    <p>こんにちは！当サイトを運営しているアリエクパパです。</p>
+    <p>私は都内在住の30歳で、普段は一児のパパをしています。子育ての合間の楽しみとして、日々AliExpress（アリエクスプレス）を隅々までチェックし、コスパ最強の格安商品を探し出すのが完全にライフワークになっています。</p>
+    <p>主な趣味はキャンプ、ガジェット、そして自転車です。これらに関わるギアやパーツは、日本のショップで買うと結構な金額になりますが、AliExpressを賢く使うと「え、これがこの価格で買えるの！？」というお宝にたくさん巡り会えます。これまでにも、数え切れないほどのアイテムを実際に現地から買い漁ってきました。</p>
+    <div class="hobby-list">
+      <div class="hobby-item">⛺ キャンプギア</div>
+      <div class="hobby-item">📱 ガジェット</div>
+      <div class="hobby-item">🚴 自転車パーツ</div>
+    </div>
+  </div>
+
+  <!-- 開設した理由 -->
+  <div class="section">
+    <div class="section-title">💡 当サイトを開設した理由</div>
+    <p>AliExpressはとにかく安くて魅力的なプラットフォームですが、その一方で、</p>
+    <div class="concern-box">
+      <p>「海外通販だし、なんとなく怪しくて怖い…」</p>
+      <p>「届くまで何日かかるの？」</p>
+      <p>「偽物や不良品を掴まされたらどうしよう…」</p>
+    </div>
+    <p>といった不安から、利用を躊躇している方もまだまだ多いと感じています。</p>
+    <p>そこで当サイトでは、30代パパでありアリエクヘビーユーザーである私が、実際に自腹を切って購入して良かったおすすめ商品や、安全に買い物をするための追跡ガイド、トラブルを防ぐ支払い方法などを実体験ベースで分かりやすく解説しています。</p>
+    <p>みなさんのガジェット選びやキャンプギア探しの参考になり、少しでも安心してお得なショッピングができるお手伝いができれば幸いです！</p>
+  </div>
+
+  <!-- サイト情報 -->
+  <div class="section">
+    <div class="section-title">📋 サイト情報</div>
+    <table style="width:100%; border-collapse:collapse; font-size:0.88rem;">
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 0; color:var(--muted); width:35%;">サイト名</td>
+        <td style="padding:10px 0; font-weight:600;">Product Finder｜アリエクの格安商品・お得情報研究所</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 0; color:var(--muted);">運営者</td>
+        <td style="padding:10px 0; font-weight:600;">アリエクパパ</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border);">
+        <td style="padding:10px 0; color:var(--muted);">サイトの目的</td>
+        <td style="padding:10px 0;">日本人向けAliExpressの使い方・安全性・おすすめ商品の情報提供</td>
+      </tr>
+      <tr>
+        <td style="padding:10px 0; color:var(--muted);">収益について</td>
+        <td style="padding:10px 0;">本サイトはAliExpressのアフィリエイトプログラムに参加しています。記事内リンクから購入された場合、当サイトに報酬が発生することがあります。ただし、商品の評価・内容は独自の基準で作成しています。</td>
+      </tr>
+    </table>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/info/privacy.html">プライバシーポリシー</a>
+    <a href="/info/contact.html">お問い合わせ</a>
+    <a href="/info/about.html">運営者情報</a>
+    <a href="/sitemap.html">サイトマップ</a>
+  </div>
+  <div>© 2025 Product Finder｜アリエクの格安商品・お得情報研究所. All rights reserved.</div>
+  <div class="footer-aff-notice">
+    本サイトはAliExpressのアフィリエイトプログラムに参加しています。
+    記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。
+    ただし、商品の評価・内容は独自の基準で作成しています。
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AliExpress追跡の完全ガイド【初心者向け】追跡番号の見方・できない時の対処法 | Product Finder｜アリエクの格安商品・お得情報研究所</title>
+  <meta name="description" content="AliExpressの追跡番号の確認方法、LP・Eから始まる番号の違い、日本郵便・ヤマト・佐川での追跡方法、届かない時の返金申請まで初心者向けに徹底解説。" />
+  <meta name="keywords" content="AliExpress 追跡, アリエクスプレス 追跡番号, AliExpress tracking, アリエクスプレス 届かない" />
+  <meta property="og:title" content="AliExpress追跡の完全ガイド【初心者向け】" />
+  <meta property="og:description" content="追跡番号の見方・できない時の対処法を徹底解説。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/aliexpress-tsuiseki.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    760px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.85; font-size: 16px; }
+
+    /* Header */
+    .site-header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 20px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .site-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--red); text-decoration: none; white-space: nowrap; }
+    .header-cta { background: var(--red); color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; transition: background 0.2s; }
+    .header-cta:hover { background: var(--red-dk); }
+
+    /* Hero */
+    .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
+    .article-hero .tag { display: inline-block; background: var(--red); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
+    .article-hero h1 { font-weight: 700; font-size: clamp(1.3rem, 4vw, 1.85rem); line-height: 1.45; max-width: 640px; margin: 0 auto 16px; }
+    .article-hero .meta { font-size: 0.82rem; color: var(--muted); }
+    .article-hero .meta span + span::before { content: " · "; }
+
+    /* Layout */
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    /* TOC */
+    .toc { background: #fff8f8; border: 1px solid #fecdcf; border-left: 4px solid var(--red); border-radius: var(--radius); padding: 20px 24px; margin: 32px 0; }
+    .toc-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 12px; color: var(--red); }
+    .toc > ol { padding-left: 20px; }
+    .toc ol ol { padding-left: 18px; margin-top: 4px; }
+    .toc li { margin: 5px 0; }
+    .toc a { color: var(--text); text-decoration: none; font-size: 0.88rem; }
+    .toc a:hover { color: var(--red); }
+
+    /* Article body */
+    .article-body { padding: 24px 0 48px; }
+    .article-body h2 { font-size: 1.22rem; font-weight: 700; border-left: 4px solid var(--red); padding-left: 12px; margin: 48px 0 16px; scroll-margin-top: 80px; }
+    .article-body h3 { font-size: 1rem; font-weight: 700; margin: 30px 0 12px; padding-left: 10px; border-left: 2px solid #fecdcf; scroll-margin-top: 80px; color: #2d2d2d; }
+    .article-body p { margin: 12px 0; font-size: 0.94rem; }
+    .article-body ul, .article-body ol { padding-left: 22px; margin: 12px 0; }
+    .article-body li { margin: 7px 0; font-size: 0.93rem; }
+    .article-body strong { color: var(--red-dk); }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; margin: 20px 0; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.86rem; min-width: 400px; }
+    th { background: var(--red); color: #fff; padding: 10px 14px; text-align: left; font-weight: 700; white-space: nowrap; }
+    td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #fafaf8; }
+
+    /* Callout */
+    .callout { border-radius: var(--radius); padding: 14px 18px; margin: 18px 0; font-size: 0.88rem; line-height: 1.75; }
+    .callout-tip { background: #fffbeb; border: 1px solid #fde68a; }
+    .callout-tip::before { content: "💡 "; }
+    .callout-warn { background: #fff1f2; border: 1px solid #fecdcf; }
+    .callout-warn::before { content: "⚠️ "; }
+    .callout-info { background: #f0f9ff; border: 1px solid #bae6fd; }
+    .callout-info::before { content: "ℹ️ "; }
+
+    /* Steps */
+    .steps { margin: 20px 0; display: flex; flex-direction: column; gap: 10px; }
+    .step { display: flex; gap: 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 18px; align-items: flex-start; }
+    .step-num { background: var(--red); color: #fff; font-weight: 700; font-size: 0.82rem; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .step-body strong { display: block; font-size: 0.92rem; margin-bottom: 3px; color: var(--text); }
+    .step-body p { font-size: 0.85rem; color: var(--muted); margin: 0; line-height: 1.65; }
+
+    /* Status flow */
+    .status-flow { margin: 18px 0; display: flex; flex-direction: column; gap: 0; }
+    .status-item { display: flex; gap: 12px; align-items: flex-start; position: relative; padding-bottom: 16px; }
+    .status-item:last-child { padding-bottom: 0; }
+    .status-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--red); flex-shrink: 0; margin-top: 5px; position: relative; z-index: 1; }
+    .status-item:not(:last-child) .status-dot::after { content: ''; position: absolute; left: 5px; top: 12px; width: 2px; height: calc(100% + 10px); background: #fecdcf; }
+    .status-text strong { display: block; font-size: 0.88rem; font-weight: 700; color: var(--text); }
+    .status-text span { font-size: 0.82rem; color: var(--muted); }
+
+    /* FAQ */
+    .faq { margin: 12px 0 24px; display: flex; flex-direction: column; gap: 10px; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .faq-q { background: var(--surface); padding: 13px 16px; font-weight: 700; font-size: 0.9rem; display: flex; gap: 10px; align-items: flex-start; line-height: 1.5; }
+    .faq-q::before { content: "Q"; background: var(--red); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; flex-shrink: 0; margin-top: 2px; }
+    .faq-a { background: #fafaf8; padding: 12px 16px; font-size: 0.87rem; line-height: 1.75; border-top: 1px solid var(--border); }
+    .faq-a ul { padding-left: 20px; margin: 8px 0; }
+    .faq-a li { margin: 5px 0; }
+
+    /* CTA inline */
+    .cta-inline { background: linear-gradient(135deg, var(--red) 0%, #ff6b35 100%); border-radius: var(--radius); padding: 26px 22px; text-align: center; margin: 40px 0; color: #fff; }
+    .cta-inline .cta-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 8px; }
+    .cta-inline h3 { font-size: 1.08rem; font-weight: 700; margin-bottom: 8px; }
+    .cta-inline p { font-size: 0.83rem; opacity: 0.9; margin-bottom: 18px; }
+    .cta-inline a { display: inline-block; background: #fff; color: var(--red); font-weight: 700; font-size: 0.88rem; padding: 11px 26px; border-radius: 999px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+    .cta-inline a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    /* Sticky CTA */
+    .cta-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--red); color: #fff; text-align: center; padding: 13px 20px; z-index: 200; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); }
+    .cta-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+    .cta-sticky .sub { font-size: 0.7rem; opacity: 0.85; margin-top: 2px; }
+    @media (max-width: 640px) { .cta-sticky { display: block; } }
+
+    /* Related */
+    .related { margin: 48px 0 24px; }
+    .related-title { font-weight: 700; font-size: 1rem; margin-bottom: 14px; }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 480px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; text-decoration: none; color: var(--text); transition: border-color 0.2s, box-shadow 0.2s; }
+    .related-card:hover { border-color: var(--red); box-shadow: 0 2px 12px rgba(232,37,58,0.1); }
+    .related-card .rc-tag { font-size: 0.68rem; color: var(--red); font-weight: 700; margin-bottom: 5px; }
+    .related-card .rc-title { font-size: 0.86rem; font-weight: 700; line-height: 1.4; }
+
+    /* Footer */
+    .site-footer { background: #1a1a1a; color: #9ca3af; text-align: center; padding: 32px 20px 60px; font-size: 0.8rem; }
+    .site-footer a { color: #9ca3af; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-aff-notice { margin-top: 12px; font-size: 0.72rem; opacity: 0.6; line-height: 1.6; }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
+  </style>
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/aliexpress-tsuiseki.html" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/index.html" class="site-logo">Product Finder｜アリエクの格安商品・お得情報研究所</a>
+  <a href="https://product-finder-three-liard.vercel.app/" class="header-cta" target="_blank" rel="noopener">おすすめ商品はこちら</a>
+</header>
+
+
+<div class="article-hero">
+  <div class="tag">配送・追跡ガイド</div>
+  <h1>AliExpress追跡の完全ガイド<br>【初心者向け・2025年最新】<br>追跡番号の見方から届かない時の対処法まで</h1>
+  <div class="meta">
+    <span>2025年5月17日</span>
+    <span>読了目安：15分</span>
+    <span>編集部</span>
+  </div>
+</div>
+
+
+<main class="container">
+
+  <nav class="toc">
+    <div class="toc-title">📋 この記事の目次</div>
+    <ol>
+      <li><a href="#basic">AliExpress追跡の基本</a>
+        <ol>
+          <li><a href="#flow">注文後の流れ</a></li>
+          <li><a href="#number-types">追跡番号の種類と見方</a></li>
+          <li><a href="#standard">Standard Shippingの特徴</a></li>
+        </ol>
+      </li>
+      <li><a href="#how-to">追跡方法・手順</a>
+        <ol>
+          <li><a href="#order-page">注文詳細ページから確認</a></li>
+          <li><a href="#status">配送ステータスの読み方</a></li>
+          <li><a href="#domestic">日本郵便・ヤマト・佐川での追跡</a></li>
+        </ol>
+      </li>
+      <li><a href="#number-guide">番号の種類を見分けるコツ</a></li>
+      <li><a href="#cant-track">追跡できない時の対処法</a></li>
+      <li><a href="#carriers">配送会社別・追跡の見方</a></li>
+      <li><a href="#status-detail">配送ステータス徹底解説</a></li>
+      <li><a href="#trouble">困った時の対処法</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+    </ol>
+  </nav>
+
+  <article class="article-body">
+
+    <!-- ==================== SECTION 1 ==================== -->
+    <h2 id="basic">AliExpress追跡の基本｜荷物を日本で確認する方法</h2>
+
+    <p>AliExpressの追跡は、注文後に発行される追跡番号を使って、荷物が今どこにあるのかを確認する仕組みです。基本的にはAliExpressの注文詳細ページで確認し、必要に応じて17TRACKやCainiaoなどの外部サイトを併用します。</p>
+    <p>配送方法や番号の種類によっては、海外区間しか見えないものや、日本国内では追跡できないものも存在します。「どこで見るか」だけでなく、<strong>「どの番号を」「どのタイミングで」確認するか</strong>が重要です。</p>
+
+    <h3 id="flow">AliExpressの追跡でわかることと注文後の流れ</h3>
+
+    <p>追跡でわかるのは、発送準備中・出荷済み・輸出国で処理中・日本到着・通関通過・配達完了といった配送の進み具合です。注文直後はすぐに追跡できず、販売者が発送処理をしてから物流会社へ引き渡された後に情報が反映されます。</p>
+
+    <div class="status-flow">
+      <div class="status-item"><div class="status-dot"></div><div class="status-text"><strong>注文確定</strong><span>購入手続き完了</span></div></div>
+      <div class="status-item"><div class="status-dot"></div><div class="status-text"><strong>販売者が発送準備・追跡番号発行</strong><span>数日かかる場合あり</span></div></div>
+      <div class="status-item"><div class="status-dot"></div><div class="status-text"><strong>集荷・輸出国での仕分け</strong><span>ここで初めて追跡情報が動き始める</span></div></div>
+      <div class="status-item"><div class="status-dot"></div><div class="status-text"><strong>航空輸送</strong><span>この間は更新が止まることが多い</span></div></div>
+      <div class="status-item"><div class="status-dot"></div><div class="status-text"><strong>日本到着・通関</strong><span>日本郵便などに引き継ぎ</span></div></div>
+      <div class="status-item"><div class="status-dot"></div><div class="status-text"><strong>国内配送・配達完了</strong><span>国内追跡サイトで細かく確認可能に</span></div></div>
+    </div>
+
+    <div class="callout callout-tip">
+      注文完了から数日間は「情報なし」や「追跡不可」と表示されても珍しくありません。この流れを理解しておくと、ステータスを見ても慌てにくくなります。
+    </div>
+
+    <h3 id="number-types">追跡番号とは？番号の種類とtrackingの見方</h3>
+
+    <p>追跡番号は荷物ごとに割り当てられる識別番号で、AliExpressではLPから始まる番号・英字で始まる国際郵便型の番号・数字だけの番号など複数の形式が使われます。</p>
+    <p>AliExpress内では表示されるのに日本郵便ではヒットしない場合、まだ国内配送会社へ引き継がれていない可能性があります。セラー管理用の番号と実際の配送会社の番号が異なることもあるため、<strong>注文詳細の物流情報を複数確認する</strong>のがコツです。</p>
+
+    <h3 id="standard">AliExpress Standard Shippingの特徴</h3>
+
+    <p>AliExpress Standard Shippingは比較的追跡しやすく、初心者にも利用しやすい代表的な配送方法です。配送自体はCainiaoなどの物流ネットワークと各国の配送会社が連携して進め、日本到着後は日本郵便などに引き継がれます。</p>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th>項目</th><th>内容</th></tr>
+        <tr><td>主な確認場所</td><td>AliExpress注文詳細、17TRACK、Cainiao、日本到着後は国内配送会社</td></tr>
+        <tr><td>よくある番号形式</td><td>LPから始まる番号、英字+数字+国コード、数字のみ</td></tr>
+        <tr><td>反映タイミング</td><td>発送後すぐではなく、集荷後に反映されることが多い</td></tr>
+        <tr><td>初心者向け配送</td><td>AliExpress Standard Shippingが比較的わかりやすい</td></tr>
+      </table>
+    </div>
+
+    <!-- 中盤CTA -->
+    <div class="cta-inline">
+      <div class="cta-label">✨ PICK UP</div>
+      <h3>AIが今話題の商品をスワイプで提案</h3>
+      <p>TikTokで見たアレ、AliExpressで見つかるかも。<br>スワイプするだけで掘り出し物に出会えます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">無料で商品を見てみる →</a>
+    </div>
+
+
+    <!-- ==================== SECTION 2 ==================== -->
+    <h2 id="how-to">AliExpressの追跡方法｜tracking番号で配送状況を確認する手順</h2>
+
+    <p>正しい順番で確認すると状況を把握しやすくなります。まずはAliExpressにログインし、注文履歴から対象商品の詳細ページを開きましょう。</p>
+
+    <h3 id="order-page">注文詳細ページから追跡する方法</h3>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>AliExpressにログインして「My Orders（注文履歴）」を開く</strong>
+          <p>アプリまたはブラウザどちらでもOK。追跡したい商品を選択します。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>「Track Order（物流情報を見る）」をタップ</strong>
+          <p>配送方法・追跡番号・物流ステータス・配送予定日が表示されます。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>表示された追跡番号をメモする</strong>
+          <p>AliExpress内の表示が簡略化されている場合でも、番号を17TRACKやCainiaoに入力するとより詳しい履歴が見えます。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>日本到着後は国内配送会社のサイトでも確認</strong>
+          <p>日本郵便・ヤマト・佐川の追跡ページに番号を入力すると、国内配送の細かい状況が確認できます。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 id="status">TRACK情報の見方と配送ステータスの解説</h3>
+
+    <p>TRACK情報は最新の1行だけで判断せず、<strong>履歴全体の流れを見ることが大切</strong>です。更新間隔が長いこともあるため、1日単位で何度も確認するより数日おきに見るほうが現実的です。</p>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th>ステータス（英語）</th><th>意味</th></tr>
+        <tr><td>Shipment information received</td><td>配送情報だけ先に登録。荷物はまだ動いていない可能性あり</td></tr>
+        <tr><td>Accepted by carrier</td><td>物流会社が荷物を受け取った</td></tr>
+        <tr><td>Departed from country of origin</td><td>発送国を出発した</td></tr>
+        <tr><td>Arrived at destination country</td><td>日本に到着した</td></tr>
+        <tr><td>Import customs clearance</td><td>通関手続き中</td></tr>
+        <tr><td>Out for delivery</td><td>配達員が配達中</td></tr>
+        <tr><td>Delivered</td><td>配達完了</td></tr>
+      </table>
+    </div>
+
+    <h3 id="domestic">日本到着後に日本郵便・ヤマト・佐川で追跡する方法</h3>
+
+    <p>荷物が日本に到着すると、AliExpress内の追跡だけでは細かい国内配送状況が見えないことがあります。まずAliExpressや17TRACKで「Last mile carrier（最終配送会社）」を確認し、該当する会社の追跡ページで番号を入力して検索します。</p>
+
+    <div class="callout callout-warn">
+      すべての番号がそのまま国内配送会社で使えるわけではありません。海外区間用の番号しかない場合や、国内用番号への変換が必要な場合もあります。
+    </div>
+
+    <ul>
+      <li>まずAliExpress注文詳細で追跡番号を確認する</li>
+      <li>17TRACKやCainiaoで詳細履歴を確認する</li>
+      <li>日本到着後は国内配送会社の追跡ページも試す</li>
+      <li>複数番号がある場合は実運送会社の番号を探す</li>
+    </ul>
+
+
+    <!-- ==================== SECTION 3 ==================== -->
+    <h2 id="number-guide">追跡番号の種類を見分けるコツ｜LP・Eから始まる・数字だけの違い</h2>
+
+    <p>同じAliExpressでも配送方法や物流会社によって番号の見た目が大きく変わります。番号の種類によって追跡できる範囲や更新頻度が異なるため、<strong>追跡できないと感じたときはまず番号形式を確認</strong>しましょう。</p>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th>番号形式</th><th>特徴</th><th>注意点</th></tr>
+        <tr><td><strong>LPから始まる</strong></td><td>Cainiao系でよく使われる</td><td>日本郵便で直接追えないことがある</td></tr>
+        <tr><td><strong>Eから始まる</strong></td><td>国際郵便型の可能性が高い</td><td>必ず国内で追えるとは限らない</td></tr>
+        <tr><td><strong>数字だけ</strong></td><td>内部管理番号のことがある</td><td>簡易配送では詳細追跡不可の場合あり</td></tr>
+      </table>
+    </div>
+
+    <h3>LPから始まる追跡番号の特徴</h3>
+    <p>AliExpress内やCainiao・17TRACKでは追跡できても、日本郵便の公式サイトではそのまま検索できないことがあります。LP番号で日本郵便にヒットしなくても、すぐに異常とは限りません。まずAliExpress注文詳細や外部追跡サイトで日本到着・通関完了の表示があるかを確認しましょう。</p>
+
+    <h3>Eから始まる追跡番号の意味</h3>
+    <p>EMSやePacket系を連想させる形式で、比較的しっかり追跡できる番号である場合があります。英字で始まり数字が続き末尾に国コードが付く形式なら、国際郵便型の可能性が高く、国内配送会社でも反映されることがあります。ただし番号だけで断定せず、配送方法欄や追跡サイトの認識結果も確認しましょう。</p>
+
+    <h3>追跡番号が数字だけの場合に確認すべきポイント</h3>
+    <p>日本郵便やヤマト・佐川のサイトに入力してもヒットしないことが珍しくありません。配送方法がAliExpress Saver ShippingやCainiao Super Economyなど<strong>簡易追跡サービスではないか</strong>を確認しましょう。番号形式だけで判断せず、配送方法・注文日・保護期間の残り日数を合わせて確認することが重要です。</p>
+
+
+    <!-- ==================== SECTION 4 ==================== -->
+    <h2 id="cant-track">AliExpress追跡ができない原因と対処法</h2>
+
+    <p>追跡できないときは、すぐに紛失やトラブルと決めつける必要はありません。発送直後で反映されていない・追跡番号が物流会社へ未登録・配送方法が簡易追跡・途中の更新が止まっているだけ、といったケースが多くあります。</p>
+
+    <div class="callout callout-info">
+      AliExpressは海外発送のため、日本の通販よりも情報反映に時間がかかりやすいのが特徴です。原因ごとに適切な待機期間や確認先を変えることが大切です。
+    </div>
+
+    <h3>発送直後でtrackingに反映されないケース</h3>
+    <p>販売者が「発送済み」にした直後は、tracking情報がまだ反映されていないことがよくあります。追跡番号だけ先に発行され、実際の荷物がまだ物流会社に引き渡されていないために起こります。特にセール期間や大型連休の前後は3〜7日程度反映されないことも珍しくありません。<strong>まずは2〜5日ほど待ってから再確認</strong>するのが現実的です。</p>
+
+    <h3>追跡番号が無効・更新されない・途中で止まる原因</h3>
+    <p>代表的な原因は、番号の入力ミス・物流会社への登録遅延・配送方法が限定追跡・輸送中の長距離移動でスキャンが入らない・通関待ち・国内引き継ぎ前の空白期間などです。飛行機に載っている間や国際交換局での処理待ちで、数日から1週間以上更新が止まることもあります。</p>
+
+    <div class="callout callout-warn">
+      10日以上まったく変化がない場合は、販売者への問い合わせや購入保護期間の確認も進めておくと安心です。
+    </div>
+
+    <h3>Standard Shippingでも確認できないときの対処方法</h3>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>注文詳細ページで番号・配送方法を再確認</strong>
+          <p>途中で配送方法が変更されていないかもチェック。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Cainiao・17TRACK・Ship24など複数サイトで検索</strong>
+          <p>AliExpress内だけでなく外部サイトに入力すると先に情報が出ることがあります。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>発送通知からの日数を確認</strong>
+          <p>反映待ちの可能性があるかを判断する。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>1週間以上無効のままなら販売者へ問い合わせ</strong>
+          <p>「valid tracking numberか」「carrier nameは何か」を確認する。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>保護期間が短くなってきたらスクリーンショットを保存</strong>
+          <p>最終的に届かない場合は保護期間内にOpen Disputeで返金対応可能。</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ==================== SECTION 5 ==================== -->
+    <h2 id="carriers">日本での配送会社別に見る追跡の見方</h2>
+
+    <p>AliExpressの荷物は日本到着後、国内の配送会社へ引き継がれて配達されます。どの会社が担当するかは配送方法や荷物サイズ・最終配送の契約によって異なります。</p>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th>配送会社</th><th>追跡できるケース</th><th>確認時のポイント</th></tr>
+        <tr><td><strong>日本郵便</strong></td><td>Standard Shippingや国際郵便系で多い</td><td>日本到着後に反映されやすい</td></tr>
+        <tr><td><strong>ヤマト運輸</strong></td><td>提携物流や国内引き継ぎ時</td><td>別の国内伝票番号が必要なことがある</td></tr>
+        <tr><td><strong>佐川急便</strong></td><td>一部物流ルートで利用</td><td>AliExpress番号と送り状番号が異なる場合あり</td></tr>
+      </table>
+    </div>
+
+    <h3>日本郵便で追跡できる荷物と確認手順</h3>
+    <p>AliExpress Standard Shippingや国際郵便系の配送では、日本到着後に日本郵便へ引き継がれるケースが多くあります。日本郵便で追跡できるようになると、引受→国際交換局から発送→到着→通関→配達局到着→持ち出し中→配達完了まで、国内の流れが細かく見えるようになります。</p>
+
+    <h3>ヤマトで追跡できるケースと見分け方</h3>
+    <p>外部追跡サイトで最終配送会社にYamato関連の表示が出るか確認しましょう。AliExpress上の番号とヤマトの伝票番号が異なることもあるため、17TRACKやCainiaoで国内配送番号が別途表示されていないかを探すのが有効です。</p>
+
+    <h3>佐川で追跡できるケースと注意点</h3>
+    <p>AliExpressでは日本郵便より頻度が低めです。AliExpress上の番号がそのまま佐川の番号ではないことが多く、番号反映まで少し時間がかかることもあります。日本到着直後に検索してもヒットしない場合は、通関後から1〜数日程度は様子を見るのが無難です。</p>
+
+
+    <!-- ==================== SECTION 6 ==================== -->
+    <h2 id="status-detail">AliExpressの配送状況ステータスを徹底解説</h2>
+
+    <p>各ステータスの意味を理解しておけば、「まだ発送準備中なのか」「日本に着いたのか」「配達直前なのか」を冷静に判断できます。単語だけを見るのではなく、注文日・発送日・前回更新日・配送方法を合わせて確認することが重要です。</p>
+
+    <h3>発送準備中・発送済み・通関中の意味</h3>
+    <p>「発送準備中」は販売者が梱包または発送ラベルだけ作成している段階。「発送済み」はAliExpress上では出荷扱いですが、実際には物流会社への引き渡し直後で、まだ大きく動いていないこともあります。「通関中」や「Import customs clearance」は税関手続き中で、数時間から数日かかることがあります。</p>
+
+    <h3>日本到着後から配達完了までの流れ</h3>
+    <p>日本到着後は空港や国際交換局で受け入れ→通関→国内配送会社へ引き継ぎ→配達拠点へ輸送という流れです。不在だった場合は持ち戻りになることもあるため、<strong>日本到着後はAliExpressだけでなく国内配送会社の追跡も併用</strong>すると受け取り漏れを防ぎやすくなります。</p>
+
+    <h3>荷物が遅いときに確認すべき配送ステータス</h3>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th>止まっている場所</th><th>考えられる原因</th></tr>
+        <tr><td>発送準備中のまま</td><td>販売者側の処理遅れ</td></tr>
+        <tr><td>carrier受領後で停止</td><td>輸出待ち</td></tr>
+        <tr><td>出国後で停止</td><td>国際輸送中（飛行機の中）</td></tr>
+        <tr><td>日本到着後で停止</td><td>通関待ち・国内引き継ぎ待ち</td></tr>
+      </table>
+    </div>
+
+    <div class="callout callout-tip">
+      セール時期・年末年始・中国の大型連休・悪天候などでも遅延しやすくなります。更新停止の場所を把握すると、待つべきか、問い合わせるべきか判断しやすくなります。
+    </div>
+
+
+    <!-- ==================== SECTION 7 ==================== -->
+    <h2 id="trouble">AliExpress追跡で困ったときの対処法</h2>
+
+    <h3>注文情報と追跡番号が一致しないときの確認方法</h3>
+    <p>複数商品を同時注文していないか確認しましょう。AliExpressでは複数注文がまとめて発送されたり、1注文が分割発送されたりすることがあります。販売者が最初に仮番号を登録し後から実際の配送番号へ切り替えることも。追跡先の配送先地域が明らかに違う場合は、早めに証拠を残して問い合わせましょう。</p>
+
+    <h3>荷物が届かない場合の問い合わせと返金申請の流れ</h3>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>購入保護期間が残っているか確認</strong>
+          <p>期間内に対応することが最優先。切れると不利になります。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>追跡履歴を確認し、販売者へ問い合わせ</strong>
+          <p>現在の状況を説明し、まず販売者に解決を求めます。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>解決しない場合はOpen Disputeを申請</strong>
+          <p>追跡画面のスクリーンショット・未着の説明・メッセージ履歴を添付する。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>配送トラブルを防ぐための注文時のチェックポイント</h3>
+    <ul>
+      <li>販売者評価・レビュー件数・写真付きレビューを確認する</li>
+      <li>配送方法は追跡しやすい<strong>AliExpress Standard Shipping</strong>を優先</li>
+      <li>住所・郵便番号・電話番号の入力ミスをなくす</li>
+      <li>注文時点で配送日数の目安と保護期間を確認しておく</li>
+    </ul>
+
+    <hr />
+
+    <!-- ==================== SECTION 8: FAQ ==================== -->
+    <h2 id="faq">初心者向けQ&A｜AliExpress追跡のよくある疑問</h2>
+
+    <p>AliExpress特有の配送の仕組みを理解すると、不安の多くは解消されます。海外通販では日本のECサイトのように即時反映・即日配送が当たり前ではないため、少し時間軸を長めに考えることが大切です。</p>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">追跡はいつからできる？</div>
+        <div class="faq-a">
+          注文直後ではなく、販売者が発送処理を行い物流会社へ情報が登録された後から確認できます。早ければ当日から、遅い場合は3〜7日かかることも。セール期間や繁忙期は反映が遅れやすいため、<strong>数日待ってから再確認</strong>するのが基本です。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Standard Shippingは安全？評価はどう見る？</div>
+        <div class="faq-a">
+          Standard Shippingは追跡しやすさと価格のバランスがよく、初心者にも選びやすい配送方法です。安全性を判断するときは配送方法だけでなく、<strong>販売者評価・レビュー件数・低評価レビューの内容</strong>も合わせて確認しましょう。「4.5以上の評価」「注文数が多い」「実物レビューが豊富」がそろっていれば比較的安心です。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">日本で追跡できない番号でも待つべきケースはある？</div>
+        <div class="faq-a">
+          はい、あります。LPから始まる番号や簡易配送の番号は日本郵便などでは検索できなくても、AliExpressやCainiaoでは動いていることがあります。重要なのは、
+          <ul>
+            <li>外部追跡サイトで輸送が進んでいる形跡があるか</li>
+            <li>購入保護期間が十分残っているか</li>
+          </ul>
+          を確認することです。長期間まったく更新がない・番号が無効のまま・配送先が違うなどの異常がある場合は販売者へ問い合わせましょう。
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">17TRACKとCainiaoはどちらを使えばいい？</div>
+        <div class="faq-a">
+          どちらも無料で使えるため、<strong>両方に入力して確認するのがベスト</strong>です。Cainiaoはアリババ系の情報が出やすく、17TRACKは多くの国の配送会社に対応しています。AliExpress内で見えない情報が外部サイトで先に反映されることもあるため、複数サイトの併用をおすすめします。
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- 末尾CTA -->
+    <div class="cta-inline">
+      <div class="cta-label">🔥 今すぐ試す</div>
+      <h3>スワイプしてAliExpressの<br>お宝商品を発見しよう</h3>
+      <p>AIが厳選したバズり商品をTikTok感覚で探せる。<br>登録不要・完全無料でご利用いただけます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">🛍 今すぐスワイプして探す</a>
+    </div>
+
+  </article>
+
+
+  <div class="related">
+    <div class="related-title">📚 関連記事</div>
+    <div class="related-grid">
+      <a href="/basics/aliexpress-what-is.html" class="related-card">
+        <div class="rc-tag">基礎知識</div>
+        <div class="rc-title">AliExpressとは？仕組み・安全性・使い方を初心者向けに解説</div>
+      </a>
+      <a href="/shipping/aliexpress-tracking-number.html" class="related-card">
+        <div class="rc-tag">配送・追跡</div>
+        <div class="rc-title">AliExpress追跡番号はどこ？確認場所と見方を完全解説</div>
+      </a>
+      <a href="/shipping/aliexpress-tracking-guide.html" class="related-card">
+        <div class="rc-tag">配送・追跡</div>
+        <div class="rc-title">AliExpress Trackingで荷物追跡｜届かない時の確認手順7選</div>
+      </a>
+      <a href="/shipping/aliexpress-nannichi.html" class="related-card">
+        <div class="rc-tag">配送ガイド</div>
+        <div class="rc-title">配送別に解説：アリエク到着目安と最短術完全ガイド</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+
+<div class="cta-sticky">
+  <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+    🛍 スワイプで商品を探す（無料）
+  </a>
+  <div class="sub">AIが厳選したバズり商品をチェック</div>
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/info/privacy.html">プライバシーポリシー</a>
+    <a href="/info/contact.html">お問い合わせ</a>
+    <a href="/info/about.html">運営者情報</a>
+    <a href="/sitemap.html">サイトマップ</a>
+  </div>
+  <div>© 2025 Product Finder｜アリエクの格安商品・お得情報研究所. All rights reserved.</div>
+  <div class="footer-aff-notice">
+    本サイトはAliExpressのアフィリエイトプログラムに参加しています。
+    記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。
+    ただし、商品の評価・内容は独自の基準で作成しています。
+  </div>
+</footer>
+
+</body>
+</html>

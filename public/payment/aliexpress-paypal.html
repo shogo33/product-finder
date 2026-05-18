@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ========== SEO ========== -->
+  <title>【2026年最新】AliExpressでPayPalは使える？日本向け最新状況 | Product Finder｜アリエクの格安商品・お得情報研究所</title>
+  <meta name="description" content="2026年時点でAliExpressでPayPalが使えるかを徹底解説。使えない原因・対処法・手数料・返金・お得な使い方まで日本ユーザー向けにまとめています。" />
+  <meta name="keywords" content="AliExpress PayPal, アリエクスプレス ペイパル, 使えない, 決済方法, 日本" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="【2026年最新】AliExpressでPayPalは使える？日本向け最新状況" />
+  <meta property="og:description" content="2026年時点でAliExpressでPayPalが使えるかを徹底解説。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/aliexpress-paypal.html" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/images/ogp.jpg" />
+  <!-- =========================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── CSS Variables ─── */
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    760px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* ─── Header ─── */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .site-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--red);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .header-cta {
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .header-cta:hover { background: var(--red-dk); }
+
+    /* ─── Hero / Article Header ─── */
+    .article-hero {
+      background: linear-gradient(135deg, #fff1f2 0%, #fff 60%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 20px 36px;
+      text-align: center;
+    }
+    .article-hero .tag {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .article-hero h1 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      line-height: 1.4;
+      max-width: 640px;
+      margin: 0 auto 16px;
+    }
+    .article-hero .meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .article-hero .meta span + span::before { content: " · "; }
+
+    /* ─── Layout ─── */
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ─── Table of Contents ─── */
+    .toc {
+      background: #fff8f8;
+      border: 1px solid #fecdcf;
+      border-left: 4px solid var(--red);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .toc-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+      color: var(--red);
+    }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin: 6px 0; }
+    .toc a { color: var(--text); text-decoration: none; font-size: 0.9rem; }
+    .toc a:hover { color: var(--red); }
+
+    /* ─── Article Body ─── */
+    .article-body {
+      padding: 24px 0 48px;
+    }
+
+    /* Headings */
+    .article-body h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-left: 4px solid var(--red);
+      padding-left: 12px;
+      margin: 40px 0 16px;
+      scroll-margin-top: 80px;
+    }
+    .article-body h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 28px 0 12px;
+      scroll-margin-top: 80px;
+    }
+
+    /* Paragraphs */
+    .article-body p { margin: 12px 0; }
+
+    /* Lists */
+    .article-body ul, .article-body ol {
+      padding-left: 24px;
+      margin: 12px 0;
+    }
+    .article-body li { margin: 6px 0; }
+
+    /* Strong / emphasis */
+    .article-body strong { color: var(--red-dk); }
+
+    /* Callout box */
+    .callout {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+    .callout::before { content: "💡 "; }
+
+    /* Image placeholder */
+    .img-wrap {
+      margin: 24px 0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #f3f4f6;
+      text-align: center;
+    }
+    .img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .img-caption {
+      font-size: 0.78rem;
+      color: var(--muted);
+      padding: 8px 12px;
+    }
+
+    /* Step cards */
+    .steps { margin: 20px 0; display: flex; flex-direction: column; gap: 12px; }
+    .step {
+      display: flex;
+      gap: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      align-items: flex-start;
+    }
+    .step-num {
+      background: var(--red);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-body { flex: 1; }
+    .step-body strong { display: block; font-size: 0.95rem; margin-bottom: 4px; color: var(--text); }
+    .step-body p { font-size: 0.88rem; color: var(--muted); margin: 0; }
+
+    /* ─── Table ─── */
+    .article-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.88rem;
+    }
+    .article-body th {
+      background: var(--red);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+    }
+    .article-body td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .article-body tr:nth-child(even) td { background: #fafaf8; }
+
+    /* ─── CTA Banner (inline) ─── */
+    .cta-inline {
+      background: linear-gradient(135deg, var(--red) 0%, #ff6b35 100%);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+      margin: 40px 0;
+      color: #fff;
+    }
+    .cta-inline .cta-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      opacity: 0.85;
+      margin-bottom: 8px;
+    }
+    .cta-inline h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .cta-inline p {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+    .cta-inline a {
+      display: inline-block;
+      background: #fff;
+      color: var(--red);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 12px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .cta-inline a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    /* ─── CTA Sticky Bottom (mobile) ─── */
+    .cta-sticky {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--red);
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      z-index: 200;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    }
+    .cta-sticky a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+    .cta-sticky .sub { font-size: 0.72rem; opacity: 0.85; margin-top: 2px; }
+    @media (max-width: 640px) { .cta-sticky { display: block; } }
+
+    /* ─── Related Articles ─── */
+    .related { margin: 48px 0 24px; }
+    .related-title { font-weight: 700; font-size: 1rem; margin-bottom: 16px; }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 480px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .related-card:hover { border-color: var(--red); box-shadow: 0 2px 12px rgba(232,37,58,0.1); }
+    .related-card .rc-tag { font-size: 0.7rem; color: var(--red); font-weight: 700; margin-bottom: 6px; }
+    .related-card .rc-title { font-size: 0.88rem; font-weight: 700; line-height: 1.4; }
+
+    /* ─── Footer ─── */
+    .site-footer {
+      background: #1a1a1a;
+      color: #9ca3af;
+      text-align: center;
+      padding: 32px 20px 60px;
+      font-size: 0.8rem;
+    }
+    .site-footer a { color: #9ca3af; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-aff-notice {
+      margin-top: 12px;
+      font-size: 0.72rem;
+      opacity: 0.6;
+      line-height: 1.6;
+    }
+
+    /* ─── Divider ─── */
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+  </style>
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/aliexpress-paypal.html" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <a href="/index.html" class="site-logo">Product Finder｜アリエクの格安商品・お得情報研究所</a>
+  <a href="https://product-finder-three-liard.vercel.app/" class="header-cta" target="_blank" rel="noopener">
+    おすすめ商品はこちら
+  </a>
+</header>
+
+
+<!-- ===== HERO ===== -->
+<div class="article-hero">
+  <div class="tag">決済・支払い</div>
+  <h1>【2026年最新】AliExpressでPayPalは使える？<br>日本向け最新状況を徹底解説</h1>
+  <div class="meta">
+    <span>2026年5月18日</span>
+    <span>読了目安：10分</span>
+    <span>監修：アリエクパパ</span>
+  </div>
+</div>
+
+
+<!-- ===== MAIN ===== -->
+<main class="container">
+
+  <!-- 目次 -->
+  <nav class="toc">
+    <div class="toc-title">📋 この記事の目次</div>
+    <ol>
+      <li><a href="#status">2026年の日本向け最新状況</a></li>
+      <li><a href="#payment-list">支払い方法一覧｜PayPal以外の決済方法</a></li>
+      <li><a href="#how-to">PayPal決済の使い方と注文手順</a></li>
+      <li><a href="#error">使えない・決済エラーの原因と対処法</a></li>
+      <li><a href="#merit">PayPalのメリット・デメリット</a></li>
+      <li><a href="#currency">手数料・円建て・通貨設定の注意点</a></li>
+      <li><a href="#refund">PayPal返金のルールと注意点</a></li>
+      <li><a href="#tips">お得に使う方法｜モッピー・クーポン活用</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <article class="article-body">
+
+    <!-- リード文 -->
+    <p>この記事は、AliExpressでPayPalが使えるのか知りたい人、決済画面にPayPalが出ず困っている人、クレジットカード以外の安全な支払い方法を比較したい人に向けた解説記事です。2026年時点の日本向け最新状況を前提に、PayPal対応の有無・使い方・使えない原因・手数料・返金、さらにお得に買うコツまでをまとめてわかりやすく紹介します。</p>
+
+
+    <!-- SECTION 1 -->
+    <h2 id="status">AliExpressでPayPalは使える？2026年の日本向け最新状況</h2>
+
+    <p>AliExpressでPayPalが使えるかどうかは、2026年の日本向け環境でも一律ではありません。以前よりPayPal対応が広がったという情報がある一方で、すべての商品・ショップ・注文画面で常に表示されるわけではないためです。配送先の国、購入する商品カテゴリ、出店者側の設定、アプリかブラウザかといった条件によって、PayPalが表示されるケースと表示されないケースがあります。</p>
+
+    <div class="callout">
+      最も確実な確認方法は、注文直前の決済画面でPayPalが表示されているかを自分で確かめること。検索情報だけで判断しないようにしましょう。
+    </div>
+
+    <h3>結論：商品・ショップ・決済画面の対応次第</h3>
+    <p>日本のユーザーがAliExpressでPayPalを使えるかどうかは、<strong>商品ごと・ショップごと・決済画面ごとの対応次第</strong>です。同じアカウントでも、ある商品ではPayPalが表示され、別の商品ではカード決済しか出ないことがあります。PCブラウザでは見えてもアプリでは表示されない、またはその逆のケースもあります。</p>
+
+    <ul>
+      <li>PayPal対応はAliExpress全体で一律ではない</li>
+      <li>商品やショップによって表示有無が変わる</li>
+      <li>日本配送設定の有無でも決済方法が変わることがある</li>
+      <li>最終的には注文画面での確認が最優先</li>
+    </ul>
+
+    <h3>「PayPalが使えなくなった」と言われる理由</h3>
+    <p>AliExpressでは時期や地域によって利用できる決済方法が変わることがあり、以前は使えた人でも別の注文では表示されないことがあります。また、ネット上には古い情報も多く、ある時点では日本向け非対応だった内容と後から一部対応が進んだ情報が混在しています。ショップ側がPayPalを有効にしていない場合や、特定カテゴリで対象外になっている場合もあり、ユーザー視点では突然使えなくなったように見えることがあります。</p>
+
+    <h3>PayPalがdefault表示にならない・選択できないケース</h3>
+    <p>初期表示ではクレジットカードが優先され、別の支払い方法を開かないとPayPalが見えない場合もあります。クーポン適用や複数ショップ同時購入など、注文条件が複雑になると利用可能な決済方法が絞られることもあります。</p>
+
+    <table>
+      <tr><th>ケース</th><th>考えられる理由</th><th>確認ポイント</th></tr>
+      <tr><td>PayPalが表示されない</td><td>ショップ未対応・商品未対応</td><td>別商品や別店舗で試す</td></tr>
+      <tr><td>default表示にならない</td><td>カード決済が初期表示</td><td>支払い方法一覧を開く</td></tr>
+      <tr><td>アプリで見えない</td><td>表示仕様の違い</td><td>PCブラウザでも確認する</td></tr>
+      <tr><td>途中で消える</td><td>配送先・通貨・注文条件の影響</td><td>日本配送設定と通貨設定を見直す</td></tr>
+    </table>
+
+
+    <!-- SECTION 2 -->
+    <h2 id="payment-list">AliExpressの支払い方法一覧｜PayPal以外の決済方法も確認</h2>
+
+    <p>AliExpressではPayPal以外にも複数の支払い方法が用意されています。支払い方法によって安全性の感じ方、為替コスト、ポイント還元、トラブル時の対応しやすさも異なります。PayPalが使えない場合に備えて、代替手段を把握しておくことは非常に重要です。</p>
+
+    <h3>クレジットカード・デビットカードの対応ブランド</h3>
+    <p>AliExpressでは、クレジットカードやデビットカードがもっとも一般的な支払い方法です。Visa、Mastercard、JCB、American Expressなどが候補になりますが、実際の対応可否はカード発行会社や海外オンライン決済の許可設定にも左右されます。</p>
+
+    <ul>
+      <li>VisaとMastercardは比較的使いやすい傾向</li>
+      <li>JCBやAMEXは注文によって通りやすさが異なることがある</li>
+      <li>デビットカードは残高と海外利用設定の確認が必要</li>
+      <li>カード会社の不正検知で一時停止される場合がある</li>
+    </ul>
+
+    <h3>PayPay・銀行・プリペイドカード・Vプリカは使える？</h3>
+    <p>PayPayは常時安定して使える標準決済として期待しないほうがよく、表示されるかどうかは時期や環境に左右されます。銀行振込はカード系やオンライン決済中心で考えるのが現実的です。プリペイドカードやVプリカは、国際ブランド付きで海外オンライン決済に対応していれば使える可能性がありますが、本人認証や加盟店制限で失敗することもあります。</p>
+
+    <table>
+      <tr><th>支払い方法</th><th>使いやすさ</th><th>注意点</th></tr>
+      <tr><td>PayPay</td><td>環境次第</td><td>常時対応とは限らない</td></tr>
+      <tr><td>銀行振込</td><td>低い</td><td>日本向け一般決済としては期待しにくい</td></tr>
+      <tr><td>プリペイドカード</td><td>条件付き</td><td>海外決済対応の有無を確認</td></tr>
+      <tr><td>Vプリカ</td><td>条件付き</td><td>加盟店制限や認証で失敗する場合あり</td></tr>
+    </table>
+
+    <h3>円建てと米ドルで支払い総額はどう変わる？</h3>
+    <p>AliExpress側の換算レート、PayPal側の換算レート、カード会社の為替レートはそれぞれ異なります。見た目では日本円表示のほうがわかりやすいものの、実際には米ドル建てで決済し、カード会社側のレートで処理したほうが安くなるケースもあります。注文確定前にどの通貨で請求されるのか、どこで換算されるのかを確認することが重要です。</p>
+
+
+    <!-- インラインCTA -->
+    <div class="cta-inline">
+      <div class="cta-label">✨ PICK UP</div>
+      <h3>AIが今話題の商品をスワイプで提案</h3>
+      <p>TikTokで見たアレ、AliExpressで見つかるかも。<br>スワイプするだけで掘り出し物に出会えます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+        無料で商品を見てみる →
+      </a>
+    </div>
+
+
+    <!-- SECTION 3 -->
+    <h2 id="how-to">AliExpressでPayPal決済を使う方法と注文手順</h2>
+
+    <p>AliExpressでPayPal決済を使うには、まずPayPal対応の商品またはショップを選び、注文確認画面で支払い方法としてPayPalを選択する流れになります。アプリとブラウザで表示が異なる場合があるため、片方で見つからないときはもう一方でも試す価値があります。</p>
+
+    <h3>PayPalを選択して注文する手順</h3>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>商品をカートに入れる</strong>
+          <p>欲しい商品をカートに追加するか、そのまま購入手続きに進みます。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>配送先を日本に設定する</strong>
+          <p>配送先住所が日本になっているか確認し、送料と配送方法を確認します。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>支払い方法でPayPalを選ぶ</strong>
+          <p>支払い方法の選択画面でPayPalが表示されていれば選択します。表示されない場合はカード決済が候補です。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>PayPalにログインして承認する</strong>
+          <p>PayPalの認証画面に移動するので、メールアドレスとパスワードでログインし、支払い内容を確認して承認します。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>AliExpressに戻って注文完了を確認する</strong>
+          <p>AliExpress側へ戻り、注文完了画面が表示されれば手続きは完了です。途中で画面を閉じると未完了になることがあります。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>決済画面でPayPalが出ないときの確認ポイント</h3>
+    <p>決済画面でPayPalが出ないときは、単純に非対応と決めつける前にいくつか確認したいポイントがあります。</p>
+
+    <ul>
+      <li>配送先国が日本になっているか確認する</li>
+      <li>アプリとPCブラウザの両方で試す</li>
+      <li>複数商品購入なら単品注文で試す</li>
+      <li>通貨設定を見直す</li>
+      <li>別ショップの商品でも比較する</li>
+    </ul>
+
+    <h3>アリエクスプレスで安全に買い物するための事前チェック</h3>
+    <p>まず見るべきなのは、店舗評価、レビュー件数、購入者レビューの内容、発送実績です。PayPalを使うことで決済面の安心感は増しますが、商品そのものの品質や発送対応までは保証されません。</p>
+
+    <ul>
+      <li>店舗評価とレビュー件数を確認する</li>
+      <li>低評価レビューの内容を読む</li>
+      <li>発送方法と追跡可否を確認する</li>
+      <li>価格が不自然に安すぎないか見る</li>
+      <li>返品・返金条件を事前に把握する</li>
+    </ul>
+
+
+    <!-- SECTION 4 -->
+    <h2 id="error">AliExpressでPayPalが使えない・決済エラーになる原因と対処法</h2>
+
+    <p>エラーが出たときに焦って何度も連続決済すると、かえって不正判定が強まる場合もあるため注意が必要です。原因を切り分けて対応すれば、再決済できるケースも少なくありません。</p>
+
+    <h3>決済エラーが起きる主な原因</h3>
+
+    <table>
+      <tr><th>原因</th><th>内容</th><th>対処法</th></tr>
+      <tr><td>ショップ非対応</td><td>最終承認時に対象外</td><td>別商品・別店舗で試す</td></tr>
+      <tr><td>PayPal制限</td><td>本人確認や利用制限</td><td>PayPalアカウント状況を確認</td></tr>
+      <tr><td>カード承認失敗</td><td>期限切れ・利用制限</td><td>別カード登録やカード会社確認</td></tr>
+      <tr><td>通信エラー</td><td>画面遷移失敗</td><td>回線変更・再ログイン</td></tr>
+      <tr><td>情報不一致</td><td>住所や名義の差異</td><td>登録情報を統一する</td></tr>
+    </table>
+
+    <h3>住所・カード・送金元情報の入力ミスで決済できないケース</h3>
+    <p>AliExpressに登録している配送先住所と、PayPalやカード会社に登録している情報が大きく異なると、不正利用防止の観点から承認が止まる場合があります。</p>
+
+    <ul>
+      <li>住所表記のズレを見直す</li>
+      <li>郵便番号と電話番号を確認する</li>
+      <li>カードの有効期限切れがないか確認する</li>
+      <li>PayPalの優先支払い方法を確認する</li>
+      <li>氏名表記をできるだけ統一する</li>
+    </ul>
+
+    <h3>海外決済を銀行やカード会社が制限している場合の対応</h3>
+    <p>近年は不正利用対策が強化されており、海外通販サイトでの初回利用や高額決済、短時間での連続決済が自動的にブロックされることがあります。カード会社のアプリや会員ページで海外利用設定を確認するか、サポート窓口に連絡して利用制限の有無を確かめましょう。</p>
+
+    <div class="callout">
+      デビットカードやプリペイドカードは特に制限が厳しいことがあるため、海外通販向けのクレジットカードを用意しておくと安定しやすいです。
+    </div>
+
+
+    <!-- SECTION 5 -->
+    <h2 id="merit">AliExpressでPayPalを使うメリット・デメリット</h2>
+
+    <p>AliExpressでPayPalを使う最大の魅力は、カード情報をAliExpress側に直接入力しなくて済む点です。一方で、PayPalを使えば必ず最安になるわけではなく、為替レートや通貨換算の設定次第ではカード直接決済より高くなることもあります。</p>
+
+    <h3>クレジットカード情報をアリエクに直接渡さない安心感</h3>
+    <p>実際の決済情報はPayPal側で管理されるため、海外サイトにカード情報を登録することへ抵抗がある人には相性がよい方法です。ただし、PayPalを使えば商品トラブルが完全になくなるわけではありません。<strong>あくまで決済情報保護の面でメリットがある</strong>と理解しておくのが適切です。</p>
+
+    <h3>手数料や為替レートで価格が高くなることはある？</h3>
+    <p>PayPalは通貨換算時のレートがカード会社より不利になることがあり、その結果、同じ商品でもカード直接決済より支払額が高くなる場合があります。安全性を優先して多少の差額を許容する人には向いていますが、最安重視なら比較が必要です。</p>
+
+    <h3>クーポン・割引との比較で見る最適な選択肢</h3>
+    <p>カード会社のポイント還元率が高い場合は、PayPal経由よりカード直接決済のほうが実質的にお得になることもあります。最適な選択肢は、<strong>価格重視か安心感重視か</strong>で変わるため、クーポン適用後の総額と決済条件を見て判断しましょう。</p>
+
+
+    <!-- SECTION 6 -->
+    <h2 id="currency">AliExpress PayPalの手数料・円建て・通貨設定の注意点</h2>
+
+    <p>同じ商品でも、AliExpress側の円表示でそのまま払う場合と、米ドル建てでPayPalまたはカード会社に換算させる場合では、最終的な請求額が変わることがあります。</p>
+
+    <h3>PayPalの通貨換算とAliExpressの円建て表示の違い</h3>
+
+    <table>
+      <tr><th>項目</th><th>意味</th><th>注意点</th></tr>
+      <tr><td>AliExpressの円表示</td><td>サイト上の参考価格</td><td>最終請求額と一致しない場合がある</td></tr>
+      <tr><td>PayPal換算</td><td>PayPalが円換算して請求</td><td>レートがやや不利なことがある</td></tr>
+      <tr><td>カード会社換算</td><td>カード会社が外貨を円換算</td><td>PayPal換算より有利な場合がある</td></tr>
+    </table>
+
+    <h3>日本円と米ドルのどちらで決済するべきか</h3>
+    <ul>
+      <li>支払額の見やすさ重視なら日本円</li>
+      <li>総額の安さ重視なら米ドル比較が有効</li>
+      <li>PayPal換算よりカード会社換算が有利な場合がある</li>
+      <li>カード会社の海外事務手数料も確認する</li>
+    </ul>
+
+    <h3>手数料を抑えるための設定と確認方法</h3>
+    <p>PayPal承認画面やアカウント設定で、外貨請求時の換算方法を確認できる場合があります。もし選択肢が表示されるなら、PayPalではなくカード会社のレートで換算する設定を選んだほうが有利になることがあります。最終的には、AliExpress表示額、PayPal承認額、カード利用明細の3つを見比べる習慣をつけると、無駄なコストに気づきやすくなります。</p>
+
+
+    <!-- SECTION 7 -->
+    <h2 id="refund">AliExpress PayPalの返金はできる？返金ルールと注意点</h2>
+
+    <p>AliExpressでPayPalを使って支払った場合でも、注文キャンセルや未着、不良品などの条件に該当すれば返金を受けられる可能性があります。返金が承認されても、PayPal残高に戻るのか登録カードへ戻るのか、反映まで何日かかるのかは状況によって異なります。</p>
+
+    <h3>注文キャンセル・未着・不良品時の返金の流れ</h3>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>発送前ならキャンセル申請を行う</strong>
+          <p>発送前であれば、注文キャンセル申請が承認されることで比較的スムーズに返金されることがあります。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>未着や不良品なら保護期間内に紛争を開始する</strong>
+          <p>購入者保護期間内に紛争を開き、証拠として写真・動画・追跡情報を提出するのが基本です。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>AliExpressの判断後に返金処理が進む</strong>
+          <p>AliExpress側が返金を認めると、支払いに使ったPayPal経由で返金処理が進みます。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>PayPal返金とAliExpressの紛争・保護制度の違い</h3>
+
+    <table>
+      <tr><th>項目</th><th>AliExpress</th><th>PayPal</th></tr>
+      <tr><td>主な役割</td><td>注文トラブルの審査・紛争対応</td><td>支払い処理・返金受け取り</td></tr>
+      <tr><td>対象</td><td>未着・不良品・説明違い</td><td>決済履歴・返金反映</td></tr>
+      <tr><td>確認場所</td><td>注文詳細・紛争画面</td><td>取引履歴・残高・カード明細</td></tr>
+    </table>
+
+    <div class="callout">
+      商品トラブルの窓口はAliExpress、返金の着金確認はPayPayというように役割を分けて理解すると混乱しにくいです。
+    </div>
+
+    <h3>返金が遅いときに確認したいポイント</h3>
+    <ul>
+      <li>AliExpressで返金承認済みか確認する</li>
+      <li>PayPal取引履歴で返金状況を見る</li>
+      <li>カード明細で相殺処理も確認する</li>
+      <li>反映まで数日から数週間かかる場合がある</li>
+      <li>不明ならサポートへ問い合わせる</li>
+    </ul>
+
+
+    <!-- SECTION 8 -->
+    <h2 id="tips">AliExpressをお得に使う方法｜モッピー経由やクーポン活用術</h2>
+
+    <p>AliExpressはもともと価格が安い商品が多いですが、買い方を工夫するとさらにお得になります。PayPalを使う場合でも、クーポンやポイント還元をうまく組み合わせれば、安心感を保ちながらお得さも確保できます。</p>
+
+    <h3>モッピー経由でポイント獲得できる条件と注意点</h3>
+    <p>モッピーなどのポイントサイトを経由してAliExpressで購入すると、購入金額に応じてポイント還元を受けられることがあります。ただし還元対象になるには条件を満たす必要があります。</p>
+
+    <ul>
+      <li>ポイントサイトのリンク経由で購入する</li>
+      <li>Cookie設定を有効にしておく</li>
+      <li>途中でアプリに切り替えない</li>
+      <li>対象外カテゴリや条件を確認する</li>
+      <li>購入記録を残しておく</li>
+    </ul>
+
+    <h3>クーポン・セール・割引を併用して安く買う方法</h3>
+    <p>大型セール時には通常時より大幅に安くなる商品も多く、急ぎでない買い物ならセール待ちが有効です。割引率が高く見えても送料が高い場合や配送が遅い場合もあるため、商品価格・送料・クーポン適用後価格・ポイント還元を合算して判断するのが賢い買い方です。</p>
+
+    <h3>PayPal利用時でもお得さを損ねないコツ</h3>
+    <p>AliExpressのセール価格とクーポン適用後の金額を確認したうえで、PayPal承認画面で請求通貨をチェックし、必要ならカード会社換算を選ぶことが有効です。また、<strong>ポイントサイト案件ではPayPal利用が対象外になっていないかも確認</strong>しておきましょう。</p>
+
+
+    <!-- インラインCTA -->
+    <div class="cta-inline">
+      <div class="cta-label">✨ PICK UP</div>
+      <h3>AIが今話題の商品をスワイプで提案</h3>
+      <p>TikTokで見たアレ、AliExpressで見つかるかも。<br>スワイプするだけで掘り出し物に出会えます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+        無料で商品を見てみる →
+      </a>
+    </div>
+
+
+    <!-- SECTION 9 -->
+    <h2 id="faq">AliExpress PayPalに関するよくある質問</h2>
+
+    <h3>アリエクでPayPalは今後もご利用できる？</h3>
+    <p>AliExpressでPayPalが今後も使えるかについては、現時点で恒久的に保証されているわけではなく、今後も商品・ショップ・地域ごとの対応差が続く可能性があります。PayPalを前提に買い物したい場合は、毎回注文前に決済画面で確認する姿勢がもっとも確実です。将来的な変更に備えて、<strong>海外通販対応のカードも併用できるようにしておく</strong>と安心です。</p>
+
+    <h3>PayPalとクレジットカードはどちらが安全？</h3>
+    <p>カード情報をAliExpressへ直接入力したくない人にはPayPalのほうが安心しやすいです。一方で、クレジットカード会社にも不正利用補償や監視体制があり、信頼できるカードを使えば過度に心配しすぎる必要はありません。情報管理の安心感を重視するならPayPal、コストや還元率を重視するならカード直接決済が有力です。</p>
+
+    <h3>日本向けの最新対応状況を確認する方法</h3>
+    <p>日本向けの最新対応状況を確認する最も確実な方法は、実際に購入したい商品をカートに入れ、日本の配送先を設定したうえで決済画面まで進むことです。</p>
+
+    <ul>
+      <li>購入したい商品で実際に決済画面まで進む</li>
+      <li>配送先を日本に設定する</li>
+      <li>アプリとPCブラウザの両方で確認する</li>
+      <li>公式ヘルプ情報も補助的に確認する</li>
+      <li>最終的には注文画面の表示を優先する</li>
+    </ul>
+
+    <hr />
+
+    <!-- 記事末尾CTA -->
+    <div class="cta-inline">
+      <div class="cta-label">🔥 今すぐ試す</div>
+      <h3>スワイプしてAliExpressの<br>お宝商品を発見しよう</h3>
+      <p>AIが厳選したバズり商品をTikTok感覚で探せる。<br>登録不要・完全無料でご利用いただけます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+        🛍 今すぐスワイプして探す
+      </a>
+    </div>
+
+  </article>
+
+
+  <!-- ===== 関連記事 ===== -->
+  <div class="related">
+    <div class="related-title">📚 関連記事</div>
+    <div class="related-grid">
+      <a href="/basics/aliexpress-what-is.html" class="related-card">
+        <div class="rc-tag">基礎知識</div>
+        <div class="rc-title">AliExpressとは？仕組み・安全性・使い方を初心者向けに解説</div>
+      </a>
+      <a href="/payment/aliexpress-paypay.html" class="related-card">
+        <div class="rc-tag">決済・支払い</div>
+        <div class="rc-title">2026年版 アリエク ペイペイ決済の全手順</div>
+      </a>
+      <a href="/payment/aliexpress-shiharai.html" class="related-card">
+        <div class="rc-tag">支払い・決済</div>
+        <div class="rc-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</div>
+      </a>
+      <a href="/payment/aliexpress-coupon.html" class="related-card">
+        <div class="rc-tag">節約・お得</div>
+        <div class="rc-title">初心者でも安心！AliExpress クーポンコード使い方【2025年最新】</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+
+<!-- ===== STICKY CTA (スマホのみ表示) ===== -->
+<div class="cta-sticky">
+  <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+    🛍 スワイプで商品を探す（無料）
+  </a>
+  <div class="sub">AIが厳選したバズり商品をチェック</div>
+</div>
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/info/privacy.html">プライバシーポリシー</a>
+    <a href="/info/contact.html">お問い合わせ</a>
+    <a href="/info/about.html">運営者情報</a>
+    <a href="/sitemap.html">サイトマップ</a>
+  </div>
+  <div>© 2026 Product Finder｜アリエクの格安商品・お得情報研究所. All rights reserved.</div>
+  <div class="footer-aff-notice">
+    本サイトはAliExpressのアフィリエイトプログラムに参加しています。
+    記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。
+    ただし、商品の評価・内容は独自の基準で作成しています。
+  </div>
+</footer>
+
+</body>
+</html>

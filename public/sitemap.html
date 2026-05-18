@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>サイトマップ | Product Finder｜アリエクの格安商品・お得情報研究所</title>
+  <meta name="description" content="Product Finder｜アリエクの格安商品・お得情報研究所のサイトマップです。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    720px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .site-header {
+      background: var(--surface);
+      border-bottom: 2px solid var(--red);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .site-logo { font-size: 1rem; font-weight: 700; color: var(--red); text-decoration: none; }
+    .header-cta { background: var(--red); color: #fff; text-decoration: none; padding: 7px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; }
+
+    main { max-width: var(--max); margin: 0 auto; padding: 40px 20px 60px; }
+
+    .breadcrumb { font-size: 0.75rem; color: var(--muted); margin-bottom: 28px; }
+    .breadcrumb a { color: var(--red); text-decoration: none; }
+
+    h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 32px; }
+
+    .section { margin-bottom: 36px; }
+    .section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .link-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+    .link-list li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.9rem;
+      transition: background 0.15s, color 0.15s;
+    }
+    .link-list li a:hover { background: #fff1f2; color: var(--red); }
+    .link-list li a::before { content: '›'; color: var(--red); font-weight: 700; font-size: 1rem; }
+
+    .site-footer { background: #1a1a1a; color: #9ca3af; text-align: center; padding: 32px 20px 60px; font-size: 0.8rem; }
+    .site-footer a { color: #9ca3af; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-aff-notice { margin-top: 12px; font-size: 0.72rem; opacity: 0.6; line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/index.html" class="site-logo">Product Finder｜アリエクの格安商品・お得情報研究所</a>
+  <a href="https://product-finder-three-liard.vercel.app/" class="header-cta" target="_blank" rel="noopener">おすすめ商品はこちら</a>
+</header>
+
+<main>
+  <div class="breadcrumb"><a href="/index.html">ホーム</a> › サイトマップ</div>
+  <h1>サイトマップ</h1>
+
+  <div class="section">
+    <div class="section-title">トップ・アプリ</div>
+    <ul class="link-list">
+      <li><a href="/index.html">トップページ（完全攻略ガイド）</a></li>
+      <li><a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">Product Finder アプリ（スワイプで商品発見）</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">AliExpressとは・基礎知識</div>
+    <ul class="link-list">
+      <li><a href="/basics/aliexpress-what-is.html">AliExpressとは？仕組み・安全性・使い方を初心者向けに解説</a></li>
+      <li><a href="/basics/aliexpress-choice.html">アリエクのChoiceとは何？安い・早い・安心の理由を徹底解説</a></li>
+      <li><a href="/basics/aliexpress-osusume.html">アリエク おすすめ商品50選【2026年最新】</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">安全性・評判</div>
+    <ul class="link-list">
+      <li><a href="/safety/aliexpress-safety.html">AliExpress 安全性は本当？詐欺・偽物対策10選</a></li>
+      <li><a href="/safety/aliexpress-ayashii.html">【2026年版】AliExpressは怪しい？届かない・偽物の実態を解説</a></li>
+      <li><a href="/safety/aliexpress-hyoban.html">【2026年版】AliExpressの評判を徹底検証｜やばい噂の真相</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">支払い方法</div>
+    <ul class="link-list">
+      <li><a href="/payment/aliexpress-payment.html">【2025年版】AliExpressの支払い方法おすすめ順位と注意点</a></li>
+      <li><a href="/payment/aliexpress-shiharai.html">AliExpressで安全な支払い方法7選【失敗しない完全対策】</a></li>
+      <li><a href="/payment/aliexpress-paypal.html">【2026年最新】AliExpressでPayPalは使える？日本向け最新状況</a></li>
+      <li><a href="/payment/aliexpress-paypay.html">2026年版 アリエク ペイペイ決済の全手順</a></li>
+      <li><a href="/payment/aliexpress-coupon.html">初心者でも安心！AliExpress クーポンコード使い方【2025年最新】</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">配送・追跡</div>
+    <ul class="link-list">
+      <li><a href="/shipping/aliexpress-nannichi.html">配送別に解説：アリエク到着目安と最短術完全ガイド</a></li>
+      <li><a href="/shipping/aliexpress-standard-shipping.html">AliExpress標準配送とは？送料・日数・追跡の仕組みを初心者向け解説</a></li>
+      <li><a href="/shipping/aliexpress-tsuiseki.html">AliExpress追跡の完全ガイド【初心者向け】追跡番号の見方・できない時の対処法</a></li>
+      <li><a href="/shipping/aliexpress-tracking-number.html">AliExpress追跡番号はどこ？確認場所と見方を完全解説</a></li>
+      <li><a href="/shipping/aliexpress-tracking-guide.html">AliExpress Trackingで荷物追跡｜届かない時の確認手順7選</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">サイト情報</div>
+    <ul class="link-list">
+      <li><a href="/info/about.html">運営者情報</a></li>
+      <li><a href="/info/privacy.html">プライバシーポリシー</a></li>
+      <li><a href="/info/contact.html">お問い合わせ</a></li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/info/privacy.html">プライバシーポリシー</a>
+    <a href="/info/contact.html">お問い合わせ</a>
+    <a href="/info/about.html">運営者情報</a>
+    <a href="/sitemap.html">サイトマップ</a>
+  </div>
+  <div>© 2026 Product Finder｜アリエクの格安商品・お得情報研究所. All rights reserved.</div>
+  <div class="footer-aff-notice">
+    本サイトはAliExpressのアフィリエイトプログラムに参加しています。
+    記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。
+    ただし、商品の評価・内容は独自の基準で作成しています。
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AliExpressとは？仕組み・安全性・使い方を初心者向けに解説【2025年最新】 | Product Finder｜アリエクの格安商品・お得情報研究所</title>
+  <meta name="description" content="AliExpressとは何か、安全なのか、支払い方法、届かない時の対処法、初心者向けおすすめジャンルまで徹底解説。アリエクスプレスを安心して使うための完全ガイド。" />
+  <meta name="keywords" content="AliExpress とは, アリエクスプレス 安全, AliExpress 使い方, アリエクスプレス 初心者" />
+  <meta property="og:title" content="AliExpressとは？仕組み・安全性・使い方を初心者向けに解説" />
+  <meta property="og:description" content="AliExpressとは何か、安全なのか、支払い方法、届かない時の対処法まで徹底解説。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/aliexpress-what-is.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    760px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+    /* Header */
+    .site-header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 20px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .site-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--red); text-decoration: none; white-space: nowrap; }
+    .header-cta { background: var(--red); color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; transition: background 0.2s; }
+    .header-cta:hover { background: var(--red-dk); }
+
+    /* Hero */
+    .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
+    .article-hero .tag { display: inline-block; background: var(--red); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
+    .article-hero h1 { font-weight: 700; font-size: clamp(1.35rem, 4vw, 1.9rem); line-height: 1.45; max-width: 640px; margin: 0 auto 16px; }
+    .article-hero .meta { font-size: 0.82rem; color: var(--muted); }
+    .article-hero .meta span + span::before { content: " · "; }
+
+    /* Layout */
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    /* TOC */
+    .toc { background: #fff8f8; border: 1px solid #fecdcf; border-left: 4px solid var(--red); border-radius: var(--radius); padding: 20px 24px; margin: 32px 0; }
+    .toc-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 12px; color: var(--red); }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin: 6px 0; }
+    .toc a { color: var(--text); text-decoration: none; font-size: 0.9rem; }
+    .toc a:hover { color: var(--red); }
+
+    /* Article body */
+    .article-body { padding: 24px 0 48px; }
+    .article-body h2 { font-size: 1.25rem; font-weight: 700; border-left: 4px solid var(--red); padding-left: 12px; margin: 44px 0 16px; scroll-margin-top: 80px; }
+    .article-body h3 { font-size: 1.02rem; font-weight: 700; margin: 30px 0 12px; padding-left: 10px; border-left: 2px solid #fecdcf; scroll-margin-top: 80px; }
+    .article-body p { margin: 12px 0; font-size: 0.95rem; }
+    .article-body ul, .article-body ol { padding-left: 24px; margin: 12px 0; }
+    .article-body li { margin: 7px 0; font-size: 0.94rem; }
+    .article-body strong { color: var(--red-dk); }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; margin: 20px 0; border-radius: var(--radius); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th { background: var(--red); color: #fff; padding: 10px 14px; text-align: left; font-weight: 700; }
+    td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #fafaf8; }
+
+    /* Callout */
+    .callout { background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--radius); padding: 14px 18px; margin: 18px 0; font-size: 0.88rem; line-height: 1.7; }
+    .callout::before { content: "💡 "; }
+    .callout-danger { background: #fff1f2; border-color: #fecdcf; }
+    .callout-danger::before { content: "⚠️ "; }
+
+    /* CTA inline */
+    .cta-inline { background: linear-gradient(135deg, var(--red) 0%, #ff6b35 100%); border-radius: var(--radius); padding: 28px 24px; text-align: center; margin: 40px 0; color: #fff; }
+    .cta-inline .cta-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 8px; }
+    .cta-inline h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+    .cta-inline p { font-size: 0.85rem; opacity: 0.9; margin-bottom: 20px; }
+    .cta-inline a { display: inline-block; background: #fff; color: var(--red); font-weight: 700; font-size: 0.9rem; padding: 12px 28px; border-radius: 999px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+    .cta-inline a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    /* FAQ */
+    .faq { margin: 8px 0 24px; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .faq-q { background: var(--surface); padding: 14px 18px; font-weight: 700; font-size: 0.92rem; display: flex; gap: 10px; align-items: flex-start; }
+    .faq-q::before { content: "Q"; background: var(--red); color: #fff; font-size: 0.78rem; font-weight: 700; padding: 2px 7px; border-radius: 4px; flex-shrink: 0; margin-top: 2px; }
+    .faq-a { background: #fafaf8; padding: 12px 18px; font-size: 0.88rem; line-height: 1.75; border-top: 1px solid var(--border); }
+
+    /* Sticky CTA */
+    .cta-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--red); color: #fff; text-align: center; padding: 14px 20px; z-index: 200; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); }
+    .cta-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.92rem; }
+    .cta-sticky .sub { font-size: 0.72rem; opacity: 0.85; margin-top: 2px; }
+    @media (max-width: 640px) { .cta-sticky { display: block; } }
+
+    /* Related */
+    .related { margin: 48px 0 24px; }
+    .related-title { font-weight: 700; font-size: 1rem; margin-bottom: 16px; }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 480px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; text-decoration: none; color: var(--text); transition: border-color 0.2s, box-shadow 0.2s; }
+    .related-card:hover { border-color: var(--red); box-shadow: 0 2px 12px rgba(232,37,58,0.1); }
+    .related-card .rc-tag { font-size: 0.7rem; color: var(--red); font-weight: 700; margin-bottom: 6px; }
+    .related-card .rc-title { font-size: 0.88rem; font-weight: 700; line-height: 1.4; }
+
+    /* Footer */
+    .site-footer { background: #1a1a1a; color: #9ca3af; text-align: center; padding: 32px 20px 60px; font-size: 0.8rem; }
+    .site-footer a { color: #9ca3af; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-aff-notice { margin-top: 12px; font-size: 0.72rem; opacity: 0.6; line-height: 1.6; }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+  </style>
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/aliexpress-what-is.html" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/index.html" class="site-logo">Product Finder｜アリエクの格安商品・お得情報研究所</a>
+  <a href="https://product-finder-three-liard.vercel.app/" class="header-cta" target="_blank" rel="noopener">おすすめ商品はこちら</a>
+</header>
+
+
+<div class="article-hero">
+  <div class="tag">基礎知識</div>
+  <h1>AliExpressとは？<br>仕組み・安全性・使い方を<br>初心者向けに完全解説【2025年】</h1>
+  <div class="meta">
+    <span>2025年5月17日</span>
+    <span>読了目安：10分</span>
+    <span>編集部</span>
+  </div>
+</div>
+
+
+<main class="container">
+
+  <nav class="toc">
+    <div class="toc-title">📋 この記事の目次</div>
+    <ol>
+      <li><a href="#what">AliExpressとは何か？基本的な仕組み</a></li>
+      <li><a href="#seller">出品者・出店者になるには</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a>
+        <ol>
+          <li><a href="#safe">安全？危険？判断基準</a></li>
+          <li><a href="#payment">安全な支払い方法</a></li>
+          <li><a href="#trouble">届かない・返金されない時の対処法</a></li>
+          <li><a href="#beginner">初心者におすすめのジャンル</a></li>
+        </ol>
+      </li>
+    </ol>
+  </nav>
+
+  <article class="article-body">
+
+    <!-- SECTION 1 -->
+    <h2 id="what">AliExpressとは何か？基本的な仕組み</h2>
+
+    <p>
+      AliExpressは、中国のアリババグループが運営する世界最大級のBtoC越境ECプラットフォームです。
+      世界200か国以上に対応しており、日本からも手軽に利用できます。
+      取り扱い商品は家電・ファッション・コスメ・インテリアなど<strong>1億点以上</strong>。
+      工場直送のため、国内ECと比べて驚くほどリーズナブルな価格で購入できるのが最大の魅力です。
+    </p>
+
+    <div class="callout">
+      AliExpressは個人輸入扱いになるため、関税がかかる場合があります。
+      一般的に16,666円以下の商品は関税がかかりません。
+    </div>
+
+    <h3>国内ECサイト・フリマアプリとの違い</h3>
+    <p>AliExpressを他のサービスと比較すると、それぞれの特徴が明確になります。</p>
+
+    <div class="table-wrap">
+      <table>
+        <tr>
+          <th>サービス</th>
+          <th>メリット</th>
+          <th>デメリット</th>
+        </tr>
+        <tr>
+          <td><strong>AliExpress</strong></td>
+          <td>圧倒的な商品数と低価格。工場直送で希少品も入手可能</td>
+          <td>配送に時間がかかる。セラーの品質にばらつきがある</td>
+        </tr>
+        <tr>
+          <td>国内ECサイト</td>
+          <td>配送が速く、カスタマーサポートが充実</td>
+          <td>価格が高め。取扱品目がAliExpressより少ない</td>
+        </tr>
+        <tr>
+          <td>フリマアプリ</td>
+          <td>少量販売しやすい</td>
+          <td>トラブル対応を個別に行う必要がある</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 中盤CTA -->
+    <div class="cta-inline">
+      <div class="cta-label">✨ PICK UP</div>
+      <h3>AIが今話題の商品をスワイプで提案</h3>
+      <p>TikTokで見たアレ、AliExpressで見つかるかも。<br>スワイプするだけで掘り出し物に出会えます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">無料で商品を見てみる →</a>
+    </div>
+
+
+    <!-- SECTION 2 -->
+    <h2 id="seller">出品者・出店者になるには</h2>
+
+    <p>
+      AliExpressは購入者として使うだけでなく、条件を満たせば出品者として販売側に回ることもあります。
+      ただし、出店には審査や必要書類、運営ルールの理解が必要で、誰でも気軽に始められるわけではありません。
+    </p>
+    <p>
+      販売側になる場合は、商品説明の正確性・発送品質・問い合わせ対応・返品対応・知的財産権の順守が重要です。
+      特に越境販売では、言語対応や配送トラブル対応も発生するため、国内販売より運用負荷が高くなることがあります。
+    </p>
+
+    <div class="callout callout-danger">
+      単に商品を並べるだけではなく、継続的なアカウント管理が必要なビジネスだと理解しておきましょう。
+    </div>
+
+    <hr />
+
+    <!-- SECTION 3: FAQ -->
+    <h2 id="faq">よくある質問（FAQ）：AliExpress とは</h2>
+
+    <p>
+      AliExpressを使う前に多くの人が抱える疑問をまとめました。
+      仕組みを理解して使えば便利なサービスですが、国内ECと同じ感覚で使うと戸惑うこともあります。
+      基本的な判断基準を押さえて、自分に合う使い方ができるか確認してみてください。
+    </p>
+
+    <h3 id="safe">AliExpressは安全？危険？簡単な判断基準</h3>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">AliExpressは安全に使えるの？</div>
+        <div class="faq-a">
+          AliExpress自体が一律に危険というわけではありません。
+          出品者ごとの差が大きいため、<strong>商品とセラーを見極められるか</strong>で安全性が変わります。<br><br>
+          <strong>安全と判断できる条件：</strong>
+          <ul>
+            <li>レビュー件数が多い（100件以上が目安）</li>
+            <li>写真付きのレビューがある</li>
+            <li>ストア評価が高い（4.5以上）</li>
+            <li>商品説明が具体的で詳しい</li>
+            <li>ブランド品ではない（コピー品のリスクが低い）</li>
+          </ul>
+          <br>
+          逆に「極端に安いブランド品」「新規店の高額商品」「説明が雑な商品」は避けるべきです。
+          初心者は、<strong>低価格でリスクの低い商品から試す</strong>のが基本です。
+        </div>
+      </div>
+    </div>
+
+    <h3 id="payment">安全な支払い方法はどれか（クレカ・PayPal・プリペイド）</h3>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">どの支払い方法が一番安全？</div>
+        <div class="faq-a">
+          安全性の観点で最も大切なのは、<strong>AliExpressの公式決済システム内で支払うこと</strong>です。
+          どの手段を使うかよりも、公式サイト・公式アプリ内で完結させることが最も基本的な安全対策になります。<br><br>
+          <ul>
+            <li><strong>クレジットカード：</strong>使いやすく、不正利用時の補償もある。最もおすすめ</li>
+            <li><strong>プリペイド型決済：</strong>利用額を管理しやすく、使いすぎを防げる</li>
+            <li><strong>PayPal：</strong>購入者保護が効く場合がある</li>
+          </ul>
+          <br>
+          <strong>⚠️ 注意：</strong>セラーから直接送られてきた外部決済リンクや個別送金の依頼には絶対に応じないでください。
+        </div>
+      </div>
+    </div>
+
+    <h3 id="trouble">届かない・返金されないときの最終対処法</h3>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">商品が届かない、返金が進まない場合はどうすればいい？</div>
+        <div class="faq-a">
+          まず<strong>保護期間内かどうか</strong>を確認し、セラーとのやり取り履歴を残したうえで<strong>ディスピュート（紛争申請）</strong>を申請します。<br><br>
+          証拠として以下を整理して提出することが重要です：
+          <ul>
+            <li>追跡情報・未着状況のスクリーンショット</li>
+            <li>商品説明との差異（テキスト・画像）</li>
+            <li>破損している場合はその写真</li>
+          </ul>
+          <br>
+          海外通販である以上、国内通販ほど強力で迅速な保護が常に受けられるとは限りません。
+          最終的にはカード会社への相談が選択肢になることもありますが、まずはプラットフォーム内の正式手順を踏むことが重要です。
+          <strong>期限管理を怠らないことが最大の防御</strong>になります。
+        </div>
+      </div>
+    </div>
+
+    <h3 id="beginner">初心者が最初に買うべきおすすめジャンルと避けるべき商品</h3>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">初心者は何から買えばいい？</div>
+        <div class="faq-a">
+          最初の目的は「AliExpressに慣れること」なので、<strong>失敗してもダメージが小さい商品</strong>から始めるのが賢明です。<br><br>
+          <strong>✅ 初心者におすすめ：</strong>
+          <ul>
+            <li>スマホケース・収納小物・文房具</li>
+            <li>ケーブル整理用品・ネイル用品</li>
+            <li>簡単なDIY雑貨</li>
+          </ul>
+          構造が単純で品質差が致命傷になりにくい商品が安心です。<br><br>
+          <strong>❌ 初心者が避けるべき商品：</strong>
+          <ul>
+            <li>ブランド品（コピー品のリスク）</li>
+            <li>バッテリー類・高額電子機器</li>
+            <li>安全性が重要な電気製品</li>
+            <li>サイズ選びが難しい衣類</li>
+          </ul>
+          <br>
+          数回使ってレビューの見方や配送感覚がわかってきたら、少しずつ購入ジャンルを広げると安心です。
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- 末尾CTA -->
+    <div class="cta-inline">
+      <div class="cta-label">🔥 今すぐ試す</div>
+      <h3>スワイプしてAliExpressの<br>お宝商品を発見しよう</h3>
+      <p>AIが厳選したバズり商品をTikTok感覚で探せる。<br>登録不要・完全無料でご利用いただけます。</p>
+      <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">🛍 今すぐスワイプして探す</a>
+    </div>
+
+  </article>
+
+
+  <div class="related">
+    <div class="related-title">📚 関連記事</div>
+    <div class="related-grid">
+      <a href="/shipping/aliexpress-tsuiseki.html" class="related-card">
+        <div class="rc-tag">配送・追跡</div>
+        <div class="rc-title">AliExpress追跡の完全ガイド【初心者向け】追跡番号の見方・できない時の対処法</div>
+      </a>
+      <a href="/basics/aliexpress-osusume.html" class="related-card">
+        <div class="rc-tag">おすすめ商品</div>
+        <div class="rc-title">アリエク おすすめ商品50選【2026年最新】思わず買いたくなる神アイテムまとめ</div>
+      </a>
+      <a href="/safety/aliexpress-safety.html" class="related-card">
+        <div class="rc-tag">安全性・詐欺対策</div>
+        <div class="rc-title">AliExpress 安全性は本当？詐欺・偽物対策10選</div>
+      </a>
+      <a href="/safety/aliexpress-hyoban.html" class="related-card">
+        <div class="rc-tag">評判・口コミ</div>
+        <div class="rc-title">【2026年版】AliExpressの評判を徹底検証｜やばい噂の真相</div>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+
+<div class="cta-sticky">
+  <a href="https://product-finder-three-liard.vercel.app/" target="_blank" rel="noopener">
+    🛍 スワイプで商品を探す（無料）
+  </a>
+  <div class="sub">AIが厳選したバズり商品をチェック</div>
+</div>
+
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/info/privacy.html">プライバシーポリシー</a>
+    <a href="/info/contact.html">お問い合わせ</a>
+    <a href="/info/about.html">運営者情報</a>
+    <a href="/sitemap.html">サイトマップ</a>
+  </div>
+  <div>© 2025 Product Finder｜アリエクの格安商品・お得情報研究所. All rights reserved.</div>
+  <div class="footer-aff-notice">
+    本サイトはAliExpressのアフィリエイトプログラムに参加しています。
+    記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。
+    ただし、商品の評価・内容は独自の基準で作成しています。
+  </div>
+</footer>
+
+</body>
+</html>
