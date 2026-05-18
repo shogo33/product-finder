@@ -7,7 +7,19 @@
 import fs from 'fs';
 import path from 'path';
 
-const products = JSON.parse(fs.readFileSync(path.resolve('data/products.json'), 'utf8'));
+const allProducts = JSON.parse(fs.readFileSync(path.resolve('data/products.json'), 'utf8'));
+
+// 非表示（削除済み・アフィリエイト対象外）を除外してから¥10,000以下に絞り込み
+const under10k = allProducts.filter(p => p.active !== false && parseFloat(p.price_jpy) <= 10000);
+
+// 人気順ソート: 販売数 × 評価率スコア
+const products = under10k.sort((a, b) => {
+  const scoreA = (Number(a.sales_count) || 0) * (parseFloat(a.evaluate_rate) || 0);
+  const scoreB = (Number(b.sales_count) || 0) * (parseFloat(b.evaluate_rate) || 0);
+  return scoreB - scoreA;
+});
+
+console.log(`全${allProducts.length}件 → ¥10,000以下: ${products.length}件`);
 
 const cards = products.map(p => {
   const desc = (p.description_ja ?? '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -62,7 +74,7 @@ const tagButtons = tags.map(t =>
   `<button class="filter-btn tag-filter" data-filter-type="tag" onclick="filterTag('${t}')">${t}</button>`
 ).join('');
 
-const productsJson = JSON.stringify(products);
+const productsJson = JSON.stringify(products); // ¥10,000以下・人気順済み
 
 const html = `<!DOCTYPE html>
 <html lang="ja">
@@ -141,7 +153,7 @@ const html = `<!DOCTYPE html>
 <body>
 <header>
   <h1>🛍 商品プレビュー（ローカル専用）</h1>
-  <span class="header-meta">全 ${products.length} 件 ／ 生成: ${new Date().toLocaleString('ja-JP')}</span>
+  <span class="header-meta">¥10,000以下 ${products.length} 件（全${allProducts.length}件中）／ 人気順 ／ 生成: ${new Date().toLocaleString('ja-JP')}</span>
   <div class="stats">
     <span class="stat stat-approved" id="stat-approved">採用 0件</span>
     <span class="stat" id="stat-undecided">未決定 ${products.length}件</span>
