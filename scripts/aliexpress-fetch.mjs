@@ -5,12 +5,14 @@
  */
 
 import crypto from 'crypto';
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ override: true });
 
-const APP_KEY    = process.env.ALIEXPRESS_APP_KEY;
-const APP_SECRET = process.env.ALIEXPRESS_APP_SECRET;
-const CLAUDE_KEY = process.env.ANTHROPIC_API_KEY;
-const API_URL    = 'https://api-sg.aliexpress.com/sync';
+const APP_KEY      = process.env.ALIEXPRESS_APP_KEY;
+const APP_SECRET   = process.env.ALIEXPRESS_APP_SECRET;
+const TRACKING_ID  = process.env.ALIEXPRESS_TRACKING_ID;
+const CLAUDE_KEY   = process.env.ANTHROPIC_API_KEY;
+const API_URL      = 'https://api-sg.aliexpress.com/sync';
 
 // ── AliExpress API署名生成 ──────────────────────────────
 function sign(params) {
@@ -18,28 +20,68 @@ function sign(params) {
   return crypto.createHmac('sha256', APP_SECRET).update(sorted).digest('hex').toUpperCase();
 }
 
-// ── 商品詳細取得 ────────────────────────────────────────
-async function getProductDetail(productIds) {
+// ── APIリクエスト共通処理 ───────────────────────────────
+async function callApi(method, extraParams) {
   const params = {
     app_key:     APP_KEY,
-    method:      'aliexpress.affiliate.product.detail.get',
+    method,
     sign_method: 'sha256',
     timestamp:   String(Date.now()),
-    product_ids: Array.isArray(productIds) ? productIds.join(',') : productIds,
-    fields:      'product_id,product_title,sale_price,original_price,product_main_image_url,product_detail_url,commission_rate,evaluate_rate,lastest_volume',
-    tracking_id: 'ariexfinder',
+    ...extraParams,
   };
   params.sign = sign(params);
 
-  const query = new URLSearchParams(params).toString();
-  const res = await fetch(`${API_URL}?${query}`);
+  const res = await fetch(API_URL, {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body:    new URLSearchParams(params).toString(),
+  });
   const json = await res.json();
+  if (process.env.DEBUG) console.log('API Response:', JSON.stringify(json, null, 2));
+  return json;
+}
 
-  const result = json?.aliexpress_affiliate_product_detail_get_response?.resp_result;
-  if (result?.resp_code !== 200) {
-    throw new Error(`API Error: ${result?.resp_msg ?? JSON.stringify(json)}`);
+// ── 商品詳細取得（IDで検索して一致を返す） ──────────────
+async function getProductDetail(productId) {
+  // product.queryにproduct_idsを渡すと絞れる場合あり、まず試す
+  const json = await callApi('aliexpress.affiliate.product.query', {
+    product_ids: productId,
+    fields: 'product_id,product_title,sale_price,original_price,product_main_image_url,product_detail_url,commission_rate,evaluate_rate,lastest_volume',
+    page_size: '5',
+  });
+
+  const result = json?.aliexpress_affiliate_product_query_response?.resp_result;
+  if (!result || result.resp_code !== 200) {
+    throw new Error(`API Error: ${JSON.stringify(json)}`);
   }
-  return result.result.products.product;
+
+  const products = result.result.products.product;
+
+  // IDが一致する商品を優先、なければ先頭を返す
+  const match = products.find(p => String(p.product_id) === String(productId));
+  return match ?? products[0];
+}
+
+// ── アフィリエイトリンク生成 ─────────────────────────────
+async function generateAffLink(productId) {
+  const productUrl = `https://www.aliexpress.com/item/${productId}.html`;
+  const trackingId = TRACKING_ID && TRACKING_ID !== 'your_tracking_id_here' ? TRACKING_ID : undefined;
+
+  if (!trackingId) {
+    console.log('⚠️  ALIEXPRESS_TRACKING_IDが未設定のためアフィリエイトリンクは通常URLになります');
+    return productUrl;
+  }
+
+  const json = await callApi('aliexpress.affiliate.link.generate', {
+    source_values: productUrl,
+    promotion_link_type: '0',
+    tracking_id: trackingId,
+  });
+
+  if (process.env.DEBUG) console.log('Link Response:', JSON.stringify(json, null, 2));
+
+  const links = json?.aliexpress_affiliate_link_generate_response?.resp_result?.result?.promotion_links?.promotion_link;
+  return links?.[0]?.promotion_link ?? productUrl;
 }
 
 // ── Claudeで日本語紹介文生成 ─────────────────────────────
@@ -86,17 +128,21 @@ async function main() {
   }
 
   console.log(`\n🔍 商品情報を取得中... (${productIds.join(', ')})\n`);
-  const products = await getProductDetail(productIds);
 
-  for (const product of products) {
+  for (const productId of productIds) {
+    const [product, affLink] = await Promise.all([
+      getProductDetail(productId),
+      generateAffLink(productId),
+    ]);
+
     console.log('═'.repeat(60));
-    console.log(`📦 商品ID:    ${product.product_id}`);
-    console.log(`📝 タイトル:  ${product.product_title}`);
-    console.log(`💴 価格:      ${product.sale_price}（元値 ${product.original_price}）`);
-    console.log(`🖼  画像URL:   ${product.product_main_image_url}`);
-    console.log(`🔗 アフィリンク: ${product.product_detail_url}`);
-    console.log(`⭐ 評価:      ${product.evaluate_rate}`);
-    console.log(`📊 販売数:    ${product.lastest_volume}件`);
+    console.log(`📦 商品ID:      ${product.product_id}`);
+    console.log(`📝 タイトル:    ${product.product_title}`);
+    console.log(`💴 価格:        ${product.sale_price}（元値 ${product.original_price}）`);
+    console.log(`🖼  画像URL:     ${product.product_main_image_url}`);
+    console.log(`🔗 アフィリンク: ${affLink}`);
+    console.log(`⭐ 評価:        ${product.evaluate_rate}`);
+    console.log(`📊 販売数:      ${product.lastest_volume}件`);
     console.log();
 
     if (CLAUDE_KEY && CLAUDE_KEY !== 'your_anthropic_api_key_here') {
@@ -108,7 +154,7 @@ async function main() {
     }
     console.log();
   }
-}
+}   // ← for ループ終わり
 
 main().catch(err => {
   console.error('❌ エラー:', err.message);
