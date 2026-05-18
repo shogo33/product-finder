@@ -509,25 +509,54 @@ export default function App() {
           onClick={() => setShowInstallModal(false)}
         >
           <motion.div
-            className="bg-white rounded-3xl p-6 max-w-sm w-full shadow-2xl"
+            className="bg-white rounded-3xl p-6 max-w-2xl shadow-2xl overflow-hidden"
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+            <div className="text-center mb-5">
+              <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
                 <Smartphone className="w-8 h-8 text-white" />
               </div>
-              <h2 className="text-xl font-black text-stone-800 mb-1">Product Finder</h2>
-              <p className="text-xs text-stone-500 mb-5">ホーム画面に追加してアプリとして使えます</p>
-              <button
-                onClick={() => setShowInstallModal(false)}
-                className="w-full py-3 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition-all active:scale-95 text-sm"
-              >
-                閉じる
-              </button>
+              <h2 className="text-xl font-black text-stone-800">ホーム画面に追加</h2>
+              <p className="text-xs text-stone-500 mt-1">アプリのように使えるようになります</p>
             </div>
+
+            <div className="space-y-4">
+              {/* iOS手順 */}
+              <div className="border border-stone-200 rounded-xl p-4">
+                <h3 className="font-bold text-sm text-stone-800 mb-2 flex items-center gap-1.5">
+                  <span className="text-lg">📱</span>
+                  <span>iPhone (Safari)</span>
+                </h3>
+                <ol className="space-y-1.5 text-xs text-stone-600">
+                  <li className="flex gap-2"><span className="font-bold text-red-600">1.</span> 下部の「共有」ボタンをタップ</li>
+                  <li className="flex gap-2"><span className="font-bold text-red-600">2.</span> 「ホーム画面に追加」を選択</li>
+                  <li className="flex gap-2"><span className="font-bold text-red-600">3.</span> 右上の「追加」をタップ</li>
+                </ol>
+              </div>
+
+              {/* Android手順 */}
+              <div className="border border-stone-200 rounded-xl p-4">
+                <h3 className="font-bold text-sm text-stone-800 mb-2 flex items-center gap-1.5">
+                  <span className="text-lg">🤖</span>
+                  <span>Android (Chrome)</span>
+                </h3>
+                <ol className="space-y-1.5 text-xs text-stone-600">
+                  <li className="flex gap-2"><span className="font-bold text-red-600">1.</span> 右上の「︙」メニューをタップ</li>
+                  <li className="flex gap-2"><span className="font-bold text-red-600">2.</span> 「ホーム画面に追加」を選択</li>
+                  <li className="flex gap-2"><span className="font-bold text-red-600">3.</span> 「追加」をタップ</li>
+                </ol>
+              </div>
+            </div>
+
+            <button
+              onClick={() => setShowInstallModal(false)}
+              className="mt-5 w-full py-3 bg-gradient-to-r from-amber-400 to-orange-500 text-white font-bold rounded-xl hover:shadow-lg transition-all active:scale-95 text-sm"
+            >
+              閉じる
+            </button>
           </motion.div>
         </motion.div>
       )}
