@@ -1,18 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Background -->
-  <rect width="512" height="512" rx="112" fill="#e8253a"/>
-  <!-- Subtle gradient overlay -->
-  <rect width="512" height="512" rx="112" fill="url(#g)"/>
   <defs>
-    <radialGradient id="g" cx="30%" cy="20%" r="70%">
-      <stop offset="0%" stop-color="#fff" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#000" stop-opacity="0.1"/>
-    </radialGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
   </defs>
-  <!-- Shopping bag -->
-  <path d="M176 210 C176 210 168 210 164 218 L140 370 C137 382 146 392 158 392 L354 392 C366 392 375 382 372 370 L348 218 C344 210 336 210 336 210 Z" fill="none" stroke="#fff" stroke-width="20" stroke-linejoin="round"/>
-  <!-- Bag handle -->
-  <path d="M206 210 C206 170 222 148 256 148 C290 148 306 170 306 210" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
-  <!-- Heart -->
-  <path d="M256 308 C256 308 220 284 220 262 C220 248 230 240 242 242 C249 243 256 250 256 250 C256 250 263 243 270 242 C282 240 292 248 292 262 C292 284 256 308 256 308 Z" fill="#fff"/>
+  <!-- Background -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+  <!-- Package icon (lucide), scaled to center ~220x220 at (146,146) -->
+  <g transform="translate(146,146) scale(9.17)" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M16.5 9.4 7.55 4.24"/>
+    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 2 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+    <polyline points="3.29 7 12 12 20.71 7"/>
+    <line x1="12" x2="12" y1="22" y2="12"/>
+  </g>
 </svg>
