@@ -940,7 +940,7 @@ export default function App() {
 
           {/* 記事リンク */}
           <a
-            href="/index.html"
+            href="/home.html"
             className="mt-2 relative z-10 flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-white/70 backdrop-blur hover:bg-white shadow-sm transition-all text-[9px] font-bold text-red-600 border border-red-100"
           >
             <span>📰</span>

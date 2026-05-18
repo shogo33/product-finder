@@ -18,7 +18,7 @@ export default defineConfig({
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
           const url = req.url?.split('?')[0]
-          if (url && url.endsWith('.html') && url !== '/' && url !== '/index.html') {
+          if (url && url.endsWith('.html') && url !== '/') {
             const filePath = path.join(__dirname, 'public', url)
             if (fs.existsSync(filePath)) {
               res.setHeader('Content-Type', 'text/html; charset=utf-8')
