@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#f0fdf4"/>
+  <rect x="55" y="28" width="290" height="168" rx="12" fill="#e8f5e9"/>
+  <line x1="55" y1="82" x2="345" y2="82" stroke="#c8e6c9" stroke-width="1"/>
+  <line x1="55" y1="136" x2="345" y2="136" stroke="#c8e6c9" stroke-width="1"/>
+  <line x1="118" y1="28" x2="118" y2="196" stroke="#c8e6c9" stroke-width="1"/>
+  <line x1="200" y1="28" x2="200" y2="196" stroke="#c8e6c9" stroke-width="1"/>
+  <line x1="282" y1="28" x2="282" y2="196" stroke="#c8e6c9" stroke-width="1"/>
+  <path d="M95 168 Q138 130 160 105 Q200 65 282 58" fill="none" stroke="#e8253a" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <circle cx="95" cy="168" r="13" fill="#e8253a"/>
+  <circle cx="95" cy="168" r="6" fill="white"/>
+  <circle cx="178" cy="97" r="11" fill="#f59e0b"/>
+  <circle cx="178" cy="97" r="5" fill="white"/>
+  <circle cx="282" cy="58" r="13" fill="#22c55e"/>
+  <circle cx="282" cy="58" r="6" fill="white"/>
+  <rect x="48" y="174" width="58" height="16" rx="8" fill="#e8253a"/>
+  <text x="77" y="185" font-family="sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">発送済</text>
+  <rect x="152" y="104" width="52" height="16" rx="8" fill="#f59e0b"/>
+  <text x="178" y="115" font-family="sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">輸送中</text>
+  <rect x="262" y="40" width="40" height="16" rx="8" fill="#22c55e"/>
+  <text x="282" y="51" font-family="sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">到着</text>
+  <text x="200" y="210" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">荷物追跡ガイド</text>
+</svg>

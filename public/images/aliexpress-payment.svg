@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#fff8f8"/>
+  <rect x="75" y="22" width="250" height="178" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="90" y="38" width="52" height="30" rx="6" fill="#1a1f71"/>
+  <text x="116" y="58" font-family="sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">VISA</text>
+  <text x="162" y="58" font-family="sans-serif" font-size="11" fill="#1a1a1a">クレジットカード</text>
+  <circle cx="300" cy="53" r="9" fill="#22c55e"/>
+  <text x="300" y="57" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+  <line x1="90" y1="80" x2="310" y2="80" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="90" y="90" width="52" height="30" rx="6" fill="#003087"/>
+  <text x="116" y="110" font-family="sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">PayPal</text>
+  <text x="162" y="108" font-family="sans-serif" font-size="11" fill="#1a1a1a">ペイパル</text>
+  <circle cx="300" cy="105" r="9" fill="#f59e0b"/>
+  <text x="300" y="110" font-family="sans-serif" font-size="11" fill="white" text-anchor="middle">△</text>
+  <line x1="90" y1="132" x2="310" y2="132" stroke="#e5e7eb" stroke-width="1"/>
+  <rect x="90" y="142" width="52" height="30" rx="6" fill="#e8253a"/>
+  <text x="116" y="162" font-family="sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">PayPay</text>
+  <text x="162" y="160" font-family="sans-serif" font-size="11" fill="#1a1a1a">ペイペイ</text>
+  <circle cx="300" cy="157" r="9" fill="#22c55e"/>
+  <text x="300" y="161" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+  <text x="200" y="210" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">支払い方法 比較ガイド</text>
+</svg>

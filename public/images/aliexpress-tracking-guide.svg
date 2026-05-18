@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#fff8f8"/>
+  <rect x="50" y="38" width="300" height="148" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="200" y="62" font-family="sans-serif" font-size="11" font-weight="700" fill="#1a1a1a" text-anchor="middle">配送ステータス</text>
+  <rect x="75" y="102" width="250" height="6" rx="3" fill="#e5e7eb"/>
+  <rect x="75" y="102" width="187" height="6" rx="3" fill="#e8253a"/>
+  <circle cx="75" cy="105" r="14" fill="#e8253a"/>
+  <text x="75" y="110" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+  <circle cx="137" cy="105" r="14" fill="#e8253a"/>
+  <text x="137" y="110" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+  <circle cx="200" cy="105" r="14" fill="#e8253a"/>
+  <text x="200" y="110" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+  <circle cx="263" cy="105" r="14" fill="#fbbf24"/>
+  <text x="263" y="110" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">→</text>
+  <circle cx="325" cy="105" r="14" fill="#e5e7eb"/>
+  <text x="325" y="110" font-family="sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle">○</text>
+  <text x="75" y="80" font-family="sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">注文確認</text>
+  <text x="137" y="80" font-family="sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">発送</text>
+  <text x="200" y="80" font-family="sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">輸送中</text>
+  <text x="263" y="80" font-family="sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">通関</text>
+  <text x="325" y="80" font-family="sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">到着</text>
+  <rect x="75" y="128" width="250" height="42" rx="6" fill="#f9fafb"/>
+  <text x="92" y="146" font-family="sans-serif" font-size="9" fill="#374151">現在地：上海 → 東京 配送センター</text>
+  <text x="92" y="161" font-family="sans-serif" font-size="9" fill="#9ca3af">更新: 2026/05/17 14:32</text>
+  <text x="200" y="205" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Tracking 完全ガイド</text>
+</svg>
