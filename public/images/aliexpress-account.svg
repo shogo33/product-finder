@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <!-- Background -->
+  <rect width="400" height="220" fill="#fff1f2"/>
+  <!-- Card -->
+  <rect x="60" y="28" width="280" height="164" rx="14" fill="#ffffff" filter="url(#sh)"/>
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#e8253a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <!-- Header bar -->
+  <rect x="60" y="28" width="280" height="36" rx="14" fill="#e8253a"/>
+  <rect x="60" y="50" width="280" height="14" fill="#e8253a"/>
+  <text x="200" y="51" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#fff">アカウント開設・初回注文ガイド</text>
+  <!-- Avatar circle -->
+  <circle cx="200" cy="103" r="24" fill="#fff1f2" stroke="#e8253a" stroke-width="2.5"/>
+  <circle cx="200" cy="96" r="10" fill="#e8253a"/>
+  <ellipse cx="200" cy="118" rx="16" ry="10" fill="#e8253a"/>
+  <!-- Step badges -->
+  <rect x="76" y="142" width="56" height="22" rx="11" fill="#e8253a"/>
+  <text x="104" y="157" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff">登録</text>
+  <text x="141" y="157" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8253a">→</text>
+  <rect x="155" y="142" width="56" height="22" rx="11" fill="#e8253a"/>
+  <text x="183" y="157" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff">住所設定</text>
+  <text x="220" y="157" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e8253a">→</text>
+  <rect x="234" y="142" width="56" height="22" rx="11" fill="#e8253a"/>
+  <text x="262" y="157" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff">初注文</text>
+  <!-- Badge NEW -->
+  <rect x="292" y="32" width="38" height="18" rx="9" fill="#fff" opacity="0.9"/>
+  <text x="311" y="44" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#e8253a">NEW</text>
+  <!-- Tagline -->
+  <text x="200" y="183" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6b7280">2026年最新 · 完全ステップガイド</text>
+</svg>
