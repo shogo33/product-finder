@@ -35,6 +35,23 @@ async function callApi(method, extra) {
   return res.json();
 }
 
+async function generateShortTitle(title) {
+  const client = new Anthropic({ apiKey: CLAUDE_KEY });
+  const msg = await client.messages.create({
+    model: 'claude-haiku-4-5-20251001',
+    max_tokens: 60,
+    messages: [{
+      role: 'user',
+      content: `以下のAliExpress商品名を、日本語で20文字以内の簡潔な商品名に変換してください。
+ブランド名・製品番号があれば残し、スペック詳細・色・個数などは省略してください。
+商品名だけを出力し、説明や記号は一切不要です。
+
+商品名: ${title}`
+    }]
+  });
+  return msg.content[0].text.trim();
+}
+
 async function generateDescription(product) {
   const client = new Anthropic({ apiKey: CLAUDE_KEY });
   const msg = await client.messages.create({
@@ -106,14 +123,16 @@ for (const p of raw) {
     keyword,
     tag:                 tag ?? null,
     fetched_at:          new Date().toISOString(),
+    title_short:         null,
     description_ja:      null,
   };
 
-  // Claude紹介文生成
+  // Claude 短タイトル＋紹介文生成
   if (CLAUDE_KEY) {
-    process.stdout.write(`✍️  紹介文生成中: ${p.product_title.slice(0, 40)}...`);
+    process.stdout.write(`✍️  生成中: ${p.product_title.slice(0, 35)}...`);
+    product.title_short    = await generateShortTitle(p.product_title);
     product.description_ja = await generateDescription(product);
-    console.log(' ✓');
+    console.log(` ✓ [${product.title_short}]`);
   }
 
   existing.push(product);

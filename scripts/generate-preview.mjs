@@ -43,7 +43,8 @@ const cards = products.map(p => {
         ${p.tag ? `<span class="tag tag-main">${p.tag}</span>` : ''}
         <span class="tag tag-kw">${p.keyword}</span>
       </div>
-      <h2 class="title">${p.title}</h2>
+      <h2 class="title">${p.title_short ?? p.title}</h2>
+      <p class="title-orig">${p.title}</p>
       <div class="price">
         <span class="price-now">¥${Number(p.price_jpy).toLocaleString()}</span>
         <span class="price-orig">元値 ¥${Number(p.original_price_jpy).toLocaleString()}</span>
@@ -126,7 +127,8 @@ const html = `<!DOCTYPE html>
   .tag { font-size: 0.72rem; padding: 2px 10px; border-radius: 999px; font-weight: 700; }
   .tag-main { background: #fee2e2; color: #e8253a; }
   .tag-kw { background: #f3f4f6; color: #6b7280; }
-  .title { font-size: 0.88rem; font-weight: 700; line-height: 1.5; margin-bottom: 10px; }
+  .title { font-size: 0.95rem; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
+  .title-orig { font-size: 0.72rem; color: #9ca3af; line-height: 1.4; margin-bottom: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px; }
   .price-now { font-size: 1.3rem; font-weight: 900; color: #e8253a; }
   .price-orig { font-size: 0.78rem; color: #9ca3af; text-decoration: line-through; }
