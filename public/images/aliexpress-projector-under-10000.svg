@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220">
+  <!-- Background -->
+  <rect width="400" height="220" fill="#fff1f2"/>
+  <!-- Card -->
+  <rect x="60" y="24" width="280" height="172" rx="14" fill="#ffffff" filter="url(#sh)"/>
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#e8253a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <!-- Header bar -->
+  <rect x="60" y="24" width="280" height="36" rx="14" fill="#e8253a"/>
+  <rect x="60" y="46" width="280" height="14" fill="#e8253a"/>
+  <text x="200" y="47" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff">1万円以下プロジェクター3選</text>
+  <!-- Projector body -->
+  <rect x="120" y="76" width="80" height="50" rx="8" fill="#2a2a2a"/>
+  <!-- Lens -->
+  <circle cx="145" cy="101" r="18" fill="#1a1a1a" stroke="#444" stroke-width="1.5"/>
+  <circle cx="145" cy="101" r="12" fill="#0a0a3a"/>
+  <circle cx="145" cy="101" r="6" fill="#4466ff" opacity="0.85"/>
+  <!-- Beam triangle -->
+  <polygon points="200,85 200,117 280,68 280,134" fill="#fffbe6" opacity="0.55"/>
+  <polygon points="200,90 200,112 275,72 275,130" fill="#fef08a" opacity="0.4"/>
+  <!-- Screen line -->
+  <rect x="278" y="64" width="4" height="72" rx="2" fill="#e8253a" opacity="0.7"/>
+  <!-- Stand -->
+  <rect x="148" y="126" width="34" height="5" rx="2.5" fill="#444"/>
+  <rect x="155" y="131" width="20" height="8" rx="2" fill="#555"/>
+  <!-- Badge -->
+  <rect x="292" y="28" width="38" height="18" rx="9" fill="#fff" opacity="0.9"/>
+  <text x="311" y="40" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#e8253a">比較</text>
+  <!-- Price badge -->
+  <rect x="86" y="152" width="68" height="22" rx="11" fill="#e8253a"/>
+  <text x="120" y="167" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#fff">〜9,000円</text>
+  <!-- Model badges -->
+  <rect x="164" y="152" width="62" height="22" rx="11" fill="#2a2a2a"/>
+  <text x="195" y="167" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">HY300 Pro</text>
+  <rect x="236" y="152" width="88" height="22" rx="11" fill="#2a2a2a"/>
+  <text x="280" y="167" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="700" fill="#fff">HY320 / Wimius</text>
+  <!-- Tagline -->
+  <text x="200" y="194" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6b7280">2026年最新 · 結局これを買えばいい</text>
+</svg>
