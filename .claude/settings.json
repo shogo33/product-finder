@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"C:/Users/USER/Downloads/aliexpress-projector-under-10000.html\" \"c:/Users/USER/product-finder/public/basics/aliexpress-projector-under-10000.html\")",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" status)",
+      "PowerShell($r = Invoke-WebRequest \"https://product-finder-three-liard.vercel.app/home.html\" -UseBasicParsing -ErrorAction SilentlyContinue; $r.Content | Select-String \"recommend|おすすめ商品\" | Select-Object -First 5)",
+      "PowerShell($r = Invoke-RestMethod \"https://api.github.com/repos/shogo33/product-finder/deployments?per_page=5\" -Headers @{Accept=\"application/vnd.github.v3+json\"}; $r | Select-Object id, @{N=\"sha\";E={$_.sha.Substring\\(0,7\\)}}, environment, @{N=\"created\";E={$_.created_at}})",
+      "PowerShell($r = Invoke-RestMethod \"https://api.github.com/repos/shogo33/product-finder/commits/main/check-runs\" -Headers @{Accept=\"application/vnd.github.v3+json\"}; $r.check_runs | Select-Object name, status, conclusion, @{N=\"sha\";E={$_.head_sha.Substring\\(0,7\\)}} | Format-Table)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\USER\\Downloads"
+    ]
+  }
+}

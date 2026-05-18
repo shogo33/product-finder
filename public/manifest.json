@@ -1,6 +1,6 @@
 {
-  "name": "Product Finder",
-  "short_name": "Product Finder",
+  "name": "アリエクFinder",
+  "short_name": "アリエクFinder",
   "description": "AliExpressのおすすめ商品をスワイプで発見",
   "start_url": "/",
   "display": "standalone",

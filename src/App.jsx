@@ -452,8 +452,7 @@ export default function App() {
               <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Package className="w-8 h-8 text-white" />
               </div>
-              <h2 className="text-3xl font-black text-stone-800">Product Finder</h2>
-              <p className="text-sm text-stone-500 mt-1">AliExpressのおすすめをスワイプで発見</p>
+              <h2 className="text-3xl font-black text-stone-800">アリエクFinder</h2>
             </div>
 
             <div className="space-y-4 mb-8">
@@ -916,7 +915,7 @@ export default function App() {
           <div className="flex items-center justify-between relative z-10">
             <div>
               <h1 className="text-sm font-black tracking-tight bg-gradient-to-r from-red-600 to-rose-500 bg-clip-text text-transparent">
-                AliExpressのおすすめをスワイプで発見
+                アリエクFinder
               </h1>
             </div>
             <div className="flex gap-1.5 items-center">

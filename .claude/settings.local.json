@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "PowerShell(head -30)",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" log --oneline -5)",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" remote -v)",
+      "Bash(curl -s https://api.github.com/repos/shogo33/product-finder/commits/main)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['sha'][:7], d['commit']['message'].splitlines\\(\\)[0]\\)\")",
+      "PowerShell($r = Invoke-RestMethod \"https://api.github.com/repos/shogo33/product-finder/commits/main\"; \"$\\($r.sha.Substring\\(0,7\\)\\) $\\($r.commit.message.Split\\([char]10\\)[0]\\)\")",
+      "Read(//c/Users/USER/product-finder/**)",
+      "Bash(npm run *)"
+    ]
+  }
+}
