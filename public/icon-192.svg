@@ -1,12 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ef4444"/>
-      <stop offset="100%" stop-color="#dc2626"/>
-    </linearGradient>
-  </defs>
   <!-- Background -->
-  <rect width="192" height="192" rx="42" fill="url(#bg)"/>
+  <rect width="192" height="192" rx="42" fill="#e8253a"/>
   <!-- Package icon (lucide), scaled to center ~82x82 at (55,55) -->
   <g transform="translate(55,55) scale(3.42)" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <path d="M16.5 9.4 7.55 4.24"/>
