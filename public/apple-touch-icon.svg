@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <!-- Background (iOS clips to circle/rounded rect automatically) -->
+  <rect width="180" height="180" fill="#e8253a"/>
+  <rect width="180" height="180" fill="url(#g)"/>
+  <defs>
+    <radialGradient id="g" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+  <!-- Shopping bag -->
+  <path d="M62 74 C62 74 59 74 57 77 L49 130 C48 134 51 138 55 138 L125 138 C129 138 132 134 131 130 L123 77 C121 74 118 74 118 74 Z" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>
+  <!-- Bag handle -->
+  <path d="M72 74 C72 60 78 51 90 51 C102 51 108 60 108 74" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <!-- Heart -->
+  <path d="M90 109 C90 109 76 100 76 91 C76 86 80 83 85 84 C87.5 84.5 90 87 90 87 C90 87 92.5 84.5 95 84 C100 83 104 86 104 91 C104 100 90 109 90 109 Z" fill="#fff"/>
+</svg>
