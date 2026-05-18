@@ -1,0 +1,40 @@
+name: 価格自動更新
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # 毎日 日本時間 10:00 (UTC 01:00)
+  workflow_dispatch:        # 手動実行ボタンも有効
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 依存パッケージインストール
+        run: npm ci
+
+      - name: 価格更新スクリプト実行
+        env:
+          ALIEXPRESS_APP_KEY: ${{ secrets.ALIEXPRESS_APP_KEY }}
+          ALIEXPRESS_APP_SECRET: ${{ secrets.ALIEXPRESS_APP_SECRET }}
+          ALIEXPRESS_TRACKING_ID: ${{ secrets.ALIEXPRESS_TRACKING_ID }}
+        run: node scripts/refresh-prices.mjs
+
+      - name: 変更があればコミット & プッシュ
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/products.json
+          if git diff --cached --quiet; then
+            echo "価格に変更なし。コミットをスキップします。"
+          else
+            git commit -m "chore: 価格自動更新 $(date '+%Y-%m-%d')"
+            git push
+          fi
