@@ -72,7 +72,7 @@ const json = await callApi('aliexpress.affiliate.product.query', {
   target_currency: 'JPY',
   target_language: 'JA',
   page_size: String(count),
-  fields: 'product_id,product_title,target_sale_price,original_price,product_main_image_url,product_detail_url,evaluate_rate,lastest_volume',
+  fields: 'product_id,product_title,target_sale_price,original_price,product_main_image_url,product_detail_url,evaluate_rate,lastest_volume,commission_rate',
 });
 
 const raw = json?.aliexpress_affiliate_product_query_response?.resp_result?.result?.products?.product ?? [];
@@ -102,6 +102,7 @@ for (const p of raw) {
     affiliate_link:      p.product_detail_url,
     evaluate_rate:       p.evaluate_rate,
     sales_count:         p.lastest_volume,
+    commission_rate:     p.commission_rate ?? null,
     keyword,
     tag:                 tag ?? null,
     fetched_at:          new Date().toISOString(),
