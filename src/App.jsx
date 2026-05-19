@@ -203,7 +203,6 @@ function shuffle(arr) {
 
 export default function App() {
   const [allProducts, setAllProducts] = useState(FALLBACK_PRODUCTS);
-  const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(10000);
   const [deck, setDeck] = useState([]);
   const [cycleCount, setCycleCount] = useState(0);
@@ -243,11 +242,11 @@ export default function App() {
 
   const filteredDeck = useMemo(() => {
     return deck.filter(p => {
-      const priceMatch = p.price >= minPrice && p.price <= maxPrice;
+      const priceMatch = p.price <= maxPrice;
       const tagMatch = selectedTag ? p.tags.includes(selectedTag) : true;
       return priceMatch && tagMatch;
     });
-  }, [deck, minPrice, maxPrice, selectedTag]);
+  }, [deck, maxPrice, selectedTag]);
 
   const current = filteredDeck[0];
 
@@ -320,7 +319,7 @@ export default function App() {
 
   const amazonUrl = current ? current.url : '#';
   const cartUrl = current ? `https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=${current.asin}&Quantity.1=1` : '#';
-  const priceLabel = minPrice === 0 ? `〜 ¥${maxPrice.toLocaleString()}` : `¥${minPrice.toLocaleString()} 〜 ¥${maxPrice.toLocaleString()}`;
+  const priceLabel = `〜 ¥${maxPrice.toLocaleString()}`;
 
   // 全タグを集計
   const allTags = useMemo(() => {
@@ -616,84 +615,27 @@ export default function App() {
           </div>
         </div>
 
-        <div className="space-y-4">
-          <div>
-            <div className="flex justify-between text-[10px] opacity-80 mb-1">
-              <span>下限</span>
-              <span>¥{minPrice.toLocaleString()}</span>
-            </div>
-            <input
-              type="range"
-              min="0"
-              max="10000"
-              step="100"
-              value={minPrice}
-              onChange={(e) => {
-                const val = Number(e.target.value);
-                setMinPrice(val);
-                if (val > maxPrice) setMaxPrice(val);
-              }}
-              className="w-full h-2 bg-white/30 rounded-lg appearance-none cursor-pointer accent-white"
-            />
+        <div>
+          <div className="flex justify-between text-[10px] opacity-80 mb-1">
+            <span>上限</span>
+            <span>¥{maxPrice.toLocaleString()}</span>
           </div>
-
-          <div>
-            <div className="flex justify-between text-[10px] opacity-80 mb-1">
-              <span>上限</span>
-              <span>¥{maxPrice.toLocaleString()}</span>
-            </div>
-            <input
-              type="range"
-              min="0"
-              max="10000"
-              step="100"
-              value={maxPrice}
-              onChange={(e) => {
-                const val = Number(e.target.value);
-                setMaxPrice(val);
-                if (val < minPrice) setMinPrice(val);
-              }}
-              className="w-full h-2 bg-white/30 rounded-lg appearance-none cursor-pointer accent-white"
-            />
+          <input
+            type="range"
+            min="0"
+            max="10000"
+            step="100"
+            value={maxPrice}
+            onChange={(e) => setMaxPrice(Number(e.target.value))}
+            className="w-full h-2 bg-white/30 rounded-lg appearance-none cursor-pointer accent-white"
+          />
+          <div className="flex justify-between text-[10px] opacity-70 mt-1">
+            <span>¥0</span>
+            <span>¥10,000</span>
           </div>
-        </div>
-
-        <div className="flex justify-between text-[10px] opacity-70 mt-3">
-          <span>¥0</span>
-          <span>¥10,000</span>
         </div>
       </div>
 
-      <div className="mb-4">
-        <h3 className="text-xs font-bold text-stone-700 mb-2 flex items-center gap-1">
-          <Sparkles className="w-4 h-4" /> 人気タグ
-        </h3>
-        <div className="flex flex-wrap gap-1.5">
-          {allTags.slice(0, 8).map(tag => (
-            <motion.button
-              key={tag}
-              onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
-              className={`text-xs px-2.5 py-1.5 rounded-full font-semibold transition-all ${
-                selectedTag === tag 
-                  ? 'bg-red-600 text-white shadow-lg' 
-                  : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
-              }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {tag} {tagCounts[tag] && <span className="text-[10px] ml-1">({tagCounts[tag]})</span>}
-            </motion.button>
-          ))}
-        </div>
-        {selectedTag && (
-          <button
-            onClick={() => setSelectedTag(null)}
-            className="text-xs text-red-600 mt-2 font-semibold hover:underline"
-          >
-            フィルターをクリア
-          </button>
-        )}
-      </div>
       
       <div className="mt-4 p-3 bg-stone-100 rounded-lg text-xs text-stone-600">
         <p className="mb-2 font-semibold">ご利用上の注意</p>
