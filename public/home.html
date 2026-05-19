@@ -91,9 +91,14 @@
     .hv-btn-like { background: var(--red); color: #fff; }
 
     /* ─── Category Nav ─── */
+    .category-nav-wrap {
+      background: #f8f8f8;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 20px 28px;
+    }
     .category-nav {
       max-width: var(--max); margin: 0 auto;
-      padding: 32px 20px 8px;
     }
     .category-nav-title {
       font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--text);
@@ -221,6 +226,7 @@
   </section>
 
   <!-- Category Nav -->
+  <div class="category-nav-wrap">
   <nav class="category-nav">
     <div class="category-nav-title">カテゴリから探す</div>
     <div class="cat-grid">
@@ -274,6 +280,7 @@
       </a>
     </div>
   </nav>
+  </div>
 
   <main class="container">
 
