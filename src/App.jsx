@@ -180,10 +180,10 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
         <span className="text-red-600 font-black text-xl tracking-wider">GOOD!</span>
       </motion.div>
       <motion.div
-        className="absolute top-12 right-6 px-4 py-1.5 border-[4px] border-stone-400 rounded-lg rotate-12 bg-white/40 backdrop-blur z-30"
+        className="absolute top-12 right-6 px-4 py-1.5 border-[4px] border-blue-500 rounded-lg rotate-12 bg-white/40 backdrop-blur z-30"
         style={{ opacity: nopeOpacity }}
       >
-        <span className="text-stone-600 font-black text-xl tracking-wider">SKIP</span>
+        <span className="text-blue-600 font-black text-xl tracking-wider">SKIP</span>
       </motion.div>
     </motion.div>
   );
