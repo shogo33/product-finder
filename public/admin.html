@@ -81,15 +81,15 @@ header h1{font-size:1.05rem;font-weight:700}
 .btn-undo{background:#fff;color:#6b7280;border:1px solid #e5e7eb;padding:7px 12px;border-radius:8px;font-size:.74rem;cursor:pointer}
 
 /* ── Bottom action bar ── */
-.action-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e5e7eb;padding:12px 24px;display:flex;align-items:center;gap:12px;z-index:200;box-shadow:0 -2px 12px rgba(0,0,0,.08)}
-.pending-count{font-size:.82rem;color:#f59e0b;font-weight:700;flex:1}
-.btn-save{background:#e8253a;color:#fff;border:none;padding:10px 24px;border-radius:10px;font-size:.9rem;font-weight:700;cursor:pointer;transition:background .15s}
+.action-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e5e7eb;padding:8px 16px;display:flex;align-items:center;gap:8px;flex-wrap:nowrap;z-index:200;box-shadow:0 -2px 12px rgba(0,0,0,.08)}
+.pending-count{font-size:.75rem;color:#f59e0b;font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.btn-save{background:#e8253a;color:#fff;border:none;padding:7px 16px;border-radius:8px;font-size:.82rem;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0}
 .btn-save:hover{background:#c81f30}
 .btn-save:disabled{background:#d1d5db;cursor:default}
-.btn-deploy{background:#7c3aed;color:#fff;border:none;padding:10px 20px;border-radius:10px;font-size:.9rem;font-weight:700;cursor:pointer}
+.btn-deploy{background:#7c3aed;color:#fff;border:none;padding:7px 14px;border-radius:8px;font-size:.82rem;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0}
 .btn-deploy:hover{background:#6d28d9}
 .btn-deploy:disabled{background:#d1d5db;cursor:default}
-.save-msg{font-size:.8rem;color:#10b981;font-weight:700;min-width:80px}
+.save-msg{font-size:.75rem;color:#10b981;font-weight:700;white-space:nowrap;flex-shrink:0}
 </style>
 </head>
 <body>
