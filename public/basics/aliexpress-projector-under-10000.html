@@ -33,7 +33,7 @@
 
     /* Header */
     .site-header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 20px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-    .site-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--red); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1; }
+    .site-logo { text-decoration: none; display: flex; align-items: center; flex-shrink: 0; }
     .header-cta { background: var(--red); color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; transition: background 0.2s; flex-shrink: 0; }
     .header-cta:hover { background: var(--red-dk); }
 
@@ -235,7 +235,6 @@
     @media (max-width: 640px) { .cta-sticky { display: block; } body { padding-bottom: 72px; } }
 
     @media (max-width: 480px) {
-      .site-logo { font-size: 0.78rem; }
       .header-cta { padding: 5px 10px; font-size: 0.7rem; }
     }
 
@@ -260,7 +259,7 @@
 <body>
 
   <header class="site-header">
-    <a class="site-logo" href="/home.html">アリエクswipe｜お得情報・格安商品</a>
+    <a class="site-logo" href="/home.html"><img src="/logo.png" alt="アリエクSwipe" style="height:28px;width:auto;display:block;"></a>
     <a class="header-cta" href="https://product-finder-lilac.vercel.app/" target="_blank" rel="noopener">おすすめ商品はこちら</a>
   </header>
 

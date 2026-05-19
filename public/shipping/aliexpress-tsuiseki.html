@@ -31,7 +31,7 @@
 
     /* Header */
     .site-header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 20px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-    .site-logo { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--red); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1; }
+    .site-logo { text-decoration: none; display: flex; align-items: center; flex-shrink: 0; }
     .header-cta { background: var(--red); color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; flex-shrink: 0; transition: background 0.2s; }
     .header-cta:hover { background: var(--red-dk); }
 
@@ -138,7 +138,6 @@
 
     hr { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
       @media (max-width: 480px) {
-      .site-logo { font-size: 0.78rem; }
       .header-cta { padding: 5px 10px; font-size: 0.7rem; }
     }
   </style>
