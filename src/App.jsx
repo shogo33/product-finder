@@ -863,17 +863,17 @@ export default function App() {
             <div className="flex justify-between items-center mb-1">
               <div className="flex items-center gap-1">
                 <Sparkles className="w-2.5 h-2.5 text-red-400" />
-                <span className="text-[9px] font-semibold text-stone-500">今日のスワイプ</span>
+                <span className="text-[9px] font-semibold text-stone-500">スワイプ数</span>
               </div>
               <span className="text-[9px] font-bold text-stone-600">
-                <span className="text-red-600">{swipeCount}</span> / 500
+                <span className="text-red-600">{swipeCount}</span> / {allProducts.length || 0}
               </span>
             </div>
             <div className="w-full h-1 bg-red-100 rounded-full overflow-hidden">
               <motion.div
                 className="h-full bg-gradient-to-r from-red-500 to-rose-400 rounded-full"
                 initial={{ width: 0 }}
-                animate={{ width: `${Math.min((swipeCount / 500) * 100, 100)}%` }}
+                animate={{ width: `${Math.min((swipeCount / (allProducts.length || 1)) * 100, 100)}%` }}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
               />
             </div>
