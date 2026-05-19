@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>管理画面 | アリエクFinder</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP','Hiragino Sans',sans-serif;background:#f5f5f5;color:#1a1a1a}
+
+/* ── Login overlay ── */
+#login-overlay{position:fixed;inset:0;background:#e8253a;display:flex;align-items:center;justify-content:center;z-index:9999}
+#login-box{background:#fff;border-radius:20px;padding:40px 36px;width:340px;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.2)}
+#login-box h2{font-size:1.3rem;font-weight:900;margin-bottom:6px}
+#login-box p{font-size:.82rem;color:#6b7280;margin-bottom:24px}
+#login-pw{width:100%;border:1px solid #e5e7eb;border-radius:10px;padding:12px 14px;font-size:1rem;margin-bottom:12px;outline:none}
+#login-pw:focus{border-color:#e8253a}
+#login-btn{width:100%;background:#e8253a;color:#fff;border:none;border-radius:10px;padding:12px;font-size:1rem;font-weight:700;cursor:pointer}
+#login-btn:hover{background:#c81f30}
+#login-err{color:#e8253a;font-size:.82rem;margin-top:10px;min-height:18px}
+
+/* ── Main ── */
+#main{display:none}
+header{background:#e8253a;color:#fff;padding:14px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;position:sticky;top:0;z-index:100}
+header h1{font-size:1.05rem;font-weight:700}
+.stats{display:flex;gap:8px;margin-left:auto;font-size:.78rem;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.2);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.stat-ok{background:rgba(16,185,129,.4)}
+.stat-ng{background:rgba(0,0,0,.2)}
+
+.controls{background:#fff;border-bottom:1px solid #e5e7eb;padding:10px 24px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:55px;z-index:99}
+.filter-btn{border:1px solid #e8253a;color:#e8253a;background:#fff;padding:5px 14px;border-radius:999px;font-size:.78rem;cursor:pointer;transition:all .15s}
+.filter-btn:hover,.filter-btn.active{background:#e8253a;color:#fff}
+.filter-btn.sf{border-color:#6b7280;color:#6b7280}
+.filter-btn.sf:hover,.filter-btn.sf.active{background:#6b7280;color:#fff}
+.filter-btn.sf[data-s="approved"]{border-color:#10b981;color:#10b981}
+.filter-btn.sf[data-s="approved"]:hover,.filter-btn.sf[data-s="approved"].active{background:#10b981;color:#fff}
+.search{border:1px solid #e5e7eb;border-radius:8px;padding:6px 12px;font-size:.82rem;width:180px}
+.count{font-size:.78rem;color:#6b7280;margin-left:auto}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;padding:18px 20px 120px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07);transition:box-shadow .2s;position:relative}
+.card:hover{box-shadow:0 4px 18px rgba(232,37,58,.12)}
+.card.hidden{display:none}
+.card[data-approved="true"]{box-shadow:0 0 0 3px #10b981,0 2px 10px rgba(0,0,0,.07)}
+.card[data-approved="false"]{opacity:.4}
+.card[data-pending="1"]{outline:3px dashed #f59e0b}
+.badge{position:absolute;top:10px;right:10px;font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:999px;display:none;z-index:10}
+.card[data-approved="true"] .badge{display:block;background:#10b981;color:#fff}
+.card[data-approved="true"] .badge::before{content:'✅ 採用済み'}
+.card[data-approved="false"] .badge{display:block;background:#9ca3af;color:#fff}
+.card[data-approved="false"] .badge::before{content:'❌ 不採用'}
+.card[data-pending="1"] .badge{display:block;background:#f59e0b;color:#fff}
+.card[data-pending="1"] .badge::before{content:'⏳ 未保存'}
+.card-img{height:180px;background:#f9f9f9;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-body{padding:13px}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px}
+.tag{font-size:.68rem;padding:2px 8px;border-radius:999px;font-weight:700}
+.tag-main{background:#fee2e2;color:#e8253a}
+.tag-type{background:#ede9fe;color:#7c3aed}
+.title{font-size:.92rem;font-weight:700;line-height:1.5;margin-bottom:2px}
+.title-orig{font-size:.68rem;color:#9ca3af;margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.price{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
+.price-now{font-size:1.2rem;font-weight:900;color:#e8253a}
+.price-orig{font-size:.74rem;color:#9ca3af;text-decoration:line-through}
+.meta{font-size:.74rem;color:#6b7280;display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.commission{color:#059669;font-weight:700}
+.links{display:flex;gap:7px;margin-bottom:10px}
+.btn-aff{background:#e8253a;color:#fff;text-decoration:none;padding:6px 12px;border-radius:7px;font-size:.74rem;font-weight:700}
+.decision{display:flex;gap:6px}
+.btn-ok{background:#10b981;color:#fff;border:none;padding:7px 16px;border-radius:8px;font-size:.8rem;font-weight:700;cursor:pointer}
+.btn-ok:hover{background:#059669}
+.btn-ng{background:#fff;color:#9ca3af;border:1px solid #e5e7eb;padding:7px 16px;border-radius:8px;font-size:.8rem;font-weight:700;cursor:pointer}
+.btn-ng:hover{background:#f3f4f6}
+.btn-undo{background:#fff;color:#6b7280;border:1px solid #e5e7eb;padding:7px 12px;border-radius:8px;font-size:.74rem;cursor:pointer}
+
+/* ── Bottom action bar ── */
+.action-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e5e7eb;padding:12px 24px;display:flex;align-items:center;gap:12px;z-index:200;box-shadow:0 -2px 12px rgba(0,0,0,.08)}
+.pending-count{font-size:.82rem;color:#f59e0b;font-weight:700;flex:1}
+.btn-save{background:#e8253a;color:#fff;border:none;padding:10px 24px;border-radius:10px;font-size:.9rem;font-weight:700;cursor:pointer;transition:background .15s}
+.btn-save:hover{background:#c81f30}
+.btn-save:disabled{background:#d1d5db;cursor:default}
+.btn-deploy{background:#7c3aed;color:#fff;border:none;padding:10px 20px;border-radius:10px;font-size:.9rem;font-weight:700;cursor:pointer}
+.btn-deploy:hover{background:#6d28d9}
+.btn-deploy:disabled{background:#d1d5db;cursor:default}
+.save-msg{font-size:.8rem;color:#10b981;font-weight:700;min-width:80px}
+</style>
+</head>
+<body>
+
+<!-- Login -->
+<div id="login-overlay">
+  <div id="login-box">
+    <h2>🛍 管理画面</h2>
+    <p>パスワードを入力してください</p>
+    <input id="login-pw" type="password" placeholder="ADMIN_TOKEN" autocomplete="current-password">
+    <button id="login-btn" onclick="login()">ログイン</button>
+    <div id="login-err"></div>
+  </div>
+</div>
+
+<!-- Main -->
+<div id="main">
+  <header>
+    <h1>🛍 商品採用管理</h1>
+    <div class="stats">
+      <span class="stat stat-ok" id="stat-ok">採用 0件</span>
+      <span class="stat" id="stat-un">未決定 …</span>
+      <span class="stat stat-ng" id="stat-ng">不採用 0件</span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <button class="filter-btn active" onclick="filterTag(null)">すべて</button>
+    <span id="tag-btns"></span>
+    <span style="color:#e5e7eb">｜</span>
+    <button class="filter-btn sf active" data-s="all"      onclick="filterStatus('all')">全ステータス</button>
+    <button class="filter-btn sf" data-s="approved"  onclick="filterStatus('approved')">✅ 採用</button>
+    <button class="filter-btn sf" data-s="undecided" onclick="filterStatus('undecided')">⏳ 未決定</button>
+    <button class="filter-btn sf" data-s="rejected"  onclick="filterStatus('rejected')">❌ 不採用</button>
+    <input class="search" type="text" placeholder="タイトルで検索…" oninput="filterSearch(this.value)">
+    <span class="count" id="count">読み込み中…</span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="action-bar">
+    <span class="pending-count" id="pending-count"></span>
+    <span class="save-msg" id="save-msg"></span>
+    <button class="btn-save" id="btn-save" onclick="saveChanges()" disabled>保存</button>
+    <button class="btn-deploy" id="btn-deploy" onclick="deploy()">今すぐデプロイ</button>
+  </div>
+</div>
+
+<script>
+let products = [];
+let pending  = new Map();   // id → approved (未保存の変更)
+let savedApproved = new Map();  // id → approved (サーバー上の状態)
+let activeTag = null, activeStatus = 'all', searchQ = '';
+let authToken = '';
+
+// ── Login ────────────────────────────────────────────────────────────────
+function login() {
+  const pw = document.getElementById('login-pw').value.trim();
+  if (!pw) return;
+  authToken = pw;
+  loadProducts();
+}
+document.getElementById('login-pw').addEventListener('keydown', e => {
+  if (e.key === 'Enter') login();
+});
+
+// ── Load ─────────────────────────────────────────────────────────────────
+async function loadProducts() {
+  document.getElementById('login-err').textContent = '読み込み中…';
+  try {
+    const res = await apiFetch('GET', '/api/admin?action=products');
+    if (res.status === 401) {
+      document.getElementById('login-err').textContent = 'パスワードが違います';
+      authToken = '';
+      return;
+    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    products = await res.json();
+    savedApproved = new Map(products.map(p => [String(p.product_id), p.approved]));
+    pending.clear();
+    document.getElementById('login-overlay').style.display = 'none';
+    document.getElementById('main').style.display = 'block';
+    render();
+  } catch (e) {
+    document.getElementById('login-err').textContent = 'エラー: ' + e.message;
+  }
+}
+
+// ── Render ───────────────────────────────────────────────────────────────
+function render() {
+  const tags = [...new Set(products.map(p => p.tag).filter(Boolean))];
+  document.getElementById('tag-btns').innerHTML = tags.map(t =>
+    `<button class="filter-btn tag-f" onclick="filterTag('${t}')">${t}</button>`
+  ).join('');
+
+  document.getElementById('grid').innerHTML = products.map(p => {
+    const approved = pending.has(String(p.product_id))
+      ? pending.get(String(p.product_id))
+      : p.approved;
+    const approvedStr = approved === true ? 'true' : approved === false ? 'false' : 'null';
+    const isPending   = pending.has(String(p.product_id));
+    const comm = p.commission_rate
+      ? `<span class="commission">💰 ${p.commission_rate}</span>` : '';
+    return `
+    <div class="card" data-id="${p.product_id}" data-tag="${p.tag||''}"
+         data-approved="${approvedStr}" data-pending="${isPending?1:0}">
+      <div class="badge"></div>
+      <div class="card-img">
+        <img src="${p.image_url}" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="card-body">
+        <div class="tags">
+          ${p.tag ? `<span class="tag tag-main">${p.tag}</span>` : ''}
+          ${p.product_type && p.product_type !== p.tag
+            ? `<span class="tag tag-type">${p.product_type}</span>` : ''}
+        </div>
+        <div class="title">${p.title}</div>
+        <div class="title-orig">${p.title_full}</div>
+        <div class="price">
+          <span class="price-now">¥${Number(p.price_jpy).toLocaleString()}</span>
+          <span class="price-orig">元値 ¥${Number(p.original_price||0).toLocaleString()}</span>
+        </div>
+        <div class="meta">
+          <span>⭐ ${p.evaluate_rate||'N/A'}</span>
+          <span>📦 ${p.sales_count||0}件</span>
+          ${comm}
+        </div>
+        <div class="links">
+          <a href="${p.affiliate_link}" target="_blank" class="btn-aff">AliExpressで見る →</a>
+        </div>
+        <div class="decision">
+          <button class="btn-ok"   onclick="mark('${p.product_id}',true)">✅ 採用</button>
+          <button class="btn-ng"   onclick="mark('${p.product_id}',false)">❌ 不採用</button>
+          <button class="btn-undo" onclick="mark('${p.product_id}',null)">↩</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  updateStats();
+  updatePendingBar();
+  applyFilters();
+}
+
+// ── Mark ─────────────────────────────────────────────────────────────────
+function mark(id, approved) {
+  id = String(id);
+  // If back to original value, remove from pending
+  const original = savedApproved.get(id) ?? null;
+  if (approved === original) {
+    pending.delete(id);
+  } else {
+    pending.set(id, approved);
+  }
+  const card = document.querySelector(`.card[data-id="${id}"]`);
+  if (card) {
+    const effective = pending.has(id) ? pending.get(id) : (savedApproved.get(id) ?? null);
+    card.dataset.approved = effective === true ? 'true' : effective === false ? 'false' : 'null';
+    card.dataset.pending  = pending.has(id) ? '1' : '0';
+  }
+  updateStats();
+  updatePendingBar();
+  applyFilters();
+}
+
+// ── Save ─────────────────────────────────────────────────────────────────
+async function saveChanges() {
+  if (pending.size === 0) return;
+  const btn = document.getElementById('btn-save');
+  btn.disabled = true;
+  btn.textContent = '保存中…';
+  try {
+    const updates = [...pending.entries()].map(([id, approved]) => ({ id, approved }));
+    const res = await apiFetch('PATCH', '/api/admin?action=approve', { updates });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    // Commit pending to saved
+    for (const [id, approved] of pending) {
+      savedApproved.set(id, approved);
+      const p = products.find(x => String(x.product_id) === id);
+      if (p) p.approved = approved;
+    }
+    pending.clear();
+    // Update all cards' pending state
+    document.querySelectorAll('.card[data-pending="1"]').forEach(c => {
+      c.dataset.pending = '0';
+    });
+    updatePendingBar();
+    const msg = document.getElementById('save-msg');
+    msg.textContent = '✅ 保存しました';
+    setTimeout(() => msg.textContent = '', 3000);
+  } catch (e) {
+    alert('保存に失敗しました: ' + e.message);
+  } finally {
+    btn.textContent = '保存';
+    btn.disabled = pending.size === 0;
+  }
+}
+
+// ── Deploy ────────────────────────────────────────────────────────────────
+async function deploy() {
+  if (!confirm('GitHub Actionsを起動してサイトを更新します。よろしいですか？\n（約2〜3分でサイトに反映されます）')) return;
+  const btn = document.getElementById('btn-deploy');
+  btn.disabled = true;
+  btn.textContent = 'デプロイ中…';
+  try {
+    const res = await apiFetch('POST', '/api/admin?action=generate');
+    if (res.ok) {
+      const msg = document.getElementById('save-msg');
+      msg.textContent = '🚀 デプロイ開始！2〜3分後に反映';
+      setTimeout(() => msg.textContent = '', 8000);
+    } else {
+      throw new Error(`HTTP ${res.status}`);
+    }
+  } catch (e) {
+    alert('デプロイに失敗しました: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '今すぐデプロイ';
+  }
+}
+
+// ── Stats & filters ───────────────────────────────────────────────────────
+function effectiveApproved(p) {
+  const id = String(p.product_id);
+  return pending.has(id) ? pending.get(id) : (p.approved ?? null);
+}
+
+function updateStats() {
+  const ok = products.filter(p => effectiveApproved(p) === true).length;
+  const ng = products.filter(p => effectiveApproved(p) === false).length;
+  const un = products.length - ok - ng;
+  document.getElementById('stat-ok').textContent = `採用 ${ok}件`;
+  document.getElementById('stat-un').textContent = `未決定 ${un}件`;
+  document.getElementById('stat-ng').textContent = `不採用 ${ng}件`;
+}
+
+function updatePendingBar() {
+  const n   = pending.size;
+  const btn = document.getElementById('btn-save');
+  document.getElementById('pending-count').textContent =
+    n > 0 ? `⏳ 未保存の変更: ${n}件` : '';
+  btn.disabled = n === 0;
+}
+
+function applyFilters() {
+  let shown = 0;
+  document.querySelectorAll('.card').forEach(c => {
+    const tagOk    = !activeTag || c.dataset.tag === activeTag;
+    const a        = c.dataset.approved;
+    const statusOk = activeStatus === 'all'
+      || (activeStatus === 'approved'  && a === 'true')
+      || (activeStatus === 'rejected'  && a === 'false')
+      || (activeStatus === 'undecided' && a === 'null');
+    const kwOk = !searchQ || c.querySelector('.title').textContent.toLowerCase().includes(searchQ);
+    const show = tagOk && statusOk && kwOk;
+    c.classList.toggle('hidden', !show);
+    if (show) shown++;
+  });
+  document.getElementById('count').textContent = shown + '件表示';
+}
+
+function filterTag(tag) {
+  activeTag = tag;
+  document.querySelectorAll('.filter-btn:not(.sf):not(.tag-f)').forEach(b =>
+    b.classList.toggle('active', !tag));
+  document.querySelectorAll('.filter-btn.tag-f').forEach(b =>
+    b.classList.toggle('active', b.textContent === tag));
+  applyFilters();
+}
+function filterStatus(s) {
+  activeStatus = s;
+  document.querySelectorAll('.filter-btn.sf').forEach(b =>
+    b.classList.toggle('active', b.dataset.s === s));
+  applyFilters();
+}
+function filterSearch(q) { searchQ = q.toLowerCase(); applyFilters(); }
+
+// ── API fetch helper ──────────────────────────────────────────────────────
+function apiFetch(method, url, body) {
+  const opts = {
+    method,
+    headers: {
+      Authorization: `Bearer ${authToken}`,
+      'Content-Type': 'application/json',
+    },
+  };
+  if (body) opts.body = JSON.stringify(body);
+  return fetch(url, opts);
+}
+</script>
+</body>
+</html>
