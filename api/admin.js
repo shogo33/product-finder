@@ -99,8 +99,10 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') { res.status(204).end(); return; }
 
   // Auth
-  const token = (req.headers.authorization || '').replace(/^Bearer\s+/i, '').trim();
-  if (!process.env.ADMIN_TOKEN || token !== process.env.ADMIN_TOKEN) {
+  const adminToken = (process.env.ADMIN_TOKEN || '').trim();
+  const token      = (req.headers.authorization || '').replace(/^Bearer\s+/i, '').trim();
+  console.log('[admin] token_set:', !!adminToken, 'token_len:', adminToken.length, 'input_len:', token.length, 'match:', adminToken === token);
+  if (!adminToken || token !== adminToken) {
     res.status(401).json({ error: 'Unauthorized' }); return;
   }
 
