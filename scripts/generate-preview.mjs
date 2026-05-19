@@ -9,9 +9,14 @@ import path from 'path';
 
 const allProducts = JSON.parse(fs.readFileSync(path.resolve('data/products.json'), 'utf8'));
 
-const PRICE_TIER_GAP   = 1500;   // ¥1,500以上差があれば別価格帯として複数表示
-const TOP_PERCENT      = 0.30;   // 人気スコア上位30%のみ
-const NO_DEDUP_TAGS    = new Set(['ボードゲーム']); // タイトルが全部異なるカテゴリは重複排除しない
+const PRICE_TIER_GAP = 1500;  // ¥1,500以上差があれば別価格帯として複数表示
+const TOP_PERCENT    = 0.30;  // 人気スコア上位30%のみ
+
+// 「複数あって当然」なカテゴリ（タイトルごとに別商品 or 複数持ちが自然）
+const NO_DEDUP_TYPES = new Set([
+  'カードゲーム', 'チェスセット', 'ジグソーパズル', 'ダイスセット',
+  'カードスリーブ', 'ボードゲーム',
+]);
 
 // ① active かつ ¥10,000以下
 const under10k = allProducts.filter(p => p.active !== false && parseFloat(p.price_jpy) <= 10000);
@@ -21,34 +26,36 @@ const scored = under10k
   .map(p => ({ ...p, _score: (Number(p.sales_count) || 0) * (parseFloat(p.evaluate_rate) || 0) }))
   .sort((a, b) => b._score - a._score);
 
-// ③ 上位30%に絞り込み
-const topN    = Math.max(3, Math.ceil(scored.length * TOP_PERCENT));
-const popular = scored.slice(0, topN);
+// ③ 上位30%に絞り込み（最低10件は確保）
+const topN    = Math.max(10, Math.ceil(scored.length * TOP_PERCENT));
+const popular = new Set(scored.slice(0, topN));
 
-// ④ 同機能・同価格帯の重複を排除（ボードゲームは除外）
-//    さらにカテゴリごとに最低1件は必ず残す（データが少ない時の保険）
-const seen     = {};  // key: `${tag}_${priceTier}`
+// ④ product_type + 価格帯で重複排除
+//    「一個買えば済む商品」は同 type × 同価格帯で1件のみ表示
+//    NO_DEDUP_TYPES は複数表示OK
+const seen     = new Set(); // key: `${product_type}_${priceTier}`
 const products = [];
 
-// popular に入らなかった残り（カテゴリ保険用）
-const rest     = scored.slice(topN);
+for (const p of scored) {
+  const isPopular = popular.has(p);
+  const ptype     = p.product_type ?? p.tag ?? 'その他';
 
-for (const p of [...popular, ...rest]) {
-  const tag      = p.tag ?? 'その他';
-  const isPopular = popular.includes(p);
-
-  if (NO_DEDUP_TAGS.has(tag)) {
-    if (isPopular) products.push(p); // ボードゲームは上位30%のみ
+  if (NO_DEDUP_TYPES.has(ptype)) {
+    if (isPopular) products.push(p);
     continue;
   }
 
   const tier = Math.floor(parseFloat(p.price_jpy) / PRICE_TIER_GAP);
-  const key  = `${tag}_${tier}`;
+  const key  = `${ptype}_${tier}`;
 
-  // 上位30%内 or そのカテゴリがまだ1件も出ていない(最低1件保証) → 採用
-  const tagHasEntry = products.some(q => (q.tag ?? 'その他') === tag);
-  if (!seen[key] && (isPopular || !tagHasEntry)) {
-    seen[key] = true;
+  // 上位30%内かつ未登録 → 表示
+  if (isPopular && !seen.has(key)) {
+    seen.add(key);
+    products.push(p);
+  }
+  // 上位30%外だが、このtypeがまだ1件も出ていない → 最低1件保証
+  else if (!isPopular && !products.some(q => (q.product_type ?? q.tag) === ptype)) {
+    seen.add(key);
     products.push(p);
   }
 }
