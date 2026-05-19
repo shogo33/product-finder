@@ -79,9 +79,61 @@ const KEYWORD_LIST = [
   { keyword: 'digital alarm clock LED bedroom',       tag: 'ガジェット',           type: '目覚まし時計' },
   { keyword: 'laser pointer pen presentation USB',    tag: 'PC周辺機器',           type: 'レーザーポインター' },
   { keyword: 'cable organizer management clip',       tag: 'PC周辺機器',           type: 'ケーブル整理' },
-  { keyword: 'luggage tag travel accessories',        tag: 'トラベル',             type: 'ラゲッジタグ' },
-  { keyword: 'travel adapter universal plug',         tag: 'トラベル',             type: '変換アダプター' },
-  { keyword: 'packing cube travel organizer set',     tag: 'トラベル',             type: 'パッキングキューブ' },
+  { keyword: 'luggage tag travel accessories',          tag: 'トラベル',             type: 'ラゲッジタグ' },
+  { keyword: 'travel adapter universal plug',           tag: 'トラベル',             type: '変換アダプター' },
+  { keyword: 'packing cube travel organizer set',       tag: 'トラベル',             type: 'パッキングキューブ' },
+  // ── 追加ジャンル ──────────────────────────────────────────────────────
+  // ペット
+  { keyword: 'dog toy interactive ball chew pet',       tag: 'ペット',               type: 'ペット用おもちゃ' },
+  { keyword: 'cat scratcher tower climbing tree',       tag: 'ペット',               type: 'キャットタワー' },
+  { keyword: 'pet grooming brush deshedding dog cat',   tag: 'ペット',               type: 'ペット用ブラシ' },
+  { keyword: 'automatic pet feeder cat dog food bowl',  tag: 'ペット',               type: '自動給餌器' },
+  // 美容・スキンケア
+  { keyword: 'gua sha facial roller jade quartz stone', tag: '美容',                 type: 'グアシャローラー' },
+  { keyword: 'electric face cleansing brush sonic',     tag: '美容',                 type: '電動洗顔ブラシ' },
+  { keyword: 'hair removal epilator electric women',    tag: '美容',                 type: '脱毛器' },
+  { keyword: 'nail art gel UV lamp kit beginner',       tag: '美容',                 type: 'ネイルキット' },
+  { keyword: 'eyelash extension curler heated',         tag: '美容',                 type: 'まつ毛カーラー' },
+  // アウトドア・キャンプ
+  { keyword: 'LED camping lantern rechargeable foldable', tag: 'アウトドア',         type: 'キャンプランタン' },
+  { keyword: 'folding camping chair portable lightweight', tag: 'アウトドア',        type: 'キャンプチェア' },
+  { keyword: 'multi-tool pocket knife survival outdoor',  tag: 'アウトドア',         type: 'マルチツール' },
+  { keyword: 'insulated water bottle stainless steel thermos', tag: 'アウトドア',    type: '水筒' },
+  { keyword: 'camping hammock nylon outdoor ultralight',  tag: 'アウトドア',         type: 'ハンモック' },
+  { keyword: 'headlamp LED rechargeable waterproof',      tag: 'アウトドア',         type: 'ヘッドランプ' },
+  // カー用品
+  { keyword: 'dashcam car recorder 4K dual camera',      tag: 'カー用品',            type: 'ドライブレコーダー' },
+  { keyword: 'car vacuum cleaner portable handheld',      tag: 'カー用品',            type: 'カー掃除機' },
+  { keyword: 'car air freshener aromatherapy vent clip',  tag: 'カー用品',            type: 'カーアロマ' },
+  { keyword: 'car seat gap organizer storage pocket',     tag: 'カー用品',            type: 'カーシートポケット' },
+  // キッズ・おもちゃ
+  { keyword: 'building blocks LEGO compatible creative',  tag: 'キッズ',              type: 'ブロックおもちゃ' },
+  { keyword: 'remote control car RC electric fast kids',  tag: 'キッズ',              type: 'ラジコンカー' },
+  { keyword: 'magnetic drawing board kids educational',   tag: 'キッズ',              type: '磁気お絵かきボード' },
+  { keyword: 'fidget toy sensory autism stress relief',   tag: 'キッズ',              type: 'フィジェットトイ' },
+  // アート・クラフト
+  { keyword: 'diamond painting kit full drill 5D DIY',    tag: 'アート・クラフト',     type: 'ダイヤモンドアート' },
+  { keyword: 'resin mold silicone epoxy craft jewelry',   tag: 'アート・クラフト',     type: 'レジンモールド' },
+  { keyword: 'watercolor paint set professional brush',   tag: 'アート・クラフト',     type: '水彩絵の具セット' },
+  // ファッション小物
+  { keyword: 'slim wallet minimalist card holder RFID',   tag: 'ファッション',         type: 'スリムウォレット' },
+  { keyword: 'polarized sunglasses UV400 trendy',         tag: 'ファッション',         type: 'サングラス' },
+  { keyword: 'quartz watch minimalist leather band men',  tag: 'ファッション',         type: 'クォーツ時計' },
+  // 文具・オフィス
+  { keyword: 'gel ink pen set colorful smooth writing',   tag: '文具',                 type: 'ゲルペンセット' },
+  { keyword: 'A5 notebook journal dotted hardcover',      tag: '文具',                 type: 'ノート' },
+  { keyword: 'sticky notes memo pad pastel assorted',     tag: '文具',                 type: '付箋セット' },
+  // インテリア・植物
+  { keyword: 'LED grow light plant indoor full spectrum', tag: 'インテリア',            type: '植物育成ライト' },
+  { keyword: 'ceramic succulent planter pot minimalist',  tag: 'インテリア',            type: '植木鉢' },
+  { keyword: 'neon sign LED wall decor room bedroom',     tag: 'インテリア',            type: 'ネオンサイン' },
+  // 健康
+  { keyword: 'pulse oximeter fingertip blood oxygen SpO2', tag: '健康',                type: 'パルスオキシメーター' },
+  { keyword: 'massage ball foam roller deep tissue',       tag: '健康',                type: 'マッサージボール' },
+  // 楽器
+  { keyword: 'kalimba thumb piano 17 key mahogany',        tag: '楽器',                type: 'カリンバ' },
+  { keyword: 'ukulele soprano beginner set tuner',          tag: '楽器',                type: 'ウクレレ' },
+  { keyword: 'ocarina ceramic 12 hole flute music',         tag: '楽器',                type: 'オカリナ' },
 ];
 
 function sign(params) {
