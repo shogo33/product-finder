@@ -206,7 +206,9 @@ export default function App() {
   const [maxPrice, setMaxPrice] = useState(10000);
   const [deck, setDeck] = useState([]);
   const [cycleCount, setCycleCount] = useState(0);
-  const [liked, setLiked] = useState([]);
+  const [liked, setLiked] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('aliex_liked') || '[]'); } catch { return []; }
+  });
   const [view, setView] = useState('swipe');
   const [showModal, setShowModal] = useState(true);
   const [swipeCount, setSwipeCount] = useState(0);
@@ -215,7 +217,9 @@ export default function App() {
   const [celebrationMessage, setCelebrationMessage] = useState(null);
   const celebrationTimerRef = useRef(null);
 
-
+  useEffect(() => {
+    localStorage.setItem('aliex_liked', JSON.stringify(liked));
+  }, [liked]);
 
 
   // /products.json を取得してデッキにセット
