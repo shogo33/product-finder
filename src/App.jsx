@@ -80,20 +80,21 @@ const BackgroundCard = memo(({ card, index, x }) => {
 });
 
 // 最前面カード（1枚目） - ドラッグ可能
-const SwipeCard = ({ card, x, rotate, scale, cardOpacity, likeOpacity, nopeOpacity, amazonUrl, onSwipeRight, onSwipeLeft, selectedTag, setSelectedTag }) => {
+const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOpacity, amazonUrl, onSwipeRight, onSwipeLeft, selectedTag, setSelectedTag }) => {
   const [exitX, setExitX] = useState(0);
 
   const handleSwipe = async (direction) => {
     const targetX = direction === 'right' ? 1000 : -1000;
+    animate(y, -80, { duration: 0.3, ease: 'easeOut' });
     animate(x, targetX, {
       duration: 0.3,
       ease: 'easeOut',
       onComplete: () => {
-        // Reactのstate更新とxリセットを同フレームで
         if (direction === 'right') onSwipeRight();
         else onSwipeLeft();
         requestAnimationFrame(() => {
           x.set(0);
+          y.set(0);
         });
       }
     });
@@ -102,22 +103,26 @@ const SwipeCard = ({ card, x, rotate, scale, cardOpacity, likeOpacity, nopeOpaci
   return (
     <motion.div
       className="absolute w-full h-full cursor-grab active:cursor-grabbing rounded-3xl overflow-hidden bg-white flex flex-col shadow-2xl border-4 border-stone-300"
-      style={{ 
-        x, 
-        rotate, 
+      style={{
+        x,
+        y,
+        rotate,
         scale,
         opacity: cardOpacity,
         top: 0,
         zIndex: 10
       }}
-      drag="x"
-      dragConstraints={{ left: 0, right: 0 }}
-      dragElastic={0.8}
+      drag={true}
+      dragConstraints={false}
+      dragMomentum={false}
       onDragEnd={(_, info) => {
         if (info.offset.x > 100 || info.velocity.x > 500) {
           handleSwipe('right');
         } else if (info.offset.x < -100 || info.velocity.x < -500) {
           handleSwipe('left');
+        } else {
+          animate(x, 0, { type: 'spring', stiffness: 500, damping: 30 });
+          animate(y, 0, { type: 'spring', stiffness: 500, damping: 30 });
         }
       }}
     >
@@ -241,6 +246,7 @@ export default function App() {
   const current = filteredDeck[0];
 
   const x = useMotionValue(0);
+  const y = useMotionValue(0);
   const rotate = useTransform(x, [-200, 200], [-20, 20]);
   const likeOpacity = useTransform(x, [0, 80], [0, 1]);
   const nopeOpacity = useTransform(x, [-80, 0], [1, 0]);
@@ -551,6 +557,7 @@ export default function App() {
                   key="front-card"
                   card={card}
                   x={x}
+                  y={y}
                   rotate={rotate}
                   scale={scale}
                   cardOpacity={cardOpacity}
