@@ -52,8 +52,9 @@
     .hero-inner {
       max-width: var(--max); margin: 0 auto;
       display: flex; align-items: center; gap: 40px;
+      justify-content: center; text-align: center;
     }
-    .hero-left { flex: 1; min-width: 0; }
+    .hero-left { flex: 1; min-width: 0; max-width: 640px; }
     .hero-right { flex: 0 0 400px; display: flex; justify-content: center; }
     @media (max-width: 780px) {
       .hero-inner { flex-direction: column; text-align: center; }
@@ -63,11 +64,9 @@
     .hero h1 { font-weight: 800; font-size: clamp(1.6rem, 3.5vw, 2.4rem); line-height: 1.35; margin: 0 0 16px; color: var(--text); }
     .hero h1 em { font-style: normal; color: var(--red); }
     .hero-sub { color: var(--muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 12px; }
-    .hero-points { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
-    @media (max-width: 780px) { .hero-points { justify-content: center; } }
+    .hero-points { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; justify-content: center; }
     .hero-point { display: flex; align-items: center; gap: 4px; font-size: 0.78rem; font-weight: 600; color: var(--text); background: #fff; border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; }
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-    @media (max-width: 780px) { .hero-actions { justify-content: center; } }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
     .hero-cta { display: inline-block; background: var(--red); color: #fff; text-decoration: none; padding: 13px 28px; border-radius: 999px; font-weight: 700; font-size: 0.95rem; transition: background 0.2s; white-space: nowrap; }
     .hero-cta:hover { background: var(--red-dk); }
     .hero-cta-sub { display: inline-block; background: #fff; color: var(--red); text-decoration: none; padding: 13px 28px; border-radius: 999px; font-weight: 700; font-size: 0.95rem; border: 1.5px solid var(--red); transition: all 0.2s; white-space: nowrap; }
@@ -207,7 +206,7 @@
       <div class="hero-left">
         <div class="hero-badge">🇯🇵 日本人向け アリエク攻略サイト</div>
         <h1>アリエクの<em>お得商品</em>を<br>スワイプして発見しよう</h1>
-        <p class="hero-sub">AliExpressの格安・高評価商品をスワイプして探せる。<br>支払い・配送・安全性の完全ガイドも無料公開中。</p>
+        <p class="hero-sub">はじめてでも大丈夫。支払い・配送・安全性をわかりやすく解説。</p>
         <div class="hero-points">
           <div class="hero-point">💳 支払い方法完全解説</div>
           <div class="hero-point">📦 配送・追跡ガイド</div>
