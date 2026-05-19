@@ -82,8 +82,10 @@ const filtered = all.filter(p => {
     p.image_url &&
     !isNG(p) &&
     CATEGORY_CAPS[p.tag] !== undefined &&
-    p.evaluate_rate && rate >= 0.85 &&  // 評価データあり、かつ85%以上
-    sales >= 5                           // 販売実績5件以上
+    p.evaluate_rate && rate >= 0.85 &&        // 評価データあり、かつ85%以上
+    sales >= 50 &&                            // 販売実績50件以上
+    (p.title || '').length <= 80 &&           // タイトル80文字以内
+    /[぀-ヿ一-鿿]/.test(p.title || '') // 日本語タイトルのみ
   );
 });
 
