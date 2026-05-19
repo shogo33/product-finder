@@ -602,7 +602,7 @@ export default function App() {
             <div className="text-xs font-semibold opacity-90 mb-0.5">価格帯</div>
             <motion.div
               className="text-2xl font-black tracking-tight"
-              key={`${minPrice}-${maxPrice}`}
+              key={maxPrice}
               initial={{ scale: 1.1 }}
               animate={{ scale: 1 }}
             >
