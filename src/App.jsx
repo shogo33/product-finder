@@ -841,14 +841,14 @@ export default function App() {
   };
 
   return (
-    <div className="h-[100dvh] bg-gradient-to-b from-stone-50 to-stone-100 flex items-center justify-center sm:p-4">
+    <div className="h-[100svh] bg-gradient-to-b from-stone-50 to-stone-100 flex items-center justify-center sm:p-4 overflow-hidden">
       <HelpModal />
       <InstallModal />
       <CelebrationOverlay />
-      <div className="w-full max-w-md h-full max-h-[100dvh] bg-white sm:rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col" 
+      <div className="w-full max-w-md h-full bg-white sm:rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col"
            style={{ fontFamily: "'Hiragino Sans', 'Yu Gothic', sans-serif" }}>
-        
-        <div className="px-4 pt-3 pb-2 flex flex-col border-b border-red-100 flex-shrink-0 bg-gradient-to-br from-red-50 via-rose-50 to-pink-50 relative overflow-hidden shadow-md">
+
+        <div className="px-4 pt-2 pb-1.5 flex flex-col border-b border-red-100 flex-shrink-0 bg-gradient-to-br from-red-50 via-rose-50 to-pink-50 relative overflow-hidden shadow-md">
           {/* 装飾的な背景パターン */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-200/40 to-rose-200/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-pink-200/30 to-red-200/20 rounded-full blur-2xl"></div>
@@ -879,7 +879,7 @@ export default function App() {
           {/* 記事リンク */}
           <a
             href="/home.html"
-            className="mt-2 relative z-10 flex items-center gap-1.5 self-start px-2.5 py-1 rounded-full bg-white/70 backdrop-blur hover:bg-white shadow-sm transition-all text-[9px] font-bold text-red-600 border border-red-100"
+            className="mt-1 relative z-10 flex items-center gap-1.5 self-start px-2.5 py-0.5 rounded-full bg-white/70 backdrop-blur hover:bg-white shadow-sm transition-all text-[9px] font-bold text-red-600 border border-red-100"
           >
             <span>📰</span>
             <span>アリエクに関する記事はこちら</span>
@@ -887,7 +887,7 @@ export default function App() {
           </a>
 
           {/* 進捗バー */}
-          <div className="mt-2 relative z-10">
+          <div className="mt-1 relative z-10">
             <div className="flex justify-between items-center mb-1">
               <div className="flex items-center gap-1">
                 <Sparkles className="w-2.5 h-2.5 text-red-400" />
@@ -908,7 +908,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="px-4 pt-2 pb-1 flex-shrink-0">
+        <div className="px-4 pt-1.5 pb-1 flex-shrink-0">
           <div className="flex gap-1 bg-stone-100 rounded-full p-0.5">
             {[
               { id: 'swipe', icon: Layers },
