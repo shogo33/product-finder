@@ -85,7 +85,8 @@ const filtered = all.filter(p => {
     p.evaluate_rate && rate >= 0.85 &&        // 評価データあり、かつ85%以上
     sales >= 50 &&                            // 販売実績50件以上
     (p.title || '').length <= 80 &&           // タイトル80文字以内
-    /[぀-ヿ一-鿿]/.test(p.title || '') // 日本語タイトルのみ
+    /[぀-ヿ一-鿿]/.test(p.title || '') &&    // 日本語タイトルのみ
+    p.active !== false                        // リンク切れ除外
   );
 });
 
