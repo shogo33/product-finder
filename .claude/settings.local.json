@@ -9,7 +9,14 @@
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['sha'][:7], d['commit']['message'].splitlines\\(\\)[0]\\)\")",
       "PowerShell($r = Invoke-RestMethod \"https://api.github.com/repos/shogo33/product-finder/commits/main\"; \"$\\($r.sha.Substring\\(0,7\\)\\) $\\($r.commit.message.Split\\([char]10\\)[0]\\)\")",
       "Read(//c/Users/USER/product-finder/**)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" add api/admin.js public/admin.html data/approved.json scripts/generate-public-products.mjs vercel.json)",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" add api/admin.js)",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" commit -m \"fix: auth token trim + debug log\")",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" add public/admin.html)",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" commit -m \"feat: �^�O�t�B���^�[���A�R�[�f�B�I���`���Ɂi�f�t�H���g���j\")",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" add -A)",
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" commit -m \"feat: �A���G�NFinder �� �A���G�Nswipe �ɖ��̕ύX\")"
     ]
   }
 }
