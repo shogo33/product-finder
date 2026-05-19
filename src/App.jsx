@@ -413,7 +413,7 @@ export default function App() {
               <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Package className="w-8 h-8 text-white" />
               </div>
-              <img src="/logo.png" alt="アリエクSwipe" className="h-20 w-auto mx-auto" />
+              <img src="/logo.png" alt="アリエクSwipe" className="h-12 w-auto mx-auto" />
             </div>
 
             <div className="space-y-4 mb-8">
@@ -875,7 +875,7 @@ export default function App() {
 
           <div className="flex items-center justify-between relative z-10">
             <div>
-              <img src="/logo.png" alt="アリエクSwipe" className="h-14 w-auto" />
+              <img src="/logo.png" alt="アリエクSwipe" className="h-8 w-auto" />
             </div>
             <div className="flex gap-1.5 items-center">
               <button
