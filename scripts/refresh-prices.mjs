@@ -73,14 +73,23 @@ async function fetchPriceMap(keyword) {
 
 const products = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
 
-// === フェーズ1: 全商品を個別に可用性チェック ===
-console.log(`\n🔍 フェーズ1: 全${products.length}件を個別に可用性チェック中...\n`);
+// 採用商品のみ対象にする
+const APPROVED_FILE = path.resolve('data/approved.json');
+const approvedMap = fs.existsSync(APPROVED_FILE)
+  ? JSON.parse(fs.readFileSync(APPROVED_FILE, 'utf8'))
+  : null;
+const targets = approvedMap
+  ? products.filter(p => approvedMap[String(p.product_id)] === true)
+  : products;
+
+// === フェーズ1: 採用商品のみ可用性チェック ===
+console.log(`\n🔍 フェーズ1: 採用${targets.length}件を個別に可用性チェック中（全${products.length}件中）...\n`);
 
 let availableSet = new Set();
 let deactivatedCount = 0;
 let reactivatedCount = 0;
 
-for (const p of products) {
+for (const p of targets) {
   process.stdout.write(`  [${p.product_id}] チェック中...`);
   const link = await checkAvailable(p.product_id);
 
