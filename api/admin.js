@@ -14,38 +14,15 @@ const REPO          = 'product-finder';
 const APPROVED_PATH = 'data/approved.json';
 const PRODUCTS_PATH = 'data/products.json';
 
-// ── Curation (generate-public-products.mjs と同一ロジック) ──────────────
-const PRICE_TIER_GAP = 1500;
-const TOP_PERCENT    = 0.30;
-const NO_DEDUP_TYPES = new Set([
-  'カードゲーム','チェスセット','ジグソーパズル','ダイスセット','カードスリーブ','ボードゲーム',
-]);
+// ── Admin 用キュレーション（人気スコア順・上位1500件・重複排除なし）──────
+const ADMIN_LIMIT = 1500;
 
 function curate(all) {
-  const under10k = all.filter(p => p.active !== false && parseFloat(p.price_jpy) <= 10000);
-  const scored   = under10k
+  return all
+    .filter(p => p.active !== false && parseFloat(p.price_jpy) <= 10000)
     .map(p => ({ ...p, _score: (Number(p.sales_count)||0) * (parseFloat(p.evaluate_rate)||0) }))
-    .sort((a, b) => b._score - a._score);
-  const topN    = Math.max(10, Math.ceil(scored.length * TOP_PERCENT));
-  const popular = new Set(scored.slice(0, topN));
-  const seen    = new Set();
-  const result  = [];
-  for (const p of scored) {
-    const isPopular = popular.has(p);
-    const ptype     = p.product_type ?? p.tag ?? 'その他';
-    if (NO_DEDUP_TYPES.has(ptype)) {
-      if (isPopular) result.push(p);
-      continue;
-    }
-    const tier = Math.floor(parseFloat(p.price_jpy) / PRICE_TIER_GAP);
-    const key  = `${ptype}_${tier}`;
-    if (isPopular && !seen.has(key)) {
-      seen.add(key); result.push(p);
-    } else if (!isPopular && !result.some(q => (q.product_type ?? q.tag) === ptype)) {
-      seen.add(key); result.push(p);
-    }
-  }
-  return result;
+    .sort((a, b) => b._score - a._score)
+    .slice(0, ADMIN_LIMIT);
 }
 
 // ── GitHub API helpers ────────────────────────────────────────────────────

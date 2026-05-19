@@ -131,6 +131,12 @@ header h1{font-size:1.05rem;font-weight:700}
   </div>
 
   <div class="grid" id="grid"></div>
+  <div style="text-align:center;padding:16px 0 100px">
+    <button id="btn-more" onclick="loadMore()"
+      style="display:none;background:#e8253a;color:#fff;border:none;padding:10px 32px;border-radius:999px;font-size:.9rem;font-weight:700;cursor:pointer">
+      もっと見る
+    </button>
+  </div>
 
   <div class="action-bar">
     <span class="pending-count" id="pending-count"></span>
@@ -142,10 +148,13 @@ header h1{font-size:1.05rem;font-weight:700}
 
 <script>
 let products = [];
-let pending  = new Map();   // id → approved (未保存の変更)
-let savedApproved = new Map();  // id → approved (サーバー上の状態)
+let filtered = [];
+let pending  = new Map();
+let savedApproved = new Map();
 let activeTag = null, activeStatus = 'all', searchQ = '';
 let authToken = '';
+const PAGE_SIZE = 60;
+let page = 0;
 
 // ── Login ────────────────────────────────────────────────────────────────
 function login() {
@@ -181,58 +190,63 @@ async function loadProducts() {
 }
 
 // ── Render ───────────────────────────────────────────────────────────────
+function cardHTML(p) {
+  const approved    = pending.has(String(p.product_id)) ? pending.get(String(p.product_id)) : p.approved;
+  const approvedStr = approved === true ? 'true' : approved === false ? 'false' : 'null';
+  const isPending   = pending.has(String(p.product_id));
+  const comm        = p.commission_rate ? `<span class="commission">💰 ${p.commission_rate}</span>` : '';
+  return `
+  <div class="card" data-id="${p.product_id}" data-tag="${p.tag||''}"
+       data-approved="${approvedStr}" data-pending="${isPending?1:0}">
+    <div class="badge"></div>
+    <div class="card-img">
+      <img src="${p.image_url}" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="card-body">
+      <div class="tags">
+        ${p.tag ? `<span class="tag tag-main">${p.tag}</span>` : ''}
+        ${p.product_type && p.product_type !== p.tag ? `<span class="tag tag-type">${p.product_type}</span>` : ''}
+      </div>
+      <div class="title">${p.title}</div>
+      <div class="title-orig">${p.title_full}</div>
+      <div class="price">
+        <span class="price-now">¥${Number(p.price_jpy).toLocaleString()}</span>
+        <span class="price-orig">元値 ¥${Number(p.original_price||0).toLocaleString()}</span>
+      </div>
+      <div class="meta">
+        <span>⭐ ${p.evaluate_rate||'N/A'}</span>
+        <span>📦 ${p.sales_count||0}件</span>
+        ${comm}
+      </div>
+      <div class="links">
+        <a href="${p.affiliate_link}" target="_blank" class="btn-aff">AliExpressで見る →</a>
+      </div>
+      <div class="decision">
+        <button class="btn-ok"   onclick="mark('${p.product_id}',true)">✅ 採用</button>
+        <button class="btn-ng"   onclick="mark('${p.product_id}',false)">❌ 不採用</button>
+        <button class="btn-undo" onclick="mark('${p.product_id}',null)">↩</button>
+      </div>
+    </div>
+  </div>`;
+}
+
 function render() {
   const tags = [...new Set(products.map(p => p.tag).filter(Boolean))];
   document.getElementById('tag-btns').innerHTML = tags.map(t =>
     `<button class="filter-btn tag-f" onclick="filterTag('${t}')">${t}</button>`
   ).join('');
-
-  document.getElementById('grid').innerHTML = products.map(p => {
-    const approved = pending.has(String(p.product_id))
-      ? pending.get(String(p.product_id))
-      : p.approved;
-    const approvedStr = approved === true ? 'true' : approved === false ? 'false' : 'null';
-    const isPending   = pending.has(String(p.product_id));
-    const comm = p.commission_rate
-      ? `<span class="commission">💰 ${p.commission_rate}</span>` : '';
-    return `
-    <div class="card" data-id="${p.product_id}" data-tag="${p.tag||''}"
-         data-approved="${approvedStr}" data-pending="${isPending?1:0}">
-      <div class="badge"></div>
-      <div class="card-img">
-        <img src="${p.image_url}" loading="lazy" onerror="this.style.display='none'">
-      </div>
-      <div class="card-body">
-        <div class="tags">
-          ${p.tag ? `<span class="tag tag-main">${p.tag}</span>` : ''}
-          ${p.product_type && p.product_type !== p.tag
-            ? `<span class="tag tag-type">${p.product_type}</span>` : ''}
-        </div>
-        <div class="title">${p.title}</div>
-        <div class="title-orig">${p.title_full}</div>
-        <div class="price">
-          <span class="price-now">¥${Number(p.price_jpy).toLocaleString()}</span>
-          <span class="price-orig">元値 ¥${Number(p.original_price||0).toLocaleString()}</span>
-        </div>
-        <div class="meta">
-          <span>⭐ ${p.evaluate_rate||'N/A'}</span>
-          <span>📦 ${p.sales_count||0}件</span>
-          ${comm}
-        </div>
-        <div class="links">
-          <a href="${p.affiliate_link}" target="_blank" class="btn-aff">AliExpressで見る →</a>
-        </div>
-        <div class="decision">
-          <button class="btn-ok"   onclick="mark('${p.product_id}',true)">✅ 採用</button>
-          <button class="btn-ng"   onclick="mark('${p.product_id}',false)">❌ 不採用</button>
-          <button class="btn-undo" onclick="mark('${p.product_id}',null)">↩</button>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
   updateStats();
   updatePendingBar();
   applyFilters();
+}
+
+function loadMore() {
+  page++;
+  const slice = filtered.slice(0, (page + 1) * PAGE_SIZE);
+  document.getElementById('grid').innerHTML = slice.map(cardHTML).join('');
+  document.getElementById('btn-more').style.display =
+    filtered.length > (page + 1) * PAGE_SIZE ? 'inline-block' : 'none';
+  document.getElementById('count').textContent = `${slice.length} / ${filtered.length}件`;
 }
 
 // ── Mark ─────────────────────────────────────────────────────────────────
@@ -336,20 +350,23 @@ function updatePendingBar() {
 }
 
 function applyFilters() {
-  let shown = 0;
-  document.querySelectorAll('.card').forEach(c => {
-    const tagOk    = !activeTag || c.dataset.tag === activeTag;
-    const a        = c.dataset.approved;
+  filtered = products.filter(p => {
+    const tagOk    = !activeTag || p.tag === activeTag;
+    const a        = effectiveApproved(p);
     const statusOk = activeStatus === 'all'
-      || (activeStatus === 'approved'  && a === 'true')
-      || (activeStatus === 'rejected'  && a === 'false')
-      || (activeStatus === 'undecided' && a === 'null');
-    const kwOk = !searchQ || c.querySelector('.title').textContent.toLowerCase().includes(searchQ);
-    const show = tagOk && statusOk && kwOk;
-    c.classList.toggle('hidden', !show);
-    if (show) shown++;
+      || (activeStatus === 'approved'  && a === true)
+      || (activeStatus === 'rejected'  && a === false)
+      || (activeStatus === 'undecided' && a === null);
+    const kwOk = !searchQ || (p.title||'').toLowerCase().includes(searchQ);
+    return tagOk && statusOk && kwOk;
   });
-  document.getElementById('count').textContent = shown + '件表示';
+  page = 0;
+  const slice = filtered.slice(0, PAGE_SIZE);
+  document.getElementById('grid').innerHTML = slice.map(cardHTML).join('');
+  const btn = document.getElementById('btn-more');
+  btn.style.display = filtered.length > PAGE_SIZE ? 'inline-block' : 'none';
+  btn.textContent   = `もっと見る（残り ${filtered.length - PAGE_SIZE}件）`;
+  document.getElementById('count').textContent = `${slice.length} / ${filtered.length}件`;
 }
 
 function filterTag(tag) {
