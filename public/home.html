@@ -58,18 +58,31 @@
 
     /* ─── Category Nav ─── */
     .category-nav {
-      display: flex; flex-wrap: wrap; gap: 8px;
-      justify-content: center;
-      padding: 24px 20px;
       max-width: var(--max); margin: 0 auto;
+      padding: 32px 20px 8px;
     }
+    .category-nav-title {
+      font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--text);
+    }
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    @media (max-width: 680px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
     .cat-btn {
+      display: flex; align-items: center; gap: 12px;
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 999px; padding: 7px 18px; font-size: 0.82rem; font-weight: 700;
-      color: var(--text); cursor: pointer; text-decoration: none;
-      transition: all 0.2s;
+      border-radius: 12px; padding: 14px 12px;
+      text-decoration: none; color: var(--text);
+      transition: all 0.18s; position: relative;
     }
-    .cat-btn:hover, .cat-btn.active { background: var(--red); color: #fff; border-color: var(--red); }
+    .cat-btn:hover { border-color: var(--red); box-shadow: 0 2px 8px rgba(220,38,38,.1); background: #fff; }
+    .cat-btn-icon { font-size: 1.6rem; flex-shrink: 0; width: 40px; text-align: center; }
+    .cat-btn-body { flex: 1; min-width: 0; }
+    .cat-btn-name { font-size: 0.85rem; font-weight: 700; color: var(--text); }
+    .cat-btn-desc { font-size: 0.72rem; color: var(--red); margin-top: 2px; line-height: 1.4; }
+    .cat-btn-arrow { color: #ccc; font-size: 0.85rem; flex-shrink: 0; }
 
     /* ─── Main ─── */
     .container { max-width: var(--max); margin: 0 auto; padding: 0 20px 64px; }
@@ -162,12 +175,57 @@
 
   <!-- Category Nav -->
   <nav class="category-nav">
-    <a class="cat-btn" href="#recommend">おすすめ商品</a>
-    <a class="cat-btn" href="#beginner">入門・基礎</a>
-    <a class="cat-btn" href="#payment">支払い・決済</a>
-    <a class="cat-btn" href="#shipping">配送・追跡</a>
-    <a class="cat-btn" href="#safety">安全性</a>
-    <a class="cat-btn" href="#tips">TIPS・節約</a>
+    <div class="category-nav-title">カテゴリから探す</div>
+    <div class="cat-grid">
+      <a class="cat-btn" href="#recommend">
+        <div class="cat-btn-icon">🛒</div>
+        <div class="cat-btn-body">
+          <div class="cat-btn-name">おすすめ商品</div>
+          <div class="cat-btn-desc">買って損なし厳選アイテムを比較</div>
+        </div>
+        <div class="cat-btn-arrow">›</div>
+      </a>
+      <a class="cat-btn" href="#beginner">
+        <div class="cat-btn-icon">📖</div>
+        <div class="cat-btn-body">
+          <div class="cat-btn-name">入門・基礎</div>
+          <div class="cat-btn-desc">登録・注文の全手順を解説</div>
+        </div>
+        <div class="cat-btn-arrow">›</div>
+      </a>
+      <a class="cat-btn" href="#payment">
+        <div class="cat-btn-icon">💳</div>
+        <div class="cat-btn-body">
+          <div class="cat-btn-name">支払い・決済</div>
+          <div class="cat-btn-desc">PayPay・クーポン活用術</div>
+        </div>
+        <div class="cat-btn-arrow">›</div>
+      </a>
+      <a class="cat-btn" href="#shipping">
+        <div class="cat-btn-icon">📦</div>
+        <div class="cat-btn-body">
+          <div class="cat-btn-name">配送・追跡</div>
+          <div class="cat-btn-desc">到着日数・荷物追跡を解説</div>
+        </div>
+        <div class="cat-btn-arrow">›</div>
+      </a>
+      <a class="cat-btn" href="#safety">
+        <div class="cat-btn-icon">🔒</div>
+        <div class="cat-btn-body">
+          <div class="cat-btn-name">安全性</div>
+          <div class="cat-btn-desc">詐欺・偽物を避ける方法</div>
+        </div>
+        <div class="cat-btn-arrow">›</div>
+      </a>
+      <a class="cat-btn" href="#tips">
+        <div class="cat-btn-icon">💡</div>
+        <div class="cat-btn-body">
+          <div class="cat-btn-name">TIPS・節約</div>
+          <div class="cat-btn-desc">お得に買うコツ・節約術</div>
+        </div>
+        <div class="cat-btn-arrow">›</div>
+      </a>
+    </div>
   </nav>
 
   <main class="container">
