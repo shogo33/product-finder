@@ -174,10 +174,10 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
 
       {/* GOOD/SKIP オーバーレイ：スワイプ方向と逆側に配置（常に見える） */}
       <motion.div
-        className="absolute top-12 left-6 px-4 py-1.5 border-[4px] border-green-500 rounded-lg -rotate-12 bg-white/40 backdrop-blur z-30"
+        className="absolute top-12 left-6 px-4 py-1.5 border-[4px] border-red-500 rounded-lg -rotate-12 bg-white/40 backdrop-blur z-30"
         style={{ opacity: likeOpacity }}
       >
-        <span className="text-green-600 font-black text-xl tracking-wider">GOOD!</span>
+        <span className="text-red-600 font-black text-xl tracking-wider">GOOD!</span>
       </motion.div>
       <motion.div
         className="absolute top-12 right-6 px-4 py-1.5 border-[4px] border-stone-400 rounded-lg rotate-12 bg-white/40 backdrop-blur z-30"
