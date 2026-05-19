@@ -1,4 +1,4 @@
-import { useState, useMemo, memo, useRef } from 'react';
+import { useState, useMemo, memo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 import { Heart, X, Package, Sparkles, TrendingUp, Layers, Filter, BarChart3, Smartphone } from 'lucide-react';
 
@@ -233,11 +233,8 @@ const SwipeCard = ({ card, x, rotate, scale, cardOpacity, likeOpacity, nopeOpaci
   );
 };
 
-const SAMPLE_PRODUCTS = [
-  { id: 1, name: 'OOZCC LCD表示 120W急速充電 USB Type-Cケーブル', price: 300, category: 'ガジェット', emoji: '🔌', color: 'from-amber-200 to-orange-300', url: 'https://a.aliexpress.com/_c3SqLqeV', images: ["https://i.imgur.com/jRBcIUr.jpeg", "https://i.imgur.com/7JNQtIT.jpeg", "https://i.imgur.com/i34nHA8.jpeg"], tags: ['急速充電', 'LED表示', '120W'] },
-  { id: 2, name: 'スマート目に優しい モニターライト 1400ルーメン', price: 2700, category: 'ガジェット', emoji: '💡', color: 'from-yellow-100 to-orange-200', url: 'https://a.aliexpress.com/_c3SqLqeV', images: ["https://i.imgur.com/ml2IgSD.jpeg", "https://i.imgur.com/l5V0N8K.jpeg", "https://i.imgur.com/TOfNedw.jpeg"], tags: ['目に優しい', 'デスク環境', 'テレワーク'] },
-  { id: 3, name: '真鍮製 風水牛の置物 開運グッズ', price: 280, category: 'インテリア', emoji: '🐂', color: 'from-amber-100 to-yellow-300', url: 'https://a.aliexpress.com/_c3oiJoQl', images: ["https://i.imgur.com/DUffq0H.jpeg", "https://i.imgur.com/BwavW8Q.jpeg", "https://i.imgur.com/xc73tsi.jpeg"], tags: ['風水', '開運', 'コレクション'] },
-];
+// products.json が未配置の場合のフォールバック
+const FALLBACK_PRODUCTS = [];
 
 function shuffle(arr) {
   const a = [...arr];
@@ -249,9 +246,10 @@ function shuffle(arr) {
 }
 
 export default function App() {
+  const [allProducts, setAllProducts] = useState(FALLBACK_PRODUCTS);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(10000);
-  const [deck, setDeck] = useState(() => shuffle(SAMPLE_PRODUCTS).map((p, i) => ({ ...p, uid: `${p.id}-0-${i}` })));
+  const [deck, setDeck] = useState([]);
   const [cycleCount, setCycleCount] = useState(0);
   const [liked, setLiked] = useState([]);
   const [view, setView] = useState('swipe');
@@ -264,6 +262,18 @@ export default function App() {
 
 
 
+
+  // /products.json を取得してデッキにセット
+  useEffect(() => {
+    fetch('/products.json')
+      .then(r => r.ok ? r.json() : [])
+      .then(data => {
+        if (!data.length) return;
+        setAllProducts(data);
+        setDeck(shuffle(data).map((p, i) => ({ ...p, uid: `${p.id}-0-${i}` })));
+      })
+      .catch(() => {});
+  }, []);
 
   const closeModal = () => {
     setShowModal(false);
@@ -304,7 +314,7 @@ export default function App() {
       const remaining = prev.filter(p => p.uid !== current.uid);
       if (remaining.length <= 2) {
         const newCycle = cycleCount + 1;
-        const refill = shuffle(SAMPLE_PRODUCTS).map((p, i) => ({ ...p, uid: `${p.id}-${newCycle}-${i}` }));
+        const refill = shuffle(allProducts).map((p, i) => ({ ...p, uid: `${p.id}-${newCycle}-${i}` }));
         setCycleCount(newCycle);
         return [...remaining, ...refill];
       }
@@ -352,9 +362,9 @@ export default function App() {
   // 全タグを集計
   const allTags = useMemo(() => {
     const tagSet = new Set();
-    SAMPLE_PRODUCTS.forEach(p => p.tags.forEach(t => tagSet.add(t)));
+    allProducts.forEach(p => p.tags?.forEach(t => tagSet.add(t)));
     return Array.from(tagSet);
-  }, []);
+  }, [allProducts]);
 
   // タグの出現数をカウント
   const tagCounts = useMemo(() => {
@@ -888,7 +898,7 @@ export default function App() {
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-red-50 rounded-xl p-4 border-2 border-red-200">
             <p className="text-[10px] text-stone-600 mb-1">総商品数</p>
-            <p className="text-2xl font-black text-red-600">{SAMPLE_PRODUCTS.length}</p>
+            <p className="text-2xl font-black text-red-600">{allProducts.length}</p>
           </div>
           <div className="bg-rose-50 rounded-xl p-4 border-2 border-rose-200">
             <p className="text-[10px] text-stone-600 mb-1">お気に入り数</p>
