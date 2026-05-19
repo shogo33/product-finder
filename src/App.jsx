@@ -1,6 +1,6 @@
 ﻿import { useState, useMemo, memo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
-import { Heart, X, Package, Sparkles, TrendingUp, Layers, Filter, BarChart3, Smartphone } from 'lucide-react';
+import { Heart, X, Package, Sparkles, TrendingUp, Layers, Filter, BarChart3, Smartphone, BookOpen } from 'lucide-react';
 
 
 // 画像ギャラリー独立コンポーネント
@@ -782,6 +782,42 @@ export default function App() {
     );
   };
 
+  // ----- ARTICLES VIEW -----
+  const ARTICLES = [
+    { title: 'AliExpressとは？仕組み・安全性・使い方を初心者向けに解説', emoji: '🔰', url: '/basics/aliexpress-what-is.html' },
+    { title: 'AliExpressの登録方法と初回注文の全手順', emoji: '📝', url: '/basics/aliexpress-account.html' },
+    { title: 'アリエク おすすめ商品50選【2026年最新】', emoji: '⭐', url: '/basics/aliexpress-osusume.html' },
+    { title: 'アリエクのChoiceとは？安い・早い・安心の理由を徹底解説', emoji: '🛍️', url: '/basics/aliexpress-choice.html' },
+    { title: 'AliExpressの支払い方法おすすめ順位と注意点', emoji: '💳', url: '/payment/aliexpress-payment.html' },
+    { title: 'アリエク ペイペイ決済の全手順', emoji: '📱', url: '/payment/aliexpress-paypay.html' },
+    { title: 'AliExpressクーポンコード使い方', emoji: '🎟️', url: '/payment/aliexpress-coupon.html' },
+    { title: 'AliExpressは怪しい？届かない・偽物の実態を解説', emoji: '🔍', url: '/safety/aliexpress-ayashii.html' },
+    { title: '配送別に解説：アリエク到着目安と最短術', emoji: '📦', url: '/shipping/aliexpress-nannichi.html' },
+    { title: 'AliExpress追跡番号はどこ？確認場所と見方を完全解説', emoji: '🚚', url: '/shipping/aliexpress-tracking-number.html' },
+  ];
+
+  const ArticlesView = () => (
+    <div className="flex-1 flex flex-col overflow-y-auto h-full">
+      <div className="px-4 py-3 border-b border-stone-200 bg-gradient-to-r from-red-50 to-rose-50 flex-shrink-0">
+        <div className="text-sm font-bold text-stone-800">アリエク攻略ガイド</div>
+        <div className="text-xs text-stone-500 mt-0.5">初心者から上級者まで役立つ記事</div>
+      </div>
+      <div className="px-4 py-3 flex flex-col gap-2">
+        {ARTICLES.map((article, i) => (
+          <a
+            key={i}
+            href={article.url}
+            className="flex items-center gap-3 px-3 py-3 rounded-2xl bg-stone-50 hover:bg-red-50 active:bg-red-100 border border-stone-100 hover:border-red-200 transition-all active:scale-[0.98]"
+          >
+            <span className="text-xl flex-shrink-0 w-8 text-center">{article.emoji}</span>
+            <span className="text-xs font-semibold text-stone-700 leading-snug flex-1">{article.title}</span>
+            <span className="text-red-400 font-bold text-sm flex-shrink-0">›</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     <div className="h-[100svh] bg-gradient-to-b from-stone-50 to-stone-100 flex items-center justify-center sm:p-4 overflow-hidden">
       <HelpModal />
@@ -818,16 +854,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* 記事リンク */}
-          <a
-            href="/home.html"
-            className="mt-1.5 relative z-10 self-start inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/80 backdrop-blur hover:bg-white shadow-sm active:scale-95 transition-all border border-red-100"
-          >
-            <span className="text-base">📰</span>
-            <span className="text-xs font-bold text-red-600">アリエクに関する記事はこちら</span>
-            <span className="text-red-400 font-bold text-sm">›</span>
-          </a>
-
           {/* 進捗バー */}
           <div className="mt-1 relative z-10">
             <div className="flex justify-between items-center mb-1">
@@ -857,6 +883,7 @@ export default function App() {
               { id: 'budget', icon: Filter },
               { id: 'liked', icon: Heart, count: liked.length },
               { id: 'stats', icon: BarChart3 },
+              { id: 'articles', icon: BookOpen },
             ].map(tab => {
               const Icon = tab.icon;
               return (
@@ -882,6 +909,7 @@ export default function App() {
           {view === 'budget' && <BudgetView />}
           {view === 'liked' && <LikedView />}
           {view === 'stats' && <StatsView />}
+          {view === 'articles' && <ArticlesView />}
         </div>
       </div>
     </div>
