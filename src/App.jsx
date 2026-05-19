@@ -584,39 +584,6 @@ export default function App() {
           })}
         </div>
 
-        {/* ハート/バツボタン */}
-        <div className="flex gap-4 items-center w-full justify-center mb-0 mt-1 flex-shrink-0">
-          <button
-            onClick={() => {
-              animate(x, -1000, {
-                duration: 0.3,
-                ease: 'easeOut',
-                onComplete: () => {
-                  advance('left');
-                  requestAnimationFrame(() => x.set(0));
-                }
-              });
-            }}
-            className="w-10 h-10 rounded-full bg-white border-2 border-stone-300 shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform"
-          >
-            <X className="w-4 h-4 text-stone-600" strokeWidth={3} />
-          </button>
-          <button
-            onClick={() => {
-              animate(x, 1000, {
-                duration: 0.3,
-                ease: 'easeOut',
-                onComplete: () => {
-                  advance('right');
-                  requestAnimationFrame(() => x.set(0));
-                }
-              });
-            }}
-            className="w-10 h-10 rounded-full bg-gradient-to-br from-red-500 to-red-600 shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform"
-          >
-            <Heart className="w-4 h-4 text-white" fill="white" />
-          </button>
-        </div>
       </div>
     );
   };
