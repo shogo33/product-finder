@@ -882,7 +882,6 @@ export default function App() {
               { id: 'swipe', icon: Layers },
               { id: 'budget', icon: Filter },
               { id: 'liked', icon: Heart, count: liked.length },
-              { id: 'stats', icon: BarChart3 },
               { id: 'articles', icon: BookOpen },
             ].map(tab => {
               const Icon = tab.icon;
