@@ -821,11 +821,13 @@ export default function App() {
           {/* 記事リンク */}
           <a
             href="/home.html"
-            className="mt-1 relative z-10 flex items-center gap-1.5 self-start px-2.5 py-0.5 rounded-full bg-white/70 backdrop-blur hover:bg-white shadow-sm transition-all text-[9px] font-bold text-red-600 border border-red-100"
+            className="mt-1.5 relative z-10 flex items-center justify-between px-3 py-2 rounded-xl bg-white/80 backdrop-blur hover:bg-white shadow-sm active:scale-95 transition-all border border-red-100"
           >
-            <span>📰</span>
-            <span>アリエクに関する記事はこちら</span>
-            <span>›</span>
+            <div className="flex items-center gap-2">
+              <span className="text-base">📰</span>
+              <span className="text-xs font-bold text-red-600">アリエクに関する記事はこちら</span>
+            </div>
+            <span className="text-red-400 font-bold text-sm">›</span>
           </a>
 
           {/* 進捗バー */}
