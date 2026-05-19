@@ -172,18 +172,18 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
         </a>
       </div>
 
-      {/* GOOD/SKIP オーバーレイ */}
-      <motion.div 
-        className="absolute top-8 right-3 px-3 py-1 border-[4px] border-green-500 rounded-lg rotate-12 bg-white/30 backdrop-blur z-30"
+      {/* GOOD/SKIP オーバーレイ：スワイプ方向と逆側に配置（常に見える） */}
+      <motion.div
+        className="absolute top-12 left-6 px-4 py-1.5 border-[4px] border-green-500 rounded-lg -rotate-12 bg-white/40 backdrop-blur z-30"
         style={{ opacity: likeOpacity }}
       >
-        <span className="text-green-600 font-black text-lg tracking-wider">GOOD!</span>
+        <span className="text-green-600 font-black text-xl tracking-wider">GOOD!</span>
       </motion.div>
-      <motion.div 
-        className="absolute top-8 left-3 px-3 py-1 border-[4px] border-stone-400 rounded-lg -rotate-12 bg-white/30 backdrop-blur z-30"
+      <motion.div
+        className="absolute top-12 right-6 px-4 py-1.5 border-[4px] border-stone-400 rounded-lg rotate-12 bg-white/40 backdrop-blur z-30"
         style={{ opacity: nopeOpacity }}
       >
-        <span className="text-stone-600 font-black text-lg tracking-wider">SKIP</span>
+        <span className="text-stone-600 font-black text-xl tracking-wider">SKIP</span>
       </motion.div>
     </motion.div>
   );
@@ -545,7 +545,7 @@ export default function App() {
     const cards = filteredDeck.slice(0, 3);
 
     return (
-      <div className="flex-1 flex flex-col items-center justify-start px-2 pt-1 pb-1 overflow-hidden relative min-h-0">
+      <div className="flex-1 flex flex-col items-center justify-start px-2 pt-1 pb-4 overflow-hidden relative min-h-0">
         {/* カードスタックエリア */}
         <div className="w-full relative flex-1 min-h-0">
           {/* 後ろのカードから先に描画（zIndexで前面に配置） */}
