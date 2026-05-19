@@ -187,3 +187,9 @@ if (deactivatedCount > 0 || reactivatedCount > 0) {
   execSync('node scripts/refill-pool.mjs', { stdio: 'inherit' });
   console.log('✅ 採用リスト・公開データを更新しました');
 }
+
+// 記事内の商品リンクを確認・更新
+if (deactivatedCount > 0) {
+  console.log('\n📝 記事内の商品セクションを確認・更新中...');
+  execSync('node scripts/update-article-products.mjs', { stdio: 'inherit' });
+}

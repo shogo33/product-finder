@@ -200,6 +200,20 @@
       <h2 id="section2">【見出し2】</h2>
       <p>【本文】</p>
 
+      <!--
+      ★ 特定商品を紹介するときは必ず @product-start / @product-end マーカーで囲む ★
+
+      書き方:
+        @product-start id="[products.jsonのproduct_id]"
+                       type="[product_type 例: モバイルバッテリー]"
+                       tag="[tag 例: ガジェット]"
+        ... h2見出し + 商品カード + 説明文 ...
+        @product-end
+
+      これがないと refresh-prices.mjs 実行時にリンク切れを自動検知・置き換えできない。
+      実際の記法は aliexpress-projector-under-10000.html を参照。
+      -->
+
       <!-- ステップリスト例 -->
       <ol class="step-list">
         <li>【ステップ1の説明】</li>
