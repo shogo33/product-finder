@@ -5,60 +5,11 @@ import { Heart, X, Package, Sparkles, TrendingUp, Layers, Filter, BarChart3, Sma
 
 // 画像ギャラリー独立コンポーネント
 const ImageGallery = memo(({ images, image, emoji, name }) => {
-  const [idx, setIdx] = useState(0);
-  
-  if (!images || images.length === 0) {
-    if (image) {
-      return <img src={image} alt={name} className="w-full h-full object-cover" />;
-    }
-    return <div className="w-full h-full flex items-center justify-center text-9xl">{emoji}</div>;
+  const src = images?.[0] || image;
+  if (src) {
+    return <img src={src} alt={name} className="w-full h-full object-cover" />;
   }
-  
-  return (
-    <>
-      {images.map((img, i) => (
-        <img 
-          key={i}
-          src={img} 
-          alt={name} 
-          className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-100"
-          style={{ opacity: i === idx ? 1 : 0 }}
-        />
-      ))}
-      
-      {images.length > 1 && (
-        <div className="absolute top-2 left-2 right-2 flex gap-1 z-20">
-          {images.map((_, i) => (
-            <div 
-              key={i}
-              className={`flex-1 h-1 rounded-full transition-all ${
-                i === idx ? 'bg-white' : 'bg-white/40'
-              }`}
-            />
-          ))}
-        </div>
-      )}
-
-      {images.length > 1 && (
-        <>
-          <div 
-            className="absolute top-0 left-0 w-1/2 h-full z-10"
-            onClick={(e) => {
-              e.stopPropagation();
-              setIdx(prev => prev > 0 ? prev - 1 : images.length - 1);
-            }}
-          />
-          <div 
-            className="absolute top-0 right-0 w-1/2 h-full z-10"
-            onClick={(e) => {
-              e.stopPropagation();
-              setIdx(prev => prev < images.length - 1 ? prev + 1 : 0);
-            }}
-          />
-        </>
-      )}
-    </>
-  );
+  return <div className="w-full h-full flex items-center justify-center text-9xl">{emoji}</div>;
 });
 
 // 背景カード（2,3枚目）
