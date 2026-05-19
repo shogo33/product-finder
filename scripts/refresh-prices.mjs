@@ -181,10 +181,9 @@ if (reactivatedCount) console.log(`   ♻️  再表示:   ${reactivatedCount}�
 console.log(`   表示中: ${activeCount}件 / 非表示: ${inactiveCount}件 / 合計: ${products.length}件`);
 console.log(`   更新時刻: ${new Date().toLocaleString('ja-JP')}`);
 
-// 採用リスト再生成（非表示になった商品を除外し、補填）
+// 採用リスト再生成（非表示になった商品を除外し、APIから補填）
 if (deactivatedCount > 0 || reactivatedCount > 0) {
-  console.log('\n🔄 採用リストを再生成中...');
-  execSync('node scripts/auto-approve.mjs', { stdio: 'inherit' });
-  execSync('node scripts/generate-public-products.mjs', { stdio: 'inherit' });
+  console.log('\n🔄 採用リストを再生成・補填中...');
+  execSync('node scripts/refill-pool.mjs', { stdio: 'inherit' });
   console.log('✅ 採用リスト・公開データを更新しました');
 }
