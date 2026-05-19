@@ -233,6 +233,12 @@ export default function App() {
 
   const closeModal = () => {
     setShowModal(false);
+    // モーダルを閉じた後にスワイプヒントアニメを再生
+    setTimeout(() => {
+      animate(x, 70, { duration: 0.3, ease: 'easeOut' })
+        .then(() => animate(x, -50, { duration: 0.35, ease: 'easeInOut' }))
+        .then(() => animate(x, 0, { type: 'spring', stiffness: 300, damping: 18 }));
+    }, 400);
   };
 
   const filteredDeck = useMemo(() => {
