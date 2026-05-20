@@ -18,7 +18,16 @@ export default defineConfig({
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
           const url = req.url?.split('?')[0]
-          if (url && url.endsWith('.html') && url !== '/') {
+          // / → public/index.html（静的TOPページ）
+          if (url === '/' || url === '/index.html') {
+            const filePath = path.join(__dirname, 'public', 'index.html')
+            if (fs.existsSync(filePath)) {
+              res.setHeader('Content-Type', 'text/html; charset=utf-8')
+              res.end(fs.readFileSync(filePath))
+              return
+            }
+          }
+          if (url && url.endsWith('.html')) {
             const filePath = path.join(__dirname, 'public', url)
             if (fs.existsSync(filePath)) {
               res.setHeader('Content-Type', 'text/html; charset=utf-8')
@@ -34,5 +43,12 @@ export default defineConfig({
   root: path.resolve(__dirname, './'),
   resolve: {
     dedupe: ['react', 'react-dom'],
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        app: path.resolve(__dirname, 'app/index.html'),
+      },
+    },
   },
 })

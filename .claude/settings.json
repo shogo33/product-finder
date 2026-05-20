@@ -5,10 +5,31 @@
       "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" status)",
       "PowerShell($r = Invoke-WebRequest \"https://product-finder-three-liard.vercel.app/home.html\" -UseBasicParsing -ErrorAction SilentlyContinue; $r.Content | Select-String \"recommend|おすすめ商品\" | Select-Object -First 5)",
       "PowerShell($r = Invoke-RestMethod \"https://api.github.com/repos/shogo33/product-finder/deployments?per_page=5\" -Headers @{Accept=\"application/vnd.github.v3+json\"}; $r | Select-Object id, @{N=\"sha\";E={$_.sha.Substring\\(0,7\\)}}, environment, @{N=\"created\";E={$_.created_at}})",
-      "PowerShell($r = Invoke-RestMethod \"https://api.github.com/repos/shogo33/product-finder/commits/main/check-runs\" -Headers @{Accept=\"application/vnd.github.v3+json\"}; $r.check_runs | Select-Object name, status, conclusion, @{N=\"sha\";E={$_.head_sha.Substring\\(0,7\\)}} | Format-Table)"
+      "PowerShell($r = Invoke-RestMethod \"https://api.github.com/repos/shogo33/product-finder/commits/main/check-runs\" -Headers @{Accept=\"application/vnd.github.v3+json\"}; $r.check_runs | Select-Object name, status, conclusion, @{N=\"sha\";E={$_.head_sha.Substring\\(0,7\\)}} | Format-Table)",
+      "Bash(Copy-Item \"C:\\\\Users\\\\USER\\\\Downloads\\\\file_000000001ed47207a6513a716aff3079.png\" \"c:\\\\Users\\\\USER\\\\product-finder\\\\public\\\\logo.png\")",
+      "Bash(cp \"/mnt/c/Users/USER/Downloads/file_000000001ed47207a6513a716aff3079.png\" \"/mnt/c/Users/USER/product-finder/public/logo.png\")",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\USER\\\\Downloads\\\\file_000000001ed47207a6513a716aff3079.png\" \"C:\\\\Users\\\\USER\\\\product-finder\\\\public\\\\logo.png\")",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" add public/logo.png src/App.jsx)",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" commit -m \"fix: �J�[�h���]���ǉ��EGOOD/SKIP�𒆉����Ɉړ�\")",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" commit -m \"fix: GOOD�X�^���v��ԐF�ɕύX\")",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" commit -m \"fix: SKIP�X�^���v��F�ɕύX\")",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" commit -m \"feat: ���[�_���������ɃX���C�v�q���g�A�j����ǉ�\")",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" commit -m \"fix: �X���C�v��ʂ�1��ʂɎ��߂�i100svh�E�w�b�_�[���k�j\")",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" commit -m \"fix: minPrice�폜�R��Ńt�B���^�[�^�u���^�����ɂȂ�o�O���C��\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/products.json','utf8'\\)\\); console.log\\('総件数:', d.length\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const s=fs.statSync\\('data/products.json'\\); console.log\\('最終更新:', s.mtime.toLocaleString\\('ja-JP'\\)\\); const d=JSON.parse\\(fs.readFileSync\\('data/products.json','utf8'\\)\\); console.log\\('総件数:', d.length\\)\")",
+      "Bash(Get-Date)",
+      "Bash(cd \"c:\\\\Users\\\\USER\\\\product-finder\" && node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/products.json','utf8'\\)\\); console.log\\('総件数:', d.length\\)\" && cat /tmp/bulk-fetch-run2.log 2>/dev/null | tail -20)",
+      "Read(//tmp/**)",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"const p=require\\('./data/products.json'\\); const r=p.filter\\(x=>\\(x.title||''\\).includes\\('レオタード'\\)||\\(x.title_short||''\\).includes\\('レオタード'\\)\\); r.forEach\\(x=>console.log\\(x.product_id, x.tag, x.title_short, '|', x.title?.slice\\(0,50\\)\\)\\);\")",
+      "Bash(node scripts/generate-public-products.mjs)",
+      "Bash(node scripts/gen-category-links.mjs)",
+      "Bash(node scripts/inject-category-links.mjs)"
     ],
     "additionalDirectories": [
-      "C:\\Users\\USER\\Downloads"
+      "C:\\Users\\USER\\Downloads",
+      "\\mnt\\c\\Users\\USER\\Downloads"
     ]
   }
 }

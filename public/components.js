@@ -7,13 +7,13 @@
   /* ── ヘッダー ─────────────────────────────────── */
   const HEADER_HTML =
     '<header class="site-header">' +
-      '<a class="site-logo" href="/home.html"><img src="/logo.png" alt="アリエクSwipe" style="height:36px;width:auto;display:block;"></a>' +
-      '<a class="header-cta" href="https://product-finder-lilac.vercel.app/" target="_blank" rel="noopener">おすすめ商品を見る</a>' +
+      '<a class="site-logo" href="/"><img src="/logo.png" alt="アリエクSwipe" style="height:36px;width:auto;display:block;"></a>' +
+      '<a class="header-cta" href="https://product-finder-lilac.vercel.app/app/" target="_blank" rel="noopener">おすすめ商品を見る</a>' +
     '</header>';
 
   /* ── スティッキーCTA ───────────────────────────── */
   const STICKY_CTA_HTML =
-    '<a href="https://product-finder-lilac.vercel.app/" target="_blank" rel="noopener">おすすめ商品を見る</a>' +
+    '<a href="https://product-finder-lilac.vercel.app/app/" target="_blank" rel="noopener">おすすめ商品を見る</a>' +
     '<div class="sub">アリエクSwipeでお得な商品をチェック</div>';
 
   /* ── フッター ─────────────────────────────────── */

@@ -16,7 +16,12 @@
       "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" add public/admin.html)",
       "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" commit -m \"feat: �^�O�t�B���^�[���A�R�[�f�B�I���`���Ɂi�f�t�H���g���j\")",
       "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" add -A)",
-      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" commit -m \"feat: �A���G�NFinder �� �A���G�Nswipe �ɖ��̕ύX\")"
+      "PowerShell(git -C \"c:\\\\Users\\\\USER\\\\product-finder\" commit -m \"feat: �A���G�NFinder �� �A���G�Nswipe �ɖ��̕ύX\")",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" add public/)",
+      "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" status --short)",
+      "Bash(node -e ' *)",
+      "Bash(git add *)",
+      "Bash(node scripts/migrate-to-root.mjs)"
     ]
   }
 }
