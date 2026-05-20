@@ -31,6 +31,24 @@
       'ただし、商品の評価・内容は独自の基準で作成しています。' +
     '</div>';
 
+  /* ── CTA共通CSS ───────────────────────────────── */
+  var CTA_CSS =
+    '.cta-box{background:linear-gradient(135deg,#fff1f2 0%,#fff8f8 100%);border:2px solid #fecdcf;border-left:5px solid #e8253a;border-radius:16px;padding:28px 20px;margin:40px 0;text-align:center;}' +
+    '.cta-lead{font-size:.93rem;font-weight:700;color:#1a1a1a;margin:0 0 18px;line-height:1.7;}' +
+    '.cta-sub{font-size:.8rem;color:#6b7280;margin:0 0 18px;line-height:1.6;}' +
+    '.cta-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}' +
+    '.cta-btn-aliex,.cta-btn-amazon,.cta-btn-app{display:inline-flex;align-items:center;gap:6px;padding:13px 28px;border-radius:999px;font-size:.88rem;font-weight:700;text-decoration:none;transition:opacity .15s,transform .1s;white-space:nowrap;box-shadow:0 3px 10px rgba(0,0,0,.12);}' +
+    '.cta-btn-aliex:hover,.cta-btn-amazon:hover,.cta-btn-app:hover{opacity:.88;transform:translateY(-2px);}' +
+    '.cta-btn-aliex:active,.cta-btn-amazon:active,.cta-btn-app:active{transform:scale(.97);}' +
+    '.cta-btn-aliex{background:#e8253a;color:#fff;}' +
+    '.cta-btn-amazon{background:#FF9900;color:#fff;}' +
+    '.cta-btn-app{background:linear-gradient(135deg,#e8253a,#c2185b);color:#fff;}' +
+    '.cta-note{font-size:.72rem;color:#9ca3af;margin:12px 0 0;}';
+
+  var styleEl = document.createElement('style');
+  styleEl.textContent = CTA_CSS;
+  document.head.appendChild(styleEl);
+
   /* ── ヘッダー同期注入（FOUC防止）─────────────── */
   // <script id="site-header-inject"> タグをヘッダーに差し替える
   var injectScript = document.getElementById('site-header-inject');
