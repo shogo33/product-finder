@@ -63,13 +63,27 @@
     injectScript.replaceWith(headerEl.firstChild);
   }
 
-  /* ── フッター・スティッキーCTAはDOMContentLoaded後 */
+  /* ── フッター・スティッキーCTA・ヒーローブランドはDOMContentLoaded後 */
   document.addEventListener('DOMContentLoaded', function () {
     var footer = document.getElementById('site-footer');
     if (footer) footer.innerHTML = FOOTER_HTML;
 
     var cta = document.getElementById('cta-sticky');
     if (cta) cta.innerHTML = STICKY_CTA_HTML;
+
+    /* ── article-hero の先頭にブランドバッジを挿入 ── */
+    var hero = document.querySelector('.article-hero');
+    if (hero) {
+      var badge = document.createElement('a');
+      badge.href = '/';
+      badge.style.cssText = 'display:inline-flex;align-items:center;gap:8px;text-decoration:none;margin-bottom:16px;opacity:.85;transition:opacity .15s;';
+      badge.onmouseenter = function(){ this.style.opacity = '1'; };
+      badge.onmouseleave = function(){ this.style.opacity = '.85'; };
+      badge.innerHTML =
+        '<img src="/logo.png" alt="アリエクswipe" style="height:28px;width:auto;display:block;">' +
+        '<span style="font-size:.75rem;font-weight:700;color:#e8253a;letter-spacing:.04em;">アリエクswipe</span>';
+      hero.insertBefore(badge, hero.firstChild);
+    }
   });
 
 })();
