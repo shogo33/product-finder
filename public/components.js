@@ -44,11 +44,8 @@
     '.cta-btn-amazon{background:#FF9900;color:#fff;}' +
     '.cta-btn-app{background:linear-gradient(135deg,#e8253a,#c2185b);color:#fff;}' +
     '.cta-note{font-size:.72rem;color:#9ca3af;margin:12px 0 0;}' +
-    /* シマー共通 */
-    '.cta-btn-aliex::after,.cta-btn-amazon::after,.cta-btn-app::after,.header-cta::after,#cta-sticky a::after{content:"";position:absolute;top:0;left:-80%;width:55%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);animation:cta-shimmer 3.5s ease-in-out infinite;pointer-events:none;}' +
     '.header-cta{position:relative;overflow:hidden;}' +
-    '#cta-sticky a{position:relative;overflow:hidden;}' +
-    '@keyframes cta-shimmer{0%{left:-80%}18%{left:120%}100%{left:120%}}';
+    '#cta-sticky a{position:relative;overflow:hidden;}';
 
   var styleEl = document.createElement('style');
   styleEl.textContent = CTA_CSS;
