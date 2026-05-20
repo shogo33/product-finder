@@ -38,8 +38,10 @@
 
   /* ── スティッキーCTA ───────────────────────────── */
   var STICKY_CTA_HTML =
-    '<a href="https://aliswipe.com/app/" target="_blank" rel="noopener">おすすめ商品を見る</a>' +
-    '<div class="sub">アリエクSwipeでお得な商品をチェック</div>';
+    '<a href="https://aliswipe.com/app/" target="_blank" rel="noopener" style="display:block;color:#fff;text-decoration:none;">' +
+      '<div style="font-weight:700;font-size:0.92rem;">おすすめ商品を見る</div>' +
+      '<div class="sub">アリエクSwipeでお得な商品をチェック</div>' +
+    '</a>';
 
   /* ── フッター ─────────────────────────────────── */
   var FOOTER_HTML =
@@ -97,6 +99,7 @@
     '.cta-btn-app{background:linear-gradient(135deg,#e8253a,#c2185b);color:#fff;}' +
     '.cta-note{font-size:.72rem;color:#9ca3af;margin:12px 0 0;}' +
     '#cta-sticky a{position:relative;overflow:hidden;}' +
+    '#cta-sticky{padding:9px 20px!important;}' +
     /* パンくず位置のブランドバッジ */
     '.site-brand-nav{padding:7px 16px;background:#fafaf8;border-bottom:1px solid #e5e7eb;}' +
     '.site-brand-nav a{display:inline-flex;align-items:center;text-decoration:none;opacity:.75;transition:opacity .15s;}' +
