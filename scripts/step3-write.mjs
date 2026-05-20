@@ -228,7 +228,19 @@ Redditのsnippetをただ翻訳して並べるのではなく、「海外のガ�
 - 各商品の直下に必ず AliExpress + Amazon 並列の cta-box 構造を配置する
 - Amazon はプレースホルダー（無効化）形式で出力する
 
-#### 6.5 関連記事セクション（必須）
+#### 6.5 アプリ誘導バナー（必須・1回のみ）
+記事の中盤（2〜3番目の H2 の直後あたり）に **1回だけ** 以下の cta-inline バナーを挿入する。導入直後・まとめ直前・商品CTAの直後は避ける。ウザくなるので複数回挿入しないこと。
+\`\`\`html
+<!-- アプリ誘導バナー -->
+<div class="cta-inline">
+  <div class="cta-label">✨ PICK UP</div>
+  <h3>AIが今話題の商品をスワイプで提案</h3>
+  <p>TikTokで見たアレ、AliExpressで見つかるかも。<br>スワイプするだけで掘り出し物に出会えます。</p>
+  <a href="https://aliswipe.com/app/" target="_blank" rel="noopener">スワイプでおすすめ商品を見る →</a>
+</div>
+\`\`\`
+
+#### 6.6 関連記事セクション（必須）
 本文の末尾（FAQの後、cta-sticky の直前）に必ず関連記事セクションを出力する：
 \`\`\`html
 <div class="container">
@@ -357,7 +369,7 @@ const fullHtml = `<!DOCTYPE html>
     .related-card .rc-tag { font-size: 0.7rem; color: var(--red); font-weight: 700; margin-bottom: 6px; }
     .related-card .rc-title { font-size: 0.88rem; font-weight: 700; line-height: 1.4; }
 
-    .cta-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--red); color: #fff; text-align: center; padding: 12px 20px; z-index: 200; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); }
+    .cta-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, #e8253a 0%, #ff6b35 100%); color: #fff; text-align: center; padding: 12px 20px; z-index: 200; box-shadow: 0 -4px 20px rgba(232,37,58,0.35); }
     .cta-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.88rem; }
     .cta-sticky .sub { font-size: 0.7rem; opacity: 0.85; }
     @media (max-width: 640px) { .cta-sticky { display: block; } body { padding-bottom: 72px; } }
@@ -388,6 +400,14 @@ const fullHtml = `<!DOCTYPE html>
     .carousel-dots { display: flex; justify-content: center; gap: 6px; padding: 8px 0 4px; background: #f5f5f5; }
     .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: #ddd; border: none; cursor: pointer; padding: 0; transition: background 0.2s; }
     .carousel-dot.active { background: var(--red); }
+
+    /* アプリ誘導バナー（中盤CTA） */
+    .cta-inline { background: linear-gradient(135deg, var(--red) 0%, #ff6b35 100%); border-radius: var(--radius); padding: 28px 24px; text-align: center; margin: 40px 0; color: #fff; }
+    .cta-inline .cta-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 8px; }
+    .cta-inline h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+    .cta-inline p { font-size: 0.85rem; opacity: 0.9; margin-bottom: 20px; }
+    .cta-inline a { display: inline-block; background: #fff; color: var(--red); font-weight: 700; font-size: 0.9rem; padding: 12px 28px; border-radius: 999px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+    .cta-inline a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
 
     /* PCフローティングバナー */
     .pc-float-banner { display: none; position: fixed; bottom: 24px; right: 24px; width: 288px; background: linear-gradient(135deg, #e8253a 0%, #ff6b35 100%); border-radius: 16px; box-shadow: 0 8px 32px rgba(232,37,58,0.35); padding: 20px 20px 18px; z-index: 300; color: #fff; opacity: 0; transform: translateY(20px); transition: opacity 0.4s, transform 0.4s; pointer-events: none; }
