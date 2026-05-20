@@ -4,21 +4,16 @@
  * 処理内容:
  *   1. canonical URL → 正しいドメイン＋パスに修正
  *   2. og:url → canonical に統一
- *   3. og:image → 記事別SVGに修正（なければ追加）
+ *   3. og:image → 記事別JPEG（/images/ogp/{slug}.jpg）に修正
  *   4. twitter:card → なければ追加
  *   5. JSON-LD (Article + BreadcrumbList) → なければ追加
- *      home.html のみ WebSite + Organization
+ *      index.html のみ WebSite + Organization
  */
 import fs from 'fs';
 import path from 'path';
 
 const DOMAIN = 'https://product-finder-lilac.vercel.app';
 const TODAY  = '2026-05-20';
-
-// filename(拡張子なし) → image slug の例外マッピング
-const IMAGE_SLUG_MAP = {
-  'baseus-mobile-battery-osusume': 'baseus-mobile-battery',
-};
 
 function getAllHtmlFiles(dir) {
   const files = [];
@@ -53,10 +48,8 @@ for (const file of getAllHtmlFiles(base)) {
 
   // ── URLs ────────────────────────────────────────────────────
   const canonicalUrl = isHome ? `${DOMAIN}/` : `${DOMAIN}/${rel}`;
-  const imgSlug      = IMAGE_SLUG_MAP[slug] || slug;
-  const imageUrl     = isHome
-    ? `${DOMAIN}/images/aliexpress-osusume.svg`
-    : `${DOMAIN}/images/${imgSlug}.svg`;
+  // OGP JPEG: /images/ogp/{slug}.jpg（gen-ogp.mjs と命名を合わせる）
+  const imageUrl     = `${DOMAIN}/images/ogp/${slug}.jpg`;
 
   // ── 既存 meta 値を抽出 ──────────────────────────────────────
   const title       = (html.match(/<title>([\s\S]*?)<\/title>/)   || [])[1]?.trim() || '';
@@ -92,7 +85,7 @@ for (const file of getAllHtmlFiles(base)) {
     );
   }
 
-  // 4. Twitter Card 追加 ──────────────────────────────────────
+  // 4. Twitter Card 追加／更新 ───────────────────────────────
   if (!html.includes('twitter:card')) {
     const twitterBlock =
       `<meta name="twitter:card" content="summary_large_image" />\n` +
@@ -100,6 +93,10 @@ for (const file of getAllHtmlFiles(base)) {
       `  <meta name="twitter:description" content="${ogDesc.slice(0, 200)}" />\n` +
       `  <meta name="twitter:image" content="${imageUrl}" />`;
     html = html.replace('</head>', `  ${twitterBlock}\n</head>`);
+  } else {
+    // twitter:image を最新の JPEG に更新
+    html = html.replace(/<meta\s+name="twitter:image"[^>]*>/g,
+      `<meta name="twitter:image" content="${imageUrl}" />`);
   }
 
   // 5. JSON-LD 追加（既存があればスキップ）──────────────────
