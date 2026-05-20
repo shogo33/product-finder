@@ -122,21 +122,24 @@
   styleEl.textContent = SHARED_CSS;
   document.head.appendChild(styleEl);
 
-  /* ── ヘッダー同期注入（FOUC防止）─────────────── */
-  var injectScript = document.getElementById('site-header-inject');
-  if (injectScript) {
-    var wrap = document.createElement('div');
-    wrap.innerHTML = HEADER_HTML;
-    var frag = document.createDocumentFragment();
-    while (wrap.firstChild) frag.appendChild(wrap.firstChild);
-    injectScript.replaceWith(frag);
-  }
-
-  /* ── DOMContentLoaded後の処理 ─────────────────── */
+  /* ── DOMContentLoaded後に全注入 ──────────────── */
   document.addEventListener('DOMContentLoaded', function () {
+
+    /* ヘッダー注入 */
+    var injectScript = document.getElementById('site-header-inject');
+    if (injectScript) {
+      var wrap = document.createElement('div');
+      wrap.innerHTML = HEADER_HTML;
+      var frag = document.createDocumentFragment();
+      while (wrap.firstChild) frag.appendChild(wrap.firstChild);
+      injectScript.replaceWith(frag);
+    }
+
+    /* フッター */
     var footer = document.getElementById('site-footer');
     if (footer) footer.innerHTML = FOOTER_HTML;
 
+    /* スティッキーCTA */
     var cta = document.getElementById('cta-sticky');
     if (cta) cta.innerHTML = STICKY_CTA_HTML;
 
@@ -150,9 +153,9 @@
     }
 
     /* ハンバーガーメニュー開閉 */
-    var btn     = document.querySelector('.hamburger-btn');
-    var drawer  = document.querySelector('.nav-drawer');
-    var overlay = document.querySelector('.nav-overlay');
+    var btn      = document.querySelector('.hamburger-btn');
+    var drawer   = document.querySelector('.nav-drawer');
+    var overlay  = document.querySelector('.nav-overlay');
     var closeBtn = document.querySelector('.nav-close');
 
     function openNav() {
@@ -172,9 +175,9 @@
       document.body.style.overflow = '';
     }
 
-    if (btn)     btn.addEventListener('click', openNav);
+    if (btn)      btn.addEventListener('click', openNav);
     if (closeBtn) closeBtn.addEventListener('click', closeNav);
-    if (overlay) overlay.addEventListener('click', closeNav);
+    if (overlay)  overlay.addEventListener('click', closeNav);
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeNav(); });
   });
 
