@@ -37,13 +37,18 @@
     '.cta-lead{font-size:.93rem;font-weight:700;color:#1a1a1a;margin:0 0 18px;line-height:1.7;}' +
     '.cta-sub{font-size:.8rem;color:#6b7280;margin:0 0 18px;line-height:1.6;}' +
     '.cta-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}' +
-    '.cta-btn-aliex,.cta-btn-amazon,.cta-btn-app{display:inline-flex;align-items:center;gap:6px;padding:13px 28px;border-radius:999px;font-size:.88rem;font-weight:700;text-decoration:none;transition:opacity .15s,transform .1s;white-space:nowrap;box-shadow:0 3px 10px rgba(0,0,0,.12);}' +
+    '.cta-btn-aliex,.cta-btn-amazon,.cta-btn-app{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:6px;padding:13px 28px;border-radius:999px;font-size:.88rem;font-weight:700;text-decoration:none;transition:opacity .15s,transform .1s;white-space:nowrap;box-shadow:0 3px 10px rgba(0,0,0,.12);}' +
     '.cta-btn-aliex:hover,.cta-btn-amazon:hover,.cta-btn-app:hover{opacity:.88;transform:translateY(-2px);}' +
     '.cta-btn-aliex:active,.cta-btn-amazon:active,.cta-btn-app:active{transform:scale(.97);}' +
     '.cta-btn-aliex{background:#e8253a;color:#fff;}' +
     '.cta-btn-amazon{background:#FF9900;color:#fff;}' +
     '.cta-btn-app{background:linear-gradient(135deg,#e8253a,#c2185b);color:#fff;}' +
-    '.cta-note{font-size:.72rem;color:#9ca3af;margin:12px 0 0;}';
+    '.cta-note{font-size:.72rem;color:#9ca3af;margin:12px 0 0;}' +
+    /* シマー共通 */
+    '.cta-btn-aliex::after,.cta-btn-amazon::after,.cta-btn-app::after,.header-cta::after,#cta-sticky a::after{content:"";position:absolute;top:0;left:-80%;width:55%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);animation:cta-shimmer 3.5s ease-in-out infinite;pointer-events:none;}' +
+    '.header-cta{position:relative;overflow:hidden;}' +
+    '#cta-sticky a{position:relative;overflow:hidden;}' +
+    '@keyframes cta-shimmer{0%{left:-80%}18%{left:120%}100%{left:120%}}';
 
   var styleEl = document.createElement('style');
   styleEl.textContent = CTA_CSS;
