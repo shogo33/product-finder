@@ -12,7 +12,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const DOMAIN = 'https://product-finder-lilac.vercel.app';
+const DOMAIN = 'https://aliswipe.com';
 const TODAY  = '2026-05-20';
 
 function getAllHtmlFiles(dir) {

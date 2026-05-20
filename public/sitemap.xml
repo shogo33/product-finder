@@ -3,7 +3,7 @@
 
   <!-- トップ -->
   <url>
-    <loc>https://product-finder-lilac.vercel.app/</loc>
+    <loc>https://aliswipe.com/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,37 +11,37 @@
 
   <!-- AliExpressとは・基礎知識 -->
   <url>
-    <loc>https://product-finder-lilac.vercel.app/basics/aliexpress-what-is.html</loc>
+    <loc>https://aliswipe.com/basics/aliexpress-what-is.html</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/basics/aliexpress-account.html</loc>
+    <loc>https://aliswipe.com/basics/aliexpress-account.html</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/basics/aliexpress-choice.html</loc>
+    <loc>https://aliswipe.com/basics/aliexpress-choice.html</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/basics/aliexpress-osusume.html</loc>
+    <loc>https://aliswipe.com/basics/aliexpress-osusume.html</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/basics/aliexpress-projector-under-10000.html</loc>
+    <loc>https://aliswipe.com/basics/aliexpress-projector-under-10000.html</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/basics/baseus-mobile-battery-osusume.html</loc>
+    <loc>https://aliswipe.com/basics/baseus-mobile-battery-osusume.html</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -49,19 +49,19 @@
 
   <!-- 安全性・評判 -->
   <url>
-    <loc>https://product-finder-lilac.vercel.app/safety/aliexpress-safety.html</loc>
+    <loc>https://aliswipe.com/safety/aliexpress-safety.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/safety/aliexpress-ayashii.html</loc>
+    <loc>https://aliswipe.com/safety/aliexpress-ayashii.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/safety/aliexpress-hyoban.html</loc>
+    <loc>https://aliswipe.com/safety/aliexpress-hyoban.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -69,31 +69,31 @@
 
   <!-- 支払い方法 -->
   <url>
-    <loc>https://product-finder-lilac.vercel.app/payment/aliexpress-payment.html</loc>
+    <loc>https://aliswipe.com/payment/aliexpress-payment.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/payment/aliexpress-shiharai.html</loc>
+    <loc>https://aliswipe.com/payment/aliexpress-shiharai.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/payment/aliexpress-paypal.html</loc>
+    <loc>https://aliswipe.com/payment/aliexpress-paypal.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/payment/aliexpress-paypay.html</loc>
+    <loc>https://aliswipe.com/payment/aliexpress-paypay.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/payment/aliexpress-coupon.html</loc>
+    <loc>https://aliswipe.com/payment/aliexpress-coupon.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -101,31 +101,31 @@
 
   <!-- 配送・追跡 -->
   <url>
-    <loc>https://product-finder-lilac.vercel.app/shipping/aliexpress-nannichi.html</loc>
+    <loc>https://aliswipe.com/shipping/aliexpress-nannichi.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/shipping/aliexpress-standard-shipping.html</loc>
+    <loc>https://aliswipe.com/shipping/aliexpress-standard-shipping.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/shipping/aliexpress-tsuiseki.html</loc>
+    <loc>https://aliswipe.com/shipping/aliexpress-tsuiseki.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/shipping/aliexpress-tracking-number.html</loc>
+    <loc>https://aliswipe.com/shipping/aliexpress-tracking-number.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/shipping/aliexpress-tracking-guide.html</loc>
+    <loc>https://aliswipe.com/shipping/aliexpress-tracking-guide.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -133,19 +133,19 @@
 
   <!-- サイト情報 -->
   <url>
-    <loc>https://product-finder-lilac.vercel.app/info/about.html</loc>
+    <loc>https://aliswipe.com/info/about.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/info/privacy.html</loc>
+    <loc>https://aliswipe.com/info/privacy.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://product-finder-lilac.vercel.app/info/contact.html</loc>
+    <loc>https://aliswipe.com/info/contact.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

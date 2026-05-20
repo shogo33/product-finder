@@ -6,7 +6,7 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const DOMAIN  = 'https://product-finder-lilac.vercel.app';
+const DOMAIN  = 'https://aliswipe.com';
 const OUT_DIR = path.resolve('public/images/ogp');
 fs.mkdirSync(OUT_DIR, { recursive: true });
 

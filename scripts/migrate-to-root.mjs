@@ -3,15 +3,15 @@
  *
  * 処理内容:
  *   1. href="/home.html" → href="/"  （ロゴ・パンくず）
- *   2. href="https://product-finder-lilac.vercel.app/" target="_blank"
- *      → href="https://product-finder-lilac.vercel.app/app/" target="_blank"
+ *   2. href="https://aliswipe.com/" target="_blank"
+ *      → href="https://aliswipe.com/app/" target="_blank"
  *      （JSON-LDのURL文字列は target="_blank" を持たないので影響なし）
  */
 import fs from 'fs';
 import path from 'path';
 
-const SPA_OLD = 'https://product-finder-lilac.vercel.app/" target="_blank"';
-const SPA_NEW = 'https://product-finder-lilac.vercel.app/app/" target="_blank"';
+const SPA_OLD = 'https://aliswipe.com/" target="_blank"';
+const SPA_NEW = 'https://aliswipe.com/app/" target="_blank"';
 
 function getAllFiles(dir, exts) {
   const files = [];

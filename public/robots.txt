@@ -4,4 +4,4 @@ Disallow: /admin.html
 Disallow: /preview.html
 Disallow: /app/
 
-Sitemap: https://product-finder-lilac.vercel.app/sitemap.xml
+Sitemap: https://aliswipe.com/sitemap.xml

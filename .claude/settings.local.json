@@ -21,7 +21,8 @@
       "PowerShell(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" status --short)",
       "Bash(node -e ' *)",
       "Bash(git add *)",
-      "Bash(node scripts/migrate-to-root.mjs)"
+      "Bash(node scripts/migrate-to-root.mjs)",
+      "Bash(node scripts/gen-ogp.mjs)"
     ]
   }
 }

@@ -178,9 +178,9 @@ const html = `<!DOCTYPE html>
   <meta property="og:title" content="アリエク おすすめ商品${totalCount}選【2026年最新】カテゴリ別厳選まとめ" />
   <meta property="og:description" content="アリエクのおすすめ商品を${totalCount}個厳選。カテゴリ別に紹介します。" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://product-finder-lilac.vercel.app/basics/aliexpress-osusume.html" />
-  <meta property="og:image" content="https://product-finder-lilac.vercel.app/images/ogp.jpg" />
-  <link rel="canonical" href="https://product-finder-lilac.vercel.app/basics/aliexpress-osusume.html" />
+  <meta property="og:url" content="https://aliswipe.com/basics/aliexpress-osusume.html" />
+  <meta property="og:image" content="https://aliswipe.com/images/ogp.jpg" />
+  <link rel="canonical" href="https://aliswipe.com/basics/aliexpress-osusume.html" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
@@ -289,7 +289,7 @@ const html = `<!DOCTYPE html>
 
 <header class="site-header">
   <a class="site-logo" href="/home.html"><img src="/logo.png" alt="アリエクSwipe" style="height:36px;width:auto;display:block;"></a>
-  <a class="header-cta" href="https://product-finder-lilac.vercel.app/" target="_blank" rel="noopener">おすすめ商品はこちら</a>
+  <a class="header-cta" href="https://aliswipe.com/" target="_blank" rel="noopener">おすすめ商品はこちら</a>
 </header>
 
 <section class="article-hero">
@@ -319,7 +319,7 @@ const html = `<!DOCTYPE html>
       <div class="cta-label">📱 もっと探したい方へ</div>
       <h3>スワイプして好みの商品を発見しよう</h3>
       <p>アリエクSwipeなら${totalCount}件以上の厳選商品をTinder感覚でチェックできます。</p>
-      <a href="https://product-finder-lilac.vercel.app/" target="_blank" rel="noopener">アプリで探す →</a>
+      <a href="https://aliswipe.com/" target="_blank" rel="noopener">アプリで探す →</a>
     </div>
 
     <div class="related">
@@ -348,7 +348,7 @@ const html = `<!DOCTYPE html>
 </div>
 
 <div class="cta-sticky">
-  <a href="https://product-finder-lilac.vercel.app/">👆 スワイプで商品を発見する</a>
+  <a href="https://aliswipe.com/">👆 スワイプで商品を発見する</a>
   <div class="sub">アリエクSwipe でお得な商品をチェック</div>
 </div>
 
