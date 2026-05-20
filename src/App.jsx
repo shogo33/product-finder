@@ -189,6 +189,43 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
   );
 };
 
+// カスタム価格スライダー（トラック全体をドラッグ可能）
+const PRICE_MIN = 500;
+const PRICE_MAX = 10000;
+const PRICE_STEP = 100;
+
+const PriceSlider = memo(({ value, onChange }) => {
+  const trackRef = useRef(null);
+  const dragging = useRef(false);
+  const percent = ((value - PRICE_MIN) / (PRICE_MAX - PRICE_MIN)) * 100;
+
+  const calcValue = (clientX) => {
+    const rect = trackRef.current.getBoundingClientRect();
+    const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
+    const raw = PRICE_MIN + (x / rect.width) * (PRICE_MAX - PRICE_MIN);
+    return Math.max(PRICE_MIN, Math.min(PRICE_MAX, Math.round(raw / PRICE_STEP) * PRICE_STEP));
+  };
+
+  return (
+    <div
+      ref={trackRef}
+      className="relative w-full h-10 flex items-center cursor-pointer touch-none select-none"
+      onPointerDown={(e) => { dragging.current = true; e.currentTarget.setPointerCapture(e.pointerId); onChange(calcValue(e.clientX)); }}
+      onPointerMove={(e) => { if (dragging.current) onChange(calcValue(e.clientX)); }}
+      onPointerUp={() => { dragging.current = false; }}
+      onPointerCancel={() => { dragging.current = false; }}
+    >
+      <div className="w-full h-2 bg-white/30 rounded-full overflow-hidden">
+        <div className="h-full bg-white rounded-full" style={{ width: `${percent}%` }} />
+      </div>
+      <div
+        className="absolute w-7 h-7 bg-white rounded-full shadow-lg border-2 border-red-300 -translate-x-1/2 pointer-events-none"
+        style={{ left: `${percent}%` }}
+      />
+    </div>
+  );
+});
+
 // 紙吹雪の座標を起動時に一度だけ生成（再レンダーで動かないように）
 const CONFETTI = Array.from({ length: 15 }, (_, i) => ({
   color: ['#fbbf24', '#e8253a', '#a855f7', '#ec4899', '#10b981'][i % 5],
@@ -260,7 +297,7 @@ function shuffle(arr) {
 
 export default function App() {
   const [allProducts, setAllProducts] = useState(FALLBACK_PRODUCTS);
-  const [maxPrice, setMaxPrice] = useState(10000);
+  const [maxPrice, setMaxPrice] = useState(PRICE_MAX);
   const [deck, setDeck] = useState([]);
   const [cycleCount, setCycleCount] = useState(0);
   const [liked, setLiked] = useState(() => {
@@ -644,17 +681,9 @@ export default function App() {
             <span>上限</span>
             <span>¥{maxPrice.toLocaleString()}</span>
           </div>
-          <input
-            type="range"
-            min="0"
-            max="10000"
-            step="100"
-            value={maxPrice}
-            onChange={(e) => setMaxPrice(Number(e.target.value))}
-            className="w-full h-2 bg-white/30 rounded-lg appearance-none cursor-pointer accent-white"
-          />
+          <PriceSlider value={maxPrice} onChange={setMaxPrice} />
           <div className="flex justify-between text-[10px] opacity-70 mt-1">
-            <span>¥0</span>
+            <span>¥500</span>
             <span>¥10,000</span>
           </div>
         </div>
