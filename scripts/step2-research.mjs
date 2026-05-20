@@ -88,18 +88,32 @@ async function getAffiliateLink(productId) {
 }
 
 // 商品詳細取得（メイン画像＋複数画像）
-async function fetchProductImages(productId) {
-  const json = await callApi('aliexpress.affiliate.product.query', {
-    tracking_id: TRACKING_ID,
-    keywords: productId,
-    target_currency: 'JPY',
-    target_language: 'JA',
-    page_size: '10',
-    fields: 'product_id,product_title,product_main_image_url,product_small_image_urls,target_sale_price,original_price,evaluate_rate,lastest_volume',
-  });
-  const products = json?.aliexpress_affiliate_product_query_response
-                       ?.resp_result?.result?.products?.product ?? [];
-  const p = products.find(x => String(x.product_id) === String(productId));
+async function fetchProductImages(productId, fallbackName = null) {
+  // まず product_id をキーワードとして検索し完全一致を探す
+  const tryFetch = async (kw, exactId) => {
+    const json = await callApi('aliexpress.affiliate.product.query', {
+      tracking_id: TRACKING_ID,
+      keywords: kw,
+      target_currency: 'JPY',
+      target_language: 'JA',
+      page_size: '10',
+      fields: 'product_id,product_title,product_main_image_url,product_small_image_urls,target_sale_price,original_price,evaluate_rate,lastest_volume',
+    });
+    const products = json?.aliexpress_affiliate_product_query_response
+                         ?.resp_result?.result?.products?.product ?? [];
+    return exactId
+      ? products.find(x => String(x.product_id) === String(exactId)) ?? null
+      : products[0] ?? null;
+  };
+
+  let p = await tryFetch(productId, productId);
+
+  // IDで見つからない場合は商品名でフォールバック検索
+  if (!p && fallbackName) {
+    await sleep(400);
+    p = await tryFetch(fallbackName, null);
+  }
+
   if (!p) return { mainImage: null, images: [] };
 
   // product_small_image_urls は { string: ["url1","url2",...] } または カンマ区切り文字列
@@ -262,9 +276,9 @@ for (let i = 0; i < targetProducts.length; i++) {
   await sleep(400);
   console.log(affiliateLink ? ' ✅' : ' ⚠️ 取得失敗（既存リンクを使用）');
 
-  // 3. 詳細画像取得
+  // 3. 詳細画像取得（IDで見つからない場合は cleanName でフォールバック）
   process.stdout.write('  → 詳細画像...');
-  const { mainImage, images } = await fetchProductImages(id);
+  const { mainImage, images } = await fetchProductImages(id, cleanName);
   await sleep(400);
   console.log(` ${images.length}枚取得`);
 
