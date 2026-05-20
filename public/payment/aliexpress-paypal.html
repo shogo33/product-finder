@@ -362,17 +362,16 @@
     .breadcrumb li[aria-current] { color: var(--text); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
   
     /* PCフローティングバナー */
-    .pc-float-banner { display: none; position: fixed; bottom: 24px; right: 24px; width: 288px; background: #fff; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.18); padding: 20px 20px 16px; z-index: 300; border: 1px solid rgba(0,0,0,0.07); animation: pcBannerIn 0.45s cubic-bezier(0.25,0.1,0.25,1); }
-    @keyframes pcBannerIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .pc-float-banner { display: none; position: fixed; bottom: 24px; right: 24px; width: 288px; background: linear-gradient(135deg, #e8253a 0%, #ff6b35 100%); border-radius: 16px; box-shadow: 0 8px 32px rgba(232,37,58,0.35); padding: 20px 20px 18px; z-index: 300; color: #fff; opacity: 0; transform: translateY(20px); transition: opacity 0.4s, transform 0.4s; pointer-events: none; }
     @media (min-width: 641px) { .pc-float-banner { display: block; } }
-    .pc-float-close { position: absolute; top: 10px; right: 14px; background: none; border: none; font-size: 1.1rem; color: #aaa; cursor: pointer; line-height: 1; padding: 2px 6px; }
-    .pc-float-close:hover { color: #333; }
-    .pc-float-inner { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
-    .pc-float-icon { font-size: 2rem; flex-shrink: 0; }
-    .pc-float-title { font-weight: 700; font-size: 0.95rem; margin: 0 0 3px; color: #111; line-height: 1.3; }
-    .pc-float-desc { font-size: 0.76rem; color: #666; margin: 0; line-height: 1.45; }
-    .pc-float-btn { display: block; background: #e8253a; color: #fff !important; text-align: center; padding: 10px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; text-decoration: none; transition: background 0.2s; }
-    .pc-float-btn:hover { background: #c42800; }
+    .pc-float-banner.pc-float-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    .pc-float-close { position: absolute; top: 10px; right: 12px; background: rgba(255,255,255,0.2); border: none; border-radius: 50%; width: 24px; height: 24px; font-size: 0.85rem; color: #fff; cursor: pointer; line-height: 24px; text-align: center; padding: 0; }
+    .pc-float-close:hover { background: rgba(255,255,255,0.35); }
+    .pc-float-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 6px; }
+    .pc-float-title { font-weight: 700; font-size: 1rem; margin: 0 0 6px; line-height: 1.35; }
+    .pc-float-desc { font-size: 0.76rem; opacity: 0.88; margin: 0 0 16px; line-height: 1.5; }
+    .pc-float-btn { display: block; background: #fff; color: #e8253a !important; text-align: center; padding: 11px; border-radius: 999px; font-weight: 700; font-size: 0.88rem; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+    .pc-float-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
   </style>
   <link rel="canonical" href="https://aliswipe.com/payment/aliexpress-paypal.html" />
   <!-- Google tag (gtag.js) -->
@@ -868,14 +867,10 @@
 <!-- ===== STICKY CTA (スマホのみ表示) ===== -->
 <div class="pc-float-banner" id="pc-float-banner">
   <button class="pc-float-close" id="pc-float-close" aria-label="閉じる">✕</button>
-  <div class="pc-float-inner">
-    <div class="pc-float-icon">👆</div>
-    <div>
-      <p class="pc-float-title">スワイプで商品を探す</p>
-      <p class="pc-float-desc">あなたにぴったりのAliExpress商品が見つかる</p>
-    </div>
-  </div>
-  <a href="/" class="pc-float-btn">試してみる →</a>
+  <div class="pc-float-label">⚡ まだまだあります</div>
+  <p class="pc-float-title">スワイプで好みの商品を発見しよう</p>
+  <p class="pc-float-desc">200件以上の厳選商品をTinder感覚でチェック。ハートでお気に入り登録。</p>
+  <a href="/" class="pc-float-btn">おすすめ商品をスワイプで見る →</a>
 </div>
 
 <div class="cta-sticky" id="cta-sticky"></div>
@@ -890,6 +885,14 @@
     var b = document.getElementById('pc-float-banner');
     if (!b) return;
     if (localStorage.getItem('pcb')) { b.style.display = 'none'; return; }
+    var shown = false;
+    window.addEventListener('scroll', function() {
+      if (shown) return;
+      if ((window.scrollY || window.pageYOffset) > 400) {
+        shown = true;
+        b.classList.add('pc-float-visible');
+      }
+    }, { passive: true });
     document.getElementById('pc-float-close').addEventListener('click', function() {
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
