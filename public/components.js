@@ -77,7 +77,7 @@
   /* ── 共通CSS ──────────────────────────────────── */
   var SHARED_CSS =
     /* ヘッダー */
-    '.site-header{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid #e5e7eb;display:grid;grid-template-columns:44px 1fr 44px;align-items:center;padding:0 12px;height:56px;}' +
+    '.site-header{position:sticky!important;top:0!important;z-index:200!important;background:#fff!important;border-bottom:1px solid #e5e7eb!important;display:grid!important;grid-template-columns:44px 1fr 44px!important;align-items:center!important;padding:0 12px!important;height:56px!important;}' +
     '.site-header-left{width:44px;}' +
     '.site-logo{justify-self:center;}' +
     /* ハンバーガーボタン */
