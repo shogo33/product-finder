@@ -96,10 +96,18 @@
     .reddit-quote cite { font-size: 0.76rem; color: var(--muted); font-style: normal; }
     .reddit-quote cite a { color: var(--red); text-decoration: none; }
 
-    /* 商品複数画像グリッド */
-    .product-images { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0 24px; }
-    .product-images img { width: 180px; height: 180px; object-fit: contain; border-radius: 8px; background: #f5f5f5; }
-    @media (max-width: 480px) { .product-images img { width: 140px; height: 140px; } }
+    /* 商品カルーセル */
+    .product-carousel { position: relative; margin: 16px 0 28px; border-radius: 12px; overflow: hidden; background: #f5f5f5; user-select: none; }
+    .carousel-track { display: flex; will-change: transform; transition: transform 0.3s cubic-bezier(0.25,0.1,0.25,1); }
+    .carousel-track img { min-width: 100%; height: 280px; object-fit: contain; border-radius: 12px; display: block; }
+    @media (max-width: 480px) { .carousel-track img { height: 220px; } }
+    .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 38px; height: 38px; font-size: 1.3rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.18); transition: opacity 0.2s; }
+    .carousel-btn:hover { opacity: 0.85; }
+    .carousel-btn.prev { left: 8px; }
+    .carousel-btn.next { right: 8px; }
+    .carousel-dots { display: flex; justify-content: center; gap: 6px; padding: 8px 0 4px; background: #f5f5f5; }
+    .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: #ddd; border: none; cursor: pointer; padding: 0; transition: background 0.2s; }
+    .carousel-dot.active { background: var(--red); }
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
   </style>
@@ -205,11 +213,16 @@
     <!-- @product-start id="1005008120529417" type="ガジェット" tag="ガジェット" -->
     <h2>【第1位】UGREEN HiTune X6 ｜ANC×コスパの最強バランス機</h2>
 
-    <div class="product-images">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5623e79854df47c4b2387350411b7c9cx.jpg" alt="UGREEN HiTune X6" loading="lazy">
+    <div class="product-carousel" data-carousel>
+      <div class="carousel-track">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5623e79854df47c4b2387350411b7c9cx.jpg" alt="UGREEN HiTune X6" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5c87a898241745c0b827d63444d1cb72a.png" alt="UGREEN HiTune X6 詳細" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0dc6d0a83af9438db3802c91d1c23536u.png" alt="UGREEN HiTune X6 装着イメージ" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/S753263e4c08e4df49ec6fcf6698d415dL.png" alt="UGREEN HiTune X6 ケース" loading="lazy">
+      </div>
+      <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
+      <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
+      <div class="carousel-dots"></div>
     </div>
 
     <p>結論から言います。<strong>UGREEN HiTune X6はこのリストの中で最もバランスが取れた一台</strong>で、「最初の一本」としても「メイン機」としても自信を持って推せます。ANCの効き・音質・バッテリー・防水性能、どこを切っても文句のつけどころがない。</p>
@@ -265,11 +278,16 @@
     <!-- @product-start id="1005007302181092" type="ガジェット" tag="ガジェット" -->
     <h2>【第2位】UGREEN HiTune T3 Pro ｜ANC搭載・低遅延ゲーミングモードの万能機</h2>
 
-    <div class="product-images">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa6e08173f0114b1590c2b96d87091af8S.jpg" alt="UGREEN HiTune T3 Pro" loading="lazy">
+    <div class="product-carousel" data-carousel>
+      <div class="carousel-track">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa6e08173f0114b1590c2b96d87091af8S.jpg" alt="UGREEN HiTune T3 Pro" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/S9f6d7bda3cee4959b7efe8b27139fc6eP.jpg" alt="UGREEN HiTune T3 Pro 詳細" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa5ff2a06421846b08e1447e14df783e47.jpg" alt="UGREEN HiTune T3 Pro 装着イメージ" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/S76b9984b3266493589735889ac88a03cl.jpg" alt="UGREEN HiTune T3 Pro ケース" loading="lazy">
+      </div>
+      <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
+      <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
+      <div class="carousel-dots"></div>
     </div>
 
     <p><strong>UGREEN HiTune T3 Proは「ゲーム・動画・音楽をすべてこれ一台でこなしたい」という人への答え</strong>です。ANC搭載でありながら低遅延ゲーミングモードまで積んでいる、用途の幅広さが最大の武器です。</p>
@@ -317,11 +335,16 @@
     <!-- @product-start id="1005009249740361" type="ガジェット" tag="ガジェット" -->
     <h2>【第3位】UGREEN HiTune Max5c ｜ハイレゾ対応のフラッグシップ型</h2>
 
-    <div class="product-images">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S79f70c2268bb45b5827cb3c10176144dS.jpg" alt="UGREEN HiTune Max5c" loading="lazy">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Scba05b18ff1b45e2b18da1d73cad2399w.jpg" alt="UGREEN HiTune Max5c 詳細" loading="lazy">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7b03fc51da2f4c138d6a7b0bca64ae48u.jpg" alt="UGREEN HiTune Max5c 装着イメージ" loading="lazy">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sd7fa331cab304a47a20eddaeb329e76de.jpg" alt="UGREEN HiTune Max5c カラーバリエーション" loading="lazy">
+    <div class="product-carousel" data-carousel>
+      <div class="carousel-track">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0d51b3accb8847cab7b2df7a17fca8ed0.jpg" alt="UGREEN HiTune Max5c" loading="lazy">
+      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S3beb74b0f3d542c892b5c70f77818a0ac.jpg" alt="UGREEN HiTune Max5c 詳細" loading="lazy">
+      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S24ba66bea2924ab393e1f5f6f11347ed4.jpg" alt="UGREEN HiTune Max5c 装着イメージ" loading="lazy">
+      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sda78b42f81e94ff99b4d579c7a2df37d9.jpg" alt="UGREEN HiTune Max5c カラーバリエーション" loading="lazy">
+      </div>
+      <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
+      <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
+      <div class="carousel-dots"></div>
     </div>
 
     <p><strong>UGREEN HiTune Max5cは「耳を包み込む没入感」を求める人のための一台</strong>です。オーバーイヤー（ヘッドホン型）でありながら、価格はAliExpressで約¥6,469。この価格帯でハイレゾ対応・ANC搭載のオーバーイヤーが手に入るのは、正直反則に近いと思っています。</p>
@@ -365,11 +388,16 @@
     <!-- @product-start id="1005009828832187" type="ガジェット" tag="ガジェット" -->
     <h2>【第4位】UGREEN HiTune S5 ｜オープンイヤー×スポーツ用途に最適なモデル</h2>
 
-    <div class="product-images">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Se5fc9f8fc97f4c1b8aba7d96d324d1faz.jpg" alt="UGREEN HiTune S5" loading="lazy">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Scf8043c1a6fa4c6f9554f32523ea6364p.jpg" alt="UGREEN HiTune S5 装着イメージ" loading="lazy">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S4596722f7a2e4013baf5510d0ffa218d8.jpg" alt="UGREEN HiTune S5 詳細" loading="lazy">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sf3992cd967bb448eab69d57b0f16e19av.jpg" alt="UGREEN HiTune S5 カラー" loading="lazy">
+    <div class="product-carousel" data-carousel>
+      <div class="carousel-track">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S424cf130426a499ea78075cebd8dd987Y.jpg" alt="UGREEN HiTune S5" loading="lazy">
+      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sad07acbffdbc4467a1d6da10f687ee1f1.jpg" alt="UGREEN HiTune S5 装着イメージ" loading="lazy">
+      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S9416778f282541ea8711e12b71a72692Z.jpg" alt="UGREEN HiTune S5 詳細" loading="lazy">
+      <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8b47af975d7a4ebf9397150e93e6f394F.jpg" alt="UGREEN HiTune S5 カラー" loading="lazy">
+      </div>
+      <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
+      <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
+      <div class="carousel-dots"></div>
     </div>
 
     <p><strong>UGREEN HiTune S5は「外音を遮断せずに音楽を楽しみたい」というニーズへの直球回答</strong>です。クリップ式のオープンイヤーTWSで、耳を塞がないため、ランニング中の車の音・駅のアナウンス・話しかけられた声をそのまま聞き取れます。</p>
@@ -418,11 +446,16 @@
     <!-- @product-start id="1005007145786996" type="ガジェット" tag="ガジェット" -->
     <h2>【第5位】UGREEN HiTune S3 ｜コスパ重視・入門者に最適な軽量モデル</h2>
 
-    <div class="product-images">
-      <img src="https://ae-pic-a1.aliexpress-media.com/kf/Seaf31e1351e746f48dd80c7fd5062719W.jpg" alt="UGREEN HiTune S3" loading="lazy">
+    <div class="product-carousel" data-carousel>
+      <div class="carousel-track">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Seaf31e1351e746f48dd80c7fd5062719W.jpg" alt="UGREEN HiTune S3" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/S43beabccb2024ed590333ed2a4a4d996B.jpg" alt="UGREEN HiTune S3 装着イメージ" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/S1e8647ea0acb40b6a3c4396e1bc83e55T.jpg" alt="UGREEN HiTune S3 詳細" loading="lazy">
       <img src="https://ae-pic-a1.aliexpress-media.com/kf/S8554eea6bdba4fbf82913c1e4a8be957Y.jpg" alt="UGREEN HiTune S3 ケース" loading="lazy">
+      </div>
+      <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
+      <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
+      <div class="carousel-dots"></div>
     </div>
 
     <p><strong>UGREEN HiTune S3は「3,000円台でUGREENの品質を体験する最短ルート」</strong>です。「まずUGREENを試してみたい」「通勤・ジム用に安くていいものが欲しい」という人への答えはこれ一択です。</p>
@@ -602,9 +635,64 @@
   </div>
 </div>
 
+<div class="container">
+  <div class="related">
+    <div class="related-title">関連記事</div>
+    <div class="related-grid">
+      <a href="/basics/ugreen-mouse-osusume.html" class="related-card">
+        <div class="rc-tag">おすすめ商品</div>
+        <div class="rc-title">UGREENマウスおすすめ4選【2026年最新】ワイヤレス・静音・エルゴノミクスを徹底比較</div>
+      </a>
+      <a href="/basics/aliexpress-what-is.html" class="related-card">
+        <div class="rc-tag">基礎知識</div>
+        <div class="rc-title">AliExpressとは？安全性・仕組み・使い方を初心者向けに解説</div>
+      </a>
+      <a href="/basics/aliexpress-choice.html" class="related-card">
+        <div class="rc-tag">基礎知識</div>
+        <div class="rc-title">AliExpress Choiceマークの意味と安心して買える理由</div>
+      </a>
+      <a href="/basics/aliexpress-osusume.html" class="related-card">
+        <div class="rc-tag">おすすめ商品</div>
+        <div class="rc-title">アリエクのおすすめ商品まとめ【2026年】ガジェット・日用品を厳選</div>
+      </a>
+    </div>
+  </div>
+</div>
+
 <div class="cta-sticky" id="cta-sticky"></div>
 
 <footer class="site-footer" id="site-footer"></footer>
 
+<script>
+  document.querySelectorAll('[data-carousel]').forEach(function(carousel) {
+    const track = carousel.querySelector('.carousel-track');
+    const imgs = track.querySelectorAll('img');
+    const dotsEl = carousel.querySelector('.carousel-dots');
+    let cur = 0;
+    imgs.forEach(function(_, i) {
+      const d = document.createElement('button');
+      d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', (i + 1) + '枚目');
+      d.addEventListener('click', function() { goTo(i); });
+      dotsEl.appendChild(d);
+    });
+    function goTo(n) {
+      cur = ((n % imgs.length) + imgs.length) % imgs.length;
+      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+      carousel.querySelectorAll('.carousel-dot').forEach(function(d, i) {
+        d.classList.toggle('active', i === cur);
+      });
+    }
+    carousel.querySelector('.prev').addEventListener('click', function() { goTo(cur - 1); });
+    carousel.querySelector('.next').addEventListener('click', function() { goTo(cur + 1); });
+    // Touch swipe support
+    let startX = 0;
+    track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', function(e) {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1);
+    }, { passive: true });
+  });
+</script>
 </body>
 </html>

@@ -151,11 +151,17 @@ ${productsText}
 </div>
 \`\`\`
 
-### 必須構造③：商品画像
+### 必須構造③：商品画像（カルーセル形式）
 \`\`\`html
-<div class="product-images">
-  <img src="URL1" alt="商品名" loading="lazy">
-  <img src="URL2" alt="商品名" loading="lazy">
+<div class="product-carousel" data-carousel>
+  <div class="carousel-track">
+    <img src="URL1" alt="商品名" loading="lazy">
+    <img src="URL2" alt="商品名 詳細" loading="lazy">
+    <img src="URL3" alt="商品名 装着イメージ" loading="lazy">
+  </div>
+  <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
+  <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
+  <div class="carousel-dots"></div>
 </div>
 \`\`\`
 
@@ -218,9 +224,26 @@ Redditのsnippetをただ翻訳して並べるのではなく、「海外のガ�
 直接引用は必ず指定の <blockquote class="reddit-quote"> 構造で出力してください。
 
 #### 5. 画像・リンク・CTAの配置ルール
-- 画像は商品紹介の直後に <div class="product-images"> で配置する
+- 画像は商品紹介の直後に <div class="product-carousel" data-carousel> のカルーセル形式で配置する（product-images は使わない）
 - 各商品の直下に必ず AliExpress + Amazon 並列の cta-box 構造を配置する
 - Amazon はプレースホルダー（無効化）形式で出力する
+
+#### 6.5 関連記事セクション（必須）
+本文の末尾（FAQの後、cta-sticky の直前）に必ず関連記事セクションを出力する：
+\`\`\`html
+<div class="container">
+  <div class="related">
+    <div class="related-title">関連記事</div>
+    <div class="related-grid">
+      <a href="内部リンクURL" class="related-card">
+        <div class="rc-tag">カテゴリ</div>
+        <div class="rc-title">記事タイトル</div>
+      </a>
+      <!-- 4件程度 plan の internalLinks を使用 -->
+    </div>
+  </div>
+</div>
+\`\`\`
 
 #### 6. 文章構造とスマホ最適化
 - PREP法：すべての見出し直後は結論から書き始める
@@ -353,10 +376,18 @@ const fullHtml = `<!DOCTYPE html>
     .reddit-quote cite { font-size: 0.76rem; color: var(--muted); font-style: normal; }
     .reddit-quote cite a { color: var(--red); text-decoration: none; }
 
-    /* 商品複数画像グリッド */
-    .product-images { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0 24px; }
-    .product-images img { width: 180px; height: 180px; object-fit: contain; border-radius: 8px; background: #f5f5f5; }
-    @media (max-width: 480px) { .product-images img { width: 140px; height: 140px; } }
+    /* 商品カルーセル */
+    .product-carousel { position: relative; margin: 16px 0 28px; border-radius: 12px; overflow: hidden; background: #f5f5f5; user-select: none; }
+    .carousel-track { display: flex; will-change: transform; transition: transform 0.3s cubic-bezier(0.25,0.1,0.25,1); }
+    .carousel-track img { min-width: 100%; height: 280px; object-fit: contain; border-radius: 12px; display: block; }
+    @media (max-width: 480px) { .carousel-track img { height: 220px; } }
+    .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 38px; height: 38px; font-size: 1.3rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.18); transition: opacity 0.2s; }
+    .carousel-btn:hover { opacity: 0.85; }
+    .carousel-btn.prev { left: 8px; }
+    .carousel-btn.next { right: 8px; }
+    .carousel-dots { display: flex; justify-content: center; gap: 6px; padding: 8px 0 4px; background: #f5f5f5; }
+    .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: #ddd; border: none; cursor: pointer; padding: 0; transition: background 0.2s; }
+    .carousel-dot.active { background: var(--red); }
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
   </style>
@@ -381,6 +412,31 @@ ${articleBody}
 
 <footer class="site-footer" id="site-footer"></footer>
 
+<script>
+  document.querySelectorAll('[data-carousel]').forEach(function(carousel) {
+    var track = carousel.querySelector('.carousel-track');
+    var imgs = track.querySelectorAll('img');
+    var dotsEl = carousel.querySelector('.carousel-dots');
+    var cur = 0;
+    imgs.forEach(function(_, i) {
+      var d = document.createElement('button');
+      d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', (i + 1) + '枚目');
+      d.addEventListener('click', function() { goTo(i); });
+      dotsEl.appendChild(d);
+    });
+    function goTo(n) {
+      cur = ((n % imgs.length) + imgs.length) % imgs.length;
+      track.style.transform = 'translateX(-' + (cur * 100) + '%)';
+      carousel.querySelectorAll('.carousel-dot').forEach(function(d, i) { d.classList.toggle('active', i === cur); });
+    }
+    carousel.querySelector('.prev').addEventListener('click', function() { goTo(cur - 1); });
+    carousel.querySelector('.next').addEventListener('click', function() { goTo(cur + 1); });
+    var startX = 0;
+    track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', function(e) { var dx = e.changedTouches[0].clientX - startX; if (Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1); }, { passive: true });
+  });
+</script>
 </body>
 </html>`;
 
