@@ -143,14 +143,9 @@
     var cta = document.getElementById('cta-sticky');
     if (cta) cta.innerHTML = STICKY_CTA_HTML;
 
-    /* パンくずをブランドバッジに置き換え */
+    /* パンくずを非表示 */
     var breadcrumb = document.querySelector('nav.breadcrumb');
-    if (breadcrumb) {
-      var brandNav = document.createElement('div');
-      brandNav.className = 'site-brand-nav';
-      brandNav.innerHTML = '<a href="/"><img src="/logo.png" alt="アリエクswipe" style="height:20px;width:auto;display:block;"></a>';
-      breadcrumb.replaceWith(brandNav);
-    }
+    if (breadcrumb) breadcrumb.remove();
 
     /* ハンバーガーメニュー開閉 */
     var btn      = document.querySelector('.hamburger-btn');
