@@ -113,6 +113,14 @@
     @media (max-width: 480px) {
       .header-cta { padding: 5px 10px; font-size: 0.7rem; }
     }
+  
+    /* Breadcrumb */
+    .breadcrumb { background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px 20px; }
+    .breadcrumb ol { list-style: none; max-width: var(--max); margin: 0 auto; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; font-size: 0.78rem; }
+    .breadcrumb li + li::before { content: '›'; color: var(--muted); margin-right: 4px; }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--red); }
+    .breadcrumb li[aria-current] { color: var(--text); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS03SNJG4H"></script>
@@ -172,6 +180,12 @@
 <body>
 
 <script id="site-header-inject"></script>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="/">ホーム</a></li>
+      <li aria-current="page">Baseusモバイルバッテリーおすすめ10選｜20W・45W・100Wを徹底比較【2026年最新】</li>
+    </ol>
+  </nav>
 
 <section class="article-hero">
   <div class="tag">🔋 おすすめ商品</div>

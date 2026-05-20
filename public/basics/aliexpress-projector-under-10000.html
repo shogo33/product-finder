@@ -246,6 +246,14 @@
     .footer-aff-notice { margin-top: 12px; font-size: 0.72rem; opacity: 0.6; line-height: 1.6; }
 
     hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+  
+    /* Breadcrumb */
+    .breadcrumb { background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px 20px; }
+    .breadcrumb ol { list-style: none; max-width: var(--max); margin: 0 auto; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; font-size: 0.78rem; }
+    .breadcrumb li + li::before { content: '›'; color: var(--muted); margin-right: 4px; }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--red); }
+    .breadcrumb li[aria-current] { color: var(--text); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WS03SNJG4H"></script>
@@ -305,6 +313,12 @@
 <body>
 
   <script id="site-header-inject"></script>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="/">ホーム</a></li>
+      <li aria-current="page">アリエクで買える1万円以下の激安プロジェクター3選【2026年最新】結局これを買えばいい</li>
+    </ol>
+  </nav>
 
   <!-- Hero -->
   <section class="article-hero">

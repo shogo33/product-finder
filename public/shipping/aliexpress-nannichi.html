@@ -270,6 +270,14 @@
       @media (max-width: 480px) {
       .header-cta { padding: 5px 10px; font-size: 0.7rem; }
     }
+  
+    /* Breadcrumb */
+    .breadcrumb { background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px 20px; }
+    .breadcrumb ol { list-style: none; max-width: var(--max); margin: 0 auto; display: flex; align-items: center; flex-wrap: wrap; gap: 4px; font-size: 0.78rem; }
+    .breadcrumb li + li::before { content: '›'; color: var(--muted); margin-right: 4px; }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--red); }
+    .breadcrumb li[aria-current] { color: var(--text); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
   </style>
   <link rel="canonical" href="https://aliswipe.com/shipping/aliexpress-nannichi.html" />
   <!-- Google tag (gtag.js) -->
@@ -331,6 +339,12 @@
 
 <!-- ===== HEADER ===== -->
 <script id="site-header-inject"></script>
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <ol>
+      <li><a href="/">ホーム</a></li>
+      <li aria-current="page">配送別に解説：アリエク到着目安と最短術完全ガイド</li>
+    </ol>
+  </nav>
 
 
 <!-- ===== HERO ===== -->
