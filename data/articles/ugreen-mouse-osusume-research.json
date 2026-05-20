@@ -1,0 +1,237 @@
+{
+  "slug": "ugreen-mouse-osusume",
+  "keyword": "UGREEN マウス おすすめ",
+  "category": "basics",
+  "selectedTitle": "UGREENマウス比較【2026年】安くて使えるおすすめ4選を厳選",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "UGREENマウスはなぜおすすめ？ブランドの特徴と強み",
+      "h3s": [
+        "コスパと品質を両立するUGREENのものづくり",
+        "マウスラインナップの全体像と選ぶ際のポイント"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "UGREENブランドの概要・設立背景・日本での認知度を簡潔に紹介",
+        "マウスカテゴリにおける強み（価格帯・保証・AliExpress入手性）を説明",
+        "ワイヤレス・有線・エルゴノミクス・静音など主要ラインナップの分類を整理"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "【コスパ最強】UGREEN MU001 ワイヤレスマウスレビュー",
+      "h3s": [
+        "スペックと外観チェック",
+        "実際に使ってみた感想・メリット・デメリット"
+      ],
+      "type": "product",
+      "notes": [
+        "2.4GHzワイヤレス接続・DPI設定・バッテリー持続時間などスペックを表形式で整理",
+        "軽量設計と握り心地・クリック感など実使用感をリアルに描写",
+        "AliExpressでの価格目安と購入時の注意点（セラー選び・クーポン活用）を記載"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "【静音派に最適】UGREEN サイレントワイヤレスマウスレビュー",
+      "h3s": [
+        "静音設計のメカニズムと騒音レベル",
+        "テレワーク・図書館・夜間作業での活躍シーン"
+      ],
+      "type": "product",
+      "notes": [
+        "静音クリック機構の仕組みと実測レベルの目安を説明",
+        "テレワーク・カフェ・深夜作業など具体的シーンでのメリットを訴求",
+        "通常モデルとの価格差と静音性を天秤にかけた購入判断基準を提示"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "【疲れにくい】UGREEN エルゴノミクスマウスレビュー",
+      "h3s": [
+        "縦型デザインの手首負担軽減効果",
+        "長時間作業ユーザーへのフィット感と操作性"
+      ],
+      "type": "product",
+      "notes": [
+        "縦型（バーティカル）グリップが腱鞘炎・手首疲労に与える効果を解説",
+        "サイズ感・重量・ボタン配置など実際の操作性を詳述",
+        "エルゴノミクスマウス初心者向けに慣れるまでの期間の目安も記載"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "【マルチデバイス対応】UGREEN Bluetooth マウスレビュー",
+      "h3s": [
+        "Bluetooth接続の安定性と複数デバイス切替の使い勝手",
+        "MacBook・iPad・Windowsでの動作確認"
+      ],
+      "type": "product",
+      "notes": [
+        "Bluetooth 5.0対応による接続安定性・遅延の少なさをアピール",
+        "最大3台マルチペアリング機能の実用性とボタン操作手順を説明",
+        "USBレシーバー不要のメリットとバッテリー充電方式（USB-C）を紹介"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "UGREENマウス4選スペック比較表",
+      "h3s": [
+        "スペック一覧で違いを一目チェック",
+        "用途別おすすめモデルの結論"
+      ],
+      "type": "comparison",
+      "notes": [
+        "4モデルの価格・接続方式・DPI・静音有無・バッテリー・重量を表で横並び比較",
+        "「コスパ重視」「静音重視」「疲れにくさ重視」「マルチデバイス重視」の4軸でおすすめを明示",
+        "読者が自分の用途に合わせて即決できるよう、迷ったらこれ！の一言コメントを添える"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "UGREENマウスの選び方｜失敗しない4つのポイント",
+      "h3s": [
+        "接続方式（有線・2.4GHz・Bluetooth）の違いと選び方",
+        "DPI・静音性・エルゴノミクスで絞り込む方法",
+        "AliExpressで安く買うためのタイミングとクーポン活用術"
+      ],
+      "type": "howto",
+      "notes": [
+        "接続方式の違いをユースケース別（デスクトップ固定/外出先/マルチデバイス）で解説",
+        "DPIの目安（普段使い800〜1200・ゲーミング1600以上）など数値感を初心者向けに説明",
+        "AliExpress Choiceセール・クーポンコード活用で最安値購入する方法にリンクを挿入"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "UGREENマウスに関するよくある質問",
+      "h3s": [
+        "Q&A：購入前の疑問をまとめて解決"
+      ],
+      "type": "faq",
+      "notes": [
+        "faqQuestionsの5問をQ&A形式で簡潔に回答",
+        "各回答は2〜4文程度で完結させ、モバイルでも読みやすい構成にする",
+        "必要に応じて関連セクションへのアンカーリンクを挿入"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "まとめ：UGREENマウスはAliExpressで買うのがお得！",
+      "h3s": [
+        "4選の総評と最終おすすめ",
+        "AliExpressでUGREENマウスを購入する手順"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "4モデルの総評を用途別に3行でまとめ、迷っている読者への最終背中押しをする",
+        "AliExpressでの購入手順（アカウント登録→商品検索→決済）への誘導リンクを設置",
+        "「他のUGREEN製品も気になる方はこちら」として内部リンクへ自然に誘導"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-20",
+  "products": [
+    {
+      "product_id": "1005007493318927",
+      "rawTitle": "UGREEN ワイヤレスマウス 4000DPI サイレント MacBook Pro M1 M2対応 2.4GHz",
+      "cleanName": "UGREEN Wireless Mouse 4000DPI",
+      "price_jpy": "2736",
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c2yYRUxP",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Scd0c0c60add74c2ea20511d89baaaf2dW.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Scd0c0c60add74c2ea20511d89baaaf2dW.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Adfc4fd0a1c5a4ac8a1627fd4c225655ae.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Aae4027bc8d9144a6b6c6874626ca548eu.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A80dc8f3a7f294150b7a50ca1475c0558v.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A9b0bfbc1a2c441f29828510ef8b09da0r.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A6a190661885347fbae3db25a77619647h.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN Wireless Mouse 4000DPI",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005006505424884",
+      "rawTitle": "UGREEN ワイヤレスマウス 4000DPI サイレントクリック MacBook Pro M1 M2 iPad対応",
+      "cleanName": "UGREEN Wireless Silent Mouse",
+      "price_jpy": "2025",
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c4k5btkz",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S75dc59114bcd4cc78fb8f711a4750972K.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S75dc59114bcd4cc78fb8f711a4750972K.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S739b7910470c4d10809e256019951bfen.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5a54973753714a9db77ce62c481f2efa6.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5b088bda82fc408b879f9eb3448b1d97W.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa5b71a3edf384e12bcaabf9faa002f10K.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S7d2d2894e97948abab484b877c17ebe1t.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN Wireless Silent Mouse",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005011907226917",
+      "rawTitle": "UGREEN 垂直型ワイヤレスマウス 小型 Bluetooth5.0 2.4G 人間工学に基づいたデザイン 4000DPI MacBook対応",
+      "cleanName": "UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G",
+      "price_jpy": "3568",
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c3N484Vx",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sa6e08173f0114b1590c2b96d87091af8S.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa6e08173f0114b1590c2b96d87091af8S.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S9f6d7bda3cee4959b7efe8b27139fc6eP.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa5ff2a06421846b08e1447e14df783e47.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S76b9984b3266493589735889ac88a03cl.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S265e73e9cd274e2491e8dc5e8a29554eQ.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S228a39d45fe946f18bf35c23baad61af2.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005012268942587",
+      "rawTitle": "UGREEN ワイヤレスマウス Bluetooth5.0 人間工学 4000DPI 6ミュートボタン MacBook対応",
+      "cleanName": "UGREEN Wireless Mouse Bluetooth 5.0",
+      "price_jpy": "2541",
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c3c7RcFn",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Scd0c0c60add74c2ea20511d89baaaf2dW.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Scd0c0c60add74c2ea20511d89baaaf2dW.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Adfc4fd0a1c5a4ac8a1627fd4c225655ae.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Aae4027bc8d9144a6b6c6874626ca548eu.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A80dc8f3a7f294150b7a50ca1475c0558v.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A9b0bfbc1a2c441f29828510ef8b09da0r.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A6a190661885347fbae3db25a77619647h.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN Wireless Mouse Bluetooth 5.0",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ]
+}
