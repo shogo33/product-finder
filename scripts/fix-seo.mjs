@@ -13,7 +13,7 @@ import fs from 'fs';
 import path from 'path';
 
 const DOMAIN = 'https://aliswipe.com';
-const TODAY  = '2026-05-20';
+const TODAY  = new Date().toISOString().slice(0, 10);
 
 function getAllHtmlFiles(dir) {
   const files = [];
@@ -44,7 +44,7 @@ for (const file of getAllHtmlFiles(base)) {
   if (rel.startsWith('info/'))    { console.log(`⏭  skip: ${rel}`); continue; }
 
   let html    = fs.readFileSync(file, 'utf8');
-  const isHome = rel === 'home.html';
+  const isHome = rel === 'index.html';
 
   // ── URLs ────────────────────────────────────────────────────
   const canonicalUrl = isHome ? `${DOMAIN}/` : `${DOMAIN}/${rel}`;
