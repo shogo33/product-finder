@@ -45,7 +45,14 @@
     '.cta-btn-app{background:linear-gradient(135deg,#e8253a,#c2185b);color:#fff;}' +
     '.cta-note{font-size:.72rem;color:#9ca3af;margin:12px 0 0;}' +
     '.header-cta{position:relative;overflow:hidden;}' +
-    '#cta-sticky a{position:relative;overflow:hidden;}';
+    '#cta-sticky a{position:relative;overflow:hidden;}' +
+    /* ヘッダー追従 */
+    '.site-header{position:sticky;top:0;z-index:100;}' +
+    /* パンくず位置のブランドバッジ */
+    '.site-brand-nav{padding:8px 20px;background:#fff;border-bottom:1px solid #e5e7eb;}' +
+    '.site-brand-nav a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;opacity:.8;transition:opacity .15s;}' +
+    '.site-brand-nav a:hover{opacity:1;}' +
+    '.site-brand-nav span{font-size:.75rem;font-weight:700;color:#e8253a;letter-spacing:.04em;}';
 
   var styleEl = document.createElement('style');
   styleEl.textContent = CTA_CSS;
@@ -68,18 +75,17 @@
     var cta = document.getElementById('cta-sticky');
     if (cta) cta.innerHTML = STICKY_CTA_HTML;
 
-    /* ── article-hero の先頭にブランドバッジを挿入 ── */
-    var hero = document.querySelector('.article-hero');
-    if (hero) {
-      var badge = document.createElement('a');
-      badge.href = '/';
-      badge.style.cssText = 'display:inline-flex;align-items:center;gap:8px;text-decoration:none;margin-bottom:16px;opacity:.85;transition:opacity .15s;';
-      badge.onmouseenter = function(){ this.style.opacity = '1'; };
-      badge.onmouseleave = function(){ this.style.opacity = '.85'; };
-      badge.innerHTML =
-        '<img src="/logo.png" alt="アリエクswipe" style="height:28px;width:auto;display:block;">' +
-        '<span style="font-size:.75rem;font-weight:700;color:#e8253a;letter-spacing:.04em;">アリエクswipe</span>';
-      hero.insertBefore(badge, hero.firstChild);
+    /* ── パンくずをブランドバッジに置き換え ── */
+    var breadcrumb = document.querySelector('nav.breadcrumb');
+    if (breadcrumb) {
+      var brandNav = document.createElement('div');
+      brandNav.className = 'site-brand-nav';
+      brandNav.innerHTML =
+        '<a href="/">' +
+          '<img src="/logo.png" alt="アリエクswipe" style="height:22px;width:auto;display:block;">' +
+          '<span>アリエクswipe</span>' +
+        '</a>';
+      breadcrumb.replaceWith(brandNav);
     }
   });
 
