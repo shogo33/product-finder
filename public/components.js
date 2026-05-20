@@ -4,29 +4,13 @@
  */
 (function () {
 
-  /* ── ナビメニュー記事リスト ───────────────────── */
+  /* ── ナビメニュー カテゴリリスト ─────────────── */
   var NAV_ITEMS = [
-    { label: '🔰 基礎知識', type: 'heading' },
-    { label: 'AliExpressとは？',       url: '/basics/aliexpress-what-is.html' },
-    { label: 'アカウント登録方法',      url: '/basics/aliexpress-account.html' },
-    { label: 'Choiceとは？',           url: '/basics/aliexpress-choice.html' },
-    { label: 'おすすめ商品50選',       url: '/basics/aliexpress-osusume.html' },
-    { label: '1万円以下プロジェクター', url: '/basics/aliexpress-projector-under-10000.html' },
-    { label: 'Baseus モバイルバッテリー', url: '/basics/baseus-mobile-battery-osusume.html' },
-    { label: '🔒 安全性・評判', type: 'heading' },
-    { label: 'AliExpressは安全？',     url: '/safety/aliexpress-safety.html' },
-    { label: '怪しい？届かない？',     url: '/safety/aliexpress-ayashii.html' },
-    { label: '評判・口コミまとめ',     url: '/safety/aliexpress-hyoban.html' },
-    { label: '💳 支払い方法', type: 'heading' },
-    { label: '支払い方法おすすめ順',   url: '/payment/aliexpress-payment.html' },
-    { label: 'PayPayで支払う方法',     url: '/payment/aliexpress-paypay.html' },
-    { label: 'PayPal利用ガイド',       url: '/payment/aliexpress-paypal.html' },
-    { label: 'クーポン使い方',         url: '/payment/aliexpress-coupon.html' },
-    { label: '📦 配送・追跡', type: 'heading' },
-    { label: '到着まで何日かかる？',   url: '/shipping/aliexpress-nannichi.html' },
-    { label: 'Standard Shippingとは', url: '/shipping/aliexpress-standard-shipping.html' },
-    { label: '追跡番号の確認方法',     url: '/shipping/aliexpress-tracking-number.html' },
-    { label: '荷物追跡ガイド',         url: '/shipping/aliexpress-tracking-guide.html' },
+    { label: '🛒 おすすめ商品・比較', url: '/#recommend' },
+    { label: '📘 入門・基礎知識',     url: '/#beginner' },
+    { label: '💳 支払い・決済',       url: '/#payment'  },
+    { label: '📦 配送・追跡',         url: '/#shipping' },
+    { label: '🔒 安全性・トラブル対策', url: '/#safety' },
   ];
 
   /* ── ヘッダー ─────────────────────────────────── */
@@ -45,11 +29,9 @@
         '<button class="nav-close" aria-label="閉じる">✕</button>' +
       '</div>' +
       '<div class="nav-drawer-body">' +
+        '<div class="nav-section">記事をカテゴリから探す</div>' +
         NAV_ITEMS.map(function(item) {
-          if (item.type === 'heading') {
-            return '<div class="nav-section">' + item.label + '</div>';
-          }
-          return '<a class="nav-link" href="' + item.url + '">' + item.label + '</a>';
+          return '<a class="nav-link" href="' + item.url + '">' + item.label + '<span class="nav-arrow">›</span></a>';
         }).join('') +
       '</div>' +
     '</nav>';
@@ -98,8 +80,10 @@
     '.nav-close:hover{background:#f5f5f5;color:#374151;}' +
     '.nav-drawer-body{padding:8px 0 24px;}' +
     '.nav-section{font-size:.72rem;font-weight:700;color:#9ca3af;letter-spacing:.08em;padding:16px 16px 6px;text-transform:uppercase;}' +
-    '.nav-link{display:block;padding:10px 16px;font-size:.875rem;color:#374151;text-decoration:none;transition:background .12s;}' +
+    '.nav-link{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;font-size:.9rem;color:#374151;text-decoration:none;transition:background .12s;border-bottom:1px solid #f3f4f6;}' +
     '.nav-link:hover{background:#fff1f2;color:#e8253a;}' +
+    '.nav-arrow{color:#d1d5db;font-size:1.1rem;}' +
+    '.nav-link:hover .nav-arrow{color:#e8253a;}' +
     /* CTA共通 */
     '.cta-box{background:linear-gradient(135deg,#fff1f2 0%,#fff8f8 100%);border:2px solid #fecdcf;border-left:5px solid #e8253a;border-radius:16px;padding:28px 20px;margin:40px 0;text-align:center;}' +
     '.cta-lead{font-size:.93rem;font-weight:700;color:#1a1a1a;margin:0 0 18px;line-height:1.7;}' +
