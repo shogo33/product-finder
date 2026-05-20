@@ -226,6 +226,48 @@ const PriceSlider = memo(({ value, onChange }) => {
   );
 });
 
+const BudgetView = memo(({ maxPrice, setMaxPrice, filteredDeckLength }) => {
+  const priceLabel = `〜 ¥${maxPrice.toLocaleString()}`;
+  return (
+    <div className="flex-1 flex flex-col overflow-y-auto px-6 py-4 h-full">
+      <div className="bg-gradient-to-br from-red-500 via-red-600 to-rose-600 rounded-3xl p-6 text-white shadow-lg mb-6">
+        <div className="flex items-baseline justify-between mb-4">
+          <div>
+            <div className="text-xs font-semibold opacity-90 mb-0.5">価格帯</div>
+            <motion.div
+              className="text-2xl font-black tracking-tight"
+              key={maxPrice}
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1 }}
+            >
+              {priceLabel}
+            </motion.div>
+          </div>
+          <div className="text-right">
+            <div className="text-xs opacity-90">該当商品</div>
+            <div className="text-2xl font-bold">{filteredDeckLength}</div>
+          </div>
+        </div>
+        <div>
+          <div className="flex justify-between text-[10px] opacity-80 mb-1">
+            <span>上限</span>
+            <span>¥{maxPrice.toLocaleString()}</span>
+          </div>
+          <PriceSlider value={maxPrice} onChange={setMaxPrice} />
+          <div className="flex justify-between text-[10px] opacity-70 mt-1">
+            <span>¥500</span>
+            <span>¥10,000</span>
+          </div>
+        </div>
+      </div>
+      <div className="mt-4 p-3 bg-stone-100 rounded-lg text-xs text-stone-600">
+        <p className="mb-2 font-semibold">ご利用上の注意</p>
+        <p>本サービスはAliExpressの商品情報を紹介しています。商品の最新情報・価格・在庫状況については、必ずAliExpressの商品ページでご確認ください。</p>
+      </div>
+    </div>
+  );
+});
+
 // 紙吹雪の座標を起動時に一度だけ生成（再レンダーで動かないように）
 const CONFETTI = Array.from({ length: 15 }, (_, i) => ({
   color: ['#fbbf24', '#e8253a', '#a855f7', '#ec4899', '#10b981'][i % 5],
@@ -444,7 +486,6 @@ export default function App() {
 
   const amazonUrl = current ? current.url : '#';
   const cartUrl = current ? `https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=${current.asin}&Quantity.1=1` : '#';
-  const priceLabel = `〜 ¥${maxPrice.toLocaleString()}`;
 
   // 全タグを集計
   const allTags = useMemo(() => {
@@ -654,48 +695,6 @@ export default function App() {
     );
   };
 
-  // ----- BUDGET VIEW -----
-  const BudgetView = () => (
-    <div className="flex-1 flex flex-col overflow-y-auto px-6 py-4 h-full">
-      <div className="bg-gradient-to-br from-red-500 via-red-600 to-rose-600 rounded-3xl p-6 text-white shadow-lg mb-6">
-        <div className="flex items-baseline justify-between mb-4">
-          <div>
-            <div className="text-xs font-semibold opacity-90 mb-0.5">価格帯</div>
-            <motion.div
-              className="text-2xl font-black tracking-tight"
-              key={maxPrice}
-              initial={{ scale: 1.1 }}
-              animate={{ scale: 1 }}
-            >
-              {priceLabel}
-            </motion.div>
-          </div>
-          <div className="text-right">
-            <div className="text-xs opacity-90">該当商品</div>
-            <div className="text-2xl font-bold">{filteredDeck.length}</div>
-          </div>
-        </div>
-
-        <div>
-          <div className="flex justify-between text-[10px] opacity-80 mb-1">
-            <span>上限</span>
-            <span>¥{maxPrice.toLocaleString()}</span>
-          </div>
-          <PriceSlider value={maxPrice} onChange={setMaxPrice} />
-          <div className="flex justify-between text-[10px] opacity-70 mt-1">
-            <span>¥500</span>
-            <span>¥10,000</span>
-          </div>
-        </div>
-      </div>
-
-      
-      <div className="mt-4 p-3 bg-stone-100 rounded-lg text-xs text-stone-600">
-        <p className="mb-2 font-semibold">ご利用上の注意</p>
-        <p>本サービスはAliExpressの商品情報を紹介しています。商品の最新情報・価格・在庫状況については、必ずAliExpressの商品ページでご確認ください。</p>
-      </div>
-    </div>
-  );
 
   // ----- LIKED VIEW -----
   const LikedView = () => (
@@ -958,7 +957,7 @@ export default function App() {
 
         <div className="flex-1 flex flex-col overflow-hidden min-h-0">
           {view === 'swipe' && <SwipeView />}
-          {view === 'budget' && <BudgetView />}
+          {view === 'budget' && <BudgetView maxPrice={maxPrice} setMaxPrice={setMaxPrice} filteredDeckLength={filteredDeck.length} />}
           {view === 'liked' && <LikedView />}
           {view === 'stats' && <StatsView />}
           {view === 'articles' && <ArticlesView />}
