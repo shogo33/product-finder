@@ -211,7 +211,9 @@ export default function App() {
   });
   const [view, setView] = useState('swipe');
   const [showModal, setShowModal] = useState(true);
-  const [swipeCount, setSwipeCount] = useState(0);
+  const [swipeCount, setSwipeCount] = useState(() => {
+    try { return parseInt(localStorage.getItem('aliex_swipe_count') || '0', 10); } catch { return 0; }
+  });
   const [selectedTag, setSelectedTag] = useState(null);
   const [showInstallModal, setShowInstallModal] = useState(false);
   const [celebrationMessage, setCelebrationMessage] = useState(null);
@@ -221,6 +223,15 @@ export default function App() {
     localStorage.setItem('aliex_liked', JSON.stringify(liked));
   }, [liked]);
 
+  useEffect(() => {
+    localStorage.setItem('aliex_swipe_count', String(swipeCount));
+  }, [swipeCount]);
+
+  useEffect(() => {
+    if (deck.length > 0) {
+      localStorage.setItem('aliex_deck_order', JSON.stringify(deck.map(p => p.id)));
+    }
+  }, [deck]);
 
   // /products.json を取得してデッキにセット
   useEffect(() => {
@@ -229,6 +240,22 @@ export default function App() {
       .then(data => {
         if (!data.length) return;
         setAllProducts(data);
+
+        const savedOrder = (() => {
+          try { return JSON.parse(localStorage.getItem('aliex_deck_order') || 'null'); } catch { return null; }
+        })();
+
+        if (savedOrder && savedOrder.length > 0) {
+          const productMap = new Map(data.map(p => [p.id, p]));
+          const restoredDeck = savedOrder
+            .map((id, i) => { const p = productMap.get(id); return p ? { ...p, uid: `${p.id}-r-${i}` } : null; })
+            .filter(Boolean);
+          if (restoredDeck.length > 0) {
+            setDeck(restoredDeck);
+            return;
+          }
+        }
+
         setDeck(shuffle(data).map((p, i) => ({ ...p, uid: `${p.id}-0-${i}` })));
       })
       .catch(() => {});
