@@ -189,6 +189,63 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
   );
 };
 
+// 紙吹雪の座標を起動時に一度だけ生成（再レンダーで動かないように）
+const CONFETTI = Array.from({ length: 15 }, (_, i) => ({
+  color: ['#fbbf24', '#e8253a', '#a855f7', '#ec4899', '#10b981'][i % 5],
+  x: (Math.random() - 0.5) * 300,
+  y: (Math.random() - 0.5) * 200,
+  rotate: Math.random() * 720,
+}));
+
+const CelebrationOverlay = memo(({ celebrationMessage, likedCount, swipeCount }) => (
+  <AnimatePresence>
+    {celebrationMessage && (
+      <motion.div
+        className="fixed top-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -30 }}
+      >
+        {CONFETTI.map((c, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-2 h-2 rounded-full"
+            style={{ backgroundColor: c.color, left: '50%', top: '50%' }}
+            initial={{ scale: 0, x: 0, y: 0 }}
+            animate={{ scale: [0, 1, 0], x: c.x, y: c.y, rotate: c.rotate }}
+            transition={{ duration: 1.5, ease: 'easeOut' }}
+          />
+        ))}
+        <motion.div
+          className="bg-white/95 backdrop-blur rounded-2xl px-5 py-3 shadow-2xl border-2 border-red-200 flex items-center gap-3"
+          initial={{ scale: 0.8 }}
+          animate={{ scale: [0.8, 1.05, 1] }}
+          exit={{ scale: 0.8, opacity: 0 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
+        >
+          <motion.div
+            className="text-3xl"
+            animate={{ rotate: [0, -10, 10, 0], scale: [1, 1.2, 1] }}
+            transition={{ duration: 0.8 }}
+          >
+            {celebrationMessage.emoji}
+          </motion.div>
+          <div>
+            <div className="text-base font-black bg-gradient-to-r from-red-600 via-red-600 to-rose-600 bg-clip-text text-transparent">
+              {celebrationMessage.message}
+            </div>
+            <div className="text-[10px] text-stone-500 font-semibold">
+              {celebrationMessage.type === 'liked'
+                ? `お気に入り ${likedCount}件`
+                : `${swipeCount}スワイプ達成`}
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
+    )}
+  </AnimatePresence>
+));
+
 // products.json が未配置の場合のフォールバック
 const FALLBACK_PRODUCTS = [];
 
@@ -370,70 +427,6 @@ export default function App() {
     return counts;
   }, [filteredDeck]);
 
-  // ----- CELEBRATION OVERLAY -----
-  const CelebrationOverlay = () => (
-    <AnimatePresence>
-      {celebrationMessage && (
-        <motion.div
-          className="fixed top-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -30 }}
-        >
-          {/* 紙吹雪パーティクル */}
-          {[...Array(15)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-2 h-2 rounded-full"
-              style={{
-                backgroundColor: ['#fbbf24', '#e8253a', '#a855f7', '#ec4899', '#10b981'][i % 5],
-                left: '50%',
-                top: '50%'
-              }}
-              initial={{ scale: 0, x: 0, y: 0 }}
-              animate={{
-                scale: [0, 1, 0],
-                x: (Math.random() - 0.5) * 300,
-                y: (Math.random() - 0.5) * 200,
-                rotate: Math.random() * 720,
-              }}
-              transition={{ duration: 1.5, ease: 'easeOut' }}
-            />
-          ))}
-          
-          {/* メインメッセージ - 横長デザイン */}
-          <motion.div
-            className="bg-white/95 backdrop-blur rounded-2xl px-5 py-3 shadow-2xl border-2 border-red-200 flex items-center gap-3"
-            initial={{ scale: 0.8 }}
-            animate={{ scale: [0.8, 1.05, 1] }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{ duration: 0.4, ease: 'easeOut' }}
-          >
-            <motion.div 
-              className="text-3xl"
-              animate={{ 
-                rotate: [0, -10, 10, 0],
-                scale: [1, 1.2, 1]
-              }}
-              transition={{ duration: 0.8 }}
-            >
-              {celebrationMessage.emoji}
-            </motion.div>
-            <div>
-              <div className="text-base font-black bg-gradient-to-r from-red-600 via-red-600 to-rose-600 bg-clip-text text-transparent">
-                {celebrationMessage.message}
-              </div>
-              <div className="text-[10px] text-stone-500 font-semibold">
-                {celebrationMessage.type === 'liked' 
-                  ? `お気に入り ${liked.length}件` 
-                  : `${swipeCount}スワイプ達成`}
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
 
   // ----- HELP MODAL -----
   const HelpModal = () => (
@@ -853,7 +846,7 @@ export default function App() {
     <div className="h-[100svh] bg-gradient-to-b from-stone-50 to-stone-100 flex items-center justify-center sm:p-4 overflow-hidden">
       <HelpModal />
       <InstallModal />
-      <CelebrationOverlay />
+      <CelebrationOverlay celebrationMessage={celebrationMessage} likedCount={liked.length} swipeCount={swipeCount} />
       <div className="w-full max-w-md h-full bg-white sm:rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col"
            style={{ fontFamily: "'Hiragino Sans', 'Yu Gothic', sans-serif" }}>
 
