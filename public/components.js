@@ -83,7 +83,6 @@
       brandNav.innerHTML =
         '<a href="/">' +
           '<img src="/logo.png" alt="アリエクswipe" style="height:22px;width:auto;display:block;">' +
-          '<span>アリエクswipe</span>' +
         '</a>';
       breadcrumb.replaceWith(brandNav);
     }
