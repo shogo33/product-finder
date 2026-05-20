@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /preview.html
+
+Sitemap: https://product-finder-lilac.vercel.app/sitemap.xml
