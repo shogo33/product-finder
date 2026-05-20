@@ -183,13 +183,11 @@
     gtag('js', new Date());
     gtag('config', 'G-WS03SNJG4H');
   </script>
+  <script src="/components.js"></script>
 </head>
 <body>
 
-<header class="site-header">
-  <a class="site-logo" href="/home.html"><img src="/logo.png" alt="アリエクSwipe" style="height:36px;width:auto;display:block;"></a>
-  <a class="header-cta" href="https://product-finder-lilac.vercel.app/" target="_blank" rel="noopener">おすすめ商品はこちら</a>
-</header>
+<script id="site-header-inject"></script>
 
 <section class="article-hero">
   <div class="tag">🛍️ おすすめ商品まとめ</div>
@@ -1615,21 +1613,10 @@
   </div>
 </div>
 
-<div class="cta-sticky">
-  <a href="https://product-finder-lilac.vercel.app/">おすすめ商品を見る</a>
-  <div class="sub">アリエクSwipe でお得な商品をチェック</div>
+<div class="cta-sticky" id="cta-sticky"></div>
 </div>
 
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="/info/privacy.html">プライバシーポリシー</a>
-    <a href="/info/contact.html">お問い合わせ</a>
-    <a href="/info/about.html">運営者情報</a>
-    <a href="/home.html">トップへ戻る</a>
-  </div>
-  <p>© 2026 アリエクswipe｜お得情報・格安商品. All rights reserved.</p>
-  <p class="footer-aff-notice">本記事にはAliExpressアフィリエイトリンクが含まれています。記事内の価格・評価はすべて執筆時点の情報です。実際の価格はリンク先でご確認ください。</p>
-</footer>
+<footer class="site-footer" id="site-footer"></footer>
 
 </body>
 </html>
