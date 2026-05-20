@@ -37,11 +37,13 @@ if (!slug) {
 }
 
 // --product-ids 111,222
-const pidArg   = args[args.indexOf('--product-ids') + 1];
+const pidIdx   = args.indexOf('--product-ids');
+const pidArg   = pidIdx !== -1 ? args[pidIdx + 1] : null;
 const forcePids = pidArg && !pidArg.startsWith('--') ? pidArg.split(',').map(s => s.trim()) : [];
 
 // --limit N
-const limitArg = args[args.indexOf('--limit') + 1];
+const limitIdx = args.indexOf('--limit');
+const limitArg = limitIdx !== -1 ? args[limitIdx + 1] : null;
 const fetchLimit = limitArg && !limitArg.startsWith('--') ? parseInt(limitArg, 10) : null;
 
 // ── プランJSONを読み込み ──────────────────────────────────
