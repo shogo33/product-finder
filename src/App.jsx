@@ -738,8 +738,12 @@ export default function App() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: idx * 0.05 }}
                 whileHover={{ scale: 1.05, y: -4 }}
-                className="bg-white border-2 border-red-200 rounded-xl p-3 hover:border-red-500 hover:shadow-md transition-all cursor-pointer"
+                className="relative bg-white border-2 border-red-200 rounded-xl p-3 hover:border-red-500 hover:shadow-md transition-all cursor-pointer"
               >
+                <button
+                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); setLiked(prev => prev.filter(p => p.uid !== product.uid)); }}
+                  className="absolute top-1.5 right-1.5 w-5 h-5 bg-stone-300/80 hover:bg-red-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold transition-colors z-10"
+                >×</button>
                 <div className={`w-full h-20 rounded-lg bg-gradient-to-br ${product.color} flex items-center justify-center mb-2 shadow-sm overflow-hidden`}>
                   {product.images && product.images.length > 0 ? (
                     <img 
