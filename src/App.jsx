@@ -60,18 +60,18 @@ const BackgroundCard = memo(({ card, index, x }) => {
         </div>
       </div>
       {/* 下部情報エリア（30%） */}
-      <div className="flex-1 flex flex-col items-center justify-center p-4 gap-2">
+      <div className="flex-1 flex flex-col items-center justify-evenly px-4 py-3 gap-2">
         {card.tags && (
-          <div className="flex flex-wrap gap-1 justify-center">
+          <div className="flex flex-wrap gap-1.5 justify-center">
             {card.tags.map((tag, idx) => (
-              <span key={idx} className="text-[10px] px-2 py-0.5 bg-red-100 text-red-700 rounded-full font-semibold">
+              <span key={idx} className="text-xs px-2.5 py-1 bg-red-100 text-red-700 rounded-full font-semibold">
                 {tag}
               </span>
             ))}
           </div>
         )}
-        <div className="text-2xl font-black text-stone-800 leading-none">¥{card.price.toLocaleString()}</div>
-        <div className="px-6 py-2 bg-red-600 text-white rounded-xl font-bold text-sm shadow-lg">
+        <div className="text-3xl font-black text-stone-800 leading-none">¥{card.price.toLocaleString()}</div>
+        <div className="px-6 py-2.5 bg-red-600 text-white rounded-xl font-bold text-sm shadow-lg">
           AliExpressで見る
         </div>
       </div>
@@ -166,7 +166,7 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
           href={amazonUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full text-center px-6 py-3 bg-red-600 text-white rounded-xl font-bold text-base hover:shadow-xl transition-all active:scale-95 shadow-lg"
+          className="px-8 py-2.5 bg-red-600 text-white rounded-xl font-bold text-sm hover:shadow-xl transition-all active:scale-95 shadow-lg"
         >
           AliExpressで見る
         </a>
