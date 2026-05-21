@@ -22,7 +22,10 @@
       "Bash(node -e ' *)",
       "Bash(git add *)",
       "Bash(node scripts/migrate-to-root.mjs)",
-      "Bash(node scripts/gen-ogp.mjs)"
+      "Bash(node scripts/gen-ogp.mjs)",
+      "Bash(nslookup aliswipe.com 8.8.8.8)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code} %{redirect_url}\" --max-time 10 https://aliswipe.com/)",
+      "Bash(node scripts/gen-ogp.mjs basics/ugreen-earphone-osusume.html)"
     ]
   }
 }

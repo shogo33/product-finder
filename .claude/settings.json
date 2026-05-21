@@ -25,7 +25,21 @@
       "Bash(node -e \"const p=require\\('./data/products.json'\\); const r=p.filter\\(x=>\\(x.title||''\\).includes\\('レオタード'\\)||\\(x.title_short||''\\).includes\\('レオタード'\\)\\); r.forEach\\(x=>console.log\\(x.product_id, x.tag, x.title_short, '|', x.title?.slice\\(0,50\\)\\)\\);\")",
       "Bash(node scripts/generate-public-products.mjs)",
       "Bash(node scripts/gen-category-links.mjs)",
-      "Bash(node scripts/inject-category-links.mjs)"
+      "Bash(node scripts/inject-category-links.mjs)",
+      "WebFetch(domain:ja.aliexpress.com)",
+      "Bash(node scripts/reddit-gadget-pipeline.mjs --dry-run --limit=1)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d[0], ensure_ascii=False, indent=2\\)\\)\")",
+      "Bash(explorer.exe \"c:\\\\Users\\\\USER\\\\product-finder\\\\public\\\\gadgets\\\\lightink-eink-smartwatch-10months.html\")",
+      "Bash(node -e \"const p=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/products.json','utf8'\\)\\); console.log\\(Array.isArray\\(p\\), typeof p, Object.keys\\(p\\).slice\\(0,3\\)\\)\")",
+      "Bash(node -e \"const p=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/products.json','utf8'\\)\\); console.log\\(JSON.stringify\\(p[0]\\).substring\\(0,200\\)\\)\")",
+      "Bash(node scripts/step2-research.mjs ugreen-earphone-osusume --product-ids 1005008120529417,1005007302181092,1005009249740361,1005009828832187,1005007145786996)",
+      "Bash(node scripts/step3-write.mjs ugreen-earphone-osusume)",
+      "Bash(netstat -ano)",
+      "Bash(grep -v \"^\\\\s*//\")",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\USER\\\\product-finder\" -Recurse -Force)",
+      "Bash(Select-Object -First 100)",
+      "Bash(Format-Table -Property FullName, PSIsContainer)",
+      "Bash(node scripts/step1-plan.mjs \"UGREEN マウス おすすめ\" ugreen-mouse-osusume)"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",
