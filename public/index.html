@@ -136,8 +136,11 @@
     /* ─── Article Grid ─── */
     .article-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    @media (min-width: 600px) {
+      .article-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
     }
     .article-card {
       background: var(--surface);
@@ -151,11 +154,15 @@
     }
     .article-card:hover { border-color: var(--red); box-shadow: 0 4px 16px rgba(232,37,58,0.1); transform: translateY(-2px); }
     .card-thumb { width: 100%; aspect-ratio: 400/220; object-fit: cover; display: block; }
-    .card-body { padding: 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
-    .card-tag { font-size: 0.68rem; font-weight: 700; color: var(--red); letter-spacing: 0.05em; }
-    .card-title { font-size: 0.9rem; font-weight: 700; line-height: 1.5; }
-    .card-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
-    .card-arrow { font-size: 0.75rem; color: var(--red); margin-top: auto; padding-top: 4px; }
+    .card-body { padding: 10px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+    @media (min-width: 600px) { .card-body { padding: 16px; gap: 8px; } }
+    .card-tag { font-size: 0.62rem; font-weight: 700; color: var(--red); letter-spacing: 0.05em; }
+    @media (min-width: 600px) { .card-tag { font-size: 0.68rem; } }
+    .card-title { font-size: 0.78rem; font-weight: 700; line-height: 1.45; }
+    @media (min-width: 600px) { .card-title { font-size: 0.9rem; } }
+    .card-desc { font-size: 0.75rem; color: var(--muted); line-height: 1.6; display: none; }
+    @media (min-width: 600px) { .card-desc { display: block; font-size: 0.82rem; } }
+    .card-arrow { font-size: 0.72rem; color: var(--red); margin-top: auto; padding-top: 4px; }
 
     /* ─── Featured Card ─── */
     .featured-card {
