@@ -489,7 +489,7 @@ export default function App() {
     const topCards = cards.slice(0, 3);
 
     return (
-      <div className="flex-1 flex flex-col items-center justify-start pt-1 pb-3 overflow-hidden relative min-h-0">
+      <div className="flex-1 flex flex-col items-center justify-start px-2 pt-1 pb-3 overflow-hidden relative min-h-0">
 
         {/* カテゴリフィルターチップ */}
         <div className="w-full flex gap-1.5 overflow-x-auto px-3 pb-2 flex-shrink-0 scrollbar-hide">
@@ -513,7 +513,7 @@ export default function App() {
         </div>
 
         {/* カードスタック */}
-        <div className={`w-full px-2 relative flex-1 min-h-0 transition-all duration-300 ${feverMode ? 'drop-shadow-[0_0_12px_rgba(251,146,60,0.6)]' : ''}`}>
+        <div className={`w-full relative flex-1 min-h-0 transition-all duration-300 ${feverMode ? 'drop-shadow-[0_0_12px_rgba(251,146,60,0.6)]' : ''}`}>
           {topCards.map((card, index) =>
             index === 0 ? (
               <SwipeCard
