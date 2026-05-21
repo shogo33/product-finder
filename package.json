@@ -21,7 +21,8 @@
     "framer-motion": "^11.0.0",
     "lucide-react": "^0.400.0",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "twitter-api-v2": "^1.29.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

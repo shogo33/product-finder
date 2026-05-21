@@ -1,89 +1,86 @@
-﻿import { useState, useMemo, memo, useRef, useEffect } from 'react';
+import { useState, useMemo, memo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 import { Heart, X, Package, Sparkles, TrendingUp, Layers, Filter, BarChart3, Smartphone, BookOpen } from 'lucide-react';
+import { useDeck } from './useDeck';
 
+// ── カテゴリ定義 ─────────────────────────────────────────────────────────
+const CATEGORIES = [
+  { ja: 'ガジェット',    emoji: '⚡' },
+  { ja: 'アウトドア',    emoji: '🏕️' },
+  { ja: 'メンズ',        emoji: '🧔' },
+  { ja: 'シール・ケース', emoji: '🌸' },
+  { ja: 'おもしろ',      emoji: '😄' },
+  { ja: 'ペット',        emoji: '🐾' },
+  { ja: 'インテリア',    emoji: '🏠' },
+  { ja: 'キッチン',      emoji: '🍳' },
+  { ja: '工具・DIY',     emoji: '🔧' },
+  { ja: 'リラックス',    emoji: '💆' },
+];
 
-// 画像ギャラリー独立コンポーネント
+// ── Choiceバッジ ─────────────────────────────────────────────────────────
+const ChoiceBadge = () => (
+  <div className="absolute top-3 right-3 z-30 bg-amber-400 text-white text-[10px] font-black px-2 py-0.5 rounded-full flex items-center gap-0.5 shadow-md">
+    <span>⭐</span><span>Choice</span>
+  </div>
+);
+
+// ── 画像ギャラリー ────────────────────────────────────────────────────────
 const ImageGallery = memo(({ images, image, emoji, name }) => {
   const src = images?.[0] || image;
-  if (src) {
-    return <img src={src} alt={name} className="w-full h-full object-cover" />;
-  }
+  if (src) return <img src={src} alt={name} className="w-full h-full object-cover" />;
   return <div className="w-full h-full flex items-center justify-center text-9xl">{emoji}</div>;
 });
 
-// 背景カード（2,3枚目）
+// ── 背景カード（2・3枚目） ────────────────────────────────────────────────
 const BackgroundCard = memo(({ card, index, x }) => {
-  // index 1: 2枚目 - 通常 scale 0.95, y 20。 スワイプ中(|x|>100) → scale 1, y 0
-  // index 2: 3枚目 - 通常 scale 0.9, y 40。 スワイプ中(|x|>100) → scale 0.95, y 20
-  const baseScale = index === 1 ? 0.95 : 0.9;
+  const baseScale  = index === 1 ? 0.95 : 0.9;
   const targetScale = index === 1 ? 1 : 0.95;
-  const baseY = index === 1 ? 20 : 40;
-  const targetY = index === 1 ? 0 : 20;
+  const baseY      = index === 1 ? 20 : 40;
+  const targetY    = index === 1 ? 0 : 20;
 
-  // 絶対値ベースで補間（左右どちらにスワイプしても同じ動き）
-  const cardScale = useTransform(x, (latest) => {
-    const abs = Math.abs(latest);
-    const progress = Math.min(abs / 150, 1);
-    return baseScale + (targetScale - baseScale) * progress;
+  const cardScale = useTransform(x, (v) => {
+    const p = Math.min(Math.abs(v) / 150, 1);
+    return baseScale + (targetScale - baseScale) * p;
   });
-  const cardY = useTransform(x, (latest) => {
-    const abs = Math.abs(latest);
-    const progress = Math.min(abs / 150, 1);
-    return baseY + (targetY - baseY) * progress;
+  const cardY = useTransform(x, (v) => {
+    const p = Math.min(Math.abs(v) / 150, 1);
+    return baseY + (targetY - baseY) * p;
   });
 
   return (
-    <motion.div 
+    <motion.div
       className="absolute w-full h-full rounded-3xl bg-white border-4 border-stone-300 shadow-lg pointer-events-none overflow-hidden flex flex-col"
-      style={{
-        top: 0,
-        left: 0,
-        zIndex: 3 - index,
-        scale: cardScale,
-        y: cardY,
-        transformOrigin: 'center top'
-      }}
+      style={{ top: 0, left: 0, zIndex: 3 - index, scale: cardScale, y: cardY, transformOrigin: 'center top' }}
     >
-      {/* 画像エリア（70%） */}
       <div className="relative w-full bg-gradient-to-br from-stone-50 to-stone-100 overflow-hidden" style={{ height: '70%' }}>
-        {card.images && card.images.length > 0 ? (
-          <img src={card.images[0]} alt={card.name} className="w-full h-full object-cover" />
-        ) : card.image ? (
-          <img src={card.image} alt={card.name} className="w-full h-full object-cover" />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-9xl">{card.emoji}</div>
-        )}
+        {card.images?.[0] || card.image
+          ? <img src={card.images?.[0] || card.image} alt={card.name} className="w-full h-full object-cover" />
+          : <div className="w-full h-full flex items-center justify-center text-9xl">{card.emoji}</div>
+        }
+        {card.is_choice && <ChoiceBadge />}
         <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
           <div className="text-[10px] tracking-widest text-white/80 uppercase font-bold mb-1">{card.category}</div>
           <div className="text-lg font-bold text-white drop-shadow-lg">{card.name}</div>
         </div>
       </div>
-      {/* 下部情報エリア（30%） */}
       <div className="flex-1 flex flex-col items-center justify-evenly px-4 py-3 gap-2">
         {card.tags && (
           <div className="flex flex-wrap gap-1.5 justify-center">
             {card.tags.map((tag, idx) => (
-              <span key={idx} className="text-xs px-2.5 py-1 bg-red-100 text-red-700 rounded-full font-semibold">
-                {tag}
-              </span>
+              <span key={idx} className="text-xs px-2.5 py-1 bg-red-100 text-red-700 rounded-full font-semibold">{tag}</span>
             ))}
           </div>
         )}
         <div className="text-3xl font-black text-stone-800 leading-none">¥{card.price.toLocaleString()}</div>
-        <div className="px-6 py-2.5 bg-red-600 text-white rounded-xl font-bold text-sm shadow-lg">
-          AliExpressで見る
-        </div>
+        <div className="px-6 py-2.5 bg-red-600 text-white rounded-xl font-bold text-sm shadow-lg">AliExpressで見る</div>
       </div>
     </motion.div>
   );
 });
 
-// 最前面カード（1枚目） - ドラッグ可能
-const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOpacity, amazonUrl, onSwipeRight, onSwipeLeft, selectedTag, setSelectedTag }) => {
-  const [exitX, setExitX] = useState(0);
-
-  const handleSwipe = async (direction) => {
+// ── 最前面カード（ドラッグ可能） ──────────────────────────────────────────
+const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOpacity, onSwipeRight, onSwipeLeft, selectedCategory, setSelectedCategory }) => {
+  const handleSwipe = (direction) => {
     const targetX = direction === 'right' ? 1000 : -1000;
     animate(y, -80, { duration: 0.3, ease: 'easeOut' });
     animate(x, targetX, {
@@ -92,55 +89,38 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
       onComplete: () => {
         if (direction === 'right') onSwipeRight();
         else onSwipeLeft();
-        requestAnimationFrame(() => {
-          x.set(0);
-          y.set(0);
-        });
-      }
+        requestAnimationFrame(() => { x.set(0); y.set(0); });
+      },
     });
   };
 
   return (
     <motion.div
       className="absolute w-full h-full cursor-grab active:cursor-grabbing rounded-3xl overflow-hidden bg-white flex flex-col shadow-2xl border-4 border-stone-300"
-      style={{
-        x,
-        y,
-        rotate,
-        scale,
-        opacity: cardOpacity,
-        top: 0,
-        zIndex: 10
-      }}
-      drag={true}
+      style={{ x, y, rotate, scale, opacity: cardOpacity, top: 0, zIndex: 10 }}
+      drag
       dragConstraints={false}
       dragMomentum={false}
       onDragEnd={(_, info) => {
-        if (info.offset.x > 100 || info.velocity.x > 500) {
-          handleSwipe('right');
-        } else if (info.offset.x < -100 || info.velocity.x < -500) {
-          handleSwipe('left');
-        } else {
+        if (info.offset.x > 100 || info.velocity.x > 500)       handleSwipe('right');
+        else if (info.offset.x < -100 || info.velocity.x < -500) handleSwipe('left');
+        else {
           animate(x, 0, { type: 'spring', stiffness: 500, damping: 30 });
           animate(y, 0, { type: 'spring', stiffness: 500, damping: 30 });
         }
       }}
     >
-      {/* 画像エリア（70%） */}
+      {/* 画像エリア 70% */}
       <div className="relative w-full bg-gradient-to-br from-stone-50 to-stone-100 overflow-hidden" style={{ height: '70%' }}>
-        <ImageGallery 
-          images={card.images}
-          image={card.image}
-          emoji={card.emoji}
-          name={card.name}
-        />
+        <ImageGallery images={card.images} image={card.image} emoji={card.emoji} name={card.name} />
+        {card.is_choice && <ChoiceBadge />}
         <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none z-20">
           <div className="text-[10px] tracking-widest text-white/80 uppercase font-bold mb-1">{card.category}</div>
           <div className="text-lg font-bold text-white drop-shadow-lg">{card.name}</div>
         </div>
       </div>
 
-      {/* 下部情報エリア（30%） */}
+      {/* 下部情報エリア 30% */}
       <div className="flex-1 flex flex-col items-center justify-evenly px-4 py-3">
         {card.tags && (
           <div className="flex flex-wrap gap-1.5 justify-center">
@@ -148,61 +128,47 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
               <motion.span
                 key={idx}
                 className="text-xs px-2.5 py-1 bg-red-100 text-red-700 rounded-full font-semibold cursor-pointer hover:bg-red-200 transition-all"
-                onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
+                onClick={() => setSelectedCategory(selectedCategory === tag ? null : tag)}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-              >
-                {tag}
-              </motion.span>
+              >{tag}</motion.span>
             ))}
           </div>
         )}
-
-        <div className="text-3xl font-black text-stone-800 leading-none">
-          ¥{card.price.toLocaleString()}
-        </div>
-
+        <div className="text-3xl font-black text-stone-800 leading-none">¥{card.price.toLocaleString()}</div>
         <a
-          href={amazonUrl}
+          href={card.url}
           target="_blank"
           rel="noopener noreferrer"
           className="px-8 py-2.5 bg-red-600 text-white rounded-xl font-bold text-sm hover:shadow-xl transition-all active:scale-95 shadow-lg"
-        >
-          AliExpressで見る
-        </a>
+        >AliExpressで見る</a>
       </div>
 
-      {/* GOOD/SKIP オーバーレイ：スワイプ方向と逆側に配置（常に見える） */}
-      <motion.div
-        className="absolute top-12 left-6 px-4 py-1.5 border-[4px] border-red-500 rounded-lg -rotate-12 bg-white/40 backdrop-blur z-30"
-        style={{ opacity: likeOpacity }}
-      >
+      {/* GOOD / SKIP オーバーレイ */}
+      <motion.div className="absolute top-12 left-6 px-4 py-1.5 border-[4px] border-red-500 rounded-lg -rotate-12 bg-white/40 backdrop-blur z-30" style={{ opacity: likeOpacity }}>
         <span className="text-red-600 font-black text-xl tracking-wider">GOOD!</span>
       </motion.div>
-      <motion.div
-        className="absolute top-12 right-6 px-4 py-1.5 border-[4px] border-blue-500 rounded-lg rotate-12 bg-white/40 backdrop-blur z-30"
-        style={{ opacity: nopeOpacity }}
-      >
+      <motion.div className="absolute top-12 right-6 px-4 py-1.5 border-[4px] border-blue-500 rounded-lg rotate-12 bg-white/40 backdrop-blur z-30" style={{ opacity: nopeOpacity }}>
         <span className="text-blue-600 font-black text-xl tracking-wider">SKIP</span>
       </motion.div>
     </motion.div>
   );
 };
 
-// カスタム価格スライダー（トラック全体をドラッグ可能）
-const PRICE_MIN = 500;
-const PRICE_MAX = 10000;
+// ── 価格スライダー ────────────────────────────────────────────────────────
+const PRICE_MIN  = 500;
+const PRICE_MAX  = 10000;
 const PRICE_STEP = 100;
 
 const PriceSlider = memo(({ value, onChange }) => {
   const trackRef = useRef(null);
   const dragging = useRef(false);
-  const percent = ((value - PRICE_MIN) / (PRICE_MAX - PRICE_MIN)) * 100;
+  const percent  = ((value - PRICE_MIN) / (PRICE_MAX - PRICE_MIN)) * 100;
 
   const calcValue = (clientX) => {
     const rect = trackRef.current.getBoundingClientRect();
-    const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
-    const raw = PRICE_MIN + (x / rect.width) * (PRICE_MAX - PRICE_MIN);
+    const x    = Math.max(0, Math.min(clientX - rect.left, rect.width));
+    const raw  = PRICE_MIN + (x / rect.width) * (PRICE_MAX - PRICE_MIN);
     return Math.max(PRICE_MIN, Math.min(PRICE_MAX, Math.round(raw / PRICE_STEP) * PRICE_STEP));
   };
 
@@ -218,57 +184,44 @@ const PriceSlider = memo(({ value, onChange }) => {
       <div className="w-full h-2 bg-white/30 rounded-full overflow-hidden">
         <div className="h-full bg-white rounded-full" style={{ width: `${percent}%` }} />
       </div>
-      <div
-        className="absolute w-7 h-7 bg-white rounded-full shadow-lg border-2 border-red-300 -translate-x-1/2 pointer-events-none"
-        style={{ left: `${percent}%` }}
-      />
+      <div className="absolute w-7 h-7 bg-white rounded-full shadow-lg border-2 border-red-300 -translate-x-1/2 pointer-events-none" style={{ left: `${percent}%` }} />
     </div>
   );
 });
 
-const BudgetView = memo(({ maxPrice, setMaxPrice, filteredDeckLength }) => {
-  const priceLabel = `〜 ¥${maxPrice.toLocaleString()}`;
-  return (
-    <div className="flex-1 flex flex-col overflow-y-auto px-6 py-4 h-full">
-      <div className="bg-gradient-to-br from-red-500 via-red-600 to-rose-600 rounded-3xl p-6 text-white shadow-lg mb-6">
-        <div className="flex items-baseline justify-between mb-4">
-          <div>
-            <div className="text-xs font-semibold opacity-90 mb-0.5">価格帯</div>
-            <motion.div
-              className="text-2xl font-black tracking-tight"
-              key={maxPrice}
-              initial={{ scale: 1.1 }}
-              animate={{ scale: 1 }}
-            >
-              {priceLabel}
-            </motion.div>
-          </div>
-          <div className="text-right">
-            <div className="text-xs opacity-90">該当商品</div>
-            <div className="text-2xl font-bold">{filteredDeckLength}</div>
-          </div>
-        </div>
+const BudgetView = memo(({ maxPrice, setMaxPrice, filteredTotal }) => (
+  <div className="flex-1 flex flex-col overflow-y-auto px-6 py-4 h-full">
+    <div className="bg-gradient-to-br from-red-500 via-red-600 to-rose-600 rounded-3xl p-6 text-white shadow-lg mb-6">
+      <div className="flex items-baseline justify-between mb-4">
         <div>
-          <div className="flex justify-between text-[10px] opacity-80 mb-1">
-            <span>上限</span>
-            <span>¥{maxPrice.toLocaleString()}</span>
-          </div>
-          <PriceSlider value={maxPrice} onChange={setMaxPrice} />
-          <div className="flex justify-between text-[10px] opacity-70 mt-1">
-            <span>¥500</span>
-            <span>¥10,000</span>
-          </div>
+          <div className="text-xs font-semibold opacity-90 mb-0.5">価格帯</div>
+          <motion.div className="text-2xl font-black tracking-tight" key={maxPrice} initial={{ scale: 1.1 }} animate={{ scale: 1 }}>
+            〜 ¥{maxPrice.toLocaleString()}
+          </motion.div>
+        </div>
+        <div className="text-right">
+          <div className="text-xs opacity-90">該当商品</div>
+          <div className="text-2xl font-bold">{filteredTotal}</div>
         </div>
       </div>
-      <div className="mt-4 p-3 bg-stone-100 rounded-lg text-xs text-stone-600">
-        <p className="mb-2 font-semibold">ご利用上の注意</p>
-        <p>本サービスはAliExpressの商品情報を紹介しています。商品の最新情報・価格・在庫状況については、必ずAliExpressの商品ページでご確認ください。</p>
+      <div>
+        <div className="flex justify-between text-[10px] opacity-80 mb-1">
+          <span>上限</span><span>¥{maxPrice.toLocaleString()}</span>
+        </div>
+        <PriceSlider value={maxPrice} onChange={setMaxPrice} />
+        <div className="flex justify-between text-[10px] opacity-70 mt-1">
+          <span>¥500</span><span>¥10,000</span>
+        </div>
       </div>
     </div>
-  );
-});
+    <div className="mt-4 p-3 bg-stone-100 rounded-lg text-xs text-stone-600">
+      <p className="mb-2 font-semibold">ご利用上の注意</p>
+      <p>本サービスはAliExpressの商品情報を紹介しています。商品の最新情報・価格・在庫状況については、必ずAliExpressの商品ページでご確認ください。</p>
+    </div>
+  </div>
+));
 
-// 紙吹雪の座標を起動時に一度だけ生成（再レンダーで動かないように）
+// ── 紙吹雪（起動時1回生成） ───────────────────────────────────────────────
 const CONFETTI = Array.from({ length: 15 }, (_, i) => ({
   color: ['#fbbf24', '#e8253a', '#a855f7', '#ec4899', '#10b981'][i % 5],
   x: (Math.random() - 0.5) * 300,
@@ -302,11 +255,7 @@ const CelebrationOverlay = memo(({ celebrationMessage, likedCount, swipeCount })
           exit={{ scale: 0.8, opacity: 0 }}
           transition={{ duration: 0.4, ease: 'easeOut' }}
         >
-          <motion.div
-            className="text-3xl"
-            animate={{ rotate: [0, -10, 10, 0], scale: [1, 1.2, 1] }}
-            transition={{ duration: 0.8 }}
-          >
+          <motion.div className="text-3xl" animate={{ rotate: [0, -10, 10, 0], scale: [1, 1.2, 1] }} transition={{ duration: 0.8 }}>
             {celebrationMessage.emoji}
           </motion.div>
           <div>
@@ -314,9 +263,7 @@ const CelebrationOverlay = memo(({ celebrationMessage, likedCount, swipeCount })
               {celebrationMessage.message}
             </div>
             <div className="text-[10px] text-stone-500 font-semibold">
-              {celebrationMessage.type === 'liked'
-                ? `お気に入り ${likedCount}件`
-                : `${swipeCount}スワイプ達成`}
+              {celebrationMessage.type === 'liked' ? `お気に入り ${likedCount}件` : `${swipeCount}スワイプ達成`}
             </div>
           </div>
         </motion.div>
@@ -325,105 +272,62 @@ const CelebrationOverlay = memo(({ celebrationMessage, likedCount, swipeCount })
   </AnimatePresence>
 ));
 
-// products.json が未配置の場合のフォールバック
-const FALLBACK_PRODUCTS = [];
-
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
+// ── App ───────────────────────────────────────────────────────────────────
 export default function App() {
-  const [allProducts, setAllProducts] = useState(FALLBACK_PRODUCTS);
-  const [maxPrice, setMaxPrice] = useState(PRICE_MAX);
-  const [deck, setDeck] = useState([]);
-  const [cycleCount, setCycleCount] = useState(0);
-  const [liked, setLiked] = useState(() => {
+  const [allProducts, setAllProducts]           = useState([]);
+  const [maxPrice, setMaxPrice]                 = useState(PRICE_MAX);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [liked, setLiked]                       = useState(() => {
     try { return JSON.parse(localStorage.getItem('aliex_liked') || '[]'); } catch { return []; }
   });
-  const [view, setView] = useState('swipe');
-  const [showModal, setShowModal] = useState(true);
-  const [swipeCount, setSwipeCount] = useState(() => {
+  const [view, setView]                         = useState('swipe');
+  const [showModal, setShowModal]               = useState(true);
+  const [swipeCount, setSwipeCount]             = useState(() => {
     try { return parseInt(localStorage.getItem('aliex_swipe_count') || '0', 10); } catch { return 0; }
   });
-  const [selectedTag, setSelectedTag] = useState(null);
   const [showInstallModal, setShowInstallModal] = useState(false);
   const [celebrationMessage, setCelebrationMessage] = useState(null);
+  const [feverMode, setFeverMode]               = useState(false);
+
   const celebrationTimerRef = useRef(null);
+  const swipeTimesRef       = useRef([]);
+  const feverTimerRef       = useRef(null);
 
-  useEffect(() => {
-    localStorage.setItem('aliex_liked', JSON.stringify(liked));
-  }, [liked]);
+  // useDeck: フィルタリング・スコアリング・バッファ管理
+  const { cards, advance: deckAdvance, filteredTotal, remaining } = useDeck({
+    allProducts,
+    maxPrice,
+    selectedCategory,
+  });
 
-  useEffect(() => {
-    localStorage.setItem('aliex_swipe_count', String(swipeCount));
-  }, [swipeCount]);
-
-  useEffect(() => {
-    if (deck.length > 0) {
-      localStorage.setItem('aliex_deck_order', JSON.stringify(deck.map(p => p.id)));
-    }
-  }, [deck]);
-
-  // /products.json を取得してデッキにセット
+  // /products.json 取得
   useEffect(() => {
     fetch('/products.json')
       .then(r => r.ok ? r.json() : [])
-      .then(data => {
-        if (!data.length) return;
-        setAllProducts(data);
-
-        const savedOrder = (() => {
-          try { return JSON.parse(localStorage.getItem('aliex_deck_order') || 'null'); } catch { return null; }
-        })();
-
-        if (savedOrder && savedOrder.length > 0) {
-          const productMap = new Map(data.map(p => [p.id, p]));
-          const restoredDeck = savedOrder
-            .map((id, i) => { const p = productMap.get(id); return p ? { ...p, uid: `${p.id}-r-${i}` } : null; })
-            .filter(Boolean);
-          if (restoredDeck.length > 0) {
-            setDeck(restoredDeck);
-            return;
-          }
-        }
-
-        setDeck(shuffle(data).map((p, i) => ({ ...p, uid: `${p.id}-0-${i}` })));
-      })
+      .then(data => { if (data.length) setAllProducts(data); })
       .catch(() => {});
   }, []);
 
+  useEffect(() => { localStorage.setItem('aliex_liked', JSON.stringify(liked)); }, [liked]);
+  useEffect(() => { localStorage.setItem('aliex_swipe_count', String(swipeCount)); }, [swipeCount]);
+
+  // モーション値
+  const x           = useMotionValue(0);
+  const y           = useMotionValue(0);
+  const rotate      = useTransform(x, [-200, 200], [-20, 20]);
+  const likeOpacity = useTransform(x, [0, 80], [0, 1]);
+  const nopeOpacity = useTransform(x, [-80, 0], [1, 0]);
+  const scale       = useTransform(x, [-200, 0, 200], [0.95, 1, 0.95]);
+  const cardOpacity = useTransform(x, [-300, -200, -100, 0, 100, 200, 300], [0, 0.2, 0.6, 1, 0.6, 0.2, 0]);
+
   const closeModal = () => {
     setShowModal(false);
-    // モーダルを閉じた後にスワイプヒントアニメを再生
     setTimeout(() => {
       animate(x, 70, { duration: 0.3, ease: 'easeOut' })
         .then(() => animate(x, -50, { duration: 0.35, ease: 'easeInOut' }))
         .then(() => animate(x, 0, { type: 'spring', stiffness: 300, damping: 18 }));
     }, 400);
   };
-
-  const filteredDeck = useMemo(() => {
-    return deck.filter(p => {
-      const priceMatch = p.price <= maxPrice;
-      const tagMatch = selectedTag ? p.tags.includes(selectedTag) : true;
-      return priceMatch && tagMatch;
-    });
-  }, [deck, maxPrice, selectedTag]);
-
-  const current = filteredDeck[0];
-
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const rotate = useTransform(x, [-200, 200], [-20, 20]);
-  const likeOpacity = useTransform(x, [0, 80], [0, 1]);
-  const nopeOpacity = useTransform(x, [-80, 0], [1, 0]);
-  const scale = useTransform(x, [-200, 0, 200], [0.95, 1, 0.95]);
-  const cardOpacity = useTransform(x, [-300, -200, -100, 0, 100, 200, 300], [0, 0.2, 0.6, 1, 0.6, 0.2, 0]);
 
   const showCelebration = (message, emoji, type) => {
     if (celebrationTimerRef.current) clearTimeout(celebrationTimerRef.current);
@@ -434,135 +338,97 @@ export default function App() {
     }, 2500);
   };
 
-  const advance = (direction) => {
-    if (!current) return;
+  // フィーバー判定: 3秒以内に4回以上スワイプ
+  const triggerFeverCheck = () => {
+    const now   = Date.now();
+    const times = swipeTimesRef.current;
+    times.push(now);
+    if (times.length > 10) times.shift();
+    const recent = times.filter(t => now - t < 3000).length;
+    if (recent >= 4) {
+      setFeverMode(true);
+      if (feverTimerRef.current) clearTimeout(feverTimerRef.current);
+      feverTimerRef.current = setTimeout(() => setFeverMode(false), 5000);
+    }
+  };
+
+  const handleAdvance = (direction) => {
+    const card = cards[0];
+    if (!card) return;
+
+    deckAdvance(card.uid, direction, card);
+    triggerFeverCheck();
 
     const newSwipeCount = swipeCount + 1;
     setSwipeCount(newSwipeCount);
-    setDeck(prev => {
-      const remaining = prev.filter(p => p.uid !== current.uid);
-      if (remaining.length <= 2) {
-        const newCycle = cycleCount + 1;
-        const refill = shuffle(allProducts).map((p, i) => ({ ...p, uid: `${p.id}-${newCycle}-${i}` }));
-        setCycleCount(newCycle);
-        return [...remaining, ...refill];
-      }
-      return remaining;
-    });
 
     if (direction === 'right') {
-      const newLiked = [{ ...current, likedAt: Date.now() }, ...liked];
+      const newLiked = [{ ...card, likedAt: Date.now() }, ...liked];
       setLiked(newLiked);
-      
-      // お気に入り数による褒めメッセージ
       const likedMilestones = {
-        5: { message: 'センスありますね！', emoji: '✨' },
+        5:  { message: 'センスありますね！', emoji: '✨' },
         10: { message: 'コレクター気質ですね', emoji: '👑' },
         20: { message: '目利きですね！', emoji: '🎯' },
         50: { message: 'プロのバイヤー級！', emoji: '🏆' },
       };
       if (likedMilestones[newLiked.length]) {
-        setTimeout(() => {
-          showCelebration(likedMilestones[newLiked.length].message, likedMilestones[newLiked.length].emoji, 'liked');
-        }, 600);
+        setTimeout(() => showCelebration(likedMilestones[newLiked.length].message, likedMilestones[newLiked.length].emoji, 'liked'), 600);
       }
     }
 
-    // スワイプ数マイルストーン
     const swipeMilestones = {
-      10: { message: '良いペース！', emoji: '🚀' },
-      25: { message: 'すばらしい！', emoji: '⭐' },
-      50: { message: '止まらない！', emoji: '🔥' },
+      10:  { message: '良いペース！', emoji: '🚀' },
+      25:  { message: 'すばらしい！', emoji: '⭐' },
+      50:  { message: '止まらない！', emoji: '🔥' },
       100: { message: 'もう100スワイプ！', emoji: '💎' },
       200: { message: '神の領域！', emoji: '⚡' },
       500: { message: '伝説の閲覧者！', emoji: '👑' },
     };
     if (swipeMilestones[newSwipeCount]) {
-      setTimeout(() => {
-        showCelebration(swipeMilestones[newSwipeCount].message, swipeMilestones[newSwipeCount].emoji, 'swipe');
-      }, 600);
+      setTimeout(() => showCelebration(swipeMilestones[newSwipeCount].message, swipeMilestones[newSwipeCount].emoji, 'swipe'), 600);
     }
   };
 
-  const amazonUrl = current ? current.url : '#';
-  const cartUrl = current ? `https://www.amazon.co.jp/gp/aws/cart/add.html?ASIN.1=${current.asin}&Quantity.1=1` : '#';
-
-  // 全タグを集計
-  const allTags = useMemo(() => {
-    const tagSet = new Set();
-    allProducts.forEach(p => p.tags?.forEach(t => tagSet.add(t)));
-    return Array.from(tagSet);
-  }, [allProducts]);
-
-  // タグの出現数をカウント
+  // タグ別統計（Stats用）
   const tagCounts = useMemo(() => {
     const counts = {};
-    filteredDeck.forEach(p => {
-      p.tags.forEach(tag => {
-        counts[tag] = (counts[tag] || 0) + 1;
-      });
-    });
+    allProducts.filter(p => p.price <= maxPrice).forEach(p =>
+      p.tags.forEach(t => { counts[t] = (counts[t] || 0) + 1; })
+    );
     return counts;
-  }, [filteredDeck]);
+  }, [allProducts, maxPrice]);
 
-
-  // ----- HELP MODAL -----
+  // ── HELP MODAL ──────────────────────────────────────────────────────────
   const HelpModal = () => (
     <AnimatePresence>
       {showModal && (
-        <motion.div
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <motion.div
-            className="bg-white rounded-3xl p-8 max-w-2xl shadow-2xl overflow-hidden"
-            initial={{ scale: 0.9, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 20 }}
-          >
+        <motion.div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+          <motion.div className="bg-white rounded-3xl p-8 max-w-2xl shadow-2xl overflow-hidden" initial={{ scale: 0.9, opacity: 0, y: 20 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.9, opacity: 0, y: 20 }}>
             <div className="text-center mb-8">
               <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <Package className="w-8 h-8 text-white" />
               </div>
               <img src="/logo.png" alt="アリエクSwipe" className="h-12 w-auto mx-auto" />
             </div>
-
             <div className="space-y-4 mb-8">
-              <div className="flex gap-3 items-start">
-                <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-lg">👉</div>
-                <div>
-                  <p className="font-semibold text-stone-800 text-sm">スワイプで商品判定</p>
-                  <p className="text-xs text-stone-600 mt-0.5">右スワイプ：お気に入り</p>
-                  <p className="text-xs text-stone-600">左スワイプ：スキップ</p>
+              {[
+                { icon: '👉', title: 'スワイプで商品判定', desc: ['右スワイプ：お気に入り', '左スワイプ：スキップ'] },
+                { icon: '💰', title: '予算でフィルター', desc: ['予算タブで上限金額を設定'] },
+                { icon: '❤️', title: 'お気に入りを管理', desc: ['お気に入りタブで確認・購入'] },
+                { icon: '⭐', title: 'Choiceバッジ', desc: ['高評価・低価格の優良商品の目印'] },
+              ].map(({ icon, title, desc }) => (
+                <div key={title} className="flex gap-3 items-start">
+                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-lg">{icon}</div>
+                  <div>
+                    <p className="font-semibold text-stone-800 text-sm">{title}</p>
+                    {desc.map(d => <p key={d} className="text-xs text-stone-600 mt-0.5">{d}</p>)}
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex gap-3 items-start">
-                <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-lg">💰</div>
-                <div>
-                  <p className="font-semibold text-stone-800 text-sm">予算でフィルター</p>
-                  <p className="text-xs text-stone-600 mt-0.5">予算タブで上限金額を設定</p>
-                </div>
-              </div>
-              
-              <div className="flex gap-3 items-start">
-                <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-lg">❤️</div>
-                <div>
-                  <p className="font-semibold text-stone-800 text-sm">お気に入りを管理</p>
-                  <p className="text-xs text-stone-600 mt-0.5">お気に入りタブで確認・購入</p>
-                </div>
-              </div>
+              ))}
             </div>
-
-            <button
-              onClick={closeModal}
-              className="w-full py-3.5 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-xl hover:shadow-lg transition-all active:scale-95 text-sm tracking-wide"
-            >
+            <button onClick={closeModal} className="w-full py-3.5 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-xl hover:shadow-lg transition-all active:scale-95 text-sm tracking-wide">
               さっそく始める
             </button>
-            
             <p className="text-xs text-stone-400 text-center mt-4">※ 最初の1回のみ表示されます</p>
           </motion.div>
         </motion.div>
@@ -570,24 +436,12 @@ export default function App() {
     </AnimatePresence>
   );
 
-  // ----- INSTALL MODAL -----
+  // ── INSTALL MODAL ────────────────────────────────────────────────────────
   const InstallModal = () => (
     <AnimatePresence>
       {showInstallModal && (
-        <motion.div
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          onClick={() => setShowInstallModal(false)}
-        >
-          <motion.div
-            className="bg-white rounded-3xl p-6 max-w-2xl shadow-2xl overflow-hidden"
-            initial={{ scale: 0.9, opacity: 0, y: 20 }}
-            animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.9, opacity: 0, y: 20 }}
-            onClick={(e) => e.stopPropagation()}
-          >
+        <motion.div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowInstallModal(false)}>
+          <motion.div className="bg-white rounded-3xl p-6 max-w-2xl shadow-2xl overflow-hidden" initial={{ scale: 0.9, opacity: 0, y: 20 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.9, opacity: 0, y: 20 }} onClick={(e) => e.stopPropagation()}>
             <div className="text-center mb-5">
               <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
                 <Smartphone className="w-8 h-8 text-white" />
@@ -595,129 +449,120 @@ export default function App() {
               <h2 className="text-xl font-black text-stone-800">ホーム画面に追加</h2>
               <p className="text-xs text-stone-500 mt-1">アプリのように使えるようになります</p>
             </div>
-
             <div className="space-y-4">
-              {/* iOS手順 */}
-              <div className="border border-stone-200 rounded-xl p-4">
-                <h3 className="font-bold text-sm text-stone-800 mb-2 flex items-center gap-1.5">
-                  <span className="text-lg">📱</span>
-                  <span>iPhone (Safari)</span>
-                </h3>
-                <ol className="space-y-1.5 text-xs text-stone-600">
-                  <li className="flex gap-2"><span className="font-bold text-red-600">1.</span> 下部の「共有」ボタンをタップ</li>
-                  <li className="flex gap-2"><span className="font-bold text-red-600">2.</span> 「ホーム画面に追加」を選択</li>
-                  <li className="flex gap-2"><span className="font-bold text-red-600">3.</span> 右上の「追加」をタップ</li>
-                </ol>
-              </div>
-
-              {/* Android手順 */}
-              <div className="border border-stone-200 rounded-xl p-4">
-                <h3 className="font-bold text-sm text-stone-800 mb-2 flex items-center gap-1.5">
-                  <span className="text-lg">🤖</span>
-                  <span>Android (Chrome)</span>
-                </h3>
-                <ol className="space-y-1.5 text-xs text-stone-600">
-                  <li className="flex gap-2"><span className="font-bold text-red-600">1.</span> 右上の「︙」メニューをタップ</li>
-                  <li className="flex gap-2"><span className="font-bold text-red-600">2.</span> 「ホーム画面に追加」を選択</li>
-                  <li className="flex gap-2"><span className="font-bold text-red-600">3.</span> 「追加」をタップ</li>
-                </ol>
-              </div>
+              {[
+                { icon: '📱', title: 'iPhone (Safari)', steps: ['下部の「共有」ボタンをタップ', '「ホーム画面に追加」を選択', '右上の「追加」をタップ'] },
+                { icon: '🤖', title: 'Android (Chrome)', steps: ['右上の「︙」メニューをタップ', '「ホーム画面に追加」を選択', '「追加」をタップ'] },
+              ].map(({ icon, title, steps }) => (
+                <div key={title} className="border border-stone-200 rounded-xl p-4">
+                  <h3 className="font-bold text-sm text-stone-800 mb-2 flex items-center gap-1.5">
+                    <span className="text-lg">{icon}</span><span>{title}</span>
+                  </h3>
+                  <ol className="space-y-1.5 text-xs text-stone-600">
+                    {steps.map((s, i) => (
+                      <li key={i} className="flex gap-2"><span className="font-bold text-red-600">{i + 1}.</span>{s}</li>
+                    ))}
+                  </ol>
+                </div>
+              ))}
             </div>
-
-            <button
-              onClick={() => setShowInstallModal(false)}
-              className="mt-5 w-full py-3 bg-gradient-to-r from-amber-400 to-orange-500 text-white font-bold rounded-xl hover:shadow-lg transition-all active:scale-95 text-sm"
-            >
-              閉じる
-            </button>
+            <button onClick={() => setShowInstallModal(false)} className="mt-5 w-full py-3 bg-gradient-to-r from-amber-400 to-orange-500 text-white font-bold rounded-xl hover:shadow-lg transition-all active:scale-95 text-sm">閉じる</button>
           </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
   );
 
-  // ----- SWIPE VIEW -----
+  // ── SWIPE VIEW ───────────────────────────────────────────────────────────
   const SwipeView = () => {
+    const current = cards[0];
     if (!current) {
       return (
-        <div className="flex-1 flex items-center justify-center px-6 overflow-y-auto">
+        <div className="flex-1 flex items-center justify-center px-6">
           <div className="text-center">
-            <p className="text-stone-600 text-sm">商品がありません</p>
+            <p className="text-stone-600 text-sm">{allProducts.length === 0 ? '商品を読み込み中...' : '商品がありません'}</p>
           </div>
         </div>
       );
     }
 
-    // 3枚分のカードを描画用に取得
-    const cards = filteredDeck.slice(0, 3);
+    const topCards = cards.slice(0, 3);
 
     return (
-      <div className="flex-1 flex flex-col items-center justify-start px-2 pt-1 pb-4 overflow-hidden relative min-h-0">
-        {/* カードスタックエリア */}
-        <div className="w-full relative flex-1 min-h-0">
-          {/* 後ろのカードから先に描画（zIndexで前面に配置） */}
-          {cards.map((card, index) => {
-            if (index === 0) {
-              // 1枚目（最前面） - ドラッグ可能
-              return (
-                <SwipeCard
-                  key="front-card"
-                  card={card}
-                  x={x}
-                  y={y}
-                  rotate={rotate}
-                  scale={scale}
-                  cardOpacity={cardOpacity}
-                  likeOpacity={likeOpacity}
-                  nopeOpacity={nopeOpacity}
-                  amazonUrl={amazonUrl}
-                  onSwipeRight={() => advance('right')}
-                  onSwipeLeft={() => advance('left')}
-                  selectedTag={selectedTag}
-                  setSelectedTag={setSelectedTag}
-                />
-              );
-            } else {
-              // 2,3枚目（背景） - 静的、スワイプで前面に上がる
-              return (
-                <BackgroundCard
-                  key={`bg-card-${index}`}
-                  card={card}
-                  index={index}
-                  x={x}
-                />
-              );
-            }
-          })}
+      <div className="flex-1 flex flex-col items-center justify-start pt-1 pb-3 overflow-hidden relative min-h-0">
+
+        {/* カテゴリフィルターチップ */}
+        <div className="w-full flex gap-1.5 overflow-x-auto px-3 pb-2 flex-shrink-0 scrollbar-hide">
+          <button
+            onClick={() => setSelectedCategory(null)}
+            className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap flex-shrink-0 transition-all ${
+              !selectedCategory ? 'bg-red-600 text-white shadow-sm' : 'bg-stone-100 text-stone-500 hover:bg-stone-200'
+            }`}
+          >すべて</button>
+          {CATEGORIES.map(cat => (
+            <button
+              key={cat.ja}
+              onClick={() => setSelectedCategory(selectedCategory === cat.ja ? null : cat.ja)}
+              className={`px-2.5 py-1 rounded-full text-[11px] font-bold whitespace-nowrap flex-shrink-0 flex items-center gap-1 transition-all ${
+                selectedCategory === cat.ja ? 'bg-red-600 text-white shadow-sm' : 'bg-stone-100 text-stone-500 hover:bg-stone-200'
+              }`}
+            >
+              <span>{cat.emoji}</span><span>{cat.ja}</span>
+            </button>
+          ))}
         </div>
 
+        {/* カードスタック */}
+        <div className={`w-full px-2 relative flex-1 min-h-0 transition-all duration-300 ${feverMode ? 'drop-shadow-[0_0_12px_rgba(251,146,60,0.6)]' : ''}`}>
+          {topCards.map((card, index) =>
+            index === 0 ? (
+              <SwipeCard
+                key="front-card"
+                card={card}
+                x={x} y={y} rotate={rotate} scale={scale}
+                cardOpacity={cardOpacity} likeOpacity={likeOpacity} nopeOpacity={nopeOpacity}
+                onSwipeRight={() => handleAdvance('right')}
+                onSwipeLeft={() => handleAdvance('left')}
+                selectedCategory={selectedCategory}
+                setSelectedCategory={setSelectedCategory}
+              />
+            ) : (
+              <BackgroundCard key={`bg-${index}`} card={card} index={index} x={x} />
+            )
+          )}
+
+          {/* フィーバーグロー */}
+          {feverMode && (
+            <motion.div
+              className="absolute inset-0 rounded-3xl pointer-events-none z-50"
+              animate={{ opacity: [0.4, 0.8, 0.4] }}
+              transition={{ duration: 0.7, repeat: Infinity }}
+              style={{ boxShadow: 'inset 0 0 20px rgba(251,146,60,0.4), 0 0 30px rgba(251,146,60,0.3)' }}
+            />
+          )}
+        </div>
       </div>
     );
   };
 
-
-  // ----- LIKED VIEW -----
+  // ── LIKED VIEW ───────────────────────────────────────────────────────────
   const LikedView = () => (
     <div className="flex-1 flex flex-col overflow-hidden h-full">
       <div className="px-6 py-4 border-b border-stone-200 bg-gradient-to-r from-red-50 to-red-100 flex-shrink-0 min-h-[68px]">
         <h3 className="text-sm font-bold text-stone-800">お気に入り</h3>
         <p className="text-xs text-stone-500 mt-0.5">{liked.length}件</p>
       </div>
-      
       {liked.length > 0 && (
-        <div className="mx-3 mt-3 p-3 bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl">
+        <div className="mx-3 mt-3 p-3 bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl flex-shrink-0">
           <div className="flex items-start gap-2">
             <span className="text-xl">⚠️</span>
             <div>
               <p className="text-[11px] font-bold text-stone-800 mb-0.5">お気に入りはブラウザに保存されます</p>
-              <p className="text-[10px] text-stone-600 leading-relaxed">
-                ブラウザのキャッシュをクリアすると消えてしまう可能性があります。気に入った商品は<span className="font-bold text-orange-600">AliExpressのカートに追加</span>しておくと安心です。
-              </p>
+              <p className="text-[10px] text-stone-600 leading-relaxed">ブラウザのキャッシュをクリアすると消える可能性があります。気に入った商品は<span className="font-bold text-orange-600">AliExpressのカートに追加</span>しておくと安心です。</p>
             </div>
           </div>
         </div>
       )}
-      
       <div className="flex-1 overflow-y-auto px-3 py-3">
         {liked.length === 0 ? (
           <div className="h-full flex items-center justify-center">
@@ -744,30 +589,20 @@ export default function App() {
                   onClick={(e) => { e.preventDefault(); e.stopPropagation(); setLiked(prev => prev.filter(p => p.uid !== product.uid)); }}
                   className="absolute top-1.5 right-1.5 w-5 h-5 bg-stone-400 hover:bg-red-500 rounded-full flex items-center justify-center text-white text-[10px] font-bold transition-colors z-10"
                 >×</button>
+                {product.is_choice && (
+                  <div className="absolute top-1.5 left-1.5 bg-amber-400 text-white text-[8px] font-black px-1.5 py-0.5 rounded-full z-10">⭐</div>
+                )}
                 <div className={`w-full h-20 rounded-lg bg-gradient-to-br ${product.color} flex items-center justify-center mb-2 shadow-sm overflow-hidden`}>
-                  {product.images && product.images.length > 0 ? (
-                    <img 
-                      src={product.images[0]} 
-                      alt={product.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  ) : product.image ? (
-                    <img 
-                      src={product.image} 
-                      alt={product.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <span className="text-2xl">{product.emoji}</span>
-                  )}
+                  {product.images?.[0] || product.image
+                    ? <img src={product.images?.[0] || product.image} alt={product.name} className="w-full h-full object-cover" />
+                    : <span className="text-2xl">{product.emoji}</span>
+                  }
                 </div>
                 <div className="text-[10px] font-bold text-stone-800 truncate">{product.name}</div>
                 <div className="text-xs font-bold text-red-600 mt-1">¥{product.price.toLocaleString()}</div>
                 <div className="flex flex-wrap gap-0.5 mt-1">
-                  {product.tags && product.tags.slice(0, 2).map((tag, tidx) => (
-                    <span key={tidx} className="text-[8px] px-1 py-0.5 bg-red-50 text-red-600 rounded">
-                      {tag}
-                    </span>
+                  {product.tags?.slice(0, 2).map((tag, tidx) => (
+                    <span key={tidx} className="text-[8px] px-1 py-0.5 bg-red-50 text-red-600 rounded">{tag}</span>
                   ))}
                 </div>
               </motion.a>
@@ -778,32 +613,21 @@ export default function App() {
     </div>
   );
 
-  // ----- STATS VIEW -----
+  // ── STATS VIEW ───────────────────────────────────────────────────────────
   const StatsView = () => {
-    const topTags = Object.entries(tagCounts)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 5);
-
+    const topTags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]).slice(0, 5);
     return (
       <div className="flex-1 flex flex-col overflow-y-auto px-6 py-4 h-full">
         <div className="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-6 text-white shadow-lg mb-6">
           <div className="flex items-baseline justify-between">
             <div>
               <div className="text-xs font-semibold opacity-90 mb-0.5">スワイプ数</div>
-              <motion.div 
-                className="text-4xl font-black"
-                key={swipeCount}
-                initial={{ scale: 1.3 }}
-                animate={{ scale: 1 }}
-              >
-                {swipeCount}
-              </motion.div>
+              <motion.div className="text-4xl font-black" key={swipeCount} initial={{ scale: 1.3 }} animate={{ scale: 1 }}>{swipeCount}</motion.div>
             </div>
             <TrendingUp className="w-12 h-12 opacity-30" />
           </div>
         </div>
-
-        <h3 className="text-xs font-bold text-stone-700 mb-2">人気タグ TOP 5</h3>
+        <h3 className="text-xs font-bold text-stone-700 mb-2">人気カテゴリ TOP 5</h3>
         <div className="space-y-2 mb-6">
           {topTags.map(([tag, count], idx) => (
             <div key={tag} className="flex items-center gap-3">
@@ -811,19 +635,13 @@ export default function App() {
               <div className="flex-1">
                 <div className="text-xs font-semibold text-stone-800 mb-0.5">{tag}</div>
                 <div className="w-full bg-stone-200 rounded-full h-2 overflow-hidden">
-                  <motion.div 
-                    className="h-full bg-gradient-to-r from-red-500 to-red-600"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${(count / Math.max(...Object.values(tagCounts))) * 100}%` }}
-                    transition={{ delay: idx * 0.1 }}
-                  />
+                  <motion.div className="h-full bg-gradient-to-r from-red-500 to-red-600" initial={{ width: 0 }} animate={{ width: `${(count / Math.max(...Object.values(tagCounts))) * 100}%` }} transition={{ delay: idx * 0.1 }} />
                 </div>
               </div>
               <div className="text-xs font-bold text-stone-600">{count}</div>
             </div>
           ))}
         </div>
-
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-red-50 rounded-xl p-4 border-2 border-red-200">
             <p className="text-[10px] text-stone-600 mb-1">総商品数</p>
@@ -838,7 +656,7 @@ export default function App() {
     );
   };
 
-  // ----- ARTICLES VIEW -----
+  // ── ARTICLES VIEW ────────────────────────────────────────────────────────
   const ARTICLES = [
     { title: 'AliExpressとは？仕組み・安全性・使い方を初心者向けに解説', emoji: '🔰', url: '/basics/aliexpress-what-is.html' },
     { title: 'AliExpressの登録方法と初回注文の全手順', emoji: '📝', url: '/basics/aliexpress-account.html' },
@@ -860,11 +678,7 @@ export default function App() {
       </div>
       <div className="px-4 py-3 flex flex-col gap-2">
         {ARTICLES.map((article, i) => (
-          <a
-            key={i}
-            href={article.url}
-            className="flex items-center gap-3 px-3 py-3 rounded-2xl bg-stone-50 hover:bg-red-50 active:bg-red-100 border border-stone-100 hover:border-red-200 transition-all active:scale-[0.98]"
-          >
+          <a key={i} href={article.url} className="flex items-center gap-3 px-3 py-3 rounded-2xl bg-stone-50 hover:bg-red-50 active:bg-red-100 border border-stone-100 hover:border-red-200 transition-all active:scale-[0.98]">
             <span className="text-xl flex-shrink-0 w-8 text-center">{article.emoji}</span>
             <span className="text-xs font-semibold text-stone-700 leading-snug flex-1">{article.title}</span>
             <span className="text-red-400 font-bold text-sm flex-shrink-0">›</span>
@@ -874,70 +688,88 @@ export default function App() {
     </div>
   );
 
+  // ── RENDER ───────────────────────────────────────────────────────────────
   return (
     <div className="h-[100svh] bg-gradient-to-b from-stone-50 to-stone-100 flex items-center justify-center sm:p-4 overflow-hidden">
       <HelpModal />
       <InstallModal />
       <CelebrationOverlay celebrationMessage={celebrationMessage} likedCount={liked.length} swipeCount={swipeCount} />
-      <div className="w-full max-w-md h-full bg-white sm:rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col"
-           style={{ fontFamily: "'Hiragino Sans', 'Yu Gothic', sans-serif" }}>
 
-        <div className="px-4 pt-2 pb-1.5 flex flex-col border-b border-red-100 flex-shrink-0 bg-gradient-to-br from-red-50 via-rose-50 to-pink-50 relative overflow-hidden shadow-md">
-          {/* 装飾的な背景パターン */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-200/40 to-rose-200/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-pink-200/30 to-red-200/20 rounded-full blur-2xl"></div>
+      {/* フィーバー背景パルス */}
+      <AnimatePresence>
+        {feverMode && (
+          <motion.div
+            className="fixed inset-0 pointer-events-none z-40"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0, 0.12, 0, 0.12, 0] }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, repeat: Infinity }}
+            style={{ background: 'radial-gradient(circle at 50% 40%, #f97316, transparent 65%)' }}
+          />
+        )}
+      </AnimatePresence>
+
+      <div
+        className="w-full max-w-md h-full bg-white sm:rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col"
+        style={{ fontFamily: "'Hiragino Sans', 'Yu Gothic', sans-serif" }}
+      >
+        {/* ヘッダー */}
+        <div className={`px-4 pt-2 pb-1.5 flex flex-col border-b flex-shrink-0 relative overflow-hidden shadow-md transition-colors duration-500 ${
+          feverMode
+            ? 'border-orange-200 bg-gradient-to-br from-orange-50 via-amber-50 to-red-50'
+            : 'border-red-100 bg-gradient-to-br from-red-50 via-rose-50 to-pink-50'
+        }`}>
+          <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-200/40 to-rose-200/20 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-pink-200/30 to-red-200/20 rounded-full blur-2xl" />
 
           <div className="flex items-center justify-between relative z-10">
-            <div>
-              <img src="/logo.png" alt="アリエクSwipe" className="h-8 w-auto" />
-            </div>
+            <img src="/logo.png" alt="アリエクSwipe" className="h-8 w-auto" />
             <div className="flex gap-1.5 items-center">
-              <button
-                onClick={() => setShowInstallModal(true)}
-                className="px-2.5 h-8 rounded-full bg-white/80 backdrop-blur hover:bg-white shadow-md flex items-center gap-1 transition-all active:scale-95 text-stone-600"
-                title="ホーム画面に追加"
-              >
+              {feverMode && (
+                <motion.span
+                  className="text-sm font-black text-orange-500"
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 0.5, repeat: Infinity }}
+                >🔥FEVER</motion.span>
+              )}
+              <button onClick={() => setShowInstallModal(true)} className="px-2.5 h-8 rounded-full bg-white/80 backdrop-blur hover:bg-white shadow-md flex items-center gap-1 transition-all active:scale-95 text-stone-600" title="ホーム画面に追加">
                 <Smartphone className="w-3 h-3" />
                 <span className="text-[9px] font-bold whitespace-nowrap">追加</span>
               </button>
-              <button
-                onClick={() => setShowModal(true)}
-                className="w-8 h-8 rounded-full bg-white/80 backdrop-blur hover:bg-white shadow-md flex items-center justify-center transition-all active:scale-95"
-                title="使い方を表示"
-              >
+              <button onClick={() => setShowModal(true)} className="w-8 h-8 rounded-full bg-white/80 backdrop-blur hover:bg-white shadow-md flex items-center justify-center transition-all active:scale-95" title="使い方">
                 <span className="text-sm font-bold text-stone-600">?</span>
               </button>
             </div>
           </div>
 
-          {/* 進捗バー */}
+          {/* 消耗ゲージ（デプリーションバー） */}
           <div className="mt-1 relative z-10">
             <div className="flex justify-between items-center mb-1">
               <div className="flex items-center gap-1">
                 <Sparkles className="w-2.5 h-2.5 text-red-400" />
-                <span className="text-[9px] font-semibold text-stone-500">スワイプ数</span>
+                <span className="text-[9px] font-semibold text-stone-500">残り</span>
               </div>
               <span className="text-[9px] font-bold text-stone-600">
-                <span className="text-red-600">{swipeCount}</span> / {allProducts.length || 0}
+                <span className="text-red-600">{remaining}</span> / {filteredTotal}件
               </span>
             </div>
             <div className="w-full h-1 bg-red-100 rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-gradient-to-r from-red-500 to-rose-400 rounded-full"
-                initial={{ width: 0 }}
-                animate={{ width: `${Math.min((swipeCount / (allProducts.length || 1)) * 100, 100)}%` }}
-                transition={{ duration: 0.5, ease: 'easeOut' }}
+                className={`h-full rounded-full ${feverMode ? 'bg-gradient-to-r from-orange-400 to-amber-400' : 'bg-gradient-to-r from-red-500 to-rose-400'}`}
+                animate={{ width: `${filteredTotal > 0 ? (remaining / filteredTotal) * 100 : 0}%` }}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
               />
             </div>
           </div>
         </div>
 
+        {/* タブバー */}
         <div className="px-4 pt-1.5 pb-1 flex-shrink-0">
           <div className="flex gap-1 bg-stone-100 rounded-full p-0.5">
             {[
-              { id: 'swipe', icon: Layers },
-              { id: 'budget', icon: Filter },
-              { id: 'liked', icon: Heart, count: liked.length },
+              { id: 'swipe',    icon: Layers },
+              { id: 'budget',   icon: Filter },
+              { id: 'liked',    icon: Heart, count: liked.length },
               { id: 'articles', icon: BookOpen },
             ].map(tab => {
               const Icon = tab.icon;
@@ -945,9 +777,7 @@ export default function App() {
                 <button
                   key={tab.id}
                   onClick={() => setView(tab.id)}
-                  className={`flex-1 py-1.5 rounded-full flex items-center justify-center transition-all relative ${
-                    view === tab.id ? 'bg-white shadow text-red-600' : 'text-stone-500'
-                  }`}
+                  className={`flex-1 py-1.5 rounded-full flex items-center justify-center transition-all relative ${view === tab.id ? 'bg-white shadow text-red-600' : 'text-stone-500'}`}
                 >
                   <Icon className="w-4 h-4" />
                   {tab.count !== undefined && tab.count > 0 && (
@@ -959,11 +789,12 @@ export default function App() {
           </div>
         </div>
 
+        {/* コンテンツエリア */}
         <div className="flex-1 flex flex-col overflow-hidden min-h-0">
-          {view === 'swipe' && <SwipeView />}
-          {view === 'budget' && <BudgetView maxPrice={maxPrice} setMaxPrice={setMaxPrice} filteredDeckLength={filteredDeck.length} />}
-          {view === 'liked' && <LikedView />}
-          {view === 'stats' && <StatsView />}
+          {view === 'swipe'    && <SwipeView />}
+          {view === 'budget'   && <BudgetView maxPrice={maxPrice} setMaxPrice={setMaxPrice} filteredTotal={filteredTotal} />}
+          {view === 'liked'    && <LikedView />}
+          {view === 'stats'    && <StatsView />}
           {view === 'articles' && <ArticlesView />}
         </div>
       </div>
