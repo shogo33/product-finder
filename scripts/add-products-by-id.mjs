@@ -19,11 +19,10 @@ const APPROVED_FILE = path.resolve('data/approved.json');
 
 // ← ここに追加したい商品IDを入れる
 const TARGET_IDS = [
-  '1005010425880598', // Baseus 10000mAh 22.5W コンパクト
-  '1005008708384313', // Baseus 5000mAh MagSafe 磁気薄型
-  '1005008652028760', // Baseus 145W 20800mAh スマートディスプレイ
-  '1005006973916216', // Baseus 65W 20000mAh 格納式ケーブル
-  '1005005814179114', // Baseus 145W 25000mAh ノートPC対応
+  '1005003897568659', // Naturehike コット XJC04（スタンダード）
+  '1005004402948202', // Naturehike コット 超軽量
+  '1005009332507897', // Naturehike コット XJC08（75cm幅）
+  '4001052623509',    // Naturehike コット ハイ/ロー兼用
 ];
 
 function sign(params) {

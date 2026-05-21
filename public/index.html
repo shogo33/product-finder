@@ -47,7 +47,7 @@
     .hero {
       background: linear-gradient(135deg, #fff1f2 0%, #fff8f0 60%, #fff 100%);
       border-bottom: 1px solid var(--border);
-      padding: 48px 20px;
+      padding: 28px 20px;
     }
     .hero-inner {
       max-width: var(--max); margin: 0 auto;
@@ -60,7 +60,7 @@
       .hero-inner { flex-direction: column; text-align: center; }
       .hero-right { flex: none; width: 100%; max-width: 340px; }
     }
-    .hero-badge { display: inline-block; background: transparent; color: var(--muted); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; padding: 4px 14px; border-radius: 999px; margin-bottom: 16px; border: 1px solid var(--border); }
+    .hero-badge { display: none; }
     .hero h1 { font-weight: 800; font-size: clamp(1.6rem, 3.5vw, 2.4rem); line-height: 1.35; margin: 0 0 16px; color: var(--text); }
     .hero h1 em { font-style: normal; color: var(--red); }
     .hero-sub { color: var(--muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 12px; }
@@ -110,17 +110,16 @@
     }
     @media (max-width: 680px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
     .cat-btn {
-      display: flex; align-items: center; gap: 12px;
+      display: flex; align-items: center; gap: 10px;
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 12px; padding: 14px 12px;
+      border-radius: 12px; padding: 10px 12px;
       text-decoration: none; color: var(--text);
       transition: all 0.18s; position: relative;
     }
     .cat-btn:hover { border-color: var(--red); box-shadow: 0 2px 8px rgba(220,38,38,.1); background: #fff; }
-    .cat-btn-icon { font-size: 1.6rem; flex-shrink: 0; width: 40px; text-align: center; }
+    .cat-btn-icon { font-size: 1.4rem; flex-shrink: 0; width: 32px; text-align: center; }
     .cat-btn-body { flex: 1; min-width: 0; }
     .cat-btn-name { font-size: 0.85rem; font-weight: 700; color: var(--text); }
-    .cat-btn-desc { font-size: 0.72rem; color: var(--red); margin-top: 2px; line-height: 1.4; }
     .cat-btn-arrow { color: #ccc; font-size: 0.85rem; flex-shrink: 0; }
 
     /* ─── Main ─── */
@@ -238,7 +237,6 @@
     <div class="hero-inner">
       <!-- 左：メッセージ -->
       <div class="hero-left">
-        <div class="hero-badge">🇯🇵 日本人向け アリエク攻略サイト</div>
         <h1>アリエクの<em>お得商品</em>を<br>スワイプして発見しよう</h1>
         <p class="hero-sub">はじめてでも大丈夫。支払い・配送・安全性をわかりやすく解説。</p>
         <div class="hero-points">
@@ -263,7 +261,6 @@
         <div class="cat-btn-icon">🛒</div>
         <div class="cat-btn-body">
           <div class="cat-btn-name">おすすめ商品</div>
-          <div class="cat-btn-desc">買って損なし厳選アイテムを比較</div>
         </div>
         <div class="cat-btn-arrow">›</div>
       </a>
@@ -271,7 +268,6 @@
         <div class="cat-btn-icon">📖</div>
         <div class="cat-btn-body">
           <div class="cat-btn-name">入門・基礎</div>
-          <div class="cat-btn-desc">登録・注文の全手順を解説</div>
         </div>
         <div class="cat-btn-arrow">›</div>
       </a>
@@ -279,7 +275,6 @@
         <div class="cat-btn-icon">💳</div>
         <div class="cat-btn-body">
           <div class="cat-btn-name">支払い・決済</div>
-          <div class="cat-btn-desc">PayPay・クーポン活用術</div>
         </div>
         <div class="cat-btn-arrow">›</div>
       </a>
@@ -287,7 +282,6 @@
         <div class="cat-btn-icon">📦</div>
         <div class="cat-btn-body">
           <div class="cat-btn-name">配送・追跡</div>
-          <div class="cat-btn-desc">到着日数・荷物追跡を解説</div>
         </div>
         <div class="cat-btn-arrow">›</div>
       </a>
@@ -295,7 +289,6 @@
         <div class="cat-btn-icon">🔒</div>
         <div class="cat-btn-body">
           <div class="cat-btn-name">安全性</div>
-          <div class="cat-btn-desc">詐欺・偽物を避ける方法</div>
         </div>
         <div class="cat-btn-arrow">›</div>
       </a>
@@ -303,7 +296,6 @@
         <div class="cat-btn-icon">💡</div>
         <div class="cat-btn-body">
           <div class="cat-btn-name">TIPS・節約</div>
-          <div class="cat-btn-desc">お得に買うコツ・節約術</div>
         </div>
         <div class="cat-btn-arrow">›</div>
       </a>
@@ -397,7 +389,61 @@
           <div class="card-arrow">読む</div>
         </div>
       </a>
+      <a href="/basics/naturehike-airmat-osusume.html" class="article-card">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sc10011e77cda44748cc36ade99cb08b8D.jpg" class="card-thumb" alt="Naturehike エアーマット おすすめ">
+        <div class="card-body">
+          <div class="card-tag">アウトドア</div>
+          <div class="card-title">Naturehikeエアーマットおすすめ5選【2026年最新】アリエクで安く買えるスリーピングパッド比較</div>
+          <div class="card-desc">コスパ重視の5,000円台から冬対応R値3.5モデルまで5選を比較。用途別おすすめを解説。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/basics/naturehike-brand.html" class="article-card">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S184ce5c0aa554ac0a153085720b10e36b.jpg" class="card-thumb" alt="Naturehike どこの国 評判">
+        <div class="card-body">
+          <div class="card-tag">アウトドア</div>
+          <div class="card-title">Naturehikeはどこの国のブランド？評判・品質・信頼性を徹底解説【2026年】</div>
+          <div class="card-desc">中国発アウトドアブランドNaturehikeの実態を解説。品質・評判・偽物リスク・アリエクでの買い方まで。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/basics/naturehike-cot-osusume.html" class="article-card">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S026db0064ff940c9857013842b7c27fe5.jpg" class="card-thumb" alt="Naturehike コット おすすめ">
+        <div class="card-body">
+          <div class="card-tag">アウトドア</div>
+          <div class="card-title">Naturehikeコットおすすめ4選【2026年最新】アリエクで安く買える折りたたみキャンプベッド比較</div>
+          <div class="card-desc">超軽量1.5kgから快適ワイドモデルまで4選を比較。ソロキャンプ〜ファミリーキャンプのコット選びを解説。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/basics/naturehike-sleeping-bag-osusume.html" class="article-card">
+        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Se69a703337b241e2bd69e48ccb85c5a5u.jpg" class="card-thumb" alt="Naturehike シュラフ おすすめ">
+        <div class="card-body">
+          <div class="card-tag">アウトドア</div>
+          <div class="card-title">Naturehikeシュラフおすすめ4選【2026年最新】アリエクで安く買える寝袋比較</div>
+          <div class="card-desc">軽量ダウン（CW180〜CW400）から化繊まで4モデルを比較。春夏秋冬のキャンプシーンに合った選び方を解説。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
     </div>
+    <div style="text-align:center;margin-top:16px;">
+      <button id="show-more-btn" onclick="showMoreCards()" style="background:#e8253a;color:#fff;border:none;padding:12px 32px;border-radius:24px;font-size:0.88rem;font-weight:700;cursor:pointer;font-family:inherit;">もっと見る ↓</button>
+    </div>
+    <script>
+      (function(){
+        const INITIAL = 6;
+        const grid = document.querySelector('#recommend + .article-grid');
+        const cards = grid ? Array.from(grid.querySelectorAll('.article-card')) : [];
+        cards.forEach((c, i) => { if (i >= INITIAL) c.style.display = 'none'; });
+        if (cards.length <= INITIAL) { const btn = document.getElementById('show-more-btn'); if(btn) btn.style.display='none'; }
+      })();
+      function showMoreCards() {
+        const grid = document.querySelector('#recommend + .article-grid');
+        if (!grid) return;
+        grid.querySelectorAll('.article-card').forEach(c => c.style.display = '');
+        document.getElementById('show-more-btn').style.display = 'none';
+      }
+    </script>
 
     <!-- 入門・基礎 -->
     <h2 class="section-title" id="beginner">📘 入門・基礎</h2>
