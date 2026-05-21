@@ -258,7 +258,7 @@ const BudgetView = memo(({ maxPrice, setMaxPrice, filteredTotal, swipeCount, onR
           whileTap={{ scale: 0.95 }}
           onClick={onReset}
           className="px-4 py-2 bg-red-600 text-white rounded-xl text-xs font-bold shadow hover:bg-red-700 transition-colors"
-        >最初から見る</motion.button>
+        >スワイプをリセット</motion.button>
       </div>
     </div>
 
