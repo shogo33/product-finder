@@ -814,16 +814,16 @@ export default function App() {
             <div className="flex justify-between items-center mb-1">
               <div className="flex items-center gap-1">
                 <Sparkles className="w-2.5 h-2.5 text-red-400" />
-                <span className="text-[9px] font-semibold text-stone-500">残り</span>
+                <span className="text-[9px] font-semibold text-stone-500">スワイプ済み</span>
               </div>
               <span className="text-[9px] font-bold text-stone-600">
-                <span className="text-red-600">{remaining}</span> / {filteredTotal}件
+                <span className="text-red-600">{filteredTotal - remaining}</span> / {filteredTotal}件
               </span>
             </div>
             <div className="w-full h-1 bg-red-100 rounded-full overflow-hidden">
               <motion.div
                 className={`h-full rounded-full ${feverMode ? 'bg-gradient-to-r from-orange-400 to-amber-400' : 'bg-gradient-to-r from-red-500 to-rose-400'}`}
-                animate={{ width: `${filteredTotal > 0 ? (remaining / filteredTotal) * 100 : 0}%` }}
+                animate={{ width: `${filteredTotal > 0 ? ((filteredTotal - remaining) / filteredTotal) * 100 : 0}%` }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
               />
             </div>
