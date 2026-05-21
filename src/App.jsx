@@ -221,7 +221,7 @@ const PriceSlider = memo(({ value, onChange }) => {
   );
 });
 
-const BudgetView = memo(({ maxPrice, setMaxPrice, filteredTotal }) => (
+const BudgetView = memo(({ maxPrice, setMaxPrice, filteredTotal, swipeCount, onReset }) => (
   <div className="flex-1 flex flex-col overflow-y-auto px-6 py-4 h-full">
     <div className="bg-gradient-to-br from-red-500 via-red-600 to-rose-600 rounded-3xl p-6 text-white shadow-lg mb-6">
       <div className="flex items-baseline justify-between mb-4">
@@ -246,7 +246,23 @@ const BudgetView = memo(({ maxPrice, setMaxPrice, filteredTotal }) => (
         </div>
       </div>
     </div>
-    <div className="mt-4 p-3 bg-stone-100 rounded-lg text-xs text-stone-600">
+
+    {/* スワイプリセット */}
+    <div className="bg-stone-50 border border-stone-200 rounded-2xl p-4 mb-4">
+      <div className="flex items-center justify-between">
+        <div>
+          <div className="text-xs font-bold text-stone-700">スワイプ履歴</div>
+          <div className="text-xs text-stone-500 mt-0.5">これまでに <span className="font-bold text-stone-700">{swipeCount}</span> 回スワイプ済み</div>
+        </div>
+        <motion.button
+          whileTap={{ scale: 0.95 }}
+          onClick={onReset}
+          className="px-4 py-2 bg-red-600 text-white rounded-xl text-xs font-bold shadow hover:bg-red-700 transition-colors"
+        >最初から見る</motion.button>
+      </div>
+    </div>
+
+    <div className="p-3 bg-stone-100 rounded-lg text-xs text-stone-600">
       <p className="mb-2 font-semibold">ご利用上の注意</p>
       <p>本サービスはAliExpressの商品情報を紹介しています。商品の最新情報・価格・在庫状況については、必ずAliExpressの商品ページでご確認ください。</p>
     </div>
@@ -326,7 +342,7 @@ export default function App() {
   const feverTimerRef       = useRef(null);
 
   // useDeck: フィルタリング・スコアリング・バッファ管理
-  const { cards, advance: deckAdvance, filteredTotal, remaining } = useDeck({
+  const { cards, advance: deckAdvance, reset: deckReset, filteredTotal, remaining } = useDeck({
     allProducts,
     maxPrice,
     selectedCategory,
@@ -843,7 +859,7 @@ export default function App() {
         {/* コンテンツエリア */}
         <div className="flex-1 flex flex-col overflow-hidden min-h-0">
           {view === 'swipe'    && <SwipeView />}
-          {view === 'budget'   && <BudgetView maxPrice={maxPrice} setMaxPrice={setMaxPrice} filteredTotal={filteredTotal} />}
+          {view === 'budget'   && <BudgetView maxPrice={maxPrice} setMaxPrice={setMaxPrice} filteredTotal={filteredTotal} swipeCount={swipeCount} onReset={() => { deckReset(); setSwipeCount(0); }} />}
           {view === 'liked'    && <LikedView />}
           {view === 'stats'    && <StatsView />}
           {view === 'articles' && <ArticlesView />}

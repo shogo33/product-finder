@@ -55,6 +55,16 @@ export function useDeck({ allProducts, maxPrice, selectedCategory }) {
     setCards(pool.slice(0, BUFFER).map(p => ({ ...p, uid: `${p.id}-${++counterRef.current}` })));
   }, [allProducts, maxPrice, selectedCategory]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  const reset = useCallback(() => {
+    if (!allProducts.length) return;
+    const pool = buildPool(allProducts, maxPrice, selectedCategory);
+    poolRef.current  = pool;
+    headRef.current  = 0;
+    setFilteredTotal(pool.length);
+    setRemaining(pool.length);
+    setCards(pool.slice(0, BUFFER).map(p => ({ ...p, uid: `${p.id}-${++counterRef.current}` })));
+  }, [allProducts, maxPrice, selectedCategory]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const advance = useCallback((uid, direction, product) => {
     // ライク → タグスコアをバンプ（次回以降の優先度に反映）
     if (direction === 'right' && product?.tags) {
@@ -76,5 +86,5 @@ export function useDeck({ allProducts, maxPrice, selectedCategory }) {
     setCards(prev => [...prev.filter(c => c.uid !== uid), nextCard]);
   }, []);
 
-  return { cards, advance, filteredTotal, remaining };
+  return { cards, advance, reset, filteredTotal, remaining };
 }
