@@ -12,7 +12,11 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "preview-server": "node scripts/preview-server.mjs",
-    "gen-products": "node scripts/generate-public-products.mjs"
+    "gen-products": "node scripts/generate-public-products.mjs",
+    "gen-sitemap": "node scripts/gen-sitemap.mjs",
+    "gen-cards": "node scripts/gen-top-cards.mjs",
+    "gen-ogp": "node scripts/gen-ogp.mjs",
+    "gen-all": "node scripts/gen-all.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",

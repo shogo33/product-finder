@@ -81,15 +81,19 @@ function wrapText(text, maxLen = 14) {
   return lines;
 }
 
-// 記事HTMLから最初の商品画像URLを抽出
-function extractProductImageUrl(html) {
-  const aeMatch = html.match(/https?:\/\/ae-pic-a1\.aliexpress-media\.com\/kf\/[^\s"']+/i);
-  if (aeMatch) return aeMatch[0].split('"')[0].split("'")[0];
+// 記事HTMLから商品画像URLを複数抽出（フォールバック用）
+function extractProductImageUrls(html) {
+  const urls = [];
+  const aeAll = [...html.matchAll(/https?:\/\/ae-pic-a1\.aliexpress-media\.com\/kf\/[^\s"']+/gi)];
+  for (const m of aeAll) {
+    const url = m[0].split('"')[0].split("'")[0];
+    if (!urls.includes(url)) urls.push(url);
+  }
   const ugMatch = html.match(/https?:\/\/www\.ugreen\.com\/cdn\/shop\/files\/[^\s"'?]+/i);
-  if (ugMatch) return ugMatch[0];
+  if (ugMatch) urls.push(ugMatch[0]);
   const baMatch = html.match(/https?:\/\/www\.baseus\.com\/cdn\/shop\/files\/[^\s"'?]+/i);
-  if (baMatch) return baMatch[0];
-  return null;
+  if (baMatch) urls.push(baMatch[0]);
+  return urls;
 }
 
 // 外部画像をフェッチ
@@ -443,16 +447,18 @@ for (const file of getAllHtmlFiles(base)) {
   const descMatch = html.match(/property="og:description"\s+content="([^"]+)"/);
   const desc = descMatch ? descMatch[1].trim() : '';
 
-  // 商品画像がある記事 → YouTubeサムネ風
-  const imageUrl = extractProductImageUrl(html);
-  if (imageUrl) {
-    const imageBuf = await fetchImageBuffer(imageUrl);
-    if (imageBuf) {
-      await buildThumbnailOgp({ title, desc, category, slug, imageBuf, outPath });
-      console.log(`✅ ${slug}.jpg  [サムネ]`);
-      generated++;
-      continue;
-    }
+  // 商品画像がある記事 → YouTubeサムネ風（複数URLを順に試す）
+  const imageUrls = extractProductImageUrls(html);
+  let imageBuf = null;
+  for (const url of imageUrls) {
+    imageBuf = await fetchImageBuffer(url);
+    if (imageBuf) break;
+  }
+  if (imageBuf) {
+    await buildThumbnailOgp({ title, desc, category, slug, imageBuf, outPath });
+    console.log(`✅ ${slug}.jpg  [サムネ]`);
+    generated++;
+    continue;
   }
 
   // 商品画像なし → テキスト＋ペルソナフォーマット
