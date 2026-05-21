@@ -29,6 +29,8 @@ const SLUG_SUB = {
   'ugreen-earphone-osusume':          'UGREEN イヤホン\n徹底比較レビュー',
   'ugreen-mouse-osusume':             'UGREEN マウス\n徹底比較レビュー',
   'baseus-mobile-battery-osusume':    'Baseus バッテリー\n徹底比較レビュー',
+  'naturehike-osusume':               'Naturehike 小物7選\nアリエクで格安購入',
+  'naturehike-tent-osusume':          'Naturehike テント5選\nアリエクで格安購入',
   'aliexpress-what-is':               'AliExpress完全ガイド\n初心者向け解説',
   'aliexpress-choice':                'AliExpress\n品質保証プログラム',
   'aliexpress-account':               'AliExpress\nアカウント作成ガイド',
