@@ -31,6 +31,8 @@ const SLUG_SUB = {
   'baseus-mobile-battery-osusume':    'Baseus バッテリー\n徹底比較レビュー',
   'naturehike-osusume':               'Naturehike 小物7選\nアリエクで格安購入',
   'naturehike-tent-osusume':          'Naturehike テント5選\nアリエクで格安購入',
+  'naturehike-airmat-osusume':        'Naturehike エアーマット5選\nアリエクで格安購入',
+  'naturehike-brand':                 'Naturehike\nどこの国？評判を解説',
   'aliexpress-what-is':               'AliExpress完全ガイド\n初心者向け解説',
   'aliexpress-choice':                'AliExpress\n品質保証プログラム',
   'aliexpress-account':               'AliExpress\nアカウント作成ガイド',
@@ -79,6 +81,215 @@ function wrapText(text, maxLen = 14) {
   return lines;
 }
 
+// 記事HTMLから最初の商品画像URLを抽出
+function extractProductImageUrl(html) {
+  const aeMatch = html.match(/https?:\/\/ae-pic-a1\.aliexpress-media\.com\/kf\/[^\s"']+/i);
+  if (aeMatch) return aeMatch[0].split('"')[0].split("'")[0];
+  const ugMatch = html.match(/https?:\/\/www\.ugreen\.com\/cdn\/shop\/files\/[^\s"'?]+/i);
+  if (ugMatch) return ugMatch[0];
+  const baMatch = html.match(/https?:\/\/www\.baseus\.com\/cdn\/shop\/files\/[^\s"'?]+/i);
+  if (baMatch) return baMatch[0];
+  return null;
+}
+
+// 外部画像をフェッチ
+async function fetchImageBuffer(url) {
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; OGP/1.0)' },
+      signal: AbortSignal.timeout(12000),
+    });
+    if (!res.ok) return null;
+    return Buffer.from(await res.arrayBuffer());
+  } catch {
+    return null;
+  }
+}
+
+// ペルソナ画像の白背景を透明化
+async function removeWhiteBg(inputPath) {
+  const { data, info } = await sharp(inputPath).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const { width, height } = info;
+  for (let i = 0; i < data.length; i += 4) {
+    const r = data[i], g = data[i + 1], b = data[i + 2], a = data[i + 3];
+    if (a < 10 || (r > 230 && g > 230 && b > 230)) {
+      data[i] = 0; data[i + 1] = 0; data[i + 2] = 0; data[i + 3] = 0;
+    }
+  }
+  return sharp(Buffer.from(data), { raw: { width, height, channels: 4 } }).png().toBuffer();
+}
+
+// タイトルを短縮（「X選」で切る・【】除去）
+function shortTitle(t) {
+  let s = t.replace(/【[^】]*】/g, '').replace(/[｜|].*$/, '').trim();
+  // 「X選」があればそこで切る
+  const senMatch = s.match(/^(.+?[0-9０-９十]+選)/);
+  if (senMatch) return senMatch[1];
+  // なければ不要な後半を除去して24文字上限
+  return s.replace(/[ 　]?(徹底比較|完全ガイド|完全解説|で選ぶ|について|を解説).*$/, '').trim().slice(0, 24);
+}
+
+// カテゴリ・スラッグからペルソナ画像パスを決定
+function selectPersona(category, slug) {
+  const isOutdoor = slug.includes('naturehike') || slug.includes('outdoor') || slug.includes('camp');
+  const variant = isOutdoor ? 'outdoor' : 'gadget';
+  const personaPath = path.resolve(`public/images/personas/persona-${variant}-surprised.png`);
+  if (fs.existsSync(personaPath)) return personaPath;
+  // フォールバック: 利用可能な任意のペルソナ
+  const fallback = path.resolve('public/images/personas/persona-gadget-surprised.png');
+  return fs.existsSync(fallback) ? fallback : null;
+}
+
+// YouTubeサムネ風OGP（商品画像＋ペルソナ＋白基調）
+async function buildThumbnailOgp({ title, desc, category, slug, imageBuf, outPath }) {
+  const color = CAT_COLOR[category] || CAT_COLOR.default;
+
+  // 商品画像を左側背景に
+  const bgBuf = await sharp(imageBuf)
+    .resize(750, 630, { fit: 'cover', position: 'centre' })
+    .toBuffer();
+
+  // ペルソナ画像
+  const personaPath = selectPersona(category, slug);
+  let personaResized = null;
+  let personaW = 0;
+  if (personaPath) {
+    const personaBuf = await removeWhiteBg(personaPath);
+    personaResized = await sharp(personaBuf).resize({ height: 590, fit: 'inside' }).png().toBuffer();
+    personaW = (await sharp(personaResized).metadata()).width;
+  }
+
+  // タイトルを2行に分割
+  const st = shortTitle(title);
+  const lines = wrapText(st, 12);
+  const lineH = 72;
+  const textStartY = lines.length === 1 ? 430 : lines.length === 2 ? 380 : 330;
+  const titleEls = lines.map((line, i) =>
+    `<text x="52" y="${textStartY + i * lineH}"
+      font-family="Meiryo,'Yu Gothic','MS Gothic',sans-serif"
+      font-size="68" font-weight="900" fill="#111827"
+      paint-order="stroke" stroke="rgba(255,255,255,0.6)" stroke-width="6">${escXml(line)}</text>`
+  ).join('\n  ');
+
+  const descShort = (desc || '').replace(/。.*$/, '').slice(0, 32);
+
+  const overlaySvg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.97)"/>
+      <stop offset="52%"  stop-color="rgba(255,255,255,0.62)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.0)"/>
+    </linearGradient>
+    <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="50%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.55)"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#gl)"/>
+  <rect width="1200" height="630" fill="url(#gb)"/>
+  <rect x="0" y="0" width="1200" height="7" fill="${color}"/>
+  <text x="52" y="50"
+    font-family="Meiryo,'Yu Gothic','MS Gothic',sans-serif"
+    font-size="24" font-weight="700" fill="${color}">アリエクswipe</text>
+  ${titleEls}
+  <text x="52" y="${textStartY + lines.length * lineH + 10}"
+    font-family="Meiryo,'Yu Gothic','MS Gothic',sans-serif"
+    font-size="24" fill="#4b5563">${escXml(descShort)}</text>
+</svg>`;
+
+  const overlayBuf = await sharp(Buffer.from(overlaySvg)).resize(1200, 630).png().toBuffer();
+
+  const composites = [
+    { input: bgBuf, left: 0, top: 0 },
+    ...(personaResized ? [{ input: personaResized, left: 1200 - personaW - 8, top: 630 - 590 + 8 }] : []),
+    { input: overlayBuf, blend: 'over' },
+  ];
+
+  await sharp({ create: { width: 1200, height: 630, channels: 4, background: { r: 255, g: 255, b: 255, alpha: 1 } } })
+    .png().toBuffer()
+    .then(base => sharp(base).composite(composites).jpeg({ quality: 92, mozjpeg: true }).toFile(outPath));
+}
+
+// テキスト＋ペルソナフォーマット（商品画像なし記事用）
+async function buildTextPersonaOgp({ title, category, slug, outPath }) {
+  const color = CAT_COLOR[category] || CAT_COLOR.default;
+
+  // カテゴリ別の背景テキスト（記事の内容を端的に）
+  const ARTICLE_COPY = {
+    'aliexpress-what-is':          ['アリエクって\nなに？', 'はじめての方向け\n完全ガイド'],
+    'aliexpress-account':          ['アカウント\n作成方法', 'かんたん\n5ステップ'],
+    'aliexpress-choice':           ['Choice\nとは？', '品質保証\nプログラム解説'],
+    'aliexpress-coupon':           ['クーポン\n使い方', '最大XX%OFF\nお得な活用術'],
+    'aliexpress-payment':          ['支払い方法\n完全ガイド', 'カード・PayPay\nコンビニ払い対応'],
+    'aliexpress-paypal':           ['PayPal\n使えるの？', '支払い設定\nを解説'],
+    'aliexpress-paypay':           ['PayPay\n使えるの？', '対応状況\nを解説'],
+    'aliexpress-shiharai':         ['支払い方法\n完全ガイド', '安全に\n買い物する方法'],
+    'aliexpress-safety':           ['アリエクは\n安全？', '詐欺・偽物\n対策10選'],
+    'aliexpress-ayashii':          ['怪しい？\n大丈夫？', '安全に使う\nポイント解説'],
+    'aliexpress-hyoban':           ['評判は\nどうなの？', 'リアルな\n口コミを解説'],
+    'aliexpress-nannichi':         ['何日で\n届く？', '配送日数\nを徹底解説'],
+    'aliexpress-standard-shipping':['Standard\nShipping', '配送方法\n完全ガイド'],
+    'aliexpress-tracking-guide':   ['荷物追跡\nガイド', 'どこで\n確認できる？'],
+    'aliexpress-tracking-number':  ['追跡番号\nの見方', '荷物の場所\nをチェック'],
+    'aliexpress-tsuiseki':         ['荷物を\n追跡しよう', '発送から\n到着まで'],
+    'naturehike-brand':            ['Naturehike\nってどこ？', '評判・品質\n徹底解説'],
+  };
+
+  const copy = ARTICLE_COPY[slug];
+  const mainText  = copy ? copy[0] : shortTitle(title);
+  const subText   = copy ? copy[1] : '';
+
+  // ペルソナ
+  const personaPath = selectPersona(category, slug);
+  let personaResized = null;
+  let personaW = 0;
+  if (personaPath) {
+    const personaBuf = await removeWhiteBg(personaPath);
+    personaResized = await sharp(personaBuf).resize({ height: 590, fit: 'inside' }).png().toBuffer();
+    personaW = (await sharp(personaResized).metadata()).width;
+  }
+
+  const mainLines = mainText.split('\n');
+  const subLines  = subText.split('\n');
+  const mainEls = mainLines.map((line, i) =>
+    `<text x="72" y="${260 + i * 96}"
+      font-family="Meiryo,'Yu Gothic','MS Gothic',sans-serif"
+      font-size="84" font-weight="900" fill="white">${escXml(line)}</text>`
+  ).join('\n  ');
+  const subEls = subLines.map((line, i) =>
+    `<text x="72" y="${260 + mainLines.length * 96 + 20 + i * 44}"
+      font-family="Meiryo,'Yu Gothic','MS Gothic',sans-serif"
+      font-size="36" fill="rgba(255,255,255,0.80)">${escXml(line)}</text>`
+  ).join('\n  ');
+
+  const bgSvg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3755"/>
+      <stop offset="100%" stop-color="#b91428"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="72" y="60"
+    font-family="Meiryo,'Yu Gothic','MS Gothic',sans-serif"
+    font-size="24" font-weight="700" fill="rgba(255,255,255,0.85)">アリエクswipe</text>
+  ${mainEls}
+  ${subEls}
+</svg>`;
+
+  const bgBuf = await sharp(Buffer.from(bgSvg)).resize(1200, 630).png().toBuffer();
+
+  const composites = [
+    ...(personaResized ? [{ input: personaResized, left: 1200 - personaW - 8, top: 630 - 590 + 8 }] : []),
+  ];
+
+  await sharp(bgBuf)
+    .composite(composites)
+    .jpeg({ quality: 92, mozjpeg: true })
+    .toFile(outPath);
+}
+
+// フォールバック：テキストのみSVGフォーマット（商品画像なし記事用）
 function buildArticleSvg({ title, category, slug }) {
   const color = CAT_COLOR[category] || CAT_COLOR.default;
 
@@ -132,35 +343,49 @@ function buildArticleSvg({ title, category, slug }) {
 </svg>`;
 }
 
-// index専用: 横型ロゴ(logo.png)を中央に大きく配置
-async function buildIndexImage(outPath) {
-  const color = CAT_COLOR.home;
+// ロゴの赤→白変換（白背景を透明に、赤要素を白に）
+async function makeLogoWhite(inputPath) {
+  const { data, info } = await sharp(inputPath)
+    .ensureAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  const { width, height } = info;
+  for (let i = 0; i < data.length; i += 4) {
+    const a = data[i + 3];
+    if (a < 10) {
+      data[i] = 0; data[i + 1] = 0; data[i + 2] = 0; data[i + 3] = 0; // 透明維持
+    } else {
+      data[i] = 255; data[i + 1] = 255; data[i + 2] = 255; // RGB→白、アルファは元を保持
+    }
+  }
+  return sharp(Buffer.from(data), { raw: { width, height, channels: 4 } }).png().toBuffer();
+}
 
-  // logo.png: 1482×257 → 幅700px にリサイズ → 高さ ≈ 121px
-  const logoW = 700;
+// index専用: ブランドレッド背景 + 白抜きロゴを大きく中央配置
+async function buildIndexImage(outPath) {
+  const color = CAT_COLOR.home; // #e8253a
+
+  // logo.png: 1482×257 → 幅900px にリサイズ
+  const logoW = 900;
   const logoH = Math.round(logoW * (257 / 1482));
   const logoLeft = Math.round((1200 - logoW) / 2);
-  const logoTop  = Math.round(90 + (540 - logoH) / 2) - 30; // 少し上寄り
+  const logoTop  = Math.round((630 - logoH) / 2) - 24; // 少し上寄り
 
   const svg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#ffffff"/>
-  <!-- 上部アクセントバー -->
-  <rect x="0" y="0" width="1200" height="8" fill="${color}"/>
-  <!-- 薄い背景デコ -->
-  <circle cx="600" cy="380" r="320" fill="${color}" opacity="0.04"/>
-  <!-- サブコピー（ロゴ下） -->
-  <text x="600" y="${logoTop + logoH + 70}"
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3755"/>
+      <stop offset="100%" stop-color="#b91428"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="${logoTop + logoH + 58}"
     font-family="'Noto Sans CJK JP','Meiryo','Yu Gothic','MS Gothic',sans-serif"
-    font-size="28" fill="#6b7280" text-anchor="middle">AliExpressの格安商品をスワイプで発見</text>
-  <!-- ドメイン -->
-  <text x="600" y="600"
-    font-family="'Noto Sans CJK JP','Meiryo','Yu Gothic','MS Gothic',sans-serif"
-    font-size="22" fill="#d1d5db" text-anchor="middle">${DOMAIN}</text>
+    font-size="26" fill="rgba(255,255,255,0.70)" text-anchor="middle">AliExpressの格安商品をスワイプで発見</text>
 </svg>`;
 
-  const logoBuffer = await sharp(path.resolve('public/logo.png'))
-    .resize(logoW, logoH)
-    .toBuffer();
+  const logoWhite  = await makeLogoWhite(path.resolve('public/logo.png'));
+  const logoBuffer = await sharp(logoWhite).resize(logoW, logoH).png().toBuffer();
 
   const bgBuffer = await sharp(Buffer.from(svg))
     .resize(1200, 630)
@@ -215,14 +440,24 @@ for (const file of getAllHtmlFiles(base)) {
     ? ogTitleMatch[1].trim()
     : titleMatch[1].trim().replace(/ \| アリエクswipe.*$/, '').trim();
 
-  const svg = buildArticleSvg({ title, category, slug });
+  const descMatch = html.match(/property="og:description"\s+content="([^"]+)"/);
+  const desc = descMatch ? descMatch[1].trim() : '';
 
-  await sharp(Buffer.from(svg))
-    .resize(1200, 630)
-    .jpeg({ quality: 90, mozjpeg: true })
-    .toFile(outPath);
+  // 商品画像がある記事 → YouTubeサムネ風
+  const imageUrl = extractProductImageUrl(html);
+  if (imageUrl) {
+    const imageBuf = await fetchImageBuffer(imageUrl);
+    if (imageBuf) {
+      await buildThumbnailOgp({ title, desc, category, slug, imageBuf, outPath });
+      console.log(`✅ ${slug}.jpg  [サムネ]`);
+      generated++;
+      continue;
+    }
+  }
 
-  console.log(`✅ ${slug}.jpg`);
+  // 商品画像なし → テキスト＋ペルソナフォーマット
+  await buildTextPersonaOgp({ title, category, slug, outPath });
+  console.log(`✅ ${slug}.jpg  [テキスト]`);
   generated++;
 }
 
