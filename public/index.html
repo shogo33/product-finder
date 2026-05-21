@@ -635,6 +635,30 @@
 
   </main>
 
+  <script>
+    document.querySelectorAll('a.cat-btn[href^="#"]').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        var id = this.getAttribute('href').slice(1);
+        var target = document.getElementById(id);
+        if (!target) return;
+        e.preventDefault();
+        var startY = window.scrollY;
+        var targetY = target.getBoundingClientRect().top + startY - 72;
+        var diff = targetY - startY;
+        var duration = 480;
+        var start = null;
+        function easeOutQuart(t) { return 1 - Math.pow(1 - t, 4); }
+        function step(ts) {
+          if (!start) start = ts;
+          var t = Math.min((ts - start) / duration, 1);
+          window.scrollTo(0, startY + diff * easeOutQuart(t));
+          if (t < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    });
+  </script>
+
   <footer class="site-footer">
     <div class="footer-logo">アリエクswipe｜お得情報・格安商品</div>
     <div class="footer-links">
