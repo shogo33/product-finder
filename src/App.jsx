@@ -525,8 +525,23 @@ export default function App() {
 
         {/* カテゴリフィルターチップ */}
         <div
-          className="w-full flex gap-1.5 overflow-x-auto px-3 pb-2 flex-shrink-0 scrollbar-hide"
+          className="w-full flex gap-1.5 overflow-x-auto px-3 pb-2 flex-shrink-0 scrollbar-hide cursor-grab active:cursor-grabbing"
           onWheel={(e) => { e.currentTarget.scrollLeft += e.deltaY; }}
+          onMouseDown={(e) => {
+            const el = e.currentTarget;
+            el.dataset.dragging = '1';
+            el.dataset.startX = e.pageX - el.offsetLeft;
+            el.dataset.scrollLeft = el.scrollLeft;
+            e.preventDefault();
+          }}
+          onMouseMove={(e) => {
+            if (e.currentTarget.dataset.dragging !== '1') return;
+            const x = e.pageX - e.currentTarget.offsetLeft;
+            const walk = x - parseInt(e.currentTarget.dataset.startX);
+            e.currentTarget.scrollLeft = parseInt(e.currentTarget.dataset.scrollLeft) - walk;
+          }}
+          onMouseUp={(e) => { e.currentTarget.dataset.dragging = '0'; }}
+          onMouseLeave={(e) => { e.currentTarget.dataset.dragging = '0'; }}
         >
           <button
             onClick={() => setSelectedCategory(null)}
