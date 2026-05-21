@@ -3600,26 +3600,6 @@
     "collected_at": "2026-05-21"
   },
   {
-    "id": "1005001781141902",
-    "name": "ミニ バイブレーター",
-    "price": 473,
-    "image": "https://ae-pic-a1.aliexpress-media.com/kf/H520f1b0c6aef4cf49d9f1ae024a04f6bH.jpg",
-    "images": [
-      "https://ae-pic-a1.aliexpress-media.com/kf/H520f1b0c6aef4cf49d9f1ae024a04f6bH.jpg"
-    ],
-    "url": "https://www.aliexpress.com/item/1005001781141902.html",
-    "tags": [
-      "アウトドア"
-    ],
-    "category": "アウトドア",
-    "is_choice": false,
-    "color": "from-green-100 to-green-200",
-    "emoji": "🏕️",
-    "sales_count": 49,
-    "evaluate_rate": 95.6,
-    "collected_at": "2026-05-21"
-  },
-  {
     "id": "1005005979889289",
     "name": "防水サバイバル寝袋",
     "price": 1183,
@@ -24757,6 +24737,46 @@
     "emoji": "⛺",
     "sales_count": 490,
     "evaluate_rate": 98,
+    "collected_at": "2026-05-21"
+  },
+  {
+    "id": "32973576102",
+    "name": "Naturehike インフレータブルマット スリム",
+    "price": 5463,
+    "image": "https://ae-pic-a1.aliexpress-media.com/kf/Sc10011e77cda44748cc36ade99cb08b8D.jpg",
+    "images": [
+      "https://ae-pic-a1.aliexpress-media.com/kf/Sc10011e77cda44748cc36ade99cb08b8D.jpg"
+    ],
+    "url": "https://s.click.aliexpress.com/e/_c3aFtRml",
+    "tags": [
+      "アウトドア"
+    ],
+    "category": "アウトドア",
+    "is_choice": false,
+    "color": "from-green-100 to-green-200",
+    "emoji": "🏕️",
+    "sales_count": 200,
+    "evaluate_rate": 96,
+    "collected_at": "2026-05-21"
+  },
+  {
+    "id": "1005007936539980",
+    "name": "Naturehike インフレータブルマット R3.5",
+    "price": 9850,
+    "image": "https://ae-pic-a1.aliexpress-media.com/kf/Se9deea0dbfcb40aba29c8d0f97d02db0X.png",
+    "images": [
+      "https://ae-pic-a1.aliexpress-media.com/kf/Se9deea0dbfcb40aba29c8d0f97d02db0X.png"
+    ],
+    "url": "https://s.click.aliexpress.com/e/_c3leEQah",
+    "tags": [
+      "アウトドア"
+    ],
+    "category": "アウトドア",
+    "is_choice": false,
+    "color": "from-green-100 to-green-200",
+    "emoji": "🏕️",
+    "sales_count": 150,
+    "evaluate_rate": 95,
     "collected_at": "2026-05-21"
   }
 ]
