@@ -130,51 +130,34 @@ function buildArticleSvg({ title, category, slug }) {
 </svg>`;
 }
 
-// index専用: ロゴ画像をコンポジット
+// index専用: 横型ロゴ(logo.png)を中央に大きく配置
 async function buildIndexImage(outPath) {
   const color = CAT_COLOR.home;
 
+  // logo.png: 1482×257 → 幅700px にリサイズ → 高さ ≈ 121px
+  const logoW = 700;
+  const logoH = Math.round(logoW * (257 / 1482));
+  const logoLeft = Math.round((1200 - logoW) / 2);
+  const logoTop  = Math.round(90 + (540 - logoH) / 2) - 30; // 少し上寄り
+
   const svg = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#fafbfc"/>
-  <rect x="0" y="0" width="10" height="630" fill="${color}"/>
-  <rect x="0" y="0" width="1200" height="90" fill="${color}"/>
-  <text x="68" y="55"
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <!-- 上部アクセントバー -->
+  <rect x="0" y="0" width="1200" height="8" fill="${color}"/>
+  <!-- 薄い背景デコ -->
+  <circle cx="600" cy="380" r="320" fill="${color}" opacity="0.04"/>
+  <!-- サブコピー（ロゴ下） -->
+  <text x="600" y="${logoTop + logoH + 70}"
     font-family="'Noto Sans CJK JP','Meiryo','Yu Gothic','MS Gothic',sans-serif"
-    font-size="30" font-weight="700" fill="white">アリエクswipe</text>
-  <text x="68" y="78"
-    font-family="'Noto Sans CJK JP','Meiryo','Yu Gothic','MS Gothic',sans-serif"
-    font-size="18" fill="rgba(255,255,255,0.75)">AliExpress格安商品スワイプアプリ</text>
-
-  <!-- 右デコレーション（薄い円） -->
-  <circle cx="960" cy="360" r="200" fill="${color}" opacity="0.05"/>
-  <circle cx="960" cy="360" r="130" fill="${color}" opacity="0.05"/>
-
-  <!-- タイトル（左、大きめ） -->
-  <text x="68" y="250"
-    font-family="'Noto Sans CJK JP','Meiryo','Yu Gothic','MS Gothic',sans-serif"
-    font-size="60" font-weight="900" fill="#111827">アリエクswipe</text>
-  <text x="68" y="330"
-    font-family="'Noto Sans CJK JP','Meiryo','Yu Gothic','MS Gothic',sans-serif"
-    font-size="38" font-weight="700" fill="#374151">お得情報・格安商品</text>
-
-  <!-- サブコピー -->
-  <text x="68" y="420"
-    font-family="'Noto Sans CJK JP','Meiryo','Yu Gothic','MS Gothic',sans-serif"
-    font-size="26" fill="${color}" font-weight="600">1,500件超のDBから、スワイプで見つける</text>
-
+    font-size="28" fill="#6b7280" text-anchor="middle">AliExpressの格安商品をスワイプで発見</text>
   <!-- ドメイン -->
-  <text x="68" y="608"
+  <text x="600" y="600"
     font-family="'Noto Sans CJK JP','Meiryo','Yu Gothic','MS Gothic',sans-serif"
-    font-size="22" fill="#9ca3af">${DOMAIN}</text>
+    font-size="22" fill="#d1d5db" text-anchor="middle">${DOMAIN}</text>
 </svg>`;
 
-  // app icon を右側にコンポジット
-  const iconSize = 260;
-  const iconLeft = 880;
-  const iconTop  = Math.round((630 - iconSize) / 2);
-
-  const iconBuffer = await sharp(path.resolve('public/icon-1024.png'))
-    .resize(iconSize, iconSize)
+  const logoBuffer = await sharp(path.resolve('public/logo.png'))
+    .resize(logoW, logoH)
     .toBuffer();
 
   const bgBuffer = await sharp(Buffer.from(svg))
@@ -183,7 +166,7 @@ async function buildIndexImage(outPath) {
     .toBuffer();
 
   await sharp(bgBuffer)
-    .composite([{ input: iconBuffer, left: iconLeft, top: iconTop }])
+    .composite([{ input: logoBuffer, left: logoLeft, top: logoTop }])
     .jpeg({ quality: 90, mozjpeg: true })
     .toFile(outPath);
 }
