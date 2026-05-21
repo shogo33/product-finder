@@ -158,6 +158,7 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
 // ── 表示タグ生成 ──────────────────────────────────────────────────────────
 function getDisplayTags(product) {
   const n = product.name || '';
+  const seen = new Set([product.category]);
   const extra = [];
   const checks = [
     [/防水/, '防水'], [/折りたた/, '折りたたみ'], [/軽量/, '軽量'],
@@ -172,20 +173,102 @@ function getDisplayTags(product) {
   ];
   for (const [pattern, label] of checks) {
     if (extra.length >= 2) break;
-    if (pattern.test(n)) extra.push(label);
+    if (pattern.test(n) && !seen.has(label)) { extra.push(label); seen.add(label); }
   }
   const fallbacks = {
-    'ガジェット': ['デジタル', 'テック'], 'アウトドア': ['キャンプ', 'アウトドア'],
-    'メンズ': ['メンズ', 'スタイリッシュ'], 'シール・ケース': ['かわいい', 'デコ'],
+    'ガジェット': ['デジタル', 'テック'], 'アウトドア': ['キャンプ', 'ネイチャー'],
+    'メンズ': ['スタイリッシュ', 'カジュアル'], 'シール・ケース': ['かわいい', 'デコ'],
     'おもしろ': ['ユニーク', 'ギフト'], 'ペット': ['ペット用', 'アニマル'],
     'インテリア': ['おしゃれ', 'ルームデコ'], 'リラックス': ['セルフケア', 'ヘルスケア'],
   };
-  while (extra.length < 2) {
-    const fb = fallbacks[product.category] ?? ['人気', 'おすすめ'];
-    extra.push(fb[extra.length] ?? 'おすすめ');
+  for (const label of (fallbacks[product.category] ?? ['人気', 'おすすめ'])) {
+    if (extra.length >= 2) break;
+    if (!seen.has(label)) { extra.push(label); seen.add(label); }
   }
+  if (extra.length < 2) extra.push('おすすめ');
   return [product.category, ...extra.slice(0, 2)];
 }
+
+// ── スワイプビュー（App外で定義してリマウントによるちらつきを防止） ─────────
+const SwipeView = memo(({ cards, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOpacity, onAdvance, selectedCategory, setSelectedCategory }) => {
+  const current = cards[0];
+  if (!current) {
+    return (
+      <div className="flex-1 flex items-center justify-center px-6">
+        <div className="text-center">
+          <p className="text-stone-600 text-sm">{cards.length === 0 ? '商品を読み込み中...' : '商品がありません'}</p>
+        </div>
+      </div>
+    );
+  }
+
+  const topCards = cards.slice(0, 3);
+
+  return (
+    <div className="flex-1 flex flex-col items-center justify-start px-2 pt-1 pb-3 overflow-hidden relative min-h-0">
+
+      {/* カテゴリフィルターチップ */}
+      <div
+        className="w-full flex gap-1.5 overflow-x-auto px-3 pb-2 flex-shrink-0 scrollbar-hide cursor-grab active:cursor-grabbing"
+        onWheel={(e) => { e.currentTarget.scrollLeft += e.deltaY; }}
+        onMouseDown={(e) => {
+          const el = e.currentTarget;
+          el.dataset.dragging = '1';
+          el.dataset.startX = e.pageX - el.offsetLeft;
+          el.dataset.scrollLeft = el.scrollLeft;
+          e.preventDefault();
+        }}
+        onMouseMove={(e) => {
+          if (e.currentTarget.dataset.dragging !== '1') return;
+          const xPos = e.pageX - e.currentTarget.offsetLeft;
+          const walk = xPos - parseInt(e.currentTarget.dataset.startX);
+          e.currentTarget.scrollLeft = parseInt(e.currentTarget.dataset.scrollLeft) - walk;
+        }}
+        onMouseUp={(e) => { e.currentTarget.dataset.dragging = '0'; }}
+        onMouseLeave={(e) => { e.currentTarget.dataset.dragging = '0'; }}
+      >
+        <button
+          onClick={() => setSelectedCategory(null)}
+          className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap flex-shrink-0 transition-all ${
+            !selectedCategory ? 'bg-red-600 text-white shadow-sm' : 'bg-stone-100 text-stone-500 hover:bg-stone-200'
+          }`}
+        >すべて</button>
+        {CATEGORIES.map(cat => (
+          <button
+            key={cat.ja}
+            onClick={() => setSelectedCategory(selectedCategory === cat.ja ? null : cat.ja)}
+            className={`px-2.5 py-1 rounded-full text-[11px] font-bold whitespace-nowrap flex-shrink-0 flex items-center gap-1 transition-all ${
+              selectedCategory === cat.ja ? 'bg-red-600 text-white shadow-sm' : 'bg-stone-100 text-stone-500 hover:bg-stone-200'
+            }`}
+          >
+            <span>{cat.emoji}</span><span>{cat.ja}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* カードスタック */}
+      <div className="w-full relative flex-1 min-h-0">
+        {topCards.map((card, index) =>
+          index === 0 ? (
+            <SwipeCard
+              key="front-card"
+              card={card}
+              x={x} y={y} rotate={rotate} scale={scale}
+              cardOpacity={cardOpacity} likeOpacity={likeOpacity} nopeOpacity={nopeOpacity}
+              onSwipeRight={() => onAdvance('right')}
+              onSwipeLeft={() => onAdvance('left')}
+              selectedCategory={selectedCategory}
+              setSelectedCategory={setSelectedCategory}
+            />
+          ) : (
+            <BackgroundCard key={`bg-${index}`} card={card} index={index} x={x} />
+          )
+        )}
+      </div>
+
+    </div>
+  );
+});
 
 // ── 価格スライダー ────────────────────────────────────────────────────────
 const PRICE_MIN  = 100;
@@ -335,11 +418,8 @@ export default function App() {
   });
   const [showInstallModal, setShowInstallModal] = useState(false);
   const [celebrationMessage, setCelebrationMessage] = useState(null);
-  const [feverMode, setFeverMode]               = useState(false);
 
   const celebrationTimerRef = useRef(null);
-  const swipeTimesRef       = useRef([]);
-  const feverTimerRef       = useRef(null);
 
   // useDeck: フィルタリング・スコアリング・バッファ管理
   const { cards, advance: deckAdvance, reset: deckReset, filteredTotal, remaining } = useDeck({
@@ -386,26 +466,11 @@ export default function App() {
     }, 2500);
   };
 
-  // フィーバー判定: 3秒以内に4回以上スワイプ
-  const triggerFeverCheck = () => {
-    const now   = Date.now();
-    const times = swipeTimesRef.current;
-    times.push(now);
-    if (times.length > 10) times.shift();
-    const recent = times.filter(t => now - t < 3000).length;
-    if (recent >= 4) {
-      setFeverMode(true);
-      if (feverTimerRef.current) clearTimeout(feverTimerRef.current);
-      feverTimerRef.current = setTimeout(() => setFeverMode(false), 5000);
-    }
-  };
-
   const handleAdvance = (direction) => {
     const card = cards[0];
     if (!card) return;
 
     deckAdvance(card.uid, direction, card);
-    triggerFeverCheck();
 
     const newSwipeCount = swipeCount + 1;
     setSwipeCount(newSwipeCount);
@@ -520,97 +585,6 @@ export default function App() {
       )}
     </AnimatePresence>
   );
-
-  // ── SWIPE VIEW ───────────────────────────────────────────────────────────
-  const SwipeView = () => {
-    const current = cards[0];
-    if (!current) {
-      return (
-        <div className="flex-1 flex items-center justify-center px-6">
-          <div className="text-center">
-            <p className="text-stone-600 text-sm">{allProducts.length === 0 ? '商品を読み込み中...' : '商品がありません'}</p>
-          </div>
-        </div>
-      );
-    }
-
-    const topCards = cards.slice(0, 3);
-
-    return (
-      <div className="flex-1 flex flex-col items-center justify-start px-2 pt-1 pb-3 overflow-hidden relative min-h-0">
-
-        {/* カテゴリフィルターチップ */}
-        <div
-          className="w-full flex gap-1.5 overflow-x-auto px-3 pb-2 flex-shrink-0 scrollbar-hide cursor-grab active:cursor-grabbing"
-          onWheel={(e) => { e.currentTarget.scrollLeft += e.deltaY; }}
-          onMouseDown={(e) => {
-            const el = e.currentTarget;
-            el.dataset.dragging = '1';
-            el.dataset.startX = e.pageX - el.offsetLeft;
-            el.dataset.scrollLeft = el.scrollLeft;
-            e.preventDefault();
-          }}
-          onMouseMove={(e) => {
-            if (e.currentTarget.dataset.dragging !== '1') return;
-            const x = e.pageX - e.currentTarget.offsetLeft;
-            const walk = x - parseInt(e.currentTarget.dataset.startX);
-            e.currentTarget.scrollLeft = parseInt(e.currentTarget.dataset.scrollLeft) - walk;
-          }}
-          onMouseUp={(e) => { e.currentTarget.dataset.dragging = '0'; }}
-          onMouseLeave={(e) => { e.currentTarget.dataset.dragging = '0'; }}
-        >
-          <button
-            onClick={() => setSelectedCategory(null)}
-            className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap flex-shrink-0 transition-all ${
-              !selectedCategory ? 'bg-red-600 text-white shadow-sm' : 'bg-stone-100 text-stone-500 hover:bg-stone-200'
-            }`}
-          >すべて</button>
-          {CATEGORIES.map(cat => (
-            <button
-              key={cat.ja}
-              onClick={() => setSelectedCategory(selectedCategory === cat.ja ? null : cat.ja)}
-              className={`px-2.5 py-1 rounded-full text-[11px] font-bold whitespace-nowrap flex-shrink-0 flex items-center gap-1 transition-all ${
-                selectedCategory === cat.ja ? 'bg-red-600 text-white shadow-sm' : 'bg-stone-100 text-stone-500 hover:bg-stone-200'
-              }`}
-            >
-              <span>{cat.emoji}</span><span>{cat.ja}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* カードスタック */}
-        <div className={`w-full relative flex-1 min-h-0 transition-all duration-300 ${feverMode ? 'drop-shadow-[0_0_12px_rgba(251,146,60,0.6)]' : ''}`}>
-          {topCards.map((card, index) =>
-            index === 0 ? (
-              <SwipeCard
-                key="front-card"
-                card={card}
-                x={x} y={y} rotate={rotate} scale={scale}
-                cardOpacity={cardOpacity} likeOpacity={likeOpacity} nopeOpacity={nopeOpacity}
-                onSwipeRight={() => handleAdvance('right')}
-                onSwipeLeft={() => handleAdvance('left')}
-                selectedCategory={selectedCategory}
-                setSelectedCategory={setSelectedCategory}
-              />
-            ) : (
-              <BackgroundCard key={`bg-${index}`} card={card} index={index} x={x} />
-            )
-          )}
-
-          {/* フィーバーグロー */}
-          {feverMode && (
-            <motion.div
-              className="absolute inset-0 rounded-3xl pointer-events-none z-50"
-              animate={{ opacity: [0.4, 0.8, 0.4] }}
-              transition={{ duration: 0.7, repeat: Infinity }}
-              style={{ boxShadow: 'inset 0 0 20px rgba(251,146,60,0.4), 0 0 30px rgba(251,146,60,0.3)' }}
-            />
-          )}
-        </div>
-
-      </div>
-    );
-  };
 
   // ── LIKED VIEW ───────────────────────────────────────────────────────────
   const LikedView = () => (
@@ -762,43 +736,18 @@ export default function App() {
       <InstallModal />
       <CelebrationOverlay celebrationMessage={celebrationMessage} likedCount={liked.length} swipeCount={swipeCount} />
 
-      {/* フィーバー背景パルス */}
-      <AnimatePresence>
-        {feverMode && (
-          <motion.div
-            className="fixed inset-0 pointer-events-none z-40"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 0.12, 0, 0.12, 0] }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.2, repeat: Infinity }}
-            style={{ background: 'radial-gradient(circle at 50% 40%, #f97316, transparent 65%)' }}
-          />
-        )}
-      </AnimatePresence>
-
       <div
         className="w-full max-w-md h-full bg-white sm:rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col"
         style={{ fontFamily: "'Hiragino Sans', 'Yu Gothic', sans-serif" }}
       >
         {/* ヘッダー */}
-        <div className={`px-4 pt-2 pb-1.5 flex flex-col border-b flex-shrink-0 relative overflow-hidden shadow-md transition-colors duration-500 ${
-          feverMode
-            ? 'border-orange-200 bg-gradient-to-br from-orange-50 via-amber-50 to-red-50'
-            : 'border-red-100 bg-gradient-to-br from-red-50 via-rose-50 to-pink-50'
-        }`}>
+        <div className="px-4 pt-2 pb-1.5 flex flex-col border-b border-red-100 flex-shrink-0 relative overflow-hidden shadow-md bg-gradient-to-br from-red-50 via-rose-50 to-pink-50">
           <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-200/40 to-rose-200/20 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-pink-200/30 to-red-200/20 rounded-full blur-2xl" />
 
           <div className="flex items-center justify-between relative z-10">
             <a href="/" className="flex-shrink-0"><img src="/logo.png" alt="アリエクSwipe" className="h-8 w-auto" /></a>
             <div className="flex gap-1.5 items-center">
-              {feverMode && (
-                <motion.span
-                  className="text-sm font-black text-orange-500"
-                  animate={{ scale: [1, 1.2, 1] }}
-                  transition={{ duration: 0.5, repeat: Infinity }}
-                >🔥FEVER</motion.span>
-              )}
               <button onClick={() => setShowInstallModal(true)} className="px-2.5 h-8 rounded-full bg-white/80 backdrop-blur hover:bg-white shadow-md flex items-center gap-1 transition-all active:scale-95 text-stone-600" title="ホーム画面に追加">
                 <Smartphone className="w-3 h-3" />
                 <span className="text-[9px] font-bold whitespace-nowrap">追加</span>
@@ -822,7 +771,7 @@ export default function App() {
             </div>
             <div className="w-full h-1 bg-red-100 rounded-full overflow-hidden">
               <motion.div
-                className={`h-full rounded-full ${feverMode ? 'bg-gradient-to-r from-orange-400 to-amber-400' : 'bg-gradient-to-r from-red-500 to-rose-400'}`}
+                className="h-full rounded-full bg-gradient-to-r from-red-500 to-rose-400"
                 animate={{ width: `${filteredTotal > 0 ? ((filteredTotal - remaining) / filteredTotal) * 100 : 0}%` }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
               />
@@ -858,7 +807,7 @@ export default function App() {
 
         {/* コンテンツエリア */}
         <div className="flex-1 flex flex-col overflow-hidden min-h-0">
-          {view === 'swipe'    && <SwipeView />}
+          {view === 'swipe'    && <SwipeView cards={cards} x={x} y={y} rotate={rotate} scale={scale} cardOpacity={cardOpacity} likeOpacity={likeOpacity} nopeOpacity={nopeOpacity} onAdvance={handleAdvance} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />}
           {view === 'budget'   && <BudgetView maxPrice={maxPrice} setMaxPrice={setMaxPrice} filteredTotal={filteredTotal} swipeCount={swipeCount} onReset={() => { deckReset(); setSwipeCount(0); }} />}
           {view === 'liked'    && <LikedView />}
           {view === 'stats'    && <StatsView />}

@@ -47,6 +47,11 @@ function extractThumb(html, slug) {
   // aliexpress-osusume は専用SVGを使う
   if (slug === 'aliexpress-osusume') return '/images/aliexpress-osusume.svg';
 
+  // ローカル保存済み商品画像（/images/products/{slug}/）を優先
+  const localMatch = html.match(/src="(\/images\/products\/[^"]+\.(jpg|jpeg|png|webp))"/i);
+  if (localMatch) return localMatch[1];
+
+  // 外部CDN（フォールバック）
   const aeAll = [...html.matchAll(/https?:\/\/ae-pic-a1\.aliexpress-media\.com\/kf\/[^\s"']+/gi)];
   if (aeAll.length > 0) return aeAll[0][0].split('"')[0].split("'")[0];
 
