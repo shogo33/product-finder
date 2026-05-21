@@ -25,7 +25,7 @@ const ChoiceBadge = () => (
 // ── 画像ギャラリー ────────────────────────────────────────────────────────
 const ImageGallery = memo(({ images, image, emoji, name }) => {
   const src = images?.[0] || image;
-  if (src) return <img src={src} alt={name} className="w-full h-full object-cover" />;
+  if (src) return <img src={src} alt={name} className="w-full h-full object-cover" draggable={false} onDragStart={(e) => e.preventDefault()} />;
   return <div className="w-full h-full flex items-center justify-center text-9xl">{emoji}</div>;
 });
 
@@ -52,7 +52,7 @@ const BackgroundCard = memo(({ card, index, x }) => {
     >
       <div className="relative w-full bg-gradient-to-br from-stone-50 to-stone-100 overflow-hidden" style={{ height: '70%' }}>
         {card.images?.[0] || card.image
-          ? <img src={card.images?.[0] || card.image} alt={card.name} className="w-full h-full object-cover" />
+          ? <img src={card.images?.[0] || card.image} alt={card.name} className="w-full h-full object-cover" draggable={false} onDragStart={(e) => e.preventDefault()} />
           : <div className="w-full h-full flex items-center justify-center text-9xl">{card.emoji}</div>
         }
         {card.is_choice && <ChoiceBadge />}
@@ -94,7 +94,7 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
 
   return (
     <motion.div
-      className="absolute w-full h-full cursor-grab active:cursor-grabbing rounded-3xl overflow-hidden bg-white flex flex-col shadow-2xl border-4 border-stone-300"
+      className="absolute w-full h-full cursor-grab active:cursor-grabbing rounded-3xl overflow-hidden bg-white flex flex-col shadow-2xl border-4 border-stone-300 select-none"
       style={{ x, y, rotate, scale, opacity: cardOpacity, top: 0, zIndex: 10 }}
       drag
       dragConstraints={false}
@@ -120,9 +120,9 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
 
       {/* 下部情報エリア 30% */}
       <div className="flex-1 flex flex-col items-center justify-evenly px-4 py-3">
-        {card.tags && (
-          <div className="flex flex-wrap gap-1.5 justify-center">
-            {card.tags.map((tag, idx) => (
+        <div className="flex flex-wrap gap-1.5 justify-center">
+          {getDisplayTags(card).map((tag, idx) =>
+            idx === 0 ? (
               <motion.span
                 key={idx}
                 className="text-xs px-2.5 py-1 bg-red-100 text-red-700 rounded-full font-semibold cursor-pointer hover:bg-red-200 transition-all"
@@ -130,9 +130,11 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >{tag}</motion.span>
-            ))}
-          </div>
-        )}
+            ) : (
+              <span key={idx} className="text-xs px-2.5 py-1 bg-stone-100 text-stone-500 rounded-full font-semibold">{tag}</span>
+            )
+          )}
+        </div>
         <div className="text-3xl font-black text-stone-800 leading-none">¥{card.price.toLocaleString()}</div>
         <a
           href={card.url}
@@ -152,6 +154,38 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
     </motion.div>
   );
 };
+
+// ── 表示タグ生成 ──────────────────────────────────────────────────────────
+function getDisplayTags(product) {
+  const n = product.name || '';
+  const extra = [];
+  const checks = [
+    [/防水/, '防水'], [/折りたた/, '折りたたみ'], [/軽量/, '軽量'],
+    [/usb/i, 'USB対応'], [/ワイヤレス|bluetooth/i, 'ワイヤレス'],
+    [/led/i, 'LED'], [/ミニ|コンパクト|小型/, 'コンパクト'],
+    [/スマート|wifi/i, 'スマート'], [/マグネット|磁気|mag/i, 'マグネット'],
+    [/ソーラー/, 'ソーラー'], [/保温|防寒/, '保温'],
+    [/電動|自動/, '電動'], [/多機能/, '多機能'], [/収納/, '収納付き'],
+    [/マッサージ/, 'マッサージ'], [/猫/, '猫用'], [/犬/, '犬用'],
+    [/テント|キャンプ/, 'キャンプ'], [/充電/, '急速充電'],
+    [/ポータブル/, 'ポータブル'],
+  ];
+  for (const [pattern, label] of checks) {
+    if (extra.length >= 2) break;
+    if (pattern.test(n)) extra.push(label);
+  }
+  const fallbacks = {
+    'ガジェット': ['デジタル', 'テック'], 'アウトドア': ['キャンプ', 'アウトドア'],
+    'メンズ': ['メンズ', 'スタイリッシュ'], 'シール・ケース': ['かわいい', 'デコ'],
+    'おもしろ': ['ユニーク', 'ギフト'], 'ペット': ['ペット用', 'アニマル'],
+    'インテリア': ['おしゃれ', 'ルームデコ'], 'リラックス': ['セルフケア', 'ヘルスケア'],
+  };
+  while (extra.length < 2) {
+    const fb = fallbacks[product.category] ?? ['人気', 'おすすめ'];
+    extra.push(fb[extra.length] ?? 'おすすめ');
+  }
+  return [product.category, ...extra.slice(0, 2)];
+}
 
 // ── 価格スライダー ────────────────────────────────────────────────────────
 const PRICE_MIN  = 100;
@@ -490,7 +524,10 @@ export default function App() {
       <div className="flex-1 flex flex-col items-center justify-start px-2 pt-1 pb-3 overflow-hidden relative min-h-0">
 
         {/* カテゴリフィルターチップ */}
-        <div className="w-full flex gap-1.5 overflow-x-auto px-3 pb-2 flex-shrink-0 scrollbar-hide">
+        <div
+          className="w-full flex gap-1.5 overflow-x-auto px-3 pb-2 flex-shrink-0 scrollbar-hide"
+          onWheel={(e) => { e.currentTarget.scrollLeft += e.deltaY; }}
+        >
           <button
             onClick={() => setSelectedCategory(null)}
             className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap flex-shrink-0 transition-all ${
@@ -539,6 +576,7 @@ export default function App() {
             />
           )}
         </div>
+
       </div>
     );
   };
