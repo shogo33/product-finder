@@ -12,8 +12,6 @@ const CATEGORIES = [
   { ja: 'おもしろ',      emoji: '😄' },
   { ja: 'ペット',        emoji: '🐾' },
   { ja: 'インテリア',    emoji: '🏠' },
-  { ja: 'キッチン',      emoji: '🍳' },
-  { ja: '工具・DIY',     emoji: '🔧' },
   { ja: 'リラックス',    emoji: '💆' },
 ];
 
@@ -156,7 +154,7 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
 };
 
 // ── 価格スライダー ────────────────────────────────────────────────────────
-const PRICE_MIN  = 500;
+const PRICE_MIN  = 100;
 const PRICE_MAX  = 10000;
 const PRICE_STEP = 100;
 
@@ -210,7 +208,7 @@ const BudgetView = memo(({ maxPrice, setMaxPrice, filteredTotal }) => (
         </div>
         <PriceSlider value={maxPrice} onChange={setMaxPrice} />
         <div className="flex justify-between text-[10px] opacity-70 mt-1">
-          <span>¥500</span><span>¥10,000</span>
+          <span>¥{PRICE_MIN.toLocaleString()}</span><span>¥{PRICE_MAX.toLocaleString()}</span>
         </div>
       </div>
     </div>
@@ -723,7 +721,7 @@ export default function App() {
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-pink-200/30 to-red-200/20 rounded-full blur-2xl" />
 
           <div className="flex items-center justify-between relative z-10">
-            <img src="/logo.png" alt="アリエクSwipe" className="h-8 w-auto" />
+            <a href="/" className="flex-shrink-0"><img src="/logo.png" alt="アリエクSwipe" className="h-8 w-auto" /></a>
             <div className="flex gap-1.5 items-center">
               {feverMode && (
                 <motion.span

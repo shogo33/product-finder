@@ -48,15 +48,13 @@ const JACCARD_THRESH = 0.75;  // 重複排除閾値（0.60→0.75 に緩和）
 
 const PHASE1_QUOTA = {
   gadget:  400,
-  outdoor: 300,
+  outdoor: 350,
   mens:    200,
   cute:    250,
-  funny:   100,
-  pet:     150,
-  home:    200,
-  kitchen: 150,
-  tools:   150,
-  relax:   150,
+  funny:   120,
+  pet:     180,
+  home:    220,
+  relax:   180,
 };
 const PHASE2_QUOTA = 200;
 const PAGE_SIZE    = 50;
@@ -506,38 +504,65 @@ const KEYWORD_PLAN = [
   { kw: 'ceramic pleated flower vase',       vertical: 'home' },
   { kw: 'motion sensor led light strip',     vertical: 'home' },
 
-  // ── キッチン・QOL便利調理器具 (10) ───────────────────────────────────────
-  { kw: 'electric milk frother whisk',       vertical: 'kitchen' },
-  { kw: 'rechargeable coffee foam maker',    vertical: 'kitchen' },
-  { kw: 'automatic pepper mill gravity',     vertical: 'kitchen' },
-  { kw: 'electric salt and pepper grinder',  vertical: 'kitchen' },
-  { kw: 'mini bag sealer portable',          vertical: 'kitchen' },
-  { kw: 'vacuum sealer machine hand',        vertical: 'kitchen' },
-  { kw: 'silicone stretch lids reusable',    vertical: 'kitchen' },
-  { kw: 'food grade silicone bowl covers',   vertical: 'kitchen' },
-  { kw: 'digital kitchen scale timer',       vertical: 'kitchen' },
-  { kw: 'electronic drip coffee scale',      vertical: 'kitchen' },
+  // ── リラクゼーション・健康ガジェット (12) ────────────────────────────────
+  { kw: 'electric massage gun portable',        vertical: 'relax' },
+  { kw: 'mini deep tissue muscle massager',     vertical: 'relax' },
+  { kw: 'ems foot massager mat electric',       vertical: 'relax' },
+  { kw: 'pulse foot acupuncture pad',           vertical: 'relax' },
+  { kw: 'smart posture corrector sensor',       vertical: 'relax' },
+  { kw: 'back posture vibration reminder',      vertical: 'relax' },
+  { kw: 'smart heated eye massager',            vertical: 'relax' },
+  { kw: 'usb sleep eyes heating mask',          vertical: 'relax' },
+  { kw: 'foam roller muscle workout recovery',  vertical: 'relax' },
+  { kw: 'acupressure mat pillow set spine',     vertical: 'relax' },
+  { kw: 'resistance band loop set exercise',    vertical: 'relax' },
+  { kw: 'cervical neck traction pillow',        vertical: 'relax' },
 
-  // ── 工具・DIY・男のガレージ (9) ──────────────────────────────────────────
-  { kw: 'precision screwdriver set 120in1',      vertical: 'tools' },
-  { kw: 'electric mini screwdriver rechargeable', vertical: 'tools' },
-  { kw: 'digital vernier caliper micrometer',     vertical: 'tools' },
-  { kw: 'stainless steel electronic caliper',     vertical: 'tools' },
-  { kw: 'laser level meter horizontal',           vertical: 'tools' },
-  { kw: 'cross line self leveling laser',         vertical: 'tools' },
-  { kw: 'multipurpose edc pocket tool',           vertical: 'tools' },
-  { kw: '18in1 snowflake multi tool',             vertical: 'tools' },
-  { kw: 'wire stripper cutter automatic',         vertical: 'tools' },
+  // ── アウトドア 追加 (9) ──────────────────────────────────────────────────
+  { kw: 'camping tent 2 person lightweight',    vertical: 'outdoor' },
+  { kw: 'sleeping bag compact cold weather',    vertical: 'outdoor' },
+  { kw: 'camping sleeping mat insulating pad',  vertical: 'outdoor' },
+  { kw: 'folding camping table aluminum',       vertical: 'outdoor' },
+  { kw: 'camping chair foldable portable',      vertical: 'outdoor' },
+  { kw: 'camp stove portable windproof gas',    vertical: 'outdoor' },
+  { kw: 'water purification filter straw',      vertical: 'outdoor' },
+  { kw: 'solar charger panel outdoor portable', vertical: 'outdoor' },
+  { kw: 'mosquito repellent bracelet outdoor',  vertical: 'outdoor' },
 
-  // ── リラクゼーション・健康ガジェット (8) ──────────────────────────────────
-  { kw: 'electric massage gun portable',      vertical: 'relax' },
-  { kw: 'mini deep tissue muscle massager',   vertical: 'relax' },
-  { kw: 'ems foot massager mat electric',     vertical: 'relax' },
-  { kw: 'pulse foot acupuncture pad',         vertical: 'relax' },
-  { kw: 'smart posture corrector sensor',     vertical: 'relax' },
-  { kw: 'back posture vibration reminder',    vertical: 'relax' },
-  { kw: 'smart heated eye massager',          vertical: 'relax' },
-  { kw: 'usb sleep eyes heating mask',        vertical: 'relax' },
+  // ── ガジェット 追加 (4) ──────────────────────────────────────────────────
+  { kw: 'mini pocket projector portable',       vertical: 'gadget' },
+  { kw: 'smart wifi plug schedule timer',       vertical: 'gadget' },
+  { kw: 'ring light usb desk streaming',        vertical: 'gadget' },
+  { kw: 'nfc tag programmable sticker',         vertical: 'gadget' },
+
+  // ── メンズ 追加 (4) ─────────────────────────────────────────────────────
+  { kw: 'tactical pen edc glass breaker',       vertical: 'mens' },
+  { kw: 'car key case genuine leather cover',   vertical: 'mens' },
+  { kw: 'watch stand wooden display men',       vertical: 'mens' },
+  { kw: 'travel organizer pouch insert men',    vertical: 'mens' },
+
+  // ── おもしろ 追加 (4) ────────────────────────────────────────────────────
+  { kw: 'desktop zen garden mini sand rake',    vertical: 'funny' },
+  { kw: 'mini basketball hoop desk suction',    vertical: 'funny' },
+  { kw: 'neon led sign small bedroom pink',     vertical: 'funny' },
+  { kw: 'desktop punching ball spring stress',  vertical: 'funny' },
+
+  // ── ペット 追加 (4) ─────────────────────────────────────────────────────
+  { kw: 'cat tunnel collapsible play tube',     vertical: 'pet' },
+  { kw: 'pet carrier backpack outdoor cat dog', vertical: 'pet' },
+  { kw: 'cat scratcher corrugated cardboard',   vertical: 'pet' },
+  { kw: 'grooming glove pet brush silicone',    vertical: 'pet' },
+
+  // ── インテリア 追加 (4) ──────────────────────────────────────────────────
+  { kw: 'led neon sign bedroom aesthetic',      vertical: 'home' },
+  { kw: 'fairy lights usb twinkle bedroom',     vertical: 'home' },
+  { kw: 'touch lamp bedside warm led',          vertical: 'home' },
+  { kw: 'corner floating shelf wall mount',     vertical: 'home' },
+
+  // ── シール・ケース 追加 (3) ──────────────────────────────────────────────
+  { kw: 'magsafe wallet card holder iphone',    vertical: 'cute' },
+  { kw: 'camera lens protector ring iphone',    vertical: 'cute' },
+  { kw: 'phone grip ring stand magnetic',       vertical: 'cute' },
 ];
 
 const SWEEP_KEYWORDS = [

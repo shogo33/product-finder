@@ -1,0 +1,39 @@
+name: 商品プール自動更新
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # 毎日 05:00 JST (UTC 20:00)
+  workflow_dispatch:        # GitHub画面から手動実行ボタン
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run refresh script
+        run: node scripts/refresh-products.mjs
+        env:
+          ALIEXPRESS_APP_KEY: ${{ secrets.ALIEXPRESS_APP_KEY }}
+          ALIEXPRESS_APP_SECRET: ${{ secrets.ALIEXPRESS_APP_SECRET }}
+          ALIEXPRESS_TRACKING_ID: ${{ secrets.ALIEXPRESS_TRACKING_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit and push
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add public/products.json data/refresh-state.json
+          git diff --staged --quiet || (git commit -m "商品プール自動更新 $(date +'%Y-%m-%d')" && git push)
