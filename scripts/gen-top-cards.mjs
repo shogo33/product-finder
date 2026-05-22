@@ -20,6 +20,9 @@ const CARD_TAG_OVERRIDE = {
   'aliexpress-1000yen-kawatte-yokatta': 'プチプラ',
   'aliexpress-osusume':                'おすすめ商品',
   'aliexpress-hyoban':                 '評判・口コミ',
+  'aliexpress-size':                   '買い方ガイド',
+  'aliexpress-projector-under-10000':  'プロジェクター',
+  'aliexpress-sticker-osusume':        'ステッカー',
 };
 function getCardTag(slug, folder) {
   if (CARD_TAG_OVERRIDE[slug]) return CARD_TAG_OVERRIDE[slug];
