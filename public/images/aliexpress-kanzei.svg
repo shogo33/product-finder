@@ -1,0 +1,23 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#eff6ff"/>
+  <!-- 荷物ボックス -->
+  <rect x="60" y="70" width="110" height="100" rx="8" fill="white" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="60" y="70" width="110" height="28" rx="8" fill="#3b82f6"/>
+  <rect x="60" y="84" width="110" height="14" fill="#3b82f6"/>
+  <text x="115" y="99" font-family="sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">PACKAGE</text>
+  <!-- 荷物のひも -->
+  <line x1="115" y1="98" x2="115" y2="170" stroke="#bfdbfe" stroke-width="2"/>
+  <line x1="60" y1="128" x2="170" y2="128" stroke="#bfdbfe" stroke-width="2"/>
+  <!-- 免税ライン強調 -->
+  <rect x="190" y="58" width="162" height="76" rx="10" fill="white" stroke="#e8253a" stroke-width="2"/>
+  <rect x="190" y="58" width="162" height="24" rx="10" fill="#e8253a"/>
+  <rect x="190" y="70" width="162" height="12" fill="#e8253a"/>
+  <text x="271" y="80" font-family="sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">免税ライン</text>
+  <text x="271" y="108" font-family="sans-serif" font-size="22" font-weight="900" fill="#e8253a" text-anchor="middle">16,666円</text>
+  <text x="271" y="126" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">以下なら関税ゼロ</text>
+  <!-- 税率バー -->
+  <rect x="190" y="148" width="162" height="36" rx="8" fill="#dbeafe"/>
+  <text x="271" y="162" font-family="sans-serif" font-size="9" fill="#1d4ed8" text-anchor="middle">衣類 12%　電子機器 0%</text>
+  <text x="271" y="177" font-family="sans-serif" font-size="9" fill="#1d4ed8" text-anchor="middle">おもちゃ 0%　靴 30%</text>
+  <text x="200" y="210" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">関税計算・節税ガイド</text>
+</svg>

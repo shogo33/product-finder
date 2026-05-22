@@ -140,6 +140,19 @@
     .amazon-rec-list:not(.expanded) .amazon-rec-item:nth-child(n+4) { display: none; }
     .amazon-rec-toggle { display: block; text-align: center; margin-top: 12px; color: #f59e0b; font-size: 0.82rem; font-weight: 700; cursor: pointer; background: none; border: 1px solid #fde68a; border-radius: 8px; padding: 8px; width: 100%; }
     .amazon-rec-toggle:hover { background: #fff8f0; }
+  
+    /* Reddit生の声ブロック */
+    .reddit-voices { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin: 40px 0; }
+    .voices-header { margin-bottom: 20px; }
+    .voices-badge { display: inline-block; background: #ff4500; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .voices-title { font-size: 1.05rem; font-weight: 700; margin: 6px 0 8px; }
+    .voices-meta { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+    .voice-item { border-top: 1px solid var(--border); padding: 16px 0; }
+    .voice-item:last-child { padding-bottom: 0; }
+    .voice-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .voice-title { font-size: 0.97rem; font-weight: 700; margin-bottom: 6px; }
+    .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
+    .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -640,7 +653,40 @@
 
     <p>また、UGREENブランドの他製品に興味が出てきた方は、<a href="/basics/ugreen-mouse-osusume.html">UGREENマウスのおすすめ比較記事</a>も合わせてどうぞ。ガジェット全体のコスパ感が伝わります。</p>
 
-    <h2>よくある質問｜UGREENイヤホンについてのQ&A</h2>
+            <!-- VOICE-START -->
+    <div class="reddit-voices">
+      <div class="voices-header">
+        <span class="voices-badge">Reddit r/headphones</span>
+        <h3 class="voices-title">利用者のリアルな本音と注意点</h3>
+        <p class="voices-meta">直近1ヶ月のRedditの書き込み約11件をAIで分析（2026-05更新）。満足の声が約73%、不満・トラブルの声が約18%でした。</p>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">⭐ 【高評価】</div>
+        <div class="voice-title">技術性と音質の両立</div>
+        <p class="voice-body">約7割の投稿で高い技術性と音質バランスを評価する声が目立つ。特にプラナー型やハイエンドモデルの解像度と詳細度への満足度が高い傾向。同価格帯で優れたコスパを実現するモデルへの言及が複数件見られる。</p>
+        <div class="voice-action">対策：予算に応じてコスパ重視とハイエンド志向を分けて検討し、同価格帯の複数製品と音質比較を行うことを推奨。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">🔧 【トラブル多発】</div>
+        <div class="voice-title">タッチコントロール不具合</div>
+        <p class="voice-body">11件中1件で低価格帯ワイヤレスイヤホンのタッチ誤反応が重大な不満として報告されている。横になる際の誤動作でペアリングモードに入るなど、実用面での課題が指摘されている傾向。</p>
+        <div class="voice-action">対策：タッチ感度調整機能や物理ボタン搭載モデルを選択し、購入前にレビューでの誤反応報告の有無を確認する。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">🎧 【対策・傾向】</div>
+        <div class="voice-title">新技術への期待と検証</div>
+        <p class="voice-body">MEMS技術やトリブリッド構成など新技術の実装例が複数投稿で言及されている。実際の音響性能との乖離や「世界初」謳い文句の正確性を検証する傾向が11件中3件で確認される。</p>
+        <div class="voice-action">対策：新技術搭載製品は他の実装例との比較レビューを複数確認し、マーケティング表現の精度を自身で検証してから購入決定する。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">💰 【選択指針】</div>
+        <div class="voice-title">価格帯別の満足度差</div>
+        <p class="voice-body">500USD以上のハイエンドモデルと50USD以下の予算モデル両方で詳細レビューが投稿されており、各価格帯での「ベスト選択肢」の検討が活発。同価格帯内での比較優位性がユーザー満足度を左右する傾向が強い。</p>
+        <div class="voice-action">対策：自身の予算枠を決めた後、その価格帯内での複数製品比較投稿を集約して検討し、目的別（音質重視・コスパ重視・装着感重視）に優先順位を設定する。</div>
+      </div>
+    </div>
+    <!-- VOICE-END -->
+<h2>よくある質問｜UGREENイヤホンについてのQ&A</h2>
 
     <h3>Q1: UGREENイヤホンはAliExpressで買っても本物ですか？</h3>
     <p>「UGREEN Official Store」から購入すれば本物です。AliExpressには公式ストアが存在するので、そこからの購入を徹底してください。第三者セラーからの購入はセラー評価98%以上・取引件数が多いことを確認してから判断しましょう。保証・返品もAliExpress購入者保護が適用されます。</p>

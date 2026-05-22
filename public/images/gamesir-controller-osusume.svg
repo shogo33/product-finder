@@ -1,0 +1,30 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#1a1a2e"/>
+  <!-- コントローラー本体 -->
+  <rect x="90" y="72" width="220" height="110" rx="36" fill="#16213e"/>
+  <rect x="90" y="72" width="220" height="110" rx="36" fill="none" stroke="#e8253a" stroke-width="2"/>
+  <!-- 左スティック -->
+  <circle cx="152" cy="130" r="18" fill="#0f3460"/>
+  <circle cx="152" cy="130" r="18" stroke="#4a4a6a" stroke-width="1.5" fill="none"/>
+  <circle cx="152" cy="130" r="7" fill="#e8253a"/>
+  <!-- 右スティック -->
+  <circle cx="228" cy="148" r="18" fill="#0f3460"/>
+  <circle cx="228" cy="148" r="18" stroke="#4a4a6a" stroke-width="1.5" fill="none"/>
+  <circle cx="228" cy="148" r="7" fill="#e8253a"/>
+  <!-- 十字キー -->
+  <rect x="116" y="142" width="8" height="24" rx="2" fill="#4a4a6a"/>
+  <rect x="108" y="150" width="24" height="8" rx="2" fill="#4a4a6a"/>
+  <!-- ABXYボタン -->
+  <circle cx="270" cy="108" r="9" fill="#16a34a"/>
+  <text x="270" y="112" font-family="sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">A</text>
+  <circle cx="254" cy="96" r="9" fill="#3b82f6"/>
+  <text x="254" y="100" font-family="sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">X</text>
+  <circle cx="286" cy="96" r="9" fill="#f59e0b"/>
+  <text x="286" y="100" font-family="sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">Y</text>
+  <circle cx="270" cy="84" r="9" fill="#e8253a"/>
+  <text x="270" y="88" font-family="sans-serif" font-size="8" font-weight="700" fill="white" text-anchor="middle">B</text>
+  <!-- Hall Effectバッジ -->
+  <rect x="148" y="76" width="104" height="22" rx="11" fill="#e8253a"/>
+  <text x="200" y="91" font-family="sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">Hall Effect ✓</text>
+  <text x="200" y="210" font-family="sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle">GameSir 公式ストア比較ガイド</text>
+</svg>

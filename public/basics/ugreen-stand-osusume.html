@@ -130,6 +130,19 @@
     .faq-q.open::after { content: "－"; }
     .faq-a { display: none; padding: 0 18px 16px; font-size: 0.9rem; line-height: 1.75; background: #fff; }
     .faq-a.open { display: block; }
+  
+    /* Reddit生の声ブロック */
+    .reddit-voices { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin: 40px 0; }
+    .voices-header { margin-bottom: 20px; }
+    .voices-badge { display: inline-block; background: #ff4500; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .voices-title { font-size: 1.05rem; font-weight: 700; margin: 6px 0 8px; }
+    .voices-meta { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+    .voice-item { border-top: 1px solid var(--border); padding: 16px 0; }
+    .voice-item:last-child { padding-bottom: 0; }
+    .voice-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .voice-title { font-size: 0.97rem; font-weight: 700; margin-bottom: 6px; }
+    .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
+    .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -517,7 +530,40 @@
       <div class="faq-a"><p>はい、MagSafeスタンド自体には充電機能は内蔵されておらず、<strong>別途MagSafe充電器が必要</strong>です。スタンドを使ってiPhoneをマグネットで固定しつつ、MagSafe充電器のケーブルをスタンドに通すことで充電しながら使えます。</p></div>
     </div>
 
-    <hr>
+            <!-- VOICE-START -->
+    <div class="reddit-voices">
+      <div class="voices-header">
+        <span class="voices-badge">Reddit r/Aliexpress</span>
+        <h3 class="voices-title">利用者のリアルな本音と注意点</h3>
+        <p class="voices-meta">直近1ヶ月のRedditの書き込み約7件をAIで分析（2026-05更新）。満足の声が約14%、不満・トラブルの声が約71%でした。</p>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">💰 【価格改悪】</div>
+        <div class="voice-title">割引が機能していない</div>
+        <p class="voice-body">7件中6件で価格上昇とコイン割引の無効化が報告されている。EU圏での割引率が大幅に低下し、地域ごとの差別的な価格設定が常態化している傾向が見られる。送料上昇と税制強化により、AliExpressの価格優位性が喪失しつつある。</p>
+        <div class="voice-action">対策：購入前に複数地域の価格を確認し、割引適用後の総額で地元店舗と比較すること。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">🚫 【アカウント停止】</div>
+        <div class="voice-title">返品後の不正停止リスク</div>
+        <p class="voice-body">7件中2件で返品後のアカウント突然停止と返金拒否が発生している。高額商品の返品時に利用規約違反を理由とした報復的なアカウント凍結が複数報告されており、返金処理が完了しないまま沈黙する傾向が強い。</p>
+        <div class="voice-action">対策：高額商品（$20以上）の購入を避け、やむを得ない場合はクレジットカード会社へのチャージバック準備を整えておくこと。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">⚠️ 【品質低下】</div>
+        <div class="voice-title">商品品質と配送トラブル</div>
+        <p class="voice-body">7件中3件で不良品・配送紛失・偽物疑い報告がある。返金処理が滞り、配送業者（Ecoscooting等）が配達完了と虚偽報告する事例が増加。低価格帯でも高評価レビューが信頼できない状況が常態化している。</p>
+        <div class="voice-action">対策：信頼性の高いブランド名（Anker・Ugreen等）を選び、セラーの詳細評価とFAQを必ず確認した上で購入すること。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">📞 【対策・傾向】</div>
+        <div class="voice-title">サポート体制の機能不全</div>
+        <p class="voice-body">紛争発生時にAliExpressが配送業者に丸投げし、配送業者との無限ループが生じている。返金請求への対応が形式的で実質的な解決につながらない傾向が強い。7件中4件でサポート側の対応不備が報告されている。</p>
+        <div class="voice-action">対策：トラブル発生時は早期にクレジットカード会社か消費者保護機関への相談を検討し、AliExpressのみに依存しないこと。</div>
+      </div>
+    </div>
+    <!-- VOICE-END -->
+<hr>
 
     <h2>まとめ：用途で選ぶUGREENスタンド</h2>
     <p>UGREENのスマホスタンドは、どのモデルも<strong>価格帯を超えたクオリティ</strong>が共通の強みです。選ぶポイントは用途の一点。</p>

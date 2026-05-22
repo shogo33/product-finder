@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#fff7ed"/>
+  <!-- 配送トラック -->
+  <rect x="44" y="88" width="140" height="80" rx="8" fill="white" stroke="#f97316" stroke-width="2"/>
+  <rect x="44" y="88" width="140" height="26" rx="8" fill="#f97316"/>
+  <rect x="44" y="100" width="140" height="14" fill="#f97316"/>
+  <text x="114" y="111" font-family="sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">Standard Shipping</text>
+  <!-- 無料バッジ -->
+  <circle cx="114" cy="143" r="22" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="114" y="140" font-family="sans-serif" font-size="9" font-weight="700" fill="#f97316" text-anchor="middle">送料</text>
+  <text x="114" y="153" font-family="sans-serif" font-size="11" font-weight="900" fill="#f97316" text-anchor="middle">無料</text>
+  <!-- 矢印 -->
+  <path d="M196 128 L222 128" stroke="#f97316" stroke-width="2.5" stroke-dasharray="4,3"/>
+  <polygon points="222,122 232,128 222,134" fill="#f97316"/>
+  <!-- 料金カード -->
+  <rect x="236" y="68" width="120" height="108" rx="10" fill="white" stroke="#f97316" stroke-width="1.5"/>
+  <rect x="236" y="68" width="120" height="28" rx="10" fill="#f97316"/>
+  <rect x="236" y="82" width="120" height="14" fill="#f97316"/>
+  <text x="296" y="93" font-family="sans-serif" font-size="10" font-weight="700" fill="white" text-anchor="middle">配送料金比較</text>
+  <text x="248" y="116" font-family="sans-serif" font-size="9" fill="#374151">Standard</text>
+  <text x="346" y="116" font-family="sans-serif" font-size="9" font-weight="700" fill="#16a34a" text-anchor="end">無料〜</text>
+  <line x1="244" y1="122" x2="348" y2="122" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="248" y="136" font-family="sans-serif" font-size="9" fill="#374151">EMS</text>
+  <text x="346" y="136" font-family="sans-serif" font-size="9" fill="#374151" text-anchor="end">1,500円〜</text>
+  <line x1="244" y1="142" x2="348" y2="142" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="248" y="156" font-family="sans-serif" font-size="9" fill="#374151">DHL</text>
+  <text x="346" y="156" font-family="sans-serif" font-size="9" fill="#374151" text-anchor="end">2,000円〜</text>
+  <text x="200" y="210" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">送料無料の条件・配送方法比較</text>
+</svg>

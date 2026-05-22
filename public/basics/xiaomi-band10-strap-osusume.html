@@ -170,6 +170,19 @@
     .amazon-rec-list:not(.expanded) .amazon-rec-item:nth-child(n+4) { display: none; }
     .amazon-rec-toggle { display: block; text-align: center; margin-top: 12px; color: #f59e0b; font-size: 0.82rem; font-weight: 700; cursor: pointer; background: none; border: 1px solid #fde68a; border-radius: 8px; padding: 8px; width: 100%; }
     .amazon-rec-toggle:hover { background: #fff8f0; }
+  
+    /* Reddit生の声ブロック */
+    .reddit-voices { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin: 40px 0; }
+    .voices-header { margin-bottom: 20px; }
+    .voices-badge { display: inline-block; background: #ff4500; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .voices-title { font-size: 1.05rem; font-weight: 700; margin: 6px 0 8px; }
+    .voices-meta { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+    .voice-item { border-top: 1px solid var(--border); padding: 16px 0; }
+    .voice-item:last-child { padding-bottom: 0; }
+    .voice-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .voice-title { font-size: 0.97rem; font-weight: 700; margin-bottom: 6px; }
+    .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
+    .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }
   </style>
 
   <script type="application/ld+json">
@@ -635,7 +648,40 @@
       <p>Band 8・9・10は同じコネクタ規格なので、Band 8/9対応と書かれていればBand 10でも使えます。NFC版も形状・規格は共通です。</p>
 
       <!-- FAQ -->
-      <h2 id="faq">よくある質問</h2>
+              <!-- VOICE-START -->
+    <div class="reddit-voices">
+      <div class="voices-header">
+        <span class="voices-badge">Reddit r/Xiaomi</span>
+        <h3 class="voices-title">利用者のリアルな本音と注意点</h3>
+        <p class="voices-meta">直近1ヶ月のRedditの書き込み約6件をAIで分析（2026-05更新）。満足の声が約17%、不満・トラブルの声が約50%でした。</p>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">📱 【トラブル多発】</div>
+        <div class="voice-title">Wi-Fi接続の不安定性</div>
+        <p class="voice-body">複数ユーザーからWi-Fi接続が頻繁に切断される報告が寄せられている。高性能ルーターとの組み合わせでも発生する傾向があり、通常の使用シーン（Android AutoやWi-Fi Direct）では問題ないことから、ソフトウェア側の問題の可能性が指摘されている。</p>
+        <div class="voice-action">対策：ネットワーク設定でMLOやバンドステアリングを無効化し、WiFi 5での接続テストを試みることが有効。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">⌚ 【高評価】</div>
+        <div class="voice-title">Smart Band機能の便利性</div>
+        <p class="voice-body">Smart Band 9 Proについて、ユーザーから背景画像のカスタマイズを求める声が複数件確認されており、基本機能への関心が高い。ただしiPhone連携時の機能制限が存在し、全機能の利用にはAndroid環境が推奨される傾向がある。</p>
+        <div class="voice-action">対策：iPhoneユーザーはAndroidデバイス経由での初期設定を検討し、対応状況をXiaomi公式に確認することで対応状況を把握できる。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">🔧 【対策・傾向】</div>
+        <div class="voice-title">レコーディング機能の仕様差</div>
+        <p class="voice-body">スクリーンレコーダーで「システム音声とマイク音声の同時録音」を求める声が複数件あり、既存バージョンでは未実装な傾向が見られる。5年前の投稿を参考にAPKの置き換えを試みるユーザーもいるが、改善されていないケースが6割程度を占めている。</p>
+        <div class="voice-action">対策：Xiaomiサポートフォーラムで公式のマルチオーディオ対応状況を確認し、開発版ROMでの試験を検討する。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">🌐 【対策・傾向】</div>
+        <div class="voice-title">リモコンアプリのデータ移行</div>
+        <p class="voice-body">Mi Remoteで保存したリモコン設定（30件以上）の復元に失敗するユーザーが報告されており、HyperOS移行時のデータ同期問題が顕著。根抜き方法を避けたいユーザーが多く、非rootでの解決方法へのニーズが高まっている。</p>
+        <div class="voice-action">対策：ローカルバックアップとCN版ROMのMi Remote APKを組み合わせた移行方法が機能しているため、同じ環境構成での試行を推奨。</div>
+      </div>
+    </div>
+    <!-- VOICE-END -->
+<h2 id="faq">よくある質問</h2>
 
       <div class="faq">
         <div class="faq-item">

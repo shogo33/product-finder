@@ -132,6 +132,19 @@
     .amazon-rec-list:not(.expanded) .amazon-rec-item:nth-child(n+4) { display: none; }
     .amazon-rec-toggle { display: block; text-align: center; margin-top: 12px; color: #f59e0b; font-size: 0.82rem; font-weight: 700; cursor: pointer; background: none; border: 1px solid #fde68a; border-radius: 8px; padding: 8px; width: 100%; }
     .amazon-rec-toggle:hover { background: #fff8f0; }
+  
+    /* Reddit生の声ブロック */
+    .reddit-voices { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin: 40px 0; }
+    .voices-header { margin-bottom: 20px; }
+    .voices-badge { display: inline-block; background: #ff4500; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .voices-title { font-size: 1.05rem; font-weight: 700; margin: 6px 0 8px; }
+    .voices-meta { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+    .voice-item { border-top: 1px solid var(--border); padding: 16px 0; }
+    .voice-item:last-child { padding-bottom: 0; }
+    .voice-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .voice-title { font-size: 0.97rem; font-weight: 700; margin-bottom: 6px; }
+    .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
+    .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -602,6 +615,39 @@
 
 <p>AliExpressのBuyer Protection（購入者保護）が適用されます。商品未着や説明と異なる場合は<strong>注文日から15日〜90日以内に紛争申請</strong>することで返金を受けられます。Baseusの公式ストアは評価が高く、不良品対応も比較的スムーズです。念のため商品到着後すぐに動作確認する習慣をつけておきましょう。</p>
 
+        <!-- VOICE-START -->
+    <div class="reddit-voices">
+      <div class="voices-header">
+        <span class="voices-badge">Reddit r/Aliexpress</span>
+        <h3 class="voices-title">利用者のリアルな本音と注意点</h3>
+        <p class="voices-meta">直近1ヶ月のRedditの書き込み約7件をAIで分析（2026-05更新）。満足の声が約14%、不満・トラブルの声が約57%でした。</p>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">⚠️ 【トラブル多発】</div>
+        <div class="voice-title">スペック詐称・偽造品が横行</div>
+        <p class="voice-body">7件中4件でスペック詐称や偽造品に関する懸念が報告されている。特にLenovoやXiaomiなどの有名ブランドでは、実在しないモデルが高評価出品者から販売されており、数ヶ月で故障するケースが多い傾向にある。</p>
+        <div class="voice-action">対策：Anker、Ugreen、Pisen、Baseus等の実績ある充電デバイス専門ブランドを選定し、必ず商品レビューの実写画像を確認してから購入する。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">💔 【対策・傾向】</div>
+        <div class="voice-title">クーポン適用後のキャンセル・価格変動</div>
+        <p class="voice-body">7件中3件がクーポン使用時の不利な扱いと価格変動に関する不満を報告している。割引後の注文がキャンセルされたり、購入直後にセール価格が適用されるケースが報告されており、ユーザーは後から対応を求められる状況がある。</p>
+        <div class="voice-action">対策：クーポン購入前に返品規約を確認し、セール期間中の購入は避けて、定価安定期を狙うか事前に価格推移を追跡する。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">🔍 【高評価】</div>
+        <div class="voice-title">信頼できるブランド選別が重要</div>
+        <p class="voice-body">7件中2件で、Baseus等の専門ブランドを推奨する声が挙げられている。正規の充電デバイスメーカーは品質と耐久性で一定の評価を保っており、選別基準が明確なユーザーほど満足度が高い傾向がある。</p>
+        <div class="voice-action">対策：購入前にAliExpress内の出品者評価フィルターを活用し、「Brand+認証」だけでなく商品ページの購入者写真レビュー件数と5つ星比率を確認する。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">📉 【市場変化】</div>
+        <div class="voice-title">出品者の急な撤退・品切れ多発</div>
+        <p class="voice-body">7件中1件で、かつて評判の良かったVoltmeが突然検索から消失し連絡手段が限定される事例が報告されている。AliExpress上のモバイルバッテリー市場では出品者の急な撤退が散発的に発生する傾向にある。</p>
+        <div class="voice-action">対策：購入前に出品者のフォロワー数・販売実績・最近の更新日を確認し、できるだけ複数出品者の同一商品を比較購入する。</div>
+      </div>
+    </div>
+    <!-- VOICE-END -->
 <hr>
 
 <!-- ============================================================ -->

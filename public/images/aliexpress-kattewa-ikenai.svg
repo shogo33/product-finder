@@ -1,0 +1,26 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#fffbeb"/>
+  <!-- 警告三角 -->
+  <polygon points="200,28 296,178 104,178" fill="#fef08a" stroke="#f59e0b" stroke-width="3" stroke-linejoin="round"/>
+  <text x="200" y="160" font-family="sans-serif" font-size="52" font-weight="900" fill="#f59e0b" text-anchor="middle">!</text>
+  <!-- NGカード群 -->
+  <rect x="30" y="50" width="72" height="28" rx="6" fill="white" stroke="#e8253a" stroke-width="1.5"/>
+  <text x="66" y="60" font-family="sans-serif" font-size="8" font-weight="700" fill="#e8253a" text-anchor="middle">NG</text>
+  <text x="66" y="72" font-family="sans-serif" font-size="8" fill="#374151" text-anchor="middle">ブランド品</text>
+  <rect x="30" y="90" width="72" height="28" rx="6" fill="white" stroke="#e8253a" stroke-width="1.5"/>
+  <text x="66" y="100" font-family="sans-serif" font-size="8" font-weight="700" fill="#e8253a" text-anchor="middle">NG</text>
+  <text x="66" y="112" font-family="sans-serif" font-size="8" fill="#374151" text-anchor="middle">電気製品</text>
+  <rect x="30" y="130" width="72" height="28" rx="6" fill="white" stroke="#e8253a" stroke-width="1.5"/>
+  <text x="66" y="140" font-family="sans-serif" font-size="8" font-weight="700" fill="#e8253a" text-anchor="middle">NG</text>
+  <text x="66" y="152" font-family="sans-serif" font-size="8" fill="#374151" text-anchor="middle">食品・薬</text>
+  <rect x="298" y="50" width="72" height="28" rx="6" fill="white" stroke="#e8253a" stroke-width="1.5"/>
+  <text x="334" y="60" font-family="sans-serif" font-size="8" font-weight="700" fill="#e8253a" text-anchor="middle">NG</text>
+  <text x="334" y="72" font-family="sans-serif" font-size="8" fill="#374151" text-anchor="middle">評価ゼロ</text>
+  <rect x="298" y="90" width="72" height="28" rx="6" fill="white" stroke="#e8253a" stroke-width="1.5"/>
+  <text x="334" y="100" font-family="sans-serif" font-size="8" font-weight="700" fill="#e8253a" text-anchor="middle">NG</text>
+  <text x="334" y="112" font-family="sans-serif" font-size="8" fill="#374151" text-anchor="middle">不自然な安値</text>
+  <rect x="298" y="130" width="72" height="28" rx="6" fill="white" stroke="#e8253a" stroke-width="1.5"/>
+  <text x="334" y="140" font-family="sans-serif" font-size="8" font-weight="700" fill="#e8253a" text-anchor="middle">NG</text>
+  <text x="334" y="152" font-family="sans-serif" font-size="8" fill="#374151" text-anchor="middle">子供用おもちゃ</text>
+  <text x="200" y="210" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">買ってはいけない7カテゴリ</text>
+</svg>
