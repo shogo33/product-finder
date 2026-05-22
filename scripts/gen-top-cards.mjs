@@ -1,6 +1,6 @@
 /**
  * gen-top-cards.mjs
- * public/basics/ と public/shipping/ の記事を走査して index.html のおすすめ商品カードを自動更新
+ * basics/ shipping/ safety/ の記事を走査して index.html の各セクションを自動更新
  * 使い方: node scripts/gen-top-cards.mjs
  */
 import fs from 'fs';
@@ -10,27 +10,25 @@ const PUBLIC   = path.resolve('public');
 const INDEX    = path.join(PUBLIC, 'index.html');
 const BASICS   = path.join(PUBLIC, 'basics');
 const SHIPPING = path.join(PUBLIC, 'shipping');
-const INITIAL  = 6; // 初期表示件数
+const SAFETY   = path.join(PUBLIC, 'safety');
+const INITIAL  = 6; // おすすめセクション初期表示件数
 
-// サイトマップと同様に除外するスラッグ
 const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap']);
-
-// basics/ の中で「入門・基礎」セクションに入るもの（おすすめ商品に表示しない）
 const KNOWLEDGE_SLUGS = new Set(['aliexpress-what-is', 'aliexpress-account', 'aliexpress-choice']);
 
-// スラッグ→カードタグのマッピング
-const CARD_TAG = {
+const CARD_TAG_OVERRIDE = {
   'aliexpress-1000yen-kawatte-yokatta': 'プチプラ',
-  'aliexpress-osusume':               'おすすめ商品',
+  'aliexpress-osusume':                'おすすめ商品',
+  'aliexpress-hyoban':                 '評判・口コミ',
 };
 function getCardTag(slug, folder) {
-  if (CARD_TAG[slug]) return CARD_TAG[slug];
-  if (folder === 'shipping') return '配送・トラブル';
+  if (CARD_TAG_OVERRIDE[slug]) return CARD_TAG_OVERRIDE[slug];
+  if (folder === 'shipping') return '配送・追跡';
+  if (folder === 'safety')   return '安全性';
   if (slug.includes('naturehike')) return 'アウトドア';
   return 'おすすめ商品';
 }
 
-// HTMLからog:titleを抽出
 function extractTitle(html) {
   const og = html.match(/property="og:title"\s+content="([^"]+)"/);
   if (og) return og[1].trim();
@@ -38,31 +36,25 @@ function extractTitle(html) {
   return t ? t[1].trim().replace(/\s*\|\s*アリエクswipe.*$/, '').trim() : '';
 }
 
-// HTMLからog:descriptionを抽出
 function extractDesc(html) {
   const m = html.match(/property="og:description"\s+content="([^"]+)"/);
   return m ? m[1].trim() : '';
 }
 
-// HTMLから最初の商品サムネイル画像URLを抽出
 function extractThumb(html, slug) {
-  // aliexpress-osusume は専用SVGを使う
+  // スラッグ専用SVGがあれば優先
+  if (fs.existsSync(path.join(PUBLIC, 'images', `${slug}.svg`))) {
+    return `/images/${slug}.svg`;
+  }
   if (slug === 'aliexpress-osusume') return '/images/aliexpress-osusume.svg';
-
-  // ローカル保存済み商品画像（/images/products/{slug}/）を優先
   const localMatch = html.match(/src="(\/images\/products\/[^"]+\.(jpg|jpeg|png|webp))"/i);
   if (localMatch) return localMatch[1];
-
-  // 外部CDN（フォールバック）
   const aeAll = [...html.matchAll(/https?:\/\/ae-pic-a1\.aliexpress-media\.com\/kf\/[^\s"']+/gi)];
   if (aeAll.length > 0) return aeAll[0][0].split('"')[0].split("'")[0];
-
   const ugMatch = html.match(/https?:\/\/www\.ugreen\.com\/cdn\/shop\/files\/[^\s"'?]+/i);
   if (ugMatch) return ugMatch[0];
-
   const baMatch = html.match(/https?:\/\/www\.baseus\.com\/cdn\/shop\/files\/[^\s"'?]+/i);
   if (baMatch) return baMatch[0];
-
   return '/images/aliexpress-osusume.svg';
 }
 
@@ -70,33 +62,27 @@ function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// basics/ と shipping/ 以下のHTMLを収集（ファイル更新日が古い順）
-const collectEntries = (dir, folder) =>
-  fs.readdirSync(dir)
+function collectEntries(dir, folder) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
     .filter(f => f.endsWith('.html') && !SKIP.has(path.basename(f, '.html')))
-    .filter(f => folder !== 'basics' || !KNOWLEDGE_SLUGS.has(path.basename(f, '.html')))
     .map(f => {
       const full  = path.join(dir, f);
       const slug  = path.basename(f, '.html');
       const html  = fs.readFileSync(full, 'utf8');
       const mtime = fs.statSync(full).mtime;
       return { slug, html, mtime, folder };
-    });
+    })
+    .sort((a, b) => a.mtime - b.mtime);
+}
 
-const entries = [
-  ...collectEntries(BASICS, 'basics'),
-  ...collectEntries(SHIPPING, 'shipping'),
-].sort((a, b) => a.mtime - b.mtime); // 古い順（新着が末尾＝もっと見るで隠れる）
-
-// カードHTML生成
-const cards = entries.map(({ slug, html, folder }) => {
+function makeCardHtml({ slug, html, folder }) {
   const title = escHtml(extractTitle(html));
   const desc  = escHtml(extractDesc(html));
   const thumb = extractThumb(html, slug);
   const tag   = escHtml(getCardTag(slug, folder));
   const href  = `/${folder}/${slug}.html`;
   const alt   = escHtml(title.slice(0, 40));
-
   return `      <a href="${href}" class="article-card">
         <img src="${thumb}" class="card-thumb" alt="${alt}" loading="lazy">
         <div class="card-body">
@@ -106,7 +92,13 @@ const cards = entries.map(({ slug, html, folder }) => {
           <div class="card-arrow">読む</div>
         </div>
       </a>`;
-}).join('\n');
+}
+
+// ── おすすめ商品（basics/ のみ、入門記事除く） ──
+const basicsEntries = collectEntries(BASICS, 'basics')
+  .filter(e => !KNOWLEDGE_SLUGS.has(e.slug));
+
+const recommendCards = basicsEntries.map(makeCardHtml).join('\n');
 
 const showMoreScript = `    <div style="text-align:center;margin-top:16px;">
       <button id="show-more-btn" onclick="showMoreCards()" style="background:#e8253a;color:#fff;border:none;padding:12px 32px;border-radius:24px;font-size:0.88rem;font-weight:700;cursor:pointer;font-family:inherit;">もっと見る ↓</button>
@@ -125,27 +117,48 @@ const showMoreScript = `    <div style="text-align:center;margin-top:16px;">
         grid.querySelectorAll('.article-card').forEach(c => c.style.display = '');
         document.getElementById('show-more-btn').style.display = 'none';
       }
-    </script>`;
+    <\/script>`;
 
-const replacement = `    <!-- RECOMMEND-START -->
+const recommendBlock = `    <!-- RECOMMEND-START -->
     <div class="article-grid">
-${cards}
+${recommendCards}
     </div>
 ${showMoreScript}
     <!-- RECOMMEND-END -->`;
 
-// index.html を書き換え
-let indexHtml = fs.readFileSync(INDEX, 'utf8');
-const startMark = '<!-- RECOMMEND-START -->';
-const endMark   = '<!-- RECOMMEND-END -->';
-const si = indexHtml.indexOf(startMark);
-const ei = indexHtml.indexOf(endMark) + endMark.length;
+// ── 配送・追跡（shipping/ 全件） ──
+const shippingEntries = collectEntries(SHIPPING, 'shipping');
+const shippingCards = shippingEntries.map(makeCardHtml).join('\n');
+const shippingBlock = `    <!-- SHIPPING-START -->
+    <div class="article-grid">
+${shippingCards}
+    </div>
+    <!-- SHIPPING-END -->`;
 
-if (si === -1 || ei === -1) {
-  console.error('❌ RECOMMEND マーカーが index.html に見つかりません');
-  process.exit(1);
+// ── 安全性（safety/ 全件） ──
+const safetyEntries = collectEntries(SAFETY, 'safety');
+const safetyCards = safetyEntries.map(makeCardHtml).join('\n');
+const safetyBlock = `    <!-- SAFETY-START -->
+    <div class="article-grid">
+${safetyCards}
+    </div>
+    <!-- SAFETY-END -->`;
+
+// ── index.html 更新 ──
+function inject(html, startMark, endMark, block) {
+  const si = html.indexOf(startMark);
+  const ei = html.indexOf(endMark);
+  if (si === -1 || ei === -1) {
+    console.error(`❌ マーカー未発見: ${startMark}`);
+    return html;
+  }
+  return html.slice(0, si) + block + html.slice(ei + endMark.length);
 }
 
-indexHtml = indexHtml.slice(0, si) + replacement + indexHtml.slice(ei);
+let indexHtml = fs.readFileSync(INDEX, 'utf8');
+indexHtml = inject(indexHtml, '<!-- RECOMMEND-START -->', '<!-- RECOMMEND-END -->', recommendBlock);
+indexHtml = inject(indexHtml, '<!-- SHIPPING-START -->', '<!-- SHIPPING-END -->', shippingBlock);
+indexHtml = inject(indexHtml, '<!-- SAFETY-START -->',   '<!-- SAFETY-END -->',   safetyBlock);
 fs.writeFileSync(INDEX, indexHtml, 'utf8');
-console.log(`✅ index.html のおすすめカードを更新 (${entries.length}件: basics ${entries.filter(e=>e.folder==='basics').length}件 + shipping ${entries.filter(e=>e.folder==='shipping').length}件)`);
+
+console.log(`✅ index.html のおすすめカードを更新 (basics ${basicsEntries.length}件 / shipping ${shippingEntries.length}件 / safety ${safetyEntries.length}件)`);

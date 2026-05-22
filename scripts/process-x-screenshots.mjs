@@ -37,6 +37,13 @@ const FILE_TO_ARTICLE = {
   'アリエク 届いた':           { slug: 'aliexpress-nannichi',      folder: 'shipping' },
   'アリエク 配送':             { slug: 'aliexpress-nannichi',      folder: 'shipping' },
   'アリエク 遅':               { slug: 'aliexpress-nannichi',      folder: 'shipping' },
+  'アリエク 買ってはいけない':  { slug: 'aliexpress-kattewa-ikenai', folder: 'safety'   },
+  'アリエク 返金':             { slug: 'aliexpress-henkin',         folder: 'shipping' },
+  'アリエクスプレス 返金':      { slug: 'aliexpress-henkin',         folder: 'shipping' },
+  'アリエク 関税':             { slug: 'aliexpress-kanzei',         folder: 'shipping' },
+  'アリエク 送料':             { slug: 'aliexpress-soryo',          folder: 'shipping' },
+  'アリエク キャンセル':        { slug: 'aliexpress-cancel',         folder: 'shipping' },
+  'アリエク サイズ':            { slug: 'aliexpress-size',           folder: 'basics'   },
 };
 
 // ファイル名からクエリキーを抽出
@@ -103,12 +110,15 @@ async function extractTweetsFromSlice(b64, query) {
 async function generateVoiceHtml(tweets, query, slug) {
   const tweetText = tweets.map((t, i) => `[${i+1}] ${t}`).join('\n');
 
-  const res = await client.messages.create({
-    model: 'claude-haiku-4-5-20251001',
-    max_tokens: 1200,
-    messages: [{
-      role: 'user',
-      content: `X（旧Twitter）で「${query}など」と検索したツイート${tweets.length}件を分析し、
+  let res;
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    try {
+      res = await client.messages.create({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 1200,
+        messages: [{
+          role: 'user',
+          content: `X（旧Twitter）で「${query}など」と検索したツイート${tweets.length}件を分析し、
 「生の声まとめ」をJSON形式で出力してください。
 
 出力形式:
@@ -130,8 +140,16 @@ async function generateVoiceHtml(tweets, query, slug) {
 
 ツイートデータ:
 ${tweetText.slice(0, 6000)}`
-    }]
-  });
+        }]
+      });
+      break;
+    } catch (e) {
+      if (attempt < 5 && e.status === 529) {
+        console.log(`     ⏳ 過負荷のためリトライ ${attempt}/5...`);
+        await new Promise(r => setTimeout(r, 10000 * attempt));
+      } else { throw e; }
+    }
+  }
 
   const raw = res.content[0].text.trim().replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
   const data = JSON.parse(raw);
