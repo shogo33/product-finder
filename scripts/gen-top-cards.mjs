@@ -1,6 +1,6 @@
 /**
  * gen-top-cards.mjs
- * public/basics/ の記事を走査して index.html のおすすめ商品カードを自動更新
+ * public/basics/ と public/shipping/ の記事を走査して index.html のおすすめ商品カードを自動更新
  * 使い方: node scripts/gen-top-cards.mjs
  */
 import fs from 'fs';
@@ -9,6 +9,7 @@ import path from 'path';
 const PUBLIC   = path.resolve('public');
 const INDEX    = path.join(PUBLIC, 'index.html');
 const BASICS   = path.join(PUBLIC, 'basics');
+const SHIPPING = path.join(PUBLIC, 'shipping');
 const INITIAL  = 6; // 初期表示件数
 
 // サイトマップと同様に除外するスラッグ
@@ -22,8 +23,9 @@ const CARD_TAG = {
   'aliexpress-1000yen-kawatte-yokatta': 'プチプラ',
   'aliexpress-osusume':               'おすすめ商品',
 };
-function getCardTag(slug) {
+function getCardTag(slug, folder) {
   if (CARD_TAG[slug]) return CARD_TAG[slug];
+  if (folder === 'shipping') return '配送・トラブル';
   if (slug.includes('naturehike')) return 'アウトドア';
   return 'おすすめ商品';
 }
@@ -68,26 +70,31 @@ function escHtml(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// basics/ 以下のHTMLを収集（ファイル更新日が古い順）
-const entries = fs.readdirSync(BASICS)
-  .filter(f => f.endsWith('.html') && !SKIP.has(path.basename(f, '.html')))
-  .filter(f => !KNOWLEDGE_SLUGS.has(path.basename(f, '.html')))
-  .map(f => {
-    const full  = path.join(BASICS, f);
-    const slug  = path.basename(f, '.html');
-    const html  = fs.readFileSync(full, 'utf8');
-    const mtime = fs.statSync(full).mtime;
-    return { slug, html, mtime };
-  })
-  .sort((a, b) => a.mtime - b.mtime); // 古い順（新着が末尾＝もっと見るで隠れる）
+// basics/ と shipping/ 以下のHTMLを収集（ファイル更新日が古い順）
+const collectEntries = (dir, folder) =>
+  fs.readdirSync(dir)
+    .filter(f => f.endsWith('.html') && !SKIP.has(path.basename(f, '.html')))
+    .filter(f => folder !== 'basics' || !KNOWLEDGE_SLUGS.has(path.basename(f, '.html')))
+    .map(f => {
+      const full  = path.join(dir, f);
+      const slug  = path.basename(f, '.html');
+      const html  = fs.readFileSync(full, 'utf8');
+      const mtime = fs.statSync(full).mtime;
+      return { slug, html, mtime, folder };
+    });
+
+const entries = [
+  ...collectEntries(BASICS, 'basics'),
+  ...collectEntries(SHIPPING, 'shipping'),
+].sort((a, b) => a.mtime - b.mtime); // 古い順（新着が末尾＝もっと見るで隠れる）
 
 // カードHTML生成
-const cards = entries.map(({ slug, html }) => {
+const cards = entries.map(({ slug, html, folder }) => {
   const title = escHtml(extractTitle(html));
   const desc  = escHtml(extractDesc(html));
   const thumb = extractThumb(html, slug);
-  const tag   = escHtml(getCardTag(slug));
-  const href  = `/basics/${slug}.html`;
+  const tag   = escHtml(getCardTag(slug, folder));
+  const href  = `/${folder}/${slug}.html`;
   const alt   = escHtml(title.slice(0, 40));
 
   return `      <a href="${href}" class="article-card">
@@ -141,4 +148,4 @@ if (si === -1 || ei === -1) {
 
 indexHtml = indexHtml.slice(0, si) + replacement + indexHtml.slice(ei);
 fs.writeFileSync(INDEX, indexHtml, 'utf8');
-console.log(`✅ index.html のおすすめカードを更新 (${entries.length}件)`);
+console.log(`✅ index.html のおすすめカードを更新 (${entries.length}件: basics ${entries.filter(e=>e.folder==='basics').length}件 + shipping ${entries.filter(e=>e.folder==='shipping').length}件)`);

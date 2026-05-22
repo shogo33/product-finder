@@ -16,7 +16,8 @@
     "gen-sitemap": "node scripts/gen-sitemap.mjs",
     "gen-cards": "node scripts/gen-top-cards.mjs",
     "gen-ogp": "node scripts/gen-ogp.mjs",
-    "gen-all": "node scripts/gen-all.mjs"
+    "gen-all": "node scripts/gen-all.mjs",
+    "gen-voices": "node scripts/gen-voices.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アリエク 届かない時の対処法【完全版】返金申請（Dispute）の手順を解説 | アリエクswipe</title>
+  <meta name="description" content="アリエクの荷物が届かない時の対処法を完全解説。何日待てばいいか・セラーへの連絡方法・返金申請（Dispute）の開き方・返金が振り込まれるまでの流れをステップ別に紹介。" />
+  <meta name="keywords" content="アリエク 届かない, AliExpress 届かない 返金, アリエクスプレス dispute, アリエク 返金申請, AliExpress 紛争" />
+  <meta property="og:title" content="アリエク 届かない時の対処法【完全版】返金申請（Dispute）の手順を解説" />
+  <meta property="og:description" content="アリエクの荷物が届かない時の対処法を完全解説。何日待てばいいか・セラーへの連絡方法・返金申請（Dispute）の開き方・返金が振り込まれるまでの流れをステップ別に紹介。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://aliswipe.com/shipping/aliexpress-todokanai.html" />
+  <meta property="og:image" content="https://aliswipe.com/images/ogp/aliexpress-todokanai.jpg" />
+  <link rel="canonical" href="https://aliswipe.com/shipping/aliexpress-todokanai.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="アリエク 届かない時の対処法【完全版】返金申請（Dispute）の手順を解説" />
+  <meta name="twitter:description" content="アリエクの荷物が届かない時の対処法を完全解説。Dispute申請の手順・返金までの流れを解説。" />
+  <meta name="twitter:image" content="https://aliswipe.com/images/ogp/aliexpress-todokanai.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --red:    #e8253a;
+      --red-dk: #b81c2c;
+      --bg:     #fafaf8;
+      --surface:#ffffff;
+      --text:   #1a1a1a;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --max:    760px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+    .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
+    .article-hero .tag { display: inline-block; background: var(--red); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
+    .article-hero h1 { font-weight: 700; font-size: clamp(1.35rem, 4vw, 1.9rem); line-height: 1.45; max-width: 640px; margin: 0 auto 16px; }
+    .article-hero .meta { font-size: 0.82rem; color: var(--muted); }
+    .article-hero .meta span + span::before { content: " · "; }
+
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    .toc { background: #fff8f8; border: 1px solid #fecdcf; border-left: 4px solid var(--red); border-radius: var(--radius); padding: 20px 24px; margin: 32px 0; }
+    .toc-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 12px; color: var(--red); }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin: 6px 0; }
+    .toc a { color: var(--text); text-decoration: none; font-size: 0.9rem; }
+    .toc a:hover { color: var(--red); }
+
+    .article-body { padding: 24px 0 48px; }
+    .article-body h2 { font-size: 1.25rem; font-weight: 700; border-left: 4px solid var(--red); padding-left: 12px; margin: 44px 0 16px; scroll-margin-top: 80px; }
+    .article-body h3 { font-size: 1.02rem; font-weight: 700; margin: 30px 0 12px; padding-left: 10px; border-left: 2px solid #fecdcf; scroll-margin-top: 80px; }
+    .article-body p { margin: 12px 0; font-size: 0.95rem; }
+    .article-body ul, .article-body ol { padding-left: 24px; margin: 12px 0; }
+    .article-body li { margin: 7px 0; font-size: 0.94rem; }
+    .article-body strong { color: var(--red-dk); }
+    .article-body a { color: var(--red); }
+
+    .callout { background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--radius); padding: 14px 18px; margin: 18px 0; font-size: 0.88rem; line-height: 1.7; }
+    .callout::before { content: "💡 "; }
+    .callout-warn { background: #fff1f2; border: 1px solid #fecdcf; border-radius: var(--radius); padding: 14px 18px; margin: 18px 0; font-size: 0.88rem; line-height: 1.7; }
+    .callout-warn::before { content: "⚠️ "; }
+    .callout-check { background: #f0fdf4; border: 1px solid #86efac; border-radius: var(--radius); padding: 14px 18px; margin: 18px 0; font-size: 0.88rem; line-height: 1.7; }
+    .callout-check::before { content: "✅ "; }
+
+    /* ステップ */
+    .steps { margin: 20px 0; counter-reset: step; }
+    .step { display: flex; gap: 16px; margin: 16px 0; align-items: flex-start; }
+    .step-num { counter-increment: step; content: counter(step); background: var(--red); color: #fff; border-radius: 50%; width: 32px; height: 32px; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .step-body { flex: 1; }
+    .step-body strong { display: block; font-size: 0.97rem; margin-bottom: 4px; color: var(--text); }
+    .step-body p { font-size: 0.88rem; color: var(--muted); margin: 0; }
+
+    .related { margin: 48px 0 24px; }
+    .related-title { font-weight: 700; font-size: 1rem; margin-bottom: 16px; }
+    .related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 480px) { .related-grid { grid-template-columns: 1fr; } }
+    .related-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; text-decoration: none; color: var(--text); transition: border-color 0.2s, box-shadow 0.2s; }
+    .related-card:hover { border-color: var(--red); box-shadow: 0 2px 12px rgba(232,37,58,0.1); }
+    .related-card .rc-tag { font-size: 0.7rem; color: var(--red); font-weight: 700; margin-bottom: 6px; }
+    .related-card .rc-title { font-size: 0.88rem; font-weight: 700; line-height: 1.4; }
+
+    .cta-inline { background: linear-gradient(135deg, #e8253a 0%, #ff6b35 100%); border-radius: 12px; padding: 28px 24px; text-align: center; margin: 40px 0; color: #fff; }
+    .cta-inline .cta-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; opacity: 0.85; margin-bottom: 8px; }
+    .cta-inline h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+    .cta-inline p { font-size: 0.85rem; opacity: 0.9; margin-bottom: 20px; }
+    .cta-inline a { display: inline-block; background: #fff; color: #e8253a; font-weight: 700; font-size: 0.9rem; padding: 12px 28px; border-radius: 999px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+    .cta-inline a:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin: 12px 0; overflow: hidden; }
+    .faq-q { font-weight: 700; font-size: 0.95rem; padding: 16px 18px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; }
+    .faq-q::after { content: "＋"; color: var(--red); font-size: 1.1rem; flex-shrink: 0; margin-left: 8px; }
+    .faq-q.open::after { content: "－"; }
+    .faq-a { display: none; padding: 0 18px 16px; font-size: 0.9rem; line-height: 1.75; background: #fff; }
+    .faq-a.open { display: block; }
+
+    .site-footer { background: #1a1a1a; color: #9ca3af; text-align: center; padding: 32px 20px; font-size: 0.8rem; }
+    .site-footer a { color: #9ca3af; text-decoration: none; }
+    .site-footer a:hover { color: #fff; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; margin-bottom: 12px; flex-wrap: wrap; }
+    .footer-aff-notice { margin-top: 12px; font-size: 0.72rem; opacity: 0.6; line-height: 1.6; }
+
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+  
+    /* Reddit生の声ブロック */
+    .reddit-voices { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin: 40px 0; }
+    .voices-header { margin-bottom: 20px; }
+    .voices-badge { display: inline-block; background: #ff4500; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .voices-title { font-size: 1.05rem; font-weight: 700; margin: 6px 0 8px; }
+    .voices-meta { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+    .voice-item { border-top: 1px solid var(--border); padding: 16px 0; }
+    .voice-item:last-child { padding-bottom: 0; }
+    .voice-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .voice-title { font-size: 0.97rem; font-weight: 700; margin-bottom: 6px; }
+    .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
+    .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }
+  </style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7Y2RN13F5S');
+  </script>
+  <script src="/components.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "アリエク 届かない時の対処法【完全版】返金申請（Dispute）の手順を解説",
+    "description": "アリエクの荷物が届かない時の対処法を完全解説。何日待てばいいか・セラーへの連絡方法・返金申請（Dispute）の開き方・返金が振り込まれるまでの流れをステップ別に紹介。",
+    "url": "https://aliswipe.com/shipping/aliexpress-todokanai.html",
+    "image": "https://aliswipe.com/images/ogp/aliexpress-todokanai.jpg",
+    "datePublished": "2026-05-22",
+    "dateModified": "2026-05-22",
+    "author": { "@type": "Organization", "name": "アリエクswipe" },
+    "publisher": { "@type": "Organization", "name": "アリエクswipe", "url": "https://aliswipe.com/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://aliswipe.com/" },
+      { "@type": "ListItem", "position": 2, "name": "アリエク 届かない時の対処法【完全版】", "item": "https://aliswipe.com/shipping/aliexpress-todokanai.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<script id="site-header-inject"></script>
+
+<section class="article-hero">
+  <div class="tag">配送・トラブル</div>
+  <h1>アリエク 届かない時の対処法【完全版】<br>返金申請（Dispute）の手順を解説</h1>
+  <div class="meta">
+    <span>2026年05月22日更新</span>
+    <span>読了約7分</span>
+  </div>
+</section>
+
+<div class="container">
+  <div class="article-body">
+
+    <p>「注文してからもう1ヶ月以上経つのに荷物が来ない……」「追跡が止まったまま動かない」——AliExpressを使っていると、こういう状況に一度は遭遇します。</p>
+    <p>結論から言うと、<strong>AliExpressには返金申請（Dispute）という強力な保護制度があります</strong>。正しい手順を踏めば、ほぼ確実に返金してもらえます。この記事では「届かない」と気づいた瞬間からやることを順番に解説します。</p>
+
+    <div class="toc">
+      <div class="toc-title">📋 この記事の目次</div>
+      <ol>
+        <li><a href="#step1">STEP1：まず追跡を確認する</a></li>
+        <li><a href="#step2">STEP2：何日待てばいいか確認する</a></li>
+        <li><a href="#step3">STEP3：セラーにメッセージを送る</a></li>
+        <li><a href="#step4">STEP4：Dispute（返金申請）を開く</a></li>
+        <li><a href="#step5">STEP5：返金が完了するまでの流れ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </div>
+
+    <div class="callout-warn">AliExpressの注文には<strong>「注文保護期間」</strong>があります。この期間を過ぎるとDisputeを開けなくなるので注意。保護期間は通常、発送日から60〜90日間です。配送状況の確認と申請は早めに行いましょう。</div>
+
+    <h2 id="step1">STEP1：まず追跡を確認する</h2>
+
+    <p>荷物が届かない理由は大きく3つあります。</p>
+    <ul>
+      <li>① <strong>まだ配送中</strong>（遅延しているだけで動いている）</li>
+      <li>② <strong>追跡が止まっている</strong>（日本の税関で止まっているケースも多い）</li>
+      <li>③ <strong>紛失・未発送</strong>（Disputeが必要な状態）</li>
+    </ul>
+
+    <p>追跡番号はAliExpressアプリ・サイトの「注文詳細」→「追跡」から確認できます。追跡ができない・番号が不明な場合は<a href="/shipping/aliexpress-tsuiseki.html">AliExpress追跡の完全ガイド</a>を参考にしてください。</p>
+    <p>追跡サイト（<strong>17TRACK</strong> や <strong>Cainiao</strong>）で番号を検索すると、AliExpress上より詳細な状態がわかります。「Customs clearance（税関通過中）」と表示されていれば、もうしばらく待つだけで届く可能性が高いです。</p>
+
+    <div class="callout">追跡情報が2週間以上動いていない場合は、STEP3・4へ進んでください。</div>
+
+    <h2 id="step2">STEP2：何日待てばいいか確認する</h2>
+
+    <p>「まだ届かないのはおかしい」と判断する前に、配送方法別の目安日数を確認しましょう。</p>
+
+    <ul>
+      <li>📦 <strong>AliExpress Standard Shipping</strong>：15〜30日（遅れると45日超えることも）</li>
+      <li>✈️ <strong>AliExpress Premium Shipping</strong>：10〜20日</li>
+      <li>🚀 <strong>DHL / FedEx / EMS</strong>：5〜15日</li>
+      <li>🐢 <strong>中国郵政（ePacket含む）</strong>：20〜60日</li>
+    </ul>
+
+    <p>配送方法は注文詳細画面で確認できます。安い配送方法を選んでいる場合、<strong>45日以上かかることは珍しくありません</strong>。詳しくは<a href="/shipping/aliexpress-nannichi.html">配送日数の完全ガイド</a>を参照してください。</p>
+
+    <div class="callout-check">目安日数を超えても届かない、または追跡が2週間以上止まっているなら、次のステップへ進みましょう。</div>
+
+    <h2 id="step3">STEP3：セラーにメッセージを送る</h2>
+
+    <p>いきなりDisputeを開く前に、まずセラー（出品者）に連絡を入れるのがスムーズです。誠実なセラーであれば再発送や返金に応じてくれます。</p>
+
+    <h3>連絡方法</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>AliExpressアプリ/サイトで注文詳細を開く</strong>
+          <p>「マイオーダー」→該当注文をタップ</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>「Contact Seller（セラーに連絡）」をタップ</strong>
+          <p>チャット画面が開きます</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>英語か中国語でメッセージを送る</strong>
+          <p>例：「My order has not arrived yet. It's been over 45 days since shipping. Please check the status or provide a solution.」</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">セラーから返答がない、または「待ってください」だけで解決策がない場合は、Disputeに進みましょう。3〜5日待っても返答がなければDisputeを開いて問題ありません。</div>
+
+    <h2 id="step4">STEP4：Dispute（返金申請）を開く</h2>
+
+    <p>DisputeはAliExpressが間に入って解決を仲介する公式の返金申請制度です。<strong>注文保護期間内であれば、セラーが拒否しても最終的にAliExpressが判断して返金してくれます</strong>。</p>
+
+    <div class="callout-warn">Disputeは注文保護期間内にしか開けません。注文詳細の「注文保護」の残り日数を必ず確認してから進めてください。</div>
+
+    <h3>Disputeの開き方（手順）</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>注文詳細を開き「Open Dispute（紛争を開く）」をタップ</strong>
+          <p>アプリの場合：注文詳細 →「…」メニュー → Open Dispute</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>問題の種類を選ぶ</strong>
+          <p>「Item not received（商品が届いていない）」を選択します</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>返金額と解決方法を入力する</strong>
+          <p>「Full refund（全額返金）」を選択。理由欄には「The item has not arrived after X days. Tracking has not updated for X days.」のように記入します。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <strong>証拠を添付する（任意だが推奨）</strong>
+          <p>追跡画面のスクリーンショットを添付すると、AliExpressの判断が有利になります。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <strong>「Submit（送信）」で申請完了</strong>
+          <p>セラーに5〜7営業日の回答期限が設けられます。</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>セラーが拒否した場合</h3>
+    <p>セラーがDisputeを拒否または無視した場合、<strong>「Escalate to AliExpress（AliExpressに昇格）」ボタンが表示</strong>されます。これを押すとAliExpressのカスタマーサポートが直接介入し、独自に調査して判断を下します。証拠（追跡スクリーンショット等）があればほぼ返金されます。</p>
+
+    <div class="cta-inline">
+      <div class="cta-label">✨ アリエクのお得情報をチェック</div>
+      <h3>気になる商品をスワイプで探す</h3>
+      <p>アリエクでおすすめの商品をスワイプアプリで発見しよう。<br>お気に入りを見つけたら購入前に評価・レビューをしっかり確認。</p>
+      <a href="https://aliswipe.com/app/" target="_blank" rel="noopener">スワイプで商品を探す</a>
+    </div>
+
+    <h2 id="step5">STEP5：返金が完了するまでの流れ</h2>
+
+    <p>Disputeが解決して返金が承認されると、支払い方法によって以下の目安で返金されます。</p>
+
+    <ul>
+      <li>💳 <strong>クレジットカード</strong>：5〜14営業日（カード会社の処理時間による）</li>
+      <li>💰 <strong>AliExpressウォレット（残高）</strong>：即日〜2営業日</li>
+      <li>🏦 <strong>PayPal</strong>：3〜5営業日</li>
+      <li>📱 <strong>PayPay / コンビニ払い</strong>：AliExpressウォレットへ返金（出金には別途手続きが必要）</li>
+    </ul>
+
+    <div class="callout">返金はAliExpressウォレット（残高）が最も速く、次回の買い物にそのまま使えます。クレジットカードは明細への反映まで1〜2ヶ月かかる場合があります。</div>
+
+    <h3>返金が来ない場合</h3>
+    <p>承認から2週間以上経っても返金の兆候がない場合は、AliExpressのチャットサポート（アプリ内「Help Center」→ライブチャット）に Dispute 番号を伝えて確認を依頼してください。</p>
+
+                <!-- VOICE-START -->
+    <div class="reddit-voices">
+      <div class="voices-header">
+        <span class="voices-badge">X（旧Twitter）</span>
+        <h3 class="voices-title">利用者のリアルな本音と注意点</h3>
+        <p class="voices-meta">X上の直近の書き込み約396件をAIで分析（2026-05更新）。満足の声が約15%、不満・トラブルの声が約68%でした。</p>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">📦 【配送遅延】</div>
+        <div class="voice-title">2～3ヶ月待つのが常態化</div>
+        <p class="voice-body">約65%のユーザーが商品到着の遅さに不満を表明しており、2ヶ月以上待つケースが頻発している。追跡情報が不正確な場合も多く、実際の配送状況が把握しにくいという声が集中している。</p>
+        <div class="voice-action">対策：注文前に「配送予定日が60～90日」を前提に購入判断し、余裕を持ったスケジュール計画を立てる。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">💔 【非到着問題】</div>
+        <div class="voice-title">荷物が届かないまま消滅</div>
+        <p class="voice-body">約58%が「商品が最終的に届かない」という経験を報告している。セラーに連絡してもサポート対応が進まず、返金手続きの進行状況が不透明なままのケースが目立つ。</p>
+        <div class="voice-action">対策：届かない場合は30日以内に「紛争を開く」ボタンから返金手続きを開始し、セラーとの交渉記録を全て保存する。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">❌ 【品質落差】</div>
+        <div class="voice-title">届いても説明と違う商品</div>
+        <p class="voice-body">約42%が「色違い・別物・低品質」の商品受け取りを経験している。写真と実物のギャップが大きく、返品交換対応も複雑という不満が多く寄せられている。</p>
+        <div class="voice-action">対策：購入前に販売者レビュー（最低4.5★以上）を確認し、届いたら3日以内に写真撮影して返金・返品証拠を準備する。</div>
+      </div>
+      <div class="voice-item">
+        <div class="voice-label">✅ 【利点評価】</div>
+        <div class="voice-title">安さと手軽さは最強</div>
+        <p class="voice-body">約20%のユーザーは「値段が安い」「セラー対応が丁寧」「実際に届いた」と肯定的に評価している。特に金銭的に制約がある購入では有用という声がある。</p>
+        <div class="voice-action">対策：低リスク商品（1,000円以下）から始め、高評価セラーのリピート購入で成功率を高める。</div>
+      </div>
+    </div>
+    <!-- VOICE-END -->
+
+    <hr>
+
+    <h2 id="faq">よくある質問</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">注文保護期間が終わってしまいました。返金できませんか？</div>
+      <div class="faq-a"><p>保護期間が終了するとDisputeは開けません。ただし、クレジットカードで支払った場合はカード会社にチャージバックを申請できる場合があります。また、PayPalは180日以内であればPayPal側で異議申し立てが可能です。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">追跡番号が「Delivered（配達済み）」になっているのに届いていません。</div>
+      <div class="faq-a"><p>追跡上は配達済みでも実際に届いていないケースがあります。Disputeを開く際に「Item not received」を選び、「追跡上は配達済みだが受け取っていない」と明記してください。AliExpressは追跡情報だけで判断せず、状況を調査します。配達済みケースは難易度が上がるため、隣人への誤配・ポストの確認・管理人への確認も先に済ませておくと説明しやすくなります。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Disputeを開いても注文はキャンセルされますか？</div>
+      <div class="faq-a"><p>Dispute中は注文がキャンセルされるわけではありません。返金が決定した段階でキャンセル扱いになります。Dispute解決前に荷物が届いた場合は、Disputeを取り下げてください。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">セラーへの連絡は日本語でも大丈夫ですか？</div>
+      <div class="faq-a"><p>セラーの多くは中国語・英語対応です。翻訳ツール（Google翻訳など）で英語に変換してから送ると返答が早くなります。AliExpressアプリのチャット画面には自動翻訳機能があるので活用してください。</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">「注文確認」を誤って押してしまいました。返金できますか？</div>
+      <div class="faq-a"><p>「注文確認（Confirm Order）」ボタンは「商品を受け取った」とAliExpressに伝えるボタンです。押してしまうと通常の保護が終了しますが、すぐにAliExpressサポートに連絡すれば対応してもらえる場合があります。荷物が届いていない段階では絶対に押さないよう注意してください。</p></div>
+    </div>
+
+    <div class="related">
+      <div class="related-title">あわせて読みたい</div>
+      <div class="related-grid">
+        <a href="/shipping/aliexpress-tsuiseki.html" class="related-card">
+          <div class="rc-tag">配送・追跡</div>
+          <div class="rc-title">AliExpress追跡の完全ガイド【初心者向け】</div>
+        </a>
+        <a href="/shipping/aliexpress-nannichi.html" class="related-card">
+          <div class="rc-tag">配送・追跡</div>
+          <div class="rc-title">配送別に解説：アリエク到着目安と最短術完全ガイド</div>
+        </a>
+        <a href="/shipping/aliexpress-tracking-guide.html" class="related-card">
+          <div class="rc-tag">配送・追跡</div>
+          <div class="rc-title">AliExpress Trackingで荷物追跡｜届かない時の確認手順7選</div>
+        </a>
+        <a href="/basics/aliexpress-osusume.html" class="related-card">
+          <div class="rc-tag">おすすめ</div>
+          <div class="rc-title">アリエク おすすめ商品50選【2026年最新】</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/">ホーム</a>
+    <a href="/basics/aliexpress-what-is.html">AliExpressとは</a>
+    <a href="/basics/aliexpress-osusume.html">おすすめ商品</a>
+    <a href="/sitemap.html">サイトマップ</a>
+  </div>
+  <p>© 2026 アリエクswipe</p>
+  <p class="footer-aff-notice">本サイトはAliExpressのアフィリエイトプログラムに参加しています。記事内のリンクから購入された場合、サイト運営者に報酬が発生することがあります。</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.classList.toggle('open');
+      q.nextElementSibling.classList.toggle('open');
+    });
+  });
+</script>
+</body>
+</html>
