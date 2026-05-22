@@ -37,6 +37,23 @@ npm run gen-all                           # sitemap/index/OGP更新
 商品本文の `<div class="callout">` に**一般知識・推測・作り話を書いてはいけない**。
 Reddit実データ（`gen-voices.mjs` または `enrich-product-reddit.mjs`）を取得してから記載する。
 
+## AliExpressアフィリエイトリンク（必須）
+
+記事にAliExpressの商品情報を掲載する場合、**必ずAPIでアフィリエイトリンクを取得して掲載する**。
+
+- `step2-research.mjs` が自動取得するので、手動でリンクを作ってはいけない
+- アフィリエイトリンクなしで商品URLを直接貼るのは禁止
+- リンク取得に失敗した場合は商品ごと掲載しない（リンクなし掲載は収益機会の損失）
+
+## 公式セラー限定ルール（ブランド商品）
+
+UGREEN・Baseus・Naturehike・GameSirなどのブランド商品を掲載する場合、**必ず公式ストア（Official Store）のセラーから取得する**。
+
+- AliExpressの検索結果で「Official Store」「flagship store」と表示されているセラーのみ採用
+- 怪しいサードパーティセラー（ブランド名をタイトルに入れているだけの無名セラー）は使わない
+- `step2-research.mjs` 実行時に公式ストア以外の商品が混入していた場合は手動で除外する
+- 公式ストアが見つからない場合は「AliExpress公式ストアなし」として掲載を見送るか、Amazonリンクのみにする
+
 ## Amazonアフィリエイトリンク（商品おすすめ記事）
 
 商品をおすすめする記事では、**AliExpressリンクに加えてAmazonリンクも必ず入れる**。

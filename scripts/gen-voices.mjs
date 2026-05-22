@@ -138,6 +138,13 @@ const ARTICLE_CONFIG = [
     queries:   ['Xiaomi Band 9 10 strap band review', 'aliexpress xiaomi band strap', 'Mi band replacement strap'],
     topic:     'Xiaomi Bandバンドのリアルな評判・体験談',
   },
+  {
+    slug:      'aliexpress-vs-temu',
+    folder:    'basics',
+    subreddit: 'Aliexpress',
+    queries:   ['Temu vs AliExpress which is better', 'Temu comparison AliExpress', 'AliExpress better than Temu quality'],
+    topic:     'TemuとAliExpressの比較・どっちがいいかというリアルな評判・体験談',
+  },
 ];
 
 // ──────────────────────────────────────────────

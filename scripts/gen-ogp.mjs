@@ -237,6 +237,7 @@ async function buildTextPersonaOgp({ title, category, slug, outPath }) {
     'aliexpress-tracking-number':  ['追跡番号\nの見方', '荷物の場所\nをチェック'],
     'aliexpress-tsuiseki':         ['荷物を\n追跡しよう', '発送から\n到着まで'],
     'naturehike-brand':            ['Naturehike\nってどこ？', '評判・品質\n徹底解説'],
+    'aliexpress-vs-temu':          ['Temu vs\nアリエク', 'どっちがいい？\n徹底比較'],
   };
 
   const copy = ARTICLE_COPY[slug];

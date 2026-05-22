@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#0f0f1a"/>
+  <!-- 左：AliExpress側 -->
+  <rect x="0" y="0" width="190" height="220" fill="#1a0a0a"/>
+  <!-- 右：Temu側 -->
+  <rect x="210" y="0" width="190" height="220" fill="#0d0a1a"/>
+  <!-- VS区切り線 -->
+  <rect x="188" y="0" width="24" height="220" fill="#0f0f1a"/>
+  <text x="200" y="120" font-family="sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">VS</text>
+
+  <!-- AliExpress ロゴエリア -->
+  <rect x="16" y="28" width="158" height="36" rx="8" fill="#e8253a" opacity="0.15"/>
+  <text x="95" y="52" font-family="sans-serif" font-size="13" font-weight="900" fill="#e8253a" text-anchor="middle">AliExpress</text>
+
+  <!-- アリエクの特徴バッジ -->
+  <rect x="20" y="76" width="136" height="18" rx="9" fill="#e8253a" opacity="0.9"/>
+  <text x="88" y="88" font-family="sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">ガジェット・ニッチ品が最安</text>
+  <rect x="20" y="100" width="136" height="18" rx="9" fill="#991b1b" opacity="0.7"/>
+  <text x="88" y="112" font-family="sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">商品数2億点以上</text>
+  <rect x="20" y="124" width="136" height="18" rx="9" fill="#991b1b" opacity="0.7"/>
+  <text x="88" y="136" font-family="sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">Choiceで最短5日</text>
+
+  <!-- Temu ロゴエリア -->
+  <rect x="226" y="28" width="158" height="36" rx="8" fill="#fb923c" opacity="0.15"/>
+  <text x="305" y="52" font-family="sans-serif" font-size="13" font-weight="900" fill="#fb923c" text-anchor="middle">Temu</text>
+
+  <!-- Temuの特徴バッジ -->
+  <rect x="244" y="76" width="136" height="18" rx="9" fill="#fb923c" opacity="0.9"/>
+  <text x="312" y="88" font-family="sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">日用品・ファッションが激安</text>
+  <rect x="244" y="100" width="136" height="18" rx="9" fill="#c2410c" opacity="0.7"/>
+  <text x="312" y="112" font-family="sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">送料完全無料</text>
+  <rect x="244" y="124" width="136" height="18" rx="9" fill="#c2410c" opacity="0.7"/>
+  <text x="312" y="136" font-family="sans-serif" font-size="9" font-weight="700" fill="white" text-anchor="middle">アプリ完結で超シンプル</text>
+
+  <!-- 下部タイトル -->
+  <rect x="40" y="158" width="320" height="28" rx="14" fill="#ffffff" opacity="0.08"/>
+  <text x="200" y="177" font-family="sans-serif" font-size="11" font-weight="700" fill="#e2e8f0" text-anchor="middle">どっちがいい？2026年最新 徹底比較</text>
+  <text x="200" y="210" font-family="sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">価格・品質・送料・安全性を比較</text>
+</svg>
