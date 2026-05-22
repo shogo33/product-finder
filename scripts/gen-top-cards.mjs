@@ -15,14 +15,19 @@ const INITIAL  = 6; // おすすめセクション初期表示件数
 
 const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap']);
 const KNOWLEDGE_SLUGS = new Set(['aliexpress-what-is', 'aliexpress-account', 'aliexpress-choice']);
+// ブランド解説・比較ガイド記事（商品紹介なし）→ おすすめ商品ではなく比較・ブランド解説セクションへ
+const TIPS_SLUGS = new Set(['naturehike-brand', 'aliexpress-vs-temu', 'aliexpress-size']);
 
 const CARD_TAG_OVERRIDE = {
   'aliexpress-1000yen-kawatte-yokatta': 'プチプラ',
   'aliexpress-osusume':                'おすすめ商品',
   'aliexpress-hyoban':                 '評判・口コミ',
-  'aliexpress-size':                   '買い方ガイド',
+  'aliexpress-size':                   'サイズガイド',
   'aliexpress-projector-under-10000':  'プロジェクター',
   'aliexpress-sticker-osusume':        'ステッカー',
+  'naturehike-brand':                  'ブランド解説',
+  'aliexpress-vs-temu':                '比較ガイド',
+  'aliexpress-todokanai':              'トラブル対策',
 };
 function getCardTag(slug, folder) {
   if (CARD_TAG_OVERRIDE[slug]) return CARD_TAG_OVERRIDE[slug];
@@ -97,9 +102,20 @@ function makeCardHtml({ slug, html, folder }) {
       </a>`;
 }
 
-// ── おすすめ商品（basics/ のみ、入門記事除く） ──
+// ── 比較・ブランド解説（TIPS_SLUGS に該当するもの） ──
+const tipsEntries = collectEntries(BASICS, 'basics')
+  .filter(e => TIPS_SLUGS.has(e.slug));
+
+const tipsCards = tipsEntries.map(makeCardHtml).join('\n');
+const tipsBlock = `    <!-- TIPS-START -->
+    <div class="article-grid">
+${tipsCards}
+    </div>
+    <!-- TIPS-END -->`;
+
+// ── おすすめ商品（basics/ のみ、入門記事・tips記事除く） ──
 const basicsEntries = collectEntries(BASICS, 'basics')
-  .filter(e => !KNOWLEDGE_SLUGS.has(e.slug));
+  .filter(e => !KNOWLEDGE_SLUGS.has(e.slug) && !TIPS_SLUGS.has(e.slug));
 
 const recommendCards = basicsEntries.map(makeCardHtml).join('\n');
 
@@ -160,8 +176,9 @@ function inject(html, startMark, endMark, block) {
 
 let indexHtml = fs.readFileSync(INDEX, 'utf8');
 indexHtml = inject(indexHtml, '<!-- RECOMMEND-START -->', '<!-- RECOMMEND-END -->', recommendBlock);
+indexHtml = inject(indexHtml, '<!-- TIPS-START -->',      '<!-- TIPS-END -->',      tipsBlock);
 indexHtml = inject(indexHtml, '<!-- SHIPPING-START -->', '<!-- SHIPPING-END -->', shippingBlock);
 indexHtml = inject(indexHtml, '<!-- SAFETY-START -->',   '<!-- SAFETY-END -->',   safetyBlock);
 fs.writeFileSync(INDEX, indexHtml, 'utf8');
 
-console.log(`✅ index.html のおすすめカードを更新 (basics ${basicsEntries.length}件 / shipping ${shippingEntries.length}件 / safety ${safetyEntries.length}件)`);
+console.log(`✅ index.html のおすすめカードを更新 (basics ${basicsEntries.length}件 / tips ${tipsEntries.length}件 / shipping ${shippingEntries.length}件 / safety ${safetyEntries.length}件)`);

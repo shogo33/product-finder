@@ -263,21 +263,27 @@ Redditのsnippetをただ翻訳して並べるのではなく、「海外のガ�
 - FAQセクション（h2）と比較表（table）を必ず含める`;
 
 // ── Claude 呼び出し ──────────────────────────────────────
-const client   = new Anthropic({ apiKey: CLAUDE_KEY });
+const client   = new Anthropic({ apiKey: CLAUDE_KEY, timeout: 600000 });
 const userPrompt = buildUserPrompt();
 
 let articleBody = '';
 process.stdout.write('💬 Claude Sonnet 執筆中');
 
-const response = await client.messages.create({
+const stream = await client.messages.stream({
   model:      'claude-sonnet-4-6',
-  max_tokens: 16000,
+  max_tokens: 32000,
   system:     SYSTEM_PROMPT,
   messages:   [{ role: 'user', content: userPrompt }],
 });
+for await (const chunk of stream) {
+  if (chunk.type === 'content_block_delta' && chunk.delta?.type === 'text_delta') {
+    articleBody += chunk.delta.text;
+    process.stdout.write('.');
+  }
+}
 console.log(' ✅');
 
-articleBody = response.content[0].text.trim();
+articleBody = articleBody.trim();
 
 // Claudeがコードブロックで囲んで返した場合の除去
 articleBody = articleBody.replace(/^```html?\s*/m, '').replace(/\s*```$/m, '').trim();
@@ -439,6 +445,8 @@ const fullHtml = `<!DOCTYPE html>
 <script id="site-header-inject"></script>
 
 ${articleBody}
+
+<!-- VOICE-START --><!-- VOICE-END -->
 
 <div class="pc-float-banner" id="pc-float-banner">
   <button class="pc-float-close" id="pc-float-close" aria-label="閉じる">✕</button>

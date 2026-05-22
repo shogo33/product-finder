@@ -82,8 +82,16 @@ function wrapText(text, maxLen = 14) {
 }
 
 // 記事HTMLから商品画像URLを複数抽出（フォールバック用）
-function extractProductImageUrls(html) {
+function extractProductImageUrls(html, slug) {
   const urls = [];
+  // ローカル保存済み画像（/images/products/{slug}/...）を優先
+  const localAll = [...html.matchAll(/src="(\/images\/products\/[^"]+\.(jpg|jpeg|png|webp))"/gi)];
+  for (const m of localAll) {
+    const localPath = m[1];
+    const absPath = path.join(path.resolve('public'), localPath);
+    if (!urls.includes(absPath) && fs.existsSync(absPath)) urls.push(absPath);
+  }
+  // 外部CDN画像（ローカル保存前のフォールバック）
   const aeAll = [...html.matchAll(/https?:\/\/ae-pic-a1\.aliexpress-media\.com\/kf\/[^\s"']+/gi)];
   for (const m of aeAll) {
     const url = m[0].split('"')[0].split("'")[0];
@@ -96,9 +104,13 @@ function extractProductImageUrls(html) {
   return urls;
 }
 
-// 外部画像をフェッチ
+// 画像をフェッチ（ローカルファイルパスもサポート）
 async function fetchImageBuffer(url) {
   try {
+    // 絶対パスはローカルファイルとして読み込み
+    if (path.isAbsolute(url)) {
+      return fs.existsSync(url) ? fs.readFileSync(url) : null;
+    }
     const res = await fetch(url, {
       headers: { 'User-Agent': 'Mozilla/5.0 (compatible; OGP/1.0)' },
       signal: AbortSignal.timeout(12000),
@@ -449,7 +461,7 @@ for (const file of getAllHtmlFiles(base)) {
   const desc = descMatch ? descMatch[1].trim() : '';
 
   // 商品画像がある記事 → YouTubeサムネ風（複数URLを順に試す）
-  const imageUrls = extractProductImageUrls(html);
+  const imageUrls = extractProductImageUrls(html, slug);
   let imageBuf = null;
   for (const url of imageUrls) {
     imageBuf = await fetchImageBuffer(url);
