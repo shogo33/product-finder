@@ -16,13 +16,15 @@ const INITIAL  = 6; // おすすめセクション初期表示件数
 const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap']);
 const KNOWLEDGE_SLUGS = new Set(['aliexpress-what-is', 'aliexpress-account', 'aliexpress-choice']);
 // ブランド解説・比較ガイド記事（商品紹介なし）→ おすすめ商品ではなく比較・ブランド解説セクションへ
-const TIPS_SLUGS = new Set(['naturehike-brand', 'aliexpress-vs-temu', 'aliexpress-size']);
+const TIPS_SLUGS = new Set(['naturehike-brand', 'aliexpress-vs-temu']);
+// basics/ 内にあるが安全性・トラブルセクションに表示する記事
+const SAFETY_EXTRA_SLUGS = new Set(['aliexpress-size']);
 
 const CARD_TAG_OVERRIDE = {
   'aliexpress-1000yen-kawatte-yokatta': 'プチプラ',
   'aliexpress-osusume':                'おすすめ商品',
   'aliexpress-hyoban':                 '評判・口コミ',
-  'aliexpress-size':                   'サイズガイド',
+  'aliexpress-size':                   'トラブル対策',
   'aliexpress-projector-under-10000':  'プロジェクター',
   'aliexpress-sticker-osusume':        'ステッカー',
   'naturehike-brand':                  'ブランド解説',
@@ -115,7 +117,7 @@ ${tipsCards}
 
 // ── おすすめ商品（basics/ のみ、入門記事・tips記事除く） ──
 const basicsEntries = collectEntries(BASICS, 'basics')
-  .filter(e => !KNOWLEDGE_SLUGS.has(e.slug) && !TIPS_SLUGS.has(e.slug));
+  .filter(e => !KNOWLEDGE_SLUGS.has(e.slug) && !TIPS_SLUGS.has(e.slug) && !SAFETY_EXTRA_SLUGS.has(e.slug));
 
 const recommendCards = basicsEntries.map(makeCardHtml).join('\n');
 
@@ -154,8 +156,11 @@ ${shippingCards}
     </div>
     <!-- SHIPPING-END -->`;
 
-// ── 安全性（safety/ 全件） ──
-const safetyEntries = collectEntries(SAFETY, 'safety');
+// ── 安全性（safety/ 全件 + basics/ からのSAFETY_EXTRA） ──
+const safetyExtraEntries = collectEntries(BASICS, 'basics')
+  .filter(e => SAFETY_EXTRA_SLUGS.has(e.slug));
+const safetyEntries = [...collectEntries(SAFETY, 'safety'), ...safetyExtraEntries]
+  .sort((a, b) => a.mtime - b.mtime);
 const safetyCards = safetyEntries.map(makeCardHtml).join('\n');
 const safetyBlock = `    <!-- SAFETY-START -->
     <div class="article-grid">
