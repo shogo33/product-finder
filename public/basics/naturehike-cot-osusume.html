@@ -20,7 +20,7 @@
     :root {
       --red:    #e8253a;
       --red-dk: #b81c2c;
-      --green:  #16a34a;
+      --green:  #e8253a;
       --bg:     #fafaf8;
       --surface:#ffffff;
       --text:   #1a1a1a;
@@ -37,7 +37,7 @@
     .header-cta { background: var(--red); color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; transition: background 0.2s; flex-shrink: 0; }
     .header-cta:hover { background: var(--red-dk); }
 
-    .article-hero { background: linear-gradient(135deg, #f0fdf4 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
+    .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
     .article-hero .tag { display: inline-block; background: var(--green); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
     .article-hero h1 { font-weight: 700; font-size: clamp(1.35rem, 4vw, 1.9rem); line-height: 1.45; max-width: 640px; margin: 0 auto 16px; }
     .article-hero .meta { font-size: 0.82rem; color: var(--muted); }
@@ -49,7 +49,7 @@
 
     .container { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
 
-    .toc { background: #f0fdf4; border: 1px solid #86efac; border-left: 4px solid var(--green); border-radius: var(--radius); padding: 20px 24px; margin: 32px 0; }
+    .toc { background: #fff1f2; border: 1px solid #fca5a5; border-left: 4px solid var(--green); border-radius: var(--radius); padding: 20px 24px; margin: 32px 0; }
     .toc-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 12px; color: var(--green); }
     .toc ol { padding-left: 20px; }
     .toc li { margin: 6px 0; }
@@ -58,7 +58,7 @@
 
     .article-body { padding: 24px 0 48px; }
     .article-body h2 { font-size: 1.25rem; font-weight: 700; border-left: 4px solid var(--green); padding-left: 12px; margin: 44px 0 16px; scroll-margin-top: 80px; }
-    .article-body h3 { font-size: 1.02rem; font-weight: 700; margin: 28px 0 10px; padding-left: 10px; border-left: 2px solid #86efac; scroll-margin-top: 80px; }
+    .article-body h3 { font-size: 1.02rem; font-weight: 700; margin: 28px 0 10px; padding-left: 10px; border-left: 2px solid #fca5a5; scroll-margin-top: 80px; }
     .article-body p { margin: 12px 0; font-size: 0.95rem; }
     .article-body ul, .article-body ol { padding-left: 24px; margin: 12px 0; }
     .article-body li { margin: 7px 0; font-size: 0.94rem; }
@@ -73,7 +73,7 @@
 
     .callout { background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--radius); padding: 14px 18px; margin: 18px 0; font-size: 0.88rem; line-height: 1.7; }
     .callout::before { content: "💡 "; }
-    .callout-check { background: #f0fdf4; border-color: #86efac; }
+    .callout-check { background: #fff1f2; border-color: #fca5a5; }
     .callout-check::before { content: "✅ "; }
     .callout-danger { background: #fff1f2; border-color: #fecdcf; }
     .callout-danger::before { content: "⚠️ "; }
@@ -82,13 +82,13 @@
     .decision-header { background: var(--green); color: #fff; padding: 14px 20px; font-weight: 700; font-size: 1rem; }
     .decision-row { display: flex; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
     .decision-row:last-child { border-bottom: none; }
-    .decision-case { flex: 1; padding: 14px 16px; background: #f0fdf4; border-right: 1px solid var(--border); font-weight: 700; }
+    .decision-case { flex: 1; padding: 14px 16px; background: #fff1f2; border-right: 1px solid var(--border); font-weight: 700; }
     .decision-case::before { content: "こんな人 👉 "; color: var(--muted); font-weight: 400; font-size: 0.76rem; display: block; margin-bottom: 4px; }
     .decision-answer { flex: 1; padding: 14px 16px; background: var(--surface); font-weight: 700; color: #166534; }
     .decision-answer::before { content: "これを選ぶ ✅ "; color: var(--muted); font-weight: 400; font-size: 0.76rem; display: block; margin-bottom: 4px; }
 
     .product-card { border: 2px solid var(--border); border-radius: 16px; margin: 28px 0; overflow: hidden; background: var(--surface); transition: box-shadow 0.2s; }
-    .product-card:hover { box-shadow: 0 4px 24px rgba(22,163,74,0.1); }
+    .product-card:hover { box-shadow: 0 4px 24px rgba(232,37,58,0.1); }
     .product-card.best { border-color: var(--green); }
     .pc-header { display: flex; align-items: center; gap: 16px; padding: 20px 20px 16px; border-bottom: 1px solid var(--border); }
     .pc-rank { width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; background: var(--bg); border: 2px solid var(--border); color: var(--muted); }
@@ -127,7 +127,7 @@
 
     .faq { margin: 40px 0; }
     .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin: 12px 0; overflow: hidden; }
-    .faq-q { background: #f0fdf4; padding: 14px 18px; font-weight: 700; font-size: 0.9rem; border-left: 3px solid var(--green); }
+    .faq-q { background: #fff1f2; padding: 14px 18px; font-weight: 700; font-size: 0.9rem; border-left: 3px solid var(--green); }
     .faq-q::before { content: "Q. "; color: var(--green); }
     .faq-a { padding: 14px 18px; font-size: 0.88rem; line-height: 1.75; border-top: 1px solid var(--border); }
     .faq-a::before { content: "A. "; font-weight: 700; color: var(--muted); }
@@ -141,7 +141,7 @@
     .related-card .rc-tag { font-size: 0.7rem; color: var(--red); font-weight: 700; margin-bottom: 6px; }
     .related-card .rc-title { font-size: 0.88rem; font-weight: 700; line-height: 1.4; }
 
-    .cta-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, #16a34a 0%, #059669 100%); color: #fff; text-align: center; padding: 12px 20px; z-index: 200; }
+    .cta-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, #e8253a 0%, #c2185b 100%); color: #fff; text-align: center; padding: 12px 20px; z-index: 200; }
     .cta-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.88rem; }
     @media (max-width: 640px) { .cta-sticky { display: block; } body { padding-bottom: 72px; } }
 
