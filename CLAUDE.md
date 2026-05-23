@@ -139,8 +139,48 @@ YouTubeサムネ風：商品画像を背景、左にタイトルテキスト、�
 - Reddit: `gen-voices.mjs` で自動取得 → `<!-- VOICE-START/END -->` ブロックに注入
 - X: ユーザーからのスクショ → Claude が画像を読んで声を抽出・記事に手動で追記
 
+## step2-research 後の商品検証（必須）
+
+`step2-research.mjs` 実行後、**必ず以下を目視確認してから step3 に進む**。
+
+### ① 取得商品が「本体」かを確認する
+AliExpress API のキーワード検索は人気順・広告順で返るため、**ブランド名が入ったアクセサリー（ケース・スタンド・カバー・ケーブル）が混入しやすい**。
+
+- NG例：「GameSir T4 Pro Cyclone コントローラー用 電話クリップスタンド」→ アクセサリー
+- OK例：「GameSir T4 Cyclone Pro ワイヤレスコントローラー」→ 本体
+
+対処：アクセサリーが混入していたら `scripts/rebuild-research.mjs <slug> <pid1,pid2,...>` で正しいプロダクトIDを直接指定して差し替える。
+
+### ② アフィリエイトリンクが商品ごとに異なるか確認する
+research JSON を開き、全商品の `affiliateLink` が**すべて異なる URL**になっているか確認する。
+
+```bash
+node -e "const d=JSON.parse(require('fs').readFileSync('data/articles/<slug>-research.json','utf8')); d.products.forEach(p=>console.log(p.cleanName, '|', p.affiliateLink))"
+```
+
+- 全商品が同一URLになっている場合は **step2 を再実行するか rebuild-research.mjs を使う**
+- 同一URLのまま step3 に進んではいけない（404リンクの量産につながる）
+
+### ③ 正しいプロダクトIDを調べる方法
+キーワード検索で外れた場合は、以下のワンライナーで特定モデル名を直接検索する：
+
+```bash
+node -e "
+import('dotenv').then(({default:d})=>{d.config({override:true});
+const {createHmac}=require('crypto');
+const sign=p=>{const s=Object.keys(p).sort().map(k=>k+p[k]).join('');return createHmac('sha256',process.env.ALIEXPRESS_APP_SECRET).update(s).digest('hex').toUpperCase()};
+const p={app_key:process.env.ALIEXPRESS_APP_KEY,method:'aliexpress.affiliate.product.query',sign_method:'sha256',timestamp:String(Date.now()),tracking_id:process.env.ALIEXPRESS_TRACKING_ID,keywords:'GameSir G7 SE wired controller',target_currency:'JPY',target_language:'JA',page_size:'5',fields:'product_id,product_title'};
+p.sign=sign(p);
+fetch('https://api-sg.aliexpress.com/sync',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(p)}).then(r=>r.json()).then(r=>(r?.aliexpress_affiliate_product_query_response?.resp_result?.result?.products?.product??[]).forEach(x=>console.log(x.product_id,'|',x.product_title?.slice(0,80))))
+})
+"
+```
+
+取得したIDを `rebuild-research.mjs` に渡せば正確な商品データで research JSON を上書きできる。
+
 ## 記事作成前の確認事項
 
 1. 既存記事とキーワードがかぶっていないか確認する（カニバリゼーション）
 2. 商品が `data/products.json` にあるか確認する（なければ step2 が AliExpress API で自動取得）
-3. Xの声も入れる場合は、検索クエリをユーザーに提示してスクショをもらってから着手する
+3. **step2 後に商品検証**（上記セクション参照）を必ず実施してから step3 に進む
+4. Xの声も入れる場合は、検索クエリをユーザーに提示してスクショをもらってから着手する

@@ -145,6 +145,20 @@ const ARTICLE_CONFIG = [
     queries:   ['Temu vs AliExpress which is better', 'Temu comparison AliExpress', 'AliExpress better than Temu quality'],
     topic:     'TemuとAliExpressの比較・どっちがいいかというリアルな評判・体験談',
   },
+  {
+    slug:      'ugreen-gan-charger-osusume',
+    folder:    'basics',
+    subreddit: 'Aliexpress',
+    queries:   ['UGREEN Nexode GaN charger review', 'UGREEN charger aliexpress quality', 'GaN charger compact fast charging review'],
+    topic:     'UGREEN GaN充電器のリアルな評判・体験談',
+  },
+  {
+    slug:      'ugreen-usb-hub-osusume',
+    folder:    'basics',
+    subreddit: 'Aliexpress',
+    queries:   ['UGREEN USB hub review aliexpress', 'USB hub dock station quality', 'UGREEN hub docking station experience'],
+    topic:     'UGREEN USBハブのリアルな評判・体験談',
+  },
 ];
 
 // ──────────────────────────────────────────────

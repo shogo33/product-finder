@@ -240,9 +240,14 @@ Redditのsnippetをただ翻訳して並べるのではなく、「海外のガ�
 </div>
 \`\`\`
 
-#### 6.6 関連記事セクション（必須）
-本文の末尾（FAQの後、cta-sticky の直前）に必ず関連記事セクションを出力する：
+#### 6.6 Xの声プレースホルダー＋関連記事セクション（必須）
+本文の末尾（FAQの後）に必ず以下の順序で出力する：
+① `<!-- VOICE-START --><!-- VOICE-END -->` プレースホルダー（後からスクリプトが注入する）
+② 関連記事セクション
+
 \`\`\`html
+<!-- VOICE-START --><!-- VOICE-END -->
+
 <div class="container">
   <div class="related">
     <div class="related-title">関連記事</div>
@@ -375,6 +380,18 @@ const fullHtml = `<!DOCTYPE html>
     .related-card .rc-tag { font-size: 0.7rem; color: var(--red); font-weight: 700; margin-bottom: 6px; }
     .related-card .rc-title { font-size: 0.88rem; font-weight: 700; line-height: 1.4; }
 
+    /* Xの生の声ブロック */
+    .reddit-voices { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin: 40px 0; }
+    .voices-header { margin-bottom: 20px; }
+    .voices-badge { display: inline-block; background: #000; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .voices-title { font-size: 1.05rem; font-weight: 700; margin: 6px 0 8px; }
+    .voices-meta { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+    .voice-item { border-top: 1px solid var(--border); padding: 16px 0; }
+    .voice-item:last-child { padding-bottom: 0; }
+    .voice-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .voice-title { font-size: 0.97rem; font-weight: 700; margin-bottom: 6px; }
+    .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
+
     .cta-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, #e8253a 0%, #ff6b35 100%); color: #fff; text-align: center; padding: 12px 20px; z-index: 200; box-shadow: 0 -4px 20px rgba(232,37,58,0.35); }
     .cta-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.88rem; }
     .cta-sticky .sub { font-size: 0.7rem; opacity: 0.85; }
@@ -445,8 +462,6 @@ const fullHtml = `<!DOCTYPE html>
 <script id="site-header-inject"></script>
 
 ${articleBody}
-
-<!-- VOICE-START --><!-- VOICE-END -->
 
 <div class="pc-float-banner" id="pc-float-banner">
   <button class="pc-float-close" id="pc-float-close" aria-label="閉じる">✕</button>
