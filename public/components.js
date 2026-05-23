@@ -98,6 +98,7 @@
     '.cta-btn-amazon{background:#FF9900;color:#fff;}' +
     '.cta-btn-app{background:linear-gradient(135deg,#e8253a,#c2185b);color:#fff;}' +
     '.cta-note{font-size:.72rem;color:#9ca3af;margin:12px 0 0;}' +
+    '.promo-notice{font-size:.72rem;color:#9ca3af;margin:4px 0 0;}' +
     '#cta-sticky a{position:relative;overflow:hidden;}' +
     '#cta-sticky{padding:9px 20px!important;}' +
     /* パンくず位置のブランドバッジ */

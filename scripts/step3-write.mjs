@@ -194,6 +194,7 @@ ${'<!-- @product-end -->'}
     <span>${today.replace(/-/g, '年').replace(/-/, '月') + '日'}更新</span>
     <span>読了約8分</span>
   </div>
+  <p class="promo-notice">本ページはプロモーションが含まれています</p>
 </section>
 \`\`\`
 
