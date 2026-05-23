@@ -143,9 +143,9 @@ ${'<!-- @product-end -->'}
   <p class="cta-lead">【商品名】をどちらで買う？価格・配送を比較</p>
   <p class="cta-sub">AliExpress：送料無料・格安・到着2〜4週間｜Amazon：翌日〜2日・返品しやすい</p>
   <div class="cta-buttons">
-    <a class="cta-btn-aliex" href="ALIEXPRESS_AFFILIATE_URL" target="_blank" rel="noopener sponsored">AliExpressで見る →</a>
+    <a class="cta-btn-aliex" href="ALIEXPRESS_AFFILIATE_URL" target="_blank" rel="noopener sponsored">AliExpressで見る</a>
     ${'<!-- AMAZON_PENDING: AMAZON_SEARCH_QUERY -->'}
-    <a class="cta-btn-amazon" href="#" data-amazon-query="AMAZON_SEARCH_QUERY" aria-disabled="true" style="opacity:0.45;pointer-events:none;cursor:not-allowed;">Amazonで見る（確認中）→</a>
+    <a class="cta-btn-amazon" href="#" data-amazon-query="AMAZON_SEARCH_QUERY" aria-disabled="true" style="opacity:0.45;pointer-events:none;cursor:not-allowed;">Amazonで見る（確認中）</a>
   </div>
   <p class="cta-note">※ AliExpressリンクはアフィリエイトリンクです</p>
 </div>
