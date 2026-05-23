@@ -159,6 +159,13 @@ const ARTICLE_CONFIG = [
     queries:   ['UGREEN USB hub review aliexpress', 'USB hub dock station quality', 'UGREEN hub docking station experience'],
     topic:     'UGREEN USBハブのリアルな評判・体験談',
   },
+  {
+    slug:      'ugreen-docking-station-osusume',
+    folder:    'basics',
+    subreddit: 'Aliexpress',
+    queries:   ['UGREEN Revodok docking station review', 'UGREEN dock station aliexpress experience', 'USB C docking station MacBook review'],
+    topic:     'UGREEN ドッキングステーションのリアルな評判・体験談',
+  },
 ];
 
 // ──────────────────────────────────────────────

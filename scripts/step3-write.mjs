@@ -132,9 +132,9 @@ ${productsText}
 ### 必須構造①：商品マーカー（refresh-prices.mjs が依存）
 各商品セクションを必ず以下で囲む：
 \`\`\`
-<!-- @product-start id="PRODUCT_ID" type="ガジェット" tag="ガジェット" -->
+${'<!-- @product-start id="PRODUCT_ID" type="ガジェット" tag="ガジェット" -->'}
 ... h2 + 画像 + 説明 + CTA ...
-<!-- @product-end -->
+${'<!-- @product-end -->'}
 \`\`\`
 
 ### 必須構造②：CTAボックス（AliEx + Amazon並列）
@@ -144,7 +144,7 @@ ${productsText}
   <p class="cta-sub">AliExpress：送料無料・格安・到着2〜4週間｜Amazon：翌日〜2日・返品しやすい</p>
   <div class="cta-buttons">
     <a class="cta-btn-aliex" href="ALIEXPRESS_AFFILIATE_URL" target="_blank" rel="noopener sponsored">AliExpressで見る →</a>
-    <!-- AMAZON_PENDING: AMAZON_SEARCH_QUERY -->
+    ${'<!-- AMAZON_PENDING: AMAZON_SEARCH_QUERY -->'}
     <a class="cta-btn-amazon" href="#" data-amazon-query="AMAZON_SEARCH_QUERY" aria-disabled="true" style="opacity:0.45;pointer-events:none;cursor:not-allowed;">Amazonで見る（確認中）→</a>
   </div>
   <p class="cta-note">※ AliExpressリンクはアフィリエイトリンクです</p>
@@ -231,7 +231,7 @@ Redditのsnippetをただ翻訳して並べるのではなく、「海外のガ�
 #### 6.5 アプリ誘導バナー（必須・1回のみ）
 記事の中盤（2〜3番目の H2 の直後あたり）に **1回だけ** 以下の cta-inline バナーを挿入する。導入直後・まとめ直前・商品CTAの直後は避ける。ウザくなるので複数回挿入しないこと。
 \`\`\`html
-<!-- アプリ誘導バナー -->
+${'<!-- アプリ誘導バナー -->'}
 <div class="cta-inline">
   <div class="cta-label">✨ PICK UP</div>
   <h3>AIが今話題の商品をスワイプで提案</h3>
@@ -240,13 +240,82 @@ Redditのsnippetをただ翻訳して並べるのではなく、「海外のガ�
 </div>
 \`\`\`
 
-#### 6.6 Xの声プレースホルダー＋関連記事セクション（必須）
+#### 6.6 Xの声プレースホルダー＋Amazonおすすめ＋関連記事セクション（必須）
 本文の末尾（FAQの後）に必ず以下の順序で出力する：
-① `<!-- VOICE-START --><!-- VOICE-END -->` プレースホルダー（後からスクリプトが注入する）
-② 関連記事セクション
+① ${'`'}${'<!-- VOICE-START -->'}${'<!-- VOICE-END -->'}${'`'} プレースホルダー（後からスクリプトが注入する）
+② Amazonでよく買われているもの ウィジェット（固定ブロック・毎回必ず出力）
+③ 関連記事セクション
 
 \`\`\`html
-<!-- VOICE-START --><!-- VOICE-END -->
+${'<!-- VOICE-START -->'}${'<!-- VOICE-END -->'}
+
+      ${'<!-- Amazonおすすめ -->'}
+      <div class="amazon-rec">
+        <div class="amazon-rec-title">🛒 Amazonでよく買われているもの</div>
+        <div class="amazon-rec-list">
+          <a href="https://amzn.to/4uqaDhN" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">炭酸水</span>
+            <span class="amazon-rec-name">ウィルキンソン タンサン ダブルグレープ 500ml×24本</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/4upEaYE" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">プロテイン</span>
+            <span class="amazon-rec-name">アンビーク ソイプロテイン 1kg バナナ味</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/3RE0Y8B" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">炭酸水</span>
+            <span class="amazon-rec-name">by Amazon 強炭酸水 ラベルレス 500ml×24本 (Smart Basic)</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/4fxTFZV" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">コーラ</span>
+            <span class="amazon-rec-name">コカ・コーラ ラベルレス 500mlPET×24</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/4fyTtd0" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">麦茶</span>
+            <span class="amazon-rec-name">やかんの麦茶 from 爽健美茶 ラベルレス 650mlPET×24本</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/3PxKEpm" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">水</span>
+            <span class="amazon-rec-name">い・ろ・は・す ラベルレス 560ml×24本</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/42IyEV3" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">緑茶</span>
+            <span class="amazon-rec-name">コカ・コーラ 綾鷹 ラベルレス 525mlPET×24本</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/4eYNPkj" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">炭酸水</span>
+            <span class="amazon-rec-name">by Amazon 強炭酸水 レモン ラベルレス 500ml×24本</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/4uW9A8Y" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">スポーツ</span>
+            <span class="amazon-rec-name">コカ・コーラ アクエリアス ラベルレス 500mlPET×24本</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/4wIckbQ" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">麦茶</span>
+            <span class="amazon-rec-name">伊藤園 ラベルレス 健康ミネラルむぎ茶 600ml×24本</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/4wIclfU" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">ほうじ茶</span>
+            <span class="amazon-rec-name">アサヒ飲料 ほうじ茶 ラベルレスボトル 500ml×24本</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+          <a href="https://amzn.to/3RouAXt" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+            <span class="amazon-rec-label">天然水</span>
+            <span class="amazon-rec-name">by Amazon 天然水 ラベルレス 500ml×24本 富士山の天然水</span>
+            <span class="amazon-rec-cta">Amazonで見る</span>
+          </a>
+        </div>
+        <button class="amazon-rec-toggle" onclick="this.previousElementSibling.classList.toggle('expanded');this.textContent=this.previousElementSibling.classList.contains('expanded')?'閉じる':'もっと見る'">もっと見る</button>
+      </div>
 
 <div class="container">
   <div class="related">
@@ -256,7 +325,7 @@ Redditのsnippetをただ翻訳して並べるのではなく、「海外のガ�
         <div class="rc-tag">カテゴリ</div>
         <div class="rc-title">記事タイトル</div>
       </a>
-      <!-- 4件程度 plan の internalLinks を使用 -->
+      ${'<!-- 4件程度 plan の internalLinks を使用 -->'}
     </div>
   </div>
 </div>
@@ -405,6 +474,18 @@ const fullHtml = `<!DOCTYPE html>
 
     hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
 
+    .amazon-rec { margin: 40px 0 24px; padding: 20px; background: #fff8f0; border: 1px solid #fcd34d; border-radius: 12px; }
+    .amazon-rec-title { font-size: 0.9rem; font-weight: 700; color: #92400e; margin-bottom: 14px; }
+    .amazon-rec-list { display: flex; flex-direction: column; gap: 10px; }
+    .amazon-rec-item { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: #fff; border: 1px solid #fde68a; border-radius: 8px; text-decoration: none; color: #1a1a1a; transition: border-color 0.2s; }
+    .amazon-rec-item:hover { border-color: #f59e0b; }
+    .amazon-rec-label { font-size: 0.7rem; font-weight: 700; color: #fff; background: #f59e0b; padding: 2px 7px; border-radius: 10px; white-space: nowrap; flex-shrink: 0; }
+    .amazon-rec-name { font-size: 0.85rem; font-weight: 600; flex: 1; }
+    .amazon-rec-cta { font-size: 0.78rem; color: #f59e0b; font-weight: 700; white-space: nowrap; flex-shrink: 0; }
+    .amazon-rec-list:not(.expanded) .amazon-rec-item:nth-child(n+4) { display: none; }
+    .amazon-rec-toggle { display: block; text-align: center; margin-top: 12px; color: #f59e0b; font-size: 0.82rem; font-weight: 700; cursor: pointer; background: none; border: 1px solid #fde68a; border-radius: 8px; padding: 8px; width: 100%; }
+    .amazon-rec-toggle:hover { background: #fff8f0; }
+
     /* Reddit引用（components.jsに未定義のため個別追加） */
     .reddit-quote { background: #fff8f8; border-left: 4px solid var(--red); border-radius: 8px; padding: 16px 18px; margin: 20px 0; font-size: 0.9rem; line-height: 1.7; }
     .reddit-quote p { margin: 0 0 8px; }
@@ -447,7 +528,7 @@ const fullHtml = `<!DOCTYPE html>
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
   </style>
 
-  <!-- Google tag (gtag.js) -->
+  ${'<!-- Google tag (gtag.js) -->'}
   <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_TAG}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
