@@ -48,11 +48,11 @@ for (const p of [planPath, researchPath]) {
 
 const plan     = JSON.parse(fs.readFileSync(planPath, 'utf8'));
 const research = JSON.parse(fs.readFileSync(researchPath, 'utf8'));
-const category = plan.category ?? 'basics';
+const category = plan.category ?? 'gadget';
 const today    = new Date().toISOString().slice(0, 10);
 
 // カテゴリ → タグラベル変換
-const CAT_TAG = { basics: 'おすすめ商品', safety: '安全性', payment: '支払い方法', shipping: '配送・追跡' };
+const CAT_TAG = { gadget: 'ガジェット', game: 'ゲーム', outdoor: 'アウトドア', guide: 'ガイド', safety: '安全性', payment: '支払い方法', shipping: '配送・追跡', basics: 'おすすめ商品' };
 const heroTag = CAT_TAG[category] ?? 'おすすめ商品';
 
 console.log(`\n✍️  「${plan.selectedTitle}」の執筆を開始します...\n`);

@@ -1,10 +1,10 @@
 /**
  * Step 1: SEOキーワードから記事構成案（H2/H3）を生成
- * 使い方: node scripts/step1-plan.mjs "キーワード" <slug> [カテゴリ=basics]
+ * 使い方: node scripts/step1-plan.mjs "キーワード" <slug> [カテゴリ=gadget]
  * 例:    node scripts/step1-plan.mjs "Baseus モバイルバッテリー おすすめ" baseus-mobile-battery-osusume2 basics
  * 出力:  data/articles/{slug}-plan.json
  *
- * カテゴリ一覧: basics / safety / payment / shipping
+ * カテゴリ一覧: gadget / game / outdoor / guide / safety / payment / shipping
  */
 import dotenv from 'dotenv';
 dotenv.config({ override: true });
@@ -20,11 +20,11 @@ fs.mkdirSync(ARTICLES_DIR, { recursive: true });
 const args    = process.argv.slice(2);
 const keyword = args[0];
 const slug    = args[1];
-const category = args[2] ?? 'basics';
+const category = args[2] ?? 'gadget';
 
 if (!keyword || !slug) {
   console.error('使い方: node scripts/step1-plan.mjs "キーワード" <slug> [カテゴリ=basics]');
-  console.error('例:    node scripts/step1-plan.mjs "Baseus モバイルバッテリー おすすめ" baseus-mobile-battery-osusume2 basics');
+  console.error('例:    node scripts/step1-plan.mjs "UGREEN マウス おすすめ" ugreen-mouse-osusume2 gadget
   process.exit(1);
 }
 

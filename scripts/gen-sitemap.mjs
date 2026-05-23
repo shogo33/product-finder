@@ -34,7 +34,7 @@ const SLUG_META = {
 };
 const DEFAULT_META = { priority: '0.7', changefreq: 'monthly' };
 
-// basics/ の中で「AliExpressとは・基礎知識」セクションに入るスラッグ
+// guide/ の中で「AliExpressとは・基礎知識」セクションに入るスラッグ
 const KNOWLEDGE_SLUGS = new Set(['aliexpress-what-is', 'aliexpress-account', 'aliexpress-choice']);
 
 // カテゴリ別セクション定義（表示順）
@@ -119,6 +119,7 @@ console.log(`✅ sitemap.xml  (${pages.length}件)`);
 
 // ---- sitemap.html 用にセクション分類 ----
 const buckets = { top: [], osusume: [], safety: [], payment: [], shipping: [], info: [] };
+// フォルダ別おすすめ記事はすべてosusumeバケツへ
 
 for (const p of pages) {
   if (p.slug === 'index') continue; // トップはハードコード
@@ -127,6 +128,7 @@ for (const p of pages) {
   if (p.dir === 'payment') { buckets.payment.push(p); continue; }
   if (p.dir === 'shipping') { buckets.shipping.push(p); continue; }
   if (KNOWLEDGE_SLUGS.has(p.slug)) { buckets.top.push(p); continue; }
+  // gadget / game / outdoor / guide / basics → おすすめ or ガイドとして分類
   buckets.osusume.push(p);
 }
 

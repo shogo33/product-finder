@@ -25,7 +25,29 @@
       "Bash(node scripts/gen-ogp.mjs)",
       "Bash(nslookup aliswipe.com 8.8.8.8)",
       "Bash(curl -s -o /dev/null -w \"%{http_code} %{redirect_url}\" --max-time 10 https://aliswipe.com/)",
-      "Bash(node scripts/gen-ogp.mjs basics/ugreen-earphone-osusume.html)"
+      "Bash(node scripts/gen-ogp.mjs basics/ugreen-earphone-osusume.html)",
+      "Bash(node scripts/inject-product-callout.mjs)",
+      "Bash(grep -m3 'text\\\\|fill\\\\|rect' c:/Users/USER/product-finder/public/images/__TRACKED_VAR__.svg)",
+      "Bash(node scripts/step2-research.mjs gamesir-controller-osusume)",
+      "Bash(node scripts/step2-research.mjs aliexpress-gamepad-osusume)",
+      "Bash(node scripts/add-section.mjs ugreen-gan-charger-osusume \"GaN充電器 コンパクト おすすめ 比較\")",
+      "Bash(node scripts/add-section.mjs ugreen-gan-charger-osusume \"UGREEN Nexode 65W レビュー\")",
+      "Bash(node scripts/add-section.mjs ugreen-gan-charger-osusume \"GaN充電器 発熱 少ない 安全\")",
+      "Bash(node scripts/add-section.mjs ugreen-gan-charger-osusume \"UGREEN 充電器 複数台 同時充電\")",
+      "Bash(node scripts/step1-plan.mjs \"UGREEN USBハブ おすすめ アリエク\" ugreen-usb-hub-osusume basics)",
+      "Bash(node scripts/step2-research.mjs ugreen-usb-hub-osusume)",
+      "Bash(node scripts/rebuild-research.mjs ugreen-usb-hub-osusume \"1005010623438591,1005007093825890,1005007678500795,1005008286489037,1005010217331964\")",
+      "Bash(node scripts/rebuild-research.mjs ugreen-usb-hub-osusume \"1005010623438591,1005007093825890,1005007678500795,1005008286489037,32821301992\")",
+      "Bash(node scripts/rebuild-research.mjs ugreen-usb-hub-osusume \"1005007433155726,1005007093825890,1005007678500795,1005008286489037,32821301992\")",
+      "Bash(node scripts/rebuild-research.mjs ugreen-usb-hub-osusume \"1005007433155726,1005007390056908,1005007678500795,1005008286489037,32821301992\")",
+      "Bash(node scripts/step3-write.mjs ugreen-usb-hub-osusume)",
+      "Bash(node scripts/gen-voices.mjs ugreen-usb-hub-osusume)",
+      "Bash(dir \"c:\\\\Users\\\\USER\\\\product-finder\\\\public\\\\x-data\\\\raw\" /B)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/articles/ugreen-usb-hub-osusume-plan.json','utf8'\\)\\); console.log\\(JSON.stringify\\(d.subKeywords||d.sub_keywords||d, null, 2\\)\\)\")",
+      "Bash(node scripts/add-section.mjs ugreen-usb-hub-osusume \"UGREEN USBハブ MacBook おすすめ\" before-faq)",
+      "Bash(node scripts/add-section.mjs ugreen-usb-hub-osusume \"UGREEN USBハブ ドッキングステーション 違い\" before-faq)",
+      "Bash(node scripts/add-section.mjs ugreen-usb-hub-osusume \"USBハブ アリエク 安全 品質\" before-faq)",
+      "Bash(magick --version)"
     ]
   }
 }

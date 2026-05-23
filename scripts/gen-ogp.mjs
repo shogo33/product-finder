@@ -12,7 +12,10 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 
 // カテゴリ別アクセントカラー
 const CAT_COLOR = {
-  basics:   '#3b82f6',
+  gadget:   '#3b82f6',
+  game:     '#7c3aed',
+  outdoor:  '#16a34a',
+  guide:    '#0ea5e9',
   safety:   '#16a34a',
   payment:  '#9333ea',
   shipping: '#ea580c',
@@ -39,7 +42,10 @@ const SLUG_SUB = {
 };
 
 const CAT_SUB = {
-  basics:   'AliExpress\n完全ガイド',
+  gadget:   'アリエクswipe\nガジェット特集',
+  game:     'アリエクswipe\nゲーム周辺機器',
+  outdoor:  'アリエクswipe\nアウトドア特集',
+  guide:    'アリエクswipe\n完全ガイド',
   safety:   'AliExpress\n安全・安心ガイド',
   payment:  'AliExpress\n支払い方法ガイド',
   shipping: 'AliExpress\n配送・追跡ガイド',

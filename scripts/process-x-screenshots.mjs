@@ -43,9 +43,9 @@ const FILE_TO_ARTICLE = {
   'アリエク 関税':             { slug: 'aliexpress-kanzei',         folder: 'shipping' },
   'アリエク 送料':             { slug: 'aliexpress-soryo',          folder: 'shipping' },
   'アリエク キャンセル':        { slug: 'aliexpress-cancel',         folder: 'shipping' },
-  'アリエク サイズ':            { slug: 'aliexpress-size',           folder: 'basics'   },
-  'アリエク コントローラー':    { slug: 'aliexpress-gamepad-osusume', folder: 'basics'  },
-  'gamesir':                    { slug: 'gamesir-controller-osusume', folder: 'basics'  },
+  'アリエク サイズ':            { slug: 'aliexpress-size',           folder: 'safety'   },
+  'アリエク コントローラー':    { slug: 'aliexpress-gamepad-osusume', folder: 'game'  },
+  'gamesir':                    { slug: 'gamesir-controller-osusume', folder: 'game'  },
 };
 
 // ファイル名からクエリキーを抽出

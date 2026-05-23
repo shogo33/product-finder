@@ -1,6 +1,6 @@
 /**
  * gen-top-cards.mjs
- * basics/ shipping/ safety/ の記事を走査して index.html の各セクションを自動更新
+ * gadget/ game/ outdoor/ guide/ shipping/ safety/ の記事を走査して index.html の各セクションを自動更新
  * 使い方: node scripts/gen-top-cards.mjs
  */
 import fs from 'fs';
@@ -8,17 +8,26 @@ import path from 'path';
 
 const PUBLIC   = path.resolve('public');
 const INDEX    = path.join(PUBLIC, 'index.html');
-const BASICS   = path.join(PUBLIC, 'basics');
+const GADGET   = path.join(PUBLIC, 'gadget');
+const GAME     = path.join(PUBLIC, 'game');
+const OUTDOOR  = path.join(PUBLIC, 'outdoor');
+const GUIDE    = path.join(PUBLIC, 'guide');
 const SHIPPING = path.join(PUBLIC, 'shipping');
 const SAFETY   = path.join(PUBLIC, 'safety');
 const INITIAL  = 6; // おすすめセクション初期表示件数
 
 const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap']);
-const KNOWLEDGE_SLUGS = new Set(['aliexpress-what-is', 'aliexpress-account', 'aliexpress-choice']);
-// ブランド解説・比較ガイド記事（商品紹介なし）→ おすすめ商品ではなく比較・ブランド解説セクションへ
-const TIPS_SLUGS = new Set(['naturehike-brand', 'aliexpress-vs-temu']);
-// basics/ 内にあるが安全性・トラブルセクションに表示する記事
-const SAFETY_EXTRA_SLUGS = new Set(['aliexpress-size']);
+
+// guide/ の中で入門セクションに入るスラッグ（おすすめ・比較ガイドセクション除外）
+const BEGINNER_SLUGS = new Set(['aliexpress-what-is', 'aliexpress-account', 'aliexpress-choice']);
+// guide/ の中でおすすめ商品セクションに入るスラッグ（商品紹介記事）
+const GUIDE_RECOMMEND_SLUGS = new Set([
+  'aliexpress-1000yen-kawatte-yokatta',
+  'aliexpress-osusume',
+  'aliexpress-sticker-osusume',
+]);
+// guide/ の中で比較・ガイドセクションに入るスラッグ（ブランド解説・比較）
+// ※上記2セット以外のguide/記事が自動的にTIPSへ
 
 const CARD_TAG_OVERRIDE = {
   'aliexpress-1000yen-kawatte-yokatta': 'プチプラ',
@@ -31,11 +40,15 @@ const CARD_TAG_OVERRIDE = {
   'aliexpress-vs-temu':                '比較ガイド',
   'aliexpress-todokanai':              'トラブル対策',
 };
+
 function getCardTag(slug, folder) {
   if (CARD_TAG_OVERRIDE[slug]) return CARD_TAG_OVERRIDE[slug];
+  if (folder === 'gadget')   return 'ガジェット';
+  if (folder === 'game')     return 'ゲーム';
+  if (folder === 'outdoor')  return 'アウトドア';
+  if (folder === 'guide')    return 'ガイド';
   if (folder === 'shipping') return '配送・追跡';
   if (folder === 'safety')   return '安全性';
-  if (slug.includes('naturehike')) return 'アウトドア';
   return 'おすすめ商品';
 }
 
@@ -52,7 +65,6 @@ function extractDesc(html) {
 }
 
 function extractThumb(html, slug) {
-  // スラッグ専用SVGがあれば優先
   if (fs.existsSync(path.join(PUBLIC, 'images', `${slug}.svg`))) {
     return `/images/${slug}.svg`;
   }
@@ -104,9 +116,9 @@ function makeCardHtml({ slug, html, folder }) {
       </a>`;
 }
 
-// ── 比較・ブランド解説（TIPS_SLUGS に該当するもの） ──
-const tipsEntries = collectEntries(BASICS, 'basics')
-  .filter(e => TIPS_SLUGS.has(e.slug));
+// ── 比較・ガイド（guide/ のうち BEGINNER・GUIDE_RECOMMEND 以外）──
+const tipsEntries = collectEntries(GUIDE, 'guide')
+  .filter(e => !BEGINNER_SLUGS.has(e.slug) && !GUIDE_RECOMMEND_SLUGS.has(e.slug));
 
 const tipsCards = tipsEntries.map(makeCardHtml).join('\n');
 const tipsBlock = `    <!-- TIPS-START -->
@@ -115,11 +127,15 @@ ${tipsCards}
     </div>
     <!-- TIPS-END -->`;
 
-// ── おすすめ商品（basics/ のみ、入門記事・tips記事除く） ──
-const basicsEntries = collectEntries(BASICS, 'basics')
-  .filter(e => !KNOWLEDGE_SLUGS.has(e.slug) && !TIPS_SLUGS.has(e.slug) && !SAFETY_EXTRA_SLUGS.has(e.slug));
+// ── おすすめ商品（gadget/ game/ outdoor/ 全件 + guide/ からの商品記事）──
+const recommendEntries = [
+  ...collectEntries(GADGET, 'gadget'),
+  ...collectEntries(GAME, 'game'),
+  ...collectEntries(OUTDOOR, 'outdoor'),
+  ...collectEntries(GUIDE, 'guide').filter(e => GUIDE_RECOMMEND_SLUGS.has(e.slug)),
+].sort((a, b) => a.mtime - b.mtime);
 
-const recommendCards = basicsEntries.map(makeCardHtml).join('\n');
+const recommendCards = recommendEntries.map(makeCardHtml).join('\n');
 
 const showMoreScript = `    <div style="text-align:center;margin-top:16px;">
       <button id="show-more-btn" onclick="showMoreCards()" style="background:#e8253a;color:#fff;border:none;padding:12px 32px;border-radius:24px;font-size:0.88rem;font-weight:700;cursor:pointer;font-family:inherit;">もっと見る ↓</button>
@@ -147,7 +163,7 @@ ${recommendCards}
 ${showMoreScript}
     <!-- RECOMMEND-END -->`;
 
-// ── 配送・追跡（shipping/ 全件） ──
+// ── 配送・追跡（shipping/ 全件）──
 const shippingEntries = collectEntries(SHIPPING, 'shipping');
 const shippingCards = shippingEntries.map(makeCardHtml).join('\n');
 const shippingBlock = `    <!-- SHIPPING-START -->
@@ -156,11 +172,8 @@ ${shippingCards}
     </div>
     <!-- SHIPPING-END -->`;
 
-// ── 安全性（safety/ 全件 + basics/ からのSAFETY_EXTRA） ──
-const safetyExtraEntries = collectEntries(BASICS, 'basics')
-  .filter(e => SAFETY_EXTRA_SLUGS.has(e.slug));
-const safetyEntries = [...collectEntries(SAFETY, 'safety'), ...safetyExtraEntries]
-  .sort((a, b) => a.mtime - b.mtime);
+// ── 安全性（safety/ 全件）──
+const safetyEntries = collectEntries(SAFETY, 'safety');
 const safetyCards = safetyEntries.map(makeCardHtml).join('\n');
 const safetyBlock = `    <!-- SAFETY-START -->
     <div class="article-grid">
@@ -179,11 +192,20 @@ function inject(html, startMark, endMark, block) {
   return html.slice(0, si) + block + html.slice(ei + endMark.length);
 }
 
+// 入門・基礎セクションのリンクも更新（BEGINNER slugはguide/に移動済み）
+function updateBeginnerLinks(html) {
+  // guide/ に移動した入門記事のリンクが既に migrate-folders.mjs で更新済み
+  return html;
+}
+
 let indexHtml = fs.readFileSync(INDEX, 'utf8');
 indexHtml = inject(indexHtml, '<!-- RECOMMEND-START -->', '<!-- RECOMMEND-END -->', recommendBlock);
 indexHtml = inject(indexHtml, '<!-- TIPS-START -->',      '<!-- TIPS-END -->',      tipsBlock);
 indexHtml = inject(indexHtml, '<!-- SHIPPING-START -->', '<!-- SHIPPING-END -->', shippingBlock);
 indexHtml = inject(indexHtml, '<!-- SAFETY-START -->',   '<!-- SAFETY-END -->',   safetyBlock);
+indexHtml = updateBeginnerLinks(indexHtml);
 fs.writeFileSync(INDEX, indexHtml, 'utf8');
 
-console.log(`✅ index.html のおすすめカードを更新 (basics ${basicsEntries.length}件 / tips ${tipsEntries.length}件 / shipping ${shippingEntries.length}件 / safety ${safetyEntries.length}件)`);
+console.log(`✅ index.html のおすすめカードを更新`);
+console.log(`   recommend: ${recommendEntries.length}件 (gadget:${collectEntries(GADGET,'gadget').length} game:${collectEntries(GAME,'game').length} outdoor:${collectEntries(OUTDOOR,'outdoor').length} guide_rec:${collectEntries(GUIDE,'guide').filter(e=>GUIDE_RECOMMEND_SLUGS.has(e.slug)).length})`);
+console.log(`   tips: ${tipsEntries.length}件 / shipping: ${shippingEntries.length}件 / safety: ${safetyEntries.length}件`);
