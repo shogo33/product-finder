@@ -206,7 +206,11 @@
       nav.setAttribute('aria-label', 'パンくず');
       nav.innerHTML = inner;
       var header = document.querySelector('.site-header');
-      if (header) header.insertAdjacentElement('afterend', nav);
+      if (header) {
+        // 記事HTML内の古いパンくずを削除してから新しいものを注入
+        document.querySelectorAll('nav.breadcrumb').forEach(function(el) { el.remove(); });
+        header.insertAdjacentElement('afterend', nav);
+      }
     })();
 
     /* ハンバーガーメニュー開閉 */
