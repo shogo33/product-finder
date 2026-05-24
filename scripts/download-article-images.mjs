@@ -11,7 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-const BASICS_DIR   = 'public/basics';
+const ARTICLE_DIRS = ['gadget','game','outdoor','guide','safety','payment','shipping'].map(d => `public/${d}`);
 const IMAGES_BASE  = 'public/images/products';
 const CONCURRENCY  = 4;   // 並列ダウンロード数
 const TIMEOUT_MS   = 20000;
@@ -51,9 +51,9 @@ function urlHash(url) {
   return crypto.createHash('md5').update(url).digest('hex').slice(0, 8);
 }
 
-async function processFile(htmlFile) {
+async function processFile(htmlFile, dir) {
   const slug = slugFromFile(htmlFile);
-  const htmlPath = path.join(BASICS_DIR, htmlFile);
+  const htmlPath = path.join(dir, htmlFile);
   let html = fs.readFileSync(htmlPath, 'utf8');
 
   // 外部imgを全部抽出（重複含む）
@@ -122,16 +122,21 @@ async function processFile(htmlFile) {
 }
 
 // ── メイン ──────────────────────────────────────────────────
-const htmlFiles = fs.readdirSync(BASICS_DIR)
-  .filter(f => f.endsWith('.html'));
+const allFiles = [];
+for (const dir of ARTICLE_DIRS) {
+  if (!fs.existsSync(dir)) continue;
+  for (const f of fs.readdirSync(dir)) {
+    if (f.endsWith('.html')) allFiles.push({ file: f, dir });
+  }
+}
 
-console.log(`\n🔍 ${htmlFiles.length}ファイルを処理します...\n`);
+console.log(`\n🔍 ${allFiles.length}ファイルを処理します...\n`);
 
 let totalDown = 0, totalFail = 0, totalSkip = 0;
 
-for (const file of htmlFiles) {
+for (const { file, dir } of allFiles) {
   process.stdout.write(`\n[${file}] `);
-  const r = await processFile(file);
+  const r = await processFile(file, dir);
   totalDown += r.downloaded;
   totalFail += r.failed;
   totalSkip += r.skipped;

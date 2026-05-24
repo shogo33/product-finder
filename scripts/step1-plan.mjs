@@ -24,7 +24,7 @@ const category = args[2] ?? 'gadget';
 
 if (!keyword || !slug) {
   console.error('使い方: node scripts/step1-plan.mjs "キーワード" <slug> [カテゴリ=basics]');
-  console.error('例:    node scripts/step1-plan.mjs "UGREEN マウス おすすめ" ugreen-mouse-osusume2 gadget
+  console.error('例:    node scripts/step1-plan.mjs "UGREEN マウス おすすめ" ugreen-mouse-osusume2 gadget');
   process.exit(1);
 }
 

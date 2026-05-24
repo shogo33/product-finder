@@ -166,6 +166,13 @@ const ARTICLE_CONFIG = [
     queries:   ['UGREEN Revodok docking station review', 'UGREEN dock station aliexpress experience', 'USB C docking station MacBook review'],
     topic:     'UGREEN ドッキングステーションのリアルな評判・体験談',
   },
+  {
+    slug:      'ugreen-wifi-osusume',
+    folder:    'gadget',
+    subreddit: 'Aliexpress',
+    queries:   ['UGREEN WiFi adapter review aliexpress', 'USB WiFi adapter AX1800 review', 'UGREEN wireless adapter experience'],
+    topic:     'UGREEN WiFiアダプターのリアルな評判・体験談',
+  },
 ];
 
 // ──────────────────────────────────────────────
