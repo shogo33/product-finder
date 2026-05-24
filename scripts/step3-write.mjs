@@ -376,7 +376,7 @@ const fullHtml = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${title} | アリエクswipe｜お得情報・格安商品</title>
+  <title>${title} | アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品</title>
   <meta name="description" content="${desc}" />
   <meta name="keywords" content="${keywords}" />
   <meta property="og:title" content="${title}" />

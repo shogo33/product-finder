@@ -236,18 +236,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aliswipe.com/outdoor/naturehike-sleeping-bag-osusume.html</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://aliswipe.com/outdoor/naturehike-tent-osusume.html</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://aliswipe.com/gadget/ugreen-cable-osusume.html</loc>
     <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -298,6 +286,18 @@
   <url>
     <loc>https://aliswipe.com/gadget/xiaomi-band10-strap-osusume.html</loc>
     <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aliswipe.com/outdoor/naturehike-sleeping-bag-osusume.html</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aliswipe.com/outdoor/naturehike-tent-osusume.html</loc>
+    <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

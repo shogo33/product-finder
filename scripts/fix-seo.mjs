@@ -107,7 +107,7 @@ for (const file of getAllHtmlFiles(base)) {
       const webSite = {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'アリエクswipe｜お得情報・格安商品',
+        name: 'アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品',
         url: `${DOMAIN}/`,
         description,
       };

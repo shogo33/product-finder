@@ -36,6 +36,21 @@
       '</div>' +
     '</nav>';
 
+  /* ── 監修者ボックス ────────────────────────────── */
+  var SUPERVISOR_HTML =
+    '<div class="supervisor-box">' +
+      '<div class="supervisor-inner">' +
+        '<div class="supervisor-avatar">👨‍👧</div>' +
+        '<div>' +
+          '<div class="supervisor-label">この記事の監修者</div>' +
+          '<div class="supervisor-name">アリエクパパ</div>' +
+          '<div class="supervisor-meta">都内在住・30歳・一児のパパ</div>' +
+          '<p class="supervisor-bio">キャンプ・ガジェット・自転車が趣味のアリエクヘビーユーザー。自腹で数え切れないほどのアイテムを購入してきた実体験をもとに、コスパ最強の格安商品を紹介しています。</p>' +
+          '<a href="/info/about.html" class="supervisor-link">詳しいプロフィールを見る →</a>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+
   /* ── スティッキーCTA ───────────────────────────── */
   var STICKY_CTA_HTML =
     '<a href="https://aliswipe.com/app/" target="_blank" rel="noopener" style="display:block;color:#fff;text-decoration:none;">' +
@@ -51,7 +66,7 @@
       '<a href="/info/about.html">運営者情報</a>' +
       '<a href="/sitemap.html">サイトマップ</a>' +
     '</div>' +
-    '<div>© 2026 アリエクswipe｜お得情報・格安商品. All rights reserved.</div>' +
+    '<div>© 2026 アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品. All rights reserved.</div>' +
     '<div class="footer-aff-notice">' +
       '本サイトはAliExpressのアフィリエイトプログラムに参加しています。' +
       '記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。' +
@@ -104,7 +119,18 @@
     /* パンくず位置のブランドバッジ */
     '.site-brand-nav{padding:7px 16px;background:#fafaf8;border-bottom:1px solid #e5e7eb;}' +
     '.site-brand-nav a{display:inline-flex;align-items:center;text-decoration:none;opacity:.75;transition:opacity .15s;}' +
-    '.site-brand-nav a:hover{opacity:1;}';
+    '.site-brand-nav a:hover{opacity:1;}' +
+    /* 監修者ボックス */
+    '.supervisor-box{max-width:760px;margin:0 auto;padding:0 20px 40px;}' +
+    '.supervisor-inner{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px 24px;}' +
+    '.supervisor-avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#fbbf24,#f97316);display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0;}' +
+    '.supervisor-label{font-size:.7rem;font-weight:700;color:#9ca3af;margin-bottom:4px;letter-spacing:.04em;text-transform:uppercase;}' +
+    '.supervisor-name{font-size:1.05rem;font-weight:700;margin-bottom:2px;}' +
+    '.supervisor-meta{font-size:.78rem;color:#6b7280;margin-bottom:8px;}' +
+    '.supervisor-bio{font-size:.84rem;line-height:1.7;color:#374151;margin-bottom:10px;}' +
+    '.supervisor-link{font-size:.78rem;color:#e8253a;text-decoration:none;font-weight:700;}' +
+    '.supervisor-link:hover{text-decoration:underline;}' +
+    '@media(max-width:480px){.supervisor-inner{flex-direction:column;align-items:center;text-align:center;}}';
 
   var styleEl = document.createElement('style');
   styleEl.textContent = SHARED_CSS;
@@ -130,6 +156,14 @@
     /* スティッキーCTA */
     var cta = document.getElementById('cta-sticky');
     if (cta) cta.innerHTML = STICKY_CTA_HTML;
+
+    /* 監修者ボックスをフッター直前に注入 */
+    var siteFooter = document.querySelector('footer.site-footer');
+    if (siteFooter) {
+      var supWrap = document.createElement('div');
+      supWrap.innerHTML = SUPERVISOR_HTML;
+      siteFooter.parentNode.insertBefore(supWrap.firstChild, siteFooter);
+    }
 
     /* パンくずを非表示 */
     var breadcrumb = document.querySelector('nav.breadcrumb');

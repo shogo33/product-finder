@@ -359,7 +359,7 @@ const html = `<!DOCTYPE html>
     <a href="/info/about.html">運営者情報</a>
     <a href="/home.html">トップへ戻る</a>
   </div>
-  <p>© 2026 アリエクswipe｜お得情報・格安商品. All rights reserved.</p>
+  <p>© 2026 アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品. All rights reserved.</p>
   <p class="footer-aff-notice">本記事にはAliExpressアフィリエイトリンクが含まれています。記事内の価格・評価はすべて執筆時点の情報です。実際の価格はリンク先でご確認ください。</p>
 </footer>
 

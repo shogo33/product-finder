@@ -157,8 +157,8 @@ const html = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>サイトマップ | アリエクswipe｜お得情報・格安商品</title>
-  <meta name="description" content="アリエクswipe｜お得情報・格安商品のサイトマップです。" />
+  <title>サイトマップ | アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品</title>
+  <meta name="description" content="アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品のサイトマップです。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
   <style>
@@ -268,7 +268,7 @@ ${sectionsHtml}
     <a href="/info/about.html">運営者情報</a>
     <a href="/sitemap.html">サイトマップ</a>
   </div>
-  <div>© 2026 アリエクswipe｜お得情報・格安商品. All rights reserved.</div>
+  <div>© 2026 アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品. All rights reserved.</div>
   <div class="footer-aff-notice">
     本サイトはAliExpressのアフィリエイトプログラムに参加しています。
     記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。
