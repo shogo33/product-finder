@@ -20,6 +20,7 @@ run('node scripts/gen-sitemap.mjs');
 run('node scripts/gen-top-cards.mjs');
 run('node scripts/gen-faq-schema.mjs');
 run('node scripts/gen-related-links.mjs');
+run('node scripts/gen-category-pages.mjs');
 run('node scripts/gen-ogp.mjs');
 
 console.log('\n✅ 全生成完了');
