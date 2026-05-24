@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
@@ -49,18 +49,7 @@
       border-bottom: 1px solid var(--border);
       padding: 28px 20px;
     }
-    .hero-inner {
-      max-width: var(--max); margin: 0 auto;
-      display: flex; align-items: center; gap: 40px;
-      justify-content: center; text-align: center;
-    }
-    .hero-left { flex: 1; min-width: 0; max-width: 640px; }
-    .hero-right { flex: 0 0 400px; display: flex; justify-content: center; }
-    @media (max-width: 780px) {
-      .hero-inner { flex-direction: column; text-align: center; }
-      .hero-right { flex: none; width: 100%; max-width: 340px; }
-    }
-    .hero-badge { display: none; }
+    .hero-inner { max-width: var(--max); margin: 0 auto; text-align: center; }
     .hero h1 { font-weight: 800; font-size: clamp(1.6rem, 3.5vw, 2.4rem); line-height: 1.35; margin: 0 0 16px; color: var(--text); }
     .hero h1 em { font-style: normal; color: var(--red); }
     .hero-sub { color: var(--muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 12px; }
@@ -69,116 +58,85 @@
     .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
     .hero-cta { display: inline-block; background: var(--red); color: #fff; text-decoration: none; padding: 13px 28px; border-radius: 999px; font-weight: 700; font-size: 0.95rem; transition: background 0.2s; white-space: nowrap; }
     .hero-cta:hover { background: var(--red-dk); }
-    .hero-cta-sub { display: inline-block; background: #fff; color: var(--red); text-decoration: none; padding: 13px 28px; border-radius: 999px; font-weight: 700; font-size: 0.95rem; border: 1.5px solid var(--red); transition: all 0.2s; white-space: nowrap; }
-    .hero-cta-sub:hover { background: #fff1f2; }
-    /* hero visual */
-    .hero-visual { width: 100%; max-width: 380px; }
-    .hv-phone { background: #fff; border-radius: 28px; box-shadow: 0 8px 32px rgba(0,0,0,.12); padding: 16px; position: relative; }
-    .hv-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-    .hv-logo { font-size: 0.75rem; font-weight: 800; color: var(--red); }
-    .hv-dots { display: flex; gap: 4px; }
-    .hv-dot { width: 6px; height: 6px; border-radius: 50%; background: #e5e7eb; }
-    .hv-dot.active { background: var(--red); }
-    .hv-card { background: linear-gradient(160deg,#fff1f2,#fff); border: 1px solid #fecdd3; border-radius: 18px; padding: 14px; margin-bottom: 8px; }
-    .hv-card-img { width: 100%; height: 120px; background: linear-gradient(135deg,#fee2e2,#fef3c7); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; margin-bottom: 10px; }
-    .hv-card-tag { display: inline-block; background: var(--red); color: #fff; font-size: 0.6rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; margin-bottom: 6px; }
-    .hv-card-title { font-size: 0.8rem; font-weight: 700; color: var(--text); margin-bottom: 4px; line-height: 1.4; }
-    .hv-card-price { font-size: 1rem; font-weight: 800; color: var(--red); }
-    .hv-card-price span { font-size: 0.72rem; color: var(--muted); font-weight: 400; margin-left: 4px; text-decoration: line-through; }
-    .hv-actions { display: flex; gap: 8px; }
-    .hv-btn { flex: 1; padding: 9px; border-radius: 12px; border: none; font-size: 0.8rem; font-weight: 700; cursor: default; }
-    .hv-btn-skip { background: #f1f5f9; color: #64748b; }
-    .hv-btn-like { background: var(--red); color: #fff; }
 
     /* ─── Category Nav ─── */
-    .category-nav-wrap {
-      background: #f8f8f8;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 32px 20px 28px;
-    }
-    .category-nav {
-      max-width: var(--max); margin: 0 auto;
-    }
-    .category-nav-title {
-      font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--text);
-    }
-    .cat-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    @media (max-width: 680px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
+    .category-nav-wrap { background: #f8f8f8; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 24px 20px; }
+    .category-nav { max-width: var(--max); margin: 0 auto; }
+    .category-nav-title { font-size: 1rem; font-weight: 700; margin-bottom: 14px; color: var(--text); }
+    .cat-row-label { font-size: 0.7rem; font-weight: 700; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; margin: 14px 0 8px; }
+    .cat-row-label:first-of-type { margin-top: 0; }
+    .cat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    @media (max-width: 560px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
     .cat-btn {
-      display: flex; align-items: center; gap: 10px;
+      display: flex; align-items: center; gap: 8px;
       background: var(--surface); border: 1px solid var(--border);
-      border-radius: 12px; padding: 10px 12px;
+      border-radius: 10px; padding: 9px 10px;
       text-decoration: none; color: var(--text);
-      transition: all 0.18s; position: relative;
+      transition: all 0.18s;
     }
     .cat-btn:hover { border-color: var(--red); box-shadow: 0 2px 8px rgba(220,38,38,.1); background: #fff; }
-    .cat-btn-icon { font-size: 1.4rem; flex-shrink: 0; width: 32px; text-align: center; }
-    .cat-btn-body { flex: 1; min-width: 0; }
-    .cat-btn-name { font-size: 0.85rem; font-weight: 700; color: var(--text); }
-    .cat-btn-arrow { color: #ccc; font-size: 0.85rem; flex-shrink: 0; }
+    .cat-btn-icon { font-size: 1.2rem; flex-shrink: 0; }
+    .cat-btn-name { font-size: 0.8rem; font-weight: 700; }
+    .cat-btn-arrow { color: #ccc; font-size: 0.8rem; margin-left: auto; flex-shrink: 0; }
 
-    /* ─── Main ─── */
-    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px 64px; }
+    /* ─── Zone 1: Main Container ─── */
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px 56px; }
 
     .section-title {
       font-size: 1.1rem; font-weight: 700;
       border-left: 4px solid var(--red); padding-left: 12px;
-      margin: 40px 0 20px;
+      margin: 44px 0 18px;
       scroll-margin-top: 72px;
     }
 
-    /* ─── Article Grid ─── */
-    .article-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-    @media (min-width: 600px) {
-      .article-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    }
+    /* ─── Article Grid (Zone 1) ─── */
+    .article-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    @media (min-width: 600px) { .article-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
     .article-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 0;
-      text-decoration: none; color: var(--text);
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); text-decoration: none; color: var(--text);
       transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
-      display: flex; flex-direction: column; gap: 0;
-      overflow: hidden;
+      display: flex; flex-direction: column; overflow: hidden;
     }
     .article-card:hover { border-color: var(--red); box-shadow: 0 4px 16px rgba(232,37,58,0.1); transform: translateY(-2px); }
     .card-thumb { width: 100%; aspect-ratio: 400/220; object-fit: cover; display: block; }
     .card-body { padding: 10px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
-    @media (min-width: 600px) { .card-body { padding: 16px; gap: 8px; } }
+    @media (min-width: 600px) { .card-body { padding: 14px; gap: 8px; } }
     .card-tag { font-size: 0.62rem; font-weight: 700; color: var(--red); letter-spacing: 0.05em; }
-    @media (min-width: 600px) { .card-tag { font-size: 0.68rem; } }
     .card-title { font-size: 0.78rem; font-weight: 700; line-height: 1.45; }
-    @media (min-width: 600px) { .card-title { font-size: 0.9rem; } }
+    @media (min-width: 600px) { .card-title { font-size: 0.88rem; } }
     .card-desc { font-size: 0.75rem; color: var(--muted); line-height: 1.6; display: none; }
-    @media (min-width: 600px) { .card-desc { display: block; font-size: 0.82rem; } }
+    @media (min-width: 600px) { .card-desc { display: block; font-size: 0.8rem; } }
     .card-arrow { font-size: 0.72rem; color: var(--red); margin-top: auto; padding-top: 4px; }
 
-    /* ─── Featured Card ─── */
-    .featured-card {
-      background: linear-gradient(135deg, #fff1f2, #fff);
-      border: 2px solid var(--red);
-      border-radius: var(--radius);
-      padding: 24px;
-      text-decoration: none; color: var(--text);
-      transition: box-shadow 0.2s;
-      display: flex; flex-direction: column; gap: 8px;
-      grid-column: 1 / -1;
+    /* ─── Zone 2: 情報ゾーン ─── */
+    .info-zone {
+      background: #f3f4f6;
+      border-top: 2px solid var(--border);
+      padding: 0 0 64px;
     }
-    @media (min-width: 600px) { .featured-card { flex-direction: row; align-items: center; gap: 24px; } }
-    .featured-card:hover { box-shadow: 0 4px 24px rgba(232,37,58,0.15); }
-    .featured-label { font-size: 0.68rem; font-weight: 700; color: var(--red); letter-spacing: 0.1em; }
-    .featured-title { font-size: 1.05rem; font-weight: 700; line-height: 1.5; flex: 1; }
-    .featured-btn { background: var(--red); color: #fff; padding: 10px 20px; border-radius: 999px; font-size: 0.82rem; font-weight: 700; white-space: nowrap; }
+    .info-zone-inner { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    .info-zone .section-title { color: var(--text); }
+
+    .info-link-list {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .info-link {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 13px 16px;
+      text-decoration: none; color: var(--text);
+      font-size: 0.88rem; line-height: 1.5;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.12s, color 0.12s;
+    }
+    .info-link:last-child { border-bottom: none; }
+    .info-link:hover { background: #fff1f2; color: var(--red); }
+    .info-link-title { flex: 1; }
+    .info-link-arrow { color: #d1d5db; font-size: 1.1rem; margin-left: 10px; flex-shrink: 0; transition: color 0.12s; }
+    .info-link:hover .info-link-arrow { color: var(--red); }
 
     /* ─── Footer ─── */
     .site-footer {
@@ -190,9 +148,7 @@
     .footer-links a { color: #9ca3af; text-decoration: none; }
     .footer-links a:hover { color: #fff; }
     .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--red); margin-bottom: 12px; }
-      @media (max-width: 480px) {
-      .header-cta { padding: 5px 10px; font-size: 0.7rem; }
-    }
+    @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -235,167 +191,87 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-inner">
-      <!-- 左：メッセージ -->
-      <div class="hero-left">
-        <h1>アリエクの<em>お得商品</em>を<br>スワイプして発見しよう</h1>
-        <p class="hero-sub">はじめてでも大丈夫。支払い・配送・安全性をわかりやすく解説。</p>
-        <div class="hero-points">
-          <div class="hero-point">💳 支払い方法完全解説</div>
-          <div class="hero-point">📦 配送・追跡ガイド</div>
-          <div class="hero-point">🔒 安全に使うコツ</div>
-          <div class="hero-point">⭐ 厳選おすすめ商品</div>
-        </div>
-        <div class="hero-actions">
-          <a class="hero-cta" href="https://aliswipe.com/app/" target="_blank" rel="noopener">商品を探す</a>
-        </div>
+      <h1>アリエクの<em>お得商品</em>を<br>スワイプして発見しよう</h1>
+      <p class="hero-sub">はじめてでも大丈夫。支払い・配送・安全性をわかりやすく解説。</p>
+      <div class="hero-points">
+        <div class="hero-point">🛒 ガジェット・周辺機器</div>
+        <div class="hero-point">🎮 ゲーム・コントローラー</div>
+        <div class="hero-point">🏕 アウトドア用品</div>
+        <div class="hero-point">🔒 安全に使うコツ</div>
+      </div>
+      <div class="hero-actions">
+        <a class="hero-cta" href="https://aliswipe.com/app/" target="_blank" rel="noopener">商品を探す</a>
       </div>
     </div>
   </section>
 
   <!-- Category Nav -->
   <div class="category-nav-wrap">
-  <nav class="category-nav">
-    <div class="category-nav-title">カテゴリから探す</div>
-    <div class="cat-grid">
-      <a class="cat-btn" href="#recommend">
-        <div class="cat-btn-icon">🛒</div>
-        <div class="cat-btn-body">
-          <div class="cat-btn-name">おすすめ商品</div>
-        </div>
-        <div class="cat-btn-arrow">›</div>
-      </a>
-      <a class="cat-btn" href="#beginner">
-        <div class="cat-btn-icon">📖</div>
-        <div class="cat-btn-body">
+    <nav class="category-nav">
+      <div class="category-nav-title">カテゴリから探す</div>
+      <div class="cat-row-label">🛍 商品を探す</div>
+      <div class="cat-grid">
+        <a class="cat-btn" href="#gadget">
+          <div class="cat-btn-icon">🛒</div>
+          <div class="cat-btn-name">ガジェット</div>
+          <div class="cat-btn-arrow">›</div>
+        </a>
+        <a class="cat-btn" href="#game">
+          <div class="cat-btn-icon">🎮</div>
+          <div class="cat-btn-name">ゲーム</div>
+          <div class="cat-btn-arrow">›</div>
+        </a>
+        <a class="cat-btn" href="#outdoor">
+          <div class="cat-btn-icon">🏕</div>
+          <div class="cat-btn-name">アウトドア</div>
+          <div class="cat-btn-arrow">›</div>
+        </a>
+        <a class="cat-btn" href="#guide-rec">
+          <div class="cat-btn-icon">📦</div>
+          <div class="cat-btn-name">買ってよかった</div>
+          <div class="cat-btn-arrow">›</div>
+        </a>
+      </div>
+      <div class="cat-row-label">📚 使い方・困ったとき</div>
+      <div class="cat-grid">
+        <a class="cat-btn" href="#beginner">
+          <div class="cat-btn-icon">📘</div>
           <div class="cat-btn-name">入門・基礎</div>
-        </div>
-        <div class="cat-btn-arrow">›</div>
-      </a>
-      <a class="cat-btn" href="#payment">
-        <div class="cat-btn-icon">💳</div>
-        <div class="cat-btn-body">
-          <div class="cat-btn-name">支払い・決済</div>
-        </div>
-        <div class="cat-btn-arrow">›</div>
-      </a>
-      <a class="cat-btn" href="#shipping">
-        <div class="cat-btn-icon">📦</div>
-        <div class="cat-btn-body">
+          <div class="cat-btn-arrow">›</div>
+        </a>
+        <a class="cat-btn" href="#payment">
+          <div class="cat-btn-icon">💳</div>
+          <div class="cat-btn-name">支払い</div>
+          <div class="cat-btn-arrow">›</div>
+        </a>
+        <a class="cat-btn" href="#shipping">
+          <div class="cat-btn-icon">📦</div>
           <div class="cat-btn-name">配送・追跡</div>
-        </div>
-        <div class="cat-btn-arrow">›</div>
-      </a>
-      <a class="cat-btn" href="#safety">
-        <div class="cat-btn-icon">🔒</div>
-        <div class="cat-btn-body">
+          <div class="cat-btn-arrow">›</div>
+        </a>
+        <a class="cat-btn" href="#safety">
+          <div class="cat-btn-icon">🔒</div>
           <div class="cat-btn-name">安全性</div>
-        </div>
-        <div class="cat-btn-arrow">›</div>
-      </a>
-      <a class="cat-btn" href="#tips">
-        <div class="cat-btn-icon">💡</div>
-        <div class="cat-btn-body">
-          <div class="cat-btn-name">比較・ガイド</div>
-        </div>
-        <div class="cat-btn-arrow">›</div>
-      </a>
-    </div>
-  </nav>
+          <div class="cat-btn-arrow">›</div>
+        </a>
+      </div>
+    </nav>
   </div>
 
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- Zone 1: 商品カテゴリ                               -->
+  <!-- ═══════════════════════════════════════════════════ -->
   <main class="container">
 
-    <!-- おすすめ商品 -->
-    <h2 class="section-title" id="recommend">🛒 おすすめ商品・比較</h2>
-                                                                                                                                                                                <!-- RECOMMEND-START -->
-    <div class="article-grid">
-      <a href="/gadget/aliexpress-projector-under-10000.html" class="article-card">
-        <img src="/images/aliexpress-projector-under-10000.svg" class="card-thumb" alt="アリエク プロジェクターおすすめ3選【1万円以下・2026年最新】" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">プロジェクター</div>
-          <div class="card-title">アリエク プロジェクターおすすめ3選【1万円以下・2026年最新】</div>
-          <div class="card-desc">AliExpressで買える1万円以下のプロジェクター3機種を徹底比較。用途別の選び方とよくある失敗の回避法付き。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/baseus-mobile-battery-osusume.html" class="article-card">
-        <img src="/images/products/baseus-mobile-battery-osusume/6674cc49.jpg" class="card-thumb" alt="Baseusモバイルバッテリー完全ガイド｜失敗しない選び方と人気5選【2026年" loading="lazy">
+    <h2 class="section-title" id="gadget">🛒 ガジェット・周辺機器</h2>
+            <!-- GADGET-START -->
+    <div class="article-grid" id="gadget-grid">
+      <a href="/gadget/ugreen-wifi-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-wifi-osusume/2f95300d.jpg" class="card-thumb" alt="UGREEN WiFiアダプターおすすめ5選【2026年最新】アリエクで安く買う" loading="lazy">
         <div class="card-body">
           <div class="card-tag">ガジェット</div>
-          <div class="card-title">Baseusモバイルバッテリー完全ガイド｜失敗しない選び方と人気5選【2026年】</div>
-          <div class="card-desc">Baseusのモバイルバッテリーをアリエクで買うなら、どのモデルが正解？20W・45W・100Wの出力別に人気モデルを徹底比較。容量・重さ・急速充電対応まで詳しく解説しているので、あなたにぴったりの1台がすぐ見つかります。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/ugreen-cable-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-cable-osusume/e4cc2ab3.jpg" class="card-thumb" alt="UGREENケーブルおすすめ5選【2026年最新】種類・用途別に徹底比較" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREENケーブルおすすめ5選【2026年最新】種類・用途別に徹底比較</div>
-          <div class="card-desc">UGREENケーブルのおすすめ5選を2026年最新情報で徹底比較。USB-C充電・映像出力・データ転送など用途別に選び方のポイントも解説。AliExpressで賢く安く手に入れたい方はこの記事をチェック！</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/ugreen-docking-station-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-docking-station-osusume/0a1eb65d.jpg" class="card-thumb" alt="UGREENドッキングステーションおすすめ5選【2026年最新】" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREENドッキングステーションおすすめ5選【2026年最新】</div>
-          <div class="card-desc">UGREENのドッキングステーションをアリエクで安く買いたい方必見！USB-C Hub・10in1・4K対応など人気5モデルをスペック・価格・用途別に徹底比較。失敗しない選び方のポイントも解説しているので、ぜひ参考にしてください。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/ugreen-earphone-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-p3/ugreen-hitune-p3-1.jpg" class="card-thumb" alt="UGREENイヤホン比較【2026年】コスパ・ANC・音質で選ぶおすすめ5選" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREENイヤホン比較【2026年】コスパ・ANC・音質で選ぶおすすめ5選</div>
-          <div class="card-desc">UGREENのイヤホンでどれを選ぶか迷っていませんか？本記事では2026年最新のおすすめ5選をANC性能・音質・価格・遅延など徹底比較。AliExpressで賢く最安値を狙う方法もあわせて解説します。あなたにぴったりの1本が必ず見つかります</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/ugreen-gan-charger-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-gan-charger-osusume/99d25d64.png" class="card-thumb" alt="UGREENのGaN充電器おすすめ5選【2026年最新】アリエクで安く買う完全ガ" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREENのGaN充電器おすすめ5選【2026年最新】アリエクで安く買う完全ガイド</div>
-          <div class="card-desc">UGREENのGaN充電器をアリエクで安く買いたい方必見。65W・100W・140Wなど人気モデル5選をスペック・価格・ポート数で徹底比較。選び方のポイントも解説しているので、自分にぴったりの一台が見つかります。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/ugreen-mouse-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-mouse-osusume/3d73db75.jpg" class="card-thumb" alt="UGREENマウス比較【2026年】安くて使えるおすすめ4選を厳選" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREENマウス比較【2026年】安くて使えるおすすめ4選を厳選</div>
-          <div class="card-desc">UGREENのマウスはどれを買えばいい？ワイヤレス・静音・エルゴノミクスなど人気モデル4選をスペック・価格・使用感で徹底比較。AliExpressで賢く購入する方法も解説。あなたにぴったりの1台を見つけよう！</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/ugreen-smart-tracker-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-smart-tracker-osusume/e538b053.jpg" class="card-thumb" alt="UGREENスマートトラッカーおすすめ3選【2026年最新】AirTagより安く" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREENスマートトラッカーおすすめ3選【2026年最新】AirTagより安くアリエクで</div>
-          <div class="card-desc">UGREEN FineTrack・Smarttrack K・ウォレットファインダーを比較。AirTagより安くFind My対応。旅行・車・鍵・財布の利用シーン別解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/ugreen-stand-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-stand-osusume/abs-1.jpg" class="card-thumb" alt="UGREENスマホスタンドおすすめ4選【2026年最新】アリエクで安く買う方法も" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREENスマホスタンドおすすめ4選【2026年最新】アリエクで安く買う方法も解説</div>
-          <div class="card-desc">UGREENのスマホスタンドはどれがいい？折りたたみABS・アルミ薄型・タブレット兼用・MagSafe対応の4モデルをスペック・用途・価格で徹底比較。AliExpressで安く買う方法も解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/gadget/ugreen-usb-hub-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-usb-hub-osusume/9e463df6.png" class="card-thumb" alt="UGREENのUSBハブおすすめ5選【2026年最新】アリエクで安く買う完全ガイ" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREENのUSBハブおすすめ5選【2026年最新】アリエクで安く買う完全ガイド</div>
-          <div class="card-desc">アリエクでUGREEN USBハブを買いたい方必見！ポート数・USB-C対応・4K出力など目的別におすすめ5選を徹底比較。価格・スペック・失敗しない選び方まで解説しているので、この記事を読んでお気に入りの1台を見つけてください。</div>
+          <div class="card-title">UGREEN WiFiアダプターおすすめ5選【2026年最新】アリエクで安く買う完全ガイド</div>
+          <div class="card-desc">UGREENのWiFiアダプターをアリエクで安く買うなら？WiFi 6・デュアルバンド・nano型など人気5選を用途別に徹底比較。初心者でも失敗しない選び方と最安値での購入手順を詳しく解説します。</div>
           <div class="card-arrow">読む</div>
         </div>
       </a>
@@ -408,15 +284,113 @@
           <div class="card-arrow">読む</div>
         </div>
       </a>
-      <a href="/game/aliexpress-gamepad-osusume.html" class="article-card">
-        <img src="/images/aliexpress-gamepad-osusume.svg" class="card-thumb" alt="アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイ" loading="lazy">
+      <a href="/gadget/ugreen-usb-hub-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-usb-hub-osusume/9e463df6.png" class="card-thumb" alt="UGREENのUSBハブおすすめ5選【2026年最新】アリエクで安く買う完全ガイ" loading="lazy">
         <div class="card-body">
-          <div class="card-tag">ゲーム</div>
-          <div class="card-title">アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイド</div>
-          <div class="card-desc">AliExpressで買えるゲームパッド・コントローラーのおすすめ10選を徹底比較。Switch・Android・PC対応別に価格・遅延・接続方式を丁寧に解説します。失敗しない選び方のポイントも網羅しているので、ぜひ購入前にチェックしてくだ</div>
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">UGREENのUSBハブおすすめ5選【2026年最新】アリエクで安く買う完全ガイド</div>
+          <div class="card-desc">アリエクでUGREEN USBハブを買いたい方必見！ポート数・USB-C対応・4K出力など目的別におすすめ5選を徹底比較。価格・スペック・失敗しない選び方まで解説しているので、この記事を読んでお気に入りの1台を見つけてください。</div>
           <div class="card-arrow">読む</div>
         </div>
       </a>
+      <a href="/gadget/ugreen-stand-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-stand-osusume/abs-1.jpg" class="card-thumb" alt="UGREENスマホスタンドおすすめ4選【2026年最新】アリエクで安く買う方法も" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">UGREENスマホスタンドおすすめ4選【2026年最新】アリエクで安く買う方法も解説</div>
+          <div class="card-desc">UGREENのスマホスタンドはどれがいい？折りたたみABS・アルミ薄型・タブレット兼用・MagSafe対応の4モデルをスペック・用途・価格で徹底比較。AliExpressで安く買う方法も解説。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/gadget/ugreen-smart-tracker-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-smart-tracker-osusume/e538b053.jpg" class="card-thumb" alt="UGREENスマートトラッカーおすすめ3選【2026年最新】AirTagより安く" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">UGREENスマートトラッカーおすすめ3選【2026年最新】AirTagより安くアリエクで</div>
+          <div class="card-desc">UGREEN FineTrack・Smarttrack K・ウォレットファインダーを比較。AirTagより安くFind My対応。旅行・車・鍵・財布の利用シーン別解説。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/gadget/ugreen-mouse-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-mouse-osusume/3d73db75.jpg" class="card-thumb" alt="UGREENマウス比較【2026年】安くて使えるおすすめ4選を厳選" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">UGREENマウス比較【2026年】安くて使えるおすすめ4選を厳選</div>
+          <div class="card-desc">UGREENのマウスはどれを買えばいい？ワイヤレス・静音・エルゴノミクスなど人気モデル4選をスペック・価格・使用感で徹底比較。AliExpressで賢く購入する方法も解説。あなたにぴったりの1台を見つけよう！</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/gadget/ugreen-gan-charger-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-gan-charger-osusume/99d25d64.png" class="card-thumb" alt="UGREENのGaN充電器おすすめ5選【2026年最新】アリエクで安く買う完全ガ" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">UGREENのGaN充電器おすすめ5選【2026年最新】アリエクで安く買う完全ガイド</div>
+          <div class="card-desc">UGREENのGaN充電器をアリエクで安く買いたい方必見。65W・100W・140Wなど人気モデル5選をスペック・価格・ポート数で徹底比較。選び方のポイントも解説しているので、自分にぴったりの一台が見つかります。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/gadget/ugreen-earphone-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-p3/ugreen-hitune-p3-1.jpg" class="card-thumb" alt="UGREENイヤホン比較【2026年】コスパ・ANC・音質で選ぶおすすめ5選" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">UGREENイヤホン比較【2026年】コスパ・ANC・音質で選ぶおすすめ5選</div>
+          <div class="card-desc">UGREENのイヤホンでどれを選ぶか迷っていませんか？本記事では2026年最新のおすすめ5選をANC性能・音質・価格・遅延など徹底比較。AliExpressで賢く最安値を狙う方法もあわせて解説します。あなたにぴったりの1本が必ず見つかります</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/gadget/ugreen-docking-station-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-docking-station-osusume/0a1eb65d.jpg" class="card-thumb" alt="UGREENドッキングステーションおすすめ5選【2026年最新】" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">UGREENドッキングステーションおすすめ5選【2026年最新】</div>
+          <div class="card-desc">UGREENのドッキングステーションをアリエクで安く買いたい方必見！USB-C Hub・10in1・4K対応など人気5モデルをスペック・価格・用途別に徹底比較。失敗しない選び方のポイントも解説しているので、ぜひ参考にしてください。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/gadget/ugreen-cable-osusume.html" class="article-card">
+        <img src="/images/products/ugreen-cable-osusume/e4cc2ab3.jpg" class="card-thumb" alt="UGREENケーブルおすすめ5選【2026年最新】種類・用途別に徹底比較" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">UGREENケーブルおすすめ5選【2026年最新】種類・用途別に徹底比較</div>
+          <div class="card-desc">UGREENケーブルのおすすめ5選を2026年最新情報で徹底比較。USB-C充電・映像出力・データ転送など用途別に選び方のポイントも解説。AliExpressで賢く安く手に入れたい方はこの記事をチェック！</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/gadget/baseus-mobile-battery-osusume.html" class="article-card">
+        <img src="/images/products/baseus-mobile-battery-osusume/6674cc49.jpg" class="card-thumb" alt="Baseusモバイルバッテリー完全ガイド｜失敗しない選び方と人気5選【2026年" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">ガジェット</div>
+          <div class="card-title">Baseusモバイルバッテリー完全ガイド｜失敗しない選び方と人気5選【2026年】</div>
+          <div class="card-desc">Baseusのモバイルバッテリーをアリエクで買うなら、どのモデルが正解？20W・45W・100Wの出力別に人気モデルを徹底比較。容量・重さ・急速充電対応まで詳しく解説しているので、あなたにぴったりの1台がすぐ見つかります。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/gadget/aliexpress-projector-under-10000.html" class="article-card">
+        <img src="/images/aliexpress-projector-under-10000.svg" class="card-thumb" alt="アリエク プロジェクターおすすめ3選【1万円以下・2026年最新】" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">プロジェクター</div>
+          <div class="card-title">アリエク プロジェクターおすすめ3選【1万円以下・2026年最新】</div>
+          <div class="card-desc">AliExpressで買える1万円以下のプロジェクター3機種を徹底比較。用途別の選び方とよくある失敗の回避法付き。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+    </div>
+    <div id="gadget-grid-more-wrap" style="text-align:center;margin-top:16px;">
+      <button onclick="showMore('gadget-grid')" style="background:#e8253a;color:#fff;border:none;padding:10px 28px;border-radius:24px;font-size:0.85rem;font-weight:700;cursor:pointer;font-family:inherit;">もっと見る ↓</button>
+    </div>
+    <script>
+      (function(){
+        var grid=document.getElementById('gadget-grid');
+        var cards=grid?Array.from(grid.querySelectorAll('.article-card')):[];
+        cards.forEach(function(c,i){ if(i>=4) c.style.display='none'; });
+        if(cards.length<=4){ var b=document.getElementById('gadget-grid-more-wrap'); if(b) b.style.display='none'; }
+      })();
+    </script>
+    <!-- GADGET-END -->
+
+    <h2 class="section-title" id="game">🎮 ゲーム・コントローラー</h2>
+            <!-- GAME-START -->
+    <div class="article-grid" id="game-grid">
       <a href="/game/gamesir-controller-osusume.html" class="article-card">
         <img src="/images/gamesir-controller-osusume.svg" class="card-thumb" alt="GameSirコントローラーおすすめ5選【2026年最新】アリエク公式ストアで安" loading="lazy">
         <div class="card-body">
@@ -426,60 +400,21 @@
           <div class="card-arrow">読む</div>
         </div>
       </a>
-      <a href="/guide/aliexpress-1000yen-kawatte-yokatta.html" class="article-card">
-        <img src="/images/products/aliexpress-1000yen-kawatte-yokatta/555a5769.jpg" class="card-thumb" alt="AliExpressで買ってよかった1000円以下おすすめ10選【2026年最新" loading="lazy">
+      <a href="/game/aliexpress-gamepad-osusume.html" class="article-card">
+        <img src="/images/aliexpress-gamepad-osusume.svg" class="card-thumb" alt="アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイ" loading="lazy">
         <div class="card-body">
-          <div class="card-tag">プチプラ</div>
-          <div class="card-title">AliExpressで買ってよかった1000円以下おすすめ10選【2026年最新】</div>
-          <div class="card-desc">AliExpressで実際に使って買ってよかった1000円以下のコスパ最強アイテム10選。GaN充電器・パルスオキシメータ・ヘッドライトなど厳選。</div>
+          <div class="card-tag">ゲーム</div>
+          <div class="card-title">アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイド</div>
+          <div class="card-desc">AliExpressで買えるゲームパッド・コントローラーのおすすめ10選を徹底比較。Switch・Android・PC対応別に価格・遅延・接続方式を丁寧に解説します。失敗しない選び方のポイントも網羅しているので、ぜひ購入前にチェックしてくだ</div>
           <div class="card-arrow">読む</div>
         </div>
       </a>
-      <a href="/guide/aliexpress-osusume.html" class="article-card">
-        <img src="/images/aliexpress-osusume.svg" class="card-thumb" alt="アリエク おすすめ商品50選【2026年最新】カテゴリ別に厳選" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">おすすめ商品</div>
-          <div class="card-title">アリエク おすすめ商品50選【2026年最新】カテゴリ別に厳選</div>
-          <div class="card-desc">AliExpressで本当に買ってよかったおすすめ商品を50個・8カテゴリ別に厳選。販売数・評価率をもとに厳選。失敗しない選び方付き。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/guide/aliexpress-sticker-osusume.html" class="article-card">
-        <img src="/images/products/aliexpress-sticker-osusume/74327eb5.jpg" class="card-thumb" alt="アリエク シール・ステッカーおすすめ5選【2026年最新】" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">ステッカー</div>
-          <div class="card-title">アリエク シール・ステッカーおすすめ5選【2026年最新】</div>
-          <div class="card-desc">アリエクでおすすめのシール・ステッカーを厳選5選で紹介！ボンボンドロップ・水シール・韓国風など人気ジャンルを比較。価格・デザイン・使いやすさを徹底解説しているので、お気に入りの1枚をぜひ見つけてみてください。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/outdoor/naturehike-airmat-osusume.html" class="article-card">
-        <img src="/images/products/naturehike-airmat-osusume/mat1_replacement.jpg" class="card-thumb" alt="Naturehikeエアーマットおすすめ5選【2026年最新】アリエクで安く買え" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">アウトドア</div>
-          <div class="card-title">Naturehikeエアーマットおすすめ5選【2026年最新】アリエクで安く買えるスリーピングパッド比較</div>
-          <div class="card-desc">Naturehikeのエアーマット・スリーピングパッドを徹底比較。アリエクで5,000円台から買えるコスパ最強モデルから4シーズン対応まで5選を紹介。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/outdoor/naturehike-cot-osusume.html" class="article-card">
-        <img src="/images/products/naturehike-cot-osusume/8a5f5468.jpg" class="card-thumb" alt="Naturehikeコットおすすめ4選【2026年最新】アリエクで安く比較" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">アウトドア</div>
-          <div class="card-title">Naturehikeコットおすすめ4選【2026年最新】アリエクで安く比較</div>
-          <div class="card-desc">Naturehikeの超軽量・スタンダード・ワイド・ハイタイプコットを徹底比較。AliExpressで安く購入する方法を解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/outdoor/naturehike-osusume.html" class="article-card">
-        <img src="/images/products/naturehike-osusume/4ca49879.jpg" class="card-thumb" alt="Naturehike おすすめ小物7選【アリエクで格安購入・2026年最新】" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">アウトドア</div>
-          <div class="card-title">Naturehike おすすめ小物7選【アリエクで格安購入・2026年最新】</div>
-          <div class="card-desc">Naturehikeの人気アウトドア小物をAliExpressで安く購入。速乾タオル・空気枕・ドライバッグなど7選を価格・評価で徹底比較。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
+    </div>
+    <!-- GAME-END -->
+
+    <h2 class="section-title" id="outdoor">🏕 アウトドア用品</h2>
+            <!-- OUTDOOR-START -->
+    <div class="article-grid" id="outdoor-grid">
       <a href="/outdoor/naturehike-sleeping-bag-osusume.html" class="article-card">
         <img src="/images/products/naturehike-sleeping-bag-osusume/78cb5994.jpg" class="card-thumb" alt="Naturehikeシュラフおすすめ4選【2026年最新】アリエクで安く比較" loading="lazy">
         <div class="card-body">
@@ -498,302 +433,212 @@
           <div class="card-arrow">読む</div>
         </div>
       </a>
-      <a href="/gadget/ugreen-wifi-osusume.html" class="article-card">
-        <img src="/images/products/ugreen-wifi-osusume/2f95300d.jpg" class="card-thumb" alt="UGREEN WiFiアダプターおすすめ5選【2026年最新】アリエクで安く買う" loading="lazy">
+      <a href="/outdoor/naturehike-osusume.html" class="article-card">
+        <img src="/images/products/naturehike-osusume/4ca49879.jpg" class="card-thumb" alt="Naturehike おすすめ小物7選【アリエクで格安購入・2026年最新】" loading="lazy">
         <div class="card-body">
-          <div class="card-tag">ガジェット</div>
-          <div class="card-title">UGREEN WiFiアダプターおすすめ5選【2026年最新】アリエクで安く買う完全ガイド</div>
-          <div class="card-desc">UGREENのWiFiアダプターをアリエクで安く買うなら？WiFi 6・デュアルバンド・nano型など人気5選を用途別に徹底比較。初心者でも失敗しない選び方と最安値での購入手順を詳しく解説します。</div>
+          <div class="card-tag">アウトドア</div>
+          <div class="card-title">Naturehike おすすめ小物7選【アリエクで格安購入・2026年最新】</div>
+          <div class="card-desc">Naturehikeの人気アウトドア小物をAliExpressで安く購入。速乾タオル・空気枕・ドライバッグなど7選を価格・評価で徹底比較。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/outdoor/naturehike-cot-osusume.html" class="article-card">
+        <img src="/images/products/naturehike-cot-osusume/8a5f5468.jpg" class="card-thumb" alt="Naturehikeコットおすすめ4選【2026年最新】アリエクで安く比較" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">アウトドア</div>
+          <div class="card-title">Naturehikeコットおすすめ4選【2026年最新】アリエクで安く比較</div>
+          <div class="card-desc">Naturehikeの超軽量・スタンダード・ワイド・ハイタイプコットを徹底比較。AliExpressで安く購入する方法を解説。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+      <a href="/outdoor/naturehike-airmat-osusume.html" class="article-card">
+        <img src="/images/products/naturehike-airmat-osusume/mat1_replacement.jpg" class="card-thumb" alt="Naturehikeエアーマットおすすめ5選【2026年最新】アリエクで安く買え" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">アウトドア</div>
+          <div class="card-title">Naturehikeエアーマットおすすめ5選【2026年最新】アリエクで安く買えるスリーピングパッド比較</div>
+          <div class="card-desc">Naturehikeのエアーマット・スリーピングパッドを徹底比較。アリエクで5,000円台から買えるコスパ最強モデルから4シーズン対応まで5選を紹介。</div>
           <div class="card-arrow">読む</div>
         </div>
       </a>
     </div>
-    <div style="text-align:center;margin-top:16px;">
-      <button id="show-more-btn" onclick="showMoreCards()" style="background:#e8253a;color:#fff;border:none;padding:12px 32px;border-radius:24px;font-size:0.88rem;font-weight:700;cursor:pointer;font-family:inherit;">もっと見る ↓</button>
-    </div>
-    <script>
-      (function(){
-        const INITIAL = 6;
-        const grid = document.querySelector('#recommend + .article-grid');
-        const cards = grid ? Array.from(grid.querySelectorAll('.article-card')) : [];
-        cards.forEach((c, i) => { if (i >= INITIAL) c.style.display = 'none'; });
-        if (cards.length <= INITIAL) { const btn = document.getElementById('show-more-btn'); if(btn) btn.style.display='none'; }
-      })();
-      function showMoreCards() {
-        const grid = document.querySelector('#recommend + .article-grid');
-        if (!grid) return;
-        grid.querySelectorAll('.article-card').forEach(c => c.style.display = '');
-        document.getElementById('show-more-btn').style.display = 'none';
-      }
-    </script>
-    <!-- RECOMMEND-END -->
+    <!-- OUTDOOR-END -->
 
-    <!-- 比較・ブランド解説 -->
-    <h2 class="section-title" id="tips">🔍 比較・ガイド</h2>
-                                                                            <!-- TIPS-START -->
-    <div class="article-grid">
-      <a href="/guide/aliexpress-vs-temu.html" class="article-card">
-        <img src="/images/aliexpress-vs-temu.svg" class="card-thumb" alt="Temu vs アリエク比較【2026年最新】どっちがいい？違いを徹底解説" loading="lazy">
+    <h2 class="section-title" id="guide-rec">📖 買ってよかった・比較</h2>
+            <!-- GUIDE-REC-START -->
+    <div class="article-grid" id="guide-rec-grid">
+      <a href="/guide/aliexpress-sticker-osusume.html" class="article-card">
+        <img src="/images/products/aliexpress-sticker-osusume/74327eb5.jpg" class="card-thumb" alt="アリエク シール・ステッカーおすすめ5選【2026年最新】" loading="lazy">
         <div class="card-body">
-          <div class="card-tag">比較ガイド</div>
-          <div class="card-title">Temu vs アリエク比較【2026年最新】どっちがいい？違いを徹底解説</div>
-          <div class="card-desc">TemuとAliExpressどっちがいい？価格・品質・送料・安全性・商品数を徹底比較。初心者向けの使い分けポイントや失敗しないコツも紹介。あなたに合った最適なサービスをこの記事で見つけてください。</div>
+          <div class="card-tag">ステッカー</div>
+          <div class="card-title">アリエク シール・ステッカーおすすめ5選【2026年最新】</div>
+          <div class="card-desc">アリエクでおすすめのシール・ステッカーを厳選5選で紹介！ボンボンドロップ・水シール・韓国風など人気ジャンルを比較。価格・デザイン・使いやすさを徹底解説しているので、お気に入りの1枚をぜひ見つけてみてください。</div>
           <div class="card-arrow">読む</div>
         </div>
       </a>
-      <a href="/guide/naturehike-brand.html" class="article-card">
-        <img src="/images/naturehike-brand.svg" class="card-thumb" alt="Naturehikeはどこの国のブランド？評判・品質・信頼性を徹底解説【2026" loading="lazy">
+      <a href="/guide/aliexpress-osusume.html" class="article-card">
+        <img src="/images/aliexpress-osusume.svg" class="card-thumb" alt="アリエク おすすめ商品50選【2026年最新】カテゴリ別に厳選" loading="lazy">
         <div class="card-body">
-          <div class="card-tag">ブランド解説</div>
-          <div class="card-title">Naturehikeはどこの国のブランド？評判・品質・信頼性を徹底解説【2026年】</div>
-          <div class="card-desc">Naturehikeは中国・福建省のアウトドアブランド。評判・品質・信頼性をAliExpress購入者レビューをもとに徹底解説。</div>
+          <div class="card-tag">おすすめ商品</div>
+          <div class="card-title">アリエク おすすめ商品50選【2026年最新】カテゴリ別に厳選</div>
+          <div class="card-desc">AliExpressで本当に買ってよかったおすすめ商品を50個・8カテゴリ別に厳選。販売数・評価率をもとに厳選。失敗しない選び方付き。</div>
           <div class="card-arrow">読む</div>
         </div>
+      </a>
+      <a href="/guide/aliexpress-1000yen-kawatte-yokatta.html" class="article-card">
+        <img src="/images/products/aliexpress-1000yen-kawatte-yokatta/555a5769.jpg" class="card-thumb" alt="AliExpressで買ってよかった1000円以下おすすめ10選【2026年最新" loading="lazy">
+        <div class="card-body">
+          <div class="card-tag">プチプラ</div>
+          <div class="card-title">AliExpressで買ってよかった1000円以下おすすめ10選【2026年最新】</div>
+          <div class="card-desc">AliExpressで実際に使って買ってよかった1000円以下のコスパ最強アイテム10選。GaN充電器・パルスオキシメータ・ヘッドライトなど厳選。</div>
+          <div class="card-arrow">読む</div>
+        </div>
+      </a>
+    </div>
+    <!-- GUIDE-REC-END -->
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- Zone 2: 使い方・困ったとき                         -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <div class="info-zone">
+    <div class="info-zone-inner">
+
+      <h2 class="section-title" id="beginner">📘 はじめてのアリエク</h2>
+              <!-- BEGINNER-START -->
+    <div class="info-link-list">
+      <a href="/guide/aliexpress-what-is.html" class="info-link">
+        <span class="info-link-title">AliExpressとは？仕組み・安全性・使い方を初心者向けに解説</span>
+        <span class="info-link-arrow">›</span>
+      </a>
+      <a href="/guide/aliexpress-account.html" class="info-link">
+        <span class="info-link-title">AliExpressの登録方法と初回注文の全手順【2026年最新】</span>
+        <span class="info-link-arrow">›</span>
+      </a>
+      <a href="/guide/aliexpress-choice.html" class="info-link">
+        <span class="info-link-title">アリエクのChoiceとは何？安い・早い・安心の理由を徹底解説</span>
+        <span class="info-link-arrow">›</span>
+      </a>
+    </div>
+    <!-- BEGINNER-END -->
+
+      <h2 class="section-title" id="tips">📖 比較・ガイド</h2>
+              <!-- TIPS-START -->
+    <div class="info-link-list">
+      <a href="/guide/naturehike-brand.html" class="info-link">
+        <span class="info-link-title">Naturehikeはどこの国のブランド？評判・品質・信頼性を徹底解説【2026年】</span>
+        <span class="info-link-arrow">›</span>
+      </a>
+      <a href="/guide/aliexpress-vs-temu.html" class="info-link">
+        <span class="info-link-title">Temu vs アリエク比較【2026年最新】どっちがいい？違いを徹底解説</span>
+        <span class="info-link-arrow">›</span>
       </a>
     </div>
     <!-- TIPS-END -->
 
-    <!-- 入門・基礎 -->
-    <h2 class="section-title" id="beginner">📘 入門・基礎</h2>
-    <div class="article-grid">
-      <a href="/guide/aliexpress-what-is.html" class="article-card">
-        <img src="/images/aliexpress-what-is.svg" class="card-thumb" alt="AliExpressとは">
-        <div class="card-body">
-          <div class="card-tag">入門・基礎</div>
-          <div class="card-title">AliExpressとは？仕組み・安全性・使い方を初心者向けに解説【2026年最新】</div>
-          <div class="card-desc">AliExpressの概要・安全性・日本語対応・購入の流れを初心者向けに解説</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <h2 class="section-title" id="payment">💳 支払い・決済</h2>
+              <!-- PAYMENT-START -->
+    <div class="info-link-list">
+      <a href="/payment/aliexpress-shiharai.html" class="info-link">
+        <span class="info-link-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/guide/aliexpress-account.html" class="article-card">
-        <img src="/images/aliexpress-account.svg" class="card-thumb" alt="aliexpress-account">
-        <div class="card-body">
-          <div class="card-tag">入門・基礎</div>
-          <div class="card-title">AliExpressの登録方法と初回注文の全手順【2026年最新】</div>
-          <div class="card-desc">アカウント作成・住所設定・支払い登録・初回注文まで5ステップで解説</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/payment/aliexpress-paypay.html" class="info-link">
+        <span class="info-link-title">2026年版 アリエク ペイペイ決済の全手順</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/guide/aliexpress-choice.html" class="article-card">
-        <img src="/images/aliexpress-choice.svg" class="card-thumb" alt="aliexpress-choice">
-        <div class="card-body">
-  
-        <div class="card-tag">使い方ガイド</div>
-          <div class="card-title">アリエクのChoiceとは何？安い・早い・安心の理由を徹底解説</div>
-          <div class="card-desc">Choice商品が特別な理由・配送の速さ・買えないときの対処法</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/payment/aliexpress-payment.html" class="info-link">
+        <span class="info-link-title">【2026年版】AliExpressの支払い方法おすすめ順位と注意点</span>
+        <span class="info-link-arrow">›</span>
+      </a>
+      <a href="/payment/aliexpress-paypal.html" class="info-link">
+        <span class="info-link-title">【2026年最新】AliExpressでPayPalは使える？日本向け最新状況</span>
+        <span class="info-link-arrow">›</span>
+      </a>
+      <a href="/payment/aliexpress-coupon.html" class="info-link">
+        <span class="info-link-title">初心者でも安心！AliExpress クーポンコード使い方【2026年最新】</span>
+        <span class="info-link-arrow">›</span>
       </a>
     </div>
+    <!-- PAYMENT-END -->
 
-    <!-- 支払い・決済 -->
-    <h2 class="section-title" id="payment">💳 支払い・決済</h2>
-    <div class="article-grid">
-      <a href="/payment/aliexpress-shiharai.html" class="article-card">
-        <img src="/images/aliexpress-shiharai.svg" class="card-thumb" alt="aliexpress-shiharai">
-        <div class="card-body">
-  
-        <div class="card-tag">支払い・決済</div>
-          <div class="card-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</div>
-          <div class="card-desc">PayPal・カード・PayPayなど7種類を比較。手数料・返金対応も解説</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <h2 class="section-title" id="shipping">📦 配送・追跡</h2>
+              <!-- SHIPPING-START -->
+    <div class="info-link-list">
+      <a href="/shipping/aliexpress-tsuiseki.html" class="info-link">
+        <span class="info-link-title">AliExpress追跡の完全ガイド【初心者向け】</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/payment/aliexpress-payment.html" class="article-card">
-        <img src="/images/aliexpress-payment.svg" class="card-thumb" alt="aliexpress-payment">
-        <div class="card-body">
-  
-        <div class="card-tag">支払い・決済</div>
-          <div class="card-title">【2026年版】AliExpressの支払い方法おすすめ順位と注意点</div>
-          <div class="card-desc">クレカ・PayPal・PayPay・コンビニ払いの対応状況と返金の注意点</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-tracking-guide.html" class="info-link">
+        <span class="info-link-title">AliExpress Trackingで荷物追跡｜届かない時の確認手順7選</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/payment/aliexpress-paypal.html" class="article-card">
-        <img src="/images/aliexpress-paypal.svg" class="card-thumb" alt="aliexpress-paypal">
-        <div class="card-body">
-  
-        <div class="card-tag">支払い・決済</div>
-          <div class="card-title">【2026年最新】AliExpressでPayPalは使える？日本向け最新状況</div>
-          <div class="card-desc">使えない原因・対処法・手数料・返金まで日本ユーザー向けに解説</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-tracking-number.html" class="info-link">
+        <span class="info-link-title">AliExpress追跡番号はどこ？確認場所と見方を完全解説</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/payment/aliexpress-paypay.html" class="article-card">
-        <img src="/images/aliexpress-paypay.svg" class="card-thumb" alt="aliexpress-paypay">
-        <div class="card-body">
-  
-        <div class="card-tag">支払い・決済</div>
-          <div class="card-title">2026年版 アリエク ペイペイ決済の全手順</div>
-          <div class="card-desc">PayPay使用条件・手順・表示されない原因・安全性まで初心者向け解説</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-todokanai.html" class="info-link">
+        <span class="info-link-title">アリエク 届かない時の対処法【完全版】返金申請（Dispute）の手順を解説</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/payment/aliexpress-coupon.html" class="article-card">
-        <img src="/images/aliexpress-coupon.svg" class="card-thumb" alt="aliexpress-coupon">
-        <div class="card-body">
-  
-        <div class="card-tag">比較・ガイド</div>
-          <div class="card-title">初心者でも安心！AliExpress クーポンコード使い方【2026年最新】</div>
-          <div class="card-desc">クーポンの種類・探し方・入力手順・使えないときの対処法</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-standard-shipping.html" class="info-link">
+        <span class="info-link-title">AliExpress標準配送とは？送料・日数・追跡の仕組みを初心者向け解説</span>
+        <span class="info-link-arrow">›</span>
       </a>
-    </div>
-
-    <!-- 配送・追跡 -->
-    <h2 class="section-title" id="shipping">📦 配送・追跡</h2>
-                                                                                                                    <!-- SHIPPING-START -->
-    <div class="article-grid">
-      <a href="/shipping/aliexpress-cancel.html" class="article-card">
-        <img src="/images/aliexpress-cancel.svg" class="card-thumb" alt="アリエク キャンセル方法【2026年版】発送前・発送後の手順と注意点" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">アリエク キャンセル方法【2026年版】発送前・発送後の手順と注意点</div>
-          <div class="card-desc">AliExpressの注文キャンセル方法を発送前・発送後に分けて解説。返金までの日数も紹介。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-nannichi.html" class="info-link">
+        <span class="info-link-title">配送別に解説：アリエク到着目安と最短術完全ガイド</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/shipping/aliexpress-henkin.html" class="article-card">
-        <img src="/images/aliexpress-henkin.svg" class="card-thumb" alt="アリエク 返金のやり方【2026年版】全パターン対応の完全ガイド" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">アリエク 返金のやり方【2026年版】全パターン対応の完全ガイド</div>
-          <div class="card-desc">AliExpressの返金方法を全パターン解説。不良品・届かない・説明と違う・サイズ違いなど理由別にDisputeの開き方と返金までの日数をまとめました。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-soryo.html" class="info-link">
+        <span class="info-link-title">アリエク 送料はいくら？送料無料にする方法【2026年版】配送方法を徹底比較</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/shipping/aliexpress-kanzei.html" class="article-card">
-        <img src="/images/aliexpress-kanzei.svg" class="card-thumb" alt="アリエク 関税はいくら？かかる条件・計算方法・節税術を解説【2026年版】" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">アリエク 関税はいくら？かかる条件・計算方法・節税術を解説【2026年版】</div>
-          <div class="card-desc">AliExpressで関税がかかる条件・金額の計算方法・支払い手順を解説。16,666円のラインや関税を抑える合法テクニックも紹介。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-kanzei.html" class="info-link">
+        <span class="info-link-title">アリエク 関税はいくら？かかる条件・計算方法・節税術を解説【2026年版】</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/shipping/aliexpress-nannichi.html" class="article-card">
-        <img src="/images/aliexpress-nannichi.svg" class="card-thumb" alt="配送別に解説：アリエク到着目安と最短術完全ガイド" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">配送別に解説：アリエク到着目安と最短術完全ガイド</div>
-          <div class="card-desc">AliExpressの到着日数を配送方法別に徹底解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-cancel.html" class="info-link">
+        <span class="info-link-title">アリエク キャンセル方法【2026年版】発送前・発送後の手順と注意点</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/shipping/aliexpress-soryo.html" class="article-card">
-        <img src="/images/aliexpress-soryo.svg" class="card-thumb" alt="アリエク 送料はいくら？送料無料にする方法【2026年版】配送方法を徹底比較" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">アリエク 送料はいくら？送料無料にする方法【2026年版】配送方法を徹底比較</div>
-          <div class="card-desc">AliExpressの送料の仕組みと配送方法を徹底比較。送料無料になる条件・最安で届ける方法を解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/shipping/aliexpress-standard-shipping.html" class="article-card">
-        <img src="/images/aliexpress-standard-shipping.svg" class="card-thumb" alt="AliExpress標準配送とは？送料・日数・追跡の仕組みを初心者向け解説" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">AliExpress標準配送とは？送料・日数・追跡の仕組みを初心者向け解説</div>
-          <div class="card-desc">AliExpress標準配送の送料・到着日数・追跡方法・返金対応まで徹底解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/shipping/aliexpress-todokanai.html" class="article-card">
-        <img src="/images/aliexpress-todokanai.svg" class="card-thumb" alt="アリエク 届かない時の対処法【完全版】返金申請（Dispute）の手順を解説" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">トラブル対策</div>
-          <div class="card-title">アリエク 届かない時の対処法【完全版】返金申請（Dispute）の手順を解説</div>
-          <div class="card-desc">アリエクの荷物が届かない時の対処法を完全解説。何日待てばいいか・セラーへの連絡方法・返金申請（Dispute）の開き方・返金が振り込まれるまでの流れをステップ別に紹介。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/shipping/aliexpress-tracking-guide.html" class="article-card">
-        <img src="/images/aliexpress-tracking-guide.svg" class="card-thumb" alt="AliExpress Trackingで荷物追跡｜届かない時の確認手順7選" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">AliExpress Trackingで荷物追跡｜届かない時の確認手順7選</div>
-          <div class="card-desc">AliExpress Trackingの使い方・外部ツール比較・届かない時の対処法を日本ユーザー向けにわかりやすく解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/shipping/aliexpress-tracking-number.html" class="article-card">
-        <img src="/images/aliexpress-tracking-number.svg" class="card-thumb" alt="AliExpress追跡番号はどこ？確認場所と見方を完全解説" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">AliExpress追跡番号はどこ？確認場所と見方を完全解説</div>
-          <div class="card-desc">AliExpressの追跡番号の確認場所から日本国内での追跡方法、追跡できないときの対処法までを徹底解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
-      </a>
-      <a href="/shipping/aliexpress-tsuiseki.html" class="article-card">
-        <img src="/images/aliexpress-tsuiseki.svg" class="card-thumb" alt="AliExpress追跡の完全ガイド【初心者向け】" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">配送・追跡</div>
-          <div class="card-title">AliExpress追跡の完全ガイド【初心者向け】</div>
-          <div class="card-desc">追跡番号の見方・できない時の対処法を徹底解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/shipping/aliexpress-henkin.html" class="info-link">
+        <span class="info-link-title">アリエク 返金のやり方【2026年版】全パターン対応の完全ガイド</span>
+        <span class="info-link-arrow">›</span>
       </a>
     </div>
     <!-- SHIPPING-END -->
 
-    <!-- 安全性 -->
-    <h2 class="section-title" id="safety">🔒 安全性・トラブル対策</h2>
-                                                                                                                    <!-- SAFETY-START -->
-    <div class="article-grid">
-      <a href="/safety/aliexpress-ayashii.html" class="article-card">
-        <img src="/images/aliexpress-ayashii.svg" class="card-thumb" alt="アリエク 偽物の見分け方【2026年版】怪しい商品を避けて安全に買う完全ガイド" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">安全性</div>
-          <div class="card-title">アリエク 偽物の見分け方【2026年版】怪しい商品を避けて安全に買う完全ガイド</div>
-          <div class="card-desc">AliExpressの偽物・怪しい商品を見分ける方法を徹底解説。偽物が多いカテゴリ・見分け方・届いた時の返金手順まで。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <h2 class="section-title" id="safety">🔒 安全性・トラブル対策</h2>
+              <!-- SAFETY-START -->
+    <div class="info-link-list">
+      <a href="/safety/aliexpress-size.html" class="info-link">
+        <span class="info-link-title">アリエク サイズ感は小さい？日本サイズとの違い・選び方のコツ【2026年版】</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/safety/aliexpress-hyoban.html" class="article-card">
-        <img src="/images/aliexpress-hyoban.svg" class="card-thumb" alt="【2026年版】AliExpressの評判を徹底検証｜やばい噂の真相" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">評判・口コミ</div>
-          <div class="card-title">【2026年版】AliExpressの評判を徹底検証｜やばい噂の真相</div>
-          <div class="card-desc">AliExpressの評判・口コミ・危険性・返金制度・安全な買い方をわかりやすくまとめました。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/safety/aliexpress-kattewa-ikenai.html" class="info-link">
+        <span class="info-link-title">アリエクで買ってはいけないもの7選【2026年版】失敗しない商品選びのコツ</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/safety/aliexpress-kattewa-ikenai.html" class="article-card">
-        <img src="/images/aliexpress-kattewa-ikenai.svg" class="card-thumb" alt="アリエクで買ってはいけないもの7選【2026年版】失敗しない商品選びのコツ" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">安全性</div>
-          <div class="card-title">アリエクで買ってはいけないもの7選【2026年版】失敗しない商品選びのコツ</div>
-          <div class="card-desc">アリエクスプレスで買ってはいけない商品カテゴリを7つ厳選。失敗しやすい商品の見分け方と逆に安心して買えるものも解説。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/safety/aliexpress-safety.html" class="info-link">
+        <span class="info-link-title">AliExpress 安全性は本当？詐欺・偽物対策10選【2026年最新】</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/safety/aliexpress-safety.html" class="article-card">
-        <img src="/images/aliexpress-safety.svg" class="card-thumb" alt="AliExpress 安全性は本当？詐欺・偽物対策10選【2026年最新】" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">安全性</div>
-          <div class="card-title">AliExpress 安全性は本当？詐欺・偽物対策10選【2026年最新】</div>
-          <div class="card-desc">AliExpressの安全性と詐欺・偽物対策を徹底解説。初心者でも安心して使えるコツをまとめました。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/safety/aliexpress-hyoban.html" class="info-link">
+        <span class="info-link-title">【2026年版】AliExpressの評判を徹底検証｜やばい噂の真相</span>
+        <span class="info-link-arrow">›</span>
       </a>
-      <a href="/safety/aliexpress-size.html" class="article-card">
-        <img src="/images/aliexpress-size.svg" class="card-thumb" alt="アリエク サイズ感は小さい？日本サイズとの違い・選び方のコツ【2026年版】" loading="lazy">
-        <div class="card-body">
-          <div class="card-tag">トラブル対策</div>
-          <div class="card-title">アリエク サイズ感は小さい？日本サイズとの違い・選び方のコツ【2026年版】</div>
-          <div class="card-desc">AliExpressのサイズ感と日本サイズとの違いを解説。正しいサイズ選びのコツとサイズ違いが届いた時の対処法。</div>
-          <div class="card-arrow">読む</div>
-        </div>
+      <a href="/safety/aliexpress-ayashii.html" class="info-link">
+        <span class="info-link-title">アリエク 偽物の見分け方【2026年版】怪しい商品を避けて安全に買う完全ガイド</span>
+        <span class="info-link-arrow">›</span>
       </a>
     </div>
     <!-- SAFETY-END -->
 
-
-  </main>
+    </div>
+  </div>
 
   <script>
+    // スムーススクロール
     document.querySelectorAll('a.cat-btn[href^="#"]').forEach(function(btn) {
       btn.addEventListener('click', function(e) {
         var id = this.getAttribute('href').slice(1);
@@ -815,6 +660,13 @@
         requestAnimationFrame(step);
       });
     });
+    // "もっと見る" 共通関数
+    function showMore(id) {
+      var grid = document.getElementById(id);
+      if (grid) grid.querySelectorAll('.article-card').forEach(function(c){ c.style.display=''; });
+      var wrap = document.getElementById(id + '-more-wrap');
+      if (wrap) wrap.style.display = 'none';
+    }
   </script>
 
   <footer class="site-footer">

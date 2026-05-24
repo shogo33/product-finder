@@ -1,7 +1,6 @@
 /**
  * gen-top-cards.mjs
- * gadget/ game/ outdoor/ guide/ shipping/ safety/ の記事を走査して index.html の各セクションを自動更新
- * 使い方: node scripts/gen-top-cards.mjs
+ * Zone 1（商品カード）/ Zone 2（情報リンク）に分けて index.html を更新
  */
 import fs from 'fs';
 import path from 'path';
@@ -14,20 +13,21 @@ const OUTDOOR  = path.join(PUBLIC, 'outdoor');
 const GUIDE    = path.join(PUBLIC, 'guide');
 const SHIPPING = path.join(PUBLIC, 'shipping');
 const SAFETY   = path.join(PUBLIC, 'safety');
-const INITIAL  = 6; // おすすめセクション初期表示件数
+const PAYMENT  = path.join(PUBLIC, 'payment');
 
 const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap']);
+const GADGET_INITIAL = 4; // ガジェットの初期表示件数
 
-// guide/ の中で入門セクションに入るスラッグ（おすすめ・比較ガイドセクション除外）
-const BEGINNER_SLUGS = new Set(['aliexpress-what-is', 'aliexpress-account', 'aliexpress-choice']);
-// guide/ の中でおすすめ商品セクションに入るスラッグ（商品紹介記事）
+// guide/ の仕分け
+const BEGINNER_SLUGS = new Set([
+  'aliexpress-what-is', 'aliexpress-account', 'aliexpress-choice',
+]);
 const GUIDE_RECOMMEND_SLUGS = new Set([
   'aliexpress-1000yen-kawatte-yokatta',
   'aliexpress-osusume',
   'aliexpress-sticker-osusume',
 ]);
-// guide/ の中で比較・ガイドセクションに入るスラッグ（ブランド解説・比較）
-// ※上記2セット以外のguide/記事が自動的にTIPSへ
+// 上記2セット以外のguide/ → TIPS（比較・ガイド）
 
 const CARD_TAG_OVERRIDE = {
   'aliexpress-1000yen-kawatte-yokatta': 'プチプラ',
@@ -49,6 +49,7 @@ function getCardTag(slug, folder) {
   if (folder === 'guide')    return 'ガイド';
   if (folder === 'shipping') return '配送・追跡';
   if (folder === 'safety')   return '安全性';
+  if (folder === 'payment')  return '支払い・決済';
   return 'おすすめ商品';
 }
 
@@ -68,15 +69,10 @@ function extractThumb(html, slug) {
   if (fs.existsSync(path.join(PUBLIC, 'images', `${slug}.svg`))) {
     return `/images/${slug}.svg`;
   }
-  if (slug === 'aliexpress-osusume') return '/images/aliexpress-osusume.svg';
   const localMatch = html.match(/src="(\/images\/products\/[^"]+\.(jpg|jpeg|png|webp))"/i);
   if (localMatch) return localMatch[1];
   const aeAll = [...html.matchAll(/https?:\/\/ae-pic-a1\.aliexpress-media\.com\/kf\/[^\s"']+/gi)];
   if (aeAll.length > 0) return aeAll[0][0].split('"')[0].split("'")[0];
-  const ugMatch = html.match(/https?:\/\/www\.ugreen\.com\/cdn\/shop\/files\/[^\s"'?]+/i);
-  if (ugMatch) return ugMatch[0];
-  const baMatch = html.match(/https?:\/\/www\.baseus\.com\/cdn\/shop\/files\/[^\s"'?]+/i);
-  if (baMatch) return baMatch[0];
   return '/images/aliexpress-osusume.svg';
 }
 
@@ -95,9 +91,10 @@ function collectEntries(dir, folder) {
       const mtime = fs.statSync(full).mtime;
       return { slug, html, mtime, folder };
     })
-    .sort((a, b) => a.mtime - b.mtime);
+    .sort((a, b) => b.mtime - a.mtime); // 新着順
 }
 
+// ── Zone 1: 画像カード ──────────────────────────────────────
 function makeCardHtml({ slug, html, folder }) {
   const title = escHtml(extractTitle(html));
   const desc  = escHtml(extractDesc(html));
@@ -116,72 +113,103 @@ function makeCardHtml({ slug, html, folder }) {
       </a>`;
 }
 
-// ── 比較・ガイド（guide/ のうち BEGINNER・GUIDE_RECOMMEND 以外）──
-const tipsEntries = collectEntries(GUIDE, 'guide')
-  .filter(e => !BEGINNER_SLUGS.has(e.slug) && !GUIDE_RECOMMEND_SLUGS.has(e.slug));
+// ── Zone 2: テキストリンクリスト ────────────────────────────
+function makeInfoLinkHtml({ slug, html, folder }) {
+  const title = escHtml(extractTitle(html));
+  const href  = `/${folder}/${slug}.html`;
+  return `      <a href="${href}" class="info-link">
+        <span class="info-link-title">${title}</span>
+        <span class="info-link-arrow">›</span>
+      </a>`;
+}
 
-const tipsCards = tipsEntries.map(makeCardHtml).join('\n');
-const tipsBlock = `    <!-- TIPS-START -->
-    <div class="article-grid">
-${tipsCards}
-    </div>
-    <!-- TIPS-END -->`;
-
-// ── おすすめ商品（gadget/ game/ outdoor/ 全件 + guide/ からの商品記事）──
-const recommendEntries = [
-  ...collectEntries(GADGET, 'gadget'),
-  ...collectEntries(GAME, 'game'),
-  ...collectEntries(OUTDOOR, 'outdoor'),
-  ...collectEntries(GUIDE, 'guide').filter(e => GUIDE_RECOMMEND_SLUGS.has(e.slug)),
-].sort((a, b) => a.mtime - b.mtime);
-
-const recommendCards = recommendEntries.map(makeCardHtml).join('\n');
-
-const showMoreScript = `    <div style="text-align:center;margin-top:16px;">
-      <button id="show-more-btn" onclick="showMoreCards()" style="background:#e8253a;color:#fff;border:none;padding:12px 32px;border-radius:24px;font-size:0.88rem;font-weight:700;cursor:pointer;font-family:inherit;">もっと見る ↓</button>
+// "もっと見る" ボタン（gridId 単位）
+function makeShowMore(gridId, initial) {
+  return `    <div id="${gridId}-more-wrap" style="text-align:center;margin-top:16px;">
+      <button onclick="showMore('${gridId}')" style="background:#e8253a;color:#fff;border:none;padding:10px 28px;border-radius:24px;font-size:0.85rem;font-weight:700;cursor:pointer;font-family:inherit;">もっと見る ↓</button>
     </div>
     <script>
       (function(){
-        const INITIAL = ${INITIAL};
-        const grid = document.querySelector('#recommend + .article-grid');
-        const cards = grid ? Array.from(grid.querySelectorAll('.article-card')) : [];
-        cards.forEach((c, i) => { if (i >= INITIAL) c.style.display = 'none'; });
-        if (cards.length <= INITIAL) { const btn = document.getElementById('show-more-btn'); if(btn) btn.style.display='none'; }
+        var grid=document.getElementById('${gridId}');
+        var cards=grid?Array.from(grid.querySelectorAll('.article-card')):[];
+        cards.forEach(function(c,i){ if(i>=${initial}) c.style.display='none'; });
+        if(cards.length<=${initial}){ var b=document.getElementById('${gridId}-more-wrap'); if(b) b.style.display='none'; }
       })();
-      function showMoreCards() {
-        const grid = document.querySelector('#recommend + .article-grid');
-        if (!grid) return;
-        grid.querySelectorAll('.article-card').forEach(c => c.style.display = '');
-        document.getElementById('show-more-btn').style.display = 'none';
-      }
     <\/script>`;
+}
 
-const recommendBlock = `    <!-- RECOMMEND-START -->
-    <div class="article-grid">
-${recommendCards}
-    </div>
-${showMoreScript}
-    <!-- RECOMMEND-END -->`;
-
-// ── 配送・追跡（shipping/ 全件）──
+// ── データ収集 ──────────────────────────────────────────────
+const gadgetEntries   = collectEntries(GADGET,   'gadget');
+const gameEntries     = collectEntries(GAME,     'game');
+const outdoorEntries  = collectEntries(OUTDOOR,  'outdoor');
+const guideAll        = collectEntries(GUIDE,    'guide');
+const guideRecEntries = guideAll.filter(e => GUIDE_RECOMMEND_SLUGS.has(e.slug));
+const beginnerEntries = guideAll.filter(e => BEGINNER_SLUGS.has(e.slug));
+const tipsEntries     = guideAll.filter(e => !BEGINNER_SLUGS.has(e.slug) && !GUIDE_RECOMMEND_SLUGS.has(e.slug));
+const paymentEntries  = collectEntries(PAYMENT,  'payment');
 const shippingEntries = collectEntries(SHIPPING, 'shipping');
-const shippingCards = shippingEntries.map(makeCardHtml).join('\n');
+const safetyEntries   = collectEntries(SAFETY,   'safety');
+
+// ── Zone 1 ブロック ──────────────────────────────────────────
+
+const gadgetBlock = `    <!-- GADGET-START -->
+    <div class="article-grid" id="gadget-grid">
+${gadgetEntries.map(makeCardHtml).join('\n')}
+    </div>
+${makeShowMore('gadget-grid', GADGET_INITIAL)}
+    <!-- GADGET-END -->`;
+
+const gameBlock = `    <!-- GAME-START -->
+    <div class="article-grid" id="game-grid">
+${gameEntries.map(makeCardHtml).join('\n')}
+    </div>
+    <!-- GAME-END -->`;
+
+const outdoorBlock = `    <!-- OUTDOOR-START -->
+    <div class="article-grid" id="outdoor-grid">
+${outdoorEntries.map(makeCardHtml).join('\n')}
+    </div>
+    <!-- OUTDOOR-END -->`;
+
+const guideRecBlock = `    <!-- GUIDE-REC-START -->
+    <div class="article-grid" id="guide-rec-grid">
+${guideRecEntries.map(makeCardHtml).join('\n')}
+    </div>
+    <!-- GUIDE-REC-END -->`;
+
+// ── Zone 2 ブロック ──────────────────────────────────────────
+
+const beginnerBlock = `    <!-- BEGINNER-START -->
+    <div class="info-link-list">
+${beginnerEntries.map(makeInfoLinkHtml).join('\n')}
+    </div>
+    <!-- BEGINNER-END -->`;
+
+const tipsBlock = `    <!-- TIPS-START -->
+    <div class="info-link-list">
+${tipsEntries.map(makeInfoLinkHtml).join('\n')}
+    </div>
+    <!-- TIPS-END -->`;
+
+const paymentBlock = `    <!-- PAYMENT-START -->
+    <div class="info-link-list">
+${paymentEntries.map(makeInfoLinkHtml).join('\n')}
+    </div>
+    <!-- PAYMENT-END -->`;
+
 const shippingBlock = `    <!-- SHIPPING-START -->
-    <div class="article-grid">
-${shippingCards}
+    <div class="info-link-list">
+${shippingEntries.map(makeInfoLinkHtml).join('\n')}
     </div>
     <!-- SHIPPING-END -->`;
 
-// ── 安全性（safety/ 全件）──
-const safetyEntries = collectEntries(SAFETY, 'safety');
-const safetyCards = safetyEntries.map(makeCardHtml).join('\n');
 const safetyBlock = `    <!-- SAFETY-START -->
-    <div class="article-grid">
-${safetyCards}
+    <div class="info-link-list">
+${safetyEntries.map(makeInfoLinkHtml).join('\n')}
     </div>
     <!-- SAFETY-END -->`;
 
-// ── index.html 更新 ──
+// ── 注入 ──────────────────────────────────────────────────────
 function inject(html, startMark, endMark, block) {
   const si = html.indexOf(startMark);
   const ei = html.indexOf(endMark);
@@ -192,20 +220,18 @@ function inject(html, startMark, endMark, block) {
   return html.slice(0, si) + block + html.slice(ei + endMark.length);
 }
 
-// 入門・基礎セクションのリンクも更新（BEGINNER slugはguide/に移動済み）
-function updateBeginnerLinks(html) {
-  // guide/ に移動した入門記事のリンクが既に migrate-folders.mjs で更新済み
-  return html;
-}
-
 let indexHtml = fs.readFileSync(INDEX, 'utf8');
-indexHtml = inject(indexHtml, '<!-- RECOMMEND-START -->', '<!-- RECOMMEND-END -->', recommendBlock);
+indexHtml = inject(indexHtml, '<!-- GADGET-START -->',    '<!-- GADGET-END -->',    gadgetBlock);
+indexHtml = inject(indexHtml, '<!-- GAME-START -->',      '<!-- GAME-END -->',      gameBlock);
+indexHtml = inject(indexHtml, '<!-- OUTDOOR-START -->',   '<!-- OUTDOOR-END -->',   outdoorBlock);
+indexHtml = inject(indexHtml, '<!-- GUIDE-REC-START -->', '<!-- GUIDE-REC-END -->', guideRecBlock);
+indexHtml = inject(indexHtml, '<!-- BEGINNER-START -->',  '<!-- BEGINNER-END -->',  beginnerBlock);
 indexHtml = inject(indexHtml, '<!-- TIPS-START -->',      '<!-- TIPS-END -->',      tipsBlock);
-indexHtml = inject(indexHtml, '<!-- SHIPPING-START -->', '<!-- SHIPPING-END -->', shippingBlock);
-indexHtml = inject(indexHtml, '<!-- SAFETY-START -->',   '<!-- SAFETY-END -->',   safetyBlock);
-indexHtml = updateBeginnerLinks(indexHtml);
+indexHtml = inject(indexHtml, '<!-- PAYMENT-START -->',   '<!-- PAYMENT-END -->',   paymentBlock);
+indexHtml = inject(indexHtml, '<!-- SHIPPING-START -->',  '<!-- SHIPPING-END -->',  shippingBlock);
+indexHtml = inject(indexHtml, '<!-- SAFETY-START -->',    '<!-- SAFETY-END -->',    safetyBlock);
 fs.writeFileSync(INDEX, indexHtml, 'utf8');
 
-console.log(`✅ index.html のおすすめカードを更新`);
-console.log(`   recommend: ${recommendEntries.length}件 (gadget:${collectEntries(GADGET,'gadget').length} game:${collectEntries(GAME,'game').length} outdoor:${collectEntries(OUTDOOR,'outdoor').length} guide_rec:${collectEntries(GUIDE,'guide').filter(e=>GUIDE_RECOMMEND_SLUGS.has(e.slug)).length})`);
-console.log(`   tips: ${tipsEntries.length}件 / shipping: ${shippingEntries.length}件 / safety: ${safetyEntries.length}件`);
+console.log(`✅ index.html のカードを更新`);
+console.log(`   Zone 1 → gadget:${gadgetEntries.length} / game:${gameEntries.length} / outdoor:${outdoorEntries.length} / guide-rec:${guideRecEntries.length}`);
+console.log(`   Zone 2 → beginner:${beginnerEntries.length} / tips:${tipsEntries.length} / payment:${paymentEntries.length} / shipping:${shippingEntries.length} / safety:${safetyEntries.length}`);

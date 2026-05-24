@@ -6,11 +6,14 @@
 
   /* ── ナビメニュー カテゴリリスト ─────────────── */
   var NAV_ITEMS = [
-    { label: '🛒 おすすめ商品・比較', url: '/#recommend' },
-    { label: '📘 入門・基礎知識',     url: '/#beginner' },
-    { label: '💳 支払い・決済',       url: '/#payment'  },
-    { label: '📦 配送・追跡',         url: '/#shipping' },
-    { label: '🔒 安全性・トラブル対策', url: '/#safety' },
+    { label: '📱 ガジェット',           url: '/#gadget'    },
+    { label: '🎮 ゲーム',               url: '/#game'      },
+    { label: '🏕️ アウトドア',           url: '/#outdoor'   },
+    { label: '🛒 おすすめガイド',        url: '/#guide-rec' },
+    { label: '📘 入門・基礎知識',        url: '/#beginner'  },
+    { label: '💳 支払い・決済',          url: '/#payment'   },
+    { label: '📦 配送・追跡',            url: '/#shipping'  },
+    { label: '🔒 安全性・トラブル対策',  url: '/#safety'    },
   ];
 
   /* ── ヘッダー ─────────────────────────────────── */
