@@ -15,8 +15,8 @@ const SHIPPING = path.join(PUBLIC, 'shipping');
 const SAFETY   = path.join(PUBLIC, 'safety');
 const PAYMENT  = path.join(PUBLIC, 'payment');
 
-const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap']);
-const GADGET_INITIAL = 4; // ガジェットの初期表示件数
+const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap', 'index']);
+const GADGET_INITIAL = 6; // ガジェットの初期表示件数
 
 // guide/ の仕分け
 const BEGINNER_SLUGS = new Set([

@@ -8,7 +8,7 @@ import path from 'path';
 
 const PUBLIC = 'public';
 const ARTICLE_DIRS = ['gadget', 'game', 'outdoor', 'guide', 'safety', 'payment', 'shipping'];
-const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap']);
+const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap', 'index']);
 
 // カテゴリ別の表示ラベル
 const CATEGORY_LABEL = {

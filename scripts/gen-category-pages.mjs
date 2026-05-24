@@ -8,7 +8,7 @@ import path from 'path';
 
 const PUBLIC   = 'public';
 const BASE_URL = 'https://aliswipe.com';
-const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap']);
+const SKIP = new Set(['admin', 'preview', 'template', 'nav', 'home', 'sitemap', 'index']);
 
 const CATEGORIES = [
   {
