@@ -239,6 +239,35 @@ indexHtml = inject(indexHtml, '<!-- TIPS-START -->',      '<!-- TIPS-END -->',  
 indexHtml = inject(indexHtml, '<!-- PAYMENT-START -->',   '<!-- PAYMENT-END -->',   paymentBlock);
 indexHtml = inject(indexHtml, '<!-- SHIPPING-START -->',  '<!-- SHIPPING-END -->',  shippingBlock);
 indexHtml = inject(indexHtml, '<!-- SAFETY-START -->',    '<!-- SAFETY-END -->',    safetyBlock);
+// ── ItemList JSON-LD を生成して注入 ──────────────────────────
+const BASE_URL = 'https://aliswipe.com';
+const itemListEntries = [
+  ...gadgetEntries,
+  ...gameEntries,
+  ...outdoorEntries,
+  ...guideRecEntries,
+].slice(0, 20); // 最大20件（Googleの推奨上限）
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'アリエクswipe おすすめ記事一覧',
+  description: 'AliExpressのガジェット・ゲーム・アウトドア用品のおすすめ記事',
+  numberOfItems: itemListEntries.length,
+  itemListElement: itemListEntries.map((e, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `${BASE_URL}/${e.folder}/${e.slug}.html`,
+    name: extractTitle(e.html),
+  })),
+};
+
+const itemListTag = `<script type="application/ld+json">\n${JSON.stringify(itemListJsonLd, null, 2)}\n</script>`;
+indexHtml = indexHtml.replace(
+  /<!-- ITEMLIST-JSONLD -->(?:\s*<script type="application\/ld\+json">[\s\S]*?<\/script>)?/,
+  `<!-- ITEMLIST-JSONLD -->\n  ${itemListTag}`
+);
+
 // LCP preloadタグを更新（rel="preload"のみ置換。preconnect等は消さない）
 if (lcpThumb) {
   const preloadTag = `<link rel="preload" as="image" href="${lcpThumb}" fetchpriority="high">`;
