@@ -55,6 +55,13 @@ const ARTICLE_CONFIG = [
     topic:     'AliExpressから日本への配送日数に関するリアルな体験談',
   },
   {
+    slug:      '8bitdo-ultimate2-osusume',
+    folder:    'game',
+    subreddit: '8bitdo',
+    queries:   ['ultimate 2 review', 'ultimate 2 aliexpress', 'ultimate 2 hall effect'],
+    topic:     '8BitDo Ultimate2コントローラーのリアルな評判・使用感・購入体験談',
+  },
+  {
     slug:      'gamesir-controller-osusume',
     folder:    'game',
     subreddit: 'gamesir',
