@@ -151,7 +151,6 @@ AmazonリンクURLが「なし」の場合はPENDING形式、URLがある場合�
     ${'<!-- AMAZON_PENDING: 商品名 -->'}
     <a class="cta-btn-amazon" href="#" data-amazon-query="商品名" aria-disabled="true" style="opacity:0.45;pointer-events:none;cursor:not-allowed;">Amazonで見る（確認中）</a>
   </div>
-  <p class="cta-note">※ AliExpressリンクはアフィリエイトリンクです</p>
 </div>
 
 <!-- AmazonリンクURLがある場合（URLをそのまま使う） -->
@@ -162,7 +161,6 @@ AmazonリンクURLが「なし」の場合はPENDING形式、URLがある場合�
     <a class="cta-btn-aliex" href="ALIEXPRESS_AFFILIATE_URL" target="_blank" rel="noopener sponsored">AliExpressで見る</a>
     <a class="cta-btn-amazon" href="AMAZON_URL_FROM_DATA" target="_blank" rel="noopener sponsored">Amazonで見る</a>
   </div>
-  <p class="cta-note">※ 各リンクはアフィリエイトリンクです</p>
 </div>
 \`\`\`
 
