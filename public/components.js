@@ -119,10 +119,12 @@
     '.promo-notice{font-size:.72rem;color:#9ca3af;margin:4px 0 0;}' +
     '#cta-sticky a{position:relative;overflow:hidden;}' +
     '#cta-sticky{padding:9px 20px!important;}' +
-    /* パンくず位置のブランドバッジ */
-    '.site-brand-nav{padding:7px 16px;background:#fafaf8;border-bottom:1px solid #e5e7eb;}' +
-    '.site-brand-nav a{display:inline-flex;align-items:center;text-decoration:none;opacity:.75;transition:opacity .15s;}' +
-    '.site-brand-nav a:hover{opacity:1;}' +
+    /* パンくず */
+    '.breadcrumb{padding:6px 16px;background:#fafaf8;border-bottom:1px solid #e5e7eb;font-size:.74rem;color:#9ca3af;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}' +
+    '.breadcrumb a{color:#9ca3af;text-decoration:none;}' +
+    '.breadcrumb a:hover{color:#e8253a;text-decoration:underline;}' +
+    '.bc-sep{margin:0 5px;color:#d1d5db;}' +
+    '.bc-current{color:#374151;font-weight:500;}' +
     /* 監修者ボックス */
     '.supervisor-box{max-width:760px;margin:0 auto;padding:0 20px 40px;}' +
     '.supervisor-inner{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px 24px;}' +
@@ -168,9 +170,44 @@
       siteFooter.parentNode.insertBefore(supWrap.firstChild, siteFooter);
     }
 
-    /* パンくずを非表示 */
-    var breadcrumb = document.querySelector('nav.breadcrumb');
-    if (breadcrumb) breadcrumb.remove();
+    /* パンくずを生成・注入 */
+    var BC_LABELS = {
+      gadget:   'ガジェット',
+      game:     'ゲーム',
+      outdoor:  'アウトドア',
+      guide:    'ガイド',
+      safety:   '安全性',
+      payment:  '支払い・決済',
+      shipping: '配送・追跡',
+    };
+    (function() {
+      var parts  = window.location.pathname.split('/').filter(Boolean);
+      var folder = parts[0];
+      if (!folder || !BC_LABELS[folder]) return;
+      var isIndex = !parts[1] || parts[1] === 'index.html';
+      var crumbs = [{ label: 'ホーム', url: '/' }];
+      if (isIndex) {
+        crumbs.push({ label: BC_LABELS[folder], url: null });
+      } else {
+        crumbs.push({ label: BC_LABELS[folder], url: '/' + folder + '/index.html' });
+        var h1 = document.querySelector('h1');
+        var title = h1 ? h1.textContent.trim() : document.title.replace(/\s*\|.*$/, '').trim();
+        crumbs.push({ label: title, url: null });
+      }
+      var inner = crumbs.map(function(c, i) {
+        var last = i === crumbs.length - 1;
+        var item = last
+          ? '<span class="bc-current">' + c.label + '</span>'
+          : '<a href="' + c.url + '">' + c.label + '</a>';
+        return item + (last ? '' : '<span class="bc-sep">›</span>');
+      }).join('');
+      var nav = document.createElement('nav');
+      nav.className = 'breadcrumb';
+      nav.setAttribute('aria-label', 'パンくず');
+      nav.innerHTML = inner;
+      var header = document.querySelector('.site-header');
+      if (header) header.insertAdjacentElement('afterend', nav);
+    })();
 
     /* ハンバーガーメニュー開閉 */
     var btn      = document.querySelector('.hamburger-btn');
