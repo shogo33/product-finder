@@ -17,6 +17,8 @@ const SKIP = new Set([
 ]);
 
 // スラッグ別の優先度・更新頻度
+const CATEGORY_INDEX_META = { priority: '0.85', changefreq: 'weekly' };
+
 const SLUG_META = {
   'index':                      { priority: '1.0', changefreq: 'weekly' },
   'aliexpress-osusume':         { priority: '0.9', changefreq: 'weekly' },
@@ -86,8 +88,8 @@ for (const file of files) {
   const html     = fs.readFileSync(file, 'utf8');
   const title    = extractTitle(html);
   const lastmod  = fileDate(file);
-  const meta     = SLUG_META[slug] || DEFAULT_META;
-  const urlPath  = slug === 'index' ? '/' : `/${rel}`;
+  const meta     = (slug === 'index' && dir !== '') ? CATEGORY_INDEX_META : (SLUG_META[slug] || DEFAULT_META);
+  const urlPath  = (slug === 'index' && dir === '') ? '/' : `/${rel}`;
 
   pages.push({ slug, dir, rel, urlPath, title, lastmod, ...meta });
 }
@@ -122,7 +124,8 @@ const buckets = { top: [], osusume: [], safety: [], payment: [], shipping: [], i
 // フォルダ別おすすめ記事はすべてosusumeバケツへ
 
 for (const p of pages) {
-  if (p.slug === 'index') continue; // トップはハードコード
+  if (p.slug === 'index' && p.dir === '') continue; // トップはハードコード
+  if (p.slug === 'index') continue; // カテゴリインデックスはサイトマップHTML省略
   if (p.dir === 'info') { buckets.info.push(p); continue; }
   if (p.dir === 'safety') { buckets.safety.push(p); continue; }
   if (p.dir === 'payment') { buckets.payment.push(p); continue; }
