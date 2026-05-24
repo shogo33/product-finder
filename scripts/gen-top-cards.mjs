@@ -95,15 +95,19 @@ function collectEntries(dir, folder) {
 }
 
 // ── Zone 1: 画像カード ──────────────────────────────────────
-function makeCardHtml({ slug, html, folder }) {
-  const title = escHtml(extractTitle(html));
-  const desc  = escHtml(extractDesc(html));
-  const thumb = extractThumb(html, slug);
-  const tag   = escHtml(getCardTag(slug, folder));
-  const href  = `/${folder}/${slug}.html`;
-  const alt   = escHtml(title.slice(0, 40));
+function makeCardHtml({ slug, html, folder }, isFirst = false) {
+  const title   = escHtml(extractTitle(html));
+  const desc    = escHtml(extractDesc(html));
+  const thumb   = extractThumb(html, slug);
+  const tag     = escHtml(getCardTag(slug, folder));
+  const href    = `/${folder}/${slug}.html`;
+  const alt     = escHtml(title.slice(0, 40));
+  // LCP画像（最初の1枚）はeager + fetchpriority=high でブラウザに優先ロードを指示
+  const loading = isFirst
+    ? 'loading="eager" fetchpriority="high"'
+    : 'loading="lazy"';
   return `      <a href="${href}" class="article-card">
-        <img src="${thumb}" class="card-thumb" alt="${alt}" loading="lazy">
+        <img src="${thumb}" class="card-thumb" alt="${alt}" ${loading}>
         <div class="card-body">
           <div class="card-tag">${tag}</div>
           <div class="card-title">${title}</div>
@@ -152,9 +156,14 @@ const safetyEntries   = collectEntries(SAFETY,   'safety');
 
 // ── Zone 1 ブロック ──────────────────────────────────────────
 
+// LCP対象: ガジェット最初の1枚のサムネURL（preload用）
+const lcpThumb = gadgetEntries.length > 0
+  ? extractThumb(gadgetEntries[0].html, gadgetEntries[0].slug)
+  : null;
+
 const gadgetBlock = `    <!-- GADGET-START -->
     <div class="article-grid" id="gadget-grid">
-${gadgetEntries.map(makeCardHtml).join('\n')}
+${gadgetEntries.map((e, i) => makeCardHtml(e, i === 0)).join('\n')}
     </div>
 ${makeShowMore('gadget-grid', GADGET_INITIAL)}
     <!-- GADGET-END -->`;
@@ -230,6 +239,15 @@ indexHtml = inject(indexHtml, '<!-- TIPS-START -->',      '<!-- TIPS-END -->',  
 indexHtml = inject(indexHtml, '<!-- PAYMENT-START -->',   '<!-- PAYMENT-END -->',   paymentBlock);
 indexHtml = inject(indexHtml, '<!-- SHIPPING-START -->',  '<!-- SHIPPING-END -->',  shippingBlock);
 indexHtml = inject(indexHtml, '<!-- SAFETY-START -->',    '<!-- SAFETY-END -->',    safetyBlock);
+// LCP preloadタグを更新（rel="preload"のみ置換。preconnect等は消さない）
+if (lcpThumb) {
+  const preloadTag = `<link rel="preload" as="image" href="${lcpThumb}" fetchpriority="high">`;
+  indexHtml = indexHtml.replace(
+    /<!-- LCP-PRELOAD -->\s*(?:<link\s[^>]*rel="preload"[^>]*>\s*)?/,
+    `<!-- LCP-PRELOAD -->\n  ${preloadTag}\n\n  `
+  );
+}
+
 fs.writeFileSync(INDEX, indexHtml, 'utf8');
 
 console.log(`✅ index.html のカードを更新`);
