@@ -73,6 +73,7 @@ function buildUserPrompt() {
 - 価格: ¥${Number(p.price_jpy).toLocaleString('ja-JP')}（元値 ¥${Number(p.original_price ?? 0).toLocaleString('ja-JP')}）
 - 評価: ${p.evaluate_rate ?? 'N/A'} / 販売数: ${Number(p.sales_count ?? 0).toLocaleString('ja-JP')}件
 - AliExpressアフィリエイトリンク: ${p.affiliateLink}
+- AmazonリンクURL: ${p.amazonUrl ?? 'なし'}
 - Amazonプレースホルダー検索キーワード: "${p.amazonPlaceholder?.searchQuery ?? p.cleanName}"
 - 画像URL（上から使用）:
 ${imagesText}
@@ -138,16 +139,30 @@ ${'<!-- @product-end -->'}
 \`\`\`
 
 ### 必須構造②：CTAボックス（AliEx + Amazon並列）
+AmazonリンクURLが「なし」の場合はPENDING形式、URLがある場合は実リンクを使う。
+
 \`\`\`html
+<!-- AmazonリンクURLが「なし」の場合 -->
 <div class="cta-box">
   <p class="cta-lead">【商品名】をどちらで買う？価格・配送を比較</p>
   <p class="cta-sub">AliExpress：送料無料・格安・到着2〜4週間｜Amazon：翌日〜2日・返品しやすい</p>
   <div class="cta-buttons">
     <a class="cta-btn-aliex" href="ALIEXPRESS_AFFILIATE_URL" target="_blank" rel="noopener sponsored">AliExpressで見る</a>
-    ${'<!-- AMAZON_PENDING: AMAZON_SEARCH_QUERY -->'}
-    <a class="cta-btn-amazon" href="#" data-amazon-query="AMAZON_SEARCH_QUERY" aria-disabled="true" style="opacity:0.45;pointer-events:none;cursor:not-allowed;">Amazonで見る（確認中）</a>
+    ${'<!-- AMAZON_PENDING: 商品名 -->'}
+    <a class="cta-btn-amazon" href="#" data-amazon-query="商品名" aria-disabled="true" style="opacity:0.45;pointer-events:none;cursor:not-allowed;">Amazonで見る（確認中）</a>
   </div>
   <p class="cta-note">※ AliExpressリンクはアフィリエイトリンクです</p>
+</div>
+
+<!-- AmazonリンクURLがある場合（URLをそのまま使う） -->
+<div class="cta-box">
+  <p class="cta-lead">【商品名】をどちらで買う？価格・配送を比較</p>
+  <p class="cta-sub">AliExpress：送料無料・格安・到着2〜4週間｜Amazon：翌日〜2日・返品しやすい</p>
+  <div class="cta-buttons">
+    <a class="cta-btn-aliex" href="ALIEXPRESS_AFFILIATE_URL" target="_blank" rel="noopener sponsored">AliExpressで見る</a>
+    <a class="cta-btn-amazon" href="AMAZON_URL_FROM_DATA" target="_blank" rel="noopener sponsored">Amazonで見る</a>
+  </div>
+  <p class="cta-note">※ 各リンクはアフィリエイトリンクです</p>
 </div>
 \`\`\`
 
@@ -244,79 +259,14 @@ ${'<!-- アプリ誘導バナー -->'}
 #### 6.6 Xの声プレースホルダー＋Amazonおすすめ＋関連記事セクション（必須）
 本文の末尾（FAQの後）に必ず以下の順序で出力する：
 ① ${'`'}${'<!-- VOICE-START -->'}${'<!-- VOICE-END -->'}${'`'} プレースホルダー（後からスクリプトが注入する）
-② Amazonでよく買われているもの ウィジェット（固定ブロック・毎回必ず出力）
+② ${'`'}${'<!-- AMAZON_REC_PLACEHOLDER -->'}${'`'} をそのままコピーする（スクリプトが商品データから自動生成する）
 ③ 関連記事セクション
 
 \`\`\`html
 ${'<!-- VOICE-START -->'}${'<!-- VOICE-END -->'}
 
-      ${'<!-- Amazonおすすめ -->'}
-      <div class="amazon-rec">
-        <div class="amazon-rec-title">🛒 Amazonでよく買われているもの</div>
-        <div class="amazon-rec-list">
-          <a href="https://amzn.to/4uqaDhN" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">炭酸水</span>
-            <span class="amazon-rec-name">ウィルキンソン タンサン ダブルグレープ 500ml×24本</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/4upEaYE" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">プロテイン</span>
-            <span class="amazon-rec-name">アンビーク ソイプロテイン 1kg バナナ味</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/3RE0Y8B" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">炭酸水</span>
-            <span class="amazon-rec-name">by Amazon 強炭酸水 ラベルレス 500ml×24本 (Smart Basic)</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/4fxTFZV" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">コーラ</span>
-            <span class="amazon-rec-name">コカ・コーラ ラベルレス 500mlPET×24</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/4fyTtd0" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">麦茶</span>
-            <span class="amazon-rec-name">やかんの麦茶 from 爽健美茶 ラベルレス 650mlPET×24本</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/3PxKEpm" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">水</span>
-            <span class="amazon-rec-name">い・ろ・は・す ラベルレス 560ml×24本</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/42IyEV3" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">緑茶</span>
-            <span class="amazon-rec-name">コカ・コーラ 綾鷹 ラベルレス 525mlPET×24本</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/4eYNPkj" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">炭酸水</span>
-            <span class="amazon-rec-name">by Amazon 強炭酸水 レモン ラベルレス 500ml×24本</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/4uW9A8Y" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">スポーツ</span>
-            <span class="amazon-rec-name">コカ・コーラ アクエリアス ラベルレス 500mlPET×24本</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/4wIckbQ" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">麦茶</span>
-            <span class="amazon-rec-name">伊藤園 ラベルレス 健康ミネラルむぎ茶 600ml×24本</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/4wIclfU" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">ほうじ茶</span>
-            <span class="amazon-rec-name">アサヒ飲料 ほうじ茶 ラベルレスボトル 500ml×24本</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-          <a href="https://amzn.to/3RouAXt" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
-            <span class="amazon-rec-label">天然水</span>
-            <span class="amazon-rec-name">by Amazon 天然水 ラベルレス 500ml×24本 富士山の天然水</span>
-            <span class="amazon-rec-cta">Amazonで見る</span>
-          </a>
-        </div>
-        <button class="amazon-rec-toggle" onclick="this.previousElementSibling.classList.toggle('expanded');this.textContent=this.previousElementSibling.classList.contains('expanded')?'閉じる':'もっと見る'">もっと見る</button>
-      </div>
+${'<!-- AMAZON_REC_PLACEHOLDER -->'}
+
 
 <div class="container">
   <div class="related">
@@ -362,6 +312,19 @@ articleBody = articleBody.trim();
 
 // Claudeがコードブロックで囲んで返した場合の除去
 articleBody = articleBody.replace(/^```html?\s*/m, '').replace(/\s*```$/m, '').trim();
+
+// ── AMAZON_REC_PLACEHOLDER を商品データから生成して注入 ──────────
+const amazonRecItems = research.products
+  .filter(p => p.amazonUrl)
+  .map(p => `    <a href="${p.amazonUrl}" class="amazon-rec-item" target="_blank" rel="noopener sponsored">
+      <span class="amazon-rec-label">Amazon</span>
+      <span class="amazon-rec-name">${p.cleanName}</span>
+      <span class="amazon-rec-cta">Amazonで見る</span>
+    </a>`).join('\n');
+const amazonRecHtml = amazonRecItems
+  ? `<!-- Amazonおすすめ -->\n<div class="amazon-rec">\n  <div class="amazon-rec-title">🛒 Amazonでも買えます</div>\n  <div class="amazon-rec-list">\n${amazonRecItems}\n  </div>\n</div>`
+  : '';
+articleBody = articleBody.replace('<!-- AMAZON_REC_PLACEHOLDER -->', amazonRecHtml);
 
 // ── HTML全体を組み立て（template.htmlベース） ───────────────
 const title    = plan.selectedTitle;
