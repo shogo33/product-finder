@@ -1,0 +1,152 @@
+{
+  "keyword": "anbernic rg557",
+  "slug": "anbernic-rg557-osusume",
+  "category": "game",
+  "searchIntent": "レビュー系|購入先比較",
+  "searchIntentNote": "ANBERNIC RG557の購入を検討。スペック・エミュレータ性能・Amazonとアリエクの価格差を把握して失敗なく最安値で買いたい。",
+  "persona": "アリエクで中華ゲーム機を10台以上買ってきたレトロゲームオタク。RG351P、RG353M、RG405M……と渡り歩き、エミュレータ動作の実感を語れる。Amazonに転売業者が群がっているのを知っていて、「アリエク公式に直接行け」と布教したくてたまらないタイプ。",
+  "targetProductCount": 1,
+  "targetSubKeywords": ["anbernic", "anbernic おすすめ"],
+  "subKeywordStrategy": "h1・冒頭にanbernic rg557を配置。section1のh2に「anbernic」を含める。section5の他モデル比較でanbernic おすすめを自然に取得。",
+  "titles": [
+    "ANBERNIC RG557レビュー【2026年最新】アリエク公式なら¥15,048——Amazonの転売価格で買ってはいけない理由",
+    "ANBERNIC RG557おすすめ購入ガイド【2026年】アリエクなら最大¥12,000安い理由を解説",
+    "ANBERNIC RG557完全レビュー【2026年最新】スペック・エミュレータ性能・アリエク最安購入術"
+  ],
+  "selectedTitle": "ANBERNIC RG557レビュー【2026年最新】アリエク公式なら¥15,048——Amazonの転売価格で買ってはいけない理由",
+  "metaDescription": "ANBERNIC RG557をAmazonで買うのは損。アリエク公式ストアなら約¥15,048——Amazonの転売価格より¥12,000以上安い。5.5インチ大画面・Dimensity 6588・Android搭載のスペックとエミュレータ性能を解説します。",
+  "intro": "「RG557、Amazonで¥27,537もするの？」——そう思ったあなた、正解です。アリエク公式ストアなら約¥15,048で買えます。その差額、なんと¥12,000以上。Amazonに出品しているのはANBERNIC本体ではなく、買い付けて転売している業者です。ANBERNIC RG557はANBERNIC公式がアリエクに直接出店しているので、アリエク公式ストアが最安・正規品・保証付きの三拍子が揃った正解ルートです。この記事ではRG557のスペック・エミュレータ性能・対応機種、そしてアリエク公式での正しい買い方を徹底解説します。",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "ANBERNICとは｜中華ゲーム機ブランドの実力と信頼性",
+      "h3s": [
+        "ANBERNICの特徴——レトロゲーム機専業メーカーの実力",
+        "RG557が注目される3つの理由",
+        "Amazonで買ってはいけない理由——転売業者の実態"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "サブKW「anbernic」をh2に自然に含める",
+        "ANBERNICはアリエクに公式ストアを持ち、直販で品質保証・返品対応あり",
+        "Xの声：あるユーザー「Choice割引コードを使ったらAnbernic RG557購入できた。アリエク価格：¥15,048 Amazonは: ¥27,537」——この価格差を冒頭で強調する",
+        "アリエク通常価格は約¥37,000前後だがセール+クーポンで¥15,000台まで落ちる。Amazon転売価格¥27,537との差を説明"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "ANBERNIC RG557 スペック徹底レビュー｜Dimensity 6588搭載の実力",
+      "h3s": [
+        "主要スペック一覧（SoC・RAM・ディスプレイ・バッテリー）",
+        "対応エミュレータ一覧——PSP・PS1・N64・NDSまで快適動作",
+        "Xの声"
+      ],
+      "type": "product",
+      "notes": [
+        "SoC: MediaTek Dimensity 6588 / RAM: 16GB / ストレージ: 256GB or 512GB / ディスプレイ: 5.5インチ 1920×1080 / バッテリー: 5000mAh / OS: Android 13",
+        "対応エミュレータ：MAME/FC/SFC/MD/PCE/GBA/GBC/GB/NDS/N64/PSP/PS1——PS2は一部動作",
+        "Xの声：Retro Gaming Consoles（海外）「The new Anbernic RG557 is the most powerful Android console from Anbernic. Features Dimensity 6588 processor and 12GB of RAM. It's a powerful console 💪」",
+        "Xの声：あるXユーザー「ANBERNIC RG557 きました！ディスプレイ解像度1920×1080 届きました」"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "ANBERNIC RG557 256GBと512GB——どちらを選ぶべきか",
+      "h3s": [
+        "256GB vs 512GB：価格差と実用上の違い",
+        "microSDで後から拡張する方法",
+        "Xの声"
+      ],
+      "type": "comparison",
+      "notes": [
+        "アリエク通常価格は約¥37,000だがセール+クーポンで¥15,000台になる。256GBと512GBの違いを説明",
+        "microSDスロット（最大1TB対応）があるので、ROMコレクターでない限り256GBで十分と結論",
+        "Xの声：あるXユーザー「ANBERNIC RG557 セール！アリエク価格¥15,048 クーポン使用でさらに安く！」",
+        "Xの声：あるXユーザー「ANBERNIC RG Handheld — Built-in 5000+ Games, HD Output対応」（収録済みゲームの多さに驚き）"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "アリエク公式ストアでの正しい買い方｜偽物・粗悪品を避ける方法",
+      "h3s": [
+        "ANBERNIC公式ストアの見分け方",
+        "クーポン・Choice割引・セール活用術",
+        "Xの声"
+      ],
+      "type": "howto",
+      "notes": [
+        "「ANBERNIC Official Store」または「Anbernic Official Store」の表記がある公式ストアのみ推奨",
+        "Choice割引+クーポンスタックで¥2,000〜¥3,000追加で安くなる事例を紹介",
+        "Xの声：あるXユーザー「Anbernic RG557、アリエクで買ったよ！」",
+        "Xの声：あるXユーザー「アリエクから無事届いて！クーポン情報も合わせてチェックして」"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "ANBERNICおすすめモデル比較｜RG557と他機種の違い",
+      "h3s": [
+        "RG405M・RG406V・RG35XXHとRG557の比較表",
+        "RG557を選ぶべき人・他モデルを選ぶべき人"
+      ],
+      "type": "comparison",
+      "notes": [
+        "サブKW「anbernic おすすめ」をh2に自然に含める",
+        "RG557：大画面5.5インチ・Android・高性能SoC向け。RG35XXH：コンパクト・Linux向け。RG405M：中間。RG406V：縦型",
+        "「据え置き感覚でエミュレーションを楽しみたいならRG557一択」と結論"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "ANBERNIC RG557に関するよくある質問",
+      "h3s": [
+        "FAQ一覧",
+        "まとめ｜RG557はアリエク公式から買うのが正解——転売業者に¥12,000を払うな"
+      ],
+      "type": "faq",
+      "notes": [
+        "FAQはエミュレータ対応・日本語化・関税・返品・保証の5問",
+        "まとめでアリエク公式ストアへのCTAを強めに配置"
+      ]
+    }
+  ],
+  "faqQuestions": [
+    "ANBERNIC RG557はどのエミュレータに対応していますか？",
+    "日本語化・日本語設定はできますか？",
+    "アリエクからRG557を買うと関税はかかりますか？",
+    "不良品だった場合、アリエクで返品・返金はできますか？",
+    "RG557とRG405M・RG406Vはどう違いますか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "アリエク価格（目安）",
+    "Amazon価格（目安）",
+    "SoC",
+    "RAM",
+    "ディスプレイ",
+    "OS"
+  ],
+  "internalLinks": [
+    {
+      "url": "/game/aliexpress-gamepad-osusume.html",
+      "anchorText": "アリエクのゲームパッドおすすめ5選"
+    },
+    {
+      "url": "/game/gamesir-controller-osusume.html",
+      "anchorText": "GameSirコントローラーおすすめ4選"
+    },
+    {
+      "url": "/gadget/aliexpress-chuka-tablet-osusume.html",
+      "anchorText": "中華タブレットおすすめ5選"
+    },
+    {
+      "url": "/game/index.html",
+      "anchorText": "アリエクのゲーム周辺機器おすすめ一覧"
+    }
+  ],
+  "competitorDifferentiators": [
+    "「Amazon転売業者問題」をファーストビューで提示し、読者の購買コストを¥12,000以上削減できることを訴求する",
+    "Xの実際の声（アリエク¥15,048 vs Amazon¥27,537）という一次データで信頼性を担保する",
+    "エミュレータ対応表と公式ストア見分け方を一気通貫で解説し、読んだその日にアリエク公式から購入できる完結型コンテンツにする"
+  ],
+  "createdAt": "2026-05-25"
+}
