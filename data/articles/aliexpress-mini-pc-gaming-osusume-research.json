@@ -1,0 +1,313 @@
+{
+  "slug": "aliexpress-mini-pc-gaming-osusume",
+  "keyword": "ミニPC ゲーミング おすすめ",
+  "category": "gadget",
+  "selectedTitle": "アリエク ゲーミングミニPCおすすめ5選【2026年最新】コスパ最強を徹底比較",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "AliExpressのゲーミングミニPCとは？国内との違いと注意点",
+      "h3s": [
+        "ミニPCがゲームに使えるようになった理由",
+        "AliExpressで買うメリット・デメリット",
+        "購入前に確認すべき3つのポイント"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "Ryzen 7000シリーズ・Core Ultra搭載でAPU性能が飛躍的に向上した背景を説明",
+        "AliExpressで購入する際の価格差・関税・保証面のリスクを正直に解説",
+        "RAM容量・ストレージ規格・冷却性能の確認方法を具体的に示す"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "ゲーミングミニPCの選び方｜スペックと用途で失敗しないコツ",
+      "h3s": [
+        "APU（CPU内蔵GPU）の性能で選ぶ",
+        "RAM・ストレージ容量と拡張性",
+        "冷却性能・TDPと静音性のバランス",
+        "対応ゲームタイトル別の目安スペック"
+      ],
+      "type": "howto",
+      "notes": [
+        "Radeon 780M・890M・Intel Arc内蔵など主要APUのゲーム性能比較を数値で示す",
+        "DDR5/LPDDR5Xの違いやデュアルチャネル構成がゲーム性能に与える影響を解説",
+        "軽量eスポーツ・インディゲーム・AAA軽量タイトル別の推奨スペックラインを明示"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "【第1位】MINISFORUM UM790 Pro｜Ryzen 9 7940HS搭載の最強コスパ機",
+      "h3s": [
+        "スペックと実際のゲーム性能",
+        "AliExpressでの価格・購入方法"
+      ],
+      "type": "product",
+      "notes": [
+        "Radeon 780M内蔵でApex Legends・Valorantなど軽量タイトルを60fps以上でプレイ可能な実績を記載",
+        "AliExpressでの最安値帯・セール時期・公式ストアの信頼性を解説",
+        "冷却性能の高さと拡張スロット（2.5Gイーサ・Thunderbolt対応）を強調"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "【第2位】MINISFORUM UM890 Pro｜Ryzen AI 9 HX 370搭載の最新世代",
+      "h3s": [
+        "Radeon 890Mで実現するゲーム性能",
+        "価格帯と購入時の注意点"
+      ],
+      "type": "product",
+      "notes": [
+        "890M搭載でFF14・CS2など中量級タイトルも視野に入るポテンシャルを解説",
+        "UM790 Proとの価格差・性能差を具体的に示しどちらを選ぶべきか判断軸を提示",
+        "LPDDR5Xデュアルチャネル構成によるゲーム性能向上を強調"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "【第3位】BEELINK SER8｜コスパ重視ゲーマーへのド定番モデル",
+      "h3s": [
+        "Ryzen 7 8745HS搭載のゲーム実力",
+        "AliExpressでの最安値帯と評判"
+      ],
+      "type": "product",
+      "notes": [
+        "コストパフォーマンスに特化したBEELINKブランドの信頼性と販売実績を説明",
+        "Radeon 780M搭載で価格が一段安い点と、スペックのトレードオフを正直に記載",
+        "ユーザーレビューの傾向（冷却・ノイズ・ゲーム安定性）をまとめる"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "【第4位】GEEKOM A8｜AMD Ryzen 9 8945HS×静音設計で長時間ゲームに最適",
+      "h3s": [
+        "ゲーミング用途でのパフォーマンス評価",
+        "静音性とサーマル設計の優位性"
+      ],
+      "type": "product",
+      "notes": [
+        "静音重視のゲーマーや配信環境構築ユーザー向けにGEEKOMブランドの特徴を解説",
+        "サーマルスロットリングが起きにくい設計によるゲーム中の安定フレームレートを強調",
+        "AliExpressでの公式ストア存在確認と保証対応の現実的な評価を記載"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "【第5位】MINISFORUM AtomMan G7 Pt｜外付けGPU対応の将来性重視モデル",
+      "h3s": [
+        "eGPU接続でゲーム性能を拡張できる唯一の選択肢",
+        "価格と拡張性のコストパフォーマンス"
+      ],
+      "type": "product",
+      "notes": [
+        "OCuLink/Thunderbolt経由でeGPUを接続できる希少な仕様を具体的に解説",
+        "現時点ではAPU性能で運用し、後から外付けGPUで性能アップする運用方法を提案",
+        "将来的なゲーミング性能アップグレードを見越したコスト計算を示す"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "ゲーミングミニPC比較表｜5モデルをスペックで一目比較",
+      "h3s": [
+        "モデル別スペック・価格早見表",
+        "用途別おすすめモデル早見表"
+      ],
+      "type": "comparison",
+      "notes": [
+        "5モデルをCPU・GPU・RAM・価格・ゲーム性能目安・おすすめ用途で横並び比較",
+        "軽量eスポーツ重視・中量級ゲーム重視・将来の拡張性重視の3パターンで推奨モデルを示す",
+        "価格帯ごとのコスパランキングとして読者が直感的に選べる構成にする"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "よくある質問｜ゲーミングミニPCをAliExpressで買う前に確認",
+      "h3s": [
+        "Q1. AliExpressのミニPCは関税がかかりますか？",
+        "Q2. ゲーミングミニPCでフォートナイトは動きますか？",
+        "Q3. メモリ・SSDは後から増設できますか？",
+        "Q4. Windows 11は正規ライセンスで届きますか？",
+        "Q5. 通常のゲーミングデスクトップと比べてどこが劣りますか？"
+      ],
+      "type": "faq",
+      "notes": [
+        "関税・輸入税に関する現実的な金額感と課税リスクの説明を記載",
+        "人気ゲームタイトル別の動作可否（フォートナイト・Apex・Valorant・マイクラ）を簡潔に回答",
+        "Windows正規ライセンス問題・メモリ増設可否・デスクトップとの性能差を正直に解説"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-25",
+  "products": [
+    {
+      "product_id": "1005009585509514",
+      "rawTitle": "MINISFORUM UM890/UM880 Pro ミニPC AMD Ryzen 9 8945HS/8845HS 2x DDR5 2x 2.5G Oculink NUC ゲーミングコンピューター PC Win11Pro WiFi6",
+      "cleanName": "MINISFORUM UM890/UM880 Pro ミニPC",
+      "price_jpy": "294016",
+      "original_price": "12988.80",
+      "sales_count": 0,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3Co9Xoz4nWvBKFVfqGqHSo5XrZFw5mfhAxcRkrgm1kqiQUFEtXyLKBKR7dRGzKSsY8ibePRSpjNuEdy5XjsDwoUUWM55oD0X53P7iMlrqEabhbMjVvLnkC6pgD2rFqwdbjztjxuteRAbsIfksgzDSDqnUAwKvFlSGP5Z9n8sVtecbeis1wIjv9oytPMV51b39O4wv8TTx9huPKUaezwJo7KkVHFF4bMt04DafsC7d8mnNPo3rZj91DyLvOdPVj8fYBl5CoyR0UuWD9UzW6BWxen2RsmWYNnlSGseIjGpV7nqePVM6w7R9StH5CKxvSBG079bW6pmIuf9Ot4DhvvfeQ2SNHamerQ9R2KLBv3nd0ViS9AjtV2FSxQFDn9ByZJdYSGFtXsLXL28WcvpYhrswBAH99Nf1TwT0HsBhshOBXlP85CsXYvttBjrCGqDWbuKWPZ5zy49AN18q1SWGiVSkfPY7CNUmiAy0fOlO97b7CfHO9436bdyXfBmrJ6K0XVpz8r3xbp9qj4CYaz5Y54m2DvAdt61qJFSGH21vh6UD3E2FAmsIxUv79CGTpx4mMCq3I18LgGXC47tDKKo69fTwsfPGH4leHvGyCXuZem8yoVhrP1BoizUxSse6Map4MMq9btPyrTNAzpuvJW2nyd0Blbr2FsdqQQ0Rh1JHfCh8Vn9qxTqaV5nQwA1BRjXknNaK7IBvVNXyxxdMIP",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S0ce2473858dd47d2b9b7bf226e20ec23d.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0ce2473858dd47d2b9b7bf226e20ec23d.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1c8ccb7f273447c3abc2152569538f7dC.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sf6ef40e739284ac895cb785b17bbbfebP.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4ceb2e5ea3194081899bb0e1dbf166a44.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S98ddf491f6314607920a6091c93f4bdaQ.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S90f5b3b8cd3244628ac91ebd00ebccd5z.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "MINISFORUM UM890/UM880 Pro ミニPC",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005010535413125",
+      "rawTitle": "GMKtec ゲーミングミニPC K8 Plus AMD Ryzen 7 8845HS（8コア/16スレッド、最大5.1GHz）デスクトップコンピューター HDMI 2.1 USB4 K11 AMD R9 8945HS R7 6850H",
+      "cleanName": "GMKtec K8 Plus",
+      "price_jpy": "52082",
+      "original_price": "3262.41",
+      "sales_count": 0,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CnkXGn3Qe9eNbfRmPxHST9HbafjUadtiw3KDconmhGkmtoTKSypgQSCkbqLFGpXZDJvcfo9oClYmMohxnicXEOoDi7wrrreAUq0NNNe6Nxp3eWN72ZKtR3JDIJBGb6yEOm5H1c50ikOQovKnJAG0ECABIxYoUPhxIRuK4ycm3F1wgHIFHJnauCoRPPQhatMNNVWhtm3DJSkMygDRGctCVDwPPCk2u1pMjNmnBQrTbpyLeHay3hivH94DvE4LeV8E002e02fZaqq9URzilEWZl5eMR4u9c42oW0UVJhX2R80XWXKlW4pZGosGxceLjAJgSf7FJAnJxv0SUcP8HRVpjxGXTDOCSKx9NFbMYpbHPtvmnhq7nacPbcT1Gs7hU3oZ4ATziW7f8jwDsL2JAkXCulekazpY6xuShhGDoXcOtBJTtywhMLwIWDhgseCi64kQ120Hgll6FeERXtb5htCjGBN554a9khdMtypLokAjwsZeO07akpIO2qUOnjNfYvSp90XE8OQ7k7d6u8g2BrxMRTQbQDSuBsdLporZ66ghOeSZ3ktBLpxfQ6doXgEZLYDzmgD6AegbmXK3uk3PzI6HfGs9fXgsVI0BWhASkQjLwDH1aaGB10cAodYERUxbTeyg6QbASC6apZYD2opv4LBfCxAhjmxRk8jNWGnzSlkjEAS4nwQbWImGHRstfVLFoDlQDMmBSZlxnvW9XZ",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sc1ebf471f2554d858136d26473339313n.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc1ebf471f2554d858136d26473339313n.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sda7a0b1f6118483aa5c8bec068e67cfcq.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2a34149369414129b0119e6a2d16d3a2h.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc888eb7556a04c6582d2677adc173ef0N.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S51554285367f4c91ba44682ffa18456cw.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S382c7cbdff7b4d29a20ebc22007428a8R.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "GMKtec K8 Plus",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005009281790824",
+      "rawTitle": "BEELINK SER8-8745HS/ AMD Ryzen 7 8745HS 3.8-4.9GHz 8コア/16スレッド / SSD",
+      "cleanName": "BEELINK SER8-8745HS",
+      "price_jpy": "119543",
+      "original_price": "5017.00",
+      "sales_count": 2,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4FDrAeZdjnS0HalmxTOLMnen8HP6yq0dUL2gCa3LbnutQXeF9JocDsB9adScYXcFQKFTlbZTXAl3mXW4vwwuv0PBa9PXn11G2TENU8MNXGwsVdLleJHPyJF9hmyHF2PA1g5fZi06dY1BT6evyYr9qItbTnE5ciNZHyNB4qPh5BrRAObbK4MEkJIdB2CAe2sWygjq8tRghxkMfktvM3nrgpb32KQDhrJIvzZ9ZjDu46vuzEHdvuOtZ2FwNyOc0jmhKtrP1kRHDrm3chS5ToLSS5DMSDOy2qkU9RTe8wSr1tVnmAqEAdxyVPIaNWprMbGfKFpCx0C4I4ayvGXubHsoDRLdse88MFPmSZz9v9rf0d8y5DSCuRPkViLIHf45eZ15WinCsv4tgJgOClTMUh4PmaALqhvDG1Bgsu1zEj8UjwF2CsKAq7LxM6kZ8yFLjIapxlaReG2XukPT9ynnmhm5Tdb5LD54YBGkw9LoZI8voD82kIvUA3mVOYqTufytmsQXGSIxDyW4Se7eJAz1sKFTA0AQNzl79pYiOM9os9Fxnht3HKOqdosp5YUpF2J8i9lJ9qHxmXiaziQXRjVV9ALL5o2NyxAs4XjVBdMUfv7SAgcZC66hcOubNJmpMcIJHBLgLARuL0H2HDfO2IZ8Kmb6hnSq6lAb7G3KcPy2hZC1KFxSnH4B8NRtrbnwbd1aLePnOuFblO584HE0a",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S4d829d865eb54c39b26a206d26293500J.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4d829d865eb54c39b26a206d26293500J.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S9d199366ae1b4ff682cbd437c412d622C.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S6f93a4aa5a7b4eeebbedbace8eeff3738.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0b4df2cce05f43a19201ac3362606ff1Q.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S3aa36ed57614418f8f1a3c6175177e88k.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S9739b8e0c9d74c01be1336862b62e564i.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "BEELINK SER8-8745HS",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005009707796111",
+      "rawTitle": "GMKtec K12 ミニ PC AMD Ryzen ™   7H 255 デュアルDDR5 5600MT/s 3*SSD PCIe4.0 WiFi 6 BT 5.2 デュアル2.5G LAN OCulink デスクトップパソコン",
+      "cleanName": "GMKtec K12 ミニPC",
+      "price_jpy": "68084",
+      "original_price": "839.98",
+      "sales_count": 15,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CmGLIKdPrRCt45kurAeEdyQ7Jhx7oW3KZ1JFOQjK75g6VSAwdZiWiQ62kLGCnzUpHadMgCtKv89Q4cM65QxnEabCloOe2MGDXWjfG4XArOvUj571l8EMjhRDXmqAPJMWASAhOWwrwxi2LgvhTpPmsjkxuRBVg6lJypNEm6PTVzLsPRGUExVFQC6qO6cvziJLBdJffCMNO81A7kgHUKoZsP29UObUEQVoONLlOagLYDJxUMTRo8jH8Y7TuxWeFyxkyKehv41A3nRzg2iPSZv9JkOzWRlrUpX588DQf3kLobbRYpYwXpvVJaHweGtBO454XVxr6BgSON8ZeDbK7FqO7jfBRwUsYlehU9fylYB2PzHp1lBe67lQTCTsA2BMJtGFiPT8igqyfeybiAr8oR17a88yEb7oN1V767p0nZ3SKCOwIM7yynqdWTihgX1LQK22NUSLqNsfRVVmzAR3jJSV8WpsJsq3KBJLMs8x3d78QMKmOHJLYfsdPkD7gXwiG6xFCpnB0xGiNN1VIRUFx2u2luJo3yBcpNtrptaZ4ovL51AXrUGNdcJRpiZniviTCdzKi2XfZ18nWyIYy7PnbxigDf3pAchF15qFQnSs5bqW5bBD9dTlHNs1yPwMpIv0GbWIpwRluLKZZlYtX7Ke7RkBwQfUUpOxI2aw5msTqMlg3iRTMk71ndQMGKkxfj3QXDO3nLnGi8dnEAG2y8",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S0b2e645b6a6b4258bccb9de5c13ea4a2u.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0b2e645b6a6b4258bccb9de5c13ea4a2u.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sea4fd3e7f83c485d90b19d77595f955d2.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0300549d94a74ef6bc4c720224f42ab4o.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5dbb7e7a2a204f3abafc60cec6c9348fD.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5d898432fd514c9e8735fa42ee828b28k.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S55c11ce0e2ba40b1b1a6e99abda2faedA.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "GMKtec K12 ミニPC",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005005721866436",
+      "rawTitle": "ミニPCゲーミングAMDRyzen 9 MINISFORUM-UM790世代,Windows 11,ddr5,5600mhz,USB,Wi-Fi,6e,新品",
+      "cleanName": "MINISFORUM UM790",
+      "price_jpy": "157082",
+      "original_price": "969.00",
+      "sales_count": 19,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C2ODZQ4ubCleRTtcUNIGKGpxbwfrO6986VGglIuE3ylXmiqLMNk8OyNajt4AQm3yKXJ5n1nHcN0MnZJhMAxR3jEMAyBJ6hbGk8d7p1J3eGhloryUU2Xq5kKYoYd8kQ9tGfxNy3P0X2GLOmQyeyKwLWHYccHK2IcA4NjCNjH5ITyyoXB7WCP2uJ4EdsgLvfMfeoFYiHtY2Y6kpOrTuWvek2NyKfvveiGb5aOqDLfNQwrYDSFY1SLsH79L7OBdmyyffDYGe2PXfrMLOFjAtyl7ZBGyLyAkLNkQh30FIOZQTllXjQYfI1OptamMWIlmY8GWjdur19lXtXHjh3iQR54G5t1Vh6V5iqKe0B4TNTv1DaXymQbTm0N45Il6Lti5C8HHySeIUzAW8ZNo6hm80s8ExCsftKIkiaMjXypBLRvRZwb8aEczv498C7q66y9MTbRpU3vvoSMN6k3fH9f3oyS4BJsxW67nxkAOtErccJp6fpIOvNmQ4cifRjUhj4bJ0px9Ktdj3UMxPc2mB6XZExN5mhOBJjfJiBQx1MJqVTakmHM5u0utUcdY6G7YU94pK3KXP1YJtAW3AoOZYbEsmuXikMCm0crA5bV7yytEh09aF1DWGw4j7y2tBrds3h4nEKpWKrSgkvVguD512SxHjbH4ZKUa64YVQ8mWSm2GOc01fKOHRZCDHddqctTx4XU8O1LOB5Ui1s5oMEJnoF",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S80c89c36cb47481d945370ed0b231c61U.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S80c89c36cb47481d945370ed0b231c61U.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sfadcd18654ad44afa0e652865b12cdcbH.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sde33b36766b94af7867faf484b2e42a1m.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2df831b1924c465187a9dc21a6986874A.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S876f5be725574d108b41bef55de78a2ep.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S59f6b5d975944a548f7a1c020eaa03d0m.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "MINISFORUM UM790",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "faqQuestions": [
+    "AliExpressのミニPCは関税・輸入税がかかりますか？",
+    "ゲーミングミニPCでフォートナイトやApex Legendsは動きますか？",
+    "AliExpressのミニPCはメモリやSSDを後から増設・交換できますか？",
+    "AliExpressで買ったミニPCのWindows 11は正規ライセンスですか？",
+    "ゲーミングミニPCと通常のゲーミングデスクトップはどこが違いますか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "価格目安（円）",
+    "CPU / APU",
+    "内蔵GPU",
+    "RAM / ストレージ",
+    "おすすめ用途"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/index.html",
+      "anchorText": "アリエクのガジェット・周辺機器おすすめ記事一覧"
+    },
+    {
+      "url": "/game/aliexpress-gamepad-osusume.html",
+      "anchorText": "アリエクで買えるゲームパッドおすすめ10選"
+    },
+    {
+      "url": "/gadget/ugreen-docking-station-osusume.html",
+      "anchorText": "UGREENドッキングステーションおすすめ5選"
+    },
+    {
+      "url": "/game/index.html",
+      "anchorText": "アリエクのゲーム・コントローラーおすすめ記事一覧"
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-05-25T01:50:31.507Z"
+}

@@ -180,6 +180,13 @@ const ARTICLE_CONFIG = [
     queries:   ['UGREEN WiFi adapter review aliexpress', 'USB WiFi adapter AX1800 review', 'UGREEN wireless adapter experience'],
     topic:     'UGREEN WiFiアダプターのリアルな評判・体験談',
   },
+  {
+    slug:      'aliexpress-mini-pc-gaming-osusume',
+    folder:    'gadget',
+    subreddit: 'MiniPCs',
+    queries:   ['aliexpress mini pc review', 'GMKtec NucBox gaming experience', 'MINISFORUM gaming mini pc review', 'Beelink SER gaming performance'],
+    topic:     'アリエクのゲーミングミニPCのリアルな評判・体験談',
+  },
 ];
 
 // ──────────────────────────────────────────────
