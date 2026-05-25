@@ -1,0 +1,104 @@
+{
+  "keyword": "中華タブレット おすすめ",
+  "slug": "aliexpress-chuka-tablet-osusume",
+  "category": "gadget",
+  "searchIntent": "おすすめ系|比較系",
+  "searchIntentNote": "「中華タブレット おすすめ」は、コスパ重視でAliExpressなどの中華タブレットを購入検討しているユーザーが、具体的なモデルを比較・選択するために検索するクエリ。複数モデルを並べた比較記事を求めている。",
+  "persona": "AliExpressで10台以上の中華タブレットを購入・使い倒してきたガジェットオタク。スペック表の細かな差異（SoCのAntutuスコア・メモリ帯域・ディスプレイ色域）を血眼で比較し、「1円でもコスパの高い選択」を信条とする。読者に対しては「失敗してほしくない」という熱量で語りかけるスタイル。",
+  "targetProductCount": 5,
+  "titles": [
+    "中華タブレットおすすめ5選【2026年最新】アリエクコスパ最強を徹底比較",
+    "アリエク中華タブレットおすすめ5選【2026年】失敗しない選び方と比較",
+    "中華タブレット比較【2026年最新】アリエクおすすめ5選と選び方完全ガイド"
+  ],
+  "selectedTitle": "中華タブレットおすすめ5選【2026年最新】アリエクコスパ最強を徹底比較",
+  "metaDescription": "AliExpressで買える中華タブレットのおすすめ5選を2026年最新情報で徹底比較。コスパ・SoC性能・ディスプレイ品質など失敗しない選び方も解説。予算別・用途別にぴったりの1台が見つかります。ぜひチェックしてみてください！",
+  "intro": "「中華タブレットってぶっちゃけどれを選べばいいの？」そう悩んでいませんか？AliExpressには1万円台から高性能モデルまで無数の中華タブレットが並んでいて、スペックだけ見ても何が正解なのか判断しにくいですよね。実際に買って「画面が黄色い」「動作がもっさり」と後悔した人も少なくありません。この記事では、AliExpressで実際に購入・検証した中から本当にコスパが高いおすすめ5選を厳選し、選び方のポイントも合わせて徹底解説します。これを読めば予算と用途に合った最高の1台が必ず見つかります。",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "中華タブレットをアリエクで買うメリット・注意点",
+      "h3s": [
+        "日本の半額以下で買えるコスパの秘密",
+        "購入前に知っておきたい3つの注意点（技適・保証・言語対応）"
+      ],
+      "type": "brand_overview"
+    },
+    {
+      "id": "section2",
+      "h2": "【1位】ALLDOCUBE iPlay 80 mini Pro｜コスパ最強の8インチ機",
+      "type": "product"
+    },
+    {
+      "id": "section3",
+      "h2": "【2位】Teclast T60｜14インチ大画面で2万円台",
+      "type": "product"
+    },
+    {
+      "id": "section4",
+      "h2": "【3位】Blackview Tab 18｜33W急速充電＋大容量バッテリー",
+      "type": "product"
+    },
+    {
+      "id": "section5",
+      "h2": "【4位】DOOGEE T30 Ultra｜12インチ2K大画面",
+      "type": "product"
+    },
+    {
+      "id": "section6",
+      "h2": "【5位】ALLDOCUBE iPlay 60 Mega｜Snapdragon搭載の上位機",
+      "type": "product"
+    },
+    {
+      "id": "section7",
+      "h2": "中華タブレット5選スペック比較表",
+      "type": "comparison"
+    },
+    {
+      "id": "section8",
+      "h2": "中華タブレットの選び方｜失敗しない5つのチェックポイント",
+      "type": "howto"
+    },
+    {
+      "id": "section9",
+      "h2": "中華タブレットに関するよくある質問（FAQ）",
+      "type": "faq"
+    },
+    {
+      "id": "section10",
+      "h2": "まとめ｜あなたにぴったりの中華タブレットはどれ？",
+      "type": "conclusion"
+    }
+  ],
+  "faqQuestions": [
+    "中華タブレットは日本で使って大丈夫？技適マークの問題は？",
+    "AliExpressで中華タブレットを安く買うベストなタイミングは？",
+    "XiaomiタブレットとDOOGEE・Blackviewなど無名ブランドの違いは？",
+    "中華タブレットでNetflixやAmazon Primeは高画質（HD）で視聴できる？",
+    "初めて中華タブレットを買うなら予算はいくらくらいがおすすめ？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "AliExpress価格（目安）",
+    "SoC（Antutuスコア目安）",
+    "ディスプレイ（サイズ・解像度・Hz）",
+    "RAM/ROM",
+    "バッテリー容量",
+    "Widevine L1対応"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/aliexpress-mini-pc-gaming-osusume.html",
+      "anchorText": "アリエクで買えるゲーミングミニPCおすすめ5選"
+    },
+    {
+      "url": "/gadget/ugreen-usb-hub-osusume.html",
+      "anchorText": "UGREENのUSBハブおすすめ5選"
+    },
+    {
+      "url": "/gadget/index.html",
+      "anchorText": "アリエクのガジェット・周辺機器おすすめ記事一覧"
+    }
+  ],
+  "createdAt": "2026-05-25T00:00:00.000Z"
+}

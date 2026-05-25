@@ -1,0 +1,86 @@
+{
+  "lastUpdated": "2026-05-24",
+  "note": "ラッコキーワードAPI実データ。取得のたびに追記する。volume=月間検索数, competition=競合度(0-100)",
+  "existingArticles": [
+    "ugreen-mouse-osusume", "ugreen-cable-osusume", "ugreen-wifi-osusume",
+    "ugreen-gan-charger-osusume", "ugreen-usb-hub-osusume", "ugreen-docking-station-osusume",
+    "ugreen-earphone-osusume", "ugreen-smart-tracker-osusume", "ugreen-stand-osusume",
+    "baseus-mobile-battery-osusume", "xiaomi-band10-strap-osusume",
+    "aliexpress-projector-under-10000",
+    "8bitdo-ultimate2-osusume", "aliexpress-gamepad-osusume",
+    "gamesir-controller-osusume", "gamesir-t4-pro-osusume",
+    "naturehike-tent-osusume", "naturehike-sleeping-bag-osusume",
+    "naturehike-cot-osusume", "naturehike-airmat-osusume", "naturehike-osusume",
+    "aliexpress-sale-calendar", "aliexpress-what-is", "aliexpress-osusume",
+    "aliexpress-vs-temu", "aliexpress-sticker-osusume", "aliexpress-choice",
+    "aliexpress-1000yen-kawatte-yokatta", "naturehike-brand",
+    "aliexpress-account", "aliexpress-coupon", "aliexpress-payment",
+    "aliexpress-paypal", "aliexpress-paypay", "aliexpress-shiharai",
+    "aliexpress-safety", "aliexpress-ayashii", "aliexpress-hyoban",
+    "aliexpress-kattewa-ikenai", "aliexpress-size",
+    "aliexpress-cancel", "aliexpress-henkin", "aliexpress-kanzei",
+    "aliexpress-nannichi", "aliexpress-soryo", "aliexpress-standard-shipping",
+    "aliexpress-todokanai", "aliexpress-tracking-guide",
+    "aliexpress-tracking-number", "aliexpress-tsuiseki"
+  ],
+  "results": [
+    {
+      "fetchedAt": "2026-05-24",
+      "requestId": 1194898,
+      "batch": "test-batch",
+      "keywords": [
+        { "keyword": "アリエク イヤホン おすすめ", "volume": 110, "competition": 49, "note": "moderate competition, decent volume" },
+        { "keyword": "ugreen モバイルバッテリー おすすめ", "volume": 30, "competition": 77, "note": "already have UGREEN earphone; competitive" },
+        { "keyword": "gamesir g7 se おすすめ", "volume": null, "competition": null, "note": "no search data" }
+      ]
+    },
+    {
+      "fetchedAt": "2026-05-24",
+      "requestId": 1194899,
+      "batch": "ugreen-未着手カテゴリ",
+      "keywords": [
+        { "keyword": "ugreen モバイルバッテリー おすすめ", "volume": 30, "competition": 77, "note": "competitive" },
+        { "keyword": "ugreen カーチャージャー おすすめ", "volume": null, "competition": null },
+        { "keyword": "ugreen ssd おすすめ", "volume": null, "competition": null },
+        { "keyword": "ugreen キーボード おすすめ", "volume": null, "competition": null },
+        { "keyword": "ugreen ウェブカメラ おすすめ", "volume": null, "competition": null },
+        { "keyword": "ugreen スピーカー おすすめ", "volume": null, "competition": null },
+        { "keyword": "ugreen ポータブルssd", "volume": null, "competition": null }
+      ]
+    },
+    {
+      "fetchedAt": "2026-05-24",
+      "requestId": 1194900,
+      "batch": "アリエク+カテゴリ系",
+      "keywords": [
+        { "keyword": "アリエク イヤホン おすすめ", "volume": 110, "competition": 49 },
+        { "keyword": "アリエク キーボード おすすめ", "volume": 30, "competition": 94, "note": "too competitive" },
+        { "keyword": "アリエク マウス おすすめ", "volume": 20, "competition": 84, "note": "too competitive + have ugreen-mouse" },
+        { "keyword": "アリエク モバイルバッテリー おすすめ", "volume": null, "competition": null },
+        { "keyword": "アリエク ウェブカメラ おすすめ", "volume": null, "competition": null },
+        { "keyword": "アリエク 充電器 おすすめ", "volume": null, "competition": null },
+        { "keyword": "アリエク ゲーミングマウス おすすめ", "volume": null, "competition": null }
+      ]
+    },
+    {
+      "fetchedAt": "2026-05-24",
+      "requestId": 1194902,
+      "batch": "naturehike+アウトドア",
+      "status": "processing-timeout",
+      "keywords": [
+        "naturehike リュック おすすめ", "naturehike タープ おすすめ", "naturehike チェア おすすめ",
+        "アリエク テント おすすめ", "アリエク アウトドア おすすめ", "アリエク 寝袋 おすすめ", "アリエク リュック おすすめ"
+      ]
+    },
+    {
+      "fetchedAt": "2026-05-24",
+      "requestId": 1194903,
+      "batch": "gamesir-8bitdo",
+      "status": "processing-timeout",
+      "keywords": [
+        "gamesir g7 se おすすめ", "gamesir g7 se レビュー", "gamesir nova lite おすすめ",
+        "gamesir cyclone pro", "8bitdo pro 2 おすすめ", "8bitdo m30 レビュー", "gamesir g7 se 有線"
+      ]
+    }
+  ]
+}
