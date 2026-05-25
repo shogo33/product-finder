@@ -419,7 +419,11 @@ export default function App() {
   const [showInstallModal, setShowInstallModal] = useState(false);
   const [celebrationMessage, setCelebrationMessage] = useState(null);
 
-  const celebrationTimerRef = useRef(null);
+  const celebrationTimerRef  = useRef(null);
+  const firstLikeTimerRef    = useRef(null);
+
+  const [showFirstLikeToast, setShowFirstLikeToast] = useState(false);
+  const [likedTabPulse, setLikedTabPulse]           = useState(false);
 
   // useDeck: フィルタリング・スコアリング・バッファ管理
   const { cards, advance: deckAdvance, reset: deckReset, filteredTotal, remaining } = useDeck({
@@ -438,6 +442,7 @@ export default function App() {
 
   useEffect(() => { localStorage.setItem('aliex_liked', JSON.stringify(liked)); }, [liked]);
   useEffect(() => { localStorage.setItem('aliex_swipe_count', String(swipeCount)); }, [swipeCount]);
+  useEffect(() => () => { if (firstLikeTimerRef.current) clearTimeout(firstLikeTimerRef.current); }, []);
 
   // モーション値
   const x           = useMotionValue(0);
@@ -478,6 +483,19 @@ export default function App() {
     if (direction === 'right') {
       const newLiked = [{ ...card, likedAt: Date.now() }, ...liked];
       setLiked(newLiked);
+
+      // 初回いいね時のオンボーディング（1度だけ）
+      if (liked.length === 0 && !localStorage.getItem('aliex_first_liked_seen')) {
+        localStorage.setItem('aliex_first_liked_seen', '1');
+        setShowFirstLikeToast(true);
+        setLikedTabPulse(true);
+        if (firstLikeTimerRef.current) clearTimeout(firstLikeTimerRef.current);
+        firstLikeTimerRef.current = setTimeout(() => {
+          setShowFirstLikeToast(false);
+          setTimeout(() => setLikedTabPulse(false), 600);
+        }, 3000);
+      }
+
       const likedMilestones = {
         5:  { message: 'センスありますね！', emoji: '✨' },
         10: { message: 'コレクター気質ですね', emoji: '👑' },
@@ -510,6 +528,31 @@ export default function App() {
     );
     return counts;
   }, [allProducts, maxPrice]);
+
+  // ── 初回いいねトースト ────────────────────────────────────────────────────
+  const FirstLikeToast = () => (
+    <AnimatePresence>
+      {showFirstLikeToast && (
+        <motion.div
+          className="fixed bottom-14 left-1/2 -translate-x-1/2 z-50 pointer-events-none flex flex-col items-center"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 8 }}
+          transition={{ duration: 0.25, ease: 'easeOut' }}
+        >
+          <div className="bg-stone-900/95 backdrop-blur-sm text-white rounded-2xl px-4 py-3 shadow-2xl flex items-center gap-3 whitespace-nowrap">
+            <span className="text-xl flex-shrink-0">❤️</span>
+            <div>
+              <div className="text-xs font-bold leading-snug">いいねリストに保存しました</div>
+              <div className="text-[10px] text-stone-300 mt-0.5">ハートタブでいつでも確認できます</div>
+            </div>
+          </div>
+          {/* タブバーへの下向き矢印 */}
+          <div className="w-0 h-0 border-l-[6px] border-r-[6px] border-t-[6px] border-l-transparent border-r-transparent border-t-stone-900/95" />
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
 
   // ── HELP MODAL ──────────────────────────────────────────────────────────
   const HelpModal = () => (
@@ -734,6 +777,7 @@ export default function App() {
     <div className="h-[100svh] bg-gradient-to-b from-stone-50 to-stone-100 flex items-center justify-center sm:p-4 overflow-hidden">
       <HelpModal />
       <InstallModal />
+      <FirstLikeToast />
       <CelebrationOverlay celebrationMessage={celebrationMessage} likedCount={liked.length} swipeCount={swipeCount} />
 
       <div
@@ -798,6 +842,13 @@ export default function App() {
                   <Icon className="w-4 h-4" />
                   {tab.count !== undefined && tab.count > 0 && (
                     <span className="absolute -top-1 -right-1 text-[9px] bg-red-500 text-white rounded-full px-1 min-w-[16px] text-center">{tab.count}</span>
+                  )}
+                  {tab.id === 'liked' && likedTabPulse && (
+                    <motion.span
+                      className="absolute inset-0 rounded-full border-2 border-red-400"
+                      animate={{ scale: [1, 1.7], opacity: [0.9, 0] }}
+                      transition={{ duration: 0.7, repeat: 4, ease: 'easeOut' }}
+                    />
                   )}
                 </button>
               );
