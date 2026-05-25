@@ -1,0 +1,171 @@
+{
+  "keyword": "epomaker キーボード",
+  "slug": "epomaker-keyboard-osusume",
+  "category": "gadget",
+  "searchIntent": "おすすめ系|比較系|ブランド調査系",
+  "searchIntentNote": "EPOMAKERキーボードの購入を検討しており、モデル比較と価格差（Amazon vs アリエク）を把握したい購買意欲の高いユーザー。「どこの国？」という疑問も持っており、ブランド信頼性確認も兼ねている。",
+  "persona": "メカニカルキーボードのスイッチ沼にどっぷりハマった自作キーボードオタクで、AliExpressで海外ブランドを掘り起こすのが趣味。打鍵感・ガスケット構造・コスパの三角形を語らせたら止まらない。Amazonで正規品を買うより数千円安いアリエク価格を知ってから、同僚や友人へ「アリエクで買えよ」と布教しまくっている。",
+  "targetProductCount": 4,
+  "targetSubKeywords": [
+    "epomaker どこの国",
+    "epomaker x aula f75",
+    "epomaker おすすめ"
+  ],
+  "subKeywordStrategy": "section1でepomaker どこの国（中国深圳）を自然に解消。section2タイトルにepomaker x aula f75を入れてサブKWを直接取得。比較表セクションのタイトルにepomaker おすすめを含める。",
+  "titles": [
+    "EPOMAKERキーボードおすすめ4選【2026年最新】AULA F75・TH80 Pro・Shadow-Sをアリエクで徹底比較",
+    "EPOMAKERキーボードおすすめ4選【2026年】アリエクvs Amazonの価格差と選び方を完全解説",
+    "EPOMAKERキーボード比較【2026年最新】アリエクで3,000円安く買える人気モデルを厳選"
+  ],
+  "selectedTitle": "EPOMAKERキーボードおすすめ4選【2026年最新】AULA F75・TH80 Pro・Shadow-Sをアリエクで徹底比較",
+  "metaDescription": "EPOMAKERキーボードをアリエクで買うと何が違う？ EPOMAKER x AULA F75・TH80 Pro・Shadow-Sなど人気4選をAmazonとの価格差・打鍵感・スペックで徹底比較。「EPOMAKERはどこの国？」という疑問もまとめて解消します。",
+  "intro": "「EPOMAKERって最近よく見るけど、どこの国のブランドで結局どれ買えばいいの？」——そのモヤモヤ、この記事で全部解決します。EPOMAKERは中国深圳発のキーボードブランドで、ガスケットマウント・ホットスワップ対応・南向きRGBをこの価格帯で実現できることから、海外メカキー界隈で爆発的に注目を集めています。特に「EPOMAKER x AULA F75」は、Redditでも日本のXでも「コスパ最強キーボード」として名前が挙がり続けるモンスター機種。しかもAmazonより**アリエク公式ストアで3,000〜4,000円安く買える**ことが多く、浮いたお金でキーキャップ交換まで楽しめます。この記事では4モデルを厳選してアリエクとAmazonの価格差・打鍵感・用途を徹底比較します。",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "EPOMAKERはどこの国のブランド？信頼できる？",
+      "h3s": [
+        "EPOMAKERは中国深圳発——しかしクオリティは本物",
+        "アリエクvs Amazon｜価格差3,000〜4,000円の実態"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "サブKW「epomaker どこの国」を自然に解消。中国深圳発・2019年創業・AliExpress公式ストアあり",
+        "ガスケットマウント・ホットスワップ・3モード接続を同価格帯の競合（AKKO・Keychron）と比較",
+        "最上部にAmazon vs アリエクの価格比較表を設置（F75・TH80 Pro・Shadow-Sの3機種）",
+        "「Amazonは代理店手数料が乗るため高い。待てるならアリエク公式ストアが最安」と明記"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "【大本命】EPOMAKER x AULA F75｜コスパ最強の75%キーボード",
+      "h3s": [
+        "EPOMAKER x AULA F75のスペックと打鍵感",
+        "Amazonより3,000円安いアリエク価格の実態",
+        "Xの声・Redditの評判"
+      ],
+      "type": "product",
+      "notes": [
+        "サブKW「epomaker x aula f75」を見出しに含める",
+        "75%レイアウト・ガスケットマウント・ホットスワップ・3モード接続（有線/BT/2.4GHz）を詳述",
+        "ノブ（ダイヤル）付きで音量調整など操作感UP",
+        "Amazonとアリエクの価格差を具体的に記載（例：Amazon 12,000円 vs アリエク 8,500円）",
+        "X声：天柱りスク「今年入って一番いいキーボードを見つけました」/ VRネコ「フルコンパクト・ガスケット・3モード・ノブ付きでこの価格！関税問題はあるが破格」/ しろよま「欲しくなってきた購入を考えてる」",
+        "Redditでの人気を補足（r/MechanicalKeyboardsでコスパ最強として頻出）"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "【仕事×ゲーム兼用】EPOMAKER TH80 Pro｜75%の鉄板モデル",
+      "h3s": [
+        "TH80 Proのスペックと特徴",
+        "在宅ワーク・ゲーム両用に最適な理由",
+        "Xの声"
+      ],
+      "type": "product",
+      "notes": [
+        "75%レイアウト・ガスケットマウント・有線/BT/2.4GHz三モード",
+        "F1〜F12キー搭載で仕事用途もカバーできる点を強調",
+        "X声：こんよる「昨日届いた！最高です！😊😊😊」/ とつぜん「キーボード: Epomaker TH80 pro / Switch: Gateron Smooth → ちょっとずつ良くなってきた」"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "【ゲーミング特化】EPOMAKER Shadow-S｜TKLで激しい操作も快適",
+      "h3s": [
+        "Shadow-Sのスペックと特徴",
+        "FPS・アクションゲームに向いている理由",
+        "Xの声"
+      ],
+      "type": "product",
+      "notes": [
+        "TKL（87キー）レイアウト・南向きRGB・ホットスワップ対応",
+        "マウス操作スペースが広く取れるTKLサイズがFPS向きの理由を説明",
+        "X声：Diehard「しっかり進化している！！！Shadow S review」/ こんよる「8,000円でパッと買って、このキーボードをメインに変えます！」/ あとと「このカーンなんだろ？ 設定確認してみよう（打鍵音が気に入った様子）」"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "EPOMAKERキーボードおすすめ4選を徹底比較｜一覧表でチェック",
+      "h3s": [
+        "価格・スペック・用途比較表",
+        "用途別おすすめまとめ"
+      ],
+      "type": "comparison",
+      "notes": [
+        "サブKW「epomaker おすすめ」をセクションタイトルに含める",
+        "4モデルをアリエク価格・Amazon価格・レイアウト・接続方式・ガスケット有無・おすすめ用途で比較",
+        "「ゲーム+仕事兼用 → F75、仕事メイン → TH80 Pro、ゲーム特化 → Shadow-S」と用途別結論を提示"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "EPOMAKERキーボードの選び方｜失敗しない3つのポイント",
+      "h3s": [
+        "①レイアウトで選ぶ：75%・TKL・フルの違い",
+        "②接続方式で選ぶ：有線・3モードワイヤレス",
+        "③アリエク公式ストアで買う：偽物・粗悪品を避ける方法"
+      ],
+      "type": "howto",
+      "notes": [
+        "初心者が迷いやすい「レイアウト何%にすべきか」を机スペース・用途から整理",
+        "有線は低遅延ゲーム用、3モードは在宅ワーク＆マルチデバイス用として明確に整理",
+        "AliExpress公式ストア（EPOMAKER Official Store）から買う重要性を説明"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "EPOMAKERキーボードに関するよくある質問",
+      "h3s": ["FAQ一覧", "まとめ｜アリエクで買えばコスパ最強——自分の用途に合った1台を選ぼう"],
+      "type": "faq",
+      "notes": [
+        "FAQ形式でリッチリザルト狙い",
+        "まとめで用途別の最終推薦を再掲し、アリエク公式ストアへのCTAで締める"
+      ]
+    }
+  ],
+  "faqQuestions": [
+    "EPOMAKERはどこの国のブランドですか？",
+    "EPOMAKERはAliExpressで本当に安く買えますか？",
+    "EPOMAKER x AULA F75とTH80 Proはどちらがおすすめですか？",
+    "EPOMAKERキーボードに日本語配列（JIS）モデルはありますか？",
+    "AliExpressからEPOMAKERキーボードが届くまで何日かかりますか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "レイアウト",
+    "アリエク価格（目安）",
+    "Amazon価格（目安）",
+    "接続方式",
+    "ガスケット",
+    "おすすめ用途"
+  ],
+  "internalLinks": [
+    { "url": "/gadget/ugreen-mouse-osusume.html", "anchorText": "UGREENマウスおすすめ4選" },
+    { "url": "/game/aliexpress-gamepad-osusume.html", "anchorText": "アリエクコントローラーおすすめ5選" },
+    { "url": "/game/gamesir-controller-osusume.html", "anchorText": "GameSirコントローラーおすすめ3選" },
+    { "url": "/gadget/index.html", "anchorText": "アリエクのガジェット・周辺機器おすすめ一覧" }
+  ],
+  "competitorDifferentiators": [
+    "「EPOMAKERはどこの国？」の疑問を冒頭でマイルドに解消しつつ購買意欲を損なわない構成",
+    "Amazon vs アリエクの具体的価格差を最上部に比較表で提示し、アリエク購入の決め手を作る",
+    "各商品セクションにXの声を個別挿入（末尾まとめのみでなく商品ごとに配置）"
+  ],
+  "xVoicesPerProduct": {
+    "epomaker-x-aula-f75": [
+      { "text": "EPOMAKER x AULA F75 MAXを買いました😊 今年入って一番いいキーボードを見つけました", "source": "split-102" },
+      { "text": "フルコンパクト配列・ガスケット構造・3モードワイヤレス・ノブ付きでこの価格！関税問題はあるけど破格すぎる", "source": "split-102" },
+      { "text": "かな/カナ/カタカナ→コーン！ってなる打鍵感が気持ちよすぎ #EPOMAKER", "source": "split-102" }
+    ],
+    "epomaker-th80-pro": [
+      { "text": "昨日届いた！！！EPOMAKERのキーボード最高です！😊😊😊", "source": "split-104" },
+      { "text": "Keyboard: Epomaker TH80 pro / Switch: Gateron Smooth → ちょっとずつ良くなってきた！ありがとうございます", "source": "split-104" }
+    ],
+    "epomaker-shadow-s": [
+      { "text": "しっかり進化している！！！Shadow S review が話題になってる", "source": "split-105" },
+      { "text": "8,000円でパッと買って、このキーボードをメインに変えます！😂😂😂", "source": "split-105" },
+      { "text": "EPOMAKER Shadow-S なんだこれ！このカーンなんだろ？ 設定確認してみよう（打鍵音が気に入った）", "source": "split-105" }
+    ]
+  },
+  "createdAt": "2026-05-25"
+}
