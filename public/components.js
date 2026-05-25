@@ -57,7 +57,7 @@
   /* ── スティッキーCTA ───────────────────────────── */
   var STICKY_CTA_HTML =
     '<a href="https://aliswipe.com/app/" target="_blank" rel="noopener" style="display:block;color:#fff;text-decoration:none;">' +
-      '<div style="font-weight:700;font-size:0.92rem;">おすすめ商品を見る</div>' +
+      '<div style="font-weight:700;font-size:0.92rem;">他のおすすめ商品をスワイプで探す</div>' +
       '<div class="sub">アリエクSwipeでお得な商品をチェック</div>' +
     '</a>';
 
