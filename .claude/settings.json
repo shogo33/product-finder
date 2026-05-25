@@ -224,7 +224,10 @@
       "Bash(node scripts/step1-plan.mjs \"epomaker キーボード おすすめ\" epomaker-keyboard-osusume gadget)",
       "Bash(node scripts/step2-research.mjs epomaker-keyboard-osusume)",
       "Bash(node scripts/rebuild-research.mjs epomaker-keyboard-osusume 1005008275158058,1005011741666556)",
-      "Bash(node scripts/step3-write.mjs epomaker-keyboard-osusume)"
+      "Bash(node scripts/step3-write.mjs epomaker-keyboard-osusume)",
+      "Bash(node scripts/step1-plan.mjs \"ajazz ak820 おすすめ\" ajazz-ak820-osusume gadget)",
+      "Bash(node scripts/rebuild-research.mjs ajazz-ak820-osusume 1005011869449206)",
+      "Bash(node scripts/step3-write.mjs ajazz-ak820-osusume)"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",
