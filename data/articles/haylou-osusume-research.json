@@ -1,0 +1,258 @@
+{
+  "slug": "haylou-osusume",
+  "keyword": "HAYLOU おすすめ",
+  "category": "gadget",
+  "selectedTitle": "HAYLOUおすすめ3選【2026年最新】S30 Pro・S40・Mori Pro徹底比較",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "HAYLOUとは？Xiaomi系コスパブランドの実力を解説",
+      "h3s": [
+        "HAYLOUのブランド概要と歴史",
+        "なぜAliExpressでHAYLOUを買うべきなのか"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "XiaomiエコシステムのサブブランドとしてANC・健康管理機能などをコスパ重視で展開している背景を説明",
+        "国内販売との価格差（公式ストアvs AliExpressの比較）とクーポン活用の魅力を紹介",
+        "主要製品ラインナップ（TWS・ネックバンド・スマートウォッチ）を簡潔に俯瞰"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "HAYLOU GT7 NEO レビュー｜コスパ最強のTWSイヤホン",
+      "h3s": [
+        "GT7 NEOのスペックと音質レビュー",
+        "こんな人におすすめ：2,000円台でANCなし完全ワイヤレスを試したい方"
+      ],
+      "type": "product",
+      "notes": [
+        "ドライバー構成・Bluetooth規格・連続再生時間を具体的数値で紹介",
+        "音質傾向（低音寄り・フラット等）と装着感を実使用者目線で記述",
+        "AliExpressでの購入リンクと最安値目安、クーポン適用後の価格を記載"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "HAYLOU X1 2023 レビュー｜ANC搭載で3,000円台の衝撃",
+      "h3s": [
+        "X1 2023のANC性能と通話品質を検証",
+        "こんな人におすすめ：通勤・在宅ワークでノイキャンを使いたい方"
+      ],
+      "type": "product",
+      "notes": [
+        "ANCの効き具合をdB数値と体感両面で説明、競合比較も添える",
+        "マルチポイント接続・IPX4防水など日常使いに直結するスペックを解説",
+        "バッテリー持続時間（イヤホン単体・ケース込み）を表形式で整理"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "HAYLOU Solar Plus RT3 レビュー｜スマートウォッチ入門の決定版",
+      "h3s": [
+        "Solar Plus RT3の健康機能と画面品質",
+        "こんな人におすすめ：初めてスマートウォッチを買う節約派の方"
+      ],
+      "type": "product",
+      "notes": [
+        "常時表示AMOLEDディスプレイ・SpO2・心拍・睡眠モニタリングなど健康機能を網羅",
+        "バッテリー最大14日間の実態と充電サイクルを正直に解説",
+        "専用アプリ（Haylou Fun）の使い勝手と日本語対応状況を補足"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "HAYLOU W1 レビュー｜アクティブ派向けスポーツウォッチ",
+      "h3s": [
+        "W1のGPS精度とスポーツ記録機能",
+        "こんな人におすすめ：ランニング・アウトドアで使いたい方"
+      ],
+      "type": "product",
+      "notes": [
+        "内蔵GPS搭載の有無とランニングデータ精度を他社エントリー機と比較",
+        "5ATM防水・耐久性など過酷な使用環境への耐性を説明",
+        "AliExpressでのセール時価格推移とタイミングのアドバイスを記載"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "HAYLOU PurFree BC01 レビュー｜骨伝導で耳を塞がない新感覚",
+      "h3s": [
+        "BC01の骨伝導技術と音漏れの実態",
+        "こんな人におすすめ：ながら聴き・自転車・ジョギングに使いたい方"
+      ],
+      "type": "product",
+      "notes": [
+        "骨伝導イヤホンの仕組みと普通のTWSとの違いをわかりやすく解説",
+        "IP67防水・連続8時間再生など実用スペックを整理",
+        "音質の限界（低音不足など）を正直に伝え、適切な用途を明示する"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "HAYLOUおすすめ5選の比較表｜一目でわかるモデル選び",
+      "h3s": [
+        "スペック比較表で全モデルを総チェック",
+        "価格帯別・用途別の選び方早見表"
+      ],
+      "type": "comparison",
+      "notes": [
+        "5モデルの価格・タイプ・主要スペック・おすすめシーンを横断比較",
+        "予算1,500〜5,000円の段階ごとにどのモデルが最適かを明示",
+        "AliExpressクーポン適用後の実質価格を括弧内に補足"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "HAYLOUの失敗しない選び方｜用途・予算別チェックポイント",
+      "h3s": [
+        "イヤホンの選び方：ANCの有無・接続方式・装着スタイル",
+        "スマートウォッチの選び方：健康機能・GPS・バッテリー重視で絞る"
+      ],
+      "type": "howto",
+      "notes": [
+        "初心者が迷いやすい「TWS vs ネックバンド」「ANCあり vs なし」の判断基準を提示",
+        "スマートウォッチではGPS内蔵モデルと非搭載モデルの価格差と必要性を整理",
+        "AliExpressでの購入時の注意点（偽物対策・公式ストア見分け方）を追記"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "HAYLOU おすすめに関するよくある質問（FAQ）",
+      "h3s": [
+        "HAYLOU製品はAliExpressで安全に買えますか？",
+        "HAYLOUと他の中華ブランド（Anker・EarFun等）との違いは？"
+      ],
+      "type": "faq",
+      "notes": [
+        "公式ストアの見分け方・偽物リスクへの対処法を具体的に説明",
+        "返品・保証ポリシーやHAYLOUのアフターサポート実態を補足",
+        "FAQは構造化データ（FAQPage）対応を想定し簡潔なQ&A形式で記述"
+      ]
+    },
+    {
+      "id": "section10",
+      "h2": "まとめ｜あなたにぴったりのHAYLOUを選んでアリエクでお得に買おう",
+      "h3s": [
+        "用途別おすすめモデルを最終整理",
+        "AliExpressでHAYLOUを最安値で購入する手順"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "5モデルをシチュエーション別（通勤・運動・初スマートウォッチ等）で一言推薦",
+        "AliExpressのセール時期（11.11・6.18等）と購入タイミングのアドバイス",
+        "関連記事への誘導（UGREENイヤホン・中華タブレット等）でサイト回遊を促進"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-25",
+  "products": [
+    {
+      "product_id": null,
+      "rawTitle": "HAYLOU S30 Pro Wireless Headphones with Detachable Microphone ANC",
+      "cleanName": "HAYLOU S30 Pro",
+      "price_jpy": null,
+      "affiliateLink": null,
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/3Rk73aj",
+      "mainImage": "",
+      "images": [],
+      "amazonPlaceholder": {
+        "status": "confirmed",
+        "searchQuery": "HAYLOU S30 Pro",
+        "url": "https://amzn.to/3Rk73aj"
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005009390995992",
+      "rawTitle": "HAYLOU S40 ANC ワイヤレスヘッドフォン 50dB ノイズキャンセリング ハイレゾ 3D 空間オーディオイヤホン LDAC Bluetooth 6.0 オーバーイヤーヘッドセット",
+      "cleanName": "HAYLOU S40 ANC",
+      "price_jpy": "7352",
+      "original_price": "85.70",
+      "sales_count": 5298,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CnESSTTCStmHkhbMwE9OgMiTL8j9Tg7jQPXji3ECWbK5DMuQ7h94LHNY53IQYe1lCW5SXFaw6ZskOrLCaK9YsOEm6AETnRgWpzCqHyqsjGbQec9uQlT4ydnq1XeF1bTGzHzVECHXPzurm0XvtgUAGTJNQZ6ybv9QU9VUxK1u483p4BDB46vkhA1R0zbnif07z9wd0tVUitzQJ699mqXZTX94PsYUiRHGIhklqstrBcMDG9eQ76h8lQnobd2fBGNtibULhOgtyasat2QFgisOzC7nF9aQf4GDGlE8dYJFHnep5KNzaDCtVYDJGp0YWP1vHDCcuvRPxcng33qG3ZldktHbjkWqdpc5tr9kC1TbC7rZrqyTGV0X1s2BVIMiFC2vaPT2fVR6SyXQoNTvTCzf2z0xMnONS2boFr6KrVCoZUDiyVTRzANzyJXNrT0wQZashghOYvR4UaNMUY2cVVysaXukA69C6dSpGww4zuCj9rxSM3kgwyjdZvRQj4D4iA2C2GSeQq8HUIT3mNO3qRlWO3daWmvcKfplsFLoO7DccNSDcBYFijUMPHgDzGWsvhQlQ17qrBQoxyxNSlr3WsfwOxINCUqwjYdurcQN9V0kI60fc93rIYm9MNtRoju7gskSrvxMYIWrdDjNOmF9aWHwkMYgcJBDmVYYG8t3thMpvBwvD5W18fA6FT2OVyLoMkRo6IBQE72DGjnYkd",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S2241f9c5363d4fc6a52f5f35c5c219c6r.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2241f9c5363d4fc6a52f5f35c5c219c6r.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sbba2db7fff1f433ea96accdf958a731d3.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S41a4d5eb0d684b7e9a2fcbf9c300d86eC.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S3b35c358ea804e799c7eb8b6847bc300L.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S44289e35a7954c2094f47662a5680ab8L.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S6dce5d3da8854c3c857a331ad217a673l.jpg"
+      ],
+      "amazonUrl": "https://amzn.to/3Rk77H5",
+      "amazonPlaceholder": {
+        "status": "confirmed",
+        "searchQuery": "HAYLOU S40 ANC",
+        "url": "https://amzn.to/3Rk77H5"
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005009023345001",
+      "rawTitle": "HAYLOU Mori Pro Bluetooth 5.4 イヤホン ワイヤレス 43dB アダプティブ ハイブリッド ANC 高解像度 LDAC イヤホン 6 マイク ヘッドフォン 28 時間のバッテリー寿命",
+      "cleanName": "HAYLOU Mori Pro",
+      "price_jpy": "4371",
+      "original_price": "389.76",
+      "sales_count": 839,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4Mub2u4JGxsW8ufPOPM35FpDfO68HY5HisNUoNi0OsQcQDCiH7b5lJl4tJvjE1LXmSSVMVlNJeZPB6d5v7kTKrAp1mDQCmLcW8NxL9I0uavUDBLR4TF6LZT1XreIohix6HLwKibRxHGGw8JRhoKP8XG5fuSXkaQKnfjjQCN72ZpZ2kZI48TyhCj3gH1Jjt7FzAgnBK7uVCZo4FMW8sDtFzG4gwEO35JZpOAX0gcjyrPOXeQlxlH7Z71PUfZWjg3cUjeyn71jkR2hhlH4Wd2BOj1XQ5KHNw8nbGaA1OHwyFMtzCTlagKSPrjZ2qyoZVeD31qQRI8Eglm1VKnNahdzCTSJWqbpjypNUSTbHpGeH6dS6j9UA8FkdzScY3KfWY9qQlHgUac9AzGqp3YH6J2G0C8kdmKn5JvDNyPIzVn6gVPnFZyC0fftunKnoB1etILaMWh6NPTzdhHx05NSlHm3AixL8s488Nn6SYYuP5ZVeXHl46zNLg6rcFQ3iReRwERjZzBTJ3PJTBoRo6L9yshQdLcKrMyg6N9psI67ZRjxaqCMIEYIfPrnfWNvLn20CxcFSFlGwtln7KL4Hja9detvOvOH8GlvXvNe2ZVVkT4GaPwXY3Jqq36ACvphk5CA9cxGCmaJj8LIYniOGLFZUDWveFNv6Wrzb7apwBPMLNRBn2pdYJpCVW8KMHDxuGOyXppF8764bIrLFEpRa",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S0133cb24386f487bb8b3c39affbd4ce51.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0133cb24386f487bb8b3c39affbd4ce51.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S60c55714ecf94e69b0854e1e22b9752f3.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sefab9139d9b842aea51c5fd6817ed7aer.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S27cec394b8674d83b308c741cc614435G.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa43425d850e743a192c3eaa96bc51a93v.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S38c611e3c57749c4b93da1d6ba6d1e0aU.jpg"
+      ],
+      "amazonUrl": "https://amzn.to/4fL57l0",
+      "amazonPlaceholder": {
+        "status": "confirmed",
+        "searchQuery": "HAYLOU Mori Pro",
+        "url": "https://amzn.to/4fL57l0"
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "faqQuestions": [
+    "HAYLOUはどのブランドですか？Xiaomiとの関係は？",
+    "HAYLOUのイヤホンはAliExpressで偽物が届くことはありますか？",
+    "HAYLOUとAnkerやEarFunを比べるとどちらがコスパがいいですか？",
+    "HAYLOUのスマートウォッチは日本語表示に対応していますか？",
+    "AliExpressでHAYLOU製品を買うときのクーポンの使い方は？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "価格目安（円）",
+    "タイプ",
+    "主な特徴",
+    "バッテリー持続",
+    "おすすめシーン"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/ugreen-earphone-osusume.html",
+      "anchorText": "UGREENイヤホンのおすすめ5選"
+    },
+    {
+      "url": "/gadget/xiaomi-band10-strap-osusume.html",
+      "anchorText": "Xiaomi Smart Band 9/10のおすすめバンド"
+    },
+    {
+      "url": "/gadget/baseus-mobile-battery-osusume.html",
+      "anchorText": "Baseusモバイルバッテリー完全ガイド"
+    },
+    {
+      "url": "/gadget/index.html",
+      "anchorText": "アリエクのガジェット・周辺機器おすすめ記事一覧"
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-05-25T04:11:34.441Z"
+}
