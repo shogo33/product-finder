@@ -69,9 +69,9 @@
     .article-body strong { color: var(--blue-dk); }
 
     .table-wrap { overflow-x: auto; margin: 20px 0; border-radius: var(--radius); border: 1px solid var(--border); }
-    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    table { min-width: 100%; width: max-content; border-collapse: collapse; font-size: 0.88rem; }
     th { background: var(--blue); color: #fff; padding: 10px 14px; text-align: left; font-weight: 700; white-space: nowrap; }
-    td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; white-space: nowrap; }
     tr:last-child td { border-bottom: none; }
     tr:nth-child(even) td { background: #fafaf8; }
     .td-check { color: var(--green); font-weight: 700; }
@@ -857,9 +857,7 @@
     </div>
   </div>
 
-  <div class="cta-sticky">
-    <a href="https://s.click.aliexpress.com/e/_c40XeiSt" target="_blank" rel="noopener">UGREENウォレットファインダー — AliExpressで見る</a>
-  </div>
+  <div class="cta-sticky" id="cta-sticky"></div>
 
   <footer class="site-footer">
     <div class="footer-links">
