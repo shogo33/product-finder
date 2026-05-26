@@ -19,6 +19,7 @@ const NON_PRODUCT_KEYWORDS = [
 const CSS = `    html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
     a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }`;
 
 function stripHtml(html) {
@@ -96,6 +97,8 @@ function processFile(filepath) {
     /(<li[^>]*>)([\s\S]*?)(<\/li>)/g,
     (liFull, liOpen, liContent, liClose) => {
       if (liContent.includes('product-link')) return liFull;
+      // TOCのli（既にアンカーリンクがある）はスキップ（ネストしたaタグ防止）
+      if (liContent.includes('<a href="#')) return liFull;
       for (const { id, name } of modelMap) {
         if (liContent.includes(name)) {
           const linked = liContent.replace(name, `<a href="#${id}" class="product-link">${name}</a>`);
