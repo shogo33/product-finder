@@ -1,0 +1,197 @@
+{
+  "slug": "anbernic-rg35xx-h-osusume",
+  "keyword": "anbernic rg35xx h",
+  "category": "game",
+  "selectedTitle": "ANBERNIC RG35XX H レビュー【2026年最新】アリエクChoice対象で6,000円台〜の定番機を徹底解説",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "Anbernic RG35XX Hとは？ブランド概要と位置づけ",
+      "h3s": [
+        "Anbernicってどんなメーカー？信頼性は？",
+        "RG35XXシリーズの全体像とHの立ち位置"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "Anbernicの設立背景・実績・日本での人気を簡潔に紹介",
+        "RG35XX系列（無印・H・SP・Plus）の違いをひと目でわかるよう整理",
+        "RG35XX HがGBAスタイルの横持ち特化機であることを強調"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "Anbernic RG35XX H レビュー：スペックと実機の使用感",
+      "h3s": [
+        "主要スペック詳細（CPU・画面・バッテリー・対応エミュ）",
+        "実際に触って感じたメリット・デメリット",
+        "対応エミュレーターと動作確認済みゲーム機一覧"
+      ],
+      "type": "product",
+      "notes": [
+        "H700チップ・3.5インチIPS液晶・Linux OSなど主要スペックを表形式で掲載",
+        "携帯性・ボタンの感触・発熱・バッテリー持ちなど実使用レポートを記載",
+        "GB/GBC/GBA/SNES/MD/PSPなど対応範囲と動作安定性を正直に評価"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "RG35XX H vs 無印 RG35XX：どっちを買うべきか",
+      "h3s": [
+        "フォームファクターと画面サイズの違い",
+        "価格差とコスパで見た選択基準"
+      ],
+      "type": "product",
+      "notes": [
+        "縦持ち（無印）vs横持ち（H）のゲーム体験の違いを具体的に説明",
+        "どんな人に無印が向き、どんな人にHが向くかを明確に提示",
+        "価格差が小さい場合はHを推奨する根拠を示す"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "RG35XX H vs RG35XX SP：折りたたみ機との比較",
+      "h3s": [
+        "SPの折りたたみ設計の利点と欠点",
+        "RG35XX Hを選ぶべき人・SPを選ぶべき人"
+      ],
+      "type": "product",
+      "notes": [
+        "SPのクラムシェルデザインとHのシンプル設計を携帯性・耐久性で比較",
+        "価格差（SPの方が高い）とその価値を正直に評価",
+        "外出先での使用頻度・ポケット携帯性を判断軸として提示"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "Anbernic RG35XXシリーズ比較表：一目でわかるモデル別スペック",
+      "h3s": [
+        "スペック比較表の見方と注目ポイント",
+        "価格帯別おすすめモデルの結論"
+      ],
+      "type": "comparison",
+      "notes": [
+        "RG35XX無印・H・SP・Plusを縦軸、スペック項目を横軸に比較表を掲載",
+        "価格・画面・フォームファクター・バッテリー・対応エミュ数を列に設定",
+        "「とにかく安く始めたい」「携帯性重視」「画面の大きさ重視」別の推奨モデルをまとめる"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "Anbernic RG35XX Hの選び方：失敗しない3つのポイント",
+      "h3s": [
+        "①カラーバリエーションと限定モデルの選び方",
+        "②保護フィルム・ケースなどアクセサリー選定",
+        "③ストレージ容量と付属ROMデータの注意点"
+      ],
+      "type": "howto",
+      "notes": [
+        "カラーによる在庫差・価格差を説明し、人気色を具体的に挙げる",
+        "液晶保護とグリップ感向上のためのアクセサリーをアリエクで揃える方法",
+        "付属MicroSDのROMデータの法的グレーゾーンについて正直に注意喚起"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "AliExpressでAnbernic RG35XX Hを最安値で買う方法",
+      "h3s": [
+        "公式ストアと非公式ストアの見分け方・安全な選び方",
+        "クーポン・セールを使って最安値で購入するコツ",
+        "配送オプションと関税リスクの注意点"
+      ],
+      "type": "howto",
+      "notes": [
+        "Anbernic公式AliExpressストアのURLと評価ポイントを紹介",
+        "11.11・6.18など大型セールのタイミングと割引率の目安を説明",
+        "日本への配送日数・関税（16,666円以下なら原則免税）の実態を解説"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "よくある質問：Anbernic RG35XX Hについて",
+      "h3s": [
+        "Q&A形式で5つの疑問に答える"
+      ],
+      "type": "faq",
+      "notes": [
+        "faqQuestionsの5項目を1問ずつH3で展開してもよい",
+        "簡潔かつ断言口調で答え、読者の不安を払拭する",
+        "関連する内部リンクをFAQ内にも自然に挿入する"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "まとめ：Anbernic RG35XX Hはこんな人におすすめ",
+      "h3s": [
+        "RG35XX Hがベストな人・他モデルを選ぶべき人の整理",
+        "アリエクで今すぐチェックする方法"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "「GBAスタイルが好き・コスパ重視・初めての中華ゲーム機」ならH一択と断言",
+        "購入前の最終チェックリストを箇条書きで提示",
+        "アリエクの商品ページへの誘導CTAを自然に配置"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-26",
+  "products": [
+    {
+      "product_id": "1005006589176691",
+      "rawTitle": "ANBERNIC RG35XX H 携帯型ゲーム機 3.5インチIPSスクリーン レトロゲーム Linuxシステム ポータブルゲーム機 HD TV出力 PSPゲーム対応",
+      "cleanName": "ANBERNIC RG35XX H",
+      "price_jpy": "6500",
+      "original_price": "780.00",
+      "sales_count": 39,
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c3rW35QD",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Se99fec37d0c34de3b316ce6f7457ed1d1.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Se99fec37d0c34de3b316ce6f7457ed1d1.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S65a42626e40c460a9f24675a81df71b0Q.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Se8f2daacb5684160856b34aba80c390dT.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sf2ab961495cc4a9da0ba0ff08cf02554t.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Se52a8b854d9e42298becca4cd2e4549dE.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5968909c1ca04d12ae30aaf5ba32d3eer.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "ANBERNIC RG35XX H",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "faqQuestions": [
+    "Anbernic RG35XX HでPSPやPS1のゲームは動きますか？",
+    "RG35XX HのバッテリーはUSB-Cで充電できますか？",
+    "AliExpressでAnbernicを買って関税はかかりますか？",
+    "RG35XX Hに日本語表示は対応していますか？",
+    "RG35XX HとRG35XX Plusどっちがおすすめですか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "価格目安（円）",
+    "画面サイズ・解像度",
+    "フォームファクター",
+    "バッテリー容量",
+    "対応エミュ上限目安"
+  ],
+  "internalLinks": [
+    {
+      "url": "/game/anbernic-rg557-osusume.html",
+      "anchorText": "ANBERNIC RG557レビュー"
+    },
+    {
+      "url": "/game/miyoo-mini-flip-osusume.html",
+      "anchorText": "Miyoo Mini Flipレビュー"
+    },
+    {
+      "url": "/game/aliexpress-gamepad-osusume.html",
+      "anchorText": "アリエクのゲームパッドおすすめ"
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-05-26T02:39:36.162Z"
+}
