@@ -1,0 +1,195 @@
+{
+  "slug": "rainy75-pro-osusume",
+  "keyword": "rainy75 pro",
+  "category": "gadget",
+  "selectedTitle": "【コトコト音の頂点】Rainy75 Proと通常版の違いを比較！日本語配列（JIS）の有無とアリエク最安値を調査",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "なぜ「Rainy75」は全ガジェットブロガーから大絶賛されているのか？",
+      "h3s": [
+        "アルミ筐体の圧倒的な重厚感と「コトコト」響く極上の打鍵音",
+        "75%レイアウトとガスケットマウント：この組み合わせが生む打鍵体験"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "WORKEYブランドのRainy75シリーズ概要。アルミ削り出し筐体・ガスケットマウント・ホットスワップ対応の3点が差別化要素",
+        "「3万円クラスの打鍵感が1万円台で買える」というコンセプトがなぜ刺さるかを具体的に説明",
+        "コトコト音の正体：ガスケットの弾性＋アルミの重量感が生む独特の音響特性を描写"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "【選び方】Rainy75「Pro」と「通常版」の具体的な違いとは？",
+      "h3s": [
+        "ケース素材・マウント方式・スイッチのスペック比較表",
+        "今から買うならどっち？アリエク在庫とプレオーダーの現状"
+      ],
+      "type": "comparison",
+      "notes": [
+        "通常版（ポリカーボネート or アクリル）vs Pro（アルミ合金）の素材差・重量差・価格差を比較表で整理",
+        "ガスケットマウントの有無・PCBの向き・付属スイッチの違いを具体的に解説",
+        "「タイピング重視でコスパ最優先なら通常版、質感・打鍵音にこだわるならPro」という明確な結論"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "Rainy75 Pro（アルミ版）レビュー｜コトコト打鍵音の完全解説",
+      "h3s": [
+        "スペックと外観：アルミ削り出し筐体×ガスケットマウントの組み合わせ",
+        "実際の打鍵感と音：「コトコト」が生まれる理由",
+        "こんな人におすすめ"
+      ],
+      "type": "product",
+      "notes": [
+        "アルミ合金ケース・ガスケットマウント・南向きPCB・ホットスワップ対応。カラー展開（White/Black/Gray等）を紹介",
+        "ガスケットの弾性＋アルミの重量感が生む独特のコトコト音を具体的に描写",
+        "3万円クラスのアルミキーボードの打鍵感を1万円台で実現。ガジェット好きの最初の1台としても最適"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "【注意】Rainy75に「日本語配列（JIS）」はある？現状と入手方法",
+      "h3s": [
+        "JIS版の現状：WORKEYが日本語配列モデルを展開中——ただしアリエク在庫は流動的",
+        "キーマップ変更ツール「QMK / VIA」対応で自分好みに配列カスタマイズ可能"
+      ],
+      "type": "howto",
+      "notes": [
+        "WORKEY公式がRainy75 Pro JIS配列モデルを展開済み（Xでの反応・Coming Soonなど確認）。ただしアリエクの在庫は通常版より少なく、セール時や新ロット入荷タイミングを狙う必要がある",
+        "JIS版が手に入らない場合の代替策：QMK/VIAでUS配列キーボードをJIS風にキーマップ変更する手順を解説",
+        "VIA対応の確認方法：アリエクのRainy75ショップページの商品説明・タグで「VIA/QMK」表記を確認する"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "Rainy75の「説明書」が不親切？基本操作とショートカット一覧",
+      "h3s": [
+        "有線・Bluetoothの切り替え方法（接続手順）",
+        "日本語説明書はある？英語説明書の読み方とFnショートカット一覧"
+      ],
+      "type": "howto",
+      "notes": [
+        "Rainy75シリーズの説明書は英語・中国語のみのケースが多い。Fn+接続先キーでのBluetooth切り替え手順を日本語で解説",
+        "よく使うFnキーショートカット（明るさ調整・メディアキー・接続切り替え）を一覧表で整理",
+        "ドライバ・ソフトウェアはWORKEY公式サイトまたはアリエクショップページのリンクからダウンロード。VIAアプリの導入手順も簡単に触れる"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "Rainy75 RTモデル（HEスイッチ）も視野に入れるべきか",
+      "h3s": [
+        "RTモデルとは：磁気ホールエフェクトスイッチとラピッドトリガーの解説",
+        "タイピング用ならPro、FPS用ならRT——用途別最終結論"
+      ],
+      "type": "product",
+      "notes": [
+        "Rainy75 RT/HE LiteはHall Effectスイッチ搭載でラピッドトリガー機能対応。FPS・アクションゲームでの反応速度が向上",
+        "「タイピング用ならPro、FPS用ならRT」という明確な結論を提示"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "AmazonはNG！アリエクでRainy75を確実に安く買う方法",
+      "h3s": [
+        "Amazon転売祭りを避けよ：アリエク直販との価格差リアル",
+        "クーポン・Choiceセールを使って最安値を狙うタイミング"
+      ],
+      "type": "howto",
+      "notes": [
+        "Amazon.co.jpではRainy75は転売品が多く、定価より20〜50%高い価格で出品されていることが多い",
+        "AliExpressのWORKEY公式ストアまたは信頼できるショップでの購入が最安・最安全",
+        "11.11・6.18・AliExpress Anniversary（3.28）セールでの価格推移と購入タイミング",
+        "プレオーダーを使えば通常より安く事前予約できる場合もある"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "Rainy75 Proに関するよくある質問（FAQ）",
+      "h3s": [
+        "Q1. Rainy75 Proは初心者でも使えますか？",
+        "Q2. 通常版Rainy75とProはどちらがおすすめ？",
+        "Q3. Rainy75 ProはQMK/VIAに対応していますか？",
+        "Q4. 日本語配列（JIS）版はアリエクで買えますか？",
+        "Q5. Rainy75 Proに合うキーキャップはどれ？"
+      ],
+      "type": "faq",
+      "notes": [
+        "FAQ形式でLLM検索・音声検索対応のスニペット最適化を意識",
+        "各回答は2〜3文で簡潔にまとめる"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "まとめ｜Rainy75 Proはアリエクで買うべき最強コスパ75%キーボード",
+      "h3s": [
+        "用途・予算別おすすめモデルの最終結論",
+        "今すぐアリエクでRainy75 Proをチェックする"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "記事全体の要点を箇条書きで3〜5点に凝縮",
+        "「迷ったらアルミ版のスイッチ付き完成品」という明確な結論を提示"
+      ]
+    }
+  ],
+  "faqQuestions": [
+    "Rainy75 Proは初心者でも組み立て・使用できますか？",
+    "Rainy75 Proと通常版Rainy75の違いは何ですか？",
+    "Rainy75 ProはQMK/VIAに対応していますか？",
+    "日本語配列（JIS）版はアリエクで買えますか？",
+    "Rainy75 Proに合うおすすめのキーキャップはありますか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "価格帯（円）",
+    "ケース素材",
+    "マウント方式",
+    "QMK/VIA対応",
+    "ホットスワップ"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/ajazz-ak820-osusume.html",
+      "anchorText": "AJAZZ AK820シリーズの比較記事"
+    },
+    {
+      "url": "/gadget/epomaker-keyboard-osusume.html",
+      "anchorText": "EPOMAKERキーボードのおすすめ比較"
+    },
+    {
+      "url": "/gadget/ajazz-akp846-osusume.html",
+      "anchorText": "AJAZZ AKP846レビュー"
+    }
+  ],
+  "products": [
+    {
+      "product_id": "1005012058516630",
+      "rawTitle": "RAINY75 メカニカルキーボード アルミ合金 トリモード RGB ワイヤレス カスタマイズ可能 ホットスワップキーボード RGB ガスケット PC アクセサリー ギフト",
+      "cleanName": "RAINY75 メカニカルキーボード",
+      "price_jpy": "36138",
+      "original_price": "1514.25",
+      "sales_count": 0,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CoWBAKwTaslUzWQw9TlmXSynDKNZLaSmtCNIPaFVXudJhbeVHOTE20WEWE4DdhxMD8MIXlf0G0OuNJ18TajjCgkAlTurjef838CaQeTu6Ltu9Ob56es7TsBa69hZ0lKY5IbArSe6QepxME7zjyIlCt31aLSA3QZkGK3gs35USlTxxI3iyHkTFR7cgp5JN73UEmDdracbeYm2rURqBAhJO7RXCY97ygEoeeVAFHwRjh4A1m5CSz9i4qTGnUfFmzPqWVh8LIwqRJ1LneIJ7Ty83rV16JP2uOLdlplWLBiORk37WsWJYBnGHsak2ztRLZ68cITVY3HW4ez7D2RcpDeBsMjsqWYda3C3H46pkhSANJP5UhDtMtcDrSdMGuAsUSB1Ee3VHXx7P3wZyfC07NxYQOhnFwZwjkAuBpjL7OBin8fIvS6lbvBjVzFofaW6a2QNorople38Oq6AGSq0UkrmiTIQI8MmGfKRncwt8MURey2SIM0jAIwSIlCcxUte2eRL2TsUUvU44ChSYgY3WuLDCVTprXFLQisod80Gt0OuUhdRiCxTpOdSESsO2kb4IC6K4KlIv7k2rFuZiJz876KhpqO28DPdjrrUdVay1sRwK2GYZ18wAxUNvqzYPahXMXR1ErzfU7ScOTA1zJjb8P81HVAhVHsFPtQgFPzGRAFa0wixCp9UTPKYmQ1LCjwZ4t8tmmv9H5VmLWJsxN",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sccc9d02d254943bcaf1825f9b1ea906f1.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sccc9d02d254943bcaf1825f9b1ea906f1.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa52a72d17473450e8567234bb76fe303j.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Scfba634b83fb41678e6097c343ebcf76c.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S14820d0b7645414b97a5a7252b7e9048x.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S911b1a0d00ff458ea7bd4f2b42bcf66dv.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "confirmed",
+        "url": "https://amzn.to/4nORWBR",
+        "asin": "",
+        "searchQuery": "Rainy75 Pro"
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-05-26T12:33:36.851Z"
+}
