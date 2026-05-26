@@ -34,7 +34,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
-    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
     .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
@@ -305,13 +307,13 @@
   <div class="toc-title">📋 この記事の目次</div>
   <ol>
       <li><a href="#sec-1">UGREENマウスはなぜおすすめ？ブランドの特徴と強み</a></li>
-      <li><a href="#sec-2">【第1位】<a href="#sec-2" class="product-link">UGREEN Wireless Mouse 4000DPI</a>｜コスパ最強・静音サイレントの定番モデル</a></li>
-      <li><a href="#sec-3">【第2位】<a href="#sec-3" class="product-link">UGREEN Wireless Silent Mouse</a>｜最安値で静音性を手に入れる</a></li>
-      <li><a href="#sec-4">【第3位】<a href="#sec-4" class="product-link">UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G</a>｜腱鞘炎予防・長時間作業に最適</a></li>
-      <li><a href="#sec-5">【第4位】<a href="#sec-5" class="product-link">UGREEN Hyper-Fast Scroll Mouse</a>｜超高速スクロールホイール・Bluetooth対応</a></li>
+      <li><a href="#sec-2">【第1位】<a href="#sec-2" class="product-link" data-dir="down">UGREEN Wireless Mouse 4000DPI</a>｜コスパ最強・静音サイレントの定番モデル</a></li>
+      <li><a href="#sec-3">【第2位】<a href="#sec-3" class="product-link" data-dir="down">UGREEN Wireless Silent Mouse</a>｜最安値で静音性を手に入れる</a></li>
+      <li><a href="#sec-4">【第3位】<a href="#sec-4" class="product-link" data-dir="down">UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G</a>｜腱鞘炎予防・長時間作業に最適</a></li>
+      <li><a href="#sec-5">【第4位】<a href="#sec-5" class="product-link" data-dir="down">UGREEN Hyper-Fast Scroll Mouse</a>｜超高速スクロールホイール・Bluetooth対応</a></li>
       <li><a href="#sec-6">UGREENマウス4選スペック比較表</a></li>
       <li><a href="#sec-7">UGREENマウスの選び方｜失敗しない4つのポイント</a></li>
-      <li><a href="#sec-8"><a href="#sec-8" class="product-link">UGREENの静音ワイヤレスマウスが向いている人・向いていない人</a></a></li>
+      <li><a href="#sec-8"><a href="#sec-8" class="product-link" data-dir="down">UGREENの静音ワイヤレスマウスが向いている人・向いていない人</a></a></li>
       <li><a href="#sec-9">UGREEN F200 レビュー｜コンパクト設計と使い心地を詳しくチェック</a></li>
       <li><a href="#sec-10">UGREENマウスに関するよくある質問</a></li>
       <li><a href="#sec-11">まとめ：UGREENマウスはAliExpressで買うのがお得！</a></li>
@@ -562,7 +564,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="#sec-2" class="product-link">UGREEN Wireless Mouse 4000DPI</a></td>
+            <td><a href="#sec-2" class="product-link" data-dir="up">UGREEN Wireless Mouse 4000DPI</a></td>
             <td>¥2,261</td>
             <td>2.4GHz</td>
             <td>4000DPI</td>
@@ -570,7 +572,7 @@
             <td>約70g前後</td>
           </tr>
           <tr>
-            <td><a href="#sec-3" class="product-link">UGREEN Wireless Silent Mouse</a></td>
+            <td><a href="#sec-3" class="product-link" data-dir="up">UGREEN Wireless Silent Mouse</a></td>
             <td>¥1,637</td>
             <td>2.4GHz</td>
             <td>1600DPI前後</td>
@@ -578,7 +580,7 @@
             <td>約60g前後</td>
           </tr>
           <tr>
-            <td><a href="#sec-4" class="product-link">UGREEN Vertical Wireless Mouse BT5.0 2.4G</a></td>
+            <td><a href="#sec-4" class="product-link" data-dir="up">UGREEN Vertical Wireless Mouse BT5.0 2.4G</a></td>
             <td>¥3,099</td>
             <td>Bluetooth 5.0＋2.4GHz</td>
             <td>4000DPI</td>
@@ -586,7 +588,7 @@
             <td>約100g前後</td>
           </tr>
           <tr>
-            <td><a href="#sec-5" class="product-link">UGREEN Hyper-Fast Scroll Mouse</a></td>
+            <td><a href="#sec-5" class="product-link" data-dir="up">UGREEN Hyper-Fast Scroll Mouse</a></td>
             <td>¥3,797</td>
             <td>Bluetooth 5.4＋2.4GHz</td>
             <td>8000DPI</td>
@@ -602,10 +604,10 @@
     <h3>用途別おすすめモデルの結論</h3>
     <p>迷ったらこの4軸で選んでください：</p>
     <ul>
-      <li>💰 <strong>コスパ重視</strong> <a href="#sec-2" class="product-link">UGREEN Wireless Mouse 4000DPI</a>（¥2,736・バランス最強）</li>
-      <li>🔇 <strong>静音・予算最小</strong> <a href="#sec-3" class="product-link">UGREEN Wireless Silent Mouse</a>（¥2,025・最安静音）</li>
-      <li>🤲 <strong>疲れにくさ重視</strong> <a href="#sec-4" class="product-link">UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G</a>（腱鞘炎予防に本気で取り組むならこれ）</li>
-      <li>🌀 <strong>マルチデバイス・高速スクロール派</strong> <a href="#sec-5" class="product-link">UGREEN Hyper-Fast Scroll Mouse</a>（Bluetooth 5.4×8000DPI×慣性スクロール）</li>
+      <li>💰 <strong>コスパ重視</strong> <a href="#sec-2" class="product-link" data-dir="up">UGREEN Wireless Mouse 4000DPI</a>（¥2,736・バランス最強）</li>
+      <li>🔇 <strong>静音・予算最小</strong> <a href="#sec-3" class="product-link" data-dir="up">UGREEN Wireless Silent Mouse</a>（¥2,025・最安静音）</li>
+      <li>🤲 <strong>疲れにくさ重視</strong> <a href="#sec-4" class="product-link" data-dir="up">UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G</a>（腱鞘炎予防に本気で取り組むならこれ）</li>
+      <li>🌀 <strong>マルチデバイス・高速スクロール派</strong> <a href="#sec-5" class="product-link" data-dir="up">UGREEN Hyper-Fast Scroll Mouse</a>（Bluetooth 5.4×8000DPI×慣性スクロール）</li>
     </ul>
     <p>「何を買えばいいかわからない」という人は<strong>UGREEN Wireless Mouse 4000DPIを選んでおけば間違いありません</strong>。静音・高DPI・Mac対応と三拍子揃っています。</p>
 
@@ -731,10 +733,10 @@
     <h3>4選の総評と最終おすすめ</h3>
     <p>今回紹介した4モデルを用途別に3行でまとめます：</p>
     <ul>
-      <li>🏆 <strong>コスパ重視の総合優勝</strong>：<a href="#sec-2" class="product-link">UGREEN Wireless Mouse 4000DPI</a>（¥2,736）。静音・高DPI・Mac対応を全部入りで実現。初めてUGREENマウスを買うならこれ一択です。</li>
-      <li>🔇 <strong>最安静音を求めるなら</strong>：<a href="#sec-3" class="product-link">UGREEN Wireless Silent Mouse</a>（¥2,025）。価格を最小限に抑えながら静音性をしっかり確保。サブ機・入門機として完璧な選択肢です。</li>
-      <li>🤲 <strong>体への投資・長時間作業派なら</strong>：<a href="#sec-4" class="product-link">UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G</a>（¥3,568）。手首・前腕への負担を根本から解消してくれる唯一無二の選択肢。腱鞘炎に悩んでいるなら今すぐ乗り換えを検討してください。</li>
-      <li>🌀 <strong>マルチデバイス・スクロール多用派なら</strong>：<a href="#sec-5" class="product-link">UGREEN Hyper-Fast Scroll Mouse</a>（¥3,797）。Bluetooth 5.4×高速スクロールホイールで作業効率が上がります。</li>
+      <li>🏆 <strong>コスパ重視の総合優勝</strong>：<a href="#sec-2" class="product-link" data-dir="up">UGREEN Wireless Mouse 4000DPI</a>（¥2,736）。静音・高DPI・Mac対応を全部入りで実現。初めてUGREENマウスを買うならこれ一択です。</li>
+      <li>🔇 <strong>最安静音を求めるなら</strong>：<a href="#sec-3" class="product-link" data-dir="up">UGREEN Wireless Silent Mouse</a>（¥2,025）。価格を最小限に抑えながら静音性をしっかり確保。サブ機・入門機として完璧な選択肢です。</li>
+      <li>🤲 <strong>体への投資・長時間作業派なら</strong>：<a href="#sec-4" class="product-link" data-dir="up">UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G</a>（¥3,568）。手首・前腕への負担を根本から解消してくれる唯一無二の選択肢。腱鞘炎に悩んでいるなら今すぐ乗り換えを検討してください。</li>
+      <li>🌀 <strong>マルチデバイス・スクロール多用派なら</strong>：<a href="#sec-5" class="product-link" data-dir="up">UGREEN Hyper-Fast Scroll Mouse</a>（¥3,797）。Bluetooth 5.4×高速スクロールホイールで作業効率が上がります。</li>
     </ul>
 
     <p>迷っているなら<strong>UGREEN Wireless Mouse 4000DPI（¥2,261）を選んでおけば間違いありません</strong>。静音・高DPI・Mac対応と三拍子揃っています。</p>

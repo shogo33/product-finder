@@ -34,7 +34,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
-    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
     .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
@@ -306,16 +308,16 @@
   <div class="toc-title">📋 この記事の目次</div>
   <ol>
       <li><a href="#sec-1">中華タブレットをアリエクで買うメリット・注意点</a></li>
-      <li><a href="#sec-2">【1位】<a href="#sec-2" class="product-link">ALLDOCUBE iPlay 70 Pad Pro</a>｜コスパ最強の10.4インチ機</a></li>
-      <li><a href="#sec-3">【2位】<a href="#sec-3" class="product-link">ALLDOCUBE iPlay 70 mini Ultra</a>｜コンパクト×ハイスペックの両立</a></li>
-      <li><a href="#sec-4">【3位】<a href="#sec-4" class="product-link">ALLDOCUBE iPlay60 Mini Pro</a>｜2万円台で買えるコンパクト機の決定版</a></li>
-      <li><a href="#sec-5">【4位】<a href="#sec-5" class="product-link">Teclast T60 AI タブレット</a>｜14インチ大画面で2万円台</a></li>
-      <li><a href="#sec-6">【5位】<a href="#sec-6" class="product-link">DOOGEE Tab A9 Pro</a>｜1万3千円台で買えるエントリー最強機</a></li>
+      <li><a href="#sec-2">【1位】<a href="#sec-2" class="product-link" data-dir="down">ALLDOCUBE iPlay 70 Pad Pro</a>｜コスパ最強の10.4インチ機</a></li>
+      <li><a href="#sec-3">【2位】<a href="#sec-3" class="product-link" data-dir="down">ALLDOCUBE iPlay 70 mini Ultra</a>｜コンパクト×ハイスペックの両立</a></li>
+      <li><a href="#sec-4">【3位】<a href="#sec-4" class="product-link" data-dir="down">ALLDOCUBE iPlay60 Mini Pro</a>｜2万円台で買えるコンパクト機の決定版</a></li>
+      <li><a href="#sec-5">【4位】<a href="#sec-5" class="product-link" data-dir="down">Teclast T60 AI タブレット</a>｜14インチ大画面で2万円台</a></li>
+      <li><a href="#sec-6">【5位】<a href="#sec-6" class="product-link" data-dir="down">DOOGEE Tab A9 Pro</a>｜1万3千円台で買えるエントリー最強機</a></li>
       <li><a href="#sec-7">中華タブレット5選スペック比較表</a></li>
       <li><a href="#sec-8">中華タブレットの選び方｜失敗しない5つのチェックポイント</a></li>
       <li><a href="#sec-9">中華タブレットに関するよくある質問（FAQ）</a></li>
       <li><a href="#sec-10">まとめ｜あなたにぴったりの中華タブレットはどれ？</a></li>
-      <li><a href="#sec-11"><a href="#sec-11" class="product-link">Xでの中華タブレットのリアルな声</a></a></li>
+      <li><a href="#sec-11"><a href="#sec-11" class="product-link" data-dir="down">Xでの中華タブレットのリアルな声</a></a></li>
   </ol>
 </nav>
 <h2 id="sec-1">中華タブレットをアリエクで買うメリット・注意点</h2>
@@ -540,7 +542,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#sec-2" class="product-link"><strong>ALLDOCUBE iPlay 70 Pad Pro</strong></a></td>
+        <td><a href="#sec-2" class="product-link" data-dir="up"><strong>ALLDOCUBE iPlay 70 Pad Pro</strong></a></td>
         <td>約¥27,111</td>
         <td>MediaTek Helio G99（約50万点）</td>
         <td>10.4インチ・2000×1200・90Hz</td>
@@ -549,7 +551,7 @@
         <td>○（対応）</td>
       </tr>
       <tr>
-        <td><a href="#sec-3" class="product-link"><strong>ALLDOCUBE iPlay 70 mini Ultra</strong></a></td>
+        <td><a href="#sec-3" class="product-link" data-dir="up"><strong>ALLDOCUBE iPlay 70 mini Ultra</strong></a></td>
         <td>約¥45,735</td>
         <td>Helio G99 Ultra相当（約55万点以上）</td>
         <td>8.4インチ・2000×1200・90Hz</td>
@@ -558,7 +560,7 @@
         <td>○（対応）</td>
       </tr>
       <tr>
-        <td><a href="#sec-4" class="product-link"><strong>ALLDOCUBE iPlay60 Mini Pro</strong></a></td>
+        <td><a href="#sec-4" class="product-link" data-dir="up"><strong>ALLDOCUBE iPlay60 Mini Pro</strong></a></td>
         <td>約¥25,861</td>
         <td>MediaTek Helio G85（約30万点）</td>
         <td>8.4インチ・1920×1200・60Hz</td>
@@ -567,7 +569,7 @@
         <td>△（モデルによる）</td>
       </tr>
       <tr>
-        <td><a href="#sec-5" class="product-link"><strong>Teclast T60 AI タブレット</strong></a></td>
+        <td><a href="#sec-5" class="product-link" data-dir="up"><strong>Teclast T60 AI タブレット</strong></a></td>
         <td>約¥24,346</td>
         <td>Unisoc T616相当（約25万点）</td>
         <td>14インチ・2000×1200・60Hz</td>
@@ -576,7 +578,7 @@
         <td>△（モデルによる）</td>
       </tr>
       <tr>
-        <td><a href="#sec-6" class="product-link"><strong>DOOGEE Tab A9 Pro</strong></a></td>
+        <td><a href="#sec-6" class="product-link" data-dir="up"><strong>DOOGEE Tab A9 Pro</strong></a></td>
         <td>約¥13,435</td>
         <td>MediaTek Helio G85（約25万点）</td>
         <td>10インチ・1920×1200・60Hz</td>
@@ -657,11 +659,11 @@
 <p>5モデルの特徴を改めて整理します。</p>
 
 <ul>
-  <li><strong>バランス重視のベストバイ</strong>→ <strong><a href="#sec-2" class="product-link">ALLDOCUBE iPlay 70 Pad Pro</a></strong>（約27,000円・Helio G99・90Hz）</li>
-  <li><strong>コンパクトでハイスペックを両立</strong>→ <strong><a href="#sec-3" class="product-link">ALLDOCUBE iPlay 70 mini Ultra</a></strong>（約45,000円・上位SoC・持ち運び最強）</li>
-  <li><strong>2万円台のエントリーベスト</strong>→ <strong><a href="#sec-4" class="product-link">ALLDOCUBE iPlay60 Mini Pro</a></strong>（約25,800円・コスパ重視の入門機）</li>
-  <li><strong>とにかく大画面が欲しい</strong>→ <strong><a href="#sec-5" class="product-link">Teclast T60 AI タブレット</a></strong>（約24,000円・14インチ唯一無二の存在）</li>
-  <li><strong>まず試してみたい・予算最小化</strong>→ <strong><a href="#sec-6" class="product-link">DOOGEE Tab A9 Pro</a></strong>（約13,400円・エントリー最安クラス）</li>
+  <li><strong>バランス重視のベストバイ</strong>→ <strong><a href="#sec-2" class="product-link" data-dir="up">ALLDOCUBE iPlay 70 Pad Pro</a></strong>（約27,000円・Helio G99・90Hz）</li>
+  <li><strong>コンパクトでハイスペックを両立</strong>→ <strong><a href="#sec-3" class="product-link" data-dir="up">ALLDOCUBE iPlay 70 mini Ultra</a></strong>（約45,000円・上位SoC・持ち運び最強）</li>
+  <li><strong>2万円台のエントリーベスト</strong>→ <strong><a href="#sec-4" class="product-link" data-dir="up">ALLDOCUBE iPlay60 Mini Pro</a></strong>（約25,800円・コスパ重視の入門機）</li>
+  <li><strong>とにかく大画面が欲しい</strong>→ <strong><a href="#sec-5" class="product-link" data-dir="up">Teclast T60 AI タブレット</a></strong>（約24,000円・14インチ唯一無二の存在）</li>
+  <li><strong>まず試してみたい・予算最小化</strong>→ <strong><a href="#sec-6" class="product-link" data-dir="up">DOOGEE Tab A9 Pro</a></strong>（約13,400円・エントリー最安クラス）</li>
 </ul>
 
 <p>私が10台以上の中華タブレットを買い続けてきて一番思うのは、<strong>「失敗は選択肢と情報の少なさから生まれる」</strong>ということです。スペックを理解して、自分の用途に合ったモデルを選べれば、中華タブレットは本当にコスパの高い買い物になります。</p>

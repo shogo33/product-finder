@@ -34,7 +34,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
-    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
     .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
@@ -310,11 +312,11 @@
   <ol>
       <li><a href="#sec-1">AliExpressのゲーミングミニPCとは？国内との違いと注意点</a></li>
       <li><a href="#sec-2">ゲーミングミニPCの選び方｜スペックと用途で失敗しないコツ</a></li>
-      <li><a href="#sec-3">【第1位】<a href="#sec-3" class="product-link">MINISFORUM UM890/UM880 Pro</a>｜Ryzen AI 9 HX 370搭載の最強コスパ機</a></li>
-      <li><a href="#sec-4">【第2位】<a href="#sec-4" class="product-link">GMKtec K8 Plus</a>｜Ryzen 7 8745HS搭載のコスパ最前線モデル</a></li>
-      <li><a href="#sec-5">【第3位】<a href="#sec-5" class="product-link">BEELINK SER8-8745HS</a>｜コスパ重視ゲーマーへのド定番モデル</a></li>
-      <li><a href="#sec-6">【第4位】<a href="#sec-6" class="product-link">GMKtec K12</a>｜コスパ特化の入門ゲーミングミニPCとして有力</a></li>
-      <li><a href="#sec-7">【第5位】<a href="#sec-7" class="product-link">MINISFORUM UM790</a>｜Ryzen 9 7940HS搭載のロングセラー実力機</a></li>
+      <li><a href="#sec-3">【第1位】<a href="#sec-3" class="product-link" data-dir="down">MINISFORUM UM890/UM880 Pro</a>｜Ryzen AI 9 HX 370搭載の最強コスパ機</a></li>
+      <li><a href="#sec-4">【第2位】<a href="#sec-4" class="product-link" data-dir="down">GMKtec K8 Plus</a>｜Ryzen 7 8745HS搭載のコスパ最前線モデル</a></li>
+      <li><a href="#sec-5">【第3位】<a href="#sec-5" class="product-link" data-dir="down">BEELINK SER8-8745HS</a>｜コスパ重視ゲーマーへのド定番モデル</a></li>
+      <li><a href="#sec-6">【第4位】<a href="#sec-6" class="product-link" data-dir="down">GMKtec K12</a>｜コスパ特化の入門ゲーミングミニPCとして有力</a></li>
+      <li><a href="#sec-7">【第5位】<a href="#sec-7" class="product-link" data-dir="down">MINISFORUM UM790</a>｜Ryzen 9 7940HS搭載のロングセラー実力機</a></li>
       <li><a href="#sec-8">ゲーミングミニPC比較表｜5モデルをスペックで一目比較</a></li>
       <li><a href="#sec-9">よくある質問｜ゲーミングミニPCをAliExpressで買う前に確認</a></li>
   </ol>
@@ -740,7 +742,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#sec-3" class="product-link"><strong>MINISFORUM UM890/UM880 Pro</strong></a></td>
+        <td><a href="#sec-3" class="product-link" data-dir="up"><strong>MINISFORUM UM890/UM880 Pro</strong></a></td>
         <td>約90,000〜130,000円（構成による）</td>
         <td>Ryzen AI 9 HX 370</td>
         <td>Radeon 890M（16CU）</td>
@@ -748,7 +750,7 @@
         <td>中量級ゲーム・配信・最上位コスパ重視</td>
       </tr>
       <tr>
-        <td><a href="#sec-4" class="product-link"><strong>GMKtec K8 Plus</strong></a></td>
+        <td><a href="#sec-4" class="product-link" data-dir="up"><strong>GMKtec K8 Plus</strong></a></td>
         <td>約52,000円</td>
         <td>Ryzen 7 8745HS</td>
         <td>Radeon 780M（12CU）</td>
@@ -756,7 +758,7 @@
         <td>eスポーツ入門・最高コスパ重視</td>
       </tr>
       <tr>
-        <td><a href="#sec-5" class="product-link"><strong>BEELINK SER8-8745HS</strong></a></td>
+        <td><a href="#sec-5" class="product-link" data-dir="up"><strong>BEELINK SER8-8745HS</strong></a></td>
         <td>約50,000〜75,000円（構成による）</td>
         <td>Ryzen 7 8745HS</td>
         <td>Radeon 780M（12CU）</td>
@@ -764,7 +766,7 @@
         <td>ブランド信頼性重視・初購入者向け</td>
       </tr>
       <tr>
-        <td><a href="#sec-6" class="product-link"><strong>GMKtec K12</strong></a></td>
+        <td><a href="#sec-6" class="product-link" data-dir="up"><strong>GMKtec K12</strong></a></td>
         <td>約68,000円</td>
         <td>Ryzen系APU</td>
         <td>Radeon 780M系</td>
@@ -772,7 +774,7 @@
         <td>軽量ゲーム・普段使い兼用・省スペース優先</td>
       </tr>
       <tr>
-        <td><a href="#sec-7" class="product-link"><strong>MINISFORUM UM790</strong></a></td>
+        <td><a href="#sec-7" class="product-link" data-dir="up"><strong>MINISFORUM UM790</strong></a></td>
         <td>約65,000〜95,000円（構成による）</td>
         <td>Ryzen 9 7940HS</td>
         <td>Radeon 780M（12CU）</td>
@@ -848,7 +850,7 @@
 
 <ul>
   <li><strong>Valorant</strong>：Radeon 780M搭載機で低設定1080pなら120fps以上。全モデルでゲームになる</li>
-  <li><strong>Apex Legends</strong>：低設定で70〜100fps。<a href="#sec-3" class="product-link">MINISFORUM UM890/UM880 Pro</a>なら890Mでより余裕あり</li>
+  <li><strong>Apex Legends</strong>：低設定で70〜100fps。<a href="#sec-3" class="product-link" data-dir="up">MINISFORUM UM890/UM880 Pro</a>なら890Mでより余裕あり</li>
   <li><strong>フォートナイト</strong>：低設定で60fps前後。中設定になると45〜60fpsに落ちる</li>
   <li><strong>マインクラフト（Java版）</strong>：Optifine導入で中〜高設定60fps以上が狙える</li>
 </ul>
@@ -860,7 +862,7 @@
 <p><strong>A. モデルによって大きく異なります。購入前に必ず確認してください。</strong></p>
 
 <ul>
-  <li><strong>DDR5 SO-DIMMスロット搭載モデル</strong>（<a href="#sec-5" class="product-link">BEELINK SER8-8745HS</a>、GMKtec K8 Plusなど）：メモリの増設・交換が自由にできる。最大64GBや96GBへの増設も可能</li>
+  <li><strong>DDR5 SO-DIMMスロット搭載モデル</strong>（<a href="#sec-5" class="product-link" data-dir="up">BEELINK SER8-8745HS</a>、GMKtec K8 Plusなど）：メモリの増設・交換が自由にできる。最大64GBや96GBへの増設も可能</li>
   <li><strong>LPDDR5X オンボード実装モデル</strong>（一部MINISFORUM機など）：メモリは基板に直付けのため、後からの交換は不可。購入時に十分な容量を選ぶこと</li>
   <li><strong>SSDのM.2スロット</strong>：ほとんどのモデルでPCIe 4.0 M.2スロットが1〜2本搭載されており、後からNVMe SSDを追加・交換できる</li>
 </ul>

@@ -34,7 +34,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
-    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
     .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
@@ -307,11 +309,11 @@
   <ol>
       <li><a href="#sec-1">UGREENのドッキングステーションはなぜ選ばれるのか</a></li>
       <li><a href="#sec-2">失敗しないUGREENドッキングステーションの選び方</a></li>
-      <li><a href="#sec-3">【第1位】<a href="#sec-3" class="product-link">UGREEN Revodok Pro 209</a>｜10in1フラッグシップモデル</a></li>
-      <li><a href="#sec-4">【第2位】<a href="#sec-4" class="product-link">UGREEN Revodok 206</a>｜6in1コンパクトハブ</a></li>
-      <li><a href="#sec-5">【第3位】<a href="#sec-5" class="product-link">UGREEN Revodok Pro 313</a>｜Thunderbolt 4対応モデル</a></li>
-      <li><a href="#sec-6">【第4位】<a href="#sec-6" class="product-link">UGREEN Revodok Max 13-in-1 Thunderbolt 4</a>｜デスクトップ型ドッキングステーション</a></li>
-      <li><a href="#sec-7">【第5位】<a href="#sec-7" class="product-link">UGREEN Thunderbolt 4 8-in-1 ドッキングステーション</a>｜USB4対応次世代モデル</a></li>
+      <li><a href="#sec-3">【第1位】<a href="#sec-3" class="product-link" data-dir="down">UGREEN Revodok Pro 209</a>｜10in1フラッグシップモデル</a></li>
+      <li><a href="#sec-4">【第2位】<a href="#sec-4" class="product-link" data-dir="down">UGREEN Revodok 206</a>｜6in1コンパクトハブ</a></li>
+      <li><a href="#sec-5">【第3位】<a href="#sec-5" class="product-link" data-dir="down">UGREEN Revodok Pro 313</a>｜Thunderbolt 4対応モデル</a></li>
+      <li><a href="#sec-6">【第4位】<a href="#sec-6" class="product-link" data-dir="down">UGREEN Revodok Max 13-in-1 Thunderbolt 4</a>｜デスクトップ型ドッキングステーション</a></li>
+      <li><a href="#sec-7">【第5位】<a href="#sec-7" class="product-link" data-dir="down">UGREEN Thunderbolt 4 8-in-1 ドッキングステーション</a>｜USB4対応次世代モデル</a></li>
       <li><a href="#sec-8">UGREENドッキングステーション5モデル比較表</a></li>
       <li><a href="#sec-9">よくある質問｜UGREENドッキングステーションについて</a></li>
       <li><a href="#sec-10">まとめ：用途に合ったUGREENドッキングステーションをアリエクで賢く選ぼう</a></li>
@@ -625,7 +627,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#sec-3" class="product-link">UGREEN Revodok Pro 209</a></td>
+        <td><a href="#sec-3" class="product-link" data-dir="up">UGREEN Revodok Pro 209</a></td>
         <td>約25,000円</td>
         <td>9in1</td>
         <td>4K60Hz×2（デュアルHDMI）</td>
@@ -633,7 +635,7 @@
         <td>テレワーク・固定デスク</td>
       </tr>
       <tr>
-        <td><a href="#sec-4" class="product-link">UGREEN Revodok 206</a></td>
+        <td><a href="#sec-4" class="product-link" data-dir="up">UGREEN Revodok 206</a></td>
         <td>約7,500円</td>
         <td>6in1</td>
         <td>4K30Hz×1（HDMI）</td>
@@ -641,7 +643,7 @@
         <td>出張・モバイル・入門</td>
       </tr>
       <tr>
-        <td><a href="#sec-5" class="product-link">UGREEN Revodok Pro 313</a></td>
+        <td><a href="#sec-5" class="product-link" data-dir="up">UGREEN Revodok Pro 313</a></td>
         <td>約15,000円</td>
         <td>8in1</td>
         <td>4K120Hz（Thunderbolt 4）</td>
@@ -649,7 +651,7 @@
         <td>MacBook・動画編集者</td>
       </tr>
       <tr>
-        <td><a href="#sec-6" class="product-link">UGREEN Revodok Max 13-in-1 TB4</a></td>
+        <td><a href="#sec-6" class="product-link" data-dir="up">UGREEN Revodok Max 13-in-1 TB4</a></td>
         <td>約48,000円</td>
         <td>13in1</td>
         <td>デュアル4K（HDMI+DP）</td>
@@ -657,7 +659,7 @@
         <td>ガチデスク・エンジニア</td>
       </tr>
       <tr>
-        <td><a href="#sec-7" class="product-link">UGREEN Thunderbolt 4 8-in-1</a></td>
+        <td><a href="#sec-7" class="product-link" data-dir="up">UGREEN Thunderbolt 4 8-in-1</a></td>
         <td>約27,000円</td>
         <td>8in1</td>
         <td>4K×2同時出力（TB4×2）</td>
@@ -670,10 +672,10 @@
 
 <h3>用途別おすすめモデルまとめ</h3>
 <ul>
-  <li><strong>テレワーク中心・デュアルモニター：</strong><a href="#sec-3" class="product-link">UGREEN Revodok Pro 209</a>（デュアル4K60Hz＋PD100W の全部入り）</li>
-  <li><strong>出張・カフェワーク・入門：</strong><a href="#sec-4" class="product-link">UGREEN Revodok 206</a>（軽量・安価・ポケットサイズ）</li>
-  <li><strong>MacBook Pro・動画編集：</strong><a href="#sec-5" class="product-link">UGREEN Revodok Pro 313</a>（TB4認証＋4K120Hz＋PD140W）</li>
-  <li><strong>固定デスクをガチ構成にしたい：</strong><a href="#sec-6" class="product-link">UGREEN Revodok Max 13-in-1 Thunderbolt 4</a>（13ポート＋2.5GbE＋ACアダプター給電）</li>
+  <li><strong>テレワーク中心・デュアルモニター：</strong><a href="#sec-3" class="product-link" data-dir="up">UGREEN Revodok Pro 209</a>（デュアル4K60Hz＋PD100W の全部入り）</li>
+  <li><strong>出張・カフェワーク・入門：</strong><a href="#sec-4" class="product-link" data-dir="up">UGREEN Revodok 206</a>（軽量・安価・ポケットサイズ）</li>
+  <li><strong>MacBook Pro・動画編集：</strong><a href="#sec-5" class="product-link" data-dir="up">UGREEN Revodok Pro 313</a>（TB4認証＋4K120Hz＋PD140W）</li>
+  <li><strong>固定デスクをガチ構成にしたい：</strong><a href="#sec-6" class="product-link" data-dir="up">UGREEN Revodok Max 13-in-1 Thunderbolt 4</a>（13ポート＋2.5GbE＋ACアダプター給電）</li>
   <li><strong>将来のデュアル4K環境を見据えたい：</strong>UGREEN Thunderbolt 4 8-in-1（TB4×2ポートで将来性抜群）</li>
 </ul>
 
@@ -713,10 +715,10 @@
 
 <p>用途別の結論を改めてまとめます：</p>
 <ul>
-  <li>📌 <strong>テレワーク・デュアルモニター派</strong>→ <a href="#sec-3" class="product-link">UGREEN Revodok Pro 209</a>（約25,000円）</li>
-  <li>📌 <strong>出張・外出・アリエク初心者</strong>→ <a href="#sec-4" class="product-link">UGREEN Revodok 206</a>（約7,500円）</li>
-  <li>📌 <strong>MacBook Pro・動画編集・4K120Hz派</strong>→ <a href="#sec-5" class="product-link">UGREEN Revodok Pro 313</a>（約15,000円）</li>
-  <li>📌 <strong>ガチのデスク環境・エンジニア・13ポート欲しい人</strong>→ <a href="#sec-6" class="product-link">UGREEN Revodok Max 13-in-1 Thunderbolt 4</a>（約48,000円）</li>
+  <li>📌 <strong>テレワーク・デュアルモニター派</strong>→ <a href="#sec-3" class="product-link" data-dir="up">UGREEN Revodok Pro 209</a>（約25,000円）</li>
+  <li>📌 <strong>出張・外出・アリエク初心者</strong>→ <a href="#sec-4" class="product-link" data-dir="up">UGREEN Revodok 206</a>（約7,500円）</li>
+  <li>📌 <strong>MacBook Pro・動画編集・4K120Hz派</strong>→ <a href="#sec-5" class="product-link" data-dir="up">UGREEN Revodok Pro 313</a>（約15,000円）</li>
+  <li>📌 <strong>ガチのデスク環境・エンジニア・13ポート欲しい人</strong>→ <a href="#sec-6" class="product-link" data-dir="up">UGREEN Revodok Max 13-in-1 Thunderbolt 4</a>（約48,000円）</li>
   <li>📌 <strong>デュアル4Kを将来性込みで構築したい人</strong>→ UGREEN Thunderbolt 4 8-in-1（約27,000円）</li>
 </ul>
 

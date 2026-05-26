@@ -34,7 +34,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
-    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
     .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
@@ -303,11 +305,11 @@
   <div class="toc-title">📋 この記事の目次</div>
   <ol>
       <li><a href="#sec-1">Miyoo Mini Flipとは？GBA SP世代に刺さる折りたたみ機の正体</a></li>
-      <li><a href="#sec-2">【メイン機】<a href="#sec-2" class="product-link">Miyoo Mini Flip</a>｜折りたたみGBA SP風デザインの最高傑作</a></li>
-      <li><a href="#sec-3">【サブ機・入門機】<a href="#sec-3" class="product-link">Miyoo Mini Plus</a>｜安定人気の定番コンパクト機</a></li>
-      <li><a href="#sec-4"><a href="#sec-2" class="product-link">Miyoo Mini Flip</a> vs Plus 徹底比較｜どっちを選ぶべきか</a></li>
-      <li><a href="#sec-5">アリエクで<a href="#sec-2" class="product-link">Miyoo Mini Flip</a>を最安値で買う方法</a></li>
-      <li><a href="#sec-6">まとめ｜<a href="#sec-2" class="product-link">Miyoo Mini Flip</a>はアリエクでGETするのが正解</a></li>
+      <li><a href="#sec-2">【メイン機】<a href="#sec-2" class="product-link" data-dir="down">Miyoo Mini Flip</a>｜折りたたみGBA SP風デザインの最高傑作</a></li>
+      <li><a href="#sec-3">【サブ機・入門機】<a href="#sec-3" class="product-link" data-dir="down">Miyoo Mini Plus</a>｜安定人気の定番コンパクト機</a></li>
+      <li><a href="#sec-4"><a href="#sec-2" class="product-link" data-dir="down">Miyoo Mini Flip</a> vs Plus 徹底比較｜どっちを選ぶべきか</a></li>
+      <li><a href="#sec-5">アリエクで<a href="#sec-2" class="product-link" data-dir="down">Miyoo Mini Flip</a>を最安値で買う方法</a></li>
+      <li><a href="#sec-6">まとめ｜<a href="#sec-2" class="product-link" data-dir="down">Miyoo Mini Flip</a>はアリエクでGETするのが正解</a></li>
   </ol>
 </nav>
 <h2 id="sec-1">Miyoo Mini Flipとは？GBA SP世代に刺さる折りたたみ機の正体</h2>
@@ -494,8 +496,8 @@
 <p>Miyoo Mini FlipとMiyoo Mini Plusの最大の違いは<strong>「折りたたみ機構の有無」と「画面サイズ」</strong>の2点です。</p>
 
 <ul>
-  <li><a href="#sec-2" class="product-link">Miyoo Mini Flip</a>：折りたたみあり・2.8インチ・3000mAh・約150g</li>
-  <li><a href="#sec-3" class="product-link">Miyoo Mini Plus</a>：折りたたみなし・3.5インチ・2500mAh・コンパクト</li>
+  <li><a href="#sec-2" class="product-link" data-dir="up">Miyoo Mini Flip</a>：折りたたみあり・2.8インチ・3000mAh・約150g</li>
+  <li><a href="#sec-3" class="product-link" data-dir="up">Miyoo Mini Plus</a>：折りたたみなし・3.5インチ・2500mAh・コンパクト</li>
 </ul>
 
 <p>画面を大きく使いたいならMiyoo Mini Plus、携帯性と画面保護を優先するならMiyoo Mini Flipという棲み分けです。価格面ではMiyoo Mini PlusのほうがわずかにフラッグシップのFlipより購入しやすい価格帯に位置しています。</p>
@@ -543,7 +545,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#sec-2" class="product-link"><strong>Miyoo Mini Flip</strong></a></td>
+        <td><a href="#sec-2" class="product-link" data-dir="up"><strong>Miyoo Mini Flip</strong></a></td>
         <td>2.8インチ IPS</td>
         <td>✅ あり</td>
         <td>3000mAh</td>
@@ -552,7 +554,7 @@
         <td>持ち運び重視・GBA SP世代・画面保護したい人</td>
       </tr>
       <tr>
-        <td><a href="#sec-3" class="product-link"><strong>Miyoo Mini Plus</strong></a></td>
+        <td><a href="#sec-3" class="product-link" data-dir="up"><strong>Miyoo Mini Plus</strong></a></td>
         <td>3.5インチ IPS</td>
         <td>❌ なし</td>
         <td>2500mAh</td>
@@ -581,7 +583,7 @@
 <ul>
   <li>✅ 3.5インチの大きな画面でプレイしたい</li>
   <li>✅ 価格をできるだけ抑えたい</li>
-  <li>✅ すでに<a href="#sec-2" class="product-link">Miyoo Mini Flip</a>を持っていてサブ機が欲しい</li>
+  <li>✅ すでに<a href="#sec-2" class="product-link" data-dir="up">Miyoo Mini Flip</a>を持っていてサブ機が欲しい</li>
   <li>✅ OnionOS・MinUIのコミュニティ資産をフル活用したい</li>
   <li>✅ レトロゲーム機を初めて買う入門機として</li>
 </ul>
@@ -650,8 +652,8 @@
 <p>ここまで読んでくれた方には、もう答えが見えているはずです。</p>
 
 <ul>
-  <li>🎮 <strong>持ち運びメイン・GBA SP世代・液晶保護重視 → <a href="#sec-2" class="product-link">Miyoo Mini Flip</a></strong></li>
-  <li>🎮 <strong>大きい画面・入門機・コスト優先・サブ機 → <a href="#sec-3" class="product-link">Miyoo Mini Plus</a></strong></li>
+  <li>🎮 <strong>持ち運びメイン・GBA SP世代・液晶保護重視 → <a href="#sec-2" class="product-link" data-dir="up">Miyoo Mini Flip</a></strong></li>
+  <li>🎮 <strong>大きい画面・入門機・コスト優先・サブ機 → <a href="#sec-3" class="product-link" data-dir="up">Miyoo Mini Plus</a></strong></li>
 </ul>
 
 <p>Miyoo Mini Flipは「この質感でこの値段はやばい」と断言できる一台です。折りたたみ機構・ボタンの押し心地・コンパクトさのすべてが高水準でまとまっています。GBAアドバンスSPを当時持っていた人なら、初めて手に取った瞬間に「これだ」と感じるはずです。</p>

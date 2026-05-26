@@ -34,7 +34,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
-    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
     .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
@@ -303,11 +305,11 @@
   <div class="toc-title">📋 この記事の目次</div>
   <ol>
       <li><a href="#sec-1">Moondropとは？世界が注目する中華イヤホンブランドを解説</a></li>
-      <li><a href="#sec-2">【オープンイヤー】<a href="#sec-2" class="product-link">Moondrop Pill</a>｜耳を塞がないながら聴き特化モデル</a></li>
-      <li><a href="#sec-3">【コスパ最強有線】<a href="#sec-3" class="product-link">Moondrop Kadenz</a>｜5,000円台で手に入る高解像サウンド</a></li>
-      <li><a href="#sec-4">【ゲーミング特化】<a href="#sec-4" class="product-link">Moondrop Rays</a>｜低遅延IEMでゲーム体験を変える</a></li>
-      <li><a href="#sec-5">【バランス接続対応】<a href="#sec-5" class="product-link">Moondrop LAN2</a>｜上位接続でさらに化けるミドルクラス</a></li>
-      <li><a href="#sec-6">【最安エントリー】<a href="#sec-6" class="product-link">Moondrop Chu II</a>｜3,000円以下で始めるMoondrop入門</a></li>
+      <li><a href="#sec-2">【オープンイヤー】<a href="#sec-2" class="product-link" data-dir="down">Moondrop Pill</a>｜耳を塞がないながら聴き特化モデル</a></li>
+      <li><a href="#sec-3">【コスパ最強有線】<a href="#sec-3" class="product-link" data-dir="down">Moondrop Kadenz</a>｜5,000円台で手に入る高解像サウンド</a></li>
+      <li><a href="#sec-4">【ゲーミング特化】<a href="#sec-4" class="product-link" data-dir="down">Moondrop Rays</a>｜低遅延IEMでゲーム体験を変える</a></li>
+      <li><a href="#sec-5">【バランス接続対応】<a href="#sec-5" class="product-link" data-dir="down">Moondrop LAN2</a>｜上位接続でさらに化けるミドルクラス</a></li>
+      <li><a href="#sec-6">【最安エントリー】<a href="#sec-6" class="product-link" data-dir="down">Moondrop Chu II</a>｜3,000円以下で始めるMoondrop入門</a></li>
       <li><a href="#sec-7">Moondropイヤホン5選を徹底比較｜一覧表で丸ごとチェック</a></li>
       <li><a href="#sec-8">Moondropイヤホンの失敗しない選び方｜4つのチェックポイント</a></li>
       <li><a href="#sec-9">Moondropイヤホンに関するよくある質問</a></li>
@@ -615,7 +617,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="#sec-2" class="product-link">Moondrop Pill</a></td>
+        <td><a href="#sec-2" class="product-link" data-dir="up">Moondrop Pill</a></td>
         <td>約¥8,092</td>
         <td>ワイヤレス（Bluetooth）</td>
         <td>ダイナミック</td>
@@ -623,7 +625,7 @@
         <td>テレワーク・ながら聴き・運動</td>
       </tr>
       <tr>
-        <td><a href="#sec-3" class="product-link">Moondrop Kadenz</a></td>
+        <td><a href="#sec-3" class="product-link" data-dir="up">Moondrop Kadenz</a></td>
         <td>約¥6,500</td>
         <td>有線（3.5mm）</td>
         <td>ダイナミック</td>
@@ -631,7 +633,7 @@
         <td>音楽鑑賞・アニソン・J-POP</td>
       </tr>
       <tr>
-        <td><a href="#sec-4" class="product-link">Moondrop Rays</a></td>
+        <td><a href="#sec-4" class="product-link" data-dir="up">Moondrop Rays</a></td>
         <td>約¥16,187</td>
         <td>ワイヤレス（低遅延）</td>
         <td>7.8mmダイナミック</td>
@@ -639,7 +641,7 @@
         <td>ゲーミング・リズムゲーム・FPS</td>
       </tr>
       <tr>
-        <td><a href="#sec-5" class="product-link">Moondrop LAN2</a></td>
+        <td><a href="#sec-5" class="product-link" data-dir="up">Moondrop LAN2</a></td>
         <td>約¥12,000</td>
         <td>有線（2.5mm/4.4mm バランス対応）</td>
         <td>ダイナミック</td>
@@ -647,7 +649,7 @@
         <td>本格音楽鑑賞・ポータブルDAC連携</td>
       </tr>
       <tr>
-        <td><a href="#sec-6" class="product-link">Moondrop Chu II</a></td>
+        <td><a href="#sec-6" class="product-link" data-dir="up">Moondrop Chu II</a></td>
         <td>約¥3,722</td>
         <td>有線（3.5mm）</td>
         <td>10mmダイナミック</td>
@@ -663,11 +665,11 @@
 <p>「どれを買えばいいか迷っている」という方向けに、シンプルに結論を出します。</p>
 
 <ul>
-  <li><strong>〜3,000円</strong>：<a href="#sec-6" class="product-link">Moondrop Chu II</a> 一択。まずMoondropの音を知るための最短ルート</li>
-  <li><strong>5,000〜7,000円</strong>：<a href="#sec-3" class="product-link">Moondrop Kadenz</a>。有線IEMとして圧倒的なコスパ。音楽をガチで聴きたい人向け</li>
-  <li><strong>8,000〜10,000円</strong>：<a href="#sec-2" class="product-link">Moondrop Pill</a>。ながら聴き・テレワーク中心ならオープンイヤーの快適さが上回る</li>
-  <li><strong>1万円台</strong>：<a href="#sec-5" class="product-link">Moondrop LAN2</a>。将来的にポータブルDACと組み合わせたい人に最適なステップアップ先</li>
-  <li><strong>ゲーム用途</strong>：<a href="#sec-4" class="product-link">Moondrop Rays</a>。低遅延が必要なら予算を確保してでもこれを選ぶ価値あり</li>
+  <li><strong>〜3,000円</strong>：<a href="#sec-6" class="product-link" data-dir="up">Moondrop Chu II</a> 一択。まずMoondropの音を知るための最短ルート</li>
+  <li><strong>5,000〜7,000円</strong>：<a href="#sec-3" class="product-link" data-dir="up">Moondrop Kadenz</a>。有線IEMとして圧倒的なコスパ。音楽をガチで聴きたい人向け</li>
+  <li><strong>8,000〜10,000円</strong>：<a href="#sec-2" class="product-link" data-dir="up">Moondrop Pill</a>。ながら聴き・テレワーク中心ならオープンイヤーの快適さが上回る</li>
+  <li><strong>1万円台</strong>：<a href="#sec-5" class="product-link" data-dir="up">Moondrop LAN2</a>。将来的にポータブルDACと組み合わせたい人に最適なステップアップ先</li>
+  <li><strong>ゲーム用途</strong>：<a href="#sec-4" class="product-link" data-dir="up">Moondrop Rays</a>。低遅延が必要なら予算を確保してでもこれを選ぶ価値あり</li>
 </ul>
 
 <hr>
@@ -679,10 +681,10 @@
 <p>Moondropのラインナップは用途ごとに最適解が明確に変わります。</p>
 
 <ul>
-  <li><strong>ながら聴き・環境音を遮断したくない</strong>→ <a href="#sec-2" class="product-link">Moondrop Pill</a>（オープンイヤー型）</li>
-  <li><strong>音楽鑑賞をガチで楽しみたい</strong>→ <a href="#sec-3" class="product-link">Moondrop Kadenz</a>（エントリー）/ Moondrop LAN2（ミドル）</li>
-  <li><strong>ゲームに本気で使いたい</strong>→ <a href="#sec-4" class="product-link">Moondrop Rays</a>（低遅延特化）</li>
-  <li><strong>とにかく安くMoondropを試したい</strong>→ <a href="#sec-6" class="product-link">Moondrop Chu II</a></li>
+  <li><strong>ながら聴き・環境音を遮断したくない</strong>→ <a href="#sec-2" class="product-link" data-dir="up">Moondrop Pill</a>（オープンイヤー型）</li>
+  <li><strong>音楽鑑賞をガチで楽しみたい</strong>→ <a href="#sec-3" class="product-link" data-dir="up">Moondrop Kadenz</a>（エントリー）/ Moondrop LAN2（ミドル）</li>
+  <li><strong>ゲームに本気で使いたい</strong>→ <a href="#sec-4" class="product-link" data-dir="up">Moondrop Rays</a>（低遅延特化）</li>
+  <li><strong>とにかく安くMoondropを試したい</strong>→ <a href="#sec-6" class="product-link" data-dir="up">Moondrop Chu II</a></li>
 </ul>
 
 <p>ワイヤレスイヤホン全般と比較したい場合は、<a href="/gadget/haylou-osusume.html">HAYLOUおすすめ3選</a>もチェックしてみてください。コスパ重視の別軸が見えてきます。</p>
@@ -692,11 +694,11 @@
 <p>Moondropは3,000円台から1万円以上まで幅広いラインナップを持ちます。予算を決めてから選ぶと迷いが減ります。</p>
 
 <ul>
-  <li><strong>〜¥4,000</strong>：<a href="#sec-6" class="product-link">Moondrop Chu II</a>（10mmダイナミック、有線）</li>
-  <li><strong>¥5,000〜¥7,000</strong>：<a href="#sec-3" class="product-link">Moondrop Kadenz</a>（ダイナミック、有線）</li>
-  <li><strong>¥8,000〜¥10,000</strong>：<a href="#sec-2" class="product-link">Moondrop Pill</a>（ワイヤレス、オープンイヤー）</li>
-  <li><strong>¥10,000〜¥13,000</strong>：<a href="#sec-5" class="product-link">Moondrop LAN2</a>（バランス対応有線）</li>
-  <li><strong>¥15,000〜</strong>：<a href="#sec-4" class="product-link">Moondrop Rays</a>（ゲーミング低遅延）</li>
+  <li><strong>〜¥4,000</strong>：<a href="#sec-6" class="product-link" data-dir="up">Moondrop Chu II</a>（10mmダイナミック、有線）</li>
+  <li><strong>¥5,000〜¥7,000</strong>：<a href="#sec-3" class="product-link" data-dir="up">Moondrop Kadenz</a>（ダイナミック、有線）</li>
+  <li><strong>¥8,000〜¥10,000</strong>：<a href="#sec-2" class="product-link" data-dir="up">Moondrop Pill</a>（ワイヤレス、オープンイヤー）</li>
+  <li><strong>¥10,000〜¥13,000</strong>：<a href="#sec-5" class="product-link" data-dir="up">Moondrop LAN2</a>（バランス対応有線）</li>
+  <li><strong>¥15,000〜</strong>：<a href="#sec-4" class="product-link" data-dir="up">Moondrop Rays</a>（ゲーミング低遅延）</li>
 </ul>
 
 <h3>③有線 vs ワイヤレスの選び方</h3>
@@ -786,11 +788,11 @@
 <p>最後に、用途別の最終推薦をまとめます。</p>
 
 <ul>
-  <li><strong>まずMoondropを試したい・予算を抑えたい</strong>→ <strong><a href="#sec-6" class="product-link">Moondrop Chu II</a></strong>（約¥3,722）</li>
-  <li><strong>有線IEMで音楽を本気で楽しみたい</strong>→ <strong><a href="#sec-3" class="product-link">Moondrop Kadenz</a></strong>（約¥6,500）</li>
-  <li><strong>ながら聴き・テレワーク用のワイヤレスが欲しい</strong>→ <strong><a href="#sec-2" class="product-link">Moondrop Pill</a></strong>（約¥8,092）</li>
-  <li><strong>バランス接続まで視野に入れたステップアップを考えている</strong>→ <strong><a href="#sec-5" class="product-link">Moondrop LAN2</a></strong>（約¥12,000）</li>
-  <li><strong>ゲーム・リズムゲームに特化したIEMが欲しい</strong>→ <strong><a href="#sec-4" class="product-link">Moondrop Rays</a></strong>（約¥16,187）</li>
+  <li><strong>まずMoondropを試したい・予算を抑えたい</strong>→ <strong><a href="#sec-6" class="product-link" data-dir="up">Moondrop Chu II</a></strong>（約¥3,722）</li>
+  <li><strong>有線IEMで音楽を本気で楽しみたい</strong>→ <strong><a href="#sec-3" class="product-link" data-dir="up">Moondrop Kadenz</a></strong>（約¥6,500）</li>
+  <li><strong>ながら聴き・テレワーク用のワイヤレスが欲しい</strong>→ <strong><a href="#sec-2" class="product-link" data-dir="up">Moondrop Pill</a></strong>（約¥8,092）</li>
+  <li><strong>バランス接続まで視野に入れたステップアップを考えている</strong>→ <strong><a href="#sec-5" class="product-link" data-dir="up">Moondrop LAN2</a></strong>（約¥12,000）</li>
+  <li><strong>ゲーム・リズムゲームに特化したIEMが欲しい</strong>→ <strong><a href="#sec-4" class="product-link" data-dir="up">Moondrop Rays</a></strong>（約¥16,187）</li>
 </ul>
 
 <p>どのモデルを選んでも「Moondropにして良かった」と感じるはずです。ぜひ自分の用途に合ったモデルを手に取ってみてください。</p>

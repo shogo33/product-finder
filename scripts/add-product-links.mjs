@@ -18,7 +18,9 @@ const NON_PRODUCT_KEYWORDS = [
 
 const CSS = `    html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
-    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
     .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }`;
 
@@ -81,7 +83,10 @@ function processFile(filepath) {
             (tdFull, tdOpen, tdContent, tdClose) => {
               if (done || tdContent.includes('product-link')) return tdFull;
               done = true;
-              return `${tdOpen}<a href="#${sec.id}" class="product-link">${tdContent}</a>${tdClose}`;
+              const secPos = content.indexOf(`id="${sec.id}"`);
+              const linkPos = full.length; // 比較表は記事上部にあるので基本 down
+              const dir = (secPos === -1 || linkPos < secPos) ? 'down' : 'up';
+              return `${tdOpen}<a href="#${sec.id}" class="product-link" data-dir="${dir}">${tdContent}</a>${tdClose}`;
             }
           );
           return `${trOpen}${newTr}${trClose}`;
@@ -105,7 +110,10 @@ function processFile(filepath) {
       if (liContent.includes('<a href="#')) return liFull;
       for (const { id, name } of modelMap) {
         if (liContent.includes(name)) {
-          const linked = liContent.replace(name, `<a href="#${id}" class="product-link">${name}</a>`);
+          const secPos = content.indexOf(`id="${id}"`);
+          const liPos = content.indexOf(liFull);
+          const dir = (secPos === -1 || liPos < secPos) ? 'down' : 'up';
+          const linked = liContent.replace(name, `<a href="#${id}" class="product-link" data-dir="${dir}">${name}</a>`);
           return `${liOpen}${linked}${liClose}`;
         }
       }

@@ -34,7 +34,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
-    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
     .toc a.product-link::after { content: none; }
     a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
@@ -307,17 +309,17 @@
   <div class="toc-title">📋 この記事の目次</div>
   <ol>
       <li><a href="#sec-1">UGREENのGaN充電器とは？ブランドの特徴と信頼性</a></li>
-      <li><a href="#sec-2"><a href="#sec-2" class="product-link">UGREEN Nexode 65W GaN充電器</a>｜1台でPC＋スマホをまかなえる万能モデル</a></li>
-      <li><a href="#sec-3"><a href="#sec-3" class="product-link">UGREEN Nexode 100W GaN充電器</a>｜MacBook Proユーザーに最適なハイパワーモデル</a></li>
-      <li><a href="#sec-4"><a href="#sec-4" class="product-link">UGREEN Nexode 140W GaN充電器</a>｜MacBook Pro 16インチも余裕で充電できる最強モデル</a></li>
-      <li><a href="#sec-5"><a href="#sec-5" class="product-link">UGREEN Nexode 45W GaN充電器</a>｜軽量コンパクトで旅行・外出に最適なモデル</a></li>
-      <li><a href="#sec-6"><a href="#sec-6" class="product-link">UGREEN Nexode Pro 160W GaN充電器</a>｜ゲーミングPCユーザー向けの超高出力モデル</a></li>
+      <li><a href="#sec-2"><a href="#sec-2" class="product-link" data-dir="down">UGREEN Nexode 65W GaN充電器</a>｜1台でPC＋スマホをまかなえる万能モデル</a></li>
+      <li><a href="#sec-3"><a href="#sec-3" class="product-link" data-dir="down">UGREEN Nexode 100W GaN充電器</a>｜MacBook Proユーザーに最適なハイパワーモデル</a></li>
+      <li><a href="#sec-4"><a href="#sec-4" class="product-link" data-dir="down">UGREEN Nexode 140W GaN充電器</a>｜MacBook Pro 16インチも余裕で充電できる最強モデル</a></li>
+      <li><a href="#sec-5"><a href="#sec-5" class="product-link" data-dir="down">UGREEN Nexode 45W GaN充電器</a>｜軽量コンパクトで旅行・外出に最適なモデル</a></li>
+      <li><a href="#sec-6"><a href="#sec-6" class="product-link" data-dir="down">UGREEN Nexode Pro 160W GaN充電器</a>｜ゲーミングPCユーザー向けの超高出力モデル</a></li>
       <li><a href="#sec-7">5モデルを徹底比較｜UGREENのGaN充電器スペック一覧表</a></li>
       <li><a href="#sec-8">アリエクでUGREEN GaN充電器を選ぶときの3つのポイント</a></li>
       <li><a href="#sec-9">コンパクトなGaN充電器を比較・選ぶときの基準とは？</a></li>
       <li><a href="#sec-10">UGREEN Nexode 65W レビューまとめ｜実際に使ってわかったこと</a></li>
       <li><a href="#sec-11">GaN充電器は発熱が少なく安全？従来型との違いを解説</a></li>
-      <li><a href="#sec-12"><a href="#sec-12" class="product-link">UGREEN GaN充電器で複数台を同時充電</a>｜ポート配分の考え方</a></li>
+      <li><a href="#sec-12"><a href="#sec-12" class="product-link" data-dir="down">UGREEN GaN充電器で複数台を同時充電</a>｜ポート配分の考え方</a></li>
       <li><a href="#sec-13">よくある質問｜UGREEN GaN充電器をアリエクで買う前に確認</a></li>
       <li><a href="#sec-14">まとめ｜あなたにぴったりのUGREEN GaN充電器をアリエクで手に入れよう</a></li>
   </ol>
@@ -596,7 +598,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="#sec-2" class="product-link">UGREEN Nexode 65W GaN充電器</a></td>
+            <td><a href="#sec-2" class="product-link" data-dir="up">UGREEN Nexode 65W GaN充電器</a></td>
             <td>65W</td>
             <td>USB-C×2＋USB-A×2</td>
             <td>約130g</td>
@@ -604,7 +606,7 @@
             <td>MacBook Air＋スマホを1台で賄いたい万能派</td>
           </tr>
           <tr>
-            <td><a href="#sec-3" class="product-link">UGREEN Nexode 100W GaN充電器</a></td>
+            <td><a href="#sec-3" class="product-link" data-dir="up">UGREEN Nexode 100W GaN充電器</a></td>
             <td>100W</td>
             <td>USB-C×3＋USB-A×1</td>
             <td>約170g</td>
@@ -612,7 +614,7 @@
             <td>MacBook Pro 14インチメインで複数台充電したい人</td>
           </tr>
           <tr>
-            <td><a href="#sec-4" class="product-link">UGREEN Nexode 140W GaN充電器</a></td>
+            <td><a href="#sec-4" class="product-link" data-dir="up">UGREEN Nexode 140W GaN充電器</a></td>
             <td>140W</td>
             <td>USB-C×3＋USB-A×1</td>
             <td>約200g</td>
@@ -620,7 +622,7 @@
             <td>MacBook Pro 16インチ＋PD3.1フル充電したいガチ勢</td>
           </tr>
           <tr>
-            <td><a href="#sec-5" class="product-link">UGREEN 45W GaN格納式ケーブル充電器</a></td>
+            <td><a href="#sec-5" class="product-link" data-dir="up">UGREEN 45W GaN格納式ケーブル充電器</a></td>
             <td>45W</td>
             <td>USB-C×2（格納式ケーブル付き）</td>
             <td>約65g</td>
@@ -628,7 +630,7 @@
             <td>旅行・出張のサブ充電器・荷物を最小化したい人</td>
           </tr>
           <tr>
-            <td><a href="#sec-6" class="product-link">UGREEN Nexode 200W GaN充電ステーション</a></td>
+            <td><a href="#sec-6" class="product-link" data-dir="up">UGREEN Nexode 200W GaN充電ステーション</a></td>
             <td>200W</td>
             <td>USB-C×4＋USB-A×4（8ポート）</td>
             <td>約450g</td>
@@ -643,9 +645,9 @@
     <p>迷っている方向けに、用途別のおすすめをざっくりまとめます：</p>
     <ul>
       <li><strong>一人暮らし・スマホ＋タブレット中心：</strong>UGREEN 45W GaN格納式ケーブル充電器（約4,900円）がコスパ最強</li>
-      <li><strong>MacBook Airユーザー：</strong><a href="#sec-2" class="product-link">UGREEN Nexode 65W GaN充電器</a>（約5,600円）が最もバランスが良い→<strong>編集部イチ推し</strong></li>
-      <li><strong>MacBook Proユーザー：</strong><a href="#sec-3" class="product-link">UGREEN Nexode 100W GaN充電器</a>（約8,100円）が安定の選択肢</li>
-      <li><strong>MacBook Pro 16インチ・PD3.1必須：</strong><a href="#sec-4" class="product-link">UGREEN Nexode 140W GaN充電器</a></li>
+      <li><strong>MacBook Airユーザー：</strong><a href="#sec-2" class="product-link" data-dir="up">UGREEN Nexode 65W GaN充電器</a>（約5,600円）が最もバランスが良い→<strong>編集部イチ推し</strong></li>
+      <li><strong>MacBook Proユーザー：</strong><a href="#sec-3" class="product-link" data-dir="up">UGREEN Nexode 100W GaN充電器</a>（約8,100円）が安定の選択肢</li>
+      <li><strong>MacBook Pro 16インチ・PD3.1必須：</strong><a href="#sec-4" class="product-link" data-dir="up">UGREEN Nexode 140W GaN充電器</a></li>
       <li><strong>ゲーミングPC・デスク据え置き派：</strong>UGREEN Nexode 200W GaN充電ステーション（約12,600円）</li>
     </ul>
     <p>電力按分時の補足も追記します。例えばNexode 100Wを全4ポート使用した場合、USB-C1が約45W・USB-C2が約30W・USB-C3が約15W・USB-Aが約10Wと自動配分されます。最大出力ポートを最も消費電力の高いデバイスに接続することが基本です。</p>
@@ -763,8 +765,8 @@
 
     <p>5モデルの選び方を最後に整理します：</p>
     <ul>
-      <li><strong>コスパ重視・万能型なら：</strong><a href="#sec-2" class="product-link">UGREEN Nexode 65W GaN充電器</a>（約5,600円）が最もバランスが良く、最初の1台として文句なしのおすすめ</li>
-      <li><strong>MacBook Pro使いのテレワーカーなら：</strong><a href="#sec-3" class="product-link">UGREEN Nexode 100W GaN充電器</a>（約8,100円）でACアダプター類を1台に集約できる</li>
+      <li><strong>コスパ重視・万能型なら：</strong><a href="#sec-2" class="product-link" data-dir="up">UGREEN Nexode 65W GaN充電器</a>（約5,600円）が最もバランスが良く、最初の1台として文句なしのおすすめ</li>
+      <li><strong>MacBook Pro使いのテレワーカーなら：</strong><a href="#sec-3" class="product-link" data-dir="up">UGREEN Nexode 100W GaN充電器</a>（約8,100円）でACアダプター類を1台に集約できる</li>
       <li><strong>旅行・出張のサブ機なら：</strong>UGREEN 45W GaN格納式ケーブル充電器（約4,900円）の格納式ケーブルが鞄の中で無敵の活躍をする</li>
       <li><strong>MacBook Pro 16インチ・ゲーミングPC派なら：</strong>UGREEN Nexode 140W〜200Wのハイエンドモデルへ</li>
     </ul>
