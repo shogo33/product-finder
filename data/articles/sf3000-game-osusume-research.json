@@ -146,14 +146,9 @@
         "https://ae-pic-a1.aliexpress-media.com/kf/S3d407f92d50d4b9fb3cd77c245eabe84S.jpg",
         "https://ae-pic-a1.aliexpress-media.com/kf/S7b012e517b8045ec9a0b6a7b71ffa0e0Y.jpg"
       ],
-      "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "SF3000 ポータブルゲームプレーヤー",
-        "asin": null,
-        "url": null
-      },
       "specResult": null,
-      "redditReviews": []
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/4nOQP4Q"
     }
   ]
 }
