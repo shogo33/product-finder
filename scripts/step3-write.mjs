@@ -331,6 +331,14 @@ const amazonRecHtml = amazonRecItems
   : '';
 articleBody = articleBody.replace('<!-- AMAZON_REC_PLACEHOLDER -->', amazonRecHtml);
 
+// ── ファーストビュー商品画像をTOC直前に注入 ─────────────────
+const fvImage = research.products[0]?.images?.[0];
+const fvName  = research.products[0]?.cleanName ?? '';
+if (fvImage) {
+  const fvHtml = `<figure class="fv-product-image">\n  <img src="${fvImage}" alt="${fvName}" loading="eager">\n</figure>`;
+  articleBody = articleBody.replace(/(<(?:nav|div)[^>]*class="toc")/, `${fvHtml}\n$1`);
+}
+
 // ── HTML全体を組み立て（template.htmlベース） ───────────────
 const title    = plan.selectedTitle;
 const desc     = plan.metaDescription ?? '';
@@ -455,11 +463,16 @@ const fullHtml = `<!DOCTYPE html>
     .amazon-rec-toggle { display: block; text-align: center; margin-top: 12px; color: #f59e0b; font-size: 0.82rem; font-weight: 700; cursor: pointer; background: none; border: 1px solid #fde68a; border-radius: 8px; padding: 8px; width: 100%; }
     .amazon-rec-toggle:hover { background: #fff8f0; }
 
-    /* Reddit引用（components.jsに未定義のため個別追加） */
-    .reddit-quote { background: #fff8f8; border-left: 4px solid var(--red); border-radius: 8px; padding: 16px 18px; margin: 20px 0; font-size: 0.9rem; line-height: 1.7; }
+    /* Reddit引用 / Xの声（Xブランドカラー=黒系） */
+    .reddit-quote { background: #f7f9f9; border-left: 4px solid #0f1419; border-radius: 8px; padding: 16px 18px; margin: 20px 0; font-size: 0.9rem; line-height: 1.7; }
     .reddit-quote p { margin: 0 0 8px; }
     .reddit-quote cite { font-size: 0.76rem; color: var(--muted); font-style: normal; }
-    .reddit-quote cite a { color: var(--red); text-decoration: none; }
+    .reddit-quote cite a { color: #0f1419; text-decoration: none; }
+    .reddit-voices h2 { border-left-color: #0f1419 !important; }
+
+    /* ファーストビュー商品画像 */
+    .fv-product-image { margin: 0 0 28px; text-align: center; }
+    .fv-product-image img { max-width: 480px; width: 100%; border-radius: 12px; object-fit: contain; max-height: 320px; }
 
     /* 商品カルーセル */
     .product-carousel { position: relative; margin: 16px 0 28px; border-radius: 12px; overflow: hidden; background: #f5f5f5; user-select: none; }
