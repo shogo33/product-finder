@@ -160,7 +160,10 @@
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -268,6 +271,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -287,7 +291,23 @@
     <p>「AliExpressのイヤホンって実際どうなの？」と気になっている方に、はっきり言います。<strong>1万円以下でこれだけの音が出るのか、と驚かされる製品がゴロゴロ転がっています。</strong></p>
     <p>私はAliExpressを使い始めて5年以上、1万円以下の中華イヤホンを30本以上試してきました。その中から自信を持っておすすめできる5モデルを厳選しました。失敗しない選び方から、用途別の最適解まで、全部まとめて解説します。</p>
 
-    <h2>アリエクイヤホンの選び方｜失敗しないための3つのポイント</h2>
+    <figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sb254357325a84f8a81f05f49e9cf78c5f.png" alt="Moondrop Pill" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">アリエクイヤホンの選び方｜失敗しないための3つのポイント</a></li>
+      <li><a href="#sec-2">【ながら聴き最強】Moondrop Pill｜耳を塞がないオープンイヤー型</a></li>
+      <li><a href="#sec-3">【通勤・外出最強】HAYLOU S40 ANC｜ノイキャン搭載ワイヤレスがこの価格</a></li>
+      <li><a href="#sec-4">【音質重視・有線】Moondrop Kadenz｜5,000円台で高解像サウンド</a></li>
+      <li><a href="#sec-5">【最安エントリー有線】Moondrop Chu II｜3,000円台でMoondropサウンドを体験</a></li>
+      <li><a href="#sec-6">【日常使い最安TWS】UGREEN HiTune S3｜3,000円以下で買えるワイヤレス</a></li>
+      <li><a href="#sec-7">アリエクイヤホン5選を徹底比較｜一覧表でチェック</a></li>
+      <li><a href="#sec-8">アリエクイヤホンに関するよくある質問</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">アリエクイヤホンの選び方｜失敗しないための3つのポイント</h2>
     <p>まず選び方を整理しておきます。ここを読まずに買うと、「思っていたのと違った」という後悔に直結するので、3分だけ付き合ってください。</p>
 
     <h3>①有線 vs ワイヤレス（TWS）｜使い方で決める</h3>
@@ -317,7 +337,7 @@
     <p>この記事で紹介する5製品は、すべて公式ストアへのリンクを貼っています。安心して購入してください。</p>
 
     <!-- @product-start id="1005009077661691" type="ガジェット" tag="ガジェット" -->
-    <h2>【ながら聴き最強】Moondrop Pill｜耳を塞がないオープンイヤー型</h2>
+    <h2 id="sec-2">【ながら聴き最強】Moondrop Pill｜耳を塞がないオープンイヤー型</h2>
     <p>オープンイヤー型TWSの中で、今もっとも注目している一台がMoondrop Pillです。</p>
 
     <div class="product-carousel" data-carousel>
@@ -364,7 +384,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005009390995992" type="ガジェット" tag="ガジェット" -->
-    <h2>【通勤・外出最強】HAYLOU S40 ANC｜ノイキャン搭載ワイヤレスがこの価格</h2>
+    <h2 id="sec-3">【通勤・外出最強】HAYLOU S40 ANC｜ノイキャン搭載ワイヤレスがこの価格</h2>
     <p>「ノイズキャンセリング搭載のTWSが7,000円台で買える」——この事実だけで十分すぎる選択肢です。</p>
 
     <div class="product-carousel" data-carousel>
@@ -419,7 +439,7 @@
     </div>
 
     <!-- @product-start id="moondrop-kadenz" type="ガジェット" tag="ガジェット" -->
-    <h2>【音質重視・有線】Moondrop Kadenz｜5,000円台で高解像サウンド</h2>
+    <h2 id="sec-4">【音質重視・有線】Moondrop Kadenz｜5,000円台で高解像サウンド</h2>
     <p>「音質だけに全振りした有線IEMが欲しい」——その答えがMoondrop Kadenzです。</p>
 
     <h3>Kadenzの音質傾向とスペック解説</h3>
@@ -453,7 +473,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005005801911172" type="ガジェット" tag="ガジェット" -->
-    <h2>【最安エントリー有線】Moondrop Chu II｜3,000円台でMoondropサウンドを体験</h2>
+    <h2 id="sec-5">【最安エントリー有線】Moondrop Chu II｜3,000円台でMoondropサウンドを体験</h2>
     <p>「3,700円でこんな音が出るの？」——Moondrop Chu IIを初めて聴いたとき、正直驚きました。</p>
 
     <div class="product-carousel" data-carousel>
@@ -498,7 +518,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005007145786996" type="ガジェット" tag="ガジェット" -->
-    <h2>【日常使い最安TWS】UGREEN HiTune S3｜3,000円以下で買えるワイヤレス</h2>
+    <h2 id="sec-6">【日常使い最安TWS】UGREEN HiTune S3｜3,000円以下で買えるワイヤレス</h2>
     <p>「とにかく安くワイヤレスイヤホンを手に入れたい」——その需要に完全に応えるのがUGREEN HiTune S3です。</p>
 
     <div class="product-carousel" data-carousel>
@@ -545,7 +565,7 @@
     </div>
     <!-- @product-end -->
 
-    <h2>アリエクイヤホン5選を徹底比較｜一覧表でチェック</h2>
+    <h2 id="sec-7">アリエクイヤホン5選を徹底比較｜一覧表でチェック</h2>
     <p>5モデルの特徴を一気に比較します。「どれを選べばいいか迷っている」という方はここを見れば答えが出ます。</p>
 
     <h3>価格・スペック・用途比較表</h3>
@@ -611,7 +631,7 @@
     </ul>
     <p>他のガジェットもまとめてチェックしたい方は<a href="/gadget/index.html">アリエクのガジェット・周辺機器おすすめ一覧</a>をどうぞ。</p>
 
-    <h2>アリエクイヤホンに関するよくある質問</h2>
+    <h2 id="sec-8">アリエクイヤホンに関するよくある質問</h2>
 
     <h3>FAQ一覧</h3>
 
@@ -786,6 +806,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

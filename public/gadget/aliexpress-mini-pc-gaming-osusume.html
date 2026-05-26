@@ -160,7 +160,10 @@
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -268,6 +271,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -290,7 +294,24 @@
 
 <p>自作PCとミニPCを10台以上渡り歩いてきた私が、2026年5月時点でAliExpressで買えるゲーミングミニPCのベスト5を徹底比較する。スペック数値と実ゲーム性能、コスパまで全部正直に書く。</p>
 
-<h2>AliExpressのゲーミングミニPCとは？国内との違いと注意点</h2>
+<figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0ce2473858dd47d2b9b7bf226e20ec23d.jpg" alt="MINISFORUM UM890/UM880 Pro ミニPC" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">AliExpressのゲーミングミニPCとは？国内との違いと注意点</a></li>
+      <li><a href="#sec-2">ゲーミングミニPCの選び方｜スペックと用途で失敗しないコツ</a></li>
+      <li><a href="#sec-3">【第1位】MINISFORUM UM890/UM880 Pro｜Ryzen AI 9 HX 370搭載の最強コスパ機</a></li>
+      <li><a href="#sec-4">【第2位】GMKtec K8 Plus｜Ryzen 7 8745HS搭載のコスパ最前線モデル</a></li>
+      <li><a href="#sec-5">【第3位】BEELINK SER8-8745HS｜コスパ重視ゲーマーへのド定番モデル</a></li>
+      <li><a href="#sec-6">【第4位】GMKtec K12｜コスパ特化の入門ゲーミングミニPCとして有力</a></li>
+      <li><a href="#sec-7">【第5位】MINISFORUM UM790｜Ryzen 9 7940HS搭載のロングセラー実力機</a></li>
+      <li><a href="#sec-8">ゲーミングミニPC比較表｜5モデルをスペックで一目比較</a></li>
+      <li><a href="#sec-9">よくある質問｜ゲーミングミニPCをAliExpressで買う前に確認</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">AliExpressのゲーミングミニPCとは？国内との違いと注意点</h2>
 
 <h3>ミニPCがゲームに使えるようになった理由</h3>
 
@@ -332,7 +353,7 @@
   <li><strong>冷却設計の確認</strong>：TDP 45Wを長時間維持できる冷却かどうか。レビューや海外サイトのサーマルテスト結果を購入前に調べるのが鉄則</li>
 </ol>
 
-<h2>ゲーミングミニPCの選び方｜スペックと用途で失敗しないコツ</h2>
+<h2 id="sec-2">ゲーミングミニPCの選び方｜スペックと用途で失敗しないコツ</h2>
 
 <h3>APU（CPU内蔵GPU）の性能で選ぶ</h3>
 
@@ -434,7 +455,7 @@
 </div>
 
 <!-- @product-start id="1005009585509514" type="ガジェット" tag="ガジェット" -->
-<h2>【第1位】MINISFORUM UM890/UM880 Pro｜Ryzen AI 9 HX 370搭載の最強コスパ機</h2>
+<h2 id="sec-3">【第1位】MINISFORUM UM890/UM880 Pro｜Ryzen AI 9 HX 370搭載の最強コスパ機</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -495,7 +516,7 @@
 </div>
 
 <!-- @product-start id="1005010535413125" type="ガジェット" tag="ガジェット" -->
-<h2>【第2位】GMKtec K8 Plus｜Ryzen 7 8745HS搭載のコスパ最前線モデル</h2>
+<h2 id="sec-4">【第2位】GMKtec K8 Plus｜Ryzen 7 8745HS搭載のコスパ最前線モデル</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -542,7 +563,7 @@
 <!-- @product-end -->
 
 <!-- @product-start id="1005009281790824" type="ガジェット" tag="ガジェット" -->
-<h2>【第3位】BEELINK SER8-8745HS｜コスパ重視ゲーマーへのド定番モデル</h2>
+<h2 id="sec-5">【第3位】BEELINK SER8-8745HS｜コスパ重視ゲーマーへのド定番モデル</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -591,7 +612,7 @@
 <!-- @product-end -->
 
 <!-- @product-start id="1005009707796111" type="ガジェット" tag="ガジェット" -->
-<h2>【第4位】GMKtec K12｜コスパ特化の入門ゲーミングミニPCとして有力</h2>
+<h2 id="sec-6">【第4位】GMKtec K12｜コスパ特化の入門ゲーミングミニPCとして有力</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -637,7 +658,7 @@
 <!-- @product-end -->
 
 <!-- @product-start id="1005005721866436" type="ガジェット" tag="ガジェット" -->
-<h2>【第5位】MINISFORUM UM790｜Ryzen 9 7940HS搭載のロングセラー実力機</h2>
+<h2 id="sec-7">【第5位】MINISFORUM UM790｜Ryzen 9 7940HS搭載のロングセラー実力機</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -693,7 +714,7 @@
 </div>
 <!-- @product-end -->
 
-<h2>ゲーミングミニPC比較表｜5モデルをスペックで一目比較</h2>
+<h2 id="sec-8">ゲーミングミニPC比較表｜5モデルをスペックで一目比較</h2>
 
 <h3>モデル別スペック・価格早見表</h3>
 
@@ -797,7 +818,7 @@
 
 <p>AliExpressのガジェット全般を探している人は、<a href="/gadget/index.html">アリエクのガジェット・周辺機器おすすめ記事一覧</a>もチェックしてみてほしい。</p>
 
-<h2>よくある質問｜ゲーミングミニPCをAliExpressで買う前に確認</h2>
+<h2 id="sec-9">よくある質問｜ゲーミングミニPCをAliExpressで買う前に確認</h2>
 
 <h3>Q1. AliExpressのミニPCは関税・輸入税がかかりますか？</h3>
 
@@ -1055,6 +1076,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

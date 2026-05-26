@@ -160,7 +160,10 @@
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -268,6 +271,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -289,7 +293,23 @@
     <p>AliExpressで中華ゲーム機を10台以上買い漁ってきた自分が、SF3000を手に取ったとき正直ちょっと驚きました。「これが2,980円…？」という感覚です。ガチャガチャ1回分の値段でレトロゲーム機が手に入る時代、SF3000はその象徴的な存在になりつつあります。</p>
     <p>この記事では、SF3000のスペック・実機の動作検証・CFWの話・買い方まで、ファミコン・スーファミ世代の自分が全部正直に書きます。購入を迷っている人の背中を押せれば幸いです。</p>
 
-    <h2>SF3000とは？今一番バズっている激安レトロゲーム機</h2>
+    <figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S4ce70367b1fe461287397d510b18f59fH.jpg" alt="SF3000" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">SF3000とは？今一番バズっている激安レトロゲーム機</a></li>
+      <li><a href="#sec-2">【実機レビュー】2,000円でどこまで遊べるか正直に検証</a></li>
+      <li><a href="#sec-3">SF3000のCFW（カスタムファームウェア）入門</a></li>
+      <li><a href="#sec-4">SF3000 vs Amazon並行輸入品：なぜアリエクが断然お得か</a></li>
+      <li><a href="#sec-5">SF3000の買い方ガイド：アリエクでChoiceを使って最安値で</a></li>
+      <li><a href="#sec-6">SF3000に関するよくある質問（FAQ）</a></li>
+      <li><a href="#sec-7">まとめ：SF3000はガチャガチャ感覚で買える最高の激安レトロ機</a></li>
+      <li><a href="#sec-8">Xでの声</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">SF3000とは？今一番バズっている激安レトロゲーム機</h2>
 
     <h3>4.5インチIPSスクリーン搭載の本格スペック</h3>
     <p>SF3000は、AliExpressで現在最も注目を集めているLinuxベースのポータブルゲーム機です。最大の特徴は<strong>4.5インチIPSスクリーン</strong>。この価格帯では破格のサイズと画質です。</p>
@@ -334,7 +354,7 @@
 
     <!-- @product-start id="1005008463137295" type="ガジェット" tag="ガジェット" -->
 
-    <h2>【実機レビュー】2,000円でどこまで遊べるか正直に検証</h2>
+    <h2 id="sec-2">【実機レビュー】2,000円でどこまで遊べるか正直に検証</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -409,7 +429,7 @@
 
     <!-- @product-end -->
 
-    <h2>SF3000のCFW（カスタムファームウェア）入門</h2>
+    <h2 id="sec-3">SF3000のCFW（カスタムファームウェア）入門</h2>
 
     <h3>sf3000_toolchainとは？なぜ話題になっているか</h3>
     <p>SF3000が単なる激安ゲーム機で終わらない理由、それが<strong>CFW（カスタムファームウェア）コミュニティの存在</strong>です。</p>
@@ -452,7 +472,7 @@
 
     <p>類似機種との比較が気になる方は、<a href="/game/anbernic-rg35xx-h-osusume.html">ANBERNIC RG35XX Hレビュー</a>も参考にしてください。SF3000より上位のスペックを求めるなら選択肢に入ります。</p>
 
-    <h2>SF3000 vs Amazon並行輸入品：なぜアリエクが断然お得か</h2>
+    <h2 id="sec-4">SF3000 vs Amazon並行輸入品：なぜアリエクが断然お得か</h2>
 
     <h3>価格比較：アリエク2,000円台 vs Amazon4,000〜5,000円</h3>
     <p>SF3000をAmazonで検索すると、サードパーティの転売出品が4,000〜5,000円前後で出てきます。同じ商品が倍近い値段で売られているわけです。これは明確に損です。</p>
@@ -502,7 +522,7 @@
     <p>「失敗しても2,000円なら諦められる」という心理的ハードルの低さも、AliExpressで直接買う大きな理由の一つです。4,000〜5,000円払って失敗したらダメージが大きいですが、2,980円なら「まあいい経験した」で済みます。</p>
     <p>同じアリエクで別の機種も気になる方は、<a href="/game/miyoo-mini-flip-osusume.html">Miyoo Mini Flipレビュー</a>もチェックしてみてください。フリップ型のユニークなデザインが好きな人に刺さる機種です。</p>
 
-    <h2>SF3000の買い方ガイド：アリエクでChoiceを使って最安値で</h2>
+    <h2 id="sec-5">SF3000の買い方ガイド：アリエクでChoiceを使って最安値で</h2>
 
     <h3>公式・信頼できるセラーの見分け方</h3>
     <p>AliExpressでSF3000を最安値・安心して買うためのポイントを整理します。</p>
@@ -535,7 +555,7 @@
       </div>
     </div>
 
-    <h2>SF3000に関するよくある質問（FAQ）</h2>
+    <h2 id="sec-6">SF3000に関するよくある質問（FAQ）</h2>
 
     <h3>Q1: SF3000でPSPのゲームは動きますか？</h3>
     <p><strong>A：動きますが、タイトルによります。</strong> 軽量な2DタイトルやRPGであれば動作しますが、『モンスターハンターポータブル 3rd』や『リッジレーサー』のような3D処理が重いタイトルはフレームレートが落ちて厳しいです。「PSPを快適にガッツリ遊びたい」という目的なら、SF3000より上位スペックの機種（<a href="/game/anbernic-rg35xx-h-osusume.html">ANBERNIC RG35XX H</a>など）を検討することをおすすめします。SF3000のPS1・PSP動作はあくまでおまけ程度に考えておくのがベストです。</p>
@@ -552,7 +572,7 @@
     <h3>Q5: SF3000のCFWを導入するのは難しいですか？</h3>
     <p><strong>A：Linuxの基礎知識があれば難しくはありませんが、初心者には少し敷居があります。</strong> GitHubの「sf3000_toolchain」プロジェクトのREADMEに手順が英語で書かれており、コマンドライン操作が伴います。ただし、コミュニティでは日本語・英語ともにガイドが充実してきており、「手順通りにやれば入れられた」という報告も多いです。まずはデフォルト状態で遊んでみて、物足りなくなってからCFWに挑戦するのがおすすめです。</p>
 
-    <h2>まとめ：SF3000はガチャガチャ感覚で買える最高の激安レトロ機</h2>
+    <h2 id="sec-7">まとめ：SF3000はガチャガチャ感覚で買える最高の激安レトロ機</h2>
     <p>SF3000を一言でまとめるとこうなります。</p>
     <p><strong>「2,980円でここまで遊べるなら、買わない理由がない。」</strong></p>
     <p>GBA・スーファミ・メガドライブ・ファミコンは快適に動作。PS1もほぼ問題なし。4.5インチIPSスクリーンは発色が良く、レトロゲームのドット絵が映える。USB-C充電対応で日常使いも楽。</p>
@@ -572,7 +592,7 @@
     <!-- VOICE-START -->
 <div class="container">
   <div class="reddit-voices">
-    <h2 style="font-size:1.1rem;font-weight:700;margin:0 0 16px;">Xでの声</h2>
+    <h2 style="font-size:1.1rem;font-weight:700;margin:0 0 16px;" id="sec-8">Xでの声</h2>
 
     <blockquote class="reddit-quote">
       <p>「SF3000、実際に触れてみました。最初の一発目のスタートは快調で、PSPのゲームも動いてびっくりした」</p>
@@ -691,6 +711,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

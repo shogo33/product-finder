@@ -160,7 +160,10 @@
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -268,6 +271,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -284,7 +288,24 @@
 <div class="container">
 <div class="article-body">
 
-<h2>Moondropとは？世界が注目する中華イヤホンブランドを解説</h2>
+<figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sb254357325a84f8a81f05f49e9cf78c5f.png" alt="Moondrop Pill" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">Moondropとは？世界が注目する中華イヤホンブランドを解説</a></li>
+      <li><a href="#sec-2">【オープンイヤー】Moondrop Pill｜耳を塞がないながら聴き特化モデル</a></li>
+      <li><a href="#sec-3">【コスパ最強有線】Moondrop Kadenz｜5,000円台で手に入る高解像サウンド</a></li>
+      <li><a href="#sec-4">【ゲーミング特化】Moondrop Rays｜低遅延IEMでゲーム体験を変える</a></li>
+      <li><a href="#sec-5">【バランス接続対応】Moondrop LAN2｜上位接続でさらに化けるミドルクラス</a></li>
+      <li><a href="#sec-6">【最安エントリー】Moondrop Chu II｜3,000円以下で始めるMoondrop入門</a></li>
+      <li><a href="#sec-7">Moondropイヤホン5選を徹底比較｜一覧表で丸ごとチェック</a></li>
+      <li><a href="#sec-8">Moondropイヤホンの失敗しない選び方｜4つのチェックポイント</a></li>
+      <li><a href="#sec-9">Moondropイヤホンに関するよくある質問</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">Moondropとは？世界が注目する中華イヤホンブランドを解説</h2>
 
 <h3>Moondropの歴史と音響哲学</h3>
 
@@ -323,7 +344,7 @@
 <hr>
 
 <!-- @product-start id="1005009077661691" type="ガジェット" tag="ガジェット" -->
-<h2>【オープンイヤー】Moondrop Pill｜耳を塞がないながら聴き特化モデル</h2>
+<h2 id="sec-2">【オープンイヤー】Moondrop Pill｜耳を塞がないながら聴き特化モデル</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -375,7 +396,7 @@
 <hr>
 
 <!-- @product-start id="moondrop-kadenz" type="ガジェット" tag="ガジェット" -->
-<h2>【コスパ最強有線】Moondrop Kadenz｜5,000円台で手に入る高解像サウンド</h2>
+<h2 id="sec-3">【コスパ最強有線】Moondrop Kadenz｜5,000円台で手に入る高解像サウンド</h2>
 
 <h3>Kadenzのドライバー構成と音質傾向</h3>
 
@@ -424,7 +445,7 @@
 </div>
 
 <!-- @product-start id="1005009138171383" type="ガジェット" tag="ガジェット" -->
-<h2>【ゲーミング特化】Moondrop Rays｜低遅延IEMでゲーム体験を変える</h2>
+<h2 id="sec-4">【ゲーミング特化】Moondrop Rays｜低遅延IEMでゲーム体験を変える</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -467,7 +488,7 @@
 <hr>
 
 <!-- @product-start id="moondrop-lan2" type="ガジェット" tag="ガジェット" -->
-<h2>【バランス接続対応】Moondrop LAN2｜上位接続でさらに化けるミドルクラス</h2>
+<h2 id="sec-5">【バランス接続対応】Moondrop LAN2｜上位接続でさらに化けるミドルクラス</h2>
 
 <h3>LAN2のスペックと音質傾向</h3>
 
@@ -509,7 +530,7 @@
 <hr>
 
 <!-- @product-start id="1005005801911172" type="ガジェット" tag="ガジェット" -->
-<h2>【最安エントリー】Moondrop Chu II｜3,000円以下で始めるMoondrop入門</h2>
+<h2 id="sec-6">【最安エントリー】Moondrop Chu II｜3,000円以下で始めるMoondrop入門</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -568,7 +589,7 @@
 
 <hr>
 
-<h2>Moondropイヤホン5選を徹底比較｜一覧表で丸ごとチェック</h2>
+<h2 id="sec-7">Moondropイヤホン5選を徹底比較｜一覧表で丸ごとチェック</h2>
 
 <h3>価格・スペック・用途比較表</h3>
 
@@ -643,7 +664,7 @@
 
 <hr>
 
-<h2>Moondropイヤホンの失敗しない選び方｜4つのチェックポイント</h2>
+<h2 id="sec-8">Moondropイヤホンの失敗しない選び方｜4つのチェックポイント</h2>
 
 <h3>①使い方で選ぶ｜ながら聴き・音楽・ゲームで変わる最適解</h3>
 
@@ -699,7 +720,7 @@
 
 <hr>
 
-<h2>Moondropイヤホンに関するよくある質問</h2>
+<h2 id="sec-9">Moondropイヤホンに関するよくある質問</h2>
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
@@ -918,6 +939,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

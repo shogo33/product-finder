@@ -331,10 +331,30 @@ const amazonRecHtml = amazonRecItems
   : '';
 articleBody = articleBody.replace('<!-- AMAZON_REC_PLACEHOLDER -->', amazonRecHtml);
 
-// ── ファーストビュー商品画像をTOC直前に注入 ─────────────────
-const fvImage = research.products[0]?.images?.[0];
+// ── H2にID付与 → TOC自動生成 → FV画像＋TOCを最初のH2前に注入 ──
+const fvImage = research.products[0]?.images?.[0] ?? '';
 const fvName  = research.products[0]?.cleanName ?? '';
-if (fvImage) {
+
+if (!articleBody.includes('class="toc"')) {
+  // 新テンプレート: H2にID付与してTOC生成
+  let secIdx = 0;
+  articleBody = articleBody.replace(/<h2([^>]*)>/g, (match, attrs) => {
+    if (/id=/.test(attrs)) return match;
+    secIdx++;
+    return `<h2${attrs} id="sec-${secIdx}">`;
+  });
+  const h2Matches = [...articleBody.matchAll(/<h2[^>]+id="(sec-\d+)"[^>]*>([\s\S]*?)<\/h2>/g)];
+  if (h2Matches.length >= 2) {
+    const tocItems = h2Matches.map(([, id, inner]) => {
+      const text = inner.replace(/<[^>]+>/g, '').trim();
+      return `      <li><a href="#${id}">${text}</a></li>`;
+    }).join('\n');
+    const tocHtml = `<nav class="toc">\n  <div class="toc-title">📋 この記事の目次</div>\n  <ol>\n${tocItems}\n  </ol>\n</nav>`;
+    const fvHtml = fvImage ? `<figure class="fv-product-image">\n  <img src="${fvImage}" alt="${fvName}" loading="eager">\n</figure>\n` : '';
+    articleBody = articleBody.replace(/(<h2[^>]+id="sec-1")/, `${fvHtml}${tocHtml}\n$1`);
+  }
+} else if (fvImage) {
+  // 旧テンプレート: 既存TOC直前にFV画像注入
   const fvHtml = `<figure class="fv-product-image">\n  <img src="${fvImage}" alt="${fvName}" loading="eager">\n</figure>`;
   articleBody = articleBody.replace(/(<(?:nav|div)[^>]*class="toc")/, `${fvHtml}\n$1`);
 }
@@ -508,6 +528,9 @@ const fullHtml = `<!DOCTYPE html>
     .pc-float-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
   </style>
 
   ${'<!-- Google tag (gtag.js) -->'}
@@ -522,6 +545,7 @@ const fullHtml = `<!DOCTYPE html>
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 ${articleBody}
@@ -578,6 +602,16 @@ ${articleBody}
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

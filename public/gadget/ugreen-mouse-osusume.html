@@ -159,7 +159,10 @@
     .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
     .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -267,6 +270,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -286,7 +290,26 @@
     <p>「UGREENのマウスって実際どうなの？」という疑問、正直わかります。AliExpressで周辺機器を漁り続けて気づいたのですが、UGREENはマウスカテゴリでも<strong>「この価格でこのクオリティ？」</strong>という体験を何度もさせてくれるブランドです。</p>
     <p>ただ、ラインナップが増えすぎていて「どれを選べばいいか」で詰まる人が多い。この記事では実際に複数台使い比べた視点から、<strong>2026年時点のベスト4モデルを用途別に厳選</strong>して解説します。</p>
 
-    <h2>UGREENマウスはなぜおすすめ？ブランドの特徴と強み</h2>
+    <figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/Scd0c0c60add74c2ea20511d89baaaf2dW.jpg" alt="UGREEN Wireless Mouse 4000DPI" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">UGREENマウスはなぜおすすめ？ブランドの特徴と強み</a></li>
+      <li><a href="#sec-2">【第1位】UGREEN Wireless Mouse 4000DPI｜コスパ最強・静音サイレントの定番モデル</a></li>
+      <li><a href="#sec-3">【第2位】UGREEN Wireless Silent Mouse｜最安値で静音性を手に入れる</a></li>
+      <li><a href="#sec-4">【第3位】UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G｜腱鞘炎予防・長時間作業に最適</a></li>
+      <li><a href="#sec-5">【第4位】UGREEN Hyper-Fast Scroll Mouse｜超高速スクロールホイール・Bluetooth対応</a></li>
+      <li><a href="#sec-6">UGREENマウス4選スペック比較表</a></li>
+      <li><a href="#sec-7">UGREENマウスの選び方｜失敗しない4つのポイント</a></li>
+      <li><a href="#sec-8">UGREENの静音ワイヤレスマウスが向いている人・向いていない人</a></li>
+      <li><a href="#sec-9">UGREEN F200 レビュー｜コンパクト設計と使い心地を詳しくチェック</a></li>
+      <li><a href="#sec-10">UGREENマウスに関するよくある質問</a></li>
+      <li><a href="#sec-11">まとめ：UGREENマウスはAliExpressで買うのがお得！</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">UGREENマウスはなぜおすすめ？ブランドの特徴と強み</h2>
 
     <h3>コスパと品質を両立するUGREENのものづくり</h3>
     <p>UGREENは2012年に設立された中国の周辺機器ブランドです。ケーブル・充電器・USBハブからスタートし、今やマウス・キーボード・イヤホンまでカバーする総合ガジェットブランドに成長しています。</p>
@@ -311,7 +334,7 @@
     <p>この4軸を念頭に置いて、自分のメイン用途に合ったモデルを選ぶのが失敗しない方法です。</p>
 
     <!-- @product-start id="1005010407250939" type="ガジェット" tag="ガジェット" -->
-    <h2>【第1位】UGREEN Wireless Mouse 4000DPI｜コスパ最強・静音サイレントの定番モデル</h2>
+    <h2 id="sec-2">【第1位】UGREEN Wireless Mouse 4000DPI｜コスパ最強・静音サイレントの定番モデル</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -365,7 +388,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005006775919743" type="ガジェット" tag="ガジェット" -->
-    <h2>【第2位】UGREEN Wireless Silent Mouse｜最安値で静音性を手に入れる</h2>
+    <h2 id="sec-3">【第2位】UGREEN Wireless Silent Mouse｜最安値で静音性を手に入れる</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -421,7 +444,7 @@
       <p>TikTokで見たアレ、AliExpressで見つかるかも。<br>スワイプするだけで掘り出し物に出会えます。</p>
       <a href="https://aliswipe.com/app/" target="_blank" rel="noopener">スワイプでおすすめ商品を見る</a>
     </div>
-    <h2>【第3位】UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G｜腱鞘炎予防・長時間作業に最適</h2>
+    <h2 id="sec-4">【第3位】UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G｜腱鞘炎予防・長時間作業に最適</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -469,7 +492,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005007592535777" type="ガジェット" tag="ガジェット" -->
-    <h2>【第4位】UGREEN Hyper-Fast Scroll Mouse｜超高速スクロールホイール・Bluetooth対応</h2>
+    <h2 id="sec-5">【第4位】UGREEN Hyper-Fast Scroll Mouse｜超高速スクロールホイール・Bluetooth対応</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -513,7 +536,7 @@
     </div>
     <!-- @product-end -->
 
-    <h2>UGREENマウス4選スペック比較表</h2>
+    <h2 id="sec-6">UGREENマウス4選スペック比較表</h2>
 
     <h3>スペック一覧で違いを一目チェック</h3>
 
@@ -578,7 +601,7 @@
     </ul>
     <p>「何を買えばいいかわからない」という人は<strong>UGREEN Wireless Mouse 4000DPIを選んでおけば間違いありません</strong>。静音・高DPI・Mac対応と三拍子揃っています。</p>
 
-    <h2>UGREENマウスの選び方｜失敗しない4つのポイント</h2>
+    <h2 id="sec-7">UGREENマウスの選び方｜失敗しない4つのポイント</h2>
 
     <h3>接続方式（有線・2.4GHz・Bluetooth）の違いと選び方</h3>
     <p>接続方式はユースケースによって最適解が変わります：</p>
@@ -629,19 +652,19 @@
 
     
 
-<h2>UGREENの静音ワイヤレスマウスが向いている人・向いていない人</h2>
+<h2 id="sec-8">UGREENの静音ワイヤレスマウスが向いている人・向いていない人</h2>
 <p>UGREENの静音ワイヤレスマウスは、オフィスや図書館など周囲に音を気にする環境で使いたい人、深夜に自宅で作業する人にとって特に相性がいいモデルが揃っています。クリック音が気になってマウス選びを迷っていたなら、まず候補に入れて損はないブランドです。</p>
 <p>一方で、クリックの打鍵感やカチッとしたフィードバックを重視するゲーマーや、精密な操作が求められるグラフィックデザインのヘビーユーザーには、物足りなさを感じるケースもあります。静音モデルは構造上、クリックの反応が柔らかくなりやすいため、用途とのミスマッチに注意しましょう。</p>
 <p>「静かさ」と「使い勝手」のどちらをより優先するかを先に整理しておくと、今回紹介した4モデルの中から自分にぴったりの1台をスムーズに絞り込めます。迷ったときは選び方セクションのチェックポイントも参考にしてみてください。</p>
 
 
 
-<h2>UGREEN F200 レビュー｜コンパクト設計と使い心地を詳しくチェック</h2>
+<h2 id="sec-9">UGREEN F200 レビュー｜コンパクト設計と使い心地を詳しくチェック</h2>
 <p>UGREEN F200は、薄型・軽量ボディを特徴とするワイヤレスマウスで、外出先でのノートPC作業やデスクスペースを広く使いたいユーザーから注目を集めているモデルです。手のひらにすっぽり収まるコンパクトサイズながら、2.4GHz無線接続による安定した操作感を実現しており、持ち運びを重視する方にとって有力な選択肢となっています。</p>
 <p>実際の使用感としては、クリック音は比較的静かで図書館やカフェなどの静かな環境でも気になりにくい印象です。ただし、手の大きい方や長時間のデスクワークには、第3位のエルゴノミクスモデルのほうがフィットする場合もあるため、自分の使い方や手のサイズと照らし合わせて検討するのがおすすめです。</p>
 <p>価格帯はUGREENの中でも手を出しやすいラインに位置しており、AliExpressでのセール時にはさらにお得に購入できるケースがあります。「とにかく軽くて小さいマウスが欲しい」という方はF200を候補に加えてみてください。</p>
 
-<h2>UGREENマウスに関するよくある質問</h2>
+<h2 id="sec-10">UGREENマウスに関するよくある質問</h2>
 
     <h3>Q&A：購入前の疑問をまとめて解決</h3>
 
@@ -695,7 +718,7 @@
       </div>
     </div>
     <!-- VOICE-END -->
-<h2>まとめ：UGREENマウスはAliExpressで買うのがお得！</h2>
+<h2 id="sec-11">まとめ：UGREENマウスはAliExpressで買うのがお得！</h2>
 
     <h3>4選の総評と最終おすすめ</h3>
     <p>今回紹介した4モデルを用途別に3行でまとめます：</p>
@@ -897,6 +920,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

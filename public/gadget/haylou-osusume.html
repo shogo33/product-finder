@@ -160,7 +160,10 @@
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -268,6 +271,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -284,7 +288,23 @@
 <div class="container">
   <div class="article-body">
 
-    <h2>HAYLOUとは？Xiaomi系コスパブランドの実力を解説</h2>
+    <figure class="fv-product-image">
+  <img src="/images/products/haylou-osusume/2fe82030.jpg" alt="HAYLOU S40 ANC" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">HAYLOUとは？Xiaomi系コスパブランドの実力を解説</a></li>
+      <li><a href="#sec-2">HAYLOU S30 Pro レビュー｜コスパ最強のTWSイヤホン</a></li>
+      <li><a href="#sec-3">HAYLOU S40 ANC レビュー｜ANC搭載で3,000円台の衝撃</a></li>
+      <li><a href="#sec-4">HAYLOU Mori Pro レビュー｜スマートウォッチ入門の決定版</a></li>
+      <li><a href="#sec-5">HAYLOUおすすめ3選の比較表｜一目でわかるモデル選び</a></li>
+      <li><a href="#sec-6">HAYLOUの失敗しない選び方｜用途・予算別チェックポイント</a></li>
+      <li><a href="#sec-7">HAYLOU おすすめに関するよくある質問（FAQ）</a></li>
+      <li><a href="#sec-8">まとめ｜あなたにぴったりのHAYLOUを選んでアリエクでお得に買おう</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">HAYLOUとは？Xiaomi系コスパブランドの実力を解説</h2>
 
     <h3>HAYLOUのブランド概要と歴史</h3>
     <p>HAYLOUはXiaomiのエコシステムから生まれたオーディオ・ウェアラブルブランドです。2019年頃にXiaomiが出資するスタートアップとしてスタートし、「Xiaomiのモノ作り哲学×ガジェットに特化した機動力」で急速に製品ラインを拡充してきました。</p>
@@ -307,7 +327,7 @@
     <p>AliExpressでは<strong>HAYLOU Official Store</strong>を必ず選ぶこと。これが偽物を掴まされないための最重要ポイントです（詳細はFAQで解説）。</p>
     <p>中華ガジェット沼を100台以上渡り歩いてきた経験から断言しますが、HAYLOUほど「値段の割に外れが少ないブランド」はそうそうありません。初めて中華ガジェットを買う方にも自信を持っておすすめできるブランドです。</p>
 
-    <h2>HAYLOU S30 Pro レビュー｜コスパ最強のTWSイヤホン</h2>
+    <h2 id="sec-2">HAYLOU S30 Pro レビュー｜コスパ最強のTWSイヤホン</h2>
 
     <!-- @product-start id="s30pro" type="ガジェット" tag="ガジェット" -->
 
@@ -342,7 +362,7 @@
 
     <!-- @product-end -->
 
-    <h2>HAYLOU S40 ANC レビュー｜ANC搭載で3,000円台の衝撃</h2>
+    <h2 id="sec-3">HAYLOU S40 ANC レビュー｜ANC搭載で3,000円台の衝撃</h2>
 
     <!-- @product-start id="1005009390995992" type="ガジェット" tag="ガジェット" -->
 
@@ -427,7 +447,7 @@
       <a href="https://aliswipe.com/app/" target="_blank" rel="noopener">スワイプでおすすめ商品を見る →</a>
     </div>
 
-    <h2>HAYLOU Mori Pro レビュー｜スマートウォッチ入門の決定版</h2>
+    <h2 id="sec-4">HAYLOU Mori Pro レビュー｜スマートウォッチ入門の決定版</h2>
 
     <!-- @product-start id="1005009023345001" type="ガジェット" tag="ガジェット" -->
 
@@ -475,7 +495,7 @@
 
     <!-- @product-end -->
 
-    <h2>HAYLOUおすすめ3選の比較表｜一目でわかるモデル選び</h2>
+    <h2 id="sec-5">HAYLOUおすすめ3選の比較表｜一目でわかるモデル選び</h2>
 
     <h3>スペック比較表で全モデルを総チェック</h3>
 
@@ -553,7 +573,7 @@
 
     <p>なお、ランニング・アウトドアで内蔵GPSを使いたい方や、骨伝導イヤホンが気になる方は、同ブランドのスポーツウォッチ・骨伝導ラインも調べてみてください。HAYLOUのラインナップは幅広く、予算と用途を絞り込めばほぼ必ずベストアンサーが見つかります。</p>
 
-    <h2>HAYLOUの失敗しない選び方｜用途・予算別チェックポイント</h2>
+    <h2 id="sec-6">HAYLOUの失敗しない選び方｜用途・予算別チェックポイント</h2>
 
     <h3>イヤホンの選び方：ANCの有無・接続方式・装着スタイル</h3>
     <p>HAYLOUのイヤホンを選ぶ際、最初に決めるべきことはたった一つ。<strong>「ノイキャン（ANC）が必要か否か」</strong>です。</p>
@@ -594,7 +614,7 @@
 
     <p>Xiaomiエコシステムのウェアラブルと迷っている方は、<a href="/gadget/xiaomi-band10-strap-osusume.html">Xiaomi Smart Band 9/10のおすすめバンド</a>の記事もあわせてどうぞ。</p>
 
-    <h2>HAYLOU おすすめに関するよくある質問（FAQ）</h2>
+    <h2 id="sec-7">HAYLOU おすすめに関するよくある質問（FAQ）</h2>
 
     <div itemscope itemtype="https://schema.org/FAQPage">
 
@@ -645,7 +665,7 @@
 
     </div>
 
-    <h2>まとめ｜あなたにぴったりのHAYLOUを選んでアリエクでお得に買おう</h2>
+    <h2 id="sec-8">まとめ｜あなたにぴったりのHAYLOUを選んでアリエクでお得に買おう</h2>
 
     <h3>用途別おすすめモデルを最終整理</h3>
     <p>最後に、シチュエーション別のおすすめを一言でまとめます。</p>
@@ -807,6 +827,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

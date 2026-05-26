@@ -160,7 +160,10 @@
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -268,6 +271,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -284,7 +288,24 @@
 <div class="container">
   <div class="article-body">
 
-    <h2>SHARGEとは？デスクに置くだけで「映える」充電ブランドの正体</h2>
+    <figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sb91b4c338ec84c0e8bd62279aed832d8I.png" alt="SHARGEEK 140 パワーバンク 20000mAh 140W" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">SHARGEとは？デスクに置くだけで「映える」充電ブランドの正体</a></li>
+      <li><a href="#sec-2">【ヒーロー機】SHARGEEK 140 レビュー──透明ボディ×140Wの最強コンビ</a></li>
+      <li><a href="#sec-3">【プレミアム機】SHARGEEK 170 レビュー──業界最高クラスの170W出力</a></li>
+      <li><a href="#sec-4">【コンパクト機】SHARGE Flow Mini 2 レビュー──毎日持ち歩けるミニサイズ</a></li>
+      <li><a href="#sec-5">3モデル比較表【SHARGEEK 140 vs 170 vs Flow Mini 2】</a></li>
+      <li><a href="#sec-6">SHARGEをアリエクで最安値購入する方法</a></li>
+      <li><a href="#sec-7">SHARGEモバイルバッテリーよくある質問（FAQ）</a></li>
+      <li><a href="#sec-8">まとめ：SHARGEは「買ったこと自慢したくなる」唯一のモバイルバッテリー</a></li>
+      <li><a href="#sec-9">Xでの声：SHARGEユーザーのリアルな反応</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">SHARGEとは？デスクに置くだけで「映える」充電ブランドの正体</h2>
 
     <p>正直に言う。初めてSHARGEEK 140の透明ボディをネットで見たとき、「これ、モバイルバッテリーじゃなくてインテリアじゃないか」と思った。</p>
     <p>SHARGEは中国発のガジェットブランドで、「Shargeek」という製品ラインを中心に展開している。コンセプトは明確で、<strong>「妥協なきデザイン×妥協なき性能」</strong>。充電器やモバイルバッテリーという「どれも似たり寄ったり」なカテゴリに、完全に異質な存在感で切り込んできたブランドだ。</p>
@@ -306,7 +327,7 @@
     <p>日本ではAmazonの公式ストアでも入手可能だが、<strong>AliExpressの大型セール時は数千円〜1万円以上安くなることがある</strong>。この差はかなり大きい。詳しくは後半で解説する。</p>
 
     <!-- @product-start id="1005007336851345" type="ガジェット" tag="ガジェット" -->
-    <h2>【ヒーロー機】SHARGEEK 140 レビュー──透明ボディ×140Wの最強コンビ</h2>
+    <h2 id="sec-2">【ヒーロー機】SHARGEEK 140 レビュー──透明ボディ×140Wの最強コンビ</h2>
 
     <p>SHARGEを語るとき、絶対に外せない一台がSHARGEEK 140だ。透明ボディから電子部品が透けて見える設計は、他のどのモバイルバッテリーにも存在しない。デスクに置いてあるだけで「それ何ですか？」と聞かれる唯一の充電器。</p>
 
@@ -371,7 +392,7 @@
     </div>
 
     <!-- @product-start id="1005006997015924" type="ガジェット" tag="ガジェット" -->
-    <h2>【プレミアム機】SHARGEEK 170 レビュー──業界最高クラスの170W出力</h2>
+    <h2 id="sec-3">【プレミアム機】SHARGEEK 170 レビュー──業界最高クラスの170W出力</h2>
 
     <p>SHARGEEK 140で満足できない人間が存在する。それが「さらに上を求める人」だ。SHARGEEK 170は、モバイルバッテリー業界でも最高クラスに位置する170Wの出力を持つフラッグシップモデル。容量も24000mAhまで拡張されており、<strong>「これ一台あれば、どこでも仕事できる」</strong>を本当の意味で実現してくれる。</p>
 
@@ -428,7 +449,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005009666014818" type="ガジェット" tag="ガジェット" -->
-    <h2>【コンパクト機】SHARGE Flow Mini 2 レビュー──毎日持ち歩けるミニサイズ</h2>
+    <h2 id="sec-4">【コンパクト機】SHARGE Flow Mini 2 レビュー──毎日持ち歩けるミニサイズ</h2>
 
     <p>「SHARGEのデザインに惚れたけど、500gは毎日は無理」という人間の気持ち、よく分かる。そういう人のためにSHARGEが用意したのが<strong>SHARGE Flow Mini 2</strong>だ。手のひらに収まるサイズで、SHARGEのデザイン哲学は一切妥協していない。</p>
 
@@ -484,7 +505,7 @@
     </div>
     <!-- @product-end -->
 
-    <h2>3モデル比較表【SHARGEEK 140 vs 170 vs Flow Mini 2】</h2>
+    <h2 id="sec-5">3モデル比較表【SHARGEEK 140 vs 170 vs Flow Mini 2】</h2>
 
     <p>3台を並べて比較するとそれぞれの立ち位置が明確になる。用途に合わせて選んでほしい。</p>
 
@@ -542,7 +563,7 @@
     <p><strong>毎日カバンに入れて軽量運用したい派 → SHARGE Flow Mini 2</strong><br>
     5000mAh・22.5W・手のひらサイズ。デザインの質感はSHARGEのまま、重量を極限まで削った一台。「SHARGEを日常に溶け込ませたい」という人に刺さる選択肢だ。</p>
 
-    <h2>SHARGEをアリエクで最安値購入する方法</h2>
+    <h2 id="sec-6">SHARGEをアリエクで最安値購入する方法</h2>
 
     <h3>公式ストア「SHARGE Official Store」を選ぶ理由</h3>
 
@@ -578,7 +599,7 @@
 
     <p>また、GaN充電器もセットで揃えたい場合は<a href="/gadget/ugreen-gan-charger-osusume.html">UGREENのGaN充電器おすすめ5選</a>も参考に。SHARGEのモバイルバッテリーと相性抜群のコンビになる。</p>
 
-    <h2>SHARGEモバイルバッテリーよくある質問（FAQ）</h2>
+    <h2 id="sec-7">SHARGEモバイルバッテリーよくある質問（FAQ）</h2>
 
     <h3>Q1：SHARGEのモバイルバッテリーは日本で使えますか？</h3>
     <p><strong>A：問題なく使えます。</strong>SHARGEEK 140・SHARGEEK 170はいずれも100〜240V対応のユニバーサル電圧仕様。日本の100V電源でも正常に充電できます。ただし、航空機への持ち込みにはWh（ワット時）の制限があるため、預け荷物ではなく機内持ち込みの場合は事前に確認してください（一般的に100Wh以下が機内持ち込み可）。SHARGEEK 140は72Wh相当で持ち込み可能ですが、航空会社によって規定が異なるため確認を推奨します。</p>
@@ -595,7 +616,7 @@
     <h3>Q5：AliExpressとAmazonどちらで買うのがお得ですか？</h3>
     <p><strong>A：セール時のAliExpressが最安です。</strong>11.11や6.18などの大型セール時は、AmazonよりAliExpressの方が数千円〜1万円以上安くなることがあります。ただし、AliExpressは配送に2〜4週間かかること・返品がやや面倒という点も事実。「急ぎで確実に入手したい」「万が一の返品を確実にしたい」ならAmazon、「セールで最安値を狙いたい」「待てる」ならAliExpressという判断で間違いありません。</p>
 
-    <h2>まとめ：SHARGEは「買ったこと自慢したくなる」唯一のモバイルバッテリー</h2>
+    <h2 id="sec-8">まとめ：SHARGEは「買ったこと自慢したくなる」唯一のモバイルバッテリー</h2>
 
     <p>SHARGEのモバイルバッテリーを語るとき、「スペックが良いから買う」という動機だけでは半分しか伝わらない。</p>
 
@@ -618,7 +639,7 @@
 
     <!-- VOICE-START -->
     <div class="reddit-voices">
-      <h2>Xでの声：SHARGEユーザーのリアルな反応</h2>
+      <h2 id="sec-9">Xでの声：SHARGEユーザーのリアルな反応</h2>
       <blockquote class="reddit-quote">
         <p>「SHARGEのモバイルバッテリー、スケルトンデザインが本当に格好いい。デスクに置いておくだけでテンションが上がる」</p>
         <cite>via X</cite>
@@ -731,6 +752,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

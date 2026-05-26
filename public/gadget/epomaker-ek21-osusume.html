@@ -160,7 +160,10 @@
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -268,6 +271,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -283,7 +287,21 @@
 
 <div class="container"><div class="article-body">
 
-<h2>EPOMAKER EK21とは？EPOMAKERキーボードと揃えるテンキーの正解</h2>
+<figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sdc642891c6954c21862c999788bda1a6v.png" alt="EPOMAKER EK21 20% Programmable Mechanical Numpad" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">EPOMAKER EK21とは？EPOMAKERキーボードと揃えるテンキーの正解</a></li>
+      <li><a href="#sec-2">EPOMAKER EK21 スペック詳細レビュー｜アルミ筐体・ガスケット・VIA対応</a></li>
+      <li><a href="#sec-3">EPOMAKER EK21のカスタマイズ術｜スイッチ・キャップ・VIA設定</a></li>
+      <li><a href="#sec-4">アリエクでEPOMAKER EK21を最安値で買う方法</a></li>
+      <li><a href="#sec-5">EPOMAKER EK21 よくある質問（FAQ）</a></li>
+      <li><a href="#sec-6">まとめ｜EPOMAKER EK21はアリエクでセット買いが正解</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">EPOMAKER EK21とは？EPOMAKERキーボードと揃えるテンキーの正解</h2>
 
 <h3>EPOMAKERブランドとEK21の立ち位置</h3>
 
@@ -368,7 +386,7 @@
 
 <!-- @product-start id="1005011548201961" type="ガジェット" tag="ガジェット" -->
 
-<h2>EPOMAKER EK21 スペック詳細レビュー｜アルミ筐体・ガスケット・VIA対応</h2>
+<h2 id="sec-2">EPOMAKER EK21 スペック詳細レビュー｜アルミ筐体・ガスケット・VIA対応</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -488,7 +506,7 @@
   <a href="https://aliswipe.com/app/" target="_blank" rel="noopener">スワイプでおすすめ商品を見る →</a>
 </div>
 
-<h2>EPOMAKER EK21のカスタマイズ術｜スイッチ・キャップ・VIA設定</h2>
+<h2 id="sec-3">EPOMAKER EK21のカスタマイズ術｜スイッチ・キャップ・VIA設定</h2>
 
 <h3>EPOMAKERキーボードと同じスイッチで揃える方法</h3>
 
@@ -541,7 +559,7 @@
 
 <p>カスタマイズの深さについては<a href="/gadget/ajazz-akp846-osusume.html">AJAZZ AKP846レビュー（液晶搭載キーボード）</a>でも似たような自由度の高さが取り上げられています。カスタマイズ沼に興味があればそちらも参考にしてください。</p>
 
-<h2>アリエクでEPOMAKER EK21を最安値で買う方法</h2>
+<h2 id="sec-4">アリエクでEPOMAKER EK21を最安値で買う方法</h2>
 
 <h3>EPOMAKER公式ストアの見分け方とスイッチ選択のポイント</h3>
 
@@ -582,7 +600,7 @@
   </div>
 </div>
 
-<h2>EPOMAKER EK21 よくある質問（FAQ）</h2>
+<h2 id="sec-5">EPOMAKER EK21 よくある質問（FAQ）</h2>
 
 <div itemscope itemtype="https://schema.org/FAQPage">
 
@@ -623,7 +641,7 @@
 
 </div>
 
-<h2>まとめ｜EPOMAKER EK21はアリエクでセット買いが正解</h2>
+<h2 id="sec-6">まとめ｜EPOMAKER EK21はアリエクでセット買いが正解</h2>
 
 <h3>EK21をおすすめできる人・できない人</h3>
 
@@ -770,6 +788,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

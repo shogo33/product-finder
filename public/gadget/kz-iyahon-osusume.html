@@ -160,7 +160,10 @@
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -268,6 +271,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -298,7 +302,26 @@
 
 <p>全モデルのアリエク最安リンクも貼っておくので、読み終わったらそのまま買いに行ってください。</p>
 
-<h2>KZとは？アリエクで買える中華イヤホンの帝王</h2>
+<figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S91b7332d9e734d599d593362c20fc191y.jpg" alt="KZ ZSN Pro" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">KZとは？アリエクで買える中華イヤホンの帝王</a></li>
+      <li><a href="#sec-2">【格安神型番①】KZ ZSN Pro｜1,000円台で買える最高傑作入門機</a></li>
+      <li><a href="#sec-3">【格安神型番②】KZ ZVX｜V字チューニングの爆音エントリー最高峰</a></li>
+      <li><a href="#sec-4">【中位機】KZ DQ6S｜3DDトリプルダイナミックの低音番長</a></li>
+      <li><a href="#sec-5">【上位フラッグシップ】KZ ZAX｜16ドライバーの頂点</a></li>
+      <li><a href="#sec-6">【次世代型】KZ PR3｜平面磁界型ドライバーの新世代最高傑作</a></li>
+      <li><a href="#sec-7">KZ最高傑作5選 スペック・価格比較表</a></li>
+      <li><a href="#sec-8">アリエクでKZイヤホンを最安値で買う方法</a></li>
+      <li><a href="#sec-9">KZイヤホン よくある質問（FAQ）</a></li>
+      <li><a href="#sec-10">まとめ｜KZイヤホン最高傑作はアリエクで格安で揃えるのが正解</a></li>
+      <li><a href="#sec-11">Xでの声</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">KZとは？アリエクで買える中華イヤホンの帝王</h2>
 
 <h3>KZブランドの特徴とコスパがバグっている理由</h3>
 
@@ -377,7 +400,7 @@
 <p>「どの音が好きかわからない」という初心者は、まずハイブリッドのKZ ZSN Proから入るのが鉄板ルートです。</p>
 
 <!-- @product-start id="1005009384882890" type="ガジェット" tag="ガジェット" -->
-<h2>【格安神型番①】KZ ZSN Pro｜1,000円台で買える最高傑作入門機</h2>
+<h2 id="sec-2">【格安神型番①】KZ ZSN Pro｜1,000円台で買える最高傑作入門機</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -445,7 +468,7 @@
 <!-- @product-end -->
 
 <!-- @product-start id="1005008683340746" type="ガジェット" tag="ガジェット" -->
-<h2>【格安神型番②】KZ ZVX｜V字チューニングの爆音エントリー最高峰</h2>
+<h2 id="sec-3">【格安神型番②】KZ ZVX｜V字チューニングの爆音エントリー最高峰</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -513,7 +536,7 @@
 </div>
 
 <!-- @product-start id="1005010280591458" type="ガジェット" tag="ガジェット" -->
-<h2>【中位機】KZ DQ6S｜3DDトリプルダイナミックの低音番長</h2>
+<h2 id="sec-4">【中位機】KZ DQ6S｜3DDトリプルダイナミックの低音番長</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -572,7 +595,7 @@
 <!-- @product-end -->
 
 <!-- @product-start id="1005001351156041" type="ガジェット" tag="ガジェット" -->
-<h2>【上位フラッグシップ】KZ ZAX｜16ドライバーの頂点</h2>
+<h2 id="sec-5">【上位フラッグシップ】KZ ZAX｜16ドライバーの頂点</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -631,7 +654,7 @@
 <!-- @product-end -->
 
 <!-- @product-start id="1005009867328325" type="ガジェット" tag="ガジェット" -->
-<h2>【次世代型】KZ PR3｜平面磁界型ドライバーの新世代最高傑作</h2>
+<h2 id="sec-6">【次世代型】KZ PR3｜平面磁界型ドライバーの新世代最高傑作</h2>
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
@@ -690,7 +713,7 @@
 
 <!-- @product-end -->
 
-<h2>KZ最高傑作5選 スペック・価格比較表</h2>
+<h2 id="sec-7">KZ最高傑作5選 スペック・価格比較表</h2>
 
 <h3>5モデルのスペック・価格・おすすめユーザーを一覧比較</h3>
 
@@ -759,7 +782,7 @@
 
 <p>KZのラインナップの中で他社<a href="/gadget/moondrop-osusume.html">Moondropイヤホン</a>と比較したい場合は、別記事で詳しく解説しています。また、KZ以外の中華イヤホンも含めた<a href="/gadget/aliexpress-earphone-osusume.html">アリエクイヤホンおすすめ5選</a>もあわせて参考にしてください。</p>
 
-<h2>アリエクでKZイヤホンを最安値で買う方法</h2>
+<h2 id="sec-8">アリエクでKZイヤホンを最安値で買う方法</h2>
 
 <h3>KZ公式ストアの見分け方（偽物対策）</h3>
 
@@ -787,7 +810,7 @@
 
 <p>通常配送は<strong>2〜4週間</strong>かかるため、急いでいる場合はAmazonで購入するのが現実的です。ただし価格差を考えると、1〜2週間の余裕があるならアリエクを選ぶ価値は十分あります。</p>
 
-<h2>KZイヤホン よくある質問（FAQ）</h2>
+<h2 id="sec-9">KZイヤホン よくある質問（FAQ）</h2>
 
 <h3>KZイヤホンはAliExpressで買っても偽物ではないの？</h3>
 <p>AliExpressの<strong>「KZ Official Store」（公式ブランドストア）から購入する限り偽物のリスクはありません</strong>。正規品が保証されており、AliExpressの購入者保護も適用されます。注意が必要なのは公式ストア以外の第三者セラーです。ストア名に「KZ Official Store」と明記されているか、ブランドバッジが付与されているかを必ず確認してください。</p>
@@ -810,7 +833,7 @@
 </ul>
 <p>「とにかく1本だけ選べ」と言われたら、<strong>KZ ZSN Pro</strong>を強くおすすめします。</p>
 
-<h2>まとめ｜KZイヤホン最高傑作はアリエクで格安で揃えるのが正解</h2>
+<h2 id="sec-10">まとめ｜KZイヤホン最高傑作はアリエクで格安で揃えるのが正解</h2>
 
 <h3>5モデルの総括と選び方おさらい</h3>
 
@@ -848,7 +871,7 @@
 <!-- VOICE-START -->
 <div class="container">
   <div class="reddit-voices">
-    <h2 style="font-size:1.1rem;font-weight:700;margin:0 0 16px;">Xでの声</h2>
+    <h2 style="font-size:1.1rem;font-weight:700;margin:0 0 16px;" id="sec-11">Xでの声</h2>
 
     <blockquote class="reddit-quote">
       <p>「本当に欲しいイヤホンを探してKZのイヤホンに辿り着きました。国内でも4,000円もしないで手に入ってコストパフォーマンスを感じています」</p>
@@ -997,6 +1020,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

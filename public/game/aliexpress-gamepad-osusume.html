@@ -161,7 +161,10 @@
     .amazon-rec-toggle { display: block; text-align: center; margin-top: 12px; color: #f59e0b; font-size: 0.82rem; font-weight: 700; cursor: pointer; background: none; border: 1px solid #fde68a; border-radius: 8px; padding: 8px; width: 100%; }
     .amazon-rec-toggle:hover { background: #fff8f0; }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -269,6 +272,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -289,7 +293,26 @@
 
     <p>この記事では、アリエクで実際に買える厳選5モデルを徹底比較。接続方式・遅延・ホールエフェクトスティックの有無まで、ゲーマー目線で全部解説します。「どれを買えばいいかわからない」という状態から、「これを買う」という確信に変える記事を目指しました。</p>
 
-    <h2>アリエクのゲームパッド・コントローラーを選ぶ前に知っておくべき基礎知識</h2>
+    <figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2baab2290f3340daa07d6614b965ec465.png" alt="GameSir G7 SE" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">アリエクのゲームパッド・コントローラーを選ぶ前に知っておくべき基礎知識</a></li>
+      <li><a href="#sec-2">【第2位】GameSir G7 SE：Xbox認定の安心感が魅力のPCゲーマー向けコントローラー</a></li>
+      <li><a href="#sec-3">【第3位】Gamesir T4 Cyclone Pro：マルチプラットフォーム対応の高機能ワイヤレスコントローラー</a></li>
+      <li><a href="#sec-4">【第4位】GameSir X2s：スマホクランプ型のモバイルゲーマー向けコントローラー</a></li>
+      <li><a href="#sec-5">【第5位】8BitDo Ultimate 2C ワイヤレス：信頼のブランド力とコスパを両立したオールラウンダー</a></li>
+      <li><a href="#sec-6">【番外編】Flydigi Vader 4 Pro：本気ゲーマー向けプレミアムモデル</a></li>
+      <li><a href="#sec-7">アリエクゲームパッド5選比較表：スペック・価格・対応機種一覧</a></li>
+      <li><a href="#sec-8">アリエクでゲームパッドを選ぶ5つのポイント【失敗しない買い方】</a></li>
+      <li><a href="#sec-9">ホールエフェクト搭載コントローラーを安く買う：アリエクで比較すべき理由</a></li>
+      <li><a href="#sec-10">8BitDo Ultimate 2C レビュー：実際に使って感じたリアルな使用感</a></li>
+      <li><a href="#sec-11">アリエクのゲームパッドに関するよくある質問（FAQ）</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">アリエクのゲームパッド・コントローラーを選ぶ前に知っておくべき基礎知識</h2>
 
     <h3>接続方式（有線・Bluetooth・2.4GHz）の違いと選び方</h3>
 
@@ -378,7 +401,7 @@
 
     <p><a href="/game/gamesir-controller-osusume.html">GameSirコントローラーをもっと詳しく知りたい方はこちら</a></p>
 
-    <h2>【第2位】GameSir G7 SE：Xbox認定の安心感が魅力のPCゲーマー向けコントローラー</h2>
+    <h2 id="sec-2">【第2位】GameSir G7 SE：Xbox認定の安心感が魅力のPCゲーマー向けコントローラー</h2>
 
     <!-- @product-start id="1005004904927328" type="ガジェット" tag="ガジェット" -->
 
@@ -436,7 +459,7 @@
 
     <!-- @product-end -->
 
-    <h2>【第3位】Gamesir T4 Cyclone Pro：マルチプラットフォーム対応の高機能ワイヤレスコントローラー</h2>
+    <h2 id="sec-3">【第3位】Gamesir T4 Cyclone Pro：マルチプラットフォーム対応の高機能ワイヤレスコントローラー</h2>
 
     <!-- @product-start id="1005007942886977" type="ガジェット" tag="ガジェット" -->
 
@@ -501,7 +524,7 @@
       <a href="https://aliswipe.com/app/" target="_blank" rel="noopener">スワイプでおすすめ商品を見る →</a>
     </div>
 
-    <h2>【第4位】GameSir X2s：スマホクランプ型のモバイルゲーマー向けコントローラー</h2>
+    <h2 id="sec-4">【第4位】GameSir X2s：スマホクランプ型のモバイルゲーマー向けコントローラー</h2>
 
     <!-- @product-start id="1005007868285978" type="ガジェット" tag="ガジェット" -->
 
@@ -556,7 +579,7 @@
 
     <!-- @product-end -->
 
-    <h2>【第5位】8BitDo Ultimate 2C ワイヤレス：信頼のブランド力とコスパを両立したオールラウンダー</h2>
+    <h2 id="sec-5">【第5位】8BitDo Ultimate 2C ワイヤレス：信頼のブランド力とコスパを両立したオールラウンダー</h2>
 
     <!-- @product-start id="1005007823624257" type="ガジェット" tag="ガジェット" -->
 
@@ -614,7 +637,7 @@
 
     <!-- @product-end -->
 
-    <h2>【番外編】Flydigi Vader 4 Pro：本気ゲーマー向けプレミアムモデル</h2>
+    <h2 id="sec-6">【番外編】Flydigi Vader 4 Pro：本気ゲーマー向けプレミアムモデル</h2>
 
     <!-- @product-start id="1005009371475940" type="ガジェット" tag="ガジェット" -->
 
@@ -660,7 +683,7 @@
 
     <!-- @product-end -->
 
-    <h2>アリエクゲームパッド5選比較表：スペック・価格・対応機種一覧</h2>
+    <h2 id="sec-7">アリエクゲームパッド5選比較表：スペック・価格・対応機種一覧</h2>
 
     <h3>比較表の見方と選び方チートシート</h3>
 
@@ -746,7 +769,7 @@
 
     <p>他のカテゴリでアリエクのおすすめ商品を探している方は<a href="/guide/aliexpress-osusume.html">AliExpressのおすすめ商品をカテゴリ別に探したい方はこちら</a>もどうぞ。</p>
 
-    <h2>アリエクでゲームパッドを選ぶ5つのポイント【失敗しない買い方】</h2>
+    <h2 id="sec-8">アリエクでゲームパッドを選ぶ5つのポイント【失敗しない買い方】</h2>
 
     <h3>ホールエフェクトスティックかどうかを必ず確認する</h3>
 
@@ -791,19 +814,19 @@
 
     
 
-<h2>ホールエフェクト搭載コントローラーを安く買う：アリエクで比較すべき理由</h2>
+<h2 id="sec-9">ホールエフェクト搭載コントローラーを安く買う：アリエクで比較すべき理由</h2>
 <p>ホールエフェクトセンサーとは、磁気を利用してスティックの位置を検出する技術です。従来の接触式センサーと異なり、物理的な摩耗が起きにくいため、長期間使用してもスティックのドリフト（勝手に入力される現象）が発生しにくいのが大きな特徴です。数年前まではハイエンド機種にしか搭載されていませんでしたが、現在はアリエクで流通する中価格帯のモデルにも広く採用されるようになっています。</p>
 <p>アリエクでホールエフェクト搭載モデルを探す際は、商品タイトルや説明欄に「Hall Effect」「Hall Sensor」と明記されているかを必ず確認しましょう。GameSirやFlydigi、8BitDoといった信頼性の高いブランドは仕様ページに明記していることが多く、比較の出発点として適しています。一方、無名ブランドはホールエフェクトと謳いながら実態が異なるケースもゼロではないため、購入者レビューで実際の使用感を確認する習慣をつけておくと安心です。</p>
 <p>価格帯としては、アリエクでは2,000〜5,000円前後のモデルにもホールエフェクト搭載品が存在します。国内家電量販店で同等スペックを探すと倍近い価格になることも多く、コストを抑えつつ長く使えるコントローラーを求めるユーザーにとって、アリエクは有力な選択肢といえるでしょう。</p>
 
 
 
-<h2>8BitDo Ultimate 2C レビュー：実際に使って感じたリアルな使用感</h2>
+<h2 id="sec-10">8BitDo Ultimate 2C レビュー：実際に使って感じたリアルな使用感</h2>
 <p>8BitDo Ultimate 2Cは、スペック表だけではわからない「手に持った瞬間の安心感」が特徴的なコントローラーです。グリップのフィット感は同価格帯の中でも高水準で、長時間のプレイでも手が疲れにくい設計になっています。ホールエフェクトスティックによるドリフト耐性も実使用で確認でき、数ヶ月使い続けてもスティックのズレが発生しにくい点は素直に評価できます。</p>
 <p>一方で、気になる点もあります。ワイヤレス接続時のレイテンシはアクションゲームで気になるレベルではありませんが、格闘ゲームや音楽ゲームなど入力精度を極めて重視するジャンルでは有線接続を選ぶほうが無難です。また、付属ソフトウェアでのカスタマイズ機能は充実しているものの、日本語対応が不完全な部分もあるため、設定時に英語メニューを読む必要があります。</p>
 <p>総じて「買って後悔しにくいコントローラー」という印象です。派手さはないものの、基本性能と耐久性のバランスが取れており、初めてアリエクでコントローラーを購入する方にも勧めやすい一本といえます。</p>
 
-<h2>アリエクのゲームパッドに関するよくある質問（FAQ）</h2>
+<h2 id="sec-11">アリエクのゲームパッドに関するよくある質問（FAQ）</h2>
 
     <h3>Q1: アリエクのゲームパッドはちゃんと使えるの？品質は大丈夫？</h3>
     <p><strong>結論：GameSirや8BitDo、Flydigiといった信頼ブランドの製品であれば、純正品と比べても遜色ない品質です。</strong></p>
@@ -1042,6 +1065,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>

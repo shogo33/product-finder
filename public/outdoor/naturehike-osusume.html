@@ -183,6 +183,9 @@
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
     .fv-product-image { margin: 0 0 28px; text-align: center; }
     .fv-product-image img { max-width: 480px; width: 100%; border-radius: 12px; object-fit: contain; max-height: 320px; }
+  
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -293,7 +296,8 @@
 </head>
 <body>
 
-  <script id="site-header-inject"></script>
+  <div id="reading-progress"></div>
+<script id="site-header-inject"></script>
   <nav class="breadcrumb" aria-label="パンくずリスト">
     <ol>
       <li><a href="/">ホーム</a></li>
@@ -938,6 +942,16 @@
         localStorage.setItem('pcb', '1');
       });
     })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
+  })();
   </script>
 </body>
 </html>

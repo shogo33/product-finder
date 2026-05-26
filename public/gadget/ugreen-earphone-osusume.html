@@ -159,7 +159,10 @@
     .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
     .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* 読書進捗バー */
+    #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+  </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -267,6 +270,7 @@
 </head>
 <body>
 
+<div id="reading-progress"></div>
 <script id="site-header-inject"></script>
 
 <section class="article-hero">
@@ -287,7 +291,26 @@
 
     <p>この記事では、AliExpressで実際に購入・使い込んだ経験をもとに、<strong>UGREEN HiTune P3 / T3 Pro / Max5c / S5 / S3</strong>の5モデルを徹底比較します。ANC・コーデック・価格帯・用途別に整理したので、最後まで読めば迷わず買えます。</p>
 
-    <h2>UGREENイヤホンとは？ブランドの特徴とおすすめ理由</h2>
+    <figure class="fv-product-image">
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5623e79854df47c4b2387350411b7c9cx.jpg" alt="Ugreen HiTune X6" loading="eager">
+</figure>
+<nav class="toc">
+  <div class="toc-title">📋 この記事の目次</div>
+  <ol>
+      <li><a href="#sec-1">UGREENイヤホンとは？ブランドの特徴とおすすめ理由</a></li>
+      <li><a href="#sec-2">【第1位】UGREEN HiTune P3 ｜公式ストア最安・コスパ最強のオープンイヤー</a></li>
+      <li><a href="#sec-3">【第2位】UGREEN HiTune T3 Pro ｜ANC搭載・低遅延ゲーミングモードの万能機</a></li>
+      <li><a href="#sec-4">【第3位】UGREEN HiTune Max5c ｜ハイレゾ対応のフラッグシップ型</a></li>
+      <li><a href="#sec-5">【第4位】UGREEN HiTune S5 ｜オープンイヤー×スポーツ用途に最適なモデル</a></li>
+      <li><a href="#sec-6">【第5位】UGREEN HiTune S3 ｜コスパ重視・入門者に最適な軽量モデル</a></li>
+      <li><a href="#sec-7">UGREENイヤホン全5選を徹底比較｜一覧表で選ぶ</a></li>
+      <li><a href="#sec-8">UGREENイヤホンの失敗しない選び方｜4つのチェックポイント</a></li>
+      <li><a href="#sec-9">UGREEN HiTune X6 レビュー｜上位モデルを狙うなら要チェックの注目機</a></li>
+      <li><a href="#sec-10">アリエクで買えるワイヤレスイヤホン｜安い＆高音質なUGREENを最安値で狙う方法</a></li>
+      <li><a href="#sec-11">よくある質問｜UGREENイヤホンについてのQ&A</a></li>
+  </ol>
+</nav>
+<h2 id="sec-1">UGREENイヤホンとは？ブランドの特徴とおすすめ理由</h2>
 
     <h3>UGREENってどんなブランド？信頼性は？</h3>
 
@@ -311,7 +334,7 @@
     <p>AliExpressでは国内Amazonの定価と比べて<strong>20〜40%オフ</strong>になるケースが多いです。セール期間（11.11・6.18など）を狙うと、さらに10〜20%の追加割引が乗ることも。<a href="/guide/aliexpress-osusume.html">アリエクのおすすめ商品まとめ</a>もぜひ参考にしてください。</p>
 
     <!-- @product-start id="1005007090781035" type="ガジェット" tag="ガジェット" -->
-    <h2>【第1位】UGREEN HiTune P3 ｜公式ストア最安・コスパ最強のオープンイヤー</h2>
+    <h2 id="sec-2">【第1位】UGREEN HiTune P3 ｜公式ストア最安・コスパ最強のオープンイヤー</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -370,7 +393,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005007302181092" type="ガジェット" tag="ガジェット" -->
-    <h2>【第2位】UGREEN HiTune T3 Pro ｜ANC搭載・低遅延ゲーミングモードの万能機</h2>
+    <h2 id="sec-3">【第2位】UGREEN HiTune T3 Pro ｜ANC搭載・低遅延ゲーミングモードの万能機</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -432,7 +455,7 @@
       <p>TikTokで見たアレ、AliExpressで見つかるかも。<br>スワイプするだけで掘り出し物に出会えます。</p>
       <a href="https://aliswipe.com/app/" target="_blank" rel="noopener">スワイプでおすすめ商品を見る</a>
     </div>
-    <h2>【第3位】UGREEN HiTune Max5c ｜ハイレゾ対応のフラッグシップ型</h2>
+    <h2 id="sec-4">【第3位】UGREEN HiTune Max5c ｜ハイレゾ対応のフラッグシップ型</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -482,7 +505,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005009828832187" type="ガジェット" tag="ガジェット" -->
-    <h2>【第4位】UGREEN HiTune S5 ｜オープンイヤー×スポーツ用途に最適なモデル</h2>
+    <h2 id="sec-5">【第4位】UGREEN HiTune S5 ｜オープンイヤー×スポーツ用途に最適なモデル</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -537,7 +560,7 @@
     <!-- @product-end -->
 
     <!-- @product-start id="1005007145988747" type="ガジェット" tag="ガジェット" -->
-    <h2>【第5位】UGREEN HiTune S3 ｜コスパ重視・入門者に最適な軽量モデル</h2>
+    <h2 id="sec-6">【第5位】UGREEN HiTune S3 ｜コスパ重視・入門者に最適な軽量モデル</h2>
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
@@ -591,7 +614,7 @@
     <p>「UGREENってどんな音なんだろう？」という興味を3,000円台で解消できる。そしてほぼ確実に「次はX6かT3 Proを買おう」という気持ちになります。そういう入口としての完成度が、UGREEN HiTune S3の本当の強さです。</p>
     <!-- @product-end -->
 
-    <h2>UGREENイヤホン全5選を徹底比較｜一覧表で選ぶ</h2>
+    <h2 id="sec-7">UGREENイヤホン全5選を徹底比較｜一覧表で選ぶ</h2>
 
     <h3>スペック比較表の見方と重視すべき列</h3>
 
@@ -666,7 +689,7 @@
 
     <p>🏆 <strong>編集部ピック「迷ったらこれ」</strong>：<strong>UGREEN HiTune T3 Pro</strong>。ANC・ゲーミングモード・IPX5・35時間バッテリーを¥11,000台で実現した万能機。公式ストアで買えるUGREENイヤホンの現時点での最適解です。</p>
 
-    <h2>UGREENイヤホンの失敗しない選び方｜4つのチェックポイント</h2>
+    <h2 id="sec-8">UGREENイヤホンの失敗しない選び方｜4つのチェックポイント</h2>
 
     <h3>ANCの有無・接続方式・コーデックで絞り込む</h3>
 
@@ -740,19 +763,19 @@
     <!-- VOICE-END -->
 
 
-<h2>UGREEN HiTune X6 レビュー｜上位モデルを狙うなら要チェックの注目機</h2>
+<h2 id="sec-9">UGREEN HiTune X6 レビュー｜上位モデルを狙うなら要チェックの注目機</h2>
 <p>HiTune X6は、今回のランキングには含まれていないものの、UGREENの中でも特に注目度が高いモデルのひとつです。大口径ドライバーを採用しており、低音の厚みと全体的なサウンドバランスの良さがユーザーから高く評価されています。ANCや外音取り込み機能も搭載しており、機能面での充実度はフラッグシップに近い水準といえるでしょう。</p>
 <p>装着感については、カナル型ながら比較的圧迫感が少ない設計で、長時間使用でも疲れにくいという声が多く見られます。マルチポイント接続にも対応しているため、スマートフォンとPCを同時に接続したい方にも使いやすい仕様です。価格帯はHiTune Max5cに近い位置づけですが、音の傾向が異なるため、試聴できる環境があれば両者を聴き比べてみるのがおすすめです。</p>
 <p>ただし、国内での正規取り扱いが限られている場合もあるため、購入前に在庫状況や対応アプリの日本語サポートを確認しておくと安心です。上位モデルへのステップアップを検討しているなら、X6は十分に候補に入れる価値があります。</p>
 
 
 
-<h2>アリエクで買えるワイヤレスイヤホン｜安い＆高音質なUGREENを最安値で狙う方法</h2>
+<h2 id="sec-10">アリエクで買えるワイヤレスイヤホン｜安い＆高音質なUGREENを最安値で狙う方法</h2>
 <p>UGREENのイヤホンは、AliExpress（アリエク）でも公式ストアが出店しており、セール時期を狙えば国内価格より数百〜数千円安く手に入ることがあります。特に「11.11セール」や「年末セール」のタイミングでは、HiTune T3 ProやHiTune Max5cといった人気モデルに大幅な割引が適用されるケースも。ワイヤレスイヤホンをできるだけ安く、かつ高音質で手に入れたい方にとって、アリエクは見逃せない選択肢のひとつです。</p>
 <p>ただし、アリエクで購入する際にはいくつかの注意点があります。配送に1〜3週間かかる場合があること、保証対応が国内購入より複雑になるケースがあること、そして並行輸入品とは異なりUGREEN公式ストアからの購入であれば品質面の不安は比較的小さいことを覚えておきましょう。レビュー数や評価スコアをしっかり確認したうえで購入を判断するのがおすすめです。</p>
 <p>急ぎではないけれど良いものをコスパよく手に入れたい、という方にとってアリエクは有力な購入先になり得ます。国内のAmazonや楽天と価格を比較しながら、自分の状況に合った買い方を選んでみてください。</p>
 
-<h2>よくある質問｜UGREENイヤホンについてのQ&A</h2>
+<h2 id="sec-11">よくある質問｜UGREENイヤホンについてのQ&A</h2>
 
     <h3>Q1: UGREENイヤホンはAliExpressで買っても本物ですか？</h3>
     <p>「UGREEN Official Store」から購入すれば本物です。AliExpressには公式ストアが存在するので、そこからの購入を徹底してください。第三者セラーからの購入はセラー評価98%以上・取引件数が多いことを確認してから判断しましょう。保証・返品もAliExpress購入者保護が適用されます。</p>
@@ -953,6 +976,16 @@
       b.style.display = 'none';
       localStorage.setItem('pcb', '1');
     });
+  })();
+  // 読書進捗バー
+  (function() {
+    var bar = document.getElementById('reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function() {
+      var s = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    }, { passive: true });
   })();
 </script>
 </body>
