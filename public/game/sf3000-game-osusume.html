@@ -154,7 +154,8 @@
     .pc-float-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
 
     @media (max-width: 480px) { .header-cta { padding: 5px 10px; font-size: 0.7rem; } }
-  </style>
+    .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
+</style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -170,46 +171,95 @@
   <meta name="twitter:description" content="SF3000はアリエクChoice対象で2,000円台から買えるレトロゲーム機。GB・GBA・PSP・PS1など幅広く対応。Amazonの怪しい並行輸入品より断然お得な理由、CFW導入方法、実際に何が動くかを徹底レビュー。" />
   <meta name="twitter:image" content="https://aliswipe.com/images/ogp/sf3000-game-osusume.jpg" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "SF3000レビュー【2026年最新】2,000円台で買えるアリエクの激安レトロゲーム機を徹底検証",
-    "description": "SF3000はアリエクChoice対象で2,000円台から買えるレトロゲーム機。GB・GBA・PSP・PS1など幅広く対応。Amazonの怪しい並行輸入品より断然お得な理由、CFW導入方法、実際に何が動くかを徹底レビュー。",
-    "url": "https://aliswipe.com/game/sf3000-game-osusume.html",
-    "image": "https://aliswipe.com/images/ogp/sf3000-game-osusume.jpg",
-    "datePublished": "2026-05-26",
-    "dateModified": "2026-05-26",
-    "author": {
-      "@type": "Organization",
-      "name": "アリエクswipe"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "アリエクswipe",
-      "url": "https://aliswipe.com/"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "ホーム",
-        "item": "https://aliswipe.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "SF3000レビュー【2026年最新】2,000円台で買えるアリエクの激安レトロゲーム機を徹底検証",
-        "item": "https://aliswipe.com/game/sf3000-game-osusume.html"
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Q1: SF3000でPSPのゲームは動きますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A：動きますが、タイトルによります。 軽量な2DタイトルやRPGであれば動作しますが、『モンスターハンターポータブル 3rd』や『リッジレーサー』のような3D処理が重いタイトルはフレームレートが落ちて厳しいです。「PSPを快適にガッツリ遊びたい」という目的なら、SF3000より上位スペックの機種（ ANBERNIC RG35XX H など）を検討することをおすすめします。SF3000のPS1・PSP動作はあくまでおまけ程度に考えておくのがベストです。"
       }
-    ]
+    },
+    {
+      "@type": "Question",
+      "name": "Q2: SF3000の日本語表示はできますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A：設定から日本語表示に変更できます。 デフォルトは英語表示ですが、システム設定（Settings）からLanguageを「日本語」に切り替えることが可能です。メニューやUIが日本語になるので、英語が苦手な方でも安心して使えます。ただし、一部の画面や細かい設定項目は英語のままの場合があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q3: アリエクでSF3000を買って関税はかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A：通常はかかりません。 日本の場合、個人輸入で1万円以下の商品（課税価格ベース）であれば関税がかからないケースがほとんどです。SF3000は¥2,980なので関税の心配はほぼ不要です。ただし、AliExpressのChoice商品は「関税込み価格」で表示されていることも多く、追加費用が発生するリスクは極めて低いです。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q4: SF3000にSDカードを追加できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A：できます。microSDカードスロットを搭載しています。 対応容量は最大128GB（一部情報では256GBまで動作報告あり）。64GBのmicroSDを追加すれば、GBA・SFC・PS1のゲームを大量に収録できます。SF3000を購入する際は同時にmicroSDも購入することを強くおすすめします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q5: SF3000のCFWを導入するのは難しいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A：Linuxの基礎知識があれば難しくはありませんが、初心者には少し敷居があります。 GitHubの「sf3000_toolchain」プロジェクトのREADMEに手順が英語で書かれており、コマンドライン操作が伴います。ただし、コミュニティでは日本語・英語ともにガイドが充実してきており、「手順通りにやれば入れられた」という報告も多いです。まずはデフォルト状態で遊んでみて、物足りなくなってからCFWに挑戦するのがおすすめです。"
+      }
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "SF3000レビュー【2026年最新】2,000円台で買えるアリエクの激安レトロゲーム機を徹底検証",
+  "description": "SF3000はアリエクChoice対象で2,000円台から買えるレトロゲーム機。GB・GBA・PSP・PS1など幅広く対応。Amazonの怪しい並行輸入品より断然お得な理由、CFW導入方法、実際に何が動くかを徹底レビュー。",
+  "url": "https://aliswipe.com/game/sf3000-game-osusume.html",
+  "image": "https://aliswipe.com/images/ogp/sf3000-game-osusume.jpg",
+  "datePublished": "2026-05-26",
+  "dateModified": "2026-05-26",
+  "author": {
+    "@type": "Person",
+    "name": "アリエクパパ",
+    "url": "https://aliswipe.com/info/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "アリエクswipe",
+    "url": "https://aliswipe.com/"
   }
-  </script>
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://aliswipe.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "SF3000レビュー【2026年最新】2,000円台で買えるアリエクの激安レトロゲーム機を徹底検証",
+      "item": "https://aliswipe.com/game/sf3000-game-osusume.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -218,6 +268,7 @@
 <section class="article-hero">
   <div class="tag">レトロゲーム機レビュー</div>
   <h1>SF3000レビュー【2026年最新】2,000円台で買えるアリエクの激安レトロゲーム機を徹底検証</h1>
+<div class="article-date">📅 更新日：2026-05-26　公開日：2026-05-26</div>
   <div class="meta">
     <span>2026年05月26日更新</span>
     <span>読了約8分</span>
@@ -282,10 +333,10 @@
 
     <div class="product-carousel" data-carousel>
       <div class="carousel-track">
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S4ce70367b1fe461287397d510b18f59fH.jpg" alt="SF3000 ポータブルゲーム機 外観" loading="lazy">
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S961f12bc1461488fa03e72fa120304d2W.jpg" alt="SF3000 画面・ボタン配置" loading="lazy">
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S9f1dd731952a4497b75914498952469bk.jpg" alt="SF3000 ゲームプレイ画面" loading="lazy">
-        <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sde800bf6b22349e9921d359af6728ab6K.jpg" alt="SF3000 サイズ感・持ち感" loading="lazy">
+        <img src="/images/products/sf3000-game-osusume/e38831c0.jpg" alt="SF3000 ポータブルゲーム機 外観" loading="lazy">
+        <img src="/images/products/sf3000-game-osusume/2c9af127.jpg" alt="SF3000 画面・ボタン配置" loading="lazy">
+        <img src="/images/products/sf3000-game-osusume/e6c40789.jpg" alt="SF3000 ゲームプレイ画面" loading="lazy">
+        <img src="/images/products/sf3000-game-osusume/93697c18.jpg" alt="SF3000 サイズ感・持ち感" loading="lazy">
       </div>
       <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
       <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -550,22 +601,34 @@
 
     <div class="container">
       <div class="related">
-        <div class="related-title">関連記事</div>
-        <div class="related-grid">
-          <a href="/game/anbernic-rg35xx-h-osusume.html" class="related-card">
-            <div class="rc-tag">レトロゲーム機</div>
-            <div class="rc-title">ANBERNIC RG35XX Hレビュー｜SF3000より上位を目指すなら</div>
-          </a>
-          <a href="/game/miyoo-mini-flip-osusume.html" class="related-card">
-            <div class="rc-tag">レトロゲーム機</div>
-            <div class="rc-title">Miyoo Mini Flipレビュー｜フリップ型でどこでも遊べるレトロ機</div>
-          </a>
-          <a href="/game/aliexpress-gamepad-osusume.html" class="related-card">
-            <div class="rc-tag">ゲームパッド</div>
-            <div class="rc-title">アリエクのゲームパッドおすすめ｜安くて使えるコントローラー特集</div>
-          </a>
-        </div>
-      </div>
+    <div class="related-title">関連記事</div>
+    <div class="related-grid">
+      <a href="/game/miyoo-mini-flip-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">Miyoo Mini Flipおすすめ【2026年最新】アリエクで安く買う完全ガイド＋Plusとの比較</div>
+      </a>
+      <a href="/game/gamesir-t4-pro-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">GameSir T4 Proおすすめ【2026年最新】アリエクで安く買う完全ガイド</div>
+      </a>
+      <a href="/game/gamesir-controller-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">GameSirコントローラーおすすめ5選【2026年最新】アリエク公式ストアで安く買う完全ガイド</div>
+      </a>
+      <a href="/guide/naturehike-brand.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">Naturehikeはどこの国のブランド？評判・品質・信頼性を徹底解説【2026年】</div>
+      </a>
+      <a href="/guide/aliexpress-what-is.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">AliExpressとは？仕組み・安全性・使い方を初心者向けに解説</div>
+      </a>
+      <a href="/payment/aliexpress-shiharai.html" class="related-card">
+        <div class="rc-tag">支払い</div>
+        <div class="rc-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</div>
+      </a>
+    </div>
+  </div>
     </div>
 
   </div>
