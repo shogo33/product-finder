@@ -153,14 +153,9 @@
         "https://ae-pic-a1.aliexpress-media.com/kf/Se52a8b854d9e42298becca4cd2e4549dE.jpg",
         "https://ae-pic-a1.aliexpress-media.com/kf/S5968909c1ca04d12ae30aaf5ba32d3eer.jpg"
       ],
-      "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "ANBERNIC RG35XX H",
-        "asin": null,
-        "url": null
-      },
       "specResult": null,
-      "redditReviews": []
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/4vdtI6Q"
     }
   ],
   "faqQuestions": [
