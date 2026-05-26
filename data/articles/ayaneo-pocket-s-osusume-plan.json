@@ -1,0 +1,193 @@
+{
+  "keyword": "ayaneo pocket s おすすめ",
+  "slug": "ayaneo-pocket-s-osusume",
+  "category": "game",
+  "searchIntent": "比較系|レビュー系",
+  "searchIntentNote": "AYANEO Pocket Sの購入を検討しており、Pocket DS・Pocket Vertとの違いを比較した上でどのモデルを買うべきか判断したいユーザーが主なターゲット。10万円前後の高単価のため、AliExpressでのセール・クーポン割引（数万円単位）での節約情報への関心が高い。",
+  "persona": "中華ゲーミングハンドヘルドを発売日前からウォッチし続けているマニア。AYANEO・GPD・Odin2を複数台所持し、Snapdragon搭載Android機の性能差をベンチマーク込みで語れる。10万円超の機材にアリエクで数万円の割引を乗せて買うことへの罪悪感ゼロ。読者の「どれ買えばいいの？いくら得するの？」という迷いを全力で解消する。",
+  "targetProductCount": 3,
+  "titles": [
+    "AYANEO Pocket S・DS・Vert比較【2026年最新】アリエクで10万円の最高峰ゲーム機を最安値で買う",
+    "AYANEO Pocket S レビュー【2026年最新】DS・Vertとの違いをアリエクで最安に買う完全ガイド",
+    "AYANEO Pocket S / DS / Vert どれを選ぶ？【2026年最新】アリエクで数万円節約する完全ガイド"
+  ],
+  "selectedTitle": "AYANEO Pocket S・DS・Vert比較レビュー【2026年最新】アリエクで10万円の最高峰ゲーム機を最安値で買う完全ガイド",
+  "metaDescription": "AYANEO Pocket S・Pocket DS・Pocket Vertを徹底比較。Snapdragon G3x Gen2搭載の中華ゲーミングハンドヘルド最高峰が10万円前後だが、AliExpressのセール・クーポン併用で数万円単位の節約が狙える。3モデルの違いと最安購入術を完全解説。",
+  "intro": "「AYANEO Pocket S、DS、Vertって何が違うの？どれを買えば後悔しない？」——この記事はその疑問に一発で答えます。\n\nAYANEOが2024〜2025年に投入したPocketシリーズ3モデルは、いずれもSnapdragon G3x Gen2を搭載した中華ゲーミングハンドヘルドの最高峰。国内価格は10万円前後と高額ですが、AliExpressのセールとクーポンを組み合わせると**数万円単位の割引**が現実的に狙えます。これがアリエクでAYANEOを買う最大のメリットです。\n\nこの記事では、スタンダードモデルの**Pocket S**、デュアルスクリーンの**Pocket DS**、縦型グリップの**Pocket Vert**を用途・形状・価格で徹底比較し、あなたに最適な1台をズバリ提示します。",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "AYANEOとは？中華ゲーミングハンドヘルドの最高峰ブランド",
+      "h3s": [
+        "AYANEOの歴史：WindowsハンドヘルドからAndroid最高峰へ",
+        "Pocketシリーズが他機種と一線を画す3つのポイント"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "AYANEO 2・Air・GeekなどのWindows機から出発し、Android Pocket Sで新市場を開拓した経緯を簡潔に",
+        "Snapdragon G3x Gen2・専用ゲームボタン・フラグシップ素材（マグネシウム合金）など差別化ポイントを箇条書き",
+        "GPD・Odin2・Logitech G Cloudなど競合との位置づけを一言で整理"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "AYANEO Pocket S レビュー｜スタンダードモデルの完成度",
+      "h3s": [
+        "スペック・外観：6.0インチAMOLED×Snapdragon G3x Gen2の実力",
+        "ゲーム・エミュ性能：原神・PS2エミュでの実際の動作",
+        "こんな人におすすめ"
+      ],
+      "type": "product",
+      "notes": [
+        "6.0インチ120Hz AMOLED・12GB/16GB RAM・マグネシウム合金ボディ。重量と握り心地をライバル機と比較",
+        "原神・CoD Mobile・Switchエミュ（Yuzu/Sudachi）での動作を具体的に描写",
+        "「オールラウンドにゲームしたい」「初めてのAYANEO」「エミュメイン」な人に向いている理由を明示"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "AYANEO Pocket DS レビュー｜デュアルスクリーンが変えるゲーム体験",
+      "h3s": [
+        "DS型2画面ガジェットとしてのスペックと使い心地",
+        "Pocket Sとの使い分け：DSエミュ・マップ表示・マルチタスクで真価を発揮"
+      ],
+      "type": "product",
+      "notes": [
+        "上下2画面構成・ヒンジ設計・NDSエミュレーター（DraStic等）との相性を解説",
+        "「DSソフトを再現する」体験は唯一無二。一方でサイズ・重量・価格の増加も正直に伝える",
+        "アリエクでの取り扱い状況と価格帯（Pocket Sより若干高め）を記載"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "AYANEO Pocket Vert レビュー｜縦型グリップが変える没入感",
+      "h3s": [
+        "スマホ型縦持ちグリップのスペックと設計思想",
+        "Pocket Sとの使い分け：FPS・格ゲー・スマホゲーとの相性"
+      ],
+      "type": "product",
+      "notes": [
+        "縦型フォームファクター・グリップトリガー・スマートフォンライクな持ち方が活きる場面を具体的に",
+        "3モデル中最も人気が高く、価格もPocket S・DSより手が届きやすい。「コスパ最強モデル」として推す",
+        "「原神・CoD MobileなどスマホゲーをコントローラーでやりたいだけならVertが最適解」という結論を出す",
+        "アリエクでの価格帯とセール時の割引幅（Pocket S比較）を明記"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "Pocket S・DS・Vert 3モデル徹底比較表",
+      "h3s": [
+        "スペック・価格・形状を一覧でチェック",
+        "用途別どのモデルを選ぶべきか：最終結論"
+      ],
+      "type": "comparison",
+      "notes": [
+        "3モデルをテーブルで一覧化。OS・画面・SoC・RAM/ROM・価格・重量・特徴を網羅",
+        "「エミュ全般→Pocket S」「DS専用エミュ→Pocket DS」「スマホゲームをガチりたい→Pocket Vert」と断言",
+        "AliExpressでの実勢価格と国内価格の差・セール時の最大割引幅を明記"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "AYANEOの選び方｜失敗しない3つのチェックポイント",
+      "h3s": [
+        "①フォームファクター：どんな姿勢・場所でゲームするかで決まる",
+        "②RAM・ストレージ：エミュレーターをやるなら16GB一択の理由",
+        "③技適・関税リスク：10万円越えの輸入で知っておくべきこと"
+      ],
+      "type": "howto",
+      "notes": [
+        "寝転んでゲーム→横型Pocket S、DS再現→DS、片手スマホ感覚→Vertという整理",
+        "PS2・Switch・PSPエミュを複数同時起動するなら16GB RAM必須の理由を具体的に",
+        "10万円前後の品物の関税目安・インボイス記載額の確認方法・技適問題（Wi-Fi/Bluetooth使用）を解説"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "アリエクでAYANEO Pocketを最安値で買う方法｜数万円節約の手順",
+      "h3s": [
+        "セール・クーポン重ね掛けで最大割引を狙うタイミング",
+        "信頼できる公式ストアの見分け方と購入後のトラブル対処"
+      ],
+      "type": "howto",
+      "notes": [
+        "11.11・6.18・3.28などのビッグセールで数万円割引が現実的に狙えることを価格例で示す（例：定価95,000円→セール時68,000円）",
+        "AYANEOの公式AliExpressストア（AYANEO Official Store）での購入を推奨。評価数・フィードバック率・発送元の確認方法",
+        "関税リスクの回避策（送料込み・関税込み表示のショップを選ぶ）と紛争解決フローを案内"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "AYANEO Pocketシリーズ よくある質問（FAQ）",
+      "h3s": [
+        "スペック・使い方の疑問Q&A",
+        "アリエク購入・輸入に関するQ&A"
+      ],
+      "type": "faq",
+      "notes": [
+        "5つのFAQをQ&A形式で簡潔に回答",
+        "技適問題・日本語対応・Androidバージョン・充電規格・保証対応など日本ユーザー特有の懸念をカバー",
+        "「Pocket SとOdin2どっちがいい？」など競合比較の質問にも答える"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "まとめ｜AYANEOはアリエクで買うべき最強コスパ高単価ゲーム機",
+      "h3s": [
+        "3モデルの最終結論：あなたに合うのどれ？",
+        "今すぐアリエクでAYANEO Pocketをチェックする"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "用途別の結論を3行で凝縮し読者の決断を後押し",
+        "「10万円の機材が数万円引きで買えるのはアリエクだけ」という本記事最大のメリットを再強調",
+        "アリエクCTAを自然に配置"
+      ]
+    }
+  ],
+  "faqQuestions": [
+    "AYANEO Pocket Sは日本のWi-FiやBluetoothに技適なしで使えますか？",
+    "AYANEO Pocket SはAndroid何バージョンですか？アップデートされますか？",
+    "アリエクでAYANEO Pocketを買うと関税はいくらかかりますか？",
+    "AYANEO Pocket SとOdin2はどちらがエミュレーターに向いていますか？",
+    "AYANEO Pocket DSはニンテンドーDSのゲームをそのまま遊べますか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "画面",
+    "RAM/ROM",
+    "AliExpress価格目安（円）",
+    "重量",
+    "おすすめ用途"
+  ],
+  "internalLinks": [
+    {
+      "url": "/game/retroid-pocket5-osusume.html",
+      "anchorText": "Retroid Pocket 5・6・Flip2比較"
+    },
+    {
+      "url": "/game/anbernic-rg557-osusume.html",
+      "anchorText": "ANBERNIC RG557レビュー"
+    },
+    {
+      "url": "/game/aliexpress-gamepad-osusume.html",
+      "anchorText": "アリエクゲームパッドおすすめ10選"
+    },
+    {
+      "url": "/gadget/baseus-mobile-battery-osusume.html",
+      "anchorText": "Baseusモバイルバッテリー完全ガイド"
+    }
+  ],
+  "competitorDifferentiators": [
+    "3モデルの違いを用途別に断言形式で示すことで、スペック羅列にとどまる競合記事より意思決定しやすい構成にする",
+    "アリエクセールで数万円節約できる具体的な価格例を示し、高単価商品こそアリエクで買うべき理由を競合より強く訴求する"
+  ],
+  "xVoices": [
+    "AYANEO Pocket S 買った。16GB/512GB届いたけどSnapdragon G3x Gen2の性能がやばい。エミュもサクサク動く",
+    "このサイズでポケットに入れて持ち歩けるのが信じられない。外でガチゲームできる時代になったんだな",
+    "速度は文句なし。スピーカーはもう少し欲しかったけど、ゲームのパフォーマンスは完全に合格点",
+    "Pocket DSのデュアルスクリーンを見た瞬間に即決した。DSエミュとの相性が最高すぎる",
+    "アリエクのセールで買ったら国内価格より数万円安くなってた。高単価だからこそアリエクで買う価値がある"
+  ],
+  "createdAt": "2026-05-26"
+}
