@@ -1,0 +1,146 @@
+{
+  "slug": "epomaker-ek21-osusume",
+  "keyword": "epomaker ek21",
+  "category": "gadget",
+  "selectedTitle": "EPOMAKER EK21レビュー【2026年最新】テンキーをアリエクで揃える完全ガイド",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "EPOMAKER EK21とは？EPOMAKERキーボードと揃えるテンキーの正解",
+      "h3s": [
+        "EPOMAKERブランドとEK21の立ち位置",
+        "なぜAmazonではなくアリエクが最安なのか",
+        "「同じ軸・同じ色で揃えたい」という沼の入り口"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "EPOMAKERは中国発の自作キーボード系ブランド。TH80 Pro・Shadow-Sなどのフラッグシップを持つ",
+        "EK21はEPOMAKERのコンパクトテンキー。アルミ筐体・ガスケットマウント・ホットスワップ・VIA対応",
+        "Amazon価格¥5,715 / アリエク価格¥4,764（2026年時点）→ アリエクのほうが¥951安い",
+        "Amazonでは在庫切れ・スイッチ選択肢なしのケースが多い",
+        "X（旧Twitter）の声：「EPOMAKERのキーボードを使っているので、同じ色・同じ軸で揃えたくてこれを選びました！テンキーが欲しいとなった時に一番合っていたのはこれかな」をblockquoteで掲載",
+        "「ノートPCとコンパクトキーボードと一緒に持っておくと使えるデバイス #EPOMAKER #EK21」もblockquoteで掲載",
+        "アカウント名は一切書かない（via X のみ）"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "EPOMAKER EK21 スペック詳細レビュー｜アルミ筐体・ガスケット・VIA対応",
+      "h3s": [
+        "EK21のスペックと外観・ビルドクオリティ",
+        "ガスケットマウントの打鍵感とカスタマイズ性",
+        "VIA対応・ホットスワップ・RGBライトの実力"
+      ],
+      "type": "product",
+      "productIndex": 0,
+      "notes": [
+        "キー数：21キー（テンキー+αレイアウト）",
+        "筐体：アルミ合金製（ずっしりした高級感）",
+        "マウント：ガスケットマウント（テンキー最高峰の打鍵感）",
+        "スイッチ：ホットスワップ対応（複数軸から選択可・後から変更可）",
+        "接続：有線USB-C / Bluetooth / 2.4GHzワイヤレス（三モード）",
+        "対応：VIA・QMK（キーリマップ自由自在）",
+        "RGB：フルRGBバックライト",
+        "X（旧Twitter）の声をblockquoteで掲載：「日本で買いましたが、2箱買うより中国（アリエク）から買うと安かったのでアリエクにしました」",
+        "「カスタマイズできるテンキーデバイスとして良品！ガスケットマウント・VIA対応で最高」もblockquoteで掲載",
+        "アカウント名は一切書かない（via X のみ）",
+        "AmazonリンクはCTAボタンで掲載：https://amzn.to/4fGFJgk"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "EPOMAKER EK21のカスタマイズ術｜スイッチ・キャップ・VIA設定",
+      "h3s": [
+        "EPOMAKERキーボードと同じスイッチで揃える方法",
+        "キーキャップ交換で統一感を出すコツ",
+        "VIAでキーリマップ・マクロを設定する手順"
+      ],
+      "type": "howto",
+      "notes": [
+        "スイッチはホットスワップ対応なので後から好きな軸に変更可能",
+        "EPOMAKERキーボード（TH80 Pro・Shadow-S等）と同じスイッチを使えば軸感統一",
+        "キーキャップ：EPOMAKERが出しているダブルショットPBTキャップと色味を合わせるコツ",
+        "VIA設定：各キーをマクロや特殊キーにリマップする基本操作を解説",
+        "X（旧Twitter）の声：「テンキーが欲しいと思ってた！アリエクで購入、それが安くて一番。品質も最高 Epomaker EK21 最高🎉🎉」をblockquoteで掲載",
+        "アカウント名は一切書かない（via X のみ）"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "アリエクでEPOMAKER EK21を最安値で買う方法",
+      "h3s": [
+        "EPOMAKER公式ストアの見分け方とスイッチ選択のポイント",
+        "セール・クーポンでさらに安くなるタイミング"
+      ],
+      "type": "howto",
+      "notes": [
+        "アリエク価格：¥4,764前後（Amazon ¥5,715より¥951安い）",
+        "スイッチ種類が豊富：リニア・タクタイル・クリッキー等から選択可能",
+        "EPOMAKER Official Storeを必ず選ぶ重要性（Official Storeバッジ確認）",
+        "セール時（11.11・6.18・Choiceデー）はさらに安くなることあり",
+        "配送：通常2〜4週間（EPOMAKER公式なので品質保証あり）"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "EPOMAKER EK21 よくある質問（FAQ）",
+      "h3s": [
+        "EK21はEPOMAKERのキーボードと同じスイッチを使えますか？",
+        "Macで使えますか？",
+        "ワイヤレス（Bluetooth）の遅延はありますか？",
+        "アリエクから届くまで何日かかりますか？",
+        "初期不良・返品はできますか？"
+      ],
+      "type": "faq",
+      "notes": [
+        "スイッチ：ホットスワップ対応なので、EPOMAKERのキーボードと同じスイッチを注文時に選べる or 後から付け替え可能",
+        "Mac対応：VIAでCmd/Option/Controlの配置を変更可能",
+        "ワイヤレス遅延：2.4GHzモードならほぼ無遅延、Bluetoothは若干のラグあり",
+        "配送：通常2〜4週間",
+        "FAQ Schema対応を意識した構造"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "まとめ｜EPOMAKER EK21はアリエクでセット買いが正解",
+      "h3s": [
+        "EK21をおすすめできる人・できない人",
+        "今すぐアリエクでEK21を手に入れる手順"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "おすすめ：EPOMAKERキーボード持ちで統一したい人・ガスケットマウントのテンキーが欲しい人・VIAでカスタムしたい人",
+        "不向き：テンキーをとにかく安く・シンプルに使いたい人・Amazon翌日配送が必須の人",
+        "アリエクが最安・スイッチ選択肢豊富である点を改めて強調",
+        "CTA：アリエクで今すぐチェックするボタンを配置",
+        "内部リンク：EPOMAKERキーボードまとめ記事（epomaker-keyboard-osusume.html）に誘導"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-26",
+  "products": [
+    {
+      "product_id": "1005011548201961",
+      "rawTitle": "EPOMAKER EK21 20% VIA プログラマブル ガスケット ホットスワップ トリモード ワイヤレス メカニカル ナンバーパッド RGB バックライト & 1000mAh バッテリー付き",
+      "cleanName": "EPOMAKER EK21 20% Programmable Mechanical Numpad",
+      "price_jpy": "4764",
+      "original_price": "51.99",
+      "evaluate_rate": "100.0%",
+      "sales_count": 90,
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c38e9vTj",
+      "hasAffiliate": true,
+      "amazonUrl": "https://amzn.to/4fGFJgk",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sdc642891c6954c21862c999788bda1a6v.png",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sdc642891c6954c21862c999788bda1a6v.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S58b888b19e4d4c15a3470b31d9d4603cY.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd7dda84b79454503abae94971691cebfd.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa26104fa00cd4af8b0d68a1a8f36d218N.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S7a0d3507f6b24133a56d414722b74df71.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc2faec0d0c1f4071bd8143e23c1a473ex.jpg"
+      ],
+      "specResult": null,
+      "redditReviews": []
+    }
+  ]
+}
