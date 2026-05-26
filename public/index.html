@@ -171,7 +171,15 @@
     "@type": "WebSite",
     "name": "アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品",
     "url": "https://aliswipe.com/",
-    "description": "アリエク歴8年のマニアが、『本当に安全で、本当に安いもの』だけを厳選して発信。よくあるトラブルの回避術から、初心者向けの買い方までリアルな本音を網羅！"
+    "description": "アリエク歴8年のマニアが、『本当に安全で、本当に安いもの』だけを厳選して発信。よくあるトラブルの回避術から、初心者向けの買い方までリアルな本音を網羅！",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://aliswipe.com/sitemap.html?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
   <script type="application/ld+json">
@@ -179,7 +187,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "アリエクswipe",
-    "url": "https://aliswipe.com/"
+    "url": "https://aliswipe.com/",
+    "sameAs": ["https://aliswipe.com/"]
   }
   </script>
   <!-- ITEMLIST-JSONLD -->
