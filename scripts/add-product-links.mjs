@@ -60,11 +60,15 @@ function processFile(filepath) {
   const productSections = getProductSections(content);
   if (productSections.length === 0) return 'no-sections';
 
-  // 比較表: tbody の行を製品セクション順に対応付け
+  // 比較表: thead の1列目が「モデル名」系の表だけリンクを付ける
+  const PRODUCT_TABLE_HEADERS = ['モデル', '製品', '商品', 'モデル名', '製品名'];
   let rowIndex = 0;
   content = content.replace(
-    /(<tbody>)([\s\S]*?)(<\/tbody>)/g,
-    (full, open, tbody, close) => {
+    /(<thead>([\s\S]*?)<\/thead>\s*<tbody>)([\s\S]*?)(<\/tbody>)/g,
+    (full, openWithHead, headContent, tbody, close) => {
+      const firstTh = (headContent.match(/<th[^>]*>([\s\S]*?)<\/th>/) || [])[1] || '';
+      const firstThText = firstTh.replace(/<[^>]+>/g, '').trim();
+      if (!PRODUCT_TABLE_HEADERS.some(h => firstThText.includes(h))) return full;
       rowIndex = 0;
       const newTbody = tbody.replace(
         /(<tr[^>]*>)([\s\S]*?)(<\/tr>)/g,
@@ -83,7 +87,7 @@ function processFile(filepath) {
           return `${trOpen}${newTr}${trClose}`;
         }
       );
-      return `${open}${newTbody}${close}`;
+      return `${openWithHead}${newTbody}${close}`;
     }
   );
 
