@@ -29,6 +29,10 @@
       --max:    760px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
 
     .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
@@ -294,15 +298,15 @@
     <p>この記事では、SF3000のスペック・実機の動作検証・CFWの話・買い方まで、ファミコン・スーファミ世代の自分が全部正直に書きます。購入を迷っている人の背中を押せれば幸いです。</p>
 
     <figure class="fv-product-image">
-  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S4ce70367b1fe461287397d510b18f59fH.jpg" alt="SF3000" loading="eager">
+  <img src="/images/products/sf3000-game-osusume/e38831c0.jpg" alt="SF3000" loading="eager">
 </figure>
 <nav class="toc">
   <div class="toc-title">📋 この記事の目次</div>
   <ol>
       <li><a href="#sec-1">SF3000とは？今一番バズっている激安レトロゲーム機</a></li>
-      <li><a href="#sec-2">【実機レビュー】2,000円でどこまで遊べるか正直に検証</a></li>
-      <li><a href="#sec-3">SF3000のCFW（カスタムファームウェア）入門</a></li>
-      <li><a href="#sec-4">SF3000 vs Amazon並行輸入品：なぜアリエクが断然お得か</a></li>
+      <li><a href="#sec-2">【実機レビュー】<a href="#sec-2" class="product-link">2,000円でどこまで遊べるか正直に検証</a></a></li>
+      <li><a href="#sec-3"><a href="#sec-3" class="product-link">SF3000のCFW（カスタムファームウェア）入門</a></a></li>
+      <li><a href="#sec-4"><a href="#sec-4" class="product-link">SF3000 vs Amazon並行輸入品：なぜアリエクが断然お得か</a></a></li>
       <li><a href="#sec-5">SF3000の買い方ガイド：アリエクでChoiceを使って最安値で</a></li>
       <li><a href="#sec-6">SF3000に関するよくある質問（FAQ）</a></li>
       <li><a href="#sec-7">まとめ：SF3000はガチャガチャ感覚で買える最高の激安レトロ機</a></li>
@@ -337,9 +341,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>ゲームボーイ / GBC</td><td>対応</td><td>◎ 快適</td></tr>
-          <tr><td>ゲームボーイアドバンス（GBA）</td><td>対応</td><td>◎ 快適</td></tr>
-          <tr><td>スーパーファミコン（SFC）</td><td>対応</td><td>◎ 快適</td></tr>
+          <tr><td><a href="#sec-2" class="product-link">ゲームボーイ / GBC</a></td><td>対応</td><td>◎ 快適</td></tr>
+          <tr><td><a href="#sec-3" class="product-link">ゲームボーイアドバンス（GBA）</a></td><td>対応</td><td>◎ 快適</td></tr>
+          <tr><td><a href="#sec-4" class="product-link">スーパーファミコン（SFC）</a></td><td>対応</td><td>◎ 快適</td></tr>
           <tr><td>メガドライブ（MD）</td><td>対応</td><td>◎ 快適</td></tr>
           <tr><td>ファミコン（FC/NES）</td><td>対応</td><td>◎ 快適</td></tr>
           <tr><td>プレイステーション（PS1）</td><td>対応</td><td>○ ほぼ快適</td></tr>
@@ -380,9 +384,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td>画面サイズ</td><td>4.5インチ IPS</td></tr>
-          <tr><td>OS</td><td>Linuxベース（CFW対応）</td></tr>
-          <tr><td>充電端子</td><td>USB-C</td></tr>
+          <tr><td><a href="#sec-2" class="product-link">画面サイズ</a></td><td>4.5インチ IPS</td></tr>
+          <tr><td><a href="#sec-3" class="product-link">OS</a></td><td>Linuxベース（CFW対応）</td></tr>
+          <tr><td><a href="#sec-4" class="product-link">充電端子</a></td><td>USB-C</td></tr>
           <tr><td>ストレージ</td><td>microSDカードスロット搭載</td></tr>
           <tr><td>ボタン配置</td><td>ABXY + アナログスティック + LR/ZL/ZRトリガー</td></tr>
           <tr><td>スピーカー</td><td>ステレオ内蔵 + イヤホンジャック</td></tr>
@@ -491,7 +495,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>SF3000（AliExpress）</td>
+            <td><a href="#sec-2" class="product-link">SF3000（AliExpress）</a></td>
             <td>¥2,980</td>
             <td>4.5インチ IPS</td>
             <td>GB/GBC/GBA/SFC/MD/FC/PS1/PSP/DS</td>
@@ -499,7 +503,7 @@
             <td>約180g（実測）</td>
           </tr>
           <tr>
-            <td>SF3000（Amazon転売品）</td>
+            <td><a href="#sec-3" class="product-link">SF3000（Amazon転売品）</a></td>
             <td>¥4,500〜5,000</td>
             <td>4.5インチ IPS</td>
             <td>同上</td>
@@ -628,6 +632,10 @@
       <div class="related">
     <div class="related-title">関連記事</div>
     <div class="related-grid">
+      <a href="/game/retroid-pocket5-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">Retroid Pocket 5・6・Flip2比較【2026年最新】アリエクで買えるハイエンド中華ゲーム機を徹底解説</div>
+      </a>
       <a href="/game/miyoo-mini-flip-osusume.html" class="related-card">
         <div class="rc-tag">ゲーム</div>
         <div class="rc-title">Miyoo Mini Flipおすすめ【2026年最新】アリエクで安く買う完全ガイド＋Plusとの比較</div>
@@ -635,10 +643,6 @@
       <a href="/game/gamesir-t4-pro-osusume.html" class="related-card">
         <div class="rc-tag">ゲーム</div>
         <div class="rc-title">GameSir T4 Proおすすめ【2026年最新】アリエクで安く買う完全ガイド</div>
-      </a>
-      <a href="/game/gamesir-controller-osusume.html" class="related-card">
-        <div class="rc-tag">ゲーム</div>
-        <div class="rc-title">GameSirコントローラーおすすめ5選【2026年最新】アリエク公式ストアで安く買う完全ガイド</div>
       </a>
       <a href="/guide/naturehike-brand.html" class="related-card">
         <div class="rc-tag">ガイド</div>

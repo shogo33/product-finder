@@ -29,6 +29,10 @@
       --max:    760px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
 
     .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
@@ -271,9 +275,9 @@
   <div class="toc-title">📋 この記事の目次</div>
   <ol>
       <li><a href="#sec-1">Retroid Pocket 5とは？中華ゲーム機の中でおすすめされる理由</a></li>
-      <li><a href="#sec-4">Retroid Pocket 5レビュー｜PS2・GameCubeがサクサク動くスタンダード機</a></li>
-      <li><a href="#sec-3">Retroid Pocket 6レビュー｜さらに進化したRP5の後継機</a></li>
-      <li><a href="#sec-2">Retroid Pocket Flip 2レビュー｜折りたたみクラムシェル派のための選択肢</a></li>
+      <li><a href="#sec-4"><a href="#sec-4" class="product-link">Retroid Pocket 5レビュー</a>｜PS2・GameCubeがサクサク動くスタンダード機</a></li>
+      <li><a href="#sec-3"><a href="#sec-3" class="product-link">Retroid Pocket 6レビュー</a>｜さらに進化したRP5の後継機</a></li>
+      <li><a href="#sec-2"><a href="#sec-2" class="product-link">Retroid Pocket Flip 2レビュー</a>｜折りたたみクラムシェル派のための選択肢</a></li>
       <li><a href="#sec-5">Retroid Pocket 5 モデル別スペック比較表</a></li>
       <li><a href="#sec-6">Retroid Pocket 5の選び方：自分に合ったおすすめ構成はどれ？</a></li>
       <li><a href="#sec-7">AliExpressでRetroid Pocket 5をお得に買う方法・注意点</a></li>
@@ -483,7 +487,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><strong>Retroid Pocket 5</strong></td>
+        <td><a href="#sec-2" class="product-link"><strong>Retroid Pocket 5</strong></a></td>
         <td>¥44,740〜（AliEx）<br>※8GB版は¥13,000〜¥15,000台（他ショップ）</td>
         <td>8GB or 16GB RAM<br>128GB〜（microSD対応）</td>
         <td>PS2 / GameCube / Wii / Dreamcast（◎）<br>Switch（△〜○）</td>
@@ -491,7 +495,7 @@
         <td>PS2・GC世代をがっつり遊びたい人<br>Steamリモートプレイ重視の人<br>AMOLEDディスプレイにこだわる人</td>
       </tr>
       <tr>
-        <td><strong>Retroid Pocket Flip 2</strong></td>
+        <td><a href="#sec-3" class="product-link"><strong>Retroid Pocket Flip 2</strong></a></td>
         <td>¥34,656（AliEx）</td>
         <td>8GB〜RAM<br>microSD対応</td>
         <td>PS2 / GameCube / Wii / Dreamcast（◎）<br>DS / 3DS 2画面レイアウト（◎）</td>

@@ -29,6 +29,10 @@
       --max:    760px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+    a.product-link::after { content: ' ↑'; font-size: 0.75em; opacity: 0.6; }
+    a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
 
     .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
@@ -288,14 +292,14 @@
 <div class="container"><div class="article-body">
 
 <figure class="fv-product-image">
-  <img src="https://ae-pic-a1.aliexpress-media.com/kf/Hb26f29ded4fe49a48d220483e5f8bf95J.jpg" alt="OneTigris SOLO HOMESTEAD TC テント" loading="eager">
+  <img src="/images/products/onetigris-tent-osusume/1ef6e2ac.jpg" alt="OneTigris SOLO HOMESTEAD TC テント" loading="eager">
 </figure>
 <nav class="toc">
   <div class="toc-title">📋 この記事の目次</div>
   <ol>
       <li><a href="#sec-1">OneTigrisとは？アリエクで買う理由とAmazonとの価格差</a></li>
-      <li><a href="#sec-2">OneTigris SOLO HOMESTEAD レビュー｜30代ソロキャンパーの本命テント</a></li>
-      <li><a href="#sec-3">OneTigris CONIFER レビュー｜設営の速さと開放感が魅力の一幕</a></li>
+      <li><a href="#sec-2"><a href="#sec-2" class="product-link">OneTigris SOLO HOMESTEAD レビュー</a>｜30代ソロキャンパーの本命テント</a></li>
+      <li><a href="#sec-3"><a href="#sec-3" class="product-link">OneTigris CONIFER レビュー</a>｜設営の速さと開放感が魅力の一幕</a></li>
       <li><a href="#sec-4">SOLO HOMESTEAD vs CONIFER｜スペック比較表</a></li>
       <li><a href="#sec-5">アリエクでOneTigrisテントを最安値で買う方法</a></li>
       <li><a href="#sec-6">OneTigrisテントに関するよくある質問（FAQ）</a></li>
@@ -520,7 +524,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><strong>OneTigris SOLO HOMESTEAD</strong></td>
+        <td><a href="#sec-2" class="product-link"><strong>OneTigris SOLO HOMESTEAD</strong></a></td>
         <td>シリコンコーティングポリコットン（TC）</td>
         <td>約1.63kg</td>
         <td>ポール2本・軍幕スタイル</td>
@@ -528,7 +532,7 @@
         <td>焚き火派・野営スタイル・初心者</td>
       </tr>
       <tr>
-        <td><strong>OneTigris CONIFER T/C</strong></td>
+        <td><a href="#sec-3" class="product-link"><strong>OneTigris CONIFER T/C</strong></a></td>
         <td>シリコンコーティングナイロン</td>
         <td>約2kg</td>
         <td>センターポール1本・ティピー型</td>
