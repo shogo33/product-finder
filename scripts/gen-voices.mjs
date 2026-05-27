@@ -118,6 +118,13 @@ const ARTICLE_CONFIG = [
     topic:     'Baseusモバイルバッテリーのリアルな評判・体験談',
   },
   {
+    slug:      'baseus-charger-osusume',
+    folder:    'gadget',
+    subreddit: 'Aliexpress',
+    queries:   ['Baseus GaN charger review', 'Baseus charger aliexpress quality', 'Baseus 100W 140W charger'],
+    topic:     'Baseus充電器・イヤホンのリアルな評判・体験談',
+  },
+  {
     slug:      'naturehike-tent-osusume',
     folder:    'outdoor',
     subreddit: 'CampingandHiking',

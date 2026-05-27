@@ -177,6 +177,10 @@
   
     /* 読書進捗バー */
     #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
+    .cta-sticky { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(90deg, #e8253a 0%, #ff6b35 100%); color: #fff; text-align: center; padding: 12px 20px; z-index: 200; box-shadow: 0 -4px 20px rgba(232,37,58,0.35); }
+    .cta-sticky a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.88rem; }
+    .cta-sticky .sub { font-size: 0.7rem; opacity: 0.85; }
+    @media (max-width: 640px) { .cta-sticky { display: block; } body { padding-bottom: 72px; } }
   </style>
 
   <!-- JSON-LD -->
@@ -246,7 +250,7 @@
   "url": "https://aliswipe.com/outdoor/naturehike-airmat-osusume.html",
   "image": "https://aliswipe.com/images/ogp/naturehike-airmat-osusume.jpg",
   "datePublished": "2026-05-21",
-  "dateModified": "2026-05-26",
+  "dateModified": "2026-05-27",
   "author": {
     "@type": "Person",
     "name": "アリエクパパ",
@@ -296,7 +300,7 @@
   <div class="hero">
     <div class="hero-eyebrow">⛺ Naturehike × AliExpress</div>
     <h1>Naturehikeエアーマットおすすめ5選【2026年最新】<br>アリエクで安く買えるスリーピングパッド比較</h1>
-<div class="article-date">📅 更新日：2026-05-26　公開日：2026-05-21</div>
+<div class="article-date">📅 更新日：2026-05-27　公開日：2026-05-21</div>
 <p class="promo-notice">本ページはプロモーションが含まれています</p>
     <p class="hero-lead">
       「安いエアーマットは寒い」——そう思い込んでいた時期が私にもありました。でもNaturehikeのマットを実際に冬キャンプで使って、その認識は完全に変わりました。国内ブランドの半額以下なのに、R値8.8モデルは本当に地面の冷えを遮断できる。2,000円台から冬対応まで、実際に使い比べた5選を正直に紹介します。
@@ -859,6 +863,7 @@
   </div>
 </footer>
 
+<div class="cta-sticky" id="cta-sticky"></div>
 <script src="/js/cta-sticky.js" defer></script>
 </body>
 </html>
