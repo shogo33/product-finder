@@ -559,6 +559,7 @@ ${articleBody}
 </div>
 
 <div class="cta-sticky" id="cta-sticky"></div>
+<script src="/js/cta-sticky.js" defer></script>
 
 <footer class="site-footer" id="site-footer"></footer>
 
