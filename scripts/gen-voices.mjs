@@ -62,6 +62,20 @@ const ARTICLE_CONFIG = [
     topic:     '8BitDo Ultimate2コントローラーのリアルな評判・使用感・購入体験談',
   },
   {
+    slug:      'retroid-pocket6-osusume',
+    folder:    'game',
+    subreddit: 'retroid',
+    queries:   ['pocket 6 review', 'pocket 6 ps2 emulation', 'pocket 6 aliexpress buy'],
+    topic:     'Retroid Pocket 6のPS2エミュ性能・購入体験・AliExpressでの評判',
+  },
+  {
+    slug:      'gamesir-g7-se',
+    folder:    'game',
+    subreddit: 'gamesir',
+    queries:   ['g7 se review', 'g7 se hall effect', 'g7 se aliexpress'],
+    topic:     'GameSir G7 SEのホールエフェクト・ドリフトなし性能・購入体験談',
+  },
+  {
     slug:      'gamesir-controller-osusume',
     folder:    'game',
     subreddit: 'gamesir',

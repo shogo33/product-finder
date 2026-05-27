@@ -380,7 +380,9 @@
       "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/articles/gamesir-g7-se-research.json','utf8'\\)\\); d.products.forEach\\(p=>console.log\\(p.productId, '|', p.cleanName, '|', p.affiliateLink?.slice\\(0,60\\)\\)\\); console.log\\('images[0]:', d.products[0]?.images?.slice\\(0,2\\)\\)\")",
       "Bash(node scripts/step3-write.mjs gamesir-g7-se)",
       "Bash(rm c:/Users/USER/product-finder/public/x-data/g7se_fine_* c:/Users/USER/product-finder/public/x-data/gs064_fine_* c:/Users/USER/product-finder/public/x-data/g7se131_* c:/Users/USER/product-finder/public/x-data/gamesir064_* 2>/dev/null; echo \"cleaned\")",
-      "Bash(echo \"exit:$?\")"
+      "Bash(echo \"exit:$?\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/articles/retroid-pocket5-osusume-research.json','utf8'\\)\\); console.log\\(JSON.stringify\\(d.products.map\\(p=>\\({id:p.productId,name:p.cleanName,price:p.price,link:p.affiliateLink?.slice\\(0,80\\)}\\)\\),null,2\\)\\)\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/articles/retroid-pocket6-osusume-research.json','utf8'\\)\\); d.products.forEach\\(p=>console.log\\(p.cleanName,'|',p.affiliateLink?.slice\\(-20\\)\\)\\)\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",

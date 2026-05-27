@@ -1,0 +1,236 @@
+{
+  "slug": "retroid-pocket6-osusume",
+  "keyword": "Retroid Pocket 6 レビュー PS2 エミュ",
+  "category": "game",
+  "selectedTitle": "Retroid Pocket 6レビュー【2026年最新】PS2エミュ性能を徹底検証",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "Retroid Pocket 6とは？ブランド概要と2026年の立ち位置",
+      "h3s": [
+        "Retroidブランドの歴史と信頼性",
+        "Retroid Pocket 6がシリーズ最高傑作と言われる理由"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "Retroid（重慶Retroid Interactive）はRP2以降で急速に評価を上げた中堅ブランドで、ファームウェアサポートの継続性が強み",
+        "RP6はDimensity 1100＋6インチ有機EL＋Android 13という構成でRP5から大幅進化",
+        "AliExpressでの公式ストア存在と正規品購入のメリットを明記"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "Retroid Pocket 6 スペック完全解説｜PS2エミュに必要なスペックと照らし合わせ",
+      "h3s": [
+        "主要スペック一覧（SoC・GPU・RAM・ディスプレイ）",
+        "PS2エミュに求められるスペックとRP6の合格点"
+      ],
+      "type": "product",
+      "notes": [
+        "Dimensity 1100（6nmプロセス・Cortex-A78×4コア）のベンチマーク数値を示す",
+        "AetherSX2/NetherSX2の推奨スペックと比較し、RP6がどの水準をクリアしているか明記",
+        "RAM 8GB・内部ストレージ128GBの実用的な意味をゲーマー目線で解説"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "PS2・GC・Switch・原神エミュ動作検証｜RP6はどこまで動く？",
+      "h3s": [
+        "PS2・GameCubeがフルスピードで動くタイトル一覧",
+        "原神（Genshin Impact）は快適？Android版との比較",
+        "発熱・バッテリー持ち：長時間プレイの現実"
+      ],
+      "type": "product",
+      "notes": [
+        "GT4・ワンダと巨像・ICO・鬼武者・バイオ4・FFXIIなど代表PS2タイトルの動作を表形式で記載",
+        "原神はAndroid版をそのまま動作可能。グラフィック設定・フレームレート安定性を解説",
+        "発熱：高負荷時の本体温度・サーマルスロットリングの有無・冷却対策",
+        "バッテリー：PS2エミュで何時間持つか・充電ペースも記載",
+        "NetherSX2推奨設定（バックエンド・EE/IOP・スレッドレンダリング）も補足"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "Retroid Pocket 5との違いを比較｜買い替えは必要？",
+      "h3s": [
+        "RP5→RP6でPS2・GCエミュはどれだけ変わる？",
+        "RP5所持者はRP6に乗り換えるべきか正直な結論"
+      ],
+      "type": "comparison",
+      "notes": [
+        "RP5とRP6のSoC・GPU・RAM・ディスプレイの差を比較表で示す",
+        "PS2重量級タイトル（GT4・バイオ4・ワンダ）での動作差を具体的に示す",
+        "RP5から乗り換えるなら価格差分の価値があるか正直に評価する",
+        "既存のretroid-pocket5-osusume.htmlへ内部リンク誘導"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "Retroid Pocket 6の選び方｜カラー・ストレージ・購入時期の最適解",
+      "h3s": [
+        "カラーバリエーションと限定版の違い",
+        "128GB版と256GB版どちらを買うべきか"
+      ],
+      "type": "howto",
+      "notes": [
+        "Frosted Black・Transparent・Whiteなどのカラー展開と在庫状況を解説",
+        "microSDで容量拡張できるため128GBでも実用上問題ない点を補足",
+        "セール時期（11.11・6.18・年末）に合わせた購入タイミングのアドバイス"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "アリエクでRetroid Pocket 6を最安値で買う完全手順",
+      "h3s": [
+        "公式ストアと非正規ストアの見分け方",
+        "クーポン・コイン・セールを組み合わせて最安値にする方法"
+      ],
+      "type": "howto",
+      "notes": [
+        "Retroid公式AliExpressストアのURLと評価スコアを確認するポイントを明記",
+        "AliExpressクーポンスタック（Select Coupon＋Store Coupon）の具体的な使い方",
+        "関税リスク・配送日数（通常10〜20日）・保険付き配送の選択について注意喚起"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "よくある質問｜Retroid Pocket 6のPS2エミュについてまとめて回答",
+      "h3s": [],
+      "type": "faq",
+      "notes": [
+        "FAQ形式でSchema対応のQ&Aを5問掲載",
+        "「日本語化できる？」「充電器は何W必要？」「保証はある？」など購入後の不安に答える",
+        "検索サジェストに出やすい疑問を優先して拾う"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "まとめ｜Retroid Pocket 6はPS2エミュ目的で買って後悔しない携帯ゲーム機",
+      "h3s": [
+        "こんな人に強くおすすめする",
+        "アリエクで今すぐ購入するリンク"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "PS2世代タイトルをメインに遊ぶならRP6はコスパ・操作性・サポート体制で最有力候補",
+        "PS3・Switch・Wii Uタイトルも視野に入れるならOdin 2検討も促してバランスを保つ",
+        "CTA：アリエク公式ストアリンク・関連記事への誘導で離脱防止"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-27",
+  "products": [
+    {
+      "product_id": "1005011984439598",
+      "rawTitle": "Retroid Pocket 6 RP6 Androidゲーム機 ホール効果トリガー 8GEN2 5.5インチ 1080P 120Hz AMOLEDスクリーン 6000mAh ハンドヘルドゲーム機",
+      "cleanName": "Retroid Pocket 6 RP6",
+      "price_jpy": "56355",
+      "original_price": "3623.46",
+      "sales_count": 10,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4OU78oyuYLLnI4yIfPecM0njXEqkevuZX6OZo2QFkhl7ygHz4cHw1nW1FWjKy9UW1cP5g560mwwiodanDSFGBiS2Rfvcc9oNrSGSzwoX0PI1a6Um0Lsl6UM78gI1zXou7GopQPrdUddJVlUzYq7ZH8Jm2RaRseS8NORhdGeXsocZuvau8VzGNwLbCWML7bt6YISzbCdVFgH1IWKopgy9gXcOaM0Tbo4nA5nljkLr6iVShT5AbV6vBfCGGQIwq43LkD1A4XBy3F71e9HD7NQih6I9Vey0VVHoRIoFqOV4eVABmM21DB49sR9Xy7pei844cxzYZK01hDnzNUQdH7YkCXU0mYwhFpvEeSr0eEd14fzcWA2nIfdhW5N6twqyd8hR2GKSgQ5wwoVSkKuaDR9PSC6otq7Ut2qyH3ykR458022cC2OENiwRbzHro7UIlQTAXWac44YQnFpXsUJN8tQpIji3TnJsTaGgcGv0uQIfw3bu2E4CVEelXrmDLCp6sw61LrNUkdvWHec4aqud359I5ZsQiLLQnCNRrzGdu2JEjiI7QM7znFXABUk1vr8barG438VX2U1ASHhJivNgVEHErj5f2HPU2TWXUVVopEB5JE54mSBUpMjrjnNah2kIBAPVbQdWZsXUEUbyRQD6eRfmTUy731n8WaoQHFNyWZME2VmFwh3YBfDzjmWXAUgMZuem0iWSgVUFeTKWF",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S29809bcc78c94afeb64d7407ef6c6931t.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S29809bcc78c94afeb64d7407ef6c6931t.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2fe2905bc8014cc6931f7b3d35717864G.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8fe45b96818a4fae951e4c8911ffbcb7H.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S33e7f5b8bd3d4c95907f516e0776a7325.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0fee64df73fe42fb996830e8458ed694O.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S6f7bc7449c4d473d9583e55810f08b03J.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "Retroid Pocket 6 RP6",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005012212944422",
+      "rawTitle": "Retroid Pocket 5 フラッグシップAndroid携帯ゲーム機 5.5インチ 1080P OLED SD865 アクティブ冷却 ホールジョイスティック レトロエミュレーター ギフト",
+      "cleanName": "Retroid Pocket 5",
+      "price_jpy": "54118",
+      "original_price": "3479.59",
+      "sales_count": 0,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CnnUc4BWBEDTB0ou9R8LtMl9BiIj84UhMzMbq3k6Alt7MnuRFsYkBGbYxxSPWD6tw4SGl6QES2Pditd43GqEUhRXroGwqHOtRDgDObY0UW4pEfgE8WoRGe6p6MvlWIx3KcsVGAe5WP8IqkuYodYm7avHl2VjsAHFnUU7MhqQmJR3gdwusMwLCc04pSm2kKCGdkazLzPdJmNPDM0m9OV81CfSWLuGgHX5utyb1FcTK0QBtyrDD0G8RKMNahuULRfUI8HtwjuL8KQXHVEn9NKSj9xcmdiMjzCtr2I4lGZswrbliv652hLVrxD8wINNuCU0ekZo4nTKwXkWRdSgrp336bbE7SusMAAXshfyYPUc2cF3p1bltvHlLN81nivsS9phbgXhOgZfIta7p6iJldOZHIWTgcQOstIzIiiJbuJeOcaAzyZrXFDyZOr12rU36ZsDpq0rAmsu0SVVx1Mt0msvfqgo3nGaszJpQMDuth2Vef4dorcAhChZB0HumWiIW8fBLVFsigfDRfwzfXpXFKH91Ou5PMbyumhqtY9gaAIQrMXC8E5swXxhl1XsbcwV6xEH9LcVPoLQQMlDQPyw2HI8jIeEVVU55E7jyvcTv2rbNWczBb8zXZ9lYKFfVbleFuEMRKnHanpdbYIgjNPnaL4YkRkegQMiCs00WBTSAzeEH22GllZtHUS4D90LFVeAo5YwmuiHSVz6Y4wTtd",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S337fede068104b58a59f16611c4db9cda.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S337fede068104b58a59f16611c4db9cda.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S6720fed2c50b42eda0f2a29a3f1f5dcdf.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sb16fd0108a8640288e1834ca275ce9645.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S9a70ee8587ac41758cc385ada7e47d4du.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S3aa431b3da20415894af2edbd42b3ba0d.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4e4feeaa58eb45bf83d57b2d88fb408dC.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "Retroid Pocket 5",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005008484507763",
+      "rawTitle": "Retroid Pocket Flip 2 ハンドヘルドコンソール SD865 5.5インチ1080p OLED Wifi6 ハンドヘルドポータブルゲーム機 ホールロッカー搭載 カスタムPS2対応",
+      "cleanName": "Retroid Pocket Flip 2",
+      "price_jpy": "34748",
+      "original_price": "2904.43",
+      "sales_count": 24,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C2Ylk9sXlI3JQmmgl87M0aA32R8q47Oa5e5cqp8qX8pl4jVuaXPdSvRp4QSiYZuZxokMTjebbvSQ7dSCnDQ79hiyUMp01Unn4GO35Mccf4EHSxyn5VYvBH8DFKADAIjg8MrVVeervzwo1DRhLmNK9Dj3gg83l9RFfIUhPkoGTUvq9Su40o7YUE5G5WnHwFaaL3aFm2mkaaD3VR62f54YYeCyVokZ50m1acg9hIJBTe8eHZUAugLq6bjgi4JZjHocUiaMrgfA6zcwxQI0lRSgdJ0i0NBw9nwCtq8QgOFVO0PoL5gCXzAqKMfIpG1OYG95zmb4Jf9vUbgy0DWx8W7t8tipLZkZFR0tCXtaqKsOB0BpY2pw42YgjMvrrKW2nE6LFqH9fSJ0ICPjPybcLUFAkMRfNeLJ943wILNZduoYxe8kY6vKtfnQJ9qGTacT3ce8ZI6QNGz6CKCa7QrKZoTEaZtjjUaeICc2tn99UtGcPJkr7ZrKr2OTCJkG05Dn7fHxn9BpCGGeh3hRvKO9IAdrFoI7GqgzVyStFiIehOdakcFoUPQMRl9498uVHi39Ig1wgZlcpD65pt5cf7HJRtRKUO6eB2VjpHo8mKC6t1fgZoJdqaPoKA3m2RdWkc3gqqzsNKbu5bNhie2ZyD7QxfRrmfgIZPzJS59WbyRjGGNWXudeM8G8YuL1wiT0Os4JVUmcICN7swOlaqN1hH",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S1a863cb7c4894ff78fe08c13f36f131aA.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1a863cb7c4894ff78fe08c13f36f131aA.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sfc2751340fc44e859c4024d93c9d1fe5W.jpeg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4d5ad5e0e4e749ad93772bd0fdc87a23T.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8c6f2eb80ec54ff29b7af365e8c3f8cdN.jpeg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S43efdce1fa7149c1a91378246602974fQ.jpeg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S28463003238241c5b780737a3c6357eap.jpeg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "Retroid Pocket Flip 2",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "faqQuestions": [
+    "Retroid Pocket 6でPS2のゲームはフルスピードで動きますか？",
+    "Retroid Pocket 6はアリエクで偽物が売られていませんか？",
+    "Retroid Pocket 6の充電は何ワットの充電器が必要ですか？",
+    "Retroid Pocket 6とRetroid Pocket 5はPS2エミュでどちらが優れていますか？",
+    "Retroid Pocket 6はPS3やSwitchのエミュレーターにも対応していますか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "価格（円目安）",
+    "SoC",
+    "RAM",
+    "ディスプレイ",
+    "PS2動作安定度"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/aliexpress-mini-pc-gaming-osusume.html",
+      "anchorText": "アリエクのゲーミングミニPCおすすめ記事"
+    },
+    {
+      "url": "/gadget/aliexpress-chuka-tablet-osusume.html",
+      "anchorText": "アリエクの中華タブレットおすすめ5選"
+    },
+    {
+      "url": "/gadget/baseus-charger-osusume.html",
+      "anchorText": "Baseusの充電器レビュー（RP6の充電に最適な高出力モデルも紹介）"
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-05-27T14:36:58.671Z"
+}

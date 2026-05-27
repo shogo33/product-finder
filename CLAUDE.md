@@ -24,9 +24,11 @@ npm run gen-all
 node scripts/step1-plan.mjs <slug>        # プランJSON作成
 node scripts/step2-research.mjs <slug>    # AliExpress商品情報 + Tavily/Reddit調査
 node scripts/step3-write.mjs <slug>       # Claude が記事生成
-node scripts/gen-voices.mjs <slug>        # Reddit実データをVOICEブロックに注入
+node scripts/gen-voices.mjs <slug>        # Reddit実データをVOICEブロックに注入【必須・省略禁止】
 npm run gen-all                           # sitemap/index/OGP更新
 ```
+
+**`gen-voices.mjs` は省略禁止。** X声（スクショ）とReddit声（gen-voices自動取得）の両方が揃って記事完成。どちらか欠けている場合はその理由を明記してから公開する。
 
 - slug は `public/basics/` に置くHTMLのファイル名（拡張子なし）
 - step2 は AliExpress API + Tavily API を使うため `.env` が必要
