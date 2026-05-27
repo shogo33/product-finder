@@ -1,0 +1,336 @@
+{
+  "slug": "ugreen-brand",
+  "folder": "guide",
+  "plan": {
+    "keyword": "UGREEN どこの国 評判 危険性 信頼性 充電器",
+    "slug": "ugreen-brand",
+    "category": "guide",
+    "searchIntent": "問題解決系|入門系",
+    "searchIntentNote": "UGREENという中国ブランドの充電器を購入前に安全性・信頼性を調べているユーザーが、「本当に買って大丈夫か」という不安を解消したい段階にある。購入意欲はあるが一歩踏み出せない情報収集フェーズ。",
+    "persona": "中国製ガジェットを10年以上使い続けてきた自称「人柱レビュアー」で、安全規格や技術仕様を読み込んで購入判断をするタイプ。読者の「怪しいかも…」という不安に正面から向き合い、データと実体験でスッキリ解消してあげることに喜びを感じる。",
+    "targetProductCount": 4,
+    "titles": [
+      "UGREEN充電器は危険？どこの国か・評判・信頼性を徹底解説【2026年最新】",
+      "UGREENはどこの国？充電器の危険性・信頼性・評判を正直レビュー【2026年】",
+      "UGREEN充電器の評判と信頼性【2026年最新】危険性・どこの国か完全解説"
+    ],
+    "selectedTitle": "UGREEN充電器は危険？どこの国か・評判・信頼性を徹底解説【2026年最新】",
+    "metaDescription": "UGREENはどこの国のブランド？充電器は危険なの？本記事ではUGREENの評判・安全規格・信頼性をデータで徹底解説。実際にアリエクで買えるおすすめモデルも紹介しているので、購入前に必ずチェックしてください。",
+    "intro": "「UGREENって中国製でしょ？本当に安全なの？」そんな不安を感じたことはありませんか？充電器は毎日スマホやPCに接続するものだからこそ、ブランドの信頼性が気になるのは当然です。結論から言うと、UGREENは国際安全規格を複数取得した信頼性の高いブランドであり、世界100か国以上で販売実績があります。この記事では、UGREENがどこの国のメーカーなのか、危険性の真相、ユーザーの評判、そしてアリエクで買えるおすすめ充電器モデルまで、すべて正直にお伝えします。不安を解消してから、最適な1台を選びましょう。",
+    "sections": [
+      {
+        "id": "section1",
+        "h2": "UGREENはどこの国のブランド？基本情報と信頼性の背景",
+        "h3s": [
+          "UGREENの本社・設立・規模を確認",
+          "世界100か国以上での販売実績と認知度",
+          "Anker・Baseusとの違い——中国ブランドの中でのポジション"
+        ],
+        "type": "brand_overview",
+        "notes": [
+          "中国・深圳に本社を置く2012年設立のブランドであることを明示し、日本人が持つ「中国製＝怪しい」という先入観を客観データで崩す",
+          "Amazon・楽天・AliExpressでの取り扱い実績、Amazonベストセラー獲得実績など具体的な数字を交える",
+          "Anker（韓国系・米国上場）やBaseus（中国）と並べてUGREENのカテゴリを明確化し、読者に市場の文脈を伝える"
+        ]
+      },
+      {
+        "id": "section2",
+        "h2": "UGREEN充電器の危険性は本当にあるの？安全規格を検証",
+        "h3s": [
+          "PSE・CE・FCC・Rohs——取得している安全規格一覧",
+          "過充電・過熱防止などの保護回路の実装状況",
+          "危険と言われる原因——粗悪品との混同を解説"
+        ],
+        "type": "brand_overview",
+        "notes": [
+          "PSE（日本）・CE（欧州）・FCC（米国）など主要安全規格の取得状況を列挙し、規格の意味も簡単に説明する",
+          "過充電・過熱・短絡保護など多重保護機能の有無を具体的に解説し、「危険」という評判の根拠を整理する",
+          "Amazon等で粗悪なコピー品が出回っている事実に触れ、正規品購入の重要性（公式ストア・AliExpress公式）を強調する"
+        ]
+      },
+      {
+        "id": "section3",
+        "h2": "UGREENの評判——ユーザーの口コミ・レビューまとめ",
+        "h3s": [
+          "良い評判：コスパ・耐久性・デザインが高評価",
+          "悪い評判：個体差・サポート対応への声",
+          "総合評価：Amazonレビュー平均と信頼度スコア"
+        ],
+        "type": "brand_overview",
+        "notes": [
+          "Amazon・AliExpressの実際のレビュー傾向を分析し、高評価・低評価の傾向をフラットに紹介する",
+          "「壊れた」「熱い」などの否定的レビューがどのような条件で発生しているかを分析し、使用上の注意点に落とし込む",
+          "星評価の平均値や「Verified Purchase」数など数値的根拠を示して信頼性を担保する"
+        ]
+      },
+      {
+        "id": "section4",
+        "h2": "UGREEN Nexode 65W GaN充電器——コンパクト万能モデル",
+        "h3s": [
+          "スペックと対応機器を確認",
+          "アリエクでの価格と購入時の注意点"
+        ],
+        "type": "product",
+        "notes": [
+          "65W GaN充電器の主要スペック（出力・ポート数・サイズ・重量）を表形式で整理",
+          "MacBook Air・iPad・スマホ同時充電など具体的なユースケースを提示",
+          "AliExpressでの価格推移・セール時の目安・偽物回避のための公式ストア確認方法を記載"
+        ]
+      },
+      {
+        "id": "section5",
+        "h2": "UGREEN Nexode 100W GaN充電器——ノートPC対応ハイパワーモデル",
+        "h3s": [
+          "100W出力でノートPCも対応——スペック詳細",
+          "65Wモデルとの違いと選び方"
+        ],
+        "type": "product",
+        "notes": [
+          "100W出力・複数ポート（USB-C×2・USB-A×2など）構成を解説し、MacBook Pro・ゲーミングノートへの対応状況を明示",
+          "65Wモデルとの価格差・サイズ差・出力差を比較し、どちらを選ぶべきかの判断軸を提供",
+          "アリエクでの購入時に確認すべきプラグ形状（日本用Aタイプ）についても注記"
+        ]
+      },
+      {
+        "id": "section6",
+        "h2": "UGREEN 25W超小型充電器——スマホ専用・持ち歩き特化モデル",
+        "h3s": [
+          "超コンパクト設計のスペックと充電速度",
+          "旅行・通勤用途に最適な理由"
+        ],
+        "type": "product",
+        "notes": [
+          "25W・PD対応・指2本サイズの超小型設計を具体的な寸法・重量で紹介",
+          "iPhone・Androidへの急速充電対応（PPS/PD）を解説し、充電時間の目安を示す",
+          "価格帯が安い分、コスパ最強エントリーモデルとして紹介し、初めてUGREENを試す人へ推奨"
+        ]
+      },
+      {
+        "id": "section7",
+        "h2": "UGREEN 300W GaN充電器——デスクトップ用マルチポート最上位モデル",
+        "h3s": [
+          "最大300Wのデスクトップ据え置き充電器スペック",
+          "在宅ワーク・デスクまわりのケーブル整理に最適"
+        ],
+        "type": "product",
+        "notes": [
+          "300W・マルチポート（USB-C×4・USB-A×2など）構成で複数デバイスを同時充電できる仕様を解説",
+          "デスクに置くだけでスマホ・タブレット・ノートPC・モニターをまとめて充電できる用途を具体的に提示",
+          "価格が高めになる理由（GaNチップ・多重保護回路）を説明し、コスト正当性を伝える"
+        ]
+      },
+      {
+        "id": "section8",
+        "h2": "UGREENおすすめ充電器4選を比較表で確認",
+        "h3s": [
+          "スペック比較表——出力・ポート数・価格・サイズ",
+          "用途別おすすめの選び方まとめ"
+        ],
+        "type": "comparison",
+        "notes": [
+          "4モデルを一覧比較表（最大出力・ポート数・GaN有無・重量・アリエク価格・適した用途）で整理",
+          "「スマホだけなら25W」「ノートPCなら65W〜100W」「デスクまわりなら300W」という選択フローをシンプルに提示",
+          "どのモデルもアリエク公式ストアへのリンクを明記"
+        ]
+      },
+      {
+        "id": "section9",
+        "h2": "UGREENのよくある質問（FAQ）",
+        "h3s": [
+          "UGREENはAliExpressで安全に買えますか？",
+          "PSE認証はありますか？日本で使えますか？",
+          "AnkerとUGREEN、どちらが品質が高いですか？",
+          "偽物・コピー品を避けるにはどうすればいい？",
+          "充電器が熱くなるのは危険ですか？"
+        ],
+        "type": "faq",
+        "notes": [
+          "各質問に対して100〜150文字程度の端的な回答を用意し、読者の不安を一問一答形式でスッキリ解消する",
+          "FAQにはSchema.orgのFAQPageマークアップを適用することを念頭に置いた構成にする",
+          "回答内で自然に内部リンクを挿入できる箇所（ケーブル記事・Baseus比較記事）を設ける"
+        ]
+      }
+    ],
+    "faqQuestions": [
+      "UGREENの充電器はAliExpressで安全に購入できますか？",
+      "UGREEN充電器はPSE認証取得済みで日本のコンセントで使えますか？",
+      "AnkerとUGREEN、充電器の品質・信頼性はどちらが上ですか？",
+      "AliExpressでUGREENの偽物・コピー品を避けるにはどうすればいいですか？",
+      "UGREEN充電器が熱くなるのは危険なサインですか？"
+    ],
+    "comparisonTableColumns": [
+      "モデル名",
+      "最大出力（W）",
+      "ポート数・種類",
+      "GaN採用",
+      "重量・サイズ感",
+      "アリエク価格目安（円）",
+      "おすすめ用途"
+    ],
+    "internalLinks": [
+      {
+        "url": "/gadget/ugreen-cable-osusume.html",
+        "anchorText": "UGREENケーブルおすすめ5選"
+      },
+      {
+        "url": "/gadget/ugreen-docking-station-osusume.html",
+        "anchorText": "UGREENドッキングステーションおすすめ5選"
+      },
+      {
+        "url": "/gadget/baseus-charger-osusume.html",
+        "anchorText": "Baseus充電器の評判・おすすめモデル"
+      },
+      {
+        "url": "/gadget/ugreen-earphone-osusume.html",
+        "anchorText": "UGREENイヤホンのおすすめ比較"
+      }
+    ],
+    "competitorDifferentiators": [
+      "「危険性」「どこの国」という不安系キーワードに正面から答えるセクションを冒頭に設け、購入前の心理的ハードルを下げる構成にしている（競合は商品紹介に直行しがちで不安解消が薄い）",
+      "安全規格（PSE・CE・FCC）の意味を平易に解説した上で製品紹介に進むため、初めて中国ブランドを検討するユーザーへの教育的価値が高く、離脱率の低下と購入CVRの向上が見込める"
+    ],
+    "createdAt": "2026-05-27"
+  },
+  "products": [
+    {
+      "product_id": "1005011652041579",
+      "rawTitle": "UGREEN Nexode 65W GaN USB C壁掛け充電器、4ポート高速Type-C充電器、MacBook Pro/Air、Phone 17/16/15シリーズ対応",
+      "cleanName": "UGREEN Nexode 65W GaN USB C壁掛け充電器 4ポート",
+      "price_jpy": "5599",
+      "original_price": "235.00",
+      "sales_count": 2,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C3Ry0COKWxKicUM18VqZJl0DcBG5HA983H2PoxuOKWWist18b7xY6RJ6BGh2PumV88jmaKDHTw8NpcWyzN6ijgdzdwGfD2S3fWLfOwYiVjtI6X4tV47ATxyUKgpuWgYqr1AABIbSuNy2oD862NEYD81IrnRpR988rQjNPMNNWmXj3sj1f08t3qgFFEK9lxuX2elnaRHp02sDM75GZHh8CAlwxBFstLayNTU66xayaJwiY6sDL00DKgZTe8CQdISga7L5gjqtxdmhS6TmU1VzcPHurZhnZFO0J3wcdNuuGDghBic3p0c2oRcCEeHQxSjnxbfa7Vndo68skTvkXJy4sOmuYexHrE47YFnMgws2dSQndI9J5s0l14I2MvXNKpucYEE0NA03LtJ2CEsKLbisO80tfVq4H0HE5AhvZ83BoDAXe53OXb8L4EqizXOz0b1jWFDMPy9yBBKbsUQvWoLNeZNLo11m14XaEPSNLhZBhgJHLEM6zrWeXCLFnEPWlKp6OoIjK1mocVK0p2wIbfEVc0s8ctwkrr2yjZcAXZxTReSmeMouSkpSv1YO1E8lYIFLpPrOgVbb4k1jmnWmgcCsWCzqp1wV6qBmsWcxaVUBoIy1o65r8RDB6qVSsdrR89lN0OmAbyEITfbEFA3RSmDmUC8iLUUJdNaWk1xYX2wDr3bbPEChrTaAowgI8itvv3Xb4AV71a9UNvYNLK",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sbb006d4c75a340b6a617ea1cf15e6bded.png",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sbb006d4c75a340b6a617ea1cf15e6bded.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sb0d3e9b024284bbf8bc2a29555f8215eI.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S00009915542c49f18c7c5de04e851f91b.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc6d484a8ae1b4a0883b946b023c5d7d0k.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S9f7011cf1b2f4a45836fd6c44c11385en.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S7208dbc3c85b4f93bc86c1d58afe3055i.png"
+      ],
+      "amazonPlaceholder": {
+        "status": "confirmed",
+        "searchQuery": "UGREEN Nexode 65W GaN USB C壁掛け充電器 4ポート",
+        "asin": null,
+        "url": "https://amzn.to/4uqRMTr"
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/43yCHU6"
+    },
+    {
+      "product_id": "1005007390056908",
+      "rawTitle": "Ugreen-USB Type-Cアダプター,3.0,4ポート,アダプター,MacBook Pro,iPad Pro,Samsung Galaxy Note 10,s10用",
+      "cleanName": "Ugreen USB Type-C 3.0 4ポートハブ",
+      "price_jpy": "1159",
+      "original_price": "19.87",
+      "sales_count": 740,
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvmvR57S69fGyn8Tt4pCtmLccxQz3g0L1ZKu00BPwYOT3BF4QZOqRqMDB0DIt617Um4ieOmF6piKzPLtJO3UWxlggR17WwTW2vrZIRbeMkL6uCpPdFqZvjFq4jBY5zRURYCXijJHaWy8HlR58HsiBltX7A4zhIHvS4gUfphZ8F6aSNkUXu6RB2j3NUZedw4WD3IaTwTYE9XDoMI3ylbCMviV2yHkBvJjtpcI65tFSDZFhe4gu3NMpLZrSabJJJpae8HTu5OGpzNHGbIZOiNT8sY1XDOfd4DbAAktlEEPywLS38u9Qt5mDtW9u9CUxzWoMwR8b6unyg49yGQhhSF4S3cKavwmKBaZChqXMcR1bPlKKhZK1Ww6toAczyTvClGWp0l4lsNQ1zYe3GmhNbLkZaHk7icpgfRzULTDOWToUOvYjWGjAEFsqgZHoM7TUzzLn01Ns3UVN4pP3EdBoa3OelWerPPmN0PTtsz4nhBko9YCw7dTLr0zCpNzEUBbWRMRRlpb9RUWFZeRi2Qga8LLYjrXAhzL2uyuyICKdIYSbDbBkJIAZCiMTzgwxhBXwCAPm4mr5EPFCWqJ4S27mU97bxdBhFQgIwLPT4yhZBJcLI4yUdBNI2beT1zr62BST2gXkI1DGYOSt6k6ZONhrEMbMiqvdwnteU5mYxtJRWAnWw6aIrlAN2KbTrFKezBu61Rw2dSuD2W5xYdv5uFtcjZscJKibiiSK4WNY3Zcm0OGSbYmB",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sefe8626ab63645a299795e18797affa5G.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sefe8626ab63645a299795e18797affa5G.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5263389f3ea049029df013fd50d8f3dfC.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2973ffaadf254415acc8afa8b6ba1918s.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0aa3f883315e49fcbe3fcb358f75e1a12.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S251e268f3a94436da3990863c967f0691.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa71ef40ff98b4c5a92c87b2cdc27de91Y.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "Ugreen USB Type-C 3.0 4ポートハブ",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/4afga2n"
+    },
+    {
+      "product_id": "1005006471612403",
+      "rawTitle": "Realme, Xiaomi, Samsung S9,UGREEN-USB用のデータコード,急速充電ケーブル,Samsung s21,iPad, Samsung用のUSB-CタイプC",
+      "cleanName": "UGREEN USB-C Data Cable",
+      "price_jpy": "493",
+      "original_price": "3.24",
+      "evaluate_rate": "97.5%",
+      "sales_count": 21340,
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c4KsoBhX",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S2e6296c45cb0497e93de1ae9adf44390X.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2e6296c45cb0497e93de1ae9adf44390X.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1023ad7ffe824bf4bfaf3818ea0c5bf3c.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sbe410a7a2e174319b1cde85981c997894.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4dce49f9ee074ca39f6fe416a42340f8l.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S68190fa7f268465d981e4b3747e09e0fv.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S69a5e8d9143649b0b8d8c481fd6a4ccad.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN USB-C Data Cable",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/49Jh1IH"
+    },
+    {
+      "product_id": "1005012161988595",
+      "rawTitle": "UGREEN CM615 Revodok Pro 209 9 in 1 USB Cドッキングステーション ディスプレイリンク デュアル4K 60hzモニター USBハブ Macbook/ラップトップ用",
+      "cleanName": "UGREEN Revodok Pro 209 9 in 1 USB C Docking Station",
+      "price_jpy": "25078",
+      "original_price": "1052.47",
+      "sales_count": 0,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C2Z0a5GHIB2BEDE6JV9Ukatq3HpyJvHqbR2mBLfmOh0D0yYbdjAAr6T4DUs8Peef0KDs2oqyAo1e8X5RKXezF7PxMDkbl9KS7gSDniT8EaFnes1BWSBhTwvP1Xv8XsPMtulKlxNtN7JGVtBlf2L7ydc7gXkkOyS1IEwPsKPsDCFHzRpPOpFtAgTjVuZodPKFuv4dInjPECPWUCFOAMLvdPBeAOyNZdT7TyjTzknV4FtLyhT0M3YO7JDLpcoktxPbRDbXe3obgEJbnTXB8J1MhiYVKzkEPvYn3ff83jhUp7t0jR1Ss04HRVOF93mFZCPNGYeAXFLWfMCmjEhOCk2SNxXN5ySEALEgADzZqypmDQQB6fDreosdMyw1LmpayZjupoDr03G4U4cacDYsqpmVLQh7TlNnil8nZhzk9sTiRHxXI8oweeRjiVKXfuoosFLb5GN7dY88IltQV7ANHlTUvjz6VhCkbbdcBwMKR8LIRLd64Z2fvn7VNtEfLNEVnmHcwxHzJFR0qkIgr25Ruug1Se7KpVA5qRnDNBwA2Y2a496KyYpfwze3FFy6skDl0QSr5C7RPW4IYQVR8jm4YDjQjOZEiK1Uxf4KQKkSLXCEFs1ysgruogl7Isf8eeNwTUy6bnbXqXOVpvPRt2WuCRqAl8WfT3FBSqnQyUz4PN11Szlyd9GfszuQW8POobR6naAuLiDdYi4JGnJHY3",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S21719ae907014ce385c3ac794157efc16.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S21719ae907014ce385c3ac794157efc16.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sfc6870ec35684f6c98eb1830cb2d5f22m.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Scbd578a1577f4fd5abe86b00f2728a3dQ.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sf1f261fcae4448e2bca029d46b8184f9h.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S38b5725aaaf84902a6c4d5a21f869200V.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S45a9a0728ce64edb9f47a7785a1ed848W.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN Revodok Pro 209 9 in 1 USB C Docking Station",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/4uzDpfF"
+    },
+    {
+      "product_id": "1005007493318927",
+      "rawTitle": "UGREEN ワイヤレスマウス 4000DPI サイレント MacBook Pro M1 M2対応 2.4GHz",
+      "cleanName": "UGREEN Wireless Mouse 4000DPI",
+      "price_jpy": "2736",
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c2yYRUxP",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Scd0c0c60add74c2ea20511d89baaaf2dW.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Scd0c0c60add74c2ea20511d89baaaf2dW.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Adfc4fd0a1c5a4ac8a1627fd4c225655ae.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Aae4027bc8d9144a6b6c6874626ca548eu.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A80dc8f3a7f294150b7a50ca1475c0558v.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A9b0bfbc1a2c441f29828510ef8b09da0r.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/A6a190661885347fbae3db25a77619647h.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN Wireless Mouse 4000DPI",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/4wRKWZ1"
+    }
+  ],
+  "fetchedAt": "2026-05-27T11:52:42.706Z"
+}

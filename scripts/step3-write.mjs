@@ -381,6 +381,9 @@ const fullHtml = `<!DOCTYPE html>
   <meta property="og:url" content="${canonUrl}" />
   <meta property="og:image" content="${imageUrl}" />
   <link rel="canonical" href="${canonUrl}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
