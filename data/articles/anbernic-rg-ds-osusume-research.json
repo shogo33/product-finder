@@ -1,0 +1,182 @@
+{
+  "slug": "anbernic-rg-ds-osusume",
+  "keyword": "ANBERNIC RG DS レビュー",
+  "category": "game",
+  "selectedTitle": "ANBERNIC RG DSレビュー【2026年最新】DS風デザインの実力をアリエクで徹底検証",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "ANBERNICとは？RG DSシリーズが生まれた背景",
+      "h3s": [
+        "ANBERNICブランドの特徴と信頼性",
+        "RG DSシリーズが目指したコンセプト"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "ANBERNICは中国深圳発の携帯ゲーム機専業メーカーで、RG35XX・RG353シリーズなど多数のヒット機種を持つ実績を紹介",
+        "RG DSがデュアルスクリーン・折りたたみデザインを採用した理由と、ターゲットユーザー（DS世代のノスタルジー層）を解説",
+        "AliExpressの公式ANBERNICストアで購入できる安心感と保証についても触れる"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "ANBERNIC RG DS レビュー：外観・デザイン・携帯性",
+      "h3s": [
+        "デュアルスクリーン折りたたみデザインの質感",
+        "サイズ・重量と持ち運びやすさの実測"
+      ],
+      "type": "product",
+      "notes": [
+        "上下2画面構成の外観を写真的に描写し、ヒンジの開閉感・素材の質感をリアルにレポート",
+        "実測サイズと重量を明記し、ポケットや鞄への収納しやすさを評価",
+        "カラーバリエーション（ブラック・トランスペアレントなど）の選び方アドバイスも記載"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "ANBERNIC RG DS レビュー：スペック・性能・処理能力",
+      "h3s": [
+        "SoC・RAM・ストレージのスペック詳細",
+        "エミュレーター対応範囲と動作確認済みタイトル"
+      ],
+      "type": "product",
+      "notes": [
+        "搭載SoC・RAM容量・内蔵ストレージ・microSDスロット有無を表形式で整理",
+        "対応エミュレーター（GBA・NDS・SNES・PSP・PS1など）と実際の動作安定性を検証レポート",
+        "OSはLinux系かAndroidか、カスタムファームウェアの導入可否についても言及"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "ANBERNIC RG DS レビュー：操作感・画面品質・バッテリー",
+      "h3s": [
+        "ボタン・十字キー・アナログスティックの押し心地",
+        "液晶画面の発色・輝度とバッテリー持続時間"
+      ],
+      "type": "product",
+      "notes": [
+        "上下それぞれの画面サイズ・解像度・タッチスクリーン対応有無を具体的に記載",
+        "ボタン類のストローク感・ガタつき・連打耐久性など操作感を辛口気味に正直レポート",
+        "バッテリー容量と実際のプレイ時間（エミュ種別ごとの目安）を記載し、充電方法（USB-C）も確認"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "ANBERNIC RG DSと他モデルのスペック比較表",
+      "h3s": [
+        "RG DS vs RG35XX H vs RG28XX：どれを選ぶべきか",
+        "価格帯別・用途別の選び方フローチャート"
+      ],
+      "type": "comparison",
+      "notes": [
+        "RG DS・RG35XX H・RG28XXの3モデルを価格・画面・SoC・バッテリー・対応エミュで横並び比較表にまとめる",
+        "「NDSエミュを楽しみたいならRG DS一択」「予算を抑えたいならRG35XX H」など用途別の結論を明示",
+        "AliExpressでの各モデルの現在価格帯と為替変動の注意点も添える"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "ANBERNIC RG DSの選び方：失敗しないための3つのポイント",
+      "h3s": [
+        "用途（遊びたいエミュレーター）から選ぶ",
+        "AliExpressでの購入時に確認すべき注意点"
+      ],
+      "type": "howto",
+      "notes": [
+        "NDSゲームを中心に遊びたい人・GBAやSNES中心の人・PSPまで遊びたい人で推奨モデルが変わることを整理",
+        "AliExpressの公式ANBERNICストアとサードパーティ出品者の違い、クーポン活用・コイン還元の節約テクを解説",
+        "技適・関税・送料など日本からの購入で注意すべき法的・費用的ポイントも正直に記載"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "ANBERNIC RG DS よくある質問（FAQ）",
+      "h3s": [
+        "購入前の疑問Q&A",
+        "購入後のセットアップQ&A"
+      ],
+      "type": "faq",
+      "notes": [
+        "「日本語対応しているか」「関税はかかるか」など購入前の不安を解消するQ&Aを掲載",
+        "「ゲームROMはどこで入手するのか」「ファームウェアアップデート方法は」などセットアップ系の疑問に回答",
+        "FAQはFAQPageスキーマを意識した構造で記述する"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "まとめ：ANBERNIC RG DSはアリエクで買う価値あり？",
+      "h3s": [
+        "こんな人にRG DSはおすすめ",
+        "AliExpressで最安値をチェックする方法"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "「DS世代でノスタルジーを感じたい人」「NDSエミュをデュアル画面で遊びたい人」に強くおすすめと明言",
+        "AliExpressのコイン・クーポン・セール時期を活用した最安値購入のステップを箇条書きで案内",
+        "購入リンク（アフィリエイト）を自然な形でCTAとして配置し、背中を押すクロージング文を書く"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-27",
+  "products": [
+    {
+      "product_id": "1005010748770593",
+      "rawTitle": "ANBERNIC RG DS 携帯型ゲーム機 デュアルスクリーンフリップ ビデオゲームプレーヤー 4IPSマルチタッチスクリーン RK3568 Android14 PSPゲーム RGDS",
+      "cleanName": "ANBERNIC RG DS",
+      "price_jpy": "14614",
+      "original_price": "1272.44",
+      "evaluate_rate": "100.0%",
+      "sales_count": 12,
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c4k3vMez",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sd757ef11d1b14d358707f26765dd74e64.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd757ef11d1b14d358707f26765dd74e64.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1144ca44bae444cd9564b3255934ac74C.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8f973716aefd4e2a962c8c9c7fec223ah.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S7fde17a4b17942d988b40b98adb9353fs.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S981be8c684e44e99950b84a7935e28e5B.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S67efbb3e9d5945c8a87ecf1e38180e49o.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "ANBERNIC RG DS",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/4wVEUq7",
+      "amazonName": "ANBERNIC RG DS (Amazon)"
+    },
+    {
+      "product_id": "1005010662364468",
+      "rawTitle": "ANBERNIC RG DS 携帯ゲーム機 4インチIPSマルチタッチデュアルスクリーンフリップビデオゲームプレーヤー Android 14対応 RixelHK Wifi RGDS",
+      "cleanName": "ANBERNIC RG DS",
+      "price_jpy": "14619",
+      "original_price": "1222.00",
+      "evaluate_rate": "100.0%",
+      "sales_count": 21,
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c4tXPlpP",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sd757ef11d1b14d358707f26765dd74e64.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd757ef11d1b14d358707f26765dd74e64.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1144ca44bae444cd9564b3255934ac74C.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8f973716aefd4e2a962c8c9c7fec223ah.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S7fde17a4b17942d988b40b98adb9353fs.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S981be8c684e44e99950b84a7935e28e5B.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S67efbb3e9d5945c8a87ecf1e38180e49o.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "ANBERNIC RG DS",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "targetProductCount": 2
+}

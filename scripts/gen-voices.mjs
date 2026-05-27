@@ -76,6 +76,13 @@ const ARTICLE_CONFIG = [
     topic:     'Miyoo Mini Flipの折りたたみデザイン・エミュレーション性能・AliExpressでの購入体験',
   },
   {
+    slug:      'anbernic-rg-ds-osusume',
+    folder:    'game',
+    subreddit: 'SBCGaming',
+    queries:   ['anbernic rg ds review', 'rg ds nds emulation', 'rg ds aliexpress buy'],
+    topic:     'ANBERNIC RG DSのDS風デュアルスクリーン・NDSエミュ性能・AliExpress購入体験',
+  },
+  {
     slug:      'gamesir-g7-se',
     folder:    'game',
     subreddit: 'gamesir',
@@ -306,7 +313,7 @@ ${postText}`;
 
   const response = await client.messages.create({
     model: 'claude-haiku-4-5-20251001',
-    max_tokens: 1024,
+    max_tokens: 2048,
     messages: [{ role: 'user', content: prompt }],
   });
 
