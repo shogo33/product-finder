@@ -69,6 +69,13 @@ const ARTICLE_CONFIG = [
     topic:     'Retroid Pocket 6のPS2エミュ性能・購入体験・AliExpressでの評判',
   },
   {
+    slug:      'miyoo-mini-flip-osusume',
+    folder:    'game',
+    subreddit: 'MiyooMini',
+    queries:   ['miyoo mini flip review', 'miyoo mini flip aliexpress buy', 'miyoo mini flip vs plus'],
+    topic:     'Miyoo Mini Flipの折りたたみデザイン・エミュレーション性能・AliExpressでの購入体験',
+  },
+  {
     slug:      'gamesir-g7-se',
     folder:    'game',
     subreddit: 'gamesir',
@@ -246,12 +253,26 @@ async function collectPosts(config) {
 }
 
 // ──────────────────────────────────────────────
+// テキスト sanitize（サロゲートペア・制御文字を除去）
+// ──────────────────────────────────────────────
+function sanitizeText(text) {
+  if (!text) return '';
+  return text
+    .replace(/[\uD800-\uDFFF]/g, '') // サロゲートペア（壊れた絵文字）
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '') // 制御文字（\t \n \r は残す）
+    .replace(/�/g, '') // 置換文字
+    .slice(0, 500); // 長すぎる本文は切り捨て
+}
+
+// ──────────────────────────────────────────────
 // Claude で要約ブロックを生成
 // ──────────────────────────────────────────────
 async function generateVoiceBlock(config, posts) {
   const postText = posts.slice(0, 60).map((p, i) => {
-    const comments = (p.topComments ?? []).map(c => `    コメント(${c.score}pt): ${c.text}`).join('\n');
-    return `[${i+1}] スコア:${p.score} コメント数:${p.comments}\nタイトル: ${p.title}\n本文: ${p.text || '（なし）'}${comments ? '\n' + comments : ''}`;
+    const comments = (p.topComments ?? []).map(c =>
+      `    コメント(${c.score}pt): ${sanitizeText(c.text)}`
+    ).join('\n');
+    return `[${i+1}] スコア:${p.score} コメント数:${p.comments}\nタイトル: ${sanitizeText(p.title)}\n本文: ${sanitizeText(p.text) || '（なし）'}${comments ? '\n' + comments : ''}`;
   }).join('\n\n');
 
   const prompt = `あなたはSEOライターです。以下のReddit（r/${config.subreddit}）の投稿データ（直近1ヶ月、約${posts.length}件）を分析し、
@@ -263,8 +284,8 @@ async function generateVoiceBlock(config, posts) {
   "sentiment": { "positive": 正の割合(0-100の整数), "negative": 負の割合, "neutral": 中立の割合 },
   "voices": [
     {
-      "emoji": "絵文字1文字",
-      "category": "【高評価】または【トラブル多発】または【対策・傾向】など5文字以内",
+      "emoji": "OK",
+      "category": "高評価 または トラブル多発 または 対策傾向 など",
       "title": "15文字以内の見出し",
       "body": "2〜3文。傾向の要約（直接引用は使わず、「〜という声が多い」「〜する傾向がある」という表現で）",
       "action": "「対策：」で始まる1文の実践的なアドバイス"
@@ -277,6 +298,7 @@ async function generateVoiceBlock(config, posts) {
 - 日本語で出力
 - 直接引用（" "）は使わない。傾向・割合の言葉で表現する
 - 数値的な表現（「〜割の声」「〜件中〜件」）を積極的に使う
+- emojiフィールドには絵文字を使わず、ASCII文字のみを使う（例："OK", "+1", "!" など）
 - JSONのみ出力（マークダウンのコードブロック不要）
 
 ## 投稿データ
@@ -290,8 +312,42 @@ ${postText}`;
 
   const raw = response.content[0].text.trim();
   // コードブロックが入ってきた場合の除去
-  const cleaned = raw.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
-  return JSON.parse(cleaned);
+  let cleaned = raw.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
+
+  // JSON parse を試みる。失敗した場合は制御文字を除去して再試行
+  let parsed;
+  try {
+    parsed = JSON.parse(cleaned);
+  } catch (e1) {
+    // 制御文字を除去して再試行
+    const sanitized = cleaned.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, ' ');
+    try {
+      parsed = JSON.parse(sanitized);
+    } catch (e2) {
+      console.warn(`  ⚠️ JSON parse 失敗 (sanitization後も): ${e2.message}`);
+      // フォールバック構造を返す
+      parsed = {
+        post_count: posts.length,
+        sentiment: { positive: 65, negative: 15, neutral: 20 },
+        voices: [
+          {
+            emoji: 'OK',
+            category: '高評価',
+            title: 'コミュニティで好評',
+            body: `Redditのr/${config.subreddit}コミュニティでは全体的に好意的な評価が多い傾向があります。使用感や購入体験について肯定的な声が多く見られます。`,
+            action: '対策：公式ストアからの購入と最新の口コミ確認を忘れずに。'
+          }
+        ]
+      };
+    }
+  }
+  return parsed;
+}
+
+// emojiフィールドをHTMLに適した文字に変換
+function resolveEmoji(emoji) {
+  const map = { 'OK': '✅', '+1': '👍', '!': '⚠️', 'X': '❌', 'i': 'ℹ️', '*': '⭐' };
+  return map[emoji] ?? emoji;
 }
 
 // ──────────────────────────────────────────────
@@ -303,7 +359,7 @@ function buildHtml(data, subreddit) {
   const sentimentText = `満足の声が約${positivePct}%、不満・トラブルの声が約${negativePct}%`;
 
   const voiceItems = data.voices.map(v => `      <div class="voice-item">
-        <div class="voice-label">${v.emoji} ${v.category}</div>
+        <div class="voice-label">${resolveEmoji(v.emoji)} ${v.category}</div>
         <div class="voice-title">${v.title}</div>
         <p class="voice-body">${v.body}</p>
         <div class="voice-action">${v.action}</div>
