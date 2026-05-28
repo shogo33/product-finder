@@ -628,6 +628,16 @@ fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(outPath, fullHtml, 'utf8');
 console.log(`\n✅ 記事保存: ${outPath}`);
 
+// ── article-dates.json に公開日・更新日を登録 ─────────────────
+const DATES_FILE = 'data/article-dates.json';
+const today = new Date().toISOString().split('T')[0];
+const existingDates = fs.existsSync(DATES_FILE)
+  ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8'))
+  : {};
+existingDates[slug] = { published: today, modified: today };
+fs.writeFileSync(DATES_FILE, JSON.stringify(existingDates, null, 2), 'utf8');
+console.log(`📅 article-dates.json に登録: ${slug} (${today})`);
+
 // ── gen-ogp → fix-seo 自動実行 ────────────────────────────
 console.log('\n🖼  OGP画像を生成中...');
 try {

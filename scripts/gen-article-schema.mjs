@@ -1,7 +1,11 @@
 /**
  * gen-article-schema.mjs
  * 全記事に Article JSON-LD（datePublished・dateModified）を注入し、
- * 記事内に目に見える「更新日」バッジも追加する
+ * 記事内に目に見える「更新日」バッジも追加する。
+ *
+ * 日付は data/article-dates.json を参照する。
+ * このファイルは step3-write.mjs（新規作成時）か update-article-date.mjs でのみ更新する。
+ * gen-all による一括コミット時には更新日が変わらない。
  */
 import fs from 'fs';
 import path from 'path';
@@ -11,6 +15,12 @@ const PUBLIC   = 'public';
 const BASE_URL = 'https://aliswipe.com';
 const ARTICLE_DIRS = ['gadget','game','outdoor','guide','safety','payment','shipping'];
 const SKIP = new Set(['admin','preview','template','nav','home','sitemap','index']);
+const DATES_FILE = 'data/article-dates.json';
+
+// data/article-dates.json を読み込む（なければ空オブジェクト）
+const articleDates = fs.existsSync(DATES_FILE)
+  ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8'))
+  : {};
 
 function extractMeta(html, prop) {
   const m = html.match(new RegExp(`property="${prop}"\\s+content="([^"]+)"`));
@@ -28,11 +38,14 @@ function extractOgImage(html) {
 }
 
 function toDateStr(dateStr) {
-  // "2026-05-24 14:58:28 +0900" → "2026-05-24"
   return dateStr.split(' ')[0];
 }
 
-function getGitDates(filePath) {
+function getDates(slug, filePath) {
+  // article-dates.json にあればそちらを優先
+  if (articleDates[slug]) return articleDates[slug];
+
+  // なければ git log から取得してファイルに書き込む（新規記事の初回 gen-all 時のみ）
   try {
     const first = execSync(
       `git log --follow --format="%ai" --diff-filter=A -- "${filePath}"`,
@@ -43,12 +56,16 @@ function getGitDates(filePath) {
       { encoding: 'utf8', stdio: ['pipe','pipe','ignore'] }
     ).trim();
     const published = first ? toDateStr(first) : toDateStr(last);
-    const modified  = last  ? toDateStr(last)  : published;
+    const modified  = published; // 初回は published と同じ
+    articleDates[slug] = { published, modified };
+    fs.writeFileSync(DATES_FILE, JSON.stringify(articleDates, null, 2), 'utf8');
     return { published, modified };
   } catch {
-    const mtime = fs.statSync(filePath).mtime;
-    const d = mtime.toISOString().split('T')[0];
-    return { published: d, modified: d };
+    const d = new Date().toISOString().split('T')[0];
+    const dates = { published: d, modified: d };
+    articleDates[slug] = dates;
+    fs.writeFileSync(DATES_FILE, JSON.stringify(articleDates, null, 2), 'utf8');
+    return dates;
   }
 }
 
@@ -138,7 +155,7 @@ for (const folder of ARTICLE_DIRS) {
     const title   = extractTitle(html);
     const desc    = extractDesc(html);
     const ogImage = extractOgImage(html);
-    const dates   = getGitDates(fullPath);
+    const dates   = getDates(slug, fullPath);
 
     const articleJsonLd    = buildArticleJsonLd(slug, folder, title, desc, ogImage, dates);
     const breadcrumbJsonLd = buildBreadcrumbJsonLd(title, folder, slug);
