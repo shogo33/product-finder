@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
@@ -120,10 +120,10 @@
     .pros li::before { content: "✓ "; color: #e8253a; font-weight: 700; }
     .cons li::before { content: "✗ "; color: var(--red); font-weight: 700; }
 
-    .cta-inline { background: linear-gradient(#fff,#fff) padding-box, linear-gradient(135deg,#e8253a 0%,#ff6b35 100%) border-box; border: 3px solid transparent; border-radius: var(--radius); padding: 28px 24px; text-align: center; margin: 40px 0; color: #1a1a1a; }
+    .cta-inline { background: linear-gradient(135deg, var(--red) 0%, #ff6b35 100%); border-radius: var(--radius); padding: 28px 24px; text-align: center; margin: 40px 0; color: #fff; }
     .cta-inline h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; color: #111; }
-    .cta-inline p { font-size: 0.85rem; color: #6b7280; margin-bottom: 20px; }
-    .cta-inline a { display: inline-block; background: linear-gradient(135deg,#e8253a 0%,#ff6b35 100%); color: #fff; font-weight: 700; font-size: 0.9rem; padding: 12px 28px; border-radius: 999px; text-decoration: none; transition: opacity 0.15s; }
+    .cta-inline p { font-size: 0.85rem; opacity: 0.9; margin-bottom: 20px; }
+    .cta-inline a { display: inline-block; background: #fff; color: var(--red); font-weight: 700; font-size: 0.9rem; padding: 12px 28px; border-radius: 999px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
 
     /* FAQ */
     .faq { margin: 40px 0; }
