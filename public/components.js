@@ -115,6 +115,8 @@
     '.cta-btn-aliex{background:#e8253a;color:#fff;}' +
     '.cta-btn-amazon{background:#FF9900;color:#fff;}' +
     '.cta-btn-app{background:linear-gradient(135deg,#e8253a,#c2185b);color:#fff;}' +
+    '.cta-img{display:block;width:130px;height:130px;object-fit:contain;background:#fff;border-radius:10px;border:1px solid #fecdcf;margin:0 auto 18px;}' +
+    '@media(max-width:480px){.cta-img{width:100px;height:100px;}}' +
     '.cta-note{font-size:.72rem;color:#9ca3af;margin:12px 0 0;}' +
     '.promo-notice{font-size:.72rem;color:#9ca3af;margin:4px 0 0;}' +
     '#cta-sticky a{position:relative;overflow:hidden;}' +
