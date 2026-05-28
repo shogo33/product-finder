@@ -1,0 +1,275 @@
+{
+  "slug": "n100-mini-pc-osusume",
+  "keyword": "N100 ミニPC おすすめ",
+  "category": "gadget",
+  "selectedTitle": "N100ミニPCおすすめ5選【2026年最新】アリエクで買えるコスパ最強を徹底比較",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "N100ミニPCとは？アリエクで注目される理由",
+      "h3s": [
+        "Intel N100の性能と特徴をざっくり解説",
+        "なぜアリエクのN100ミニPCはコスパ最強なのか"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "Intel N100の基本スペック（4コア4スレッド・最大3.4GHz・TDP6W）を簡潔に説明",
+        "Celeron・Pentium・Core i3との比較で性能ポジションを明確にする",
+        "AliExpressでは同スペックが国内の半額〜7割程度で買える理由（中国工場直販・流通コスト削減）を解説"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "【第1位】BMAX B4 Pro｜コスパ王道の定番モデル",
+      "h3s": [
+        "BMAX B4 Proのスペックと実力",
+        "こんな人におすすめ・向かない人"
+      ],
+      "type": "product",
+      "notes": [
+        "RAM 16GB・SSD 512GB構成で2万円台前半という価格帯を強調",
+        "4K出力対応・デュアルLAN・小型筐体などの実用的メリットを具体的に記述",
+        "サブPC・在宅勤務・リビングPCとして最適なターゲット像を明示"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "【第2位】Trigkey Speed S5｜静音重視ならこれ一択",
+      "h3s": [
+        "Speed S5のスペックと静音設計の秘密",
+        "動画視聴・音楽制作・深夜作業に最適な理由"
+      ],
+      "type": "product",
+      "notes": [
+        "ファンレス設計またはほぼ無音動作の静音性を数値・体感で説明",
+        "消費電力の低さ（アイドル時5〜8W）と電気代メリットを試算",
+        "リビングや寝室など騒音を気にする環境でのユースケースを具体的に"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "【第3位】GMKtec NucBox M5 Plus｜拡張性No.1モデル",
+      "h3s": [
+        "NucBox M5 PlusのI/O構成と拡張ポートを徹底解説",
+        "デュアルディスプレイ・NAS・ホームサーバー用途に最適"
+      ],
+      "type": "product",
+      "notes": [
+        "USB4・Thunderbolt対応やデュアルLANなどI/Oの豊富さを表形式で整理",
+        "NASやDockerホストとして使う上級者ユースケースも紹介",
+        "RAM増設・SSD換装のしやすさ（M.2スロット数）も言及"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "【第4位】MINISFORUM UN100L｜ブランド信頼性重視派へ",
+      "h3s": [
+        "MINISFORUMブランドの品質と保証体制",
+        "初めて中華ミニPCを買う人に安心な理由"
+      ],
+      "type": "product",
+      "notes": [
+        "MINISFORUMの日本向けサポート・Amazonでも展開している信頼性を説明",
+        "初心者が中華ブランドに感じる不安（品質・保証・日本語対応）を払拭",
+        "AliExpress公式ストアからの購入でさらに安く買える方法を案内"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "【第5位】ACEMAGICIAN AM06 Pro｜デザインとコスパを両立",
+      "h3s": [
+        "AM06 Proの外観デザインとスペックバランス",
+        "デスクに置いても映えるミニPCを探している人へ"
+      ],
+      "type": "product",
+      "notes": [
+        "アルミ筐体・RGBライティングなどデザイン面の特徴を写真イメージとともに説明",
+        "スペックはN100標準構成だがデザインプレミアムで差別化",
+        "インテリアにこだわる在宅ワーカー・クリエイターへのアピール"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "N100ミニPC 5選スペック比較表",
+      "h3s": [
+        "価格・RAM・ストレージ・I/Oを一覧でチェック",
+        "用途別おすすめモデルの早見表"
+      ],
+      "type": "comparison",
+      "notes": [
+        "5モデルを縦軸・スペック項目を横軸にした比較表を掲載",
+        "「コスパ重視」「静音重視」「拡張性重視」「初心者向け」「デザイン重視」の用途別アイコンで視覚的に整理",
+        "AliExpressでの概算価格（記事執筆時点）と購入リンクを明示"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "N100ミニPCの選び方｜失敗しない4つのポイント",
+      "h3s": [
+        "RAMは16GB以上を選ぶべき理由",
+        "ストレージ構成（eMMC vs M.2 SSD）の違いと注意点",
+        "インターフェースと用途の一致を確認する方法",
+        "AliExpressで安全に購入するためのショップ選び"
+      ],
+      "type": "howto",
+      "notes": [
+        "RAM 8GBと16GBの体感差・マルチタスク時の違いを具体例で説明",
+        "eMMCはコスト安だが速度・換装不可の欠点、M.2 NVMeとの速度比較",
+        "AliExpressでの購入時に確認すべき評価数・発送元・返品ポリシーのチェックポイント"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "よくある質問｜N100ミニPCについて",
+      "h3s": [
+        "N100でゲームはできますか？",
+        "Windows 11は動きますか？",
+        "アリエクのミニPCは日本のコンセントで使えますか？",
+        "N100とN95・N305の違いは何ですか？",
+        "アリエクで買ったミニPCの保証・サポートはどうなりますか？"
+      ],
+      "type": "faq",
+      "notes": [
+        "各質問に対して50〜100文字程度の簡潔な回答を用意",
+        "FAQ Schema用のマークアップを想定した構造で記述",
+        "ゲーム性能はインディー・レトロゲーム程度なら可、重量級3Dは不可と明記"
+      ]
+    },
+    {
+      "id": "section10",
+      "h2": "まとめ｜N100ミニPCはアリエクで買うのが正解",
+      "h3s": [
+        "5選の総括と用途別最終おすすめ",
+        "今すぐAliExpressでチェックする方法"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "5モデルを用途別（コスパ・静音・拡張・安心・デザイン）で1行まとめ",
+        "AliExpressのセール時期（11.11・夏セール等）に合わせた購入タイミングアドバイス",
+        "読者背中を押すCTA：「まずはAliExpressで最安値を確認してみてください」"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-28",
+  "products": [
+    {
+      "product_id": "1005011831079409",
+      "rawTitle": "2026年新型第12世代低電力オフィスミニPC Alder Lake-N100 CPU搭載 Beelink MINI S12 8GB DDR4 500GB SSD Win11 Pro",
+      "cleanName": "Beelink MINI S12",
+      "price_jpy": "43697",
+      "original_price": "1826.21",
+      "sales_count": 0,
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c3m7CSHF",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sb88622dea7844f4c8b66503d964ea0654.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sb88622dea7844f4c8b66503d964ea0654.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S34c88ce548a64f34a6329158b5c93502u.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sfa4c530a7daa4b96834012784241dbfaF.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sccca611c30844fd0aeca5767e64d09eeo.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc8afd5f3b34b4e3785ba133a3adae60di.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc10ed6a1c4e44f96a35866967944d22e3.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "confirmed",
+        "searchQuery": "Beelink MINI S12",
+        "asin": null,
+        "url": "https://amzn.to/4vfIY2V"
+      },
+      "amazonUrl": "https://amzn.to/4vfIY2V",
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005009079113060",
+      "rawTitle": "FIREBAT T8 PRO Intel N200/N100クアッドコア ポケットPC Windows 11 Pro DDR5 16GB RAM 512GB SSD WIFI5 3HDMI 4K対応 ミニPC",
+      "cleanName": "FIREBAT T8 PRO",
+      "price_jpy": "44523",
+      "original_price": "4135.00",
+      "sales_count": 1,
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c3cTgUsD",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S109fc954876e4ab392f27184ab2d6cbey.png",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S109fc954876e4ab392f27184ab2d6cbey.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Saf5b2bfbd06641f4aa283f2f5bfd6cc6E.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S26ee72da9cfd46c78d168e6e961002ed8.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0d7862db45574a959b391afaddffc0b5T.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S63120e6004aa42f8ac639321746705f5J.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S20a7e4863f77461ba232f9f9166d3a215.png"
+      ],
+      "amazonPlaceholder": {
+        "status": "none",
+        "searchQuery": "FIREBAT T8 PRO",
+        "asin": null,
+        "url": null
+      },
+      "amazonUrl": null,
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005011796729205",
+      "rawTitle": "EOVOE GMKtec G3ミニPC Intel N100搭載 Windows 11 ProミニPC 8/16GB DDR4 256/512GB PCIe M.2 SSD WiFi 6 BT5.2 デスクトップコンピューター",
+      "cleanName": "GMKtec NucBox G3",
+      "price_jpy": "42113",
+      "original_price": "3520.00",
+      "sales_count": 4,
+      "affiliateLink": "https://s.click.aliexpress.com/e/_c3nO1Tk9",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sc64400f2dde94fb1b87a0e307e2632f8J.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc64400f2dde94fb1b87a0e307e2632f8J.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S237a411837894164a26bdc05f5fbe565D.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S636a3ce2fa234319a57efa8f09d21835o.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd3f196f12c2845ffac67873769225d60d.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S50b99f3f132f4e6f81b5c3e7c9297475h.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4d1b920b164d466f816a6790a1c571a6Q.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "none",
+        "searchQuery": "GMKtec NucBox G3",
+        "asin": null,
+        "url": null
+      },
+      "amazonUrl": null,
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "faqQuestions": [
+    "N100ミニPCでゲームはできますか？",
+    "N100ミニPCはWindows 11に対応していますか？",
+    "アリエクで買った中華ミニPCは日本のコンセント（100V）で使えますか？",
+    "N100とN95・N305の性能差はどのくらいありますか？",
+    "アリエクのミニPCは故障したときのサポート・保証はありますか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "アリエク価格目安（円）",
+    "RAM / ストレージ",
+    "映像出力",
+    "LAN / Wi-Fi",
+    "おすすめ用途"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/aliexpress-mini-pc-gaming-osusume.html",
+      "anchorText": "ゲーミングミニPCおすすめ5選"
+    },
+    {
+      "url": "/gadget/aliexpress-chuka-tablet-osusume.html",
+      "anchorText": "中華タブレットおすすめ5選"
+    },
+    {
+      "url": "/gadget/ugreen-docking-station-osusume.html",
+      "anchorText": "UGREENドッキングステーションおすすめ5選"
+    },
+    {
+      "url": "/gadget/index.html",
+      "anchorText": "アリエクのガジェット・周辺機器おすすめ記事一覧"
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-05-28T00:39:35.363Z"
+}

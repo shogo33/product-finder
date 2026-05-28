@@ -83,6 +83,13 @@ const ARTICLE_CONFIG = [
     topic:     'ANBERNIC RG DSのDS風デュアルスクリーン・NDSエミュ性能・AliExpress購入体験',
   },
   {
+    slug:      'n100-mini-pc-osusume',
+    folder:    'gadget',
+    subreddit: 'MiniPCs',
+    queries:   ['N100 mini pc aliexpress review', 'n100 mini pc budget buy', 'beelink gmktec n100 review'],
+    topic:     'Intel N100ミニPCのコスパ・AliExpress購入体験・用途別評価',
+  },
+  {
     slug:      'gamesir-g7-se',
     folder:    'game',
     subreddit: 'gamesir',
