@@ -1,0 +1,317 @@
+{
+  "slug": "gmktec-mini-pc-osusume",
+  "keyword": "GMKtec ミニPC おすすめ",
+  "category": "gadget",
+  "selectedTitle": "GMKtecミニPCおすすめ5選【2026年最新】アリエクで買えるコスパ最強を徹底比較",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "GMKtecとは？アリエクで人気の中華ミニPCブランドを解説",
+      "h3s": [
+        "GMKtecの歴史と強み：なぜコスパが圧倒的なのか",
+        "GMKtecのシリーズ一覧：NucBox・EVO・M6・G9の違い"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "GMKtecの設立背景・深圳メーカーとしての品質管理体制を簡潔に紹介",
+        "主要シリーズ（NucBox G / NucBox M / EVO / G9）の位置づけをざっくり整理",
+        "AliExpressの公式ストアURLや保証・サポート体制にも言及し信頼感を付与"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "【コスパ最強】GMKtec NucBox G3 Plus｜在宅ワーク入門に最適",
+      "h3s": [
+        "スペック詳細：Ryzen 5 5600U搭載で日常作業はサクサク",
+        "実際の使用感：Zoom・Office・動画再生の快適度"
+      ],
+      "type": "product",
+      "notes": [
+        "Ryzen 5 5600U + 16GB RAM + 512GB SSD構成のコスパをアピール",
+        "在宅ワーク・ビデオ会議・Excel作業での実用性を中心に解説",
+        "AliExpressでの実売価格帯と頻繁に出るクーポン情報を記載"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "【バランス型】GMKtec NucBox M6｜Ryzen 7で動画編集もこなせる万能機",
+      "h3s": [
+        "スペック詳細：Ryzen 7 7735H搭載・最大64GBメモリ対応",
+        "動画編集・マルチタスク性能：実際にどこまでできるか"
+      ],
+      "type": "product",
+      "notes": [
+        "Ryzen 7 7735Hの省電力性とパフォーマンスバランスを強調",
+        "最大64GBメモリ・2.5GbE LAN搭載など拡張性のメリットを訴求",
+        "動画編集（Premiere Pro軽作業）やクリエイティブ用途での限界点も正直に記述"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "【軽ゲーミング向け】GMKtec EVO-X2｜内蔵GPUで720p〜1080pゲームを楽しむ",
+      "h3s": [
+        "スペック詳細：Ryzen 9 HX370 / Radeon 890M内蔵GPU",
+        "ゲーミング性能の実力：プレイ可能タイトルと設定の目安"
+      ],
+      "type": "product",
+      "notes": [
+        "Radeon 890M（RDNA3.5）の内蔵GPU性能をベンチマーク数値で客観的に説明",
+        "Minecraft・Valorant・FF XIV等での動作実績と推奨設定を記載",
+        "専用GPUなしでゲームをしたいライトゲーマー向けのコスパ論を展開"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "【ハイエンド】GMKtec G9｜Core Ultra 9搭載・本格クリエイター向け最上位機",
+      "h3s": [
+        "スペック詳細：Intel Core Ultra 9 185H搭載・Thunderbolt 4対応",
+        "4K出力・外付けeGPU対応：デスクトップ代替として使えるか"
+      ],
+      "type": "product",
+      "notes": [
+        "Core Ultra 9 185HのP/Eコア構成とAI処理（NPU）対応について解説",
+        "Thunderbolt 4・OCuLink端子によるeGPU接続の可能性に触れる",
+        "価格が高いぶん「デスクトップPC代替」として成立するかコスパ検証を行う"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "【サーバー・省電力用途】GMKtec NucBox N150｜24時間稼働に最適な超省電力モデル",
+      "h3s": [
+        "スペック詳細：Intel N150搭載・TDP6Wの圧倒的省電力",
+        "自宅サーバー・NAS・常時起動用途での実用性"
+      ],
+      "type": "product",
+      "notes": [
+        "TDP6WのN150が電気代・発熱・静音性でいかに優れているかを数字で示す",
+        "Proxmox・Home Assistant・Docker運用など自宅サーバー用途に絞って解説",
+        "N100との違いも簡潔に補足し、既存記事（/gadget/n100-mini-pc-osusume.html）へ誘導"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "GMKtecミニPC全モデル比較表【2026年最新】",
+      "h3s": [
+        "用途別おすすめモデルの早見表",
+        "AliExpressでの購入時に注意すべき仕様の見方"
+      ],
+      "type": "comparison",
+      "notes": [
+        "5モデルのCPU・GPU・RAM・ストレージ・価格・おすすめ用途を一覧表で比較",
+        "「在宅ワーク・動画編集・軽ゲーム・サーバー」の用途アイコン付き早見表を提示",
+        "AliExpressの商品ページで「ストア発送元」「保証期間」を確認する方法を注意書きで補足"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "GMKtecミニPCの選び方【用途・予算・スペック別ガイド】",
+      "h3s": [
+        "CPU選び：Intel NシリーズvsRyzen vsCore Ultraどれを選ぶ？",
+        "メモリ・ストレージの選び方：16GBと32GBの差は体感できるか",
+        "AliExpressでGMKtecを安全に最安値で買う手順"
+      ],
+      "type": "howto",
+      "notes": [
+        "用途（事務作業/クリエイター/ゲーム/サーバー）×予算（2〜3万/4〜5万/6万以上）のマトリクスで選び方を整理",
+        "RAM 16GBと32GBの実体感差・DDR5の恩恵についてを具体例で説明",
+        "アリエクでのクーポン取得・セール時期（11.11・スーパーセール）の攻略法を記載"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "よくある質問：GMKtecミニPCをアリエクで買う前に確認すること",
+      "h3s": [
+        "GMKtecの品質・保証は信頼できる？",
+        "Windows OSは正規ライセンスが付属するの？"
+      ],
+      "type": "faq",
+      "notes": [
+        "FAQ形式でQ&A5問を掲載（faqQuestionsの内容に対応）",
+        "保証・OSライセンス・技適・日本語対応などユーザーが不安に感じる点を網羅",
+        "信頼性をしっかり担保しつつ、購入へのハードルを下げるトーンで執筆"
+      ]
+    },
+    {
+      "id": "section10",
+      "h2": "まとめ：用途別GMKtecミニPCのおすすめはこれ！",
+      "h3s": [
+        "【総括】2026年のGMKtecベストバイはどれか",
+        "アリエクで購入前に最終確認するチェックリスト"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "用途別（在宅ワーク→G3 Plus、万能→M6、軽ゲーム→EVO-X2、ハイエンド→G9、省電力→N150）のワンライナー総括",
+        "購入前の最終チェックリスト（ストア評価・クーポン・発送元・保証期間）を箇条書きで提示",
+        "関連記事（ゲーミングミニPC・N100ミニPC）への誘導と購入CTAで締める"
+      ]
+    }
+  ],
+  "researchedAt": "2026-05-28",
+  "products": [
+    {
+      "product_id": "1005011542765146",
+      "rawTitle": "GMKtec G5 Alder Lake N97 ミニPC Windows 11 Pro DDR5 4800Mhz 12GB 512GB M.2 2242 SATA WIFI5 BT4.2 SSD ポータブルポケットコンピューター",
+      "cleanName": "GMKtec G5 Alder Lake N97",
+      "price_jpy": "26021",
+      "original_price": "1141.98",
+      "sales_count": 3,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3Co6f4zkDq4TkftkQ4cdpUf0fW5TNQ5IRInyTtDXQ1XFP1zjHKMYwRLqcZ4StXZDtaAWkPsHLD9HhwZM9OdNwDdvnPsWeoF9WW8gBMCaMNkNoMAZlRw3vklHkStHWYh4wuoI9lOmBZtdc0WnPXzaaOoAPrMEOxredPCEecNy3WslSWyfiQNQ2QpT5iqqE7nbRsjvMJlWgwTxGMb7GbyLKbtmD9QS6KlonPyEGTIN6w1mBk8MP6kn09flGTiS7y2E4oY5nggPYFuyA0tdjbp39Oh3qlGgcl5MqVnqzojg7Cm6Jr9BUHvkHYvAY5A0tZaeMNYgmPCIjohoIo51HIOTZAlgWIAiJ0RlMMo5usjdnKTY01OJId0iKcvDxIALU6DdwOxoWRJnBwcv8HG00yY4Nt1cW8NeMEfIbA3XZH3yLeTf1QgGGWlJr6SmtVdbOa9wg5wAnk3YF5bdzcdCTqDr6P9NWKuYP1kamNeAAsBlXlKzpPewQthGIfxMAHlXq5YYAExporjsJbHeOhuOjW94bG8GXtEB6XmohYiAknjezrSI1y72Xno4HjpKuxKwtHRXtcuhZdZuKmh3GuIOp7tfUqm8ISCX2BXDg3U6ngHyqorFXtFY45nVPUfSnVIif8LHgHcCVeJlO3oQ9oJdOnxFNuQTF4ZSWwveqxpGxjuypNaa2mBpxx1S8dh82inuAjRHjVXhspe1GF9saYX",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sebf7387862d84218bceff2b2246772b6Y.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sebf7387862d84218bceff2b2246772b6Y.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8ead05593b50485d9c703df575fb19a6N.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S29b2a995a0464b688c8927805576b106T.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0b8b69076cea44868bb0c66a9c297949f.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "GMKtec G5 Alder Lake N97",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005009777379279",
+      "rawTitle": "GMKtec ミニ PC K12 Nucbox AMD Ryzen ™   7H 255 WiFi 6 BT 5.2 デュアル2.5G LAN OCulink デスクトップパソコン",
+      "cleanName": "GMKtec K12 Nucbox",
+      "price_jpy": "71563",
+      "original_price": "6348.08",
+      "sales_count": 10,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4DxYxoGw9FHrJIg2ABkcbPFdI1ygH54YS960CjAvdqmJ36wJykTTAd3ys9ao6D0WuXwBmSwTBe0lTe4R43mKD5Lbrlog4Ym71AXAsX41Mro9iRlemIhUb96R2sKlAaPsUG6a8NU3BK5rjPsjq21XuTDOh1CDSWn2OckZqukKye49xBcisuHWcij5qMVLtlP3SW9PcjQATf3DHGuJZ7jVFI011hMqp0DHQ8wxHv0wXuRZi49RLG3exhDt1jPeo1igP7Y4rCbt62pwmNd9jVruE4gvCXKFBsYqs6HVUNMvcPLKONsCPdua7nsHnMRuiJFYXii2qtyExqXIJrRaofhMirfj1ZHBQXABxfnNHXRxLnog3r9Dy2IrQsfRK4E0fcEEb09scmKot4pkqNkRO7DCuR7VN2QKObQLAOCmCZjshviy5VwjVaLRlzzzEPAPP645KD1oTsRPFaD73vRLh2rCFHnamJ419Neql4n5ALzpTLoJyzx7lxBwvDq3GUAKtzLiQtGkJMrHFud3lmYwVSpKqZmAkNVs3UvZPgHjplv7hNgNyoVvDk4m7oNlkvlARTeHXNhDAiNbYInioQRwfVZO99ATUqEHgmH1n3t9LCnxWNeA3sgiZjh4BAmUJFowcWIirPdNXCI9cjQnk4MIaqjKJh6ezrEZh4aak7Mr4iFP2f7vp1s7jddvzx4e0bacDKntQr9zcOqyplTzS",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S0b2e645b6a6b4258bccb9de5c13ea4a2u.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0b2e645b6a6b4258bccb9de5c13ea4a2u.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sea4fd3e7f83c485d90b19d77595f955d2.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0300549d94a74ef6bc4c720224f42ab4o.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5dbb7e7a2a204f3abafc60cec6c9348fD.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5d898432fd514c9e8735fa42ee828b28k.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S55c11ce0e2ba40b1b1a6e99abda2faedA.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "GMKtec K12 Nucbox",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005012344299218",
+      "rawTitle": "GMKtec G3SミニPC Alder Lake N95 Windows 11 Pro搭載 8GB DDR4 128/256GB PCIe M.2 SSD WiFi 5 BT5.0 デスクトップコンピュータ",
+      "cleanName": "GMKtec G3S ミニPC",
+      "price_jpy": "71236",
+      "original_price": "3000.00",
+      "sales_count": 0,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CmIvvg7qx8waxDO7IHor6lQMccNGgfDY7pEnFrTtBflzzQFhIJYOA5xQZAdhzdd0P2zUZT90RinQBaByms11rU3MOZDs88ti968rdk4cuCFwwFLrJjJvWy0D4WRqLExAPxYQmfMsS2Ki26TbB0kEFRVa2MaCpOsxjCsFaWOYjmY8G0x6tlfJGhBcfPmuXy6n8ADU0fOgDYArlv6VMKBHhLhHKezXXqKRieSdntbXitst6eX78u7JA71z2YQt2yRPmx4uBMpmRmcYBmlyZwss0ABUlTFhjCMmeRpprctnMBugnQQxW1OnPryG7X4RBUgkn0y13SECyFg8iQI4R0AKIftVN4OVA27t3bw682dT3HVD3uTE6syns2MdB96prgpJ2cNEaF9RFyK0ec9tXMvnaB1aPRckXMektvoONCwmqyWxuFe54oUC7rc0A3PfnUgYWFH3qdcjse1pHTmoAIvhWjncUuuaqRRXEx3LkOxSQ1RtwiGIExN20KTHHyTc0YarQINc6tSXxGn4r31C7tJsfKDF6olaaLH2t8AWT1LnDmdsy0EGkiTQiEmVTsf4q0wE0zt8hOvsEJzmwV7XiCDzyZHfAPBwdveguGOReuSUBZdCAS0gj0UOpm02C8EicNpzko7bk0KmWB3NKTEtCYclbj8Gk4mgT1S3kpGIcAZsZqhGVdcCHPuZDBnOMEug71jsbuYezB3MRXtFGb",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S1a3e4ffbfb8b4f119fef00a0a9a1e536k.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1a3e4ffbfb8b4f119fef00a0a9a1e536k.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "GMKtec G3S ミニPC",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/3Q6MDkE"
+    },
+    {
+      "product_id": "1005010541508792",
+      "rawTitle": "GMKtec M8 ミニPC AMD Ryzen 5Pro 6650H Nucbox Windows 11 LPDDR5 16GB 500GB/1TB GPU Radeon 660M Oculink Wifi 6E BT5.2",
+      "cleanName": "GMKtec M8 ミニPC",
+      "price_jpy": "69917",
+      "original_price": "6202.10",
+      "sales_count": 197,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CojWCTtEuaXqZeK6nrqYMv8f0uavHOfuzATAx34pqRWHPzq3Iwk2GcK4b65t0JJVlSwtB3cZX5KkX9Eg5T88oGeTeuyPXMNmEOAsCWrO1VLMBAWAuQ9tvzpja0hPVI18WF76Dso0caf6rngXKIcjuKVIErorLEvxuH8SWWjwu8yayFReKNAJ2P8B1qDdI7mmabKP1S65RoYwImP8eSNGIEDktomPj4rotU4p4NNJ9Cnz2ip9p0GA641WhTfxOxudE0UWe3RY0aDu8wrFW5LoCcoUwSXLt0sZ1kAKttUUMqT3wp94fZwwet6D65VALVQFMkVFLb2QpKcudFkOXNPFD3CNevfakn0L5SyU8u2sg6xu4Dm48zNblpOOyVksgT8FPGkUYQWlR0rMgGclxiQ5fFR1et0VCC2RK72fHiI36sQ6nDuWFXfcmcpApNB2zpC5pPg5XgjdcnajI2bOPJDaAMgBJMKFD6GDZrOCt5q5bVSapRSFQJbkPfcg9XTB0fStdyhDXgcWFTwKe42OQzlZ2wrYCoOoCzN4zfEoNYtG5xvKmNiUY5KV2BmqyPwAcE3DlAmgEGtEwTQGV4H70bbNAY5DYQfrU9OCnDGsHYSL5pwxLgHQTaAwtDKX0tdZUdO9M1h3trFCIMIWLhpStAcesYvQr64gQMDQ3p6hMNhgOOMeEh7ftJjCg72XMG4KOI0yLXyh4yCSWj4CFa",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S2859144b394449c1b60bf9285340d6d6s.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2859144b394449c1b60bf9285340d6d6s.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S72e4a3c05d7b4a39af3aa40364e70c154.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S812ef1d07b3741b2abbb12b2af9b5191W.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sb08c8f7690444631b2f8be7e20ec56051.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4006ee1ddd1c4ec5b6d6dd0f11d2c6d4f.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S371797699f1e4ebea36705675cbeaaea8.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "GMKtec M8 ミニPC",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "amazonUrl": "https://amzn.to/4uAQVQh"
+    },
+    {
+      "product_id": "1005012358257760",
+      "rawTitle": "GMKtec K6 M6 ゲーミングミニPC ウルトラ AMD Ryzen 7 7840HS 5 7640HS 6600H USB4 2*2.5G NUC 2*DDR5 デスクトップコンピューター Windows 11 WiFi6E",
+      "cleanName": "GMKtec K6 ゲーミングミニPC",
+      "price_jpy": "42102",
+      "original_price": "2659.57",
+      "sales_count": 0,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CmxcSHJcxgIDnw3u50LOXCXtz3mFRLlGwtq9iDGuuy9XQgW582nfI5YxeWmumtg02dGmNzuLn7zxWsYm0KsGLgmkQVH0j8bgTvZb1w0usXwIwIm7tsjwNoPu36pinRWn6crArayG0bC6Gn9smbjiXCaD9wFfFikPVxQdcHOWkPqpcF8wSIFhPx9sUzkV9M0c4mGh7colC28WdFvwfsMnZQ8gYjQaCxc4ieFuB9WLWBcusHhUJbYedlvxmPLzzq0BLyM8h7BqUF06oCQyPYgcuViF3KXYwN0hkvhPtNgRMqK2iVf9Yu6Gk5oRXYsX05BebLnQsxcHkU6ugvqseu8kSNKo9BFnJ1LFgS2mHNAFPMoOBLeybx592jJvYZNy6kpsMtndE1rQLSHAcJSBfqLIZ940D1RhJsjFuAZgZIrAxOLIq2cMYE5ZLYqPYsT7RLOduqzyzXbNaeihxKtKu1dQ7XkTFnWEm440tDpFmBgbzkQBI2wEqaJSubFuhQP1yto2NKRnCrhRRfMyjJy32u22k4Rz8tbdjb5uouTu7heaFvBB4xKnqaV7gCNYQJFeNGFPNaFYEQr3P92k8iRt1ZtQfc89WRlT2QUjzHkUqlzJ1VyKc6N20uTOIDaGTz0yOY8qjteJ26fApLJHbJ73IR7GLLeH9rXFNriQEdh6jE7RXB3QCxmg05var7Kltss02hX4Y9nX9VyqvM4qDD",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S48c8f22c463c4d3d9ef760753e57afe4B.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S48c8f22c463c4d3d9ef760753e57afe4B.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8da05d5cf0ae4acca85ac33d3145ab88h.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2728710949374c0c860f6aa69cd6781dA.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S165c421a3ab04a689c0b7be0367c9b3a4.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sb0c3904741d348258b75ba477702cb39k.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S9403070254b24222a7ac80eb0c3f1b88B.png"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "GMKtec K6 ゲーミングミニPC",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "faqQuestions": [
+    "GMKtecミニPCはAliExpressで買っても保証は受けられる？",
+    "GMKtecのWindowsは正規ライセンス？Officeは付いてくる？",
+    "GMKtecミニPCはゲームに使えますか？どのモデルがおすすめ？",
+    "GMKtecとBeelink・MINISFORUMどっちを選べばいい？",
+    "GMKtecミニPCをアリエクで買うと技適や関税はどうなる？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "CPU",
+    "RAM/ストレージ",
+    "内蔵GPU",
+    "参考価格（円）",
+    "おすすめ用途"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/n100-mini-pc-osusume.html",
+      "anchorText": "N100ミニPCおすすめ5選"
+    },
+    {
+      "url": "/gadget/aliexpress-mini-pc-gaming-osusume.html",
+      "anchorText": "アリエクゲーミングミニPCおすすめ5選"
+    },
+    {
+      "url": "/gadget/aliexpress-chuka-tablet-osusume.html",
+      "anchorText": "中華タブレットおすすめ5選"
+    },
+    {
+      "url": "/gadget/ugreen-docking-station-osusume.html",
+      "anchorText": "UGREENドッキングステーションおすすめ5選"
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-05-28T09:23:15.370Z"
+}

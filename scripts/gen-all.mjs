@@ -24,5 +24,6 @@ run('node scripts/gen-related-links.mjs');
 run('node scripts/gen-category-pages.mjs');
 run('node scripts/gen-ogp.mjs');
 run('node scripts/add-product-links.mjs');
+run('node scripts/check-links.mjs');
 
 console.log('\n✅ 全生成完了');

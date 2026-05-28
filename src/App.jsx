@@ -1,4 +1,5 @@
 import { useState, useMemo, memo, useRef, useEffect } from 'react';
+import { flushSync } from 'react-dom';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 import { Heart, X, Package, Sparkles, TrendingUp, Layers, Filter, BarChart3, Smartphone, BookOpen } from 'lucide-react';
 import { useDeck } from './useDeck';
@@ -85,9 +86,12 @@ const SwipeCard = ({ card, x, y, rotate, scale, cardOpacity, likeOpacity, nopeOp
       duration: 0.3,
       ease: 'easeOut',
       onComplete: () => {
-        if (direction === 'right') onSwipeRight();
-        else onSwipeLeft();
-        requestAnimationFrame(() => { x.set(0); y.set(0); });
+        flushSync(() => {
+          if (direction === 'right') onSwipeRight();
+          else onSwipeLeft();
+        });
+        x.set(0);
+        y.set(0);
       },
     });
   };
@@ -451,7 +455,7 @@ export default function App() {
   const likeOpacity = useTransform(x, [0, 80], [0, 1]);
   const nopeOpacity = useTransform(x, [-80, 0], [1, 0]);
   const scale       = useTransform(x, [-200, 0, 200], [0.95, 1, 0.95]);
-  const cardOpacity = useTransform(x, [-300, -200, -100, 0, 100, 200, 300], [0, 0.2, 0.6, 1, 0.6, 0.2, 0]);
+  const cardOpacity = useTransform(x, [-600, -400, 0, 400, 600], [0, 0.5, 1, 0.5, 0]);
 
   const closeModal = () => {
     setShowModal(false);

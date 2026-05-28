@@ -419,7 +419,22 @@
       "Bash(node scripts/update-article-date.mjs ugreen-mouse-osusume 2026-05-28)",
       "Bash(node scripts/update-article-date.mjs ugreen-mouse-osusume 2026-05-20)",
       "Bash(cat)",
-      "Bash(chmod +x \"C:/Users/USER/product-finder/.git/hooks/pre-commit\")"
+      "Bash(chmod +x \"C:/Users/USER/product-finder/.git/hooks/pre-commit\")",
+      "Bash(node scripts/check-links.mjs)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/article-dates.json','utf8'\\)\\); const sorted=Object.entries\\(d\\).sort\\(\\(a,b\\)=>b[1].published.localeCompare\\(a[1].published\\)\\).slice\\(0,5\\); sorted.forEach\\(\\([k,v]\\)=>console.log\\(v.published, k\\)\\)\")",
+      "Bash(node scripts/split-xshot.mjs gmktec-a \"FireShot Capture 085 - GMKtec NucBox - 検索 _ X - [x.com].png\")",
+      "Bash(node scripts/split-xshot.mjs gmktec-b \"FireShot Capture 135 - _GMKtec N100 - 検索 _ X - [x.com].png\")",
+      "Bash(node scripts/split-xshot.mjs gmktec-c \"FireShot Capture 137 - _GMKtec_ - 検索 _ X - [x.com].png\")",
+      "Bash(node scripts/step1-plan.mjs gmktec-mini-pc-osusume)",
+      "Bash(node scripts/step1-plan.mjs \"GMKtec ミニPC おすすめ\" gmktec-mini-pc-osusume gadget)",
+      "Bash(node scripts/step2-research.mjs gmktec-mini-pc-osusume)",
+      "Bash(node scripts/rebuild-research.mjs gmktec-mini-pc-osusume 1005011542765146,1005009777379279,1005012344299218,1005010541508792,1005011767850774)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/articles/gmktec-mini-pc-osusume-research.json','utf8'\\)\\); d.products.forEach\\(p=>console.log\\(p.cleanName,'|',p.mainImage?.slice\\(0,80\\),'|',p.affiliateLink?.slice\\(0,60\\)\\)\\)\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/articles/gmktec-mini-pc-osusume-research.json','utf8'\\)\\); d.products.forEach\\(p=>console.log\\(p.cleanName+' | '+p.affiliateLink\\)\\)\")",
+      "Bash(node scripts/step3-write.mjs gmktec-mini-pc-osusume)",
+      "Bash(node scripts/gen-voices.mjs gmktec-mini-pc-osusume)",
+      "Bash(node scripts/rebuild-research.mjs gmktec-mini-pc-osusume 1005011542765146,1005009777379279,1005012344299218,1005010541508792,1005007815605519)",
+      "Bash(node scripts/rebuild-research.mjs gmktec-mini-pc-osusume 1005011542765146,1005009777379279,1005012344299218,1005010541508792,1005012358257760)"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",

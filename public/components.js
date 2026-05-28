@@ -71,7 +71,7 @@
     '</div>' +
     '<div>© 2026 アリエクswipe｜ガチ検証で選ぶアリエクの神コスパ商品. All rights reserved.</div>' +
     '<div class="footer-aff-notice">' +
-      '本サイトはAliExpressのアフィリエイトプログラムに参加しています。' +
+      '当サイトは、Amazonアソシエイトを含むアフィリエイトプログラムを利用しています。' +
       '記事内のリンクから購入された場合、当サイトに報酬が発生することがあります。' +
       'ただし、商品の評価・内容は独自の基準で作成しています。' +
     '</div>';
@@ -104,11 +104,12 @@
     '.nav-link:hover{background:#fff1f2;color:#e8253a;}' +
     '.nav-arrow{color:#d1d5db;font-size:1.1rem;}' +
     '.nav-link:hover .nav-arrow{color:#e8253a;}' +
-    /* 商品セクションカード */
-    '.product-section{background:#f9fafb;border-radius:16px;border-top:3px solid #e8253a;padding:28px 24px 24px;margin:40px 0;box-shadow:0 2px 12px rgba(0,0,0,.06);}' +
+    /* 商品セクション区切り線＋番号バッジ */
+    'body{counter-reset:product-section;}' +
+    '.product-section{counter-increment:product-section;margin:48px 0 0;padding:0;background:transparent;border:none;border-radius:0;box-shadow:none;}' +
+    '.product-section::before{content:"";display:block;height:2px;background:#f0f0f0;margin-bottom:28px;border-radius:1px;}' +
     '.product-section h2:first-of-type{margin-top:0;}' +
-    '.product-section .cta-box{background:#fff;margin-bottom:0;}' +
-    '@media(max-width:480px){.product-section{padding:20px 16px 16px;}}' +
+    '.product-section h2:first-of-type::before{content:counter(product-section,decimal-leading-zero);display:inline-block;background:#e8253a;color:#fff;font-size:.7em;font-weight:800;padding:3px 8px;border-radius:4px;margin-right:9px;vertical-align:middle;line-height:1.8;letter-spacing:.03em;}' +
     /* CTA共通 */
     '.cta-box{background:linear-gradient(135deg,#fff1f2 0%,#fff8f8 100%);border:2px solid #fecdcf;border-left:5px solid #e8253a;border-radius:16px;padding:28px 20px;margin:40px 0;text-align:center;}' +
     '.cta-lead{font-size:.93rem;font-weight:700;color:#1a1a1a;margin:0 0 18px;line-height:1.7;}' +

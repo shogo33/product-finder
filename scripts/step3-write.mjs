@@ -216,7 +216,7 @@ AmazonリンクURLが「なし」の場合はPENDING形式、URLがある場合�
     <span>${today.replace(/-/g, '年').replace(/-/, '月') + '日'}更新</span>
     <span>読了約8分</span>
   </div>
-  <p class="promo-notice">本ページはプロモーションが含まれています</p>
+  <p class="promo-notice">当サイトは、Amazonアソシエイトを含むアフィリエイトプログラムを利用しています。</p>
 </section>
 \`\`\`
 
@@ -632,7 +632,6 @@ console.log(`\n✅ 記事保存: ${outPath}`);
 
 // ── article-dates.json に公開日・更新日を登録 ─────────────────
 const DATES_FILE = 'data/article-dates.json';
-const today = new Date().toISOString().split('T')[0];
 const existingDates = fs.existsSync(DATES_FILE)
   ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8'))
   : {};

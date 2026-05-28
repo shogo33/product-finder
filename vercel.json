@@ -2,7 +2,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
-    { "source": "/home.html", "destination": "/", "statusCode": 301 }
+    { "source": "/home.html", "destination": "/", "statusCode": 301 },
+    { "source": "/(.*)\\.htm", "destination": "/$1.html", "statusCode": 301 }
   ],
   "rewrites": [
     { "source": "/app",      "destination": "/app/index.html" },

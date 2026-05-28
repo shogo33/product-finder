@@ -1,0 +1,198 @@
+{
+  "keyword": "GMKtec ミニPC おすすめ",
+  "slug": "gmktec-mini-pc-osusume",
+  "category": "gadget",
+  "searchIntent": "比較系|おすすめ系",
+  "searchIntentNote": "GMKtecブランドのミニPCを購入検討しており、モデル間の違いや自分の用途に合った機種を知りたい。AliExpressで安く買う方法も求めている。",
+  "persona": "自作PCとミニPC沼にどっぷりハマったガジェットオタクで、CPUベンチマークやTDPの数字を見るだけで興奮できる。コスパ至上主義で「同じ性能なら1円でも安く」を信条に、アリエクでの最安値ルートを常に探し続けている。",
+  "targetProductCount": 5,
+  "titles": [
+    "GMKtecミニPCおすすめ5選【2026年最新】アリエクで買えるコスパ最強を徹底比較",
+    "GMKtec ミニPCおすすめ比較【2026年最新】用途別に選ぶ5モデル完全ガイド",
+    "【2026年最新】GMKtecミニPC全モデル比較｜アリエク最安値と選び方まとめ"
+  ],
+  "selectedTitle": "GMKtecミニPCおすすめ5選【2026年最新】アリエクで買えるコスパ最強を徹底比較",
+  "metaDescription": "GMKtecのミニPCをアリエクで買うならどのモデルが最強？NucBox・EVO・M6シリーズなど人気5機種をCPU・RAM・価格で徹底比較。用途別（在宅ワーク・軽ゲーム・サーバー）の選び方も解説。あなたにぴったりの1台を見つけよう！",
+  "intro": "「ミニPCほしいけど、GMKtecってどれを選べばいいの？」と迷っていませんか？NucBox・EVO・M6シリーズなど、GMKtecは気づけばラインナップが膨大で、スペック表を見比べるだけで日が暮れてしまいます。結論から言うと、用途ごとに「最適な1台」はハッキリ分かれており、闇雲に高いモデルを選ぶ必要はありません。この記事ではAliExpressで実際に購入できるGMKtecミニPCを5モデルに絞り、CPU性能・メモリ・コスパを軸に徹底比較します。在宅ワーク・動画編集・軽ゲーミング・自宅サーバーなど、あなたのシーンに合った最強の1台を見つけましょう。",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "GMKtecとは？アリエクで人気の中華ミニPCブランドを解説",
+      "h3s": [
+        "GMKtecの歴史と強み：なぜコスパが圧倒的なのか",
+        "GMKtecのシリーズ一覧：NucBox・EVO・M6・G9の違い"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "GMKtecの設立背景・深圳メーカーとしての品質管理体制を簡潔に紹介",
+        "主要シリーズ（NucBox G / NucBox M / EVO / G9）の位置づけをざっくり整理",
+        "AliExpressの公式ストアURLや保証・サポート体制にも言及し信頼感を付与"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "【コスパ最強】GMKtec NucBox G3 Plus｜在宅ワーク入門に最適",
+      "h3s": [
+        "スペック詳細：Ryzen 5 5600U搭載で日常作業はサクサク",
+        "実際の使用感：Zoom・Office・動画再生の快適度"
+      ],
+      "type": "product",
+      "notes": [
+        "Ryzen 5 5600U + 16GB RAM + 512GB SSD構成のコスパをアピール",
+        "在宅ワーク・ビデオ会議・Excel作業での実用性を中心に解説",
+        "AliExpressでの実売価格帯と頻繁に出るクーポン情報を記載"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "【バランス型】GMKtec NucBox M6｜Ryzen 7で動画編集もこなせる万能機",
+      "h3s": [
+        "スペック詳細：Ryzen 7 7735H搭載・最大64GBメモリ対応",
+        "動画編集・マルチタスク性能：実際にどこまでできるか"
+      ],
+      "type": "product",
+      "notes": [
+        "Ryzen 7 7735Hの省電力性とパフォーマンスバランスを強調",
+        "最大64GBメモリ・2.5GbE LAN搭載など拡張性のメリットを訴求",
+        "動画編集（Premiere Pro軽作業）やクリエイティブ用途での限界点も正直に記述"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "【軽ゲーミング向け】GMKtec EVO-X2｜内蔵GPUで720p〜1080pゲームを楽しむ",
+      "h3s": [
+        "スペック詳細：Ryzen 9 HX370 / Radeon 890M内蔵GPU",
+        "ゲーミング性能の実力：プレイ可能タイトルと設定の目安"
+      ],
+      "type": "product",
+      "notes": [
+        "Radeon 890M（RDNA3.5）の内蔵GPU性能をベンチマーク数値で客観的に説明",
+        "Minecraft・Valorant・FF XIV等での動作実績と推奨設定を記載",
+        "専用GPUなしでゲームをしたいライトゲーマー向けのコスパ論を展開"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "【ハイエンド】GMKtec G9｜Core Ultra 9搭載・本格クリエイター向け最上位機",
+      "h3s": [
+        "スペック詳細：Intel Core Ultra 9 185H搭載・Thunderbolt 4対応",
+        "4K出力・外付けeGPU対応：デスクトップ代替として使えるか"
+      ],
+      "type": "product",
+      "notes": [
+        "Core Ultra 9 185HのP/Eコア構成とAI処理（NPU）対応について解説",
+        "Thunderbolt 4・OCuLink端子によるeGPU接続の可能性に触れる",
+        "価格が高いぶん「デスクトップPC代替」として成立するかコスパ検証を行う"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "【サーバー・省電力用途】GMKtec NucBox N150｜24時間稼働に最適な超省電力モデル",
+      "h3s": [
+        "スペック詳細：Intel N150搭載・TDP6Wの圧倒的省電力",
+        "自宅サーバー・NAS・常時起動用途での実用性"
+      ],
+      "type": "product",
+      "notes": [
+        "TDP6WのN150が電気代・発熱・静音性でいかに優れているかを数字で示す",
+        "Proxmox・Home Assistant・Docker運用など自宅サーバー用途に絞って解説",
+        "N100との違いも簡潔に補足し、既存記事（/gadget/n100-mini-pc-osusume.html）へ誘導"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "GMKtecミニPC全モデル比較表【2026年最新】",
+      "h3s": [
+        "用途別おすすめモデルの早見表",
+        "AliExpressでの購入時に注意すべき仕様の見方"
+      ],
+      "type": "comparison",
+      "notes": [
+        "5モデルのCPU・GPU・RAM・ストレージ・価格・おすすめ用途を一覧表で比較",
+        "「在宅ワーク・動画編集・軽ゲーム・サーバー」の用途アイコン付き早見表を提示",
+        "AliExpressの商品ページで「ストア発送元」「保証期間」を確認する方法を注意書きで補足"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "GMKtecミニPCの選び方【用途・予算・スペック別ガイド】",
+      "h3s": [
+        "CPU選び：Intel NシリーズvsRyzen vsCore Ultraどれを選ぶ？",
+        "メモリ・ストレージの選び方：16GBと32GBの差は体感できるか",
+        "AliExpressでGMKtecを安全に最安値で買う手順"
+      ],
+      "type": "howto",
+      "notes": [
+        "用途（事務作業/クリエイター/ゲーム/サーバー）×予算（2〜3万/4〜5万/6万以上）のマトリクスで選び方を整理",
+        "RAM 16GBと32GBの実体感差・DDR5の恩恵についてを具体例で説明",
+        "アリエクでのクーポン取得・セール時期（11.11・スーパーセール）の攻略法を記載"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "よくある質問：GMKtecミニPCをアリエクで買う前に確認すること",
+      "h3s": [
+        "GMKtecの品質・保証は信頼できる？",
+        "Windows OSは正規ライセンスが付属するの？"
+      ],
+      "type": "faq",
+      "notes": [
+        "FAQ形式でQ&A5問を掲載（faqQuestionsの内容に対応）",
+        "保証・OSライセンス・技適・日本語対応などユーザーが不安に感じる点を網羅",
+        "信頼性をしっかり担保しつつ、購入へのハードルを下げるトーンで執筆"
+      ]
+    },
+    {
+      "id": "section10",
+      "h2": "まとめ：用途別GMKtecミニPCのおすすめはこれ！",
+      "h3s": [
+        "【総括】2026年のGMKtecベストバイはどれか",
+        "アリエクで購入前に最終確認するチェックリスト"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "用途別（在宅ワーク→G3 Plus、万能→M6、軽ゲーム→EVO-X2、ハイエンド→G9、省電力→N150）のワンライナー総括",
+        "購入前の最終チェックリスト（ストア評価・クーポン・発送元・保証期間）を箇条書きで提示",
+        "関連記事（ゲーミングミニPC・N100ミニPC）への誘導と購入CTAで締める"
+      ]
+    }
+  ],
+  "faqQuestions": [
+    "GMKtecミニPCはAliExpressで買っても保証は受けられる？",
+    "GMKtecのWindowsは正規ライセンス？Officeは付いてくる？",
+    "GMKtecミニPCはゲームに使えますか？どのモデルがおすすめ？",
+    "GMKtecとBeelink・MINISFORUMどっちを選べばいい？",
+    "GMKtecミニPCをアリエクで買うと技適や関税はどうなる？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "CPU",
+    "RAM/ストレージ",
+    "内蔵GPU",
+    "参考価格（円）",
+    "おすすめ用途"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/n100-mini-pc-osusume.html",
+      "anchorText": "N100ミニPCおすすめ5選"
+    },
+    {
+      "url": "/gadget/aliexpress-mini-pc-gaming-osusume.html",
+      "anchorText": "アリエクゲーミングミニPCおすすめ5選"
+    },
+    {
+      "url": "/gadget/aliexpress-chuka-tablet-osusume.html",
+      "anchorText": "中華タブレットおすすめ5選"
+    },
+    {
+      "url": "/gadget/ugreen-docking-station-osusume.html",
+      "anchorText": "UGREENドッキングステーションおすすめ5選"
+    }
+  ],
+  "competitorDifferentiators": [
+    "全5モデルを「用途×予算マトリクス」で整理し、スペック初心者でも迷わず選べる構成にする",
+    "AliExpressの公式ストアリンク・クーポン取得タイミング・発送元確認など購入実務まで踏み込み、他サイトにない「実際に買える情報」を提供する"
+  ],
+  "createdAt": "2026-05-28"
+}

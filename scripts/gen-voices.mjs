@@ -90,6 +90,13 @@ const ARTICLE_CONFIG = [
     topic:     'Intel N100ミニPCのコスパ・AliExpress購入体験・用途別評価',
   },
   {
+    slug:      'gmktec-mini-pc-osusume',
+    folder:    'gadget',
+    subreddit: 'MiniPCs',
+    queries:   ['GMKtec review aliexpress', 'GMKtec NucBox buy experience', 'GMKtec vs beelink mini pc'],
+    topic:     'GMKtecミニPCのAliExpress購入体験・コスパ評価・他ブランドとの比較',
+  },
+  {
     slug:      'gamesir-g7-se',
     folder:    'game',
     subreddit: 'gamesir',
