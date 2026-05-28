@@ -414,7 +414,12 @@
       "Bash(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" add public/gadget/*.html public/game/*.html public/guide/*.html public/outdoor/*.html)",
       "Bash(git -C \"C:\\\\Users\\\\USER\\\\product-finder\" add -u public/)",
       "Bash(node scripts/add-cta-images.mjs)",
-      "Bash(node -e \"const {readdirSync}=require\\('fs'\\); const dirs=readdirSync\\('./node_modules'\\).filter\\(d=>d.includes\\('glob'\\)\\); console.log\\(dirs\\)\")"
+      "Bash(node -e \"const {readdirSync}=require\\('fs'\\); const dirs=readdirSync\\('./node_modules'\\).filter\\(d=>d.includes\\('glob'\\)\\); console.log\\(dirs\\)\")",
+      "Bash(node scripts/init-article-dates.mjs)",
+      "Bash(node scripts/update-article-date.mjs ugreen-mouse-osusume 2026-05-28)",
+      "Bash(node scripts/update-article-date.mjs ugreen-mouse-osusume 2026-05-20)",
+      "Bash(cat)",
+      "Bash(chmod +x \"C:/Users/USER/product-finder/.git/hooks/pre-commit\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",

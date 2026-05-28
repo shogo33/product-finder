@@ -104,6 +104,11 @@
     '.nav-link:hover{background:#fff1f2;color:#e8253a;}' +
     '.nav-arrow{color:#d1d5db;font-size:1.1rem;}' +
     '.nav-link:hover .nav-arrow{color:#e8253a;}' +
+    /* 商品セクションカード */
+    '.product-section{background:#f9fafb;border-radius:16px;border-top:3px solid #e8253a;padding:28px 24px 24px;margin:40px 0;box-shadow:0 2px 12px rgba(0,0,0,.06);}' +
+    '.product-section h2:first-of-type{margin-top:0;}' +
+    '.product-section .cta-box{background:#fff;margin-bottom:0;}' +
+    '@media(max-width:480px){.product-section{padding:20px 16px 16px;}}' +
     /* CTA共通 */
     '.cta-box{background:linear-gradient(135deg,#fff1f2 0%,#fff8f8 100%);border:2px solid #fecdcf;border-left:5px solid #e8253a;border-radius:16px;padding:28px 20px;margin:40px 0;text-align:center;}' +
     '.cta-lead{font-size:.93rem;font-weight:700;color:#1a1a1a;margin:0 0 18px;line-height:1.7;}' +

@@ -141,7 +141,9 @@ ${productsText}
 各商品セクションを必ず以下で囲む：
 \`\`\`
 ${'<!-- @product-start id="PRODUCT_ID" type="ガジェット" tag="ガジェット" -->'}
+${'<div class="product-section">'}
 ... h2 + 画像 + 説明 + CTA ...
+${'</div>'}
 ${'<!-- @product-end -->'}
 \`\`\`
 
