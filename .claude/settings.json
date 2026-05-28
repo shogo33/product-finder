@@ -434,7 +434,11 @@
       "Bash(node scripts/step3-write.mjs gmktec-mini-pc-osusume)",
       "Bash(node scripts/gen-voices.mjs gmktec-mini-pc-osusume)",
       "Bash(node scripts/rebuild-research.mjs gmktec-mini-pc-osusume 1005011542765146,1005009777379279,1005012344299218,1005010541508792,1005007815605519)",
-      "Bash(node scripts/rebuild-research.mjs gmktec-mini-pc-osusume 1005011542765146,1005009777379279,1005012344299218,1005010541508792,1005012358257760)"
+      "Bash(node scripts/rebuild-research.mjs gmktec-mini-pc-osusume 1005011542765146,1005009777379279,1005012344299218,1005010541508792,1005012358257760)",
+      "Bash(grep -m1 '<h1>' c:/Users/USER/product-finder/__TRACKED_VAR__)",
+      "Bash(node scripts/audit-articles.mjs)",
+      "Bash(sed -i 's/コストを抑えて高性能なモバイルバッテリーが欲しいなら/コストを抑えてスペックの高いモバイルバッテリーが欲しいなら/g' public/gadget/sharge-mobile-battery-osusume.html)",
+      "Bash(sed -i 's/外付けアンテナ型が圧倒的に有利です。/外付けアンテナ型が明確に有利です。/g' public/gadget/ugreen-wifi-osusume.html)"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",

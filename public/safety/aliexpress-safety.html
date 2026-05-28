@@ -369,7 +369,20 @@
     .pc-float-btn { display: block; background: #fff; color: #e8253a !important; text-align: center; padding: 11px; border-radius: 999px; font-weight: 700; font-size: 0.88rem; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
     .pc-float-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
     .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
-</style>
+
+    /* Reddit生の声ブロック */
+    .reddit-voices { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin: 40px 0; }
+    .voices-header { margin-bottom: 20px; }
+    .voices-badge { display: inline-block; background: #ff4500; color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .voices-title { font-size: 1.05rem; font-weight: 700; margin: 6px 0 8px; }
+    .voices-meta { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+    .voice-item { border-top: 1px solid var(--border); padding: 16px 0; }
+    .voice-item:last-child { padding-bottom: 0; }
+    .voice-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+    .voice-title { font-size: 0.97rem; font-weight: 700; margin-bottom: 6px; }
+    .voice-body { font-size: 0.88rem; line-height: 1.75; margin: 0 0 8px; }
+    .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }
+  </style>
   <link rel="canonical" href="https://aliswipe.com/safety/aliexpress-safety.html" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -503,6 +516,24 @@
   </nav>
 
   <article class="article-body">
+
+    <div class="article-conclusion">
+      <p><strong>結論：</strong>AliExpress自体のセキュリティは大手ECサイトと同等。ただし<strong>出品者・商品の質はピンキリ</strong>で、国内ECとは異なるリスクがある。以下の対策で大半のトラブルは回避できる。</p>
+      <ul>
+        <li>支払い → クレジットカードまたはPayPal（不正請求時に異議申し立て可能）</li>
+        <li>商品選び → 評価率95%以上・レビュー500件以上・公式ストア優先</li>
+        <li>万が一 → AliExpressのバイヤープロテクションで返金申請</li>
+      </ul>
+    </div>
+
+    <div class="for-who">
+      <p><strong>こんな人向け：</strong></p>
+      <ul>
+        <li>✅ AliExpressを初めて使う前に安全性を確認したい</li>
+        <li>✅ 「やばい」「危険」という噂の真偽を知りたい</li>
+        <li>❌ リスクゼロで使いたい人（一定のリスクはある）</li>
+      </ul>
+    </div>
 
     <p>AliExpressの安全性が気になっている人の多くは、「本当に届くのか」「偽物や詐欺は大丈夫か」「クレジットカード情報は安全か」といった不安を抱えています。この記事では、AliExpressが怪しい・やばいと言われる理由を整理したうえで、危険性が高い商品ジャンル、安全な支払い方法、詐欺や配送トラブルを防ぐ具体策、万一の返金対応までをわかりやすく解説します。</p>
 
@@ -783,8 +814,8 @@
     <!-- SECTION 6 -->
     <h2 id="compare">AliExpressのメリット・デメリットをAmazon・楽天と比較</h2>
 
-    <h3>圧倒的な品揃えと低コストが魅力のメリット</h3>
-    <p>AliExpress最大のメリットは、圧倒的な商品数と価格の安さです。国内通販では見つからないニッチな部品・海外向けアクセサリー・DIY用品・ホビー関連商品などが豊富にそろい、工場直送に近い商品も多いため、流通コストが抑えられています。</p>
+    <h3>幅広い品揃えと低コストが魅力のメリット</h3>
+    <p>AliExpress最大のメリットは、膨大な商品数と価格の安さです。国内通販では見つからないニッチな部品・海外向けアクセサリー・DIY用品・ホビー関連商品などが豊富にそろい、工場直送に近い商品も多いため、流通コストが抑えられています。</p>
 
     <h3>配送時間・品質差・海外ECサイトならではのデメリット</h3>
     <p>国内通販のように翌日到着を期待するのは難しく、数週間単位で待つこともあります。問い合わせ対応も国内通販ほどスムーズではない場合があります。<strong>AliExpressは「安い代わりに自己判断と自己防衛が必要な通販サイト」</strong>です。</p>
@@ -892,9 +923,9 @@
         <div class="rc-tag">ガイド</div>
         <div class="rc-title">Naturehikeはどこの国のブランド？評判・品質・信頼性を徹底解説【2026年】</div>
       </a>
-      <a href="/shipping/aliexpress-tracking-number.html" class="related-card">
+      <a href="/shipping/aliexpress-tsuiseki.html" class="related-card">
         <div class="rc-tag">配送・追跡</div>
-        <div class="rc-title">AliExpress追跡番号はどこ？確認場所と見方を完全解説</div>
+        <div class="rc-title">AliExpress追跡の完全ガイド【初心者向け】</div>
       </a>
     </div>
   </div>
