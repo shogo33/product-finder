@@ -443,7 +443,8 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/game/8bitdo-ultimate2-osusume.html)",
       "Bash(findstr :3001)",
       "Bash(start http://localhost:3001/gadget/ajazz-ak820-osusume.html)",
-      "PowerShell($content = [System.IO.File]::ReadAllText\\(\"C:\\\\Users\\\\USER\\\\Downloads\\\\Anbernic RG35XX H.txt\", [System.Text.Encoding]::GetEncoding\\(932\\)\\); $content | Select-String -Pattern \".\" | Select-Object -First 150 | ForEach-Object { $_.Line })"
+      "PowerShell($content = [System.IO.File]::ReadAllText\\(\"C:\\\\Users\\\\USER\\\\Downloads\\\\Anbernic RG35XX H.txt\", [System.Text.Encoding]::GetEncoding\\(932\\)\\); $content | Select-String -Pattern \".\" | Select-Object -First 150 | ForEach-Object { $_.Line })",
+      "Bash(node scripts/bulk-fix-atk.mjs)"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",
