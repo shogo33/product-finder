@@ -163,7 +163,40 @@
         "url": "https://amzn.to/3Rk73aj"
       },
       "specResult": null,
-      "redditReviews": []
+      "redditReviews": [],
+      "productProfile": {
+        "productType": "ヘッドフォン（オーバーイヤー）",
+        "productTypeShort": "ヘッドフォン",
+        "isInEar": false,
+        "isOverEar": true,
+        "isOpenEar": false,
+        "hasANC": null,
+        "connectivity": "Bluetooth 5.0",
+        "batteryLife": "単体6h / ケース込み24h",
+        "keySpecs": [
+          "10mm ドライバー",
+          "Bluetooth 5.0",
+          "IPX4防水",
+          "快速充電対応"
+        ],
+        "keyFeatures": [
+          "オーバーイヤー設計",
+          "高音質ドライバー",
+          "軽量設計"
+        ],
+        "targetUseCase": [
+          "在宅ワーク",
+          "音楽鑑賞",
+          "長時間リスニング"
+        ],
+        "notSuitableFor": [
+          "持ち運び重視",
+          "スポーツ中の使用"
+        ],
+        "pricePosition": "エントリー",
+        "confidence": "confirmed",
+        "searchSources": []
+      }
     },
     {
       "product_id": "1005009390995992",
@@ -190,7 +223,39 @@
         "url": "https://amzn.to/3Rk77H5"
       },
       "specResult": null,
-      "redditReviews": []
+      "redditReviews": [],
+      "productProfile": {
+        "productType": "ANCヘッドフォン（オーバーイヤー）",
+        "productTypeShort": "ANCヘッドフォン",
+        "isInEar": false,
+        "isOverEar": true,
+        "isOpenEar": false,
+        "hasANC": true,
+        "connectivity": "Bluetooth 5.0",
+        "batteryLife": "単体8h / ケース込み32h",
+        "keySpecs": [
+          "主動型ノイズキャンセリング（ANC）",
+          "マルチポイント接続対応",
+          "IPX4防水"
+        ],
+        "keyFeatures": [
+          "ANC搭載",
+          "オーバーイヤー設計",
+          "低遅延モード搭載"
+        ],
+        "targetUseCase": [
+          "通勤",
+          "在宅ワーク",
+          "ノイズキャンセル重視"
+        ],
+        "notSuitableFor": [
+          "スポーツ中の使用",
+          "軽量重視"
+        ],
+        "pricePosition": "エントリー",
+        "confidence": "confirmed",
+        "searchSources": []
+      }
     },
     {
       "product_id": "1005009023345001",
@@ -217,7 +282,39 @@
         "url": "https://amzn.to/4fL57l0"
       },
       "specResult": null,
-      "redditReviews": []
+      "redditReviews": [],
+      "productProfile": {
+        "productType": "開放型イヤホン（オープンイヤー）",
+        "productTypeShort": "開放型イヤホン",
+        "isInEar": false,
+        "isOverEar": false,
+        "isOpenEar": true,
+        "hasANC": false,
+        "connectivity": "Bluetooth 5.0",
+        "batteryLife": null,
+        "keySpecs": [
+          "IPX4防水",
+          "ワイヤレス充電対応",
+          "カスタマイズ可能なEQ"
+        ],
+        "keyFeatures": [
+          "開放型設計",
+          "耳が疲れにくい",
+          "ながら聴き向け"
+        ],
+        "targetUseCase": [
+          "ながら聴き",
+          "長時間リスニング",
+          "自宅使用"
+        ],
+        "notSuitableFor": [
+          "遮音性重視",
+          "外出先でのノイズキャンセル"
+        ],
+        "pricePosition": "エントリー",
+        "confidence": "confirmed",
+        "searchSources": []
+      }
     }
   ],
   "faqQuestions": [
@@ -254,5 +351,7 @@
     }
   ],
   "tavilyResults": [],
-  "generatedAt": "2026-05-25T04:11:34.441Z"
+  "generatedAt": "2026-05-25T04:11:34.441Z",
+  "intentionalDuplicateAffLink": true,
+  "intentionalDuplicateNote": "S40 ANCとMori Proは同一AliExpressページで販売されているため同一アフィリリンクが正しい"
 }

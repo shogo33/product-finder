@@ -199,15 +199,41 @@ function extractRedditReviews(results) {
 // ── 商品の収集 ────────────────────────────────────────────
 let targetProducts = [];
 
-if (forcePids.length > 0) {
-  // --product-ids で明示指定
+// step2-url2affiliate.mjs が生成した urls.json があれば優先的に使用
+const urlsJsonPath = path.join(ARTICLES_DIR, `${slug}-urls.json`);
+const urlsJson = fs.existsSync(urlsJsonPath)
+  ? JSON.parse(fs.readFileSync(urlsJsonPath, 'utf8'))
+  : null;
+
+if (urlsJson && urlsJson.products?.length > 0) {
+  console.log(`📎 ${slug}-urls.json を検出 → ユーザー指定URLから商品を取得\n`);
+  targetProducts = urlsJson.products
+    .filter(p => p.product_id)
+    .map(p => ({
+      product_id:         String(p.product_id),
+      title:              p.rawTitle ?? p.product_id,
+      title_short:        null,
+      price_jpy:          p.price_jpy   ?? 0,
+      original_price_jpy: p.original_price ?? 0,
+      image_url:          p.mainImage   ?? null,
+      // アフィリリンクは生成済みなのでそのまま引き継ぐ
+      affiliate_link:     p.affiliateLink ?? null,
+      // AmazonリンクはURLsJSONから引き継ぐ
+      amazonUrl:          p.amazonUrl   ?? null,
+      evaluate_rate:      p.evaluate_rate ?? null,
+      sales_count:        p.sales_count   ?? null,
+    }));
+} else if (forcePids.length > 0) {
+  // --product-ids で明示指定（urls.json がない場合）
   const db = JSON.parse(fs.readFileSync(path.resolve('data/products.json'), 'utf8'));
   for (const id of forcePids) {
     const found = db.find(p => String(p.product_id) === id);
     if (found) {
       targetProducts.push(found);
     } else {
-      console.warn(`  ⚠️  products.json に ${id} が見つかりません（スキップ）`);
+      // products.jsonになくてもAPIで取得できるよう最低限の情報で追加
+      console.warn(`  ⚠️  products.json に ${id} がありません → APIで直接取得します`);
+      targetProducts.push({ product_id: id, title: id, price_jpy: 0, original_price_jpy: 0 });
     }
   }
 } else {
@@ -270,11 +296,16 @@ for (let i = 0; i < targetProducts.length; i++) {
   const cleanName = CLAUDE_KEY ? await extractCleanName(p.title ?? id) : (p.title_short ?? p.title ?? id);
   console.log(` "${cleanName}"`);
 
-  // 2. アフィリエイトリンク取得
-  process.stdout.write('  → アフィリエイトリンク...');
-  const affiliateLink = await getAffiliateLink(id);
-  await sleep(400);
-  console.log(affiliateLink ? ' ✅' : ' ⚠️ 取得失敗（既存リンクを使用）');
+  // 2. アフィリエイトリンク取得（urls.json に既存リンクがあればスキップ）
+  let affiliateLink = p.affiliate_link ?? null;
+  if (affiliateLink && affiliateLink.includes('s.click.aliexpress.com')) {
+    console.log('  → アフィリエイトリンク: ✅ urls.json から引き継ぎ');
+  } else {
+    process.stdout.write('  → アフィリエイトリンク...');
+    affiliateLink = await getAffiliateLink(id);
+    await sleep(400);
+    console.log(affiliateLink ? ' ✅' : ' ⚠️ 取得失敗');
+  }
 
   // 3. 詳細画像取得（IDで見つからない場合は cleanName でフォールバック）
   process.stdout.write('  → 詳細画像...');
@@ -321,6 +352,12 @@ for (let i = 0; i < targetProducts.length; i++) {
     console.log(` ${redditReviews.length}件`);
   }
 
+  // Amazon URL: urls.json から引き継ぎ済みであれば status を ready にする
+  const amazonUrl = p.amazonUrl ?? null;
+  if (amazonUrl) {
+    console.log(`  → Amazon URL: ✅ urls.json から引き継ぎ`);
+  }
+
   researchedProducts.push({
     product_id:     id,
     rawTitle:       p.title,
@@ -333,12 +370,11 @@ for (let i = 0; i < targetProducts.length; i++) {
     hasAffiliate:   !!affiliateLink,
     mainImage:      mainImage ?? p.image_url ?? null,
     images,
-    // Amazonはユーザーが後から確認・入力する
     amazonPlaceholder: {
-      status:      'pending',
+      status:      amazonUrl ? 'ready' : 'pending',
       searchQuery: cleanName,
       asin:        null,
-      url:         null,
+      url:         amazonUrl,
     },
     specResult,
     redditReviews,
@@ -373,10 +409,15 @@ researchedProducts.forEach((p, i) => {
   console.log(`     AliExpress: ${aff} | 画像: ${imgs}枚 | Reddit: ${reddit}件`);
 });
 
-// Amazon確認待ちのリストを表示
-console.log('\n📌 Amazon確認待ち商品（後から手動でASINを追加）:');
-researchedProducts.forEach(p => {
-  console.log(`  "${p.cleanName}" → Amazon検索キーワード: "${p.amazonPlaceholder.searchQuery}"`);
-});
+// Amazon確認待ちのリストを表示（ready 以外のみ）
+const pendingAmazon = researchedProducts.filter(p => p.amazonPlaceholder.status !== 'ready');
+if (pendingAmazon.length > 0) {
+  console.log('\n📌 Amazon確認待ち商品（後から手動でASINを追加）:');
+  pendingAmazon.forEach(p => {
+    console.log(`  "${p.cleanName}" → Amazon検索キーワード: "${p.amazonPlaceholder.searchQuery}"`);
+  });
+} else {
+  console.log('\n✅ 全商品のAmazon URLがurls.jsonから引き継ぎ済みです');
+}
 
 console.log(`\n▶ 次: node scripts/step3-write.mjs ${slug}`);

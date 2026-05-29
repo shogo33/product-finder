@@ -444,12 +444,38 @@
       "Bash(findstr :3001)",
       "Bash(start http://localhost:3001/gadget/ajazz-ak820-osusume.html)",
       "PowerShell($content = [System.IO.File]::ReadAllText\\(\"C:\\\\Users\\\\USER\\\\Downloads\\\\Anbernic RG35XX H.txt\", [System.Text.Encoding]::GetEncoding\\(932\\)\\); $content | Select-String -Pattern \".\" | Select-Object -First 150 | ForEach-Object { $_.Line })",
-      "Bash(node scripts/bulk-fix-atk.mjs)"
+      "Bash(node scripts/bulk-fix-atk.mjs)",
+      "Bash(node scripts/rebuild-research.mjs gamesir-t4-pro-osusume 4001076841625)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('data/articles/gamesir-t4-pro-osusume-research.json','utf8'\\)\\); d.products.forEach\\(p=>console.log\\('link:',p.affiliateLink,'\\\\nmain:',p.mainImage,'\\\\nimages:',JSON.stringify\\(p.images\\)\\)\\)\")",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(powershell -Command '$json=[Console]::In.ReadToEnd\\(\\); try{$d=$json|ConvertFrom-Json; $fp=$d.tool_input.file_path; if\\($fp -match \"\\\\.html$\"\\){$r=@{hookSpecificOutput=@{hookEventName=\"PreToolUse\";additionalContext=\"TEST OK\"}}; Write-Output \\($r|ConvertTo-Json -Compress -Depth 5\\)}}catch{Write-Output \"ERROR\"}')",
+      "Bash(node scripts/step3-factcheck.mjs haylou-osusume)",
+      "Bash(head -5 \"data/keyword-csvs/keyword-all.csv\")",
+      "Bash(Get-Content \"data/keyword-csvs/keyword-all.csv\" -TotalCount 5)",
+      "Bash(ls data/keyword-csvs/)",
+      "Bash(node scripts/step2-url2affiliate.mjs test-slug --aliex \"https://www.aliexpress.com/item/1005009390995992.html\" --amazon \"https://amzn.to/3Rk77H5\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",
       "\\mnt\\c\\Users\\USER\\Downloads",
       "c:\\Users\\USER\\product-finder\\public\\x-data"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$json=[Console]::In.ReadToEnd(); try{$d=$json|ConvertFrom-Json; $fp=$d.tool_input.file_path; if($fp -match \"\\.html$\"){$ctx='【記事ルール確認】HTMLファイル編集前チェック：①価格はAPIで必ず確認（推測禁止）②価格付近に「○年○月時点の情報」を明記③商品セクション内で画像を説明テキストより先に配置④複数商品は切り替わりにhr区切り線を入れる⑤禁止表現（コスパ最強・圧倒的・神・革命的）を使わない'; $r=@{hookSpecificOutput=@{hookEventName='PreToolUse';additionalContext=$ctx}}; Write-Output ($r|ConvertTo-Json -Compress -Depth 5)}}catch{}",
+            "shell": "powershell",
+            "timeout": 10,
+            "statusMessage": "記事ルール確認中..."
+          }
+        ]
+      }
     ]
   }
 }

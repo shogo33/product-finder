@@ -578,16 +578,81 @@ const VOICE_CSS = `
     .voice-action { font-size: 0.85rem; background: #f0fdf4; border-left: 3px solid #86efac; padding: 8px 12px; border-radius: 0 6px 6px 0; color: #166534; }`;
 
 // ──────────────────────────────────────────────
+// research.json から config を自動生成（新記事対応）
+// ──────────────────────────────────────────────
+function buildAutoConfig(slug) {
+  const ARTICLES_DIR  = path.resolve('data/articles');
+  const researchPath  = path.join(ARTICLES_DIR, `${slug}-research.json`);
+  const planPath      = path.join(ARTICLES_DIR, `${slug}-plan.json`);
+
+  if (!fs.existsSync(researchPath)) {
+    console.error(`❌ research.json が見つかりません: ${researchPath}`);
+    return null;
+  }
+
+  const research = JSON.parse(fs.readFileSync(researchPath, 'utf8'));
+  const plan     = fs.existsSync(planPath) ? JSON.parse(fs.readFileSync(planPath, 'utf8')) : {};
+  const category = plan.category ?? research.category ?? 'gadget';
+  const keyword  = plan.keyword  ?? research.keyword  ?? slug;
+  const products = research.products ?? [];
+
+  // ブランド・製品名からサブレディット推定
+  const allNames = [keyword, ...products.map(p => p.cleanName ?? '')].join(' ').toLowerCase();
+  let subreddit = 'Aliexpress'; // デフォルト
+
+  if (category === 'outdoor')                         subreddit = 'CampingandHiking';
+  else if (/naturehike/.test(allNames))               subreddit = 'CampingandHiking';
+  else if (/gamesir/.test(allNames))                  subreddit = 'GameSir';
+  else if (/8bitdo/.test(allNames))                   subreddit = '8bitdo';
+  else if (/retroid/.test(allNames))                  subreddit = 'retroid';
+  else if (/miyoo/.test(allNames))                    subreddit = 'MiyooMini';
+  else if (/anbernic|rg\d/.test(allNames))            subreddit = 'SBCGaming';
+  else if (/moondrop|kz|earphone|earbud|iem/.test(allNames)) subreddit = 'HeadphoneAdvice';
+  else if (/projector/.test(allNames))                subreddit = 'projectors';
+  else if (/mini.?pc|n100|gmktec/.test(allNames))     subreddit = 'MiniPCs';
+  else if (category === 'game')                       subreddit = 'patientgamers';
+
+  // 検索クエリ生成（商品名ベース）
+  const queries = [];
+  const brandTerms = [...new Set(
+    products.slice(0, 3).map(p => p.cleanName?.split(/\s+/).slice(0, 3).join(' ') ?? '')
+      .filter(Boolean)
+  )];
+
+  if (brandTerms.length > 0) {
+    queries.push(`${brandTerms[0]} review reddit`);
+    queries.push(`${brandTerms[0]} aliexpress experience`);
+    if (brandTerms.length > 1) queries.push(`${brandTerms[1]} review quality`);
+  } else {
+    const kwTerms = keyword.replace(/\s*おすすめ\s*/, '').trim();
+    queries.push(`${kwTerms} review reddit`);
+    queries.push(`${kwTerms} aliexpress buy experience`);
+  }
+  queries.push(`aliexpress ${keyword.split(/[\s　]/)[0]} quality purchase`);
+
+  const topic = `${keyword}のリアルな評判・AliExpress購入体験談`;
+
+  console.log(`  ✨ ARTICLE_CONFIGにないため自動生成:`);
+  console.log(`     subreddit: r/${subreddit}`);
+  console.log(`     queries:   ${queries.join(' / ')}`);
+
+  return { slug, folder: category, subreddit, queries, topic };
+}
+
+// ──────────────────────────────────────────────
 // メイン
 // ──────────────────────────────────────────────
 const targetSlug = process.argv[2] ?? null;
-const configs = targetSlug
+let configs = targetSlug
   ? ARTICLE_CONFIG.filter(c => c.slug === targetSlug)
   : ARTICLE_CONFIG;
 
-if (configs.length === 0) {
-  console.error(`❌ slug "${targetSlug}" が ARTICLE_CONFIG に見つかりません`);
-  process.exit(1);
+// ARTICLE_CONFIGにない slug は research.json から自動生成
+if (targetSlug && configs.length === 0) {
+  console.log(`ℹ️  "${targetSlug}" はARTICLE_CONFIGにないため research.json から自動生成します\n`);
+  const autoConfig = buildAutoConfig(targetSlug);
+  if (!autoConfig) process.exit(1);
+  configs = [autoConfig];
 }
 
 for (const config of configs) {

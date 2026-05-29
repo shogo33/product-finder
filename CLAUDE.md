@@ -24,9 +24,12 @@ npm run gen-all
 node scripts/step1-plan.mjs <slug>        # プランJSON作成
 node scripts/step2-research.mjs <slug>    # AliExpress商品情報 + Tavily/Reddit調査
 node scripts/step3-write.mjs <slug>       # Claude が記事生成
+node scripts/step3-factcheck.mjs <slug>   # スペック矛盾・FAQ不一致を検出【必須】
 node scripts/gen-voices.mjs <slug>        # Reddit実データをVOICEブロックに注入【必須・省略禁止】
 npm run gen-all                           # sitemap/index/OGP更新
 ```
+
+**`step3-factcheck.mjs` は省略禁止。** 問題が検出された場合は exit 1 で停止するので、指摘された問題を修正してから次のステップに進む。
 
 **`gen-voices.mjs` は省略禁止。** X声（スクショ）とReddit声（gen-voices自動取得）の両方が揃って記事完成。どちらか欠けている場合はその理由を明記してから公開する。
 
@@ -254,6 +257,9 @@ Aliswipe は「AliExpressで失敗しないための翻訳者・案内人」を�
 3. **比較表は記事冒頭付近に配置**（本文を読む前に比較できるようにする）
 4. **デメリットを必ず書く**（重い・発熱・箱潰れ・初期不良報告など）
 5. **「想像とのズレ」を書く**（写真より少し大きい・思ったより発熱が少ない等）
+6. **記事冒頭にFV画像を表示**（最初の商品の1枚目画像。`<figure class="fv-product-image">` を使用。step3a-scaffold が自動生成）
+7. **CTAボックスに商品画像を入れる**（購入直前のイメージ確認用。AliEx/Amazonボタンの上に商品画像を配置）
+8. **商品セクション間に切り替え線を入れる**（`<div class="product-divider">` を使用。次の商品に移ることを視覚的に明示）
 
 ### タイトルルール
 - 「2026年最新」を乱用しない
