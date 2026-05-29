@@ -1,0 +1,461 @@
+{
+  "slug": "miyoo-mini-flip-osusume",
+  "mainKeyword": "Miyoo Mini Flip",
+  "analyzedAt": "2026-05-29",
+  "totalMatched": 3742,
+  "searchIntent": "比較系|購入検討系",
+  "intentNote": "ユーザーはMiyoo Mini Flipと他のポータブルゲーム機・ミニPC製品を比較検討し、購入判断の参考情報を求めています。",
+  "mainKws": [
+    {
+      "keyword": "miyoo mini flip",
+      "volume": 1600,
+      "role": "記事の中心キーワード。タイトル・H1に必須"
+    },
+    {
+      "keyword": "retroid pocket flip 2",
+      "volume": 1900,
+      "role": "最大検索数。主要な競合製品として比較対象に含める"
+    },
+    {
+      "keyword": "ayaneo pocket air mini",
+      "volume": 1000,
+      "role": "同カテゴリの代表製品。比較表の対象製品"
+    }
+  ],
+  "subKws": [
+    {
+      "keyword": "miyoo mini plus",
+      "volume": 1000,
+      "role": "同一シリーズの先代モデル。世代比較で本文に組み込む"
+    },
+    {
+      "keyword": "retroid pocket mini",
+      "volume": 880,
+      "role": "競合の軽量版。価格帯・サイズ比較で言及"
+    },
+    {
+      "keyword": "chuwi minibook x",
+      "volume": 880,
+      "role": "別カテゴリだが同じ「小型デバイス」で検討されている製品"
+    },
+    {
+      "keyword": "ayaneo flip",
+      "volume": 260,
+      "role": "AYANEOシリーズの上位モデル。スペック比較で言及"
+    },
+    {
+      "keyword": "retroid pocket mini v2",
+      "volume": 720,
+      "role": "Retroid最新版。競合分析に必須"
+    }
+  ],
+  "longTailKws": [
+    {
+      "keyword": "amazfit gts 4 mini",
+      "volume": 880,
+      "role": "異なるカテゴリだが「mini」で検索される。コンテキスト外だが念のためメモ"
+    },
+    {
+      "keyword": "ayaneo flip 1s ds",
+      "volume": 590,
+      "role": "AYANEOの別モデル。フリップ形式の比較セクションで言及"
+    },
+    {
+      "keyword": "chuwi minibook x n 150",
+      "volume": 590,
+      "role": "Chuwiの高性能版。CPU比較表で対比"
+    },
+    {
+      "keyword": "minipc ベアボーン",
+      "volume": 480,
+      "role": "カテゴリワード。ミニPCとゲーム機の違いFAQで言及"
+    },
+    {
+      "keyword": "chuwi minibook",
+      "volume": 480,
+      "role": "Chuwi定番製品。ライバル製品リスト"
+    },
+    {
+      "keyword": "N100 mini pc",
+      "volume": 210,
+      "role": "CPU別の検索ニーズ。スペック表のCPU比較で関連"
+    },
+    {
+      "keyword": "ミニpc minisforum",
+      "volume": 210,
+      "role": "別ブランドのミニPC。カテゴリ比較表に掲載"
+    }
+  ],
+  "titleHints": [
+    "Miyoo Mini Flipおすすめ｜Retroid Pocket Flipと比較",
+    "Miyoo Mini Flipの選び方｜ポータブルゲーム機5製品比較",
+    "Miyoo Mini Flipレビュー｜AYANEO・Retroidとの違い"
+  ],
+  "metaDescHints": "Miyoo Mini Flipの魅力・スペックを、RetroidやAYANEOなどの競合製品と比較。購入前に確認すべきポイントを解説します。",
+  "warnings": [
+    "amazfit・soundpeatsはウェアラブルデバイスで、ゲーム機のMiyoo Mini Flipと異なるカテゴリ。混同を避けるため記事では明確に分類すること",
+    "minipc関連キーワード（Chuwi minibook・N100 mini pc）はゲーム機ではなくPC。別セクション（関連製品）で扱うか、カテゴリ分けを明示すること"
+  ],
+  "rawTop30": [
+    {
+      "type": "",
+      "seedKw": "Retroid Pocket",
+      "keyword": "retroid pocket flip 2",
+      "difficulty": 34,
+      "volume": 1900,
+      "cpc": 0.22,
+      "adComp": 90,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Miyoo Mini",
+      "keyword": "miyoo mini flip",
+      "difficulty": 34,
+      "volume": 1600,
+      "cpc": 0.15,
+      "adComp": 81,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Beelink",
+      "keyword": "beelink me mini",
+      "difficulty": 17,
+      "volume": 1300,
+      "cpc": 0.16,
+      "adComp": 73,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "AYANEO",
+      "keyword": "ayaneo pocket air mini",
+      "difficulty": null,
+      "volume": 1000,
+      "cpc": 0.21,
+      "adComp": 45,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Miyoo Mini",
+      "keyword": "miyoo mini plus",
+      "difficulty": 34,
+      "volume": 1000,
+      "cpc": 0.59,
+      "adComp": 85,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Amazfit",
+      "keyword": "amazfit gts 4 mini",
+      "difficulty": 34,
+      "volume": 880,
+      "cpc": 0.16,
+      "adComp": 88,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Miyoo Mini",
+      "keyword": "miyoo mini",
+      "difficulty": 34,
+      "volume": 880,
+      "cpc": 0.23,
+      "adComp": 88,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Retroid Pocket",
+      "keyword": "retroid pocket mini",
+      "difficulty": 34,
+      "volume": 880,
+      "cpc": 0.2,
+      "adComp": 65,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Chuwi",
+      "keyword": "chuwi minibook x",
+      "difficulty": 34,
+      "volume": 880,
+      "cpc": 0.31,
+      "adComp": 92,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Retroid Pocket",
+      "keyword": "retroid pocketmini",
+      "difficulty": 34,
+      "volume": 880,
+      "cpc": 0.2,
+      "adComp": 65,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Retroid Pocket",
+      "keyword": "retroid pocket mini v2",
+      "difficulty": 34,
+      "volume": 720,
+      "cpc": 0.34,
+      "adComp": 79,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Amazfit",
+      "keyword": "amazfit gtr mini",
+      "difficulty": 34,
+      "volume": 590,
+      "cpc": 0.09,
+      "adComp": 82,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "AYANEO",
+      "keyword": "ayaneo flip 1s ds",
+      "difficulty": 34,
+      "volume": 590,
+      "cpc": 0.26,
+      "adComp": 75,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Chuwi",
+      "keyword": "chuwi minibook x n 150",
+      "difficulty": 34,
+      "volume": 590,
+      "cpc": 0.38,
+      "adComp": 100,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "ミニPC",
+      "keyword": "minipc ベアボーン",
+      "difficulty": null,
+      "volume": 480,
+      "cpc": 0.56,
+      "adComp": 100,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Chuwi",
+      "keyword": "chuwi minibook",
+      "difficulty": 34,
+      "volume": 480,
+      "cpc": 0.28,
+      "adComp": 87,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Chuwi",
+      "keyword": "chuwi minibook x n100",
+      "difficulty": 34,
+      "volume": 480,
+      "cpc": 0.63,
+      "adComp": 87,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "AYANEO",
+      "keyword": "ayaneo flip ds",
+      "difficulty": 34,
+      "volume": 390,
+      "cpc": null,
+      "adComp": 67,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Amazfit",
+      "keyword": "amazfit gts 2 mini",
+      "difficulty": 34,
+      "volume": 320,
+      "cpc": 0.14,
+      "adComp": 98,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "AYANEO",
+      "keyword": "ayaneo pocket s mini",
+      "difficulty": 34,
+      "volume": 320,
+      "cpc": 0.22,
+      "adComp": 64,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Miyoo Mini",
+      "keyword": "miyoo mini v4",
+      "difficulty": 34,
+      "volume": 320,
+      "cpc": 0.4,
+      "adComp": 91,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Retroid Pocket",
+      "keyword": "retroid pocket flip",
+      "difficulty": 34,
+      "volume": 320,
+      "cpc": 0.14,
+      "adComp": 80,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Retroid Pocket",
+      "keyword": "retroid pocketflip",
+      "difficulty": 34,
+      "volume": 320,
+      "cpc": 0.14,
+      "adComp": 80,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "AYANEO",
+      "keyword": "ayaneo flip",
+      "difficulty": 34,
+      "volume": 260,
+      "cpc": null,
+      "adComp": 74,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "SoundPEATS",
+      "keyword": "soundpeats mini pro hs",
+      "difficulty": 34,
+      "volume": 210,
+      "cpc": null,
+      "adComp": 92,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "ミニPC",
+      "keyword": "ミニpc minisforum",
+      "difficulty": 36,
+      "volume": 210,
+      "cpc": 0.64,
+      "adComp": 99,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GMKtec",
+      "keyword": "gmktec g10 mini pc",
+      "difficulty": null,
+      "volume": 210,
+      "cpc": 0.73,
+      "adComp": 99,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "N100 mini pc",
+      "keyword": "N100 mini pc",
+      "difficulty": null,
+      "volume": 210,
+      "cpc": 0.6,
+      "adComp": 82,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "N100 mini pc",
+      "keyword": "n100 mini pc",
+      "difficulty": null,
+      "volume": 210,
+      "cpc": 0.6,
+      "adComp": 82,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "SoundPEATS",
+      "keyword": "soundpeats mini hs",
+      "difficulty": 34,
+      "volume": 170,
+      "cpc": null,
+      "adComp": 73,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    }
+  ]
+}

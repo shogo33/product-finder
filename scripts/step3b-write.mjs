@@ -24,6 +24,11 @@ import dotenv from 'dotenv';
 dotenv.config({ override: true });
 import fs from 'fs';
 import path from 'path';
+// kw.json を読み込む（あれば）
+function loadKw(slug) {
+  const p = path.join(path.resolve('data/articles'), `${slug}-kw.json`);
+  return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : null;
+}
 import Anthropic from '@anthropic-ai/sdk';
 
 const ARTICLES_DIR = path.resolve('data/articles');
@@ -121,6 +126,10 @@ ANC: ${prof.hasANC === true ? 'あり' : prof.hasANC === false ? 'なし' : '不
 
   const persona = plan.persona ?? 'AliExpressを使い倒しているガジェットオタク。スペックの細かい差異に詳しく、読者に対して熱量を持って語りかけるスタイル。';
 
+  // kw.json からサブKWを取得（商品説明への自然な組み込み用）
+  const kw = loadKw(slug);
+  const subKwsForProse = (kw?.subKws ?? []).slice(0, 5).map(k => k.keyword);
+
   const SYSTEM = `あなたは渡されたデータをもとに、商品レビュー記事の「1商品分の解説セクション」だけを執筆する専門ライターです。
 
 ## 絶対ルール
@@ -141,6 +150,11 @@ ANC: ${prof.hasANC === true ? 'あり' : prof.hasANC === false ? 'なし' : '不
    - 「刺さる人には刺さる」
    - 「〜でしかない」（強調スラング）
    - 「〜してほしい（懇願形）」（読者への過度な親しみ）
+
+## SEOキーワード（自然に含める）
+${subKwsForProse.length > 0
+  ? `以下のサブKWを文中に自然に組み込んでください（詰め込みNG・文脈に合う場所で1〜2個）:\n${subKwsForProse.join(' / ')}`
+  : '（kw.jsonなし）'}
 
 ## 文体ルール（最重要）
 ペルソナ: ${persona}

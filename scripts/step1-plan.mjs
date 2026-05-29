@@ -69,13 +69,32 @@ const systemPrompt = `あなたは日本のAliExpressアフィリエイトサイ
 検索意図を深く分析し、競合を上回る記事構成を設計します。
 必ずJSONのみを返してください。マークダウンのコードブロック記法（\`\`\`）や説明文は不要です。`;
 
+// kw.json があれば検索意図・KWデータを読み込む
+const kwPath = path.join(ARTICLES_DIR, `${slug}-kw.json`);
+const kw     = fs.existsSync(kwPath) ? JSON.parse(fs.readFileSync(kwPath, 'utf8')) : null;
+
+const kwSection = kw ? `
+【キーワード調査データ（step0-kw-analyze.mjs 取得済み）】
+検索意図: ${kw.searchIntent ?? '不明'} — ${kw.intentNote ?? ''}
+メインKW: ${(kw.mainKws ?? []).map(k => `${k.keyword}（月間${k.volume ?? '?'}）`).join(' / ')}
+サブKW: ${(kw.subKws ?? []).map(k => k.keyword).join(' / ')}
+ロングテールKW: ${(kw.longTailKws ?? []).map(k => k.keyword).slice(0, 8).join(' / ')}
+
+【構成への反映ルール】
+- 検索意図が「比較系」なら比較表セクションを記事前半に配置し、選び方フローチャートを追加する
+- 検索意図が「問題解決系」なら悩み別の解決セクションを増やしFAQを充実させる
+- 検索意図が「おすすめ系」ならランキング・用途別セクションを重視する
+- サブKWを各セクションのh2/h3見出しに自然に組み込む（そのままではなく文脈に合わせて）
+- ロングテールKWはfaqQuestionsに優先的に使用する（検索されている質問を直接FAQにする）
+` : '';
+
 const userPrompt = `以下のキーワードで記事構成案をJSONで生成してください。
 
 キーワード: ${keyword}
 スラッグ: ${slug}
 カテゴリ（ディレクトリ）: ${category}
 対象サイト: AliExpressアフィリエイト記事（日本語・モバイルファースト）
-
+${kwSection}
 【サイト内の既存ページ（内部リンク候補）】
 ${pageListText}
 

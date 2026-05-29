@@ -58,10 +58,25 @@ const research = JSON.parse(fs.readFileSync(researchPath, 'utf8'));
 const meta     = fs.existsSync(metaPath) ? JSON.parse(fs.readFileSync(metaPath, 'utf8')) : null;
 const kw       = fs.existsSync(kwPath)   ? JSON.parse(fs.readFileSync(kwPath,   'utf8')) : null;
 
-const products       = research.products ?? [];
-const faqQuestions   = plan.faqQuestions ?? [];
-const selectedTitle  = meta?.selectedTitle ?? plan.selectedTitle ?? plan.keyword;
-const subKws         = kw?.subKws?.map(k => k.keyword) ?? [];
+const products      = research.products ?? [];
+const selectedTitle = meta?.selectedTitle ?? plan.selectedTitle ?? plan.keyword;
+const subKws        = kw?.subKws?.map(k => k.keyword) ?? [];
+
+// FAQはロングテールKW（実際に検索されている質問）を優先採用
+// plan.faqQuestions をベースに、kw.longTailKws で不足分を補完する
+const longTailKwQuestions = (kw?.longTailKws ?? [])
+  .map(k => k.keyword)
+  .filter(q => q.length >= 8 && q.includes(plan.keyword?.split(/[\s　]/)[0] ?? ''));
+const baseFaqs = plan.faqQuestions ?? [];
+// ロングテールQを先頭から採用、不足分はplan.faqQuestionsで補う（合計5問）
+const faqQuestions = [
+  ...longTailKwQuestions.slice(0, 3),
+  ...baseFaqs.filter(q => !longTailKwQuestions.includes(q)),
+].slice(0, 5);
+
+if (longTailKwQuestions.length > 0) {
+  console.log(`  📌 ロングテールKWからFAQ補完: ${longTailKwQuestions.slice(0,3).join(' / ')}`);
+}
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY, timeout: 120000 });
 
