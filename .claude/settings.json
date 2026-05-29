@@ -438,7 +438,12 @@
       "Bash(grep -m1 '<h1>' c:/Users/USER/product-finder/__TRACKED_VAR__)",
       "Bash(node scripts/audit-articles.mjs)",
       "Bash(sed -i 's/コストを抑えて高性能なモバイルバッテリーが欲しいなら/コストを抑えてスペックの高いモバイルバッテリーが欲しいなら/g' public/gadget/sharge-mobile-battery-osusume.html)",
-      "Bash(sed -i 's/外付けアンテナ型が圧倒的に有利です。/外付けアンテナ型が明確に有利です。/g' public/gadget/ugreen-wifi-osusume.html)"
+      "Bash(sed -i 's/外付けアンテナ型が圧倒的に有利です。/外付けアンテナ型が明確に有利です。/g' public/gadget/ugreen-wifi-osusume.html)",
+      "PowerShell(Stop-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/game/8bitdo-ultimate2-osusume.html)",
+      "Bash(findstr :3001)",
+      "Bash(start http://localhost:3001/gadget/ajazz-ak820-osusume.html)",
+      "PowerShell($content = [System.IO.File]::ReadAllText\\(\"C:\\\\Users\\\\USER\\\\Downloads\\\\Anbernic RG35XX H.txt\", [System.Text.Encoding]::GetEncoding\\(932\\)\\); $content | Select-String -Pattern \".\" | Select-Object -First 150 | ForEach-Object { $_.Line })"
     ],
     "additionalDirectories": [
       "C:\\Users\\USER\\Downloads",

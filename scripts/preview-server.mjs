@@ -320,8 +320,21 @@ const server = http.createServer((req, res) => {
   if (req.url.startsWith('/api/')) {
     handleApi(req, res);
   } else {
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-    res.end(UI_HTML);
+    const urlPath = new URL(req.url, `http://localhost:${PORT}`).pathname;
+    const filePath = path.join(path.resolve('public'), urlPath === '/' ? '/index.html' : urlPath);
+    if (urlPath !== '/' && fs.existsSync(filePath)) {
+      const ext = path.extname(filePath).toLowerCase();
+      const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'application/javascript',
+                     '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png',
+                     '.webp': 'image/webp', '.svg': 'image/svg+xml', '.ico': 'image/x-icon',
+                     '.json': 'application/json', '.woff2': 'font/woff2', '.woff': 'font/woff' }[ext] ?? 'application/octet-stream';
+      const charset = mime.startsWith('text/') ? '; charset=utf-8' : '';
+      res.writeHead(200, { 'Content-Type': mime + charset });
+      res.end(fs.readFileSync(filePath));
+    } else {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(UI_HTML);
+    }
   }
 });
 
