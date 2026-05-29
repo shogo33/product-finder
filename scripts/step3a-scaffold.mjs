@@ -153,15 +153,26 @@ function buildComparisonTable(products, plan) {
 
   // productProfile からも FIXED として取れる列を追加（AI不使用・直接inject）
   const PROFILE_COLS = {
-    'タイプ':       p => p.productProfile?.productTypeShort ?? null,
-    '製品タイプ':   p => p.productProfile?.productTypeShort ?? null,
-    '主な特徴':     p => p.productProfile?.keyFeatures?.slice(0, 2).join('・') ?? null,
-    'おすすめシーン': p => p.productProfile?.targetUseCase?.join('・') ?? null,
-    '用途':         p => p.productProfile?.targetUseCase?.join('・') ?? null,
-    'バッテリー持続': p => p.productProfile?.batteryLife ?? null,
-    'バッテリー':   p => p.productProfile?.batteryLife ?? null,
-    'ANC':         p => p.productProfile?.hasANC === true ? 'あり' : p.productProfile?.hasANC === false ? 'なし' : null,
-    '接続':         p => p.productProfile?.connectivity ?? null,
+    // 汎用
+    'タイプ':           p => p.productProfile?.productTypeShort ?? null,
+    '製品タイプ':       p => p.productProfile?.productTypeShort ?? null,
+    '主な特徴':         p => p.productProfile?.keyFeatures?.slice(0, 2).join('・') ?? null,
+    'おすすめシーン':   p => p.productProfile?.targetUseCase?.join('・') ?? null,
+    '用途':             p => p.productProfile?.targetUseCase?.join('・') ?? null,
+    'バッテリー持続':   p => p.productProfile?.batteryLife ?? null,
+    'バッテリー':       p => p.productProfile?.batteryLife ?? null,
+    'ANC':              p => p.productProfile?.hasANC === true ? 'あり' : p.productProfile?.hasANC === false ? 'なし' : null,
+    '接続':             p => p.productProfile?.connectivity ?? null,
+    '接続方式':         p => p.productProfile?.connectivity ?? null,
+    // ゲーミングマウス系
+    '重量（g）':        p => p.productProfile?.weightG != null ? `${p.productProfile.weightG}g` : null,
+    '重量':             p => p.productProfile?.weightG != null ? `${p.productProfile.weightG}g` : null,
+    'センサー':         p => p.productProfile?.sensor ?? null,
+    'ポーリングレート（Hz）': p => p.productProfile?.pollingRate ?? null,
+    'ポーリングレート': p => p.productProfile?.pollingRate ?? null,
+    '形状':             p => p.productProfile?.shape ?? null,
+    'DPI':              p => p.productProfile?.dpi ?? null,
+    '最大DPI':          p => p.productProfile?.dpi ?? null,
   };
 
   // 列名を正規化してFIXED_COLSにマッチさせる（括弧・空白の違いを吸収）

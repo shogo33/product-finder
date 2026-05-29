@@ -1,0 +1,377 @@
+{
+  "slug": "haylou-osusume",
+  "seedKeyword": "HAYLOU",
+  "createdAt": "2026-05-29",
+  "mainKeyword": "haylou",
+  "byType": {
+    "recommend": [],
+    "comparison": [
+      {
+        "keyword": "haylou vs shokz",
+        "searches": 10,
+        "difficulty": 0
+      },
+      {
+        "keyword": "zeblaze vs haylou",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou s35 vs haylou s30",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou s40 vs haylou s35",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou s40 比較",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "colmi vs haylou",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou vs garmin",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou solar plus vs mibro lite 2",
+        "searches": 0,
+        "difficulty": 0
+      }
+    ],
+    "anxiety": [
+      {
+        "keyword": "haylou 安全性",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou 安全 性",
+        "searches": 0,
+        "difficulty": 0
+      }
+    ],
+    "howto": [
+      {
+        "keyword": "haylou イヤホン ペアリング",
+        "searches": 30,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou solar 時間 設定",
+        "searches": 10,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou ペアリング",
+        "searches": 10,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou 設定",
+        "searches": 10,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou イヤホン 両耳 接続",
+        "searches": 10,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou 手錶 設定",
+        "searches": 0,
+        "difficulty": 0
+      }
+    ],
+    "info": [
+      {
+        "keyword": "haylou 評判",
+        "searches": 20,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou どこ の 会社",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou 会社",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou メーカー",
+        "searches": 0,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou どこの会社",
+        "searches": 0,
+        "difficulty": 0
+      }
+    ],
+    "model": [
+      {
+        "keyword": "haylou",
+        "searches": 5400,
+        "difficulty": 34
+      },
+      {
+        "keyword": "haylou solar pro",
+        "searches": 260,
+        "difficulty": 39
+      },
+      {
+        "keyword": "haylou スマートウォッチ",
+        "searches": 210,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou スマート ウォッチ",
+        "searches": 210,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou イヤホン",
+        "searches": 140,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou iron n1",
+        "searches": 90,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou purfree bc01",
+        "searches": 70,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou どこの国",
+        "searches": 70,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou どこ の 国",
+        "searches": 70,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou airfree",
+        "searches": 70,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou fun",
+        "searches": 50,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou スマート ウォッチ 評価",
+        "searches": 50,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou スマートウォッチ 評価",
+        "searches": 50,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou mori pro",
+        "searches": 50,
+        "difficulty": 0
+      },
+      {
+        "keyword": "haylou solar ultra",
+        "searches": 40,
+        "difficulty": 0
+      }
+    ]
+  },
+  "topKeywords": [
+    {
+      "keyword": "haylou",
+      "searches": 5400,
+      "difficulty": 34
+    },
+    {
+      "keyword": "haylou solar pro",
+      "searches": 260,
+      "difficulty": 39
+    },
+    {
+      "keyword": "haylou スマートウォッチ",
+      "searches": 210,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou スマート ウォッチ",
+      "searches": 210,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou イヤホン",
+      "searches": 140,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou iron n1",
+      "searches": 90,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou purfree bc01",
+      "searches": 70,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou どこの国",
+      "searches": 70,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou どこ の 国",
+      "searches": 70,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou airfree",
+      "searches": 70,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou fun",
+      "searches": 50,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou スマート ウォッチ 評価",
+      "searches": 50,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou スマートウォッチ 評価",
+      "searches": 50,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou mori pro",
+      "searches": 50,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou solar ultra",
+      "searches": 40,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou s30",
+      "searches": 40,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou solar pro 説明書",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou ワイヤレス イヤホン",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou イヤホン ペアリング",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou solar pro 説明 書",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou solar pro スマートウォッチ",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou purfree",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou ワイヤレスイヤホン",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou イヤホン ペア リング",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou x1",
+      "searches": 30,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou 評判",
+      "searches": 20,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou 骨 伝導",
+      "searches": 20,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou s40 レビュー",
+      "searches": 20,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou solar",
+      "searches": 20,
+      "difficulty": 0
+    },
+    {
+      "keyword": "haylou purfree buds",
+      "searches": 20,
+      "difficulty": 0
+    }
+  ],
+  "searchIntentType": "commercial",
+  "searchIntentNote": "HAYLOUというブランドの製品（スマートウォッチ・イヤホン）について知りたい、または購入を検討しているユーザーが多い。",
+  "titleSuggestion": "HAYLOUのスマートウォッチ・イヤホン完全ガイド｜評価・機能比較",
+  "h2Suggestions": [
+    "HAYLOUとは？どこの国のブランドか",
+    "HAYLOUスマートウォッチの人気製品比較（Solar Pro・Solar Ultra・S30など）",
+    "HAYLOUイヤホンの種類と機能（骨伝導・ワイヤレス・ペアリング方法）",
+    "HAYLOUスマートウォッチ・イヤホンの評判・レビュー",
+    "HAYLOU製品の使い方（ペアリング・時間設定・アプリ連携）"
+  ],
+  "metaDescriptionHint": [
+    "HAYLOU",
+    "スマートウォッチ",
+    "イヤホン",
+    "評価",
+    "製品比較"
+  ],
+  "faqCandidates": [
+    "HAYLOUはどこの国のブランドですか？",
+    "HAYLOU Solar Proの使い方や説明書はありますか？",
+    "HAYLOUスマートウォッチ・イヤホンの評判は良いですか？",
+    "HAYLOUイヤホンのペアリング方法は？",
+    "HAYLOU Solar Proとその他のモデルの違いは何ですか？"
+  ],
+  "canonicalizationRisk": "haylou スマートウォッチ / haylou スマート ウォッチ（表記揺れ）、haylou solar pro / haylou solar pro スマートウォッチ（部分一致との重複）",
+  "notes": "メインKWは「haylou」で月5,400検索。具体製品（Solar Pro・S30など）と一般的な使い方（ペアリング・評価）の両方のニーズが混在しており、包括的なガイドページが上位化する可能性が高い。ブランドの「どこの国か」という質問が複数見られるため、企業背景の説明は必須。"
+}

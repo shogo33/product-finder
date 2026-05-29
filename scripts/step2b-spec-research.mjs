@@ -149,14 +149,19 @@ ${snippets || '（検索結果なし）'}
   "isOverEar": true/false（オーバーイヤー・ヘッドフォン型かどうか）,
   "isOpenEar": true/false（開放型・骨伝導・オープンイヤーかどうか）,
   "hasANC": true/false/null,
-  "connectivity": "Bluetooth 5.x など",
+  "connectivity": "Bluetooth 5.x / 有線 / 2.4GHz ワイヤレス など",
   "batteryLife": "単体◯h / ケース込み◯h など（不明はnull）",
   "keySpecs": ["スペック1", "スペック2", "スペック3"],
   "keyFeatures": ["特徴1", "特徴2", "特徴3"],
   "targetUseCase": ["通勤", "在宅ワーク", "スポーツ" など最大3件],
   "notSuitableFor": ["向かない用途1" など最大2件],
   "pricePosition": "エントリー / ミドルレンジ / ハイエンド",
-  "confidence": "high / medium / low（推測の確信度）"
+  "confidence": "high / medium / low（推測の確信度）",
+  "weightG": 重量（グラム数・整数。不明はnull）,
+  "sensor": "センサーモデル名（例: PAW3395。不明はnull）",
+  "pollingRate": "最大ポーリングレート（例: 1000Hz / 4000Hz。不明はnull）",
+  "shape": "マウス形状（例: 右手持ち / 左右対称 / エルゴノミクス。不明はnull）",
+  "dpi": "最大DPI（例: 26000DPI。不明はnull）"
 }`;
 
   const res = await client.messages.create({

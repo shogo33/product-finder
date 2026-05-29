@@ -1,0 +1,468 @@
+{
+  "slug": "gamesir-t4-pro-osusume",
+  "mainKeyword": "GameSir T4 Pro",
+  "analyzedAt": "2026-05-29",
+  "totalMatched": 6688,
+  "searchIntent": "購入検討系|おすすめ系|比較系",
+  "intentNote": "GameSir T4 Proの購入を検討しており、他のGameSirコントローラーや競合製品との比較、実際の評価を知りたいユーザーが中心。",
+  "mainKws": [
+    {
+      "keyword": "gamesir t4 pro",
+      "volume": 1900,
+      "role": "記事タイトルに必須。ブランド×型番で対象読者が明確"
+    },
+    {
+      "keyword": "gamesir",
+      "volume": 9900,
+      "role": "大規模な親キーワード。SEO流入の基盤となり、本文冒頭で言及"
+    },
+    {
+      "keyword": "gamesir コントローラー",
+      "volume": 3600,
+      "role": "用途キーワード。「どんなコントローラーか」を説明する際に活用"
+    }
+  ],
+  "subKws": [
+    {
+      "keyword": "gamesir g7 pro",
+      "volume": 5400,
+      "role": "直接競合モデル。比較表やメリット・デメリット欄で言及"
+    },
+    {
+      "keyword": "gamesir x5 lite",
+      "volume": 3600,
+      "role": "GameSir別型番。上位モデル・下位モデル比較時に記載"
+    },
+    {
+      "keyword": "gamesir g7 se",
+      "volume": 1600,
+      "role": "エントリーモデル。価格帯別の選択肢を示す際に活用"
+    },
+    {
+      "keyword": "gamesir cyclone 2",
+      "volume": 1900,
+      "role": "同シリーズ製品。関連製品情報として見出しで言及"
+    },
+    {
+      "keyword": "8bitdo pro 2",
+      "volume": 1600,
+      "role": "競合ブランド。他社との性能・価格比較で記載"
+    },
+    {
+      "keyword": "gamesir nova lite",
+      "volume": 1600,
+      "role": "別ラインアップ。使用シーン別選択肢として提示"
+    }
+  ],
+  "longTailKws": [
+    {
+      "keyword": "redmi note 13 pro 5g",
+      "volume": 12100,
+      "role": "ゲーム利用デバイス。T4 Proの対応端末・推奨利用シーンで言及"
+    },
+    {
+      "keyword": "redmi pad 2 pro",
+      "volume": 6600,
+      "role": "タブレット向けゲーミング。T4 Proの幅広い互換性をアピール"
+    },
+    {
+      "keyword": "redmi note 14 pro 5g",
+      "volume": 5400,
+      "role": "最新Redmiモデル。T4 Proとの組み合わせ活用例として掲載"
+    },
+    {
+      "keyword": "amazfit t-rex 3 pro",
+      "volume": 1900,
+      "role": "ゲーミング周辺機器。T4 Pro対応デバイスのエコシステム説明に活用"
+    },
+    {
+      "keyword": "soundpeats air5 pro",
+      "volume": 1900,
+      "role": "ゲーム音声デバイス。T4 Proとの組み合わせ利用を提案"
+    },
+    {
+      "keyword": "qcy melobuds pro",
+      "volume": 1600,
+      "role": "低価格ゲーミングデバイス。予算別選択肢として言及"
+    },
+    {
+      "keyword": "rainy75 pro",
+      "volume": 2400,
+      "role": "周辺機器。T4 Proの拡張性・組み合わせ提案の際に活用"
+    }
+  ],
+  "titleHints": [
+    "GameSir T4 Proおすすめ|購入前に知るべき特徴と他機種比較",
+    "GameSir T4 Proレビュー｜ゲーマー向けコントローラーの実力",
+    "GameSir T4 Pro vs G7 Pro｜選び方とメリット・デメリット",
+    "GameSir T4 Proの評判と使用感｜他のGameSirモデルとの違い"
+  ],
+  "metaDescHints": "GameSir T4 Proの実機レビュー・スペック・他のGameSirコントローラーとの比較。購入時の選び方やユーザー評価を掲載。",
+  "warnings": [
+    "Redmiシリーズの検索数が極めて多い（12100）が、T4 Proとは直接関連が薄い可能性。キーワード混在の可能性を確認推奨。",
+    "データ内に重複KW（qcy melobuds pro、rainy75pro）が複数存在。元データの品質確認が必要。",
+    "GameSir T4 Pro自体の検索数が1900と低めで、SEO難易度34（中程度）。他の高検索数KWからの流入設計が重要。"
+  ],
+  "rawTop30": [
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi note 13 pro 5g",
+      "difficulty": 33,
+      "volume": 12100,
+      "cpc": 0.34,
+      "adComp": 89,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi note 13 pro",
+      "difficulty": 40,
+      "volume": 12100,
+      "cpc": 0.35,
+      "adComp": 89,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir",
+      "keyword": "gamesir",
+      "difficulty": 36,
+      "volume": 9900,
+      "cpc": 0.28,
+      "adComp": 63,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi pad 2 pro",
+      "difficulty": 34,
+      "volume": 6600,
+      "cpc": 0.21,
+      "adComp": 83,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir",
+      "keyword": "gamesir gu pro",
+      "difficulty": null,
+      "volume": 6600,
+      "cpc": 0.31,
+      "adComp": 81,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi note 13 pro+ 5g",
+      "difficulty": 42,
+      "volume": 6600,
+      "cpc": 2.49,
+      "adComp": 83,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi note 14 pro 5g",
+      "difficulty": 37,
+      "volume": 5400,
+      "cpc": 0.25,
+      "adComp": 87,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi pad pro",
+      "difficulty": 37,
+      "volume": 5400,
+      "cpc": 0.17,
+      "adComp": 85,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir",
+      "keyword": "gamesir g7 pro",
+      "difficulty": 24,
+      "volume": 5400,
+      "cpc": 0.24,
+      "adComp": 70,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi turbo 4 pro",
+      "difficulty": 34,
+      "volume": 4400,
+      "cpc": 0.15,
+      "adComp": 87,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi note 15 pro 5g",
+      "difficulty": 35,
+      "volume": 4400,
+      "cpc": 0.35,
+      "adComp": 92,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Xiaomi Smart Band 9",
+      "keyword": "xiaomi smart band 9 pro",
+      "difficulty": 34,
+      "volume": 4400,
+      "cpc": 0.14,
+      "adComp": 82,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir",
+      "keyword": "gamesir コントローラー",
+      "difficulty": 29,
+      "volume": 3600,
+      "cpc": 0.26,
+      "adComp": 74,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir",
+      "keyword": "gamesir x5 lite",
+      "difficulty": 34,
+      "volume": 3600,
+      "cpc": 0.41,
+      "adComp": 90,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi note 11 pro 5g",
+      "difficulty": 44,
+      "volume": 2900,
+      "cpc": 0.36,
+      "adComp": 66,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi note 15 pro",
+      "difficulty": 34,
+      "volume": 2900,
+      "cpc": 0.34,
+      "adComp": 92,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Rainy75",
+      "keyword": "rainy75 pro",
+      "difficulty": 34,
+      "volume": 2400,
+      "cpc": 0.27,
+      "adComp": 100,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Rainy75",
+      "keyword": "rainy75pro",
+      "difficulty": 34,
+      "volume": 2400,
+      "cpc": 0.27,
+      "adComp": 100,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "SoundPEATS",
+      "keyword": "soundpeats air5 pro",
+      "difficulty": 34,
+      "volume": 1900,
+      "cpc": 0.14,
+      "adComp": 74,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Amazfit",
+      "keyword": "amazfit t-rex 3 pro",
+      "difficulty": 35,
+      "volume": 1900,
+      "cpc": 0.19,
+      "adComp": 93,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir",
+      "keyword": "gamesir t4 pro",
+      "difficulty": 34,
+      "volume": 1900,
+      "cpc": 0.3,
+      "adComp": 69,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir",
+      "keyword": "gamesir cyclone 2",
+      "difficulty": 34,
+      "volume": 1900,
+      "cpc": 0.29,
+      "adComp": 74,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Redmi",
+      "keyword": "redmi buds 5 pro",
+      "difficulty": 34,
+      "volume": 1600,
+      "cpc": 0.16,
+      "adComp": 79,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir Nova Lite",
+      "keyword": "gamesir nova lite",
+      "difficulty": 34,
+      "volume": 1600,
+      "cpc": 0.27,
+      "adComp": 82,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "QCY",
+      "keyword": "qcy melobuds pro",
+      "difficulty": 34,
+      "volume": 1600,
+      "cpc": 0.23,
+      "adComp": 83,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "8BitDo",
+      "keyword": "8bitdo pro 2",
+      "difficulty": 20,
+      "volume": 1600,
+      "cpc": 0.17,
+      "adComp": 79,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "Melobuds",
+      "keyword": "qcy melobuds pro",
+      "difficulty": 34,
+      "volume": 1600,
+      "cpc": 0.23,
+      "adComp": 83,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "qcy melobuds",
+      "keyword": "qcy melobuds pro",
+      "difficulty": 34,
+      "volume": 1600,
+      "cpc": 0.23,
+      "adComp": 83,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "qcy",
+      "keyword": "qcy melobuds pro",
+      "difficulty": 34,
+      "volume": 1600,
+      "cpc": 0.23,
+      "adComp": 83,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    },
+    {
+      "type": "",
+      "seedKw": "GameSir",
+      "keyword": "gamesir g7 se",
+      "difficulty": 20,
+      "volume": 1600,
+      "cpc": 0.26,
+      "adComp": 67,
+      "rank": null,
+      "traffic": null,
+      "url": ""
+    }
+  ]
+}

@@ -34,44 +34,16 @@
     },
     {
       "id": "section3",
-      "h2": "GameSir T4 Pro 2 レビュー｜ホールエフェクト搭載の進化版",
+      "h2": "GameSir T4 Pro vs 競合コントローラー比較｜8BitDo・純正コントローラーとの違い",
       "h3s": [
-        "初代との違い・何がアップグレードされた？",
-        "ドリフト問題に強いホールエフェクトスティックとは"
-      ],
-      "type": "product",
-      "notes": [
-        "ホールエフェクト（磁気センサー）スティックによりドリフトが起きにくい構造をわかりやすく説明",
-        "バッテリー容量・接続安定性・グリップ感など初代比の改善点を列挙",
-        "コスパ観点で初代と価格差が見合うかを判断する材料を提示"
-      ]
-    },
-    {
-      "id": "section4",
-      "h2": "GameSir T4 Cyclone Pro レビュー｜ゲーマー向けフラッグシップ",
-      "h3s": [
-        "T4 Pro系最上位モデルのスペックを徹底解説",
-        "競合コントローラーと比べた優位点・弱点"
-      ],
-      "type": "product",
-      "notes": [
-        "トリガーロック・アダプティブトリガー・カスタムプロファイルなど上位機能を解説",
-        "価格が上がる分の恩恵をどんなプレイスタイルの人が受けられるかを具体的に説明",
-        "8BitDo Ultimate 2など競合と一言比較して差別化"
-      ]
-    },
-    {
-      "id": "section5",
-      "h2": "GameSir T4 Proシリーズ比較表｜全モデルを一覧でチェック",
-      "h3s": [
-        "モデル別スペック早見表",
-        "用途別おすすめモデルの結論"
+        "8BitDo Ultimate 2 / 純正プロコンとのスペック比較表",
+        "価格帯別おすすめの結論"
       ],
       "type": "comparison",
       "notes": [
-        "価格・対応プラットフォーム・接続方式・ホールエフェクト有無・ジャイロ有無・電池持ちを一覧表で比較",
-        "「スマホゲーム中心」「Switch中心」「PC FPS中心」などシーン別に最適モデルを断言",
-        "読者の迷いを解消する断定的な結論でCVRを高める"
+        "T4 Pro vs 8BitDo Ultimate 2 vs Switch純正プロコンを価格・接続・ジャイロ・ホールエフェクトで比較",
+        "「コスパ重視ならT4 Pro」「ドリフト耐久性最優先なら8BitDo」「純正の安心感ならプロコン」と用途別に断言",
+        "アリエクで買うことで国内定価より大幅に安くなる点を強調"
       ]
     },
     {
@@ -134,32 +106,66 @@
   "researchedAt": "2026-05-24",
   "products": [
     {
-      "product_id": "1005006599122677",
-      "rawTitle": "Gamesir-Nintendo Switch用のBluetooth付きワイヤレスゲームコントローラー,携帯電話と互換性のあるゲームパッド,Android,t4 pro,2.4g",
-      "cleanName": "GameSir T4 Pro",
-      "price_jpy": "5261",
-      "original_price": "469.76",
-      "evaluate_rate": "100.0%",
-      "sales_count": 45,
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c354Q6LR",
-      "amazonUrl": "https://amzn.to/3PZvtW7",
+      "product_id": "4001076841625",
+      "rawTitle": "GameSir T4 Pro ワイヤレスモバイルコントローラー Bluetooth ゲームパッド 6 軸ジャイロ搭載 Nintendo Switch Android iPhone PC ジョイスティック用",
+      "cleanName": "GameSir T4 Pro ワイヤレスモバイルコントローラー",
+      "price_jpy": "3245",
+      "original_price": "19.99",
+      "sales_count": 9,
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvmvR57S69fGyn8Tt4pCtmLccxQz3g01RaCA0knXDp1KiVr121PlxubYcsHp9y7QSU8cdzNFieAg6FW95uHNK7Y4hrSg5lCsnC5Ni0wkFEYzNzW2jRG47LmIhcGu3DyYVQzh9tXTLCNezSvwg58bRRBhq4Xjwb8oU4RyDVQF3nAhZcQ8pGBTecGcgz4Jh6du32FYCIkNZNifQWnmFfyB3du7SDyDoY06wyzWnQ5aECTIJSLX7HuaZjrwi9PaFIQhmwcZaVZjBV2bQ2r2MGI7DYcO96cIUsSPjaGdBjzJ3DIyhMBCsnrnQsKRV8WtnfjJDjSDwma8VhAVwOnlhFgPRzsZX26b6cKgiTlWr1nxLyimEdsy1wNLshIhSjnRzHzZDJ8MjtYyoPS7KPriAxw7zAUo9m95Njx8Wqu75MeFfvoAx1kolWqDFgEG00kHUrb7EGOAgkm2IoBBHGNBHdoAb58KG1Wkd6DbBZA5XYvaSatNIdw1vqdWCLtMsF0RWzGFLVBsHOU4SP6xNQGeV7FrrohjcyishJPAOG3IKcneuqWSENdFlSSg1eXyegvQwLWHoPGzf2ZhWsKxd9usxBnBru4zDyR4O1FxuwGuOOiTPM3Bu6k2Wh9UMHVRcaebMx5J1IPkVCLXmKx4hejbpdVVzxWGQByoWiTuR8WAHHytgTB8be0jmoM6EroguhGp91glTzN2Hqb4SEmDin3oWkcy23rWGNPO5Ti7FbFNXxBb7N41N",
       "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sf75cce1cd72442f99da315c8e9cdd7f3Q.jpg",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S13bd8aa7e00a42d5aab0832c472abc47a.jpg",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sf75cce1cd72442f99da315c8e9cdd7f3Q.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S2320718bb18c4f68bc841cbbdead438bK.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sc8fa703fa1164e0aaa033c17ccb8e3b6I.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S39295676d7314780903203796d5a41c2d.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sfe7416bb637c4f97bed45e7cbd1a5835F.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sf2ba313a2ddd470ea5e6226bf36b0616N.jpg"
+        "https://ae-pic-a1.aliexpress-media.com/kf/S13bd8aa7e00a42d5aab0832c472abc47a.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Hb922c5fc77074ae9bfce5edc848fc44fo.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/H9d3058d1abc94287b434e9f8d82d546dW.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/H2c26a4d850da42808a6e20d947c42dacS.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S3b8d8fd438b2431fa4806c7f5df07ec2j.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/H3393e8b8a1454e82a818ff317b811663k.jpg"
       ],
       "amazonPlaceholder": {
-        "status": "confirmed",
-        "searchQuery": "GameSir T4 Pro",
-        "url": "https://amzn.to/3PZvtW7"
+        "status": "pending",
+        "searchQuery": "GameSir T4 Pro ワイヤレスモバイルコントローラー",
+        "asin": null,
+        "url": null
       },
       "specResult": null,
       "redditReviews": []
     }
-  ]
+  ],
+  "faqQuestions": [
+    "GameSir T4 ProはNintendo Switchで使えますか？",
+    "GameSir T4 ProとT4 Pro 2の違いは何ですか？",
+    "アリエクのGameSir T4 Proは偽物ではないですか？",
+    "GameSir T4 Proのスティックドリフトは起きやすいですか？",
+    "GameSir T4 ProはiPhoneやiOSゲームに対応していますか？"
+  ],
+  "comparisonTableColumns": [
+    "コントローラー",
+    "価格帯",
+    "対応プラットフォーム",
+    "接続方式",
+    "ホールエフェクト",
+    "ジャイロセンサー"
+  ],
+  "internalLinks": [
+    {
+      "url": "/game/gamesir-controller-osusume.html",
+      "anchorText": "GameSirコントローラーおすすめ5選"
+    },
+    {
+      "url": "/game/aliexpress-gamepad-osusume.html",
+      "anchorText": "アリエク ゲームパッドおすすめ10選"
+    },
+    {
+      "url": "/game/8bitdo-ultimate2-osusume.html",
+      "anchorText": "8BitDo Ultimate 2レビュー"
+    },
+    {
+      "url": "/guide/aliexpress-account.html",
+      "anchorText": "AliExpressの登録方法と初回注文の全手順"
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-05-29T08:35:42.639Z"
 }

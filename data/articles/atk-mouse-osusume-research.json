@@ -141,13 +141,49 @@
         "https://ae-pic-a1.aliexpress-media.com/kf/S29436b0e97ad49b596935b654ae4eed0Y.jpg"
       ],
       "amazonPlaceholder": {
-        "status": "pending",
+        "status": "ready",
         "searchQuery": "VXE Dragonfly R1 SE",
         "asin": null,
-        "url": null
+        "url": "https://amzn.to/42UJyHi"
       },
       "specResult": null,
-      "redditReviews": []
+      "redditReviews": [],
+      "productProfile": {
+        "productType": "ゲーミングマウス",
+        "productTypeShort": "ゲーミングマウス",
+        "isInEar": null,
+        "isOverEar": null,
+        "isOpenEar": null,
+        "hasANC": null,
+        "connectivity": "2.4GHz ワイヤレス / USB有線",
+        "batteryLife": null,
+        "keySpecs": [
+          "ゲーミングセンサー搭載",
+          "軽量設計",
+          "カスタマイズ可能ボタン"
+        ],
+        "keyFeatures": [
+          "高精度トラッキング",
+          "低遅延接続",
+          "人間工学設計"
+        ],
+        "targetUseCase": [
+          "ゲーミング",
+          "FPS",
+          "MOBA"
+        ],
+        "notSuitableFor": [
+          "左手持ち使用"
+        ],
+        "pricePosition": "ミドルレンジ",
+        "confidence": "low",
+        "weightG": null,
+        "sensor": null,
+        "pollingRate": null,
+        "shape": "右手持ち",
+        "dpi": null,
+        "searchSources": []
+      }
     },
     {
       "product_id": "1005007675157598",
@@ -168,13 +204,50 @@
         "https://ae-pic-a1.aliexpress-media.com/kf/Sab3a227e38dc4366925d77a0cdb05f5e5.jpg"
       ],
       "amazonPlaceholder": {
-        "status": "pending",
+        "status": "ready",
         "searchQuery": "VXE Dragonfly R1 Pro MAX",
         "asin": null,
-        "url": null
+        "url": "https://amzn.to/49Rsu8S"
       },
       "specResult": null,
-      "redditReviews": []
+      "redditReviews": [],
+      "productProfile": {
+        "productType": "ゲーミングマウス",
+        "productTypeShort": "ゲーミングマウス",
+        "isInEar": false,
+        "isOverEar": false,
+        "isOpenEar": false,
+        "hasANC": null,
+        "connectivity": "2.4GHz ワイヤレス / USB",
+        "batteryLife": null,
+        "keySpecs": [
+          "高精度ゲーミングセンサー搭載",
+          "軽量ワイヤレス設計",
+          "カスタマイズ可能なボタン配置"
+        ],
+        "keyFeatures": [
+          "プロゲーマー向けデザイン",
+          "低レイテンシー接続",
+          "エルゴノミックデザイン"
+        ],
+        "targetUseCase": [
+          "ゲーミング",
+          "FPS/MOBA",
+          "eSports"
+        ],
+        "notSuitableFor": [
+          "一般事務作業",
+          "グラフィックデザイン"
+        ],
+        "pricePosition": "ハイエンド",
+        "confidence": "medium",
+        "weightG": null,
+        "sensor": null,
+        "pollingRate": null,
+        "shape": "右手持ちエルゴノミクス",
+        "dpi": null,
+        "searchSources": []
+      }
     },
     {
       "product_id": "1005011587360139",
@@ -201,7 +274,43 @@
         "url": null
       },
       "specResult": null,
-      "redditReviews": []
+      "redditReviews": [],
+      "productProfile": {
+        "productType": "ゲーミングマウス",
+        "productTypeShort": "ゲーミングマウス",
+        "isInEar": false,
+        "isOverEar": false,
+        "isOpenEar": false,
+        "hasANC": null,
+        "connectivity": "2.4GHz ワイヤレス / Bluetooth",
+        "batteryLife": null,
+        "keySpecs": [
+          "ゲーミング向け高精度センサー",
+          "高速ポーリングレート対応",
+          "カスタマイズ可能ボタン"
+        ],
+        "keyFeatures": [
+          "ゲーミング用途最適化",
+          "高応答性",
+          "耐久性設計"
+        ],
+        "targetUseCase": [
+          "ゲーミング",
+          "FPS",
+          "e-sports"
+        ],
+        "notSuitableFor": [
+          "カジュアルユース向けでない"
+        ],
+        "pricePosition": "ミドルレンジ",
+        "confidence": "low",
+        "weightG": null,
+        "sensor": null,
+        "pollingRate": null,
+        "shape": null,
+        "dpi": null,
+        "searchSources": []
+      }
     }
   ],
   "faqQuestions": [
@@ -238,5 +347,7 @@
     }
   ],
   "tavilyResults": [],
-  "generatedAt": "2026-05-26T06:41:12.996Z"
+  "generatedAt": "2026-05-26T06:41:12.996Z",
+  "intentionalDuplicateAffLink": true,
+  "intentionalDuplicateNote": "3商品が同一AliExpressリンク（既存記事のリンクをそのまま使用）"
 }

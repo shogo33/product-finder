@@ -79,17 +79,19 @@ if (aliLinksWithoutSponsored.length > 0) {
 }
 
 // AliExリンク重複チェック
+// 「同じURLが複数回出る」のは比較表とCTAで同一商品に使われる正常ケースを含む
+// → ユニークURL数が商品数より少ない場合のみ本当の重複
 const uniqueAli = new Set(aliLinks);
-if (aliLinks.length > 1 && uniqueAli.size < aliLinks.length) {
-  const dupCount = aliLinks.length - uniqueAli.size;
+if (uniqueAli.size < products.length) {
+  const dupCount = products.length - uniqueAli.size;
   if (intentionalDupes) {
     warnings.push(
-      `[リンク重複・意図的] AliExリンクに${dupCount}件の重複 (research.jsonのintentionalDuplicateAffLink=trueで確認済み)\n` +
+      `[リンク重複・意図的] ${dupCount}商品が同一AliExリンク (research.jsonのintentionalDuplicateAffLink=trueで確認済み)\n` +
       `  理由: ${research.intentionalDuplicateNote ?? '同一ページ販売'}`
     );
   } else {
     criticals.push(
-      `[リンク重複] AliExリンクに${dupCount}件の重複があります\n` +
+      `[リンク重複] ${dupCount}商品が同一AliExリンクになっています\n` +
       `  → step2-verify.mjs を実行してresearch.jsonを確認してください`
     );
   }

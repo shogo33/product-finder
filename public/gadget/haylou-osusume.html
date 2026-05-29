@@ -21,6 +21,13 @@
   <style>
     :root { --red:#e8253a; --red-dk:#b81c2c; --bg:#fafaf8; --surface:#ffffff; --text:#1a1a1a; --muted:#6b7280; --border:#e5e7eb; --radius:12px; --max:760px; }
     *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior: smooth; }
+    a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
+    .toc a.product-link::after { content: none; }
+    a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family:'Noto Sans JP',sans-serif; background:var(--bg); color:var(--text); line-height:1.8; font-size:16px; }
     .article-hero { background:linear-gradient(135deg,#fff1f2 0%,#fff 60%); border-bottom:1px solid var(--border); padding:48px 20px 36px; text-align:center; }
     .article-hero .tag { display:inline-block; background:var(--red); color:#fff; font-size:0.72rem; font-weight:700; letter-spacing:0.08em; padding:4px 12px; border-radius:999px; margin-bottom:16px; }
@@ -138,7 +145,8 @@
     /* CTA画像 */
     .cta-img-wrap { text-align:center; margin-bottom:14px; }
     .cta-product-img { max-height:160px; max-width:100%; object-fit:contain; border-radius:8px; background:#f5f5f5; }
-  </style>
+    .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
+</style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -154,46 +162,95 @@
   <meta name="twitter:description" content="HAYLOUの人気3モデルをANC性能・バッテリー・価格で比較。用途別おすすめとAliExpress最安値情報をまとめました。" />
   <meta name="twitter:image" content="https://aliswipe.com/images/ogp/haylou-osusume.jpg" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "HAYLOUおすすめ3選【2026年最新】S30 Pro・S40・Mori Pro徹底比較",
-    "description": "HAYLOUのおすすめモデルをS30 Pro・S40 ANC・Mori Proの3機種で徹底比較。ANC性能・バッテリー・価格差をわかりやすく整理し、用途別の最適解を提案します。AliExpress最安値情報もまとめているので、購入前にぜひ確認してください。",
-    "url": "https://aliswipe.com/gadget/haylou-osusume.html",
-    "image": "https://aliswipe.com/images/ogp/haylou-osusume.jpg",
-    "datePublished": "2026-05-29",
-    "dateModified": "2026-05-29",
-    "author": {
-      "@type": "Organization",
-      "name": "アリエクswipe"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "アリエクswipe",
-      "url": "https://aliswipe.com/"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "ホーム",
-        "item": "https://aliswipe.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "HAYLOUおすすめ3選【2026年最新】S30 Pro・S40・Mori Pro徹底比較",
-        "item": "https://aliswipe.com/gadget/haylou-osusume.html"
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "HAYLOUはどのブランドですか？Xiaomiとの関係は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HAYLOUはXiaomiグループ傘下のサブブランドとして認識されているオーディオメーカーです。Xiaomiの豊富な技術力と製造ノウハウを活用しながら、独立したブランドとして手頃な価格帯のイヤホンやヘッドフォンを展開しているという報告が多くあります。グループ企業としての背景を持ちながらも、HAYLOUブランド独自の製品開発を行っているという認識が一般的です。詳細な企業関係については、公式情報の確認を推奨します。"
       }
-    ]
+    },
+    {
+      "@type": "Question",
+      "name": "HAYLOUのイヤホンはAliExpressで偽物が届くことはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AliExpressでは販売者が多数存在するため、偽物や模造品が混在しているという報告が見られます。HAYLOU製品を購入する際は、公式認定の販売者から購入することが重要です。商品ページで販売者の評価やレビュー、正規品認証マークの有無などを確認することをお勧めします。心配な場合は、公式サイトや国内の正規販売店での購入も検討の価値があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "HAYLOUとAnkerやEarFunを比べるとどちらがコスパがいいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HAYLOUはAnkerやEarFunと比較して、同等の機能でより低価格帯に設定されているという声が多いです。特にHAYLOU S40 ANCはノイズキャンセリング機能を備えながら7,000円台の価格帯であり、同機能のAnker製品と比べてコストを抑えられるという報告があります。ただし、ブランドの信頼度やサポート体制は各社で異なるため、価格だけでなく使用環境や機能面での確認も推奨します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "HAYLOUのスマートウォッチは日本語表示に対応していますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HAYLOUのスマートウォッチは、多くの機種で日本語表示に対応しているという報告が多いです。ただし、対応言語はモデルによって異なる場合があるため、ご購入前に各商品の仕様ページで詳細をご確認されることをお推奨します。また、スマートウォッチとペアリングするスマートフォン向けアプリも日本語対応していることが多いという声が聞かれます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AliExpressでHAYLOU製品を買うときのクーポンの使い方は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AliExpressでHAYLOU製品を購入する際、クーポンはカートに商品を追加後、チェックアウト画面で「クーポンコード」欄に入力することで適用できるという報告が多いです。セール期間中やアプリ専用のクーポンが配布されていることもあるため、事前に確認することをお勧めします。HAYLOU S30 Pro、S40 ANC、Mori Proなどの人気商品にもクーポンが適用可能な場合があるので、購入前に割引条件を確認してから進めると良いでしょう。"
+      }
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "HAYLOUおすすめ3選｜S30 Pro・S40・Mori Pro比較【2026年】",
+  "description": "HAYLOUの人気3モデルをANC性能・バッテリー・価格で比較。用途別おすすめとAliExpress最安値情報をまとめました。",
+  "url": "https://aliswipe.com/gadget/haylou-osusume.html",
+  "image": "https://aliswipe.com/images/ogp/haylou-osusume.jpg",
+  "datePublished": "2026-05-25",
+  "dateModified": "2026-05-29",
+  "author": {
+    "@type": "Person",
+    "name": "アリエクパパ",
+    "url": "https://aliswipe.com/info/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "アリエクswipe",
+    "url": "https://aliswipe.com/"
   }
-  </script>
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://aliswipe.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "HAYLOUおすすめ3選｜S30 Pro・S40・Mori Pro比較【2026年】",
+      "item": "https://aliswipe.com/gadget/haylou-osusume.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -216,6 +273,7 @@
 <section class="article-hero">
   <div class="tag">ガジェット</div>
   <h1>HAYLOUおすすめ3選【2026年最新】S30 Pro・S40・Mori Pro徹底比較</h1>
+<div class="article-date">📅 更新日：2026-05-29　公開日：2026-05-25</div>
   <div class="meta">
     <span>2026年05月29日更新</span>
     <span>読了約8分</span>
@@ -226,7 +284,7 @@
 <div class="container"><div class="article-body">
 
 <figure class="fv-product-image">
-  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2241f9c5363d4fc6a52f5f35c5c219c6r.jpg" alt="HAYLOU S40 ANC" loading="eager">
+  <img src="/images/products/haylou-osusume/2fe82030.jpg" alt="HAYLOU S40 ANC" loading="eager">
 </figure>
 
 <div class="article-conclusion">
@@ -253,8 +311,8 @@
   <table>
     <thead><tr><th>モデル名</th><th>価格目安（円）</th><th>AliExpress</th><th>Amazon</th><th>おすすめシーン</th></tr></thead>
     <tbody>
-  <tr><td><a href="https://amzn.to/3Rk73aj" target="_blank" rel="noopener sponsored">HAYLOU S30 Pro</a></td><td>価格確認中</td><td><span style="color:#9ca3af">AliExなし</span></td><td><a href="https://amzn.to/3Rk73aj" target="_blank" rel="noopener sponsored">見る →</a></td><td>在宅ワーク・音楽鑑賞・長時間リスニング</td></tr>
-  <tr><td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CnESSTTCStmHkhbMwE9OgMiTL8j9Tg7jQPXji3ECWbK5DMuQ7h94LHNY53IQYe1lCW5SXFaw6ZskOrLCaK9YsOEm6AETnRgWpzCqHyqsjGbQec9uQlT4ydnq1XeF1bTGzHzVECHXPzurm0XvtgUAGTJNQZ6ybv9QU9VUxK1u483p4BDB46vkhA1R0zbnif07z9wd0tVUitzQJ699mqXZTX94PsYUiRHGIhklqstrBcMDG9eQ76h8lQnobd2fBGNtibULhOgtyasat2QFgisOzC7nF9aQf4GDGlE8dYJFHnep5KNzaDCtVYDJGp0YWP1vHDCcuvRPxcng33qG3ZldktHbjkWqdpc5tr9kC1TbC7rZrqyTGV0X1s2BVIMiFC2vaPT2fVR6SyXQoNTvTCzf2z0xMnONS2boFr6KrVCoZUDiyVTRzANzyJXNrT0wQZashghOYvR4UaNMUY2cVVysaXukA69C6dSpGww4zuCj9rxSM3kgwyjdZvRQj4D4iA2C2GSeQq8HUIT3mNO3qRlWO3daWmvcKfplsFLoO7DccNSDcBYFijUMPHgDzGWsvhQlQ17qrBQoxyxNSlr3WsfwOxINCUqwjYdurcQN9V0kI60fc93rIYm9MNtRoju7gskSrvxMYIWrdDjNOmF9aWHwkMYgcJBDmVYYG8t3thMpvBwvD5W18fA6FT2OVyLoMkRo6IBQE72DGjnYkd" target="_blank" rel="noopener sponsored">HAYLOU S40 ANC</a></td><td>¥7,352</td><td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CnESSTTCStmHkhbMwE9OgMiTL8j9Tg7jQPXji3ECWbK5DMuQ7h94LHNY53IQYe1lCW5SXFaw6ZskOrLCaK9YsOEm6AETnRgWpzCqHyqsjGbQec9uQlT4ydnq1XeF1bTGzHzVECHXPzurm0XvtgUAGTJNQZ6ybv9QU9VUxK1u483p4BDB46vkhA1R0zbnif07z9wd0tVUitzQJ699mqXZTX94PsYUiRHGIhklqstrBcMDG9eQ76h8lQnobd2fBGNtibULhOgtyasat2QFgisOzC7nF9aQf4GDGlE8dYJFHnep5KNzaDCtVYDJGp0YWP1vHDCcuvRPxcng33qG3ZldktHbjkWqdpc5tr9kC1TbC7rZrqyTGV0X1s2BVIMiFC2vaPT2fVR6SyXQoNTvTCzf2z0xMnONS2boFr6KrVCoZUDiyVTRzANzyJXNrT0wQZashghOYvR4UaNMUY2cVVysaXukA69C6dSpGww4zuCj9rxSM3kgwyjdZvRQj4D4iA2C2GSeQq8HUIT3mNO3qRlWO3daWmvcKfplsFLoO7DccNSDcBYFijUMPHgDzGWsvhQlQ17qrBQoxyxNSlr3WsfwOxINCUqwjYdurcQN9V0kI60fc93rIYm9MNtRoju7gskSrvxMYIWrdDjNOmF9aWHwkMYgcJBDmVYYG8t3thMpvBwvD5W18fA6FT2OVyLoMkRo6IBQE72DGjnYkd" target="_blank" rel="noopener sponsored">見る →</a></td><td><a href="https://amzn.to/3Rk77H5" target="_blank" rel="noopener sponsored">見る →</a></td><td>通勤・在宅ワーク・ノイズキャンセル重視</td></tr>
+  <tr><td><a href="#sec-3" class="product-link" data-dir="down"><a href="https://amzn.to/3Rk73aj" target="_blank" rel="noopener sponsored">HAYLOU S30 Pro</a></a></td><td>価格確認中</td><td><span style="color:#9ca3af">AliExなし</span></td><td><a href="https://amzn.to/3Rk73aj" target="_blank" rel="noopener sponsored">見る →</a></td><td>在宅ワーク・音楽鑑賞・長時間リスニング</td></tr>
+  <tr><td><a href="#sec-4" class="product-link" data-dir="down"><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CnESSTTCStmHkhbMwE9OgMiTL8j9Tg7jQPXji3ECWbK5DMuQ7h94LHNY53IQYe1lCW5SXFaw6ZskOrLCaK9YsOEm6AETnRgWpzCqHyqsjGbQec9uQlT4ydnq1XeF1bTGzHzVECHXPzurm0XvtgUAGTJNQZ6ybv9QU9VUxK1u483p4BDB46vkhA1R0zbnif07z9wd0tVUitzQJ699mqXZTX94PsYUiRHGIhklqstrBcMDG9eQ76h8lQnobd2fBGNtibULhOgtyasat2QFgisOzC7nF9aQf4GDGlE8dYJFHnep5KNzaDCtVYDJGp0YWP1vHDCcuvRPxcng33qG3ZldktHbjkWqdpc5tr9kC1TbC7rZrqyTGV0X1s2BVIMiFC2vaPT2fVR6SyXQoNTvTCzf2z0xMnONS2boFr6KrVCoZUDiyVTRzANzyJXNrT0wQZashghOYvR4UaNMUY2cVVysaXukA69C6dSpGww4zuCj9rxSM3kgwyjdZvRQj4D4iA2C2GSeQq8HUIT3mNO3qRlWO3daWmvcKfplsFLoO7DccNSDcBYFijUMPHgDzGWsvhQlQ17qrBQoxyxNSlr3WsfwOxINCUqwjYdurcQN9V0kI60fc93rIYm9MNtRoju7gskSrvxMYIWrdDjNOmF9aWHwkMYgcJBDmVYYG8t3thMpvBwvD5W18fA6FT2OVyLoMkRo6IBQE72DGjnYkd" target="_blank" rel="noopener sponsored">HAYLOU S40 ANC</a></a></td><td>¥7,352</td><td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CnESSTTCStmHkhbMwE9OgMiTL8j9Tg7jQPXji3ECWbK5DMuQ7h94LHNY53IQYe1lCW5SXFaw6ZskOrLCaK9YsOEm6AETnRgWpzCqHyqsjGbQec9uQlT4ydnq1XeF1bTGzHzVECHXPzurm0XvtgUAGTJNQZ6ybv9QU9VUxK1u483p4BDB46vkhA1R0zbnif07z9wd0tVUitzQJ699mqXZTX94PsYUiRHGIhklqstrBcMDG9eQ76h8lQnobd2fBGNtibULhOgtyasat2QFgisOzC7nF9aQf4GDGlE8dYJFHnep5KNzaDCtVYDJGp0YWP1vHDCcuvRPxcng33qG3ZldktHbjkWqdpc5tr9kC1TbC7rZrqyTGV0X1s2BVIMiFC2vaPT2fVR6SyXQoNTvTCzf2z0xMnONS2boFr6KrVCoZUDiyVTRzANzyJXNrT0wQZashghOYvR4UaNMUY2cVVysaXukA69C6dSpGww4zuCj9rxSM3kgwyjdZvRQj4D4iA2C2GSeQq8HUIT3mNO3qRlWO3daWmvcKfplsFLoO7DccNSDcBYFijUMPHgDzGWsvhQlQ17qrBQoxyxNSlr3WsfwOxINCUqwjYdurcQN9V0kI60fc93rIYm9MNtRoju7gskSrvxMYIWrdDjNOmF9aWHwkMYgcJBDmVYYG8t3thMpvBwvD5W18fA6FT2OVyLoMkRo6IBQE72DGjnYkd" target="_blank" rel="noopener sponsored">見る →</a></td><td><a href="https://amzn.to/3Rk77H5" target="_blank" rel="noopener sponsored">見る →</a></td><td>通勤・在宅ワーク・ノイズキャンセル重視</td></tr>
   <tr><td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4Mub2u4JGxsW8ufPOPM35FpDfO68HY5HisNUoNi0OsQcQDCiH7b5lJl4tJvjE1LXmSSVMVlNJeZPB6d5v7kTKrAp1mDQCmLcW8NxL9I0uavUDBLR4TF6LZT1XreIohix6HLwKibRxHGGw8JRhoKP8XG5fuSXkaQKnfjjQCN72ZpZ2kZI48TyhCj3gH1Jjt7FzAgnBK7uVCZo4FMW8sDtFzG4gwEO35JZpOAX0gcjyrPOXeQlxlH7Z71PUfZWjg3cUjeyn71jkR2hhlH4Wd2BOj1XQ5KHNw8nbGaA1OHwyFMtzCTlagKSPrjZ2qyoZVeD31qQRI8Eglm1VKnNahdzCTSJWqbpjypNUSTbHpGeH6dS6j9UA8FkdzScY3KfWY9qQlHgUac9AzGqp3YH6J2G0C8kdmKn5JvDNyPIzVn6gVPnFZyC0fftunKnoB1etILaMWh6NPTzdhHx05NSlHm3AixL8s488Nn6SYYuP5ZVeXHl46zNLg6rcFQ3iReRwERjZzBTJ3PJTBoRo6L9yshQdLcKrMyg6N9psI67ZRjxaqCMIEYIfPrnfWNvLn20CxcFSFlGwtln7KL4Hja9detvOvOH8GlvXvNe2ZVVkT4GaPwXY3Jqq36ACvphk5CA9cxGCmaJj8LIYniOGLFZUDWveFNv6Wrzb7apwBPMLNRBn2pdYJpCVW8KMHDxuGOyXppF8764bIrLFEpRa" target="_blank" rel="noopener sponsored">HAYLOU Mori Pro</a></td><td>¥4,371</td><td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4Mub2u4JGxsW8ufPOPM35FpDfO68HY5HisNUoNi0OsQcQDCiH7b5lJl4tJvjE1LXmSSVMVlNJeZPB6d5v7kTKrAp1mDQCmLcW8NxL9I0uavUDBLR4TF6LZT1XreIohix6HLwKibRxHGGw8JRhoKP8XG5fuSXkaQKnfjjQCN72ZpZ2kZI48TyhCj3gH1Jjt7FzAgnBK7uVCZo4FMW8sDtFzG4gwEO35JZpOAX0gcjyrPOXeQlxlH7Z71PUfZWjg3cUjeyn71jkR2hhlH4Wd2BOj1XQ5KHNw8nbGaA1OHwyFMtzCTlagKSPrjZ2qyoZVeD31qQRI8Eglm1VKnNahdzCTSJWqbpjypNUSTbHpGeH6dS6j9UA8FkdzScY3KfWY9qQlHgUac9AzGqp3YH6J2G0C8kdmKn5JvDNyPIzVn6gVPnFZyC0fftunKnoB1etILaMWh6NPTzdhHx05NSlHm3AixL8s488Nn6SYYuP5ZVeXHl46zNLg6rcFQ3iReRwERjZzBTJ3PJTBoRo6L9yshQdLcKrMyg6N9psI67ZRjxaqCMIEYIfPrnfWNvLn20CxcFSFlGwtln7KL4Hja9detvOvOH8GlvXvNe2ZVVkT4GaPwXY3Jqq36ACvphk5CA9cxGCmaJj8LIYniOGLFZUDWveFNv6Wrzb7apwBPMLNRBn2pdYJpCVW8KMHDxuGOyXppF8764bIrLFEpRa" target="_blank" rel="noopener sponsored">見る →</a></td><td><a href="https://amzn.to/4fL57l0" target="_blank" rel="noopener sponsored">見る →</a></td><td>ながら聴き・長時間リスニング・自宅使用</td></tr>
     </tbody>
   </table>
@@ -339,12 +397,12 @@ ANCの搭載有無が現時点で明確になっていない。「ノイズキ�
 <h2 id="sec-3">HAYLOU S40 ANC ― ノイズキャンセルが欲しいならこれを選べ</h2>
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2241f9c5363d4fc6a52f5f35c5c219c6r.jpg" alt="HAYLOU S40 ANC" loading="eager">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sbba2db7fff1f433ea96accdf958a731d3.jpg" alt="HAYLOU S40 ANC 画像2" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S41a4d5eb0d684b7e9a2fcbf9c300d86eC.jpg" alt="HAYLOU S40 ANC 画像3" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S3b35c358ea804e799c7eb8b6847bc300L.jpg" alt="HAYLOU S40 ANC 画像4" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S44289e35a7954c2094f47662a5680ab8L.jpg" alt="HAYLOU S40 ANC 画像5" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S6dce5d3da8854c3c857a331ad217a673l.jpg" alt="HAYLOU S40 ANC 画像6" loading="lazy">
+    <img src="/images/products/haylou-osusume/2fe82030.jpg" alt="HAYLOU S40 ANC" loading="eager">
+    <img src="/images/products/haylou-osusume/7c4249ee.jpg" alt="HAYLOU S40 ANC 画像2" loading="lazy">
+    <img src="/images/products/haylou-osusume/9c01e40f.jpg" alt="HAYLOU S40 ANC 画像3" loading="lazy">
+    <img src="/images/products/haylou-osusume/7575193b.jpg" alt="HAYLOU S40 ANC 画像4" loading="lazy">
+    <img src="/images/products/haylou-osusume/2a618f2e.jpg" alt="HAYLOU S40 ANC 画像5" loading="lazy">
+    <img src="/images/products/haylou-osusume/9bac4690.jpg" alt="HAYLOU S40 ANC 画像6" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -391,7 +449,7 @@ ANCの搭載有無が現時点で明確になっていない。「ノイズキ�
 
 <div class="cta-box">
 <div class="cta-img-wrap">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2241f9c5363d4fc6a52f5f35c5c219c6r.jpg" alt="HAYLOU S40 ANC" loading="lazy" class="cta-product-img">
+    <img src="/images/products/haylou-osusume/2fe82030.jpg" alt="HAYLOU S40 ANC" loading="lazy" class="cta-product-img">
   </div>  <p class="cta-lead">【HAYLOU S40 ANC】をどちらで買う？価格・配送を比較</p>
   <p class="cta-sub">AliExpress：送料無料・格安・到着2〜4週間｜Amazon：翌日〜2日・返品しやすい</p>
   <div class="cta-buttons">
@@ -420,12 +478,12 @@ ANCの搭載有無が現時点で明確になっていない。「ノイズキ�
 <h2 id="sec-4">HAYLOU Mori Pro ― 「耳を塞がない」選択肢としての実力</h2>
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0133cb24386f487bb8b3c39affbd4ce51.jpg" alt="HAYLOU Mori Pro" loading="eager">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S60c55714ecf94e69b0854e1e22b9752f3.jpg" alt="HAYLOU Mori Pro 画像2" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sefab9139d9b842aea51c5fd6817ed7aer.jpg" alt="HAYLOU Mori Pro 画像3" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S27cec394b8674d83b308c741cc614435G.jpg" alt="HAYLOU Mori Pro 画像4" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa43425d850e743a192c3eaa96bc51a93v.jpg" alt="HAYLOU Mori Pro 画像5" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S38c611e3c57749c4b93da1d6ba6d1e0aU.jpg" alt="HAYLOU Mori Pro 画像6" loading="lazy">
+    <img src="/images/products/haylou-osusume/f3f2266f.jpg" alt="HAYLOU Mori Pro" loading="eager">
+    <img src="/images/products/haylou-osusume/4b4c1919.jpg" alt="HAYLOU Mori Pro 画像2" loading="lazy">
+    <img src="/images/products/haylou-osusume/3799c7ae.jpg" alt="HAYLOU Mori Pro 画像3" loading="lazy">
+    <img src="/images/products/haylou-osusume/546cb461.jpg" alt="HAYLOU Mori Pro 画像4" loading="lazy">
+    <img src="/images/products/haylou-osusume/859d5b48.jpg" alt="HAYLOU Mori Pro 画像5" loading="lazy">
+    <img src="/images/products/haylou-osusume/aca860ec.jpg" alt="HAYLOU Mori Pro 画像6" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -473,7 +531,7 @@ ANCの搭載有無が現時点で明確になっていない。「ノイズキ�
 
 <div class="cta-box">
 <div class="cta-img-wrap">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0133cb24386f487bb8b3c39affbd4ce51.jpg" alt="HAYLOU Mori Pro" loading="lazy" class="cta-product-img">
+    <img src="/images/products/haylou-osusume/f3f2266f.jpg" alt="HAYLOU Mori Pro" loading="lazy" class="cta-product-img">
   </div>  <p class="cta-lead">【HAYLOU Mori Pro】をどちらで買う？価格・配送を比較</p>
   <p class="cta-sub">AliExpress：送料無料・格安・到着2〜4週間｜Amazon：翌日〜2日・返品しやすい</p>
   <div class="cta-buttons">
@@ -557,21 +615,29 @@ ANCの搭載有無が現時点で明確になっていない。「ノイズキ�
   <div class="related">
     <div class="related-title">関連記事</div>
     <div class="related-grid">
-      <a href="/gadget/ugreen-earphone-osusume.html" class="related-card">
-        <div class="rc-tag">ガジェット</div>
-        <div class="rc-title">UGREENイヤホンのおすすめ5選</div>
-      </a>
       <a href="/gadget/xiaomi-band10-strap-osusume.html" class="related-card">
         <div class="rc-tag">ガジェット</div>
-        <div class="rc-title">Xiaomi Smart Band 9/10のおすすめバンド</div>
+        <div class="rc-title">Xiaomi Smart Band 9 / 10バンドおすすめ5選【2026年最新】アリエクで安く買えるストラップ比較</div>
       </a>
-      <a href="/gadget/baseus-mobile-battery-osusume.html" class="related-card">
+      <a href="/gadget/ugreen-wifi-osusume.html" class="related-card">
         <div class="rc-tag">ガジェット</div>
-        <div class="rc-title">Baseusモバイルバッテリー完全ガイド</div>
+        <div class="rc-title">UGREEN WiFiアダプターおすすめ5選【2026年最新】アリエクで安く買う完全ガイド</div>
       </a>
-      <a href="/gadget/index.html" class="related-card">
+      <a href="/gadget/ugreen-usb-hub-osusume.html" class="related-card">
         <div class="rc-tag">ガジェット</div>
-        <div class="rc-title">アリエクのガジェット・周辺機器おすすめ記事一覧</div>
+        <div class="rc-title">UGREENのUSBハブおすすめ4選【2026年最新】アリエクで安く買う完全ガイド</div>
+      </a>
+      <a href="/guide/naturehike-brand.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">Naturehikeはどこの国のブランド？評判・品質・信頼性を徹底解説【2026年】</div>
+      </a>
+      <a href="/guide/ugreen-brand.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">UGREEN充電器は危険？どこの国か・評判・信頼性を徹底解説【2026年最新】</div>
+      </a>
+      <a href="/payment/aliexpress-shiharai.html" class="related-card">
+        <div class="rc-tag">支払い</div>
+        <div class="rc-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</div>
       </a>
     </div>
   </div>

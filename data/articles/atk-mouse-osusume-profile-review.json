@@ -1,0 +1,30 @@
+{
+  "_instruction": "productTypeShortを確認・修正してください。修正後はそのまま step3a-scaffold.mjs を実行できます（research.jsonに反映済み）。",
+  "_validTypes": "TWS / ANCイヤホン / 開放型イヤホン / ヘッドフォン / オーバーイヤーヘッドフォン / スマートウォッチ / ネックバンドイヤホン / 骨伝導イヤホン",
+  "products": [
+    {
+      "product_id": "1005010345950853",
+      "cleanName": "VXE Dragonfly R1 SE",
+      "productTypeShort": "ゲーミングマウス",
+      "hasANC": null,
+      "targetUseCase": [
+        "ゲーミング",
+        "FPS",
+        "MOBA"
+      ],
+      "confidence": "low"
+    },
+    {
+      "product_id": "1005011587360139",
+      "cleanName": "ATK FIERCE X ゲーミングマウス",
+      "productTypeShort": "ゲーミングマウス",
+      "hasANC": null,
+      "targetUseCase": [
+        "ゲーミング",
+        "FPS",
+        "e-sports"
+      ],
+      "confidence": "low"
+    }
+  ]
+}

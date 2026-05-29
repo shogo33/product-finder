@@ -1,0 +1,18 @@
+{
+  "_instruction": "productTypeShortを確認・修正してください。修正後はそのまま step3a-scaffold.mjs を実行できます（research.jsonに反映済み）。",
+  "_validTypes": "TWS / ANCイヤホン / 開放型イヤホン / ヘッドフォン / オーバーイヤーヘッドフォン / スマートウォッチ / ネックバンドイヤホン / 骨伝導イヤホン",
+  "products": [
+    {
+      "product_id": "1005009023345001",
+      "cleanName": "HAYLOU Mori Pro",
+      "productTypeShort": "TWS",
+      "hasANC": null,
+      "targetUseCase": [
+        "通勤",
+        "日常使用",
+        "スポーツ"
+      ],
+      "confidence": "low"
+    }
+  ]
+}

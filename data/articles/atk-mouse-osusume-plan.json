@@ -148,10 +148,9 @@
   "comparisonTableColumns": [
     "モデル名",
     "価格目安（円）",
-    "重量（g）",
-    "センサー",
-    "接続方式",
-    "ポーリングレート（Hz）"
+    "形状",
+    "おすすめシーン",
+    "AliExpress"
   ],
   "internalLinks": [
     {
