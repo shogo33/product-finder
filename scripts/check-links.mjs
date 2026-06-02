@@ -10,7 +10,7 @@ function walk(dir, files = []) {
   return files;
 }
 
-const ROOT = 'c:/Users/USER/product-finder';
+const ROOT = process.cwd();
 const htmlFiles = walk(path.join(ROOT, 'public'));
 const exists = new Set(htmlFiles.map(f => '/' + path.relative(path.join(ROOT, 'public'), f).replace(/\\/g, '/')));
 

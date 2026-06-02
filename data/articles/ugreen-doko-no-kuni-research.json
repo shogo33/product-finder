@@ -1,0 +1,875 @@
+{
+  "keyword": "UGREEN どこの国",
+  "slug": "ugreen-doko-no-kuni",
+  "category": "guide",
+  "searchIntent": "入門系|問題解決系",
+  "searchIntentNote": "「UGREENは中国メーカー？信頼できる？」という購入前の不安や疑問を解消したい検索意図。ブランドの信頼性・品質・安全性・データリスクを確認したうえでAmazon/AliExpressでの購入判断をしたいユーザーが多い。",
+  "persona": "AliExpressと中華ガジェットを5年以上買い続けてきた節約系オタクで、「どこの国のメーカーか」「品質は大丈夫か」を徹底的に調べてから買う慎重派。Anker/Baseus/UGREENを実際に複数台持ち比べ、深圳ガジェット業界の事情にも詳しい。読者の不安を先回りして冷静に潰すスタンスで、煽らず事実ベースで語る。",
+  "targetProductCount": 13,
+  "titles": [
+    "UGREENはどこの国のメーカー？信頼性・評判・買って大丈夫かを徹底解説",
+    "UGREEN どこの国？中国深圳発ブランドの実力と安全性を整理",
+    "UGREEN（ユーグリーン）はどこの国？評判と信頼性まとめ"
+  ],
+  "selectedTitle": "UGREENはどこの国のメーカー？信頼性・評判・買って大丈夫かを徹底解説",
+  "metaDescription": "UGREEN（ユーグリーン）は中国・深圳発のガジェットブランド。充電器・ハブ・モバイルバッテリーで世界100カ国に展開。怪しいと不安な方向けに、認証・評判・個人情報リスク・Anker比較・偽物の見分け方からおすすめ商品まで一気通貫で解説します。",
+  "intro": "「UGREENって結局どこの国のブランド？中国製って大丈夫なの？」と購入前に不安になったことはありませんか？\n\n結論から言うと、UGREENは中国・深圳に本社を置く2012年創業のガジェットメーカーで、Anker・Baseusと並ぶ深圳系三大ブランドの一角。世界100カ国以上で販売され、Amazonでは累計レビュー数十万件規模の実績があります。「中国メーカー＝怪しい」という10年前のイメージとは別世界です。\n\nこの記事では、UGREENの会社情報・各種認証・データリスクの考え方・Ankerとの比較・ジャンル別の評判を整理した上で、AmazonとAliExpressそれぞれで本当に買って後悔しないモデルをカテゴリ別にピックアップ。「どこの国？」の疑問を出発点に、判断材料を全部そろえます。",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "UGREENはどこの国のブランド？創業背景と会社概要",
+      "h3s": [
+        "中国・深圳発の上場ガジェットメーカー",
+        "Anker・Baseusと並ぶ深圳系三大ブランドの一角",
+        "日本法人「Ugreen Japan合同会社」もあり"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "UGREENは2012年創業、中国広東省深圳に本社を置く Shenzhen Ugreen Technology Co., Ltd. であることを明記",
+        "深圳証券取引所に上場している点、世界100カ国以上で販売されている点で信頼感を醸成",
+        "日本法人があり、PSE等の国内認証もクリアしている流通実態を補足"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "「中国メーカーは怪しい？」を冷静に整理する",
+      "h3s": [
+        "10年前と今では深圳ガジェット業界の景色が変わった",
+        "UGREEN・Anker・Baseusはすでに世界の主流",
+        "リコール履歴と現代的なQC体制"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "「中国製＝粗悪品」は2010年代の印象論で、現代の深圳系ブランドは技術力で世界トップ層に到達していることを冷静に説明",
+        "Anker（同じく深圳本社）と同じ系譜のメーカーであるという事実が安心材料になる",
+        "深刻なリコール履歴があるかどうかを正直に提示（実績で語る）"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "UGREEN製品の品質・安全性は大丈夫？認証と規格の実態",
+      "h3s": [
+        "国際安全認証（PSE / FCC / CE / RoHS）の取得状況",
+        "Apple MFi・USB-IF・Thunderbolt認証など製品別の品質保証",
+        "保証期間とサポート体制"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "日本国内で販売される製品はPSE取得済みであることを明記、購入時の安心材料に",
+        "Lightningケーブル類はApple MFi認証、Thunderbolt 5ドックなど最新規格の認証取得状況を解説",
+        "Amazonの公式ストアでは18〜24ヶ月の長期保証があり、サポート対応も日本語OKであることを補足"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "「中国メーカーで個人情報は大丈夫？」データリスクの考え方",
+      "h3s": [
+        "充電器・ケーブル類はデータを送る構造がない（100%安全）",
+        "USBハブ・ドック・SDカードリーダーもデータ送信機能なし",
+        "NAS（NASync）のクラウド連携機能は注意ポイント",
+        "Webカメラ・スマートトラッカー系の通信先を確認するコツ"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "「中国 個人情報 やばい」系の検索意図に正面から応える独立セクション",
+        "ジャンル別に分けて『この製品ジャンルはデータ流出が物理的に不可能』を明示することで誤解を解く",
+        "NAS等のネット接続製品だけは『国外サーバーへの通信があるか確認すべき』と具体的に案内"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "UGREENの評判はジャンル別に見るとどう？",
+      "h3s": [
+        "充電器・GaN系: 数万件レビューの大定番",
+        "USBハブ・Thunderboltドック: 価格と機能のバランスが評価される",
+        "モバイルバッテリー: Nexodeシリーズが急成長",
+        "ケーブル類（USB-C / Lightning / LAN）: コスパ最強候補",
+        "NAS（NASync）: 一部に懸念あるジャンル"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "各カテゴリでAmazonレビュー数・星評価を根拠に評判を整理する（事実ベース）",
+        "Nexode 65W → 4,100件 4.4★、Revodok 105 → 29,349件 4.2★ などの具体数値を提示",
+        "NASだけは『クラウド連携機能を使う場合は注意』として section4 への参照リンクを置く"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "UGREEN vs Anker vs Baseus 深圳系3ブランド徹底比較",
+      "h3s": [
+        "本社・創業・規模の比較",
+        "得意ジャンルの違い",
+        "価格・品質・サポート の3軸比較",
+        "どんな人にUGREENが合うか"
+      ],
+      "type": "comparison",
+      "notes": [
+        "Anker（2011年創業）、Baseus（2011年創業）、UGREEN（2012年創業）と深圳系3社の生い立ちを並列で説明",
+        "得意領域: Ankerはモバイルバッテリー/充電器、Baseusは車載/小物、UGREENはハブ・ドック・NASと整理",
+        "結論として「ハブ・ドック系を買うならUGREEN一択、Anker / Baseus は他カテゴリ」のような判断軸を提示",
+        "比較表で4-6列（ブランド名・本社・創業年・得意ジャンル・価格帯・サポート）"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "Amazonで買えるUGREEN製品おすすめ8選（実績ベース）",
+      "h3s": [
+        "充電器: Nexode 65W 4ポート GaN II",
+        "モバイルバッテリー: Nexode 25000mAh 200W",
+        "USBハブ: Revodok 105 USB-Cハブ 5-in-1",
+        "USB-Cケーブル: USB-C to Lightning ケーブル",
+        "ワイヤレス充電器: MagFlow 2-in-1 MagSafe対応 15W",
+        "SDカードリーダー: Type-C 黒",
+        "車載充電器: Nexode 巻き取り式 60W",
+        "ポータブル電源: PowerRoam600 (GS600)"
+      ],
+      "type": "product",
+      "notes": [
+        "各商品の見出しはh3とし、本文では『なぜこの商品か（信頼性の根拠）』『どんな人向けか』『デメリット/注意点』をPREP法で簡潔に説明",
+        "Amazonアフィリエイトリンクはユーザー提供のもの（amzn.to/XXX）を必ず使用、推測リンクは禁止",
+        "Amazon側のレビュー数と星評価を信頼性のエビデンスとして必ず1文添える"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "AliExpressで買えるUGREEN製品おすすめ5選（公式ストア・販売実績300+）",
+      "h3s": [
+        "充電器: GaN 20W/30W mini PD3.0（販売10,823）",
+        "USBハブ: Steam Deck 6-in-1 100W（販売1,515）",
+        "USB-Cケーブル: 240W PD3.1 デジタル表示（販売4,688）",
+        "SDカードリーダー: USB3.0+USB-C（販売1,284）",
+        "車載充電器: 30W急速（販売324）"
+      ],
+      "type": "product",
+      "notes": [
+        "全商品が UGREEN Official Store（shop_id=1103243235）の公式品であることを必ず明記し、偽物リスクを排除",
+        "AliExpressアフィリエイトリンクは research JSON から注入する promotion_link を使用",
+        "直近販売数を実績エビデンスとして見出し脇に併記（既に厳選済み）",
+        "「Amazonより安く買える可能性が高い」「セール時期を狙うとさらに得」など実用情報を添える"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "Amazon vs AliExpress どちらで買うべき？比較表で整理",
+      "h3s": [
+        "価格・到着日数・サポート・安心感の4軸比較",
+        "ジャンル別にどちらが有利か"
+      ],
+      "type": "comparison",
+      "notes": [
+        "比較表に: 価格傾向 / 到着日数 / 保証 / 偽物リスク / セール頻度 / おすすめ用途 を列として配置",
+        "結論として「初めての人はAmazon・慣れている人はAliExpress」のラインを提示",
+        "充電器・モバイルバッテリーなどPSEが必要なジャンルはAmazon推奨、ケーブルやハブはAliExpressで節約しやすいといった切り分け"
+      ]
+    },
+    {
+      "id": "section10",
+      "h2": "UGREEN製品を安全に買う方法と選び方（偽物回避ガイド）",
+      "h3s": [
+        "AliExpressは必ず「UGREEN Official Store」を選ぶ",
+        "Amazonは「販売元: UGREEN-JAPAN」を確認",
+        "型番（PB205、Nexode、Revodok等）で正規品を見分ける"
+      ],
+      "type": "howto",
+      "notes": [
+        "AliExpressの公式ストアURL（store/1103243235）の見方をスクリーンショット位置の指示込みで案内",
+        "Amazonでは販売元が「UGREEN-JAPAN」または「Amazon.co.jp」であるべきと明記",
+        "11.11・6.18・Prime Day等のセールタイミングで購入価格を3〜5割下げられるTipsを添える"
+      ]
+    },
+    {
+      "id": "section11",
+      "h2": "UGREENに関するよくある質問（FAQ）",
+      "h3s": [],
+      "type": "faq",
+      "notes": [
+        "Q&A形式で構造化し、リッチリザルト対応の見出し設計にする",
+        "「どこの国？」「偽物は？」「PSEは？」「保証は？」「個人情報は？」「Ankerとどっち？」など購入前の代表的な疑問を網羅"
+      ]
+    },
+    {
+      "id": "section12",
+      "h2": "まとめ：UGREENは充電器・ケーブル・ハブの定番ブランドとして安心して選べる",
+      "h3s": [
+        "結論：ジャンルによってAmazon/AliExpressを使い分けるのがベスト",
+        "関連記事で深掘り"
+      ],
+      "type": "conclusion",
+      "notes": [
+        "『中国メーカーで不安』という入口に対する明確な回答で締める：充電器・ケーブル・ハブは安心、NASだけ別軸の判断が必要",
+        "関連記事への内部リンクを自然に差し込み（UGREENマウスおすすめ、AliExpressとは、Baseus比較など）",
+        "最後に再度AmazonとAliExpressのおすすめTOPに戻る導線を確保"
+      ]
+    }
+  ],
+  "faqQuestions": [
+    "UGREEN（ユーグリーン）はどこの国のメーカーですか？",
+    "UGREENは中国メーカーですが、品質や安全性は大丈夫ですか？",
+    "UGREEN製品で個人情報が流出するリスクはありますか？",
+    "AliExpressのUGREEN製品は本物ですか？偽物の見分け方は？",
+    "UGREENとAnker、どちらを買うべきですか？"
+  ],
+  "comparisonTableColumns": [
+    "購入先",
+    "価格傾向",
+    "到着日数",
+    "保証",
+    "偽物リスク",
+    "おすすめの人"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/ugreen-mouse-osusume.html",
+      "anchorText": "UGREENマウスおすすめ"
+    },
+    {
+      "url": "/basics/aliexpress-what-is.html",
+      "anchorText": "AliExpressとは何か"
+    },
+    {
+      "url": "/gadget/baseus-charger-osusume.html",
+      "anchorText": "Baseus GaN充電器のアリエク比較"
+    }
+  ],
+  "competitorDifferentiators": [
+    "Amazon商品コーナー（8選）とAliExpress商品コーナー（5選）を独立して持ち、両方の買い場を網羅。読者が自分の状況に合わせて買い場を選べる",
+    "AliExpress掲載商品は『UGREEN公式ストア＋直近販売300以上』で厳選しており、偽物・人気不足リスクを排除済み",
+    "『中国メーカーで個人情報は大丈夫？』というディープな不安にも独立セクションで正面から答える",
+    "Anker / Baseus との3社比較を入れ、UGREENが本当に最適か判断できる材料を提供"
+  ],
+  "createdAt": "2026-06-02",
+  "researchedAt": "2026-06-02",
+  "products": [
+    {
+      "product_id": "B0CYZ52VPX",
+      "rawTitle": "UGREEN 65W Rapid Charger, 4 Ports, USB-C x 3 + USB-A x 1, Type C, PD3.0, GaNII Charger, Compatible with iPhone 16, Android, Galaxy, Macbook, iPad, PC, and Other USB-C Devices, PSE (Black)",
+      "cleanName": "UGREEN Nexode 65W 急速 充電器 4ポート",
+      "section": "amazon",
+      "category": "充電器",
+      "price_jpy": 3780,
+      "original_price": 4880,
+      "sales_count": 4100,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "300+ bought in past month",
+      "modelNumber": "X559",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVZbRot5csElXhvRHZJdv58yKTlvAPHWl6j1eVMbvq57FyNvi82IJFOsJTYm2fMj4l8tozx56uLXNbimBQVzRe0ccqxcNsUFZPQPvNgbkE1liqLbR3o7gJ96xGejR3CnFGjuEIghmE9SfjkEaLobPbLqZt4n3OQqaD624IArNr4eAjnp3bBKaSFJ9wt2BlgW4hDCElLTqpd1ThnKWuVot62gnPv1Qv6GsuYBn83rEuTjleDSsXWLFWtTkK3jQExdk9YDbQW14DMvKCYYKbeWW356jX0jQUL2fbIGU8TqwFZEXpPwBwuOfiWg5PXMZfdQFzInIHw3GpQXcLV19FwvOSAo7Rt2j6S4LhC2aV1p3FSJRWPWu9feCG62prcVW7HZTEXMDsH5apeg8yD90efRYw1XzxglXbB8mcZWdfsbgnStNc5nda88hGkUCsYLXj4biBtR7M4tiaFZyvWRmyk2Hpxb6y8FrfPl3WFIapDV6jN50vjmcifLdBKGn5s7Nf0GrBgAju3hAw11O60CWblde4A3Rb4jScLF8EY84osAsFt3Z1rfdBPIP41D9kth3VXGwrD00YQZ9U0viL1oX3aNd5Dfz6ntwOZthXXtn8U1LqpxgKU0zR3CjsZNCsYAfQSv2TIGWz3bGv6lJxEnIkymp4uLpI8Etw7NjinqqnxZb7PlMqP4fjsQr",
+      "hasAffiliate": true,
+      "amazonUrl": "https://amzn.to/431RBSK",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-1.png?v=1752144127",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-1.png?v=1752144127",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-3.png?v=1752144127",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-4.png?v=1752144127",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-2.png?v=1752144123"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Nexode 65W 急速 充電器 4ポート",
+        "asin": "B0CYZ52VPX",
+        "url": "https://amzn.to/431RBSK"
+      },
+      "specResult": {
+        "content": "コンパクトなのに、これ一つで全対応。 Nexode Cシリーズは、65W出力ながら4ポート搭載し、PC・スマホからイヤホンまで全デバイスに対応。PD3.0/QC4+対応でMacBook Proは約1.8時間で満充電。進化型GaN Infinity技術により小型・低発熱・高効率を実現、持ち運びにも最適。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "Equipped with 4 ports even at 65 W: NexodeC series chargers add up to 4 ports to conventional 65 W chargers. This single charger can meet all your charging needs regardless of low output devices (earphones, watches, etc.), or high output devices (iPhone, tablet, laptop)",
+        "(PD 3.0/QC4+ compatible, charges your laptop in just 1.8 hours) It efficiently and rapidly charges all types of Type-C related devices, from smartphones, tablets, and laptops. Charge iPhone 16 at about 30 min 60% and charge your MacBook Pro 13 in about 1.8 hours and in a short time. In addition, USB-A is compatible with QuickCharge 3.0 and provides up to 22.5 W of power. Please do not forcefully plug and unplug the cable to avoid deformation of the charger or cable connector",
+        "An infinity generation of advanced GaN technology. Equipped with advanced Infinity generation GaN technology, it is approximately 30% smaller than a typical Type-C charger 65W. In addition, it reduces the operating temperature and provides stronger output power for high efficiency charging without generating excess heat than ordinary GaN technology. And it is equipped with cutting-edge smart recognition technology, it automatically detects and distributes the charging power needed by your device, so you don't have to worry about damaging your device due to excessive power, and also extends the life of the charger",
+        "【Wide Compatibility】MacBook Pro 14'' 2021 (M1 Pro), iPhone 17 16 Series, iPhone 15 (Pro/Plus/Pro Max), iPhone 14 (Pro/Plus/Pro Max), MacBook Pro 13, Macbook Air 2020, iPad Pro, iPhone 13(pro), 12, 11 Pro, XS, XR, 8, 7 Plus, SE 2020, AirPods Pro, Switch, Galaxy Note 20, Note 20 Ultra, S24, S23, S22, S21, Note 10 Plus, S9, S8, A8 2018, A5 2017, A51, A71, Google Pixel 8 fold 7A 7 6A 6 5A 5 4A 4 XL 3A 3 XL;P40 Pro,P4 0, P30 Compatible with various devices such as P20 Pro and More",
+        "Products purchased from our store come with a 24-month warranty. We guarantee the delivery date after 24 months from the date of purchase. Note: If you recognize accidentally damaged by you or a third party, it will not be covered by the warranty."
+      ],
+      "productOverview": [
+        {
+          "key": "Brand",
+          "value": "UGREEN"
+        },
+        {
+          "key": "Connector Type",
+          "value": "USB Type C"
+        },
+        {
+          "key": "Compatible Devices",
+          "value": ""
+        },
+        {
+          "key": "Compatible Phone Models",
+          "value": ""
+        },
+        {
+          "key": "Included Components",
+          "value": "User Manual"
+        },
+        {
+          "key": "Special Feature",
+          "value": "Short circuit protection, fast charging, lightweight design"
+        },
+        {
+          "key": "Color",
+          "value": "Black"
+        },
+        {
+          "key": "Input Voltage",
+          "value": "240 Volts"
+        },
+        {
+          "key": "Amperage",
+          "value": "1.8 Amps"
+        },
+        {
+          "key": "Total USB Ports",
+          "value": "4"
+        }
+      ],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 4,100 件レビュー / 星 4.4 の実績商品"
+      }
+    },
+    {
+      "product_id": "B0CXHM5RY2",
+      "rawTitle": "Ugreen PB722 Nexode Mobile Battery (25,000 mAh/200 W), 3 Ports, 2 USB-C, 1 USB-A, Innovative TFT Display, PD3.1, Supports Rapid Charging, Large Capacity, Vertical Design, Space Saving, Pass-through",
+      "cleanName": "UGREEN Nexode モバイルバッテリー  25000mAh  200W",
+      "section": "amazon",
+      "category": "モバイルバッテリー",
+      "price_jpy": 12435,
+      "original_price": 16580,
+      "sales_count": 8208,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "50+ bought in past month",
+      "modelNumber": "35525",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4x0fhoi",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35525-1.png?v=1726231826",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35525-1.png?v=1726231826",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35525-3.png?v=1726231826",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35525-2.png?v=1726231826",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35525-4.png?v=1726231830"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Nexode モバイルバッテリー  25000mAh  200W",
+        "asin": "B0CXHM5RY2",
+        "url": "https://amzn.to/4x0fhoi"
+      },
+      "specResult": {
+        "content": "25000mAhの圧倒的なパワーを誇るモバイルバッテリーは、タテ型デザインでコンパクトに持ち運べ、机上のスペースも有効活用できます。USB-Cポートを2つ備え、最大200Wの高出力でノートPCを2台同時に急速充電できます。革新的なTFTスマートディスプレイでバッテリー残量や使用状況をリアルタイム表示しています。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "【25000mAh・Can fully charge a laptop】With a large capacity of 25,000 mAh, this high-capacity mobile battery can charge an iPhone 15 about 5.2 times, a Galaxy S24 Ultra about 3.6 times, an iPad Pro 11\" about 2.6 times, and a MacBook Pro 14\" about 0.94 times Vertical design allows for easy storage, saving space and keeping your workspace or desk area uncluttered",
+        "【Single Port PD 3.1 140W High Output & Dual USB-C Ports Total 200W】With a large capacity of 25000mAh, the USB-C 1 port has a high output of PD 3.1 140W, and the USB-C 1 + USB-C 2 ports have a total high output of 200W (100W + 100W), allowing simultaneous fast charging of two laptops. This excellent specification truly combines large capacity and high output Why not choose a high-capacity, high-output mobile battery?",
+        "【3 Ports - 2 USB-C & 1 USB-A - Maintains 140W high output even with simultaneous charging of 3 devices】The USB-C 1 port supports PD 3.1 fast charging protocol, and when using the dual USB-C ports together, it outputs 100W + 100W. When using a single port or all 3 ports simultaneously, it can maintain the maximum output of 140W for the USB-C 1 port, making it a high-performance mobile battery! It also supports various rapid charging protocols such as PPS, QC, FCP, SCP, and can quickly charge a variety of devices with a wide range of applications",
+        "【TFT Color Screen・Charging Operation is Simple and Not Boring】Innovative TFT display adopted, simultaneously displaying battery level, input/output, voltage, current, power curve, etc. to grasp the usage status in real time Moreover, the standby screen features playful emoji faces, and with additional expressions added, there are various expressions to explore, so look forward to the discovery",
+        "【Industry-leading 21700 Lithium-ion Power Cell Adoption & Unique Thermal Guard Technology】Utilizing industry-leading high-capacity battery applications, this mobile power bank is equipped with multi-protection functions including prevention of overcharging, over-discharging, over-current, over-voltage, and short circuits, ensuring both high performance and enhanced safety features It also combines with UGREEN's exclusive Thermal Guard temperature control technology to improve charging efficiency, reduce energy consumption and lower heat generation"
+      ],
+      "productOverview": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 8,208 件レビュー / 星 4.4 の実績商品"
+      }
+    },
+    {
+      "product_id": "B0BR3M8XHK",
+      "rawTitle": "UGREEN Revodok 105 USB C Hub, 5-in-1, HDMI Output, USB Hub, Type-C 100W, PD Fast Charging, 1 x USB 3.0 + 2 x USB 2.0 Ports, 5 Gbps, Ultra Fast Data Transfer, Slim Hub, 4K@30Hz, Compatible with Window",
+      "cleanName": "UGREEN Revodok 105 USB-C ハブ 5-in-1",
+      "section": "amazon",
+      "category": "USBハブ",
+      "price_jpy": 1427,
+      "original_price": 2099,
+      "sales_count": 29349,
+      "evaluate_rate": 4.2,
+      "monthly_volume": "2K+ bought in past month",
+      "modelNumber": "CM478",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVZegZBfN7OkZnO9JcWIhMKYaZDPR0Ri4vU7R6QQbCxeExTLg3aN0E2WfT9tpuZcYxWRsV5pC48OqjZevyWd4pHHILUIlbPOMQNIrpOkhSS4YLGgop9DIJsBJDAJSScjXaivHPTVcyx9zS47Y7EukPWPPBgAMDdXrfV1utUFlZKrqG9LmiIl9Ta4HhNvoKggGuaEh17TUQ27CSJq7GFzaVrMEdvoPhcrsNyN0CIHT82xaVhEotqROGN498MR5Z1CBrZXx0KwuTU330RODI50E3dv7AITt7umQE2564ivAL9qnbPDp5fqR0irYq7bquRzF51hemSxlthhvIvN1bBuIxYujIPcz2IpFrY4Bwbgdneh7SFewgxd0T9cLqb4rhRtK1CaTy3PfJgEyYHJyyDiAtwqqrcSEuAhCpjsHjD4dHh4bXBCPBRKC3VoSF8CKjJk62cJlr7NJIxxOmfiY495Fo8v77qNKI22QZjSFQwXowUAf1AihzT7kypbugQ345p839y107DtCHkObJxWgEYogHXHsmj0OaqsVdob2GavMtpy1TqwIc4ZOaqJe7tntenLHPSbK6dncWnynIatvlT2dkhTjwcOcul8Feja2QHIZp6zsOOJugCdKdANH8VDNxmHP9ZXoqaL4Bp5lczv9NRZpWpMQg4IuZAe4igJykJ1DKj8K6GySsEh9",
+      "hasAffiliate": true,
+      "amazonUrl": "https://amzn.to/4dKvvsE",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15495-1.jpg?v=1752222131",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15495-1.jpg?v=1752222131",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15495-2.jpg?v=1752222131",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15495-3.jpg?v=1752222131"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Revodok 105 USB-C ハブ 5-in-1",
+        "asin": "B0BR3M8XHK",
+        "url": "https://amzn.to/4dKvvsE"
+      },
+      "specResult": {
+        "content": "拡張も、映像も、充電も。スマートに、これ一台。 わずか1つのUSB-Cポートから、HDMI・USB 3.0・USB 2.0×2・PD100W充電ポートへ一気に拡張。4K@30Hzの高精細映像出力、最大95Wの安定した急速充電、高速5Gbpsのデータ転送で、ノートPC・タブレットの可能性をスマートに広げます。過電流・短絡保護付きで、安全性にも配慮。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "『Slim & Use Multiple Ports Simultaneously』: The slim and sleek USB-C hub is a 5-port multiport adapter with an HDMI port and 1 USB 3.0, 2 USB 2.0 ports, and 1 PD charging port to instantly expand and improve the connectivity of your USB-C devices such as laptops and tablets",
+        "『Power Delivery of 100W』: Through the USB-C port compatible with Power Delivery 3.0, it can provide fast charging of up to 95W to computers such as MacBook, Surface Go, Dell XPS, HP Spectre, Lenovo Yoga, and more. It not only ensures device safety with overcurrent and short-circuit protection mechanisms but also supports PD 100W power supply You can connect multiple devices at the same time without worrying about power shortage ※Please note: This USB-C port does not support data transfer",
+        "Supports Vivid 4K Displays: This USB C multi-port hub has an HDMI port for connecting to an HDMI display, and can output video quality up to 4K (3840*2160P@30Hz) Supports 4K, Full HD 1080p, supports both audio and video output, mirror mode and extended mode No image tearing, stutter, or jerkiness, and good synchronization of audio and display",
+        "Instant file transfer in seconds: The USB-C hub adds one USB 3.0 port and two USB 2.0 ports for connecting multiple USB peripherals such as keyboards, mice, and memory Transfer files such as movies at super high speed with a maximum speed of 5Gbps",
+        "『24-month warranty period』: Products purchased from our store come with a 24-month warranty service We offer a 24-month warranty from the date the customer purchased the product until the date of the incident Please note: If intentional damage by the customer or a third party is confirmed, it will not be covered by the warranty"
+      ],
+      "productOverview": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 29,349 件レビュー / 星 4.2 の実績商品"
+      }
+    },
+    {
+      "product_id": "B07PYP57TQ",
+      "rawTitle": "UGREEN USB-C Lightning Cable [MFi Certified PD Compatible 1M] Fast Charging Lightning Cable High Durability Nylon Braid Compatible with iPhone 14 / 13 / 12 / 11 / X / 8 Plus and more",
+      "cleanName": "UGREEN USB-C Lightning ケーブル",
+      "section": "amazon",
+      "category": "USB-Cケーブル",
+      "price_jpy": 1039,
+      "original_price": 1272,
+      "sales_count": 18171,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "1K+ bought in past month",
+      "modelNumber": "",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4dFBIrh",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15978-1_1fbdb56b-b4ac-4cb1-87cc-8497f0838b58.png?v=1726657283",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15978-1_1fbdb56b-b4ac-4cb1-87cc-8497f0838b58.png?v=1726657283",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15978-2_e6740108-98b2-4e39-b581-aac10fd271d2.png?v=1726657284"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN USB-C Lightning ケーブル",
+        "asin": "B07PYP57TQ",
+        "url": "https://amzn.to/4dFBIrh"
+      },
+      "specResult": null,
+      "features": [
+        "Apple MFi Certified: This USB-C & Lightning cable has obtained Apple's official license \"Made for iPhone/iPad/iPod\" We have adopted the new C94 model Lightning connector with PD 20W support to ensure that you can comfortably charge and transfer data without any error pop-ups, fully compatible with your iOS devices",
+        "Power Delivery Compatible: Tested results show that this iPhone cable can provide up to 20W of power to your device, allowing the iPhone X to charge to 50% in 30 minutes ★Please Note★ To achieve fast charging, please use a PD-compatible USB-C charger \"18W/20W/30W/45W/61W/65W and 87W\"",
+        "Compatible with multiple models: As you know, iPhones sold since 2017 including iPhone 14 / 14 Plus / 14 Pro / 14 Pro Max / iPhone 13 / 13 Pro Max / 13 mini / iPhone 12 / 12 Pro / 12 mini / 12 Pro Max, iPhone 11 Pro Max, iPhone X / XS / XS Max, iPhone XR, iPhone 8 / 8 Plus support fast charging With this Lightning USB C cable, fast charging is also possible Or, for iPads, it supports fast charging for the 1st and 2nd generation iPad Pro 12.9 inch, 10.5 inch, iPad Air 3, and iPad mini 5",
+        "Enhanced durability: Both ends of the USB connectors are integrated with plugs made of aluminum alloy, which increases the durability of insertion/removal by 90% (tested with over 15,000 insertions/removals), and the root is also ergonomically designed and reinforced to make it more comfortable to hold and prevent breakage The durable nylon braided cable is not only less prone to tangling but also sufficiently flexible, making it easy to handle and store in your bag",
+        "Charge and data transfer in one cable: Connect your iPhone, iPod, or iPad with a Lightning connector to a PC with a USB-C port for efficient charging and data transfer Supports data transfer rates up to 480 Mbps Multi-shielded 21AWG cable ensures stable signal transmission"
+      ],
+      "productOverview": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 18,171 件レビュー / 星 4.4 の実績商品"
+      }
+    },
+    {
+      "product_id": "B0CWV3SFVV",
+      "rawTitle": "UGREEN MagFlow ワイヤレス充電器 2-in-1 最大15W",
+      "cleanName": "UGREEN MagFlow ワイヤレス充電器 2-in-1 最大15W",
+      "section": "amazon",
+      "category": "ワイヤレス充電器",
+      "price_jpy": "",
+      "original_price": "",
+      "sales_count": 0,
+      "evaluate_rate": "",
+      "monthly_volume": "",
+      "modelNumber": "35278",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4uBRt8t",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45023-1.jpg?v=1752141985",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45023-1.jpg?v=1752141985",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45023-3.jpg?v=1752141985",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45023-4.jpg?v=1752141985",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45023-2.jpg?v=1752141945"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN MagFlow ワイヤレス充電器 2-in-1 最大15W",
+        "asin": "B0CWV3SFVV",
+        "url": "https://amzn.to/4uBRt8t"
+      },
+      "specResult": {
+        "content": "ただ置くだけ、2台をスマート急速充電。 UGREEN MagFlow ワイヤレス充電器は、iPhoneとAirPodsを2台同時に急速ワイヤレス充電できる1台2役モデル。MagSafe対応でApple純正と同等の充電スピードを実現し、動画視聴しながらの横置き充電もOK。最大15W出力で高速かつ安定した給電に加え、過電流・過充電・温度制御など多重保護も搭載。iPhone 16シリーズからAirPods、Galaxy Budsなど多くのQi対応機器と互換性があり、普段使いにもビジネスにも最適です。",
+        "source": "ugreen.jp"
+      },
+      "features": [],
+      "productOverview": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で ? 件レビュー / 星 ? の実績商品"
+      }
+    },
+    {
+      "product_id": "B0CR6JS8J9",
+      "rawTitle": "UGREEN SD Card Reader Type C Card Reader SD/TF Simultaneous Read/Write USB 3.0 OTG Function High-Speed Bi-Directional Data Transfer Type-C Interface Compatible with Android Phones, iPhone 15/Pro Max",
+      "cleanName": "UGREEN SDカードリーダー Type-C 黒",
+      "section": "amazon",
+      "category": "SDカードリーダー",
+      "price_jpy": 849,
+      "original_price": 999,
+      "sales_count": 952,
+      "evaluate_rate": 4.5,
+      "monthly_volume": "200+ bought in past month",
+      "modelNumber": "35622",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4nZGWSd",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/25683-1_6103a6a6-0421-4f8c-a6e0-55e214b4911f.jpg?v=1762765689",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/25683-1_6103a6a6-0421-4f8c-a6e0-55e214b4911f.jpg?v=1762765689",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/25683-2_1264aa74-2bd2-4a4c-bf2c-df312de73a3a.jpg?v=1762765689"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN SDカードリーダー Type-C 黒",
+        "asin": "B0CR6JS8J9",
+        "url": "https://amzn.to/4nZGWSd"
+      },
+      "specResult": {
+        "content": "UGREENのUSB-C対応2in1カードリーダー。SD・TFカードを同時に読み書きでき、最大5Gbpsの高速転送で写真や動画を数秒で共有可能。OTG対応でPCなしでもスマホ間データ移行が簡単。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "✅【2-in-1 SD/TF Card Simultaneous Reading】This 2-in-1 card reader is designed for data exchange between USB-C port devices and external memory cards The memory card reader is equipped with an SD card port (SD/SDHC/SDXC) and a TF card port (Micro SD/Micro SDHC/Micro SDXC/TF), allowing simultaneous reading and writing of two cards, freeing you from the hassle of unnecessary insertion and removal",
+        "✅【USB3.0 High-Speed Bi-Directional Transfer OTG Support】The USB3.0 connector is approximately 10 times faster than the previous USB2.0, allowing you to enjoy high-speed data transfer of up to 5Gbps Compatible with UHS-I cards, it can transfer large amounts of data such as files, photos, and videos in seconds Moreover, this Type-C SD card reader is equipped with OTG functionality, allowing you to easily transfer photos taken with a digital camera between your smartphone and SD card without the need for a computer ※Note: Please confirm whether your smartphone supports USB-OTG before use",
+        "✅【Easy Operation Plug and Play】Simply connect the USB-C SD card reader to your device to start using it No third-party apps, drivers, or complex settings are required. Simply insert the SD/Micro SD card into the slot to transfer photos and videos taken with a digital camera to your smartphone/iPad/PC",
+        "✅【Wide Compatibility】The SD card reader is compatible with computers, smartphones, and tablets equipped with a Type-C port, including Windows, Mac OS, Linux, and Android Compatible with iPhone 15/iPad Pro/MacBook Pro Air/Dell/HP/Galaxy/xiaomi with USB-C port You can transfer not only photos, videos, and music, but also document data such as Excel and PDF",
+        "✅【Please Note】This product has undergone firmware updates, but some units may not perform as expected To promptly update to the latest version of the firmware, please contact us at your earliest convenience"
+      ],
+      "productOverview": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 952 件レビュー / 星 4.5 の実績商品"
+      }
+    },
+    {
+      "product_id": "B0DSBSBSGW",
+      "rawTitle": "UGREEN [70cm Retractable] 3-Port Total 60W Cigarette Socket with Magnetic Storage for Upper Cord, Adjustable Length and Angle with One Hand, \"Driving Utility Car Storage\" Supports PD and PPS",
+      "cleanName": "UGREEN Nexode 巻き取り式 USB-Cケーブル内蔵 カーチャージャー 60W",
+      "section": "amazon",
+      "category": "車載充電器",
+      "price_jpy": 2864,
+      "original_price": 3680,
+      "sales_count": 1258,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "300+ bought in past month",
+      "modelNumber": "EC602",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/49whi1q",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/55212-2.png?v=1753068514",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/55212-2.png?v=1753068514",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/55212-3.png?v=1753068514",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/55212-4.png?v=1753068514",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/55212-1.png?v=1753068514"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Nexode 巻き取り式 USB-Cケーブル内蔵 カーチャージャー 60W",
+        "asin": "B0DSBSBSGW",
+        "url": "https://amzn.to/49whi1q"
+      },
+      "specResult": {
+        "content": "クルマ時間を、スマートに充電。UGREEN巻き取り式シガーソケット。 最大70cmの巻き取り式ケーブルで、片手でサッと引き出し、ピタッと固定＆自動収納。PD30W急速充電＆E-markerチップで、安全かつスピーディーに対応。スマホやタブレットはもちろん、幅広いUSB-C機器に対応。耐久性にも優れ、毎日の車内利用にも安心。スタイリッシュで統一感ある空間を演出！",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "【70 cm retractable】Easily adjustable length in 8 steps (maximum length 700 mm), designed for optimal use in the car or on the go! Retractable design for stress-free use! Simply pull lightly to fix the length, and pull again for easy storage! Designed to be pulled out with one hand, so you don't have to bother looking for the cable!",
+        "【PD30W Fast Charging】Trend of the cigar socket? Fast charging at a maximum of 30 W, so you can fully charge your smartphone and tablet at once! UGREEN retractable cigarette lighter socket combines convenience and high performance for a uniform car space",
+        "【Long Life・Smooth】Even with repeated daily insertion and winding, it maintains stable performance for a long period! The cable part is made of durable material, making it less prone to breaking, and the connector part has been reinforced to ensure reliable UGREEN quality! Here's a level of durability that you will get tired of before it breaks *Note: But please don't use excessive force",
+        "【PD3.0, E-maker intelligent chip equipped】While PD fast charging is important, stability and safety are also crucial Equipped with intelligent output detection and distribution functions Considering the power supply and charging device conditions, optimal power control is possible",
+        "【Wide Compatibility for Various Devices】Compatible with various C-type devices such as iPhone/iPad Pro/Xiaomi/Galaxy/Pixel/Xperia/NS2/GoPro/cameras/PS5 controllers and more!"
+      ],
+      "productOverview": [
+        {
+          "key": "Brand",
+          "value": "UGREEN"
+        },
+        {
+          "key": "Connector Type",
+          "value": "USB Type C"
+        },
+        {
+          "key": "Compatible Devices",
+          "value": "Tablets"
+        },
+        {
+          "key": "Compatible Phone Models",
+          "value": "Galaxy/iPhone/Pixel"
+        },
+        {
+          "key": "Included Components",
+          "value": "User Manual"
+        },
+        {
+          "key": "Input Voltage",
+          "value": "12 Volts"
+        },
+        {
+          "key": "Amperage",
+          "value": "11 Amps"
+        },
+        {
+          "key": "Total USB Ports",
+          "value": "3"
+        },
+        {
+          "key": "Wattage",
+          "value": "60 W"
+        },
+        {
+          "key": "Number of Items",
+          "value": "1"
+        }
+      ],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 1,258 件レビュー / 星 4.4 の実績商品"
+      }
+    },
+    {
+      "product_id": "B0BHMP6TVM",
+      "rawTitle": "UGREEN ポータブル電源  PowerRoam600 (GS600)",
+      "cleanName": "UGREEN ポータブル電源  PowerRoam600 (GS600)",
+      "section": "amazon",
+      "category": "ポータブル電源",
+      "price_jpy": "",
+      "original_price": "",
+      "sales_count": 0,
+      "evaluate_rate": "",
+      "monthly_volume": "",
+      "modelNumber": "",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/49ujIxv",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15052-1.png?v=1732009462",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15052-1.png?v=1732009462",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15052-2.png?v=1732009462",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15052-3.png?v=1732009462",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15052-4.png?v=1732009462"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN ポータブル電源  PowerRoam600 (GS600)",
+        "asin": "B0BHMP6TVM",
+        "url": "https://amzn.to/49ujIxv"
+      },
+      "specResult": null,
+      "features": [],
+      "productOverview": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で ? 件レビュー / 星 ? の実績商品"
+      }
+    },
+    {
+      "product_id": 1005008702713918,
+      "rawTitle": "【米国プラグ】UGREEN 20W 30W GaN 充電器ミニ PD 3.0 USB C 電話充電器 iPhone 16 15 14 Pro Samsung S25 Xiaomi タブレット iPad Air用",
+      "cleanName": "UGREEN GaN 20W/30W mini USB-C 充電器",
+      "section": "aliexpress",
+      "category": "充電器",
+      "price_jpy": "975",
+      "original_price": "2062",
+      "sales_count": 10823,
+      "evaluate_rate": "97.0%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVZbiSowkFsJDe2YE5RZf15Va8wfBoXINF8qPJQ7HU5wLPrJCmRwJqCEF83zc4eB33RUdb3glYpUN5Hs1awIVzd07t0OJo8ojVxR0fFUUsxe1BAXuGsIlJ8uRANdG60SMospFuvYh8lSuwvlvioIYFRDEy0Fj9MV5E2XdjfxzrxvlEmJarn0fZOg2mKV68BNRy9gy68eTBv5Fy9Wt8uS57vx5mhndWbGT7XRPIOTy2wzKCvkBd1isGE4ahGVhVoe0E2Rs8H97oEOD2xPimuE2sL2isue8PAM4ooh7971WgHGa0nCwq9wxzna2w443TvmqP9l0hEP8lcJkKCRAqxbqkLqb5Vs27tUghOI3AXkGnAYvcsYXn7TuplEuWjGQnmIX7JohDGMIn3qtAnRn7mNedT4n4JgwfCjUq0BlPCXCCA4Ft9fQrmFYsYhgTVYidDSFkyBxAncaz02MOb5ZRXv2XVlfNls9ncnXz5A1f3TKpWFzsfOi4XiXsMNmDObpD0pRTD2IgiCyvEokZ4HqWCQonas6SlTRonSxx1NMLxkIvHE4MvnO1CLpY1NLAw9MdnWFMVjRMBcw3ImYvMY9j574Mud32ClGfkKeAvGx4JkctfgriWVDHJeYpw22j2A88hvlpbgAFbxijbRJBxRmB2UyamqKsE4e03EtrvjG0CMDzKyovbAaal6T",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S34a9d4ec6be64cd5a8546a45d74b3d78c.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S34a9d4ec6be64cd5a8546a45d74b3d78c.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S34a9d4ec6be64cd5a8546a45d74b3d78c.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S525da0d598c74bbda525536ef8490b58K.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd195be4e24774efaa58151bec4733ab9f.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S65d0b80d3e9544d3b561705fe9eef617N.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2d8c6db91b7d4a2e9ab78d89f071fdbeC.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN GaN 20W/30W mini USB-C 充電器",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近10,823件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005010255498921,
+      "rawTitle": "UGREEN USB C ハブ Steam Deck ドッキングステーション 6-in-1 Type-C to 4K120Hz HDMI 5Gbps USB-A/C PD100W 1000Mbps RJ45 (ROG Ally、Legion対応)",
+      "cleanName": "UGREEN Steam Deck USB-C ハブ 6-in-1 100W",
+      "section": "aliexpress",
+      "category": "USBハブ",
+      "price_jpy": "5352",
+      "original_price": "11619",
+      "sales_count": 1515,
+      "evaluate_rate": "97.8%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLeKHsRf9R2jgKD32Axm5na4bRJdkhGVyv3GcDgMjmYrrZWinWctR9gnPwA4k6KUgRzWMt8hSQ0nJXgf7CF8tAi2IIXXywyQjxqA4wQSITDifITXWE0RWE1oLwrgusunQ5QesTe5qY1ZTpg7TvIGVwm3Febnee8duXAAkWQuo17IoKrJjoiTsNwLgSN5UzB8IqMg03SmIdLTzZ4I50NTrlMffXNPTwVLg7KxLktcFxnkz79PzDKz2dUWtNYQfODeX1JUC4T4J18wmmOYqGJj4grU0R42jF4tQLXNAg1tBM8t1CAHyHXxn79YWkiwIL6c0vb5xTnvw3sHKEPOCQ0xnPNw5UEVTElslw4IwP3R82jOYkj2ldQ5KdN7Uvh5SBlutXJbV3PekGpxvvUYOOelolnu5e2w9z0CyrLVwDG3pOWlA2T6jK4mRQJ1M4HgYfvGVBrKmxBdWIa0v8hFOXDCeBhGije76SkDfwHJKPczNDNP7Gi0dBXkPGGelfOSqWdZTE0KpTdGGspXxQguEJpSfZQaYPAOw6Sy3Yt7cVoMcxY7I3ZEl37OX1P4ONO3I2SzzKg1HvtuU2ajrAMWljhwFHKxE7ETY3t7nCCuRDqXD0ovp6wb7Bs1unVpDfV88zCykZEbfatR5Y1P46tPD0gX7Iotrlc9VJUuyscICLS86WznonnyPKZUqS8WC6nk3fcGFQnJ5ip0gBio906cww0BhuteN7VEHUeyDSy1rqoVJ13PNG5XwCgNm6iPWrJPktUU258nNN3lF",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S60776e0734444418af3ae8c2f84af46a2.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S60776e0734444418af3ae8c2f84af46a2.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S60776e0734444418af3ae8c2f84af46a2.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S847e24b2d4e942b8b9229c9f0bc053b1p.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8463ca604487440da48e221a4b5e9aa7t.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sbef731e8e38044c58cfcdb2c298ff8adV.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S33c4c99f532043dbb843660e1b2b5dcej.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN Steam Deck USB-C ハブ 6-in-1 100W",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近1,515件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005010264264682,
+      "rawTitle": "UGREEN デジタルディスプレイ搭載 USB-C ケーブル 240W PD3.1 Type-C コード ノートパソコン MacBook iPhone 17 Samsung S25 Xiaomi 充電器 急速充電対応",
+      "cleanName": "UGREEN 240W PD3.1 デジタル表示 USB-C ケーブル",
+      "section": "aliexpress",
+      "category": "USB-Cケーブル",
+      "price_jpy": "1758",
+      "original_price": "3695",
+      "sales_count": 4688,
+      "evaluate_rate": "97.6%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVYQTluUjiwZ7DJAnvncd6CDwCaoaBs3H28OpjaIU7xlCSD1RtBKE4ME48bPxYdK6qhCnikuAaST3fSwm03x2fS8Iz1AB4BwDHPN4qKFRwatg0XXnEiVyta9GyZrHbGKbtH8lp1WwPsfrqThyCM4AdiOKiPtMbRDu9Ufbt1RVr6PYvetA2teTlAz790SyqgUL2wqw3I3RFQsDhG36VmnwDIlLVz9X8HK8YvPSECsOFVudS424PPv5CwWEiqBVIXcRThfgNFPzaBxnUWTERrZRpM7arp1zGarf43RlJLKgJoDWCbRdwc6hlTL02ATfYjp0F3P70YFkgy3L17cxhu6o1uam16d3RtyvQt81hqV4KOLNYieNX9ntHCCBSWOHQUsGOwu4BZEn6kF9QmjZLQiZQY5bZjveTmQulYQeKduBVR4LeGRtUfM8iLVuUbdDQNlNSsGdXwQmJ8EE7kJj22nXlEG57Di0Fnh5o8iZZHxFegEje9aPaxFYBeuF4es22U73SH20u1gApKLbgdm9DBGWLxpbJbaCmscbmigWtV5Svz6nhfX06cljIrydtVaqCXbeOTk5n1WbEciH9kRi5786jQDd8mUSHDzncCv72lAmspbqPU25w4FbxFdPqHuntJC33bnTolYZOItgSOMBOlDbgMh1pQde3QxsEi5DGw8RUH9whtYiVCpN",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sa6d66a6537f14326af3a477190090489p.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa6d66a6537f14326af3a477190090489p.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa6d66a6537f14326af3a477190090489p.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1494a0dabfcc466ea3431c08bf58c56bK.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc8097c152d9343338b7515bd175ff926y.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S189af26a42cf4b74afb35f76a3d8d890J.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S47e155532c4a4856823cd74a307df658u.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN 240W PD3.1 デジタル表示 USB-C ケーブル",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近4,688件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005006897972401,
+      "rawTitle": "UGREEN カードリーダー USB3.0 & USB C から SD MicroSD TF Thunderbolt 3 PC ラップトップアクセサリースマートメモリカードリーダー SD カードアダプター",
+      "cleanName": "UGREEN USB3.0+USB-C SDカードリーダー",
+      "section": "aliexpress",
+      "category": "SDカードリーダー",
+      "price_jpy": "631",
+      "original_price": "1753",
+      "sales_count": 1284,
+      "evaluate_rate": "97.0%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVZemyusyvKxoEX70SV5VuLb3ukxBf6BrRSE1s6F61BGCMbUKb6M4l9pBSVlJKtcBnkCZQW7th7v3PjJiWVWndyxQ9nX19UGZqTmQhgy2i54iXiXqgfYsyR4sXcyAtHdZYb25dQHhQG2Qg1upUwYhI6xjITMwyoastfcEcyBQpTAzmyZtB0OnmozRir8tr8JeruKlLzQ3tS7WA0SU194kox3LNO7pd7uOOb1IGAh2CDypw4KrCFfTZxR2HC6SQFlL6zC7KKHktbzFqWt3GqPvSsrbpS91V2XDdM8dRnrREA1fOgG6zitAwVWIKZ7Ike7qx7Ubj9FH7WNdyDwcL0PQhVUoRs4W3yFl46QzQPZOXB1DTlGt4c0KTTeOuzVIZpeS9UD9OeawJMRCM0WyZnTvsrDGBUaxTWKcCtjwMkTERn6Kq2pB4Xvaqbodg2NeZeAZ9kFkdc3jKmEVqTJWqetiJQtjXfWmi5eay3IopdvIBWp1F3JVG9bILw3nqzuwZ3oecLpNNCGtLiSV8FAS26xsW1M8yWAw8iVOiD0eVSHOjmT82yK3lr6vTdjYKTl4RYelmUOexEL1M1QBvedDAR82zj1xluRY35avHQ6Bu1a9ocGbQIh4u26O4wMnp7UHcf5p0jbma4vHw479rMDVSRQaVVtp0oQoH8GoipN4C2UcM1ANzTgy1oFh",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S1838d2d145f6418eadbebfa684265500m.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1838d2d145f6418eadbebfa684265500m.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1838d2d145f6418eadbebfa684265500m.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S596e8f63a3e94d4c8e5ad69731b2b68cK.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sefa546fd8130484caa9552840161f01eW.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S97bf645366a540348c1d6afdb7bf9f1cb.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S596ce2863323429aa046447f95a40e10x.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN USB3.0+USB-C SDカードリーダー",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近1,284件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005007009143875,
+      "rawTitle": "【新入荷】UGREEN USBカーチャージャー 30W急速充電 4.0 QC4.0 QC3.0 PD Type C 急速車載USB充電器 iPhone 17 Xiaomi携帯電話対応",
+      "cleanName": "UGREEN USBカーチャージャー 30W急速",
+      "section": "aliexpress",
+      "category": "車載充電器",
+      "price_jpy": "923",
+      "original_price": "1964",
+      "sales_count": 324,
+      "evaluate_rate": "96.6%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVZD4Fr40YdGGtYluc16nbqMPlfB6B7Cy5xA0r26f8JTSDtNdrFkOfKyi57T8BzlChM3tfP9uFIYKgoMRZ9zHbzifUYHy8zcxxra9toWbcmnCotWqOZNfz3S9iaVRtDHsHcT9Qn4FeegTJPqpnLdFHNhWLl8dAeu1MBOHmxVJqlplOjsp0FLcw3WJtnyWlCNDkQhu7QSM6VJOVee3cA58MF98xMolI7CWtrcdTFY8UwpfsiHgrEv8R3jG7iefIGHpCaft828b2oBwXVchvO4FdifSpWd6NOCtf0G3ktRfpSoDc1hyPN98suoru3aJs12bbQxcqivzpQi9vWrWVcjofuYLJX7U9ObeHA1YS6IBr5BI0GRl33ffXXPSxkTTeXXti6Jkqc3pDEnfTbYDwD8nkllf0dqP5bKDWRbfp0mdNw04glNNoCpRXCP7tvIfslgcD1dSHGfRE4RYpYC41Gti2kXH5akWWTygm48zmw8ogz3Rhhwr0Z4Hl3XpUOqaABojdaND5lpkDosaUWFZb9PR7EG0zu8pOxSgi8YWjT9mbqQGqzdVmEtbEgIUtphGJ3NEwYQXctptY852NDv5a4ELSaYXywY41FRlsVfCXrXbjuOZjXuWVOauRZlsxCXPAWeawqsZ7ok7qbC3phEskGl4Yddl2Hf5kMwRxJOdc9J6ekP1mh4ASLQ3",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S7640cf7f8199490cb3324bf6838cb53a3.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S7640cf7f8199490cb3324bf6838cb53a3.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S7640cf7f8199490cb3324bf6838cb53a3.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S52f9a5bd247f4301b5a4e5303bb1a7dd7.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sfb0a95e7b28e49a18d422ba7459044bbc.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S553664fb23964c3294d6cec7d1b3f4fcA.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S15141a4330f64d5290c666cc3c8606828.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN USBカーチャージャー 30W急速",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近324件販売の実績"
+      }
+    }
+  ],
+  "tavilyResults": [],
+  "brandInfo": {
+    "name": "UGREEN",
+    "nameJp": "ユーグリーン",
+    "companyName": "Shenzhen Ugreen Technology Co., Ltd.",
+    "companyNameJp": "深セン緑联科技股份有限公司",
+    "founded": 2012,
+    "headquarters": "中国・広東省深セン市",
+    "countriesOperating": "100+",
+    "stockListing": "深セン証券取引所（300893）",
+    "japanEntity": "Ugreen Japan合同会社",
+    "keyCertifications": [
+      "PSE",
+      "FCC",
+      "CE",
+      "RoHS",
+      "Apple MFi",
+      "USB-IF",
+      "Thunderbolt"
+    ],
+    "similarBrands": [
+      {
+        "name": "Anker",
+        "founded": 2011,
+        "hq": "中国・深セン",
+        "strength": "モバイルバッテリー・充電器"
+      },
+      {
+        "name": "Baseus",
+        "founded": 2011,
+        "hq": "中国・深セン",
+        "strength": "車載・カー周辺・小物"
+      },
+      {
+        "name": "UGREEN",
+        "founded": 2012,
+        "hq": "中国・深セン",
+        "strength": "USBハブ・ドック・NAS"
+      }
+    ]
+  },
+  "generatedAt": "2026-06-02T13:23:55.735Z"
+}

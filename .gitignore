@@ -25,3 +25,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# UGREEN scrape raw data (large, regenerable)
+data/ugreen/ugreen-jp-images/
+data/ugreen/memos/
+data/ugreen/amazon-ugreen-catalog.json
+
+# Office lock files
+*.~lock.*#
