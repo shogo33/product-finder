@@ -1,202 +1,180 @@
 {
   "keyword": "UGREEN ケーブル おすすめ",
   "slug": "ugreen-cable-osusume",
-  "category": "basics",
+  "category": "gadget",
   "searchIntent": "おすすめ系|比較系",
-  "searchIntentNote": "UGREENのケーブルを購入したいが種類が多く迷っている層が、用途・規格別の具体的なおすすめ商品を知りたがっている。価格帯や性能の違いを比較しつつ「これを買えば間違いない」という確信を求めている。",
-  "persona": "ガジェット好きが高じてAliExpressでケーブル類を大量買いしてきた自称「ケーブルオタク」。規格や伝送速度の細かい違いを語り出すと止まらないが、結局「コスパ最強はどれか」という実用的な結論を大切にしている。",
+  "searchIntentNote": "UGREENのケーブルを買おうとしているが、USB-C/Lightning/L型/240Wなど多種類のうちどれを選ぶべきか迷っているユーザー。MacBook Pro充電や急速充電用に正しいW数を選びたい意図が強い。",
+  "persona": "Anker・UGREEN・Baseusのケーブルを10本以上使い分け、USB-PD/PD3.1/E-Markerの違いを実感で語れるガジェットオタク。アリエク・Amazon両刀使いで、MFi認証やAmazonレビュー数も常に確認する慎重派。煽らず事実ベースで読者の不安に応える。",
   "targetProductCount": 5,
   "titles": [
-    "UGREENケーブルおすすめ5選【2026年最新】種類・用途別に徹底比較",
-    "UGREEN ケーブルおすすめ比較【2026年】失敗しない選び方と人気5選",
-    "【2026年最新】UGREENケーブル5選｜充電・映像・データ転送を完全網羅"
+    "UGREENケーブルおすすめ5選｜USB-C・Lightning・240W用途別ベスト",
+    "UGREEN ケーブルの選び方｜MacBook Pro用240Wから定番Lightningまで",
+    "UGREEN USB-Cケーブルおすすめ｜100W・240W・L型を徹底比較"
   ],
-  "selectedTitle": "UGREENケーブルおすすめ5選【2026年最新】種類・用途別に徹底比較",
-  "metaDescription": "UGREENケーブルのおすすめ5選を2026年最新情報で徹底比較。USB-C充電・映像出力・データ転送など用途別に選び方のポイントも解説。AliExpressで賢く安く手に入れたい方はこの記事をチェック！",
-  "intro": "「UGREENのケーブルって種類が多すぎて、結局どれを買えばいいの？」そんな悩み、ありませんか？充電用・映像出力用・データ転送用と用途はさまざまで、規格もUSB-C、Lightning、HDMIと多岐にわたります。間違えて購入するとせっかくのスペックが活かせないことも。この記事では、AliExpressでUGREENケーブルを買い続けてきた経験をもとに、用途別おすすめ5選を厳選してご紹介します。選び方のポイントも丁寧に解説するので、初めての方でも迷わず選べるはずです。コスパ重視でケーブル選びを成功させたい方は、ぜひ最後まで読んでみてください。",
+  "selectedTitle": "UGREENケーブルおすすめ5選｜USB-C・Lightning・240W用途別ベスト",
+  "metaDescription": "UGREEN（ユーグリーン）ケーブルのおすすめ5モデルをAmazon実績で徹底比較。Lightning定番からPD3.1 240W MacBook Pro対応、L型100W、USB-A to Cまで、用途別の最適解とPSE取得・MFi認証情報も解説します。",
+  "intro": "「UGREENのケーブル、どれを選べばいい？」「100Wと240Wの違いは？」「MacBook Proを充電するにはどれが必要？」と迷っていませんか。\n\n結論から言うと、UGREENのUSB-Cケーブルは Amazon累計レビュー1万件超のロングセラーが複数あり、用途別に「Lightning定番」「USB-C 100W」「L型 100W」「PD3.1 240W（MacBook Pro対応）」「USB-A to USB-C急速」の5本軸で選べば失敗しません。\n\nこの記事では、UGREEN正規流通の5モデルをAmazon実績ベースで比較し、用途別の選び方とPSE取得・MFi認証など信頼性情報まで一気通貫で解説します。",
   "sections": [
     {
       "id": "section1",
-      "h2": "UGREENケーブルとは？なぜAliExpressで人気なのか",
+      "h2": "UGREENケーブルが選ばれる理由｜MFi・USB-IF認証実績",
       "h3s": [
-        "UGREENブランドの特徴と信頼性",
-        "AliExpressで買うメリット｜国内より圧倒的に安い理由"
+        "Anker・Baseusと並ぶ深圳系3大ブランドの一角",
+        "Apple MFi認証・USB-IF認証・PD3.1対応の高信頼性",
+        "Amazon累計レビュー1万件超のロングセラー多数"
       ],
       "type": "brand_overview",
       "notes": [
-        "UGREENはケーブル・充電器などアクセサリーで世界的に高評価の中国メーカーであることを紹介",
-        "Amazon等より安価に入手できるAliExpressの価格優位性とChoiceバッジによる安心感を説明",
-        "耐久性・規格準拠（USB-IF認証など）の観点から信頼できるブランドである根拠を述べる"
+        "UGREENは2012年創業の中国深圳発メーカー。ケーブル類は同社の主力カテゴリでAmazon累計レビューが10万件超",
+        "Lightning系はApple MFi認証、USB-C系はUSB-IF認証、240W対応はPD3.1認証取得済み",
+        "「中国製ケーブル」への漠然とした不安に対して、認証実績で信頼性を担保"
       ]
     },
     {
       "id": "section2",
-      "h2": "【第1位】UGREEN USB-C to USB-C 100W急速充電ケーブル",
+      "h2": "UGREENケーブルの選び方｜W数・コネクタ・長さ",
       "h3s": [
-        "スペックと特徴",
-        "こんな人におすすめ"
+        "出力W数の目安（60W：スマホ、100W：MacBook Air、240W：MacBook Pro 16inch）",
+        "コネクタの組み合わせ（USB-C/C、USB-C/Lightning、USB-A/C）",
+        "長さの選び方（0.5m：モバイル、1〜2m：デスク、3m：ソファや布団）"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "100W対応・PD充電対応でノートPCやスマホの急速充電に最適な点を強調",
-        "編み込みナイロン素材による耐久性と取り回しの良さについて具体的に記載",
-        "AliExpressでの価格帯（目安）とレビュー評価を交えて購入背景を補強"
+        "用途別にW数の目安を表形式で提示",
+        "iPhone 15以降はUSB-C搭載、iPhone 14以前はLightningという区別を明確化",
+        "ケーブル長は短すぎても長すぎても使いにくいので、用途別の推奨長を提示"
       ]
     },
     {
       "id": "section3",
-      "h2": "【第2位】UGREEN USB-C to Lightning MFi認証ケーブル",
+      "h2": "UGREENケーブルおすすめ5選",
       "h3s": [
-        "スペックと特徴",
-        "iPhoneユーザーに選ばれる理由"
+        "USB-C to Lightning ケーブル：iPhone 14以前なら定番MFi認証品",
+        "US316 USB-C/C 100W：1m〜3mの4種類から選べる万能機",
+        "USB-A to USB-C：旧型ACアダプタで急速充電したいなら",
+        "US334 USB-C/C L型 100W：スマートに配線できるL型コネクタ",
+        "PD3.1 240W USB-C：MacBook Pro 16inch対応の最大出力モデル"
       ],
       "type": "product",
       "notes": [
-        "MFi（Made for iPhone）認証取得済みでApple純正と同等の安全性・互換性がある点を解説",
-        "急速充電（最大27W）対応でiPhone純正アダプタより充電が速い実例を紹介",
-        "AliExpressで安く買えるMFi認証ケーブルとして希少な存在であることを差別化ポイントに"
+        "全5商品が独立した product card として展開される",
+        "本文には『なぜこの商品か（実績・スペック根拠）』『どんな人向けか』『デメリット/注意点』を簡潔に書く"
       ]
     },
     {
       "id": "section4",
-      "h2": "【第3位】UGREEN USB-C to HDMI 4K対応ケーブル",
+      "h2": "UGREENケーブル5モデル比較表",
       "h3s": [
-        "スペックと特徴",
-        "テレワーク・映像出力に最適な使い方"
+        "出力・コネクタ・長さ・価格を一覧",
+        "用途別おすすめ早見"
       ],
-      "type": "product",
+      "type": "comparison",
       "notes": [
-        "4K@60Hz対応・HDR対応でPCやスマホをテレビ・モニターに出力できる汎用性をアピール",
-        "Thunderbolt 3/4やDP Alt Mode対応端末での使用例を具体的に紹介",
-        "在宅ワーク・プレゼン・ゲームなど幅広いシーンで活躍することを伝える"
+        "5モデルを比較表で整理。列：モデル名・コネクタ・最大W・長さ・MFi/USB-IF・参考価格",
+        "「iPhoneだけ → Lightning」「MacBook Air → 100W USB-C」「MacBook Pro → 240W」「机周りスマート → L型」のような早見"
       ]
     },
     {
       "id": "section5",
-      "h2": "【第4位】UGREEN USB-C to USB-A 3.0 高速データ転送ケーブル",
+      "h2": "UGREENケーブルの安全性と認証",
       "h3s": [
-        "スペックと特徴",
-        "旧世代デバイスとの橋渡しに"
+        "Apple MFi認証取得状況",
+        "USB-IF認証とE-Markerチップの役割",
+        "断線・発熱対策（ナイロン編組・E-Marker搭載）"
       ],
-      "type": "product",
+      "type": "brand_overview",
       "notes": [
-        "USB 3.0（5Gbps）対応で写真・動画などの大容量ファイル転送も快適な点を紹介",
-        "USB-Aポートしかないパソコンやカーチャージャーとの接続にも対応できる汎用性を説明",
-        "充電と転送の両用対応で1本持っておくと便利なシーンを複数挙げる"
+        "MFi認証ありとなしで何が変わるか（iPhone充電エラー、iOSアップデートでの認識停止リスク等）を解説",
+        "E-Markerチップが100W超の安全動作に必要な事実",
+        "UGREENの編組ケーブルは1万回曲げテストパスなどの耐久性アピールを紹介"
       ]
     },
     {
       "id": "section6",
-      "h2": "【第5位】UGREEN マグネット充電ケーブル（USB-C / Lightning 対応）",
+      "h2": "UGREENケーブルの用途別おすすめ",
       "h3s": [
-        "スペックと特徴",
-        "脱着ラクラク！デスク周りをスッキリさせたい人に"
+        "iPhone 14以前ユーザー向け",
+        "iPhone 15以降・iPad Pro USB-Cユーザー向け",
+        "MacBook Air ユーザー向け",
+        "MacBook Pro 14/16inchユーザー向け"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "マグネット着脱式で繰り返し抜き差しによるポート破損リスクを大幅軽減できる点を強調",
-        "USB-C・Lightning・Micro USB対応ヘッドが付属するモデルが多く、家族全員のデバイスに使える点を紹介",
-        "最大100W対応モデルもある点と、AliExpressならではの価格優位性を最後に添える"
+        "ユーザータイプ別に本記事5モデルから1〜2つずつ推奨を絞り込む",
+        "「iPhone 14以前→ Lightning」「iPhone 15以降→ US316 100W」「MacBook Air → US316」「MacBook Pro → PD3.1 240W」"
       ]
     },
     {
       "id": "section7",
-      "h2": "UGREENケーブルおすすめ5選を一覧比較",
+      "h2": "AliExpressのUGREEN公式ストアにもケーブルあり｜どちらで買うべき？",
       "h3s": [
-        "スペック比較表の見方",
-        "用途別・予算別の選び方早見表"
+        "AliExpress公式ストアの取扱と価格",
+        "AmazonとAliExpressの価格・到着日数・MFi表示の違い"
       ],
-      "type": "comparison",
+      "type": "howto",
       "notes": [
-        "5製品を表形式でモデル名・規格・最大電力・転送速度・価格・対応用途で横断比較",
-        "「充電重視」「映像出力重視」「転送速度重視」など目的別の推奨モデルをまとめる",
-        "表の下に「迷ったらコレ！」の一言コメントを添えて読者の決断を後押しする"
+        "AliExpress UGREEN公式ストア（shop_id=1103243235）でもケーブル多数取扱い。価格はAmazonより安いことが多い",
+        "ただしMFi認証品はAmazonで「MFi」と明記されているか確認しやすい",
+        "急ぎ必要ならAmazon、安く揃えるならAliExpressのセール（11.11・6.18）狙い"
       ]
     },
     {
       "id": "section8",
-      "h2": "UGREENケーブルの選び方｜失敗しない4つのポイント",
-      "h3s": [
-        "①規格（USB規格・コネクタ形状）を確認する",
-        "②用途に合った最大電力・転送速度を選ぶ",
-        "③ケーブル長と素材で使い勝手が変わる",
-        "④AliExpressでの購入時は認証マーク・レビューを必ず確認"
-      ],
-      "type": "howto",
+      "h2": "UGREENケーブルに関するよくある質問（FAQ）",
+      "h3s": [],
+      "type": "faq",
       "notes": [
-        "USB 2.0／3.0／3.2／4の違いとGen1/Gen2の速度差をわかりやすく整理",
-        "充電用途なら最大ワット数、データ転送用途ならGbps表記の見方を解説",
-        "AliExpressでの購入時にChoiceバッジやセラー評価を確認するコツを実践的に伝える"
+        "Q&A形式・5問",
+        "「MFi認証は本物？」「240Wケーブルで100W機器を充電してもOK？」「断線しにくいケーブルは？」「iPad ProはUSB-C/Cでフル機能使える？」「UGREENとAnkerどっち？」を網羅"
       ]
     },
     {
       "id": "section9",
-      "h2": "よくある質問｜UGREENケーブルについてのQ&A",
+      "h2": "まとめ｜UGREENケーブルは『用途×W数』で選べば失敗しない",
       "h3s": [
-        "UGREENケーブルは本当に安全？品質は大丈夫？",
-        "AliExpressでUGREENの偽物を掴まないためには？",
-        "AliExpressからの配送日数はどのくらいかかる？",
-        "UGREENケーブルの保証・返品対応は？",
-        "安く買えるセール・クーポンのタイミングは？"
-      ],
-      "type": "faq",
-      "notes": [
-        "各質問に対して簡潔かつ実践的な回答を2〜4文程度で記載",
-        "偽物対策としてUGREEN公式ストアURLと確認ポイントを明記",
-        "クーポン活用はサイト内の関連ページへの内部リンクを自然に組み込む"
-      ]
-    },
-    {
-      "id": "section10",
-      "h2": "まとめ｜UGREENケーブルはAliExpressで買うのが最もコスパが高い",
-      "h3s": [
-        "おすすめ5選の総まとめ",
-        "迷ったら「USB-C 100W充電ケーブル」を選ぼう"
+        "用途別の結論まとめ",
+        "関連記事で深掘り"
       ],
       "type": "conclusion",
       "notes": [
-        "5選の選定理由と用途別ベストバイを簡潔に再提示して読者の決断を促す",
-        "「迷ったらコレ」という明確な1推しを提示し離脱率を下げる",
-        "AliExpressのChoiceセールやクーポンを活用するとさらにお得になる旨を添えてCTAへつなぐ"
+        "結論：iPhone 14以前ならLightning、iPhone 15以降ならUS316、MacBook ProならPD3.1 240W",
+        "関連記事への内部リンク（ugreen-doko-no-kuni、ugreen-gan-charger-osusume等）"
       ]
     }
   ],
   "faqQuestions": [
-    "UGREENのケーブルは安全性・品質的に問題ないですか？",
-    "AliExpressでUGREENの偽物を買わないようにするには？",
-    "AliExpressからUGREENケーブルが届くまでどのくらいかかる？",
-    "UGREENケーブルに不具合があった場合、返品・返金できる？",
-    "AliExpressでUGREENケーブルをお得に買えるセールやクーポンはある？"
+    "UGREENケーブルはApple MFi認証を取得していますか？",
+    "240W対応ケーブルで100Wの充電器を使っても問題ありませんか？",
+    "iPhone 15のUSB-C接続でデータ転送・映像出力もできますか？",
+    "UGREENとAnker、どちらのケーブルが断線しにくいですか？",
+    "UGREENケーブルにリコール（回収）はありますか？"
   ],
   "comparisonTableColumns": [
     "モデル名",
-    "接続規格",
-    "最大出力（W）",
-    "最大転送速度",
-    "ケーブル長",
-    "AliExpress参考価格（円）"
+    "コネクタ",
+    "最大W",
+    "長さ",
+    "認証",
+    "参考価格(円)"
   ],
   "internalLinks": [
     {
-      "url": "/basics/aliexpress-what-is.html",
-      "anchorText": "AliExpressとは何か・安全性について"
+      "url": "/guide/ugreen-doko-no-kuni.html",
+      "anchorText": "UGREENはどこの国？信頼性まとめ"
     },
     {
-      "url": "/basics/aliexpress-choice.html",
-      "anchorText": "アリエクのChoiceとは"
+      "url": "/gadget/ugreen-gan-charger-osusume.html",
+      "anchorText": "UGREEN GaN充電器おすすめ"
     },
     {
-      "url": "/payment/aliexpress-coupon.html",
-      "anchorText": "AliExpressクーポンの使い方"
-    },
-    {
-      "url": "/basics/ugreen-earphone-osusume.html",
-      "anchorText": "UGREENイヤホンのおすすめ比較"
+      "url": "/gadget/ugreen-mobile-battery-osusume.html",
+      "anchorText": "UGREENモバイルバッテリーおすすめ"
     }
   ],
   "competitorDifferentiators": [
-    "規格（USB2.0/3.0/3.2/4）と用途の対応関係を初心者向けにわかりやすく整理しており、スペック表を見ても「で、結局何が違うの？」と感じる読者の疑問を解消できる",
-    "AliExpressでの購入に特化した視点（Choiceバッジ・公式ストア確認・クーポン活用）を盛り込んでおり、国内EC向けのレビュー記事では得られない実践的な購入ガイドになっている"
+    "Amazon実績（累計レビュー数）ベースで5モデルを厳選しており、選定根拠が明確",
+    "Apple MFi・USB-IF・PD3.1認証の意味を解説し、安心して選べる情報を提供",
+    "AliExpress公式ストアとAmazonの価格・到着・保証の違いを正直に比較"
   ],
-  "createdAt": "2026-05-20"
+  "createdAt": "2026-06-03"
 }

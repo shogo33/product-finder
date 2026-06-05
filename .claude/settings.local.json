@@ -47,7 +47,8 @@
       "Bash(node scripts/add-section.mjs ugreen-usb-hub-osusume \"UGREEN USBハブ MacBook おすすめ\" before-faq)",
       "Bash(node scripts/add-section.mjs ugreen-usb-hub-osusume \"UGREEN USBハブ ドッキングステーション 違い\" before-faq)",
       "Bash(node scripts/add-section.mjs ugreen-usb-hub-osusume \"USBハブ アリエク 安全 品質\" before-faq)",
-      "Bash(magick --version)"
+      "Bash(magick --version)",
+      "Bash(node scripts/strip-empty-aliex-buttons.mjs public/gadget/ugreen-gan-charger-osusume.html)"
     ]
   }
 }

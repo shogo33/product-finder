@@ -1,192 +1,197 @@
 {
-  "keyword": "UGREEN GaN充電器 おすすめ アリエク",
+  "keyword": "UGREEN GaN充電器 おすすめ",
   "slug": "ugreen-gan-charger-osusume",
-  "category": "basics",
-  "searchIntent": "おすすめ系|比較系|レビュー系",
-  "searchIntentNote": "GaN充電器をアリエクで安く買いたいユーザーが、UGREEN製品の中から自分に合うモデルを比較・選択しようとしている。複数モデルのスペック差異と価格を把握したうえで購入判断したい意図が強い。",
-  "persona": "ガジェット好きの節約家で、充電器のW数・ポート構成・発熱量まで細かく調べないと気が済まないタイプ。アリエクで何度もUGREEN製品を購入しており、国内定価の半額以下で買える喜びを熱量高く読者に伝える。",
+  "category": "gadget",
+  "searchIntent": "おすすめ系|比較系",
+  "searchIntentNote": "UGREENのGaN充電器を買おうとしているが、30W/65W/100W/140Wのどれを選ぶべきか、ポート数やシリーズ違いで迷っているユーザー。Anker・Baseusとの比較も視野に入れる。",
+  "persona": "Anker・UGREEN・Baseusの充電器を5台以上同時に使い分け、出力Wと発熱量とサイズのトレードオフを実感で語れる節約系ガジェットオタク。アリエク・Amazon両刀使いで、PSE/GaN世代/PD3.1認証の違いも詳しい。煽らず事実ベースで読者の不安に応える。",
   "targetProductCount": 5,
   "titles": [
-    "UGREENのGaN充電器おすすめ5選【2026年最新】アリエクで安く買う完全ガイド",
-    "アリエクのUGREEN GaN充電器おすすめ比較5選【2026年最新】失敗しない選び方",
-    "UGREEN GaN充電器をアリエクで買う方法【2026年最新】おすすめモデル5選比較"
+    "UGREEN GaN充電器おすすめ5選｜30W〜140Wを用途別に徹底比較",
+    "UGREEN GaN充電器の選び方｜Nexode・Uno人気5モデル比較",
+    "UGREEN充電器おすすめ｜MacBook対応モデルから30W入門機まで5選"
   ],
-  "selectedTitle": "UGREENのGaN充電器おすすめ5選【2026年最新】アリエクで安く買う完全ガイド",
-  "metaDescription": "UGREENのGaN充電器をアリエクで安く買いたい方必見。65W・100W・140Wなど人気モデル5選をスペック・価格・ポート数で徹底比較。選び方のポイントも解説しているので、自分にぴったりの一台が見つかります。",
-  "intro": "「UGREEN GaN充電器が気になるけど、どのモデルを選べばいいかわからない」「アリエクで買っても大丈夫？」と悩んでいませんか。\n\nUGREENのGaN充電器は、コンパクトなのに高出力で、MacBook・iPhone・Androidをまとめて充電できる優れものです。しかも国内家電量販店より大幅に安く買えるアリエクなら、さらにお得に手に入ります。\n\nこの記事では、アリエクで実際に購入できるUGREEN GaN充電器5モデルをスペック・価格・ポート構成で徹底比較。用途別の選び方も丁寧に解説するので、読み終わればあなたにぴったりの一台が必ず見つかります。",
+  "selectedTitle": "UGREEN GaN充電器おすすめ5選｜30W〜140Wを用途別に徹底比較",
+  "metaDescription": "UGREEN（ユーグリーン）GaN充電器のおすすめ5モデルをAmazon実レビューで徹底比較。30W入門機から140W大出力モデル、Nexode・Unoシリーズの違い、PSE取得状況、MacBookやiPhoneに合う1台の選び方を解説します。",
+  "intro": "「UGREENのGaN充電器ってどれを選べばいい？」「30W・65W・100W・140Wのどれが必要？」と迷っていませんか。\n\n結論から言うと、iPhoneだけなら30W、MacBook AirやiPadで65W、MacBook Proを充電するなら100W以上、複数機器の同時充電なら3〜4ポートのNexodeシリーズが正解です。UGREENのGaN充電器はAnker・Baseusと並ぶ深圳系3大ブランドの一角で、Amazon累計1万件超のロングセラーも多数あります。\n\nこの記事では、UGREEN GaN充電器の主要5モデルをAmazon実レビューで比較し、用途別の最適解と購入前に知っておきたい安全性・選び方ポイントまで網羅します。",
   "sections": [
     {
       "id": "section1",
-      "h2": "UGREENのGaN充電器とは？ブランドの特徴と信頼性",
+      "h2": "UGREEN GaN充電器の特徴｜Anker・Baseusとの違い",
       "h3s": [
-        "UGREENはどんなブランド？アリエクでの評判",
-        "GaN（窒化ガリウム）充電器が従来品より優れている理由"
+        "GaN（窒化ガリウム）が小型・低発熱で支持される理由",
+        "深圳系3大ブランドの一角、PSE・PD3.1認証取得"
       ],
       "type": "brand_overview",
       "notes": [
-        "UGREEN社の概要・設立年・製品ラインナップを簡潔に紹介し信頼性を担保する",
-        "GaN素子の特性（小型・低発熱・高効率）をわかりやすく説明し購入動機を高める",
-        "アリエクのUGREEN公式ストアの存在と評価件数・評価スコアに触れて安心感を与える"
+        "GaNは従来のシリコン素子より小型化・高出力・低発熱を両立できる素材であることを簡潔に説明",
+        "UGREENは2012年創業の中国深圳発メーカー。Anker・Baseusと同系譜で、Amazon累計レビュー数十万件規模の実績",
+        "全モデルがPSE取得・PD3.0/3.1対応で日本国内で安心して使える事実を提示"
       ]
     },
     {
       "id": "section2",
-      "h2": "UGREEN Nexode 65W GaN充電器｜1台でPC＋スマホをまかなえる万能モデル",
+      "h2": "UGREEN GaN充電器の選び方｜W数・ポート数・シリーズ",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "出力W数の目安（30W：スマホ、65W：MacBook Air、100W：MacBook Pro、140W：複数機器）",
+        "Unoシリーズ（軽量・コンパクト）とNexodeシリーズ（多ポート・大出力）の違い",
+        "ポート数の選び方（1〜2ポート：単機種、3〜4ポート：複数同時充電）"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "65W・USB-C×2＋USB-A×1構成の使い勝手を具体的に説明する",
-        "MacBook Air・iPad・iPhoneの同時充電シナリオを例示してイメージを持たせる",
-        "アリエクでの実勢価格帯と国内価格との差額メリットを記載する"
+        "用途と出力Wの対応関係を表または箇条書きで明示",
+        "Uno=小型ライト寄り、Nexode=パワー寄りのキャラクター付け",
+        "コンセント1個で何台同時に充電したいかでポート数を選ぶ視点を提供"
       ]
     },
     {
       "id": "section3",
-      "h2": "UGREEN Nexode 100W GaN充電器｜MacBook Proユーザーに最適なハイパワーモデル",
+      "h2": "Amazonで買えるUGREEN GaN充電器おすすめ5選",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "Uno 30W (X550)：iPhone・iPad mini向け入門の決定版",
+        "Uno 65W (CD361)：MacBook Air・iPadも余裕の万能機",
+        "Nexode 65W 4ポート (X559)：複数機器を同時充電するならコレ",
+        "Uno 100W (X688)：MacBook Pro充電できるコンパクト機",
+        "Nexode 140W 3ポート (CD289)：ノートPC2台同時の最大出力モデル"
       ],
       "type": "product",
       "notes": [
-        "100W出力でMacBook Pro 14インチを単体フル充電できる点を強調する",
-        "USB-C×3＋USB-A×1の4ポート構成と電力按分の仕組みを説明する",
-        "出張・テレワーク時にACアダプターをこれ1個に集約できるメリットを伝える"
+        "全5商品が独立した product card として展開される（Amazonコーナー）",
+        "本文には『なぜこの商品か（実績・スペック根拠）』『どんな人向けか』『デメリット/注意点』を簡潔に書く",
+        "Amazon実績（レビュー数・星評価）を信頼性の根拠として必ず1文添える"
+      ]
+    },
+    {
+      "id": "section3b",
+      "h2": "AliExpressで買えるUGREEN GaN充電器おすすめ4選（公式ストア・販売実績300+）",
+      "h3s": [
+        "20W/30W GaN ミニ充電器：販売10,823件のロングセラー入門機",
+        "45W/30W/25W/20W GaN充電器：用途別にW数を切替可能",
+        "45W GaN 充電器：45W単機種でMacBook Air対応",
+        "3ポート GaN充電器 PD3.0：同時充電対応のマルチポート機"
+      ],
+      "type": "product",
+      "notes": [
+        "全4商品が独立した product card として展開される（AliExpressコーナー）",
+        "全商品が UGREEN Official Store（shop_id=1103243235）の公式品であることを必ず明記し、偽物リスクを排除",
+        "AliExpressアフィリエイトリンクは research JSON の promotion_link を使用",
+        "直近販売数を実績エビデンスとして見出し脇に併記",
+        "「Amazonより安く買える可能性が高い」「セール時期を狙うとさらに得」「ただしPSE記載が見にくい場合あり」など実用情報を添える"
       ]
     },
     {
       "id": "section4",
-      "h2": "UGREEN Nexode 140W GaN充電器｜MacBook Pro 16インチも余裕で充電できる最強モデル",
+      "h2": "UGREEN GaN充電器5モデル比較表",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "出力・ポート数・サイズ・価格を一覧で確認",
+        "用途別おすすめ早見"
       ],
-      "type": "product",
+      "type": "comparison",
       "notes": [
-        "140W出力・USB-C×3＋USB-A×1の最上位モデルとして位置付ける",
-        "PD3.1対応による高電圧充電の安全性と急速充電の速さを数値で示す",
-        "価格は高めだが「充電器をこれ1台にまとめる」価値を訴求する"
+        "5モデルを比較表で整理。列：モデル名・最大出力(W)・ポート数・PD対応・参考価格・特徴",
+        "比較表の直下に「iPhoneだけ→Uno 30W」「MacBook Air→Uno 65W」「ノートPC＋複数台→Nexode 100W〜140W」のような早見表を箇条書き"
       ]
     },
     {
       "id": "section5",
-      "h2": "UGREEN Nexode 45W GaN充電器｜軽量コンパクトで旅行・外出に最適なモデル",
+      "h2": "UGREEN GaN充電器の安全性とリコール情報",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "PSE取得済み・PD3.1・GaNIII技術の信頼性",
+        "Anker等の他社リコールとの違い",
+        "もし発熱が気になったときの確認ポイント"
       ],
-      "type": "product",
+      "type": "brand_overview",
       "notes": [
-        "45W・USB-C×2構成で重量約65gという携帯性の高さを具体的に伝える",
-        "iPhone・Android・iPad Miniの急速充電に対応する点を説明する",
-        "旅行・出張のサブ充電器として「鞄に常備したくなる」魅力を訴求する"
+        "UGREENのGaN充電器は発火・破裂を理由とした正式リコールは現時点（2026年6月）でなしを明記",
+        "Ankerは一部の旧モデルでバッテリー発火懸念により自主回収あり（モバイルバッテリー中心、充電器単体は別）と整理",
+        "全モデル過電流・過熱保護回路・短絡保護を標準装備、PSE適合品である事実で信頼性を担保"
       ]
     },
     {
       "id": "section6",
-      "h2": "UGREEN Nexode Pro 160W GaN充電器｜ゲーミングPCユーザー向けの超高出力モデル",
+      "h2": "UGREEN GaN充電器の用途別おすすめ",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "iPhoneユーザー向け",
+        "MacBook Air/Proユーザー向け",
+        "出張・旅行で1台多役を求める人向け"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "160W出力でゲーミングノートPCへの給電も可能な点を強調する",
-        "USB-C×4＋USB-A×1の5ポート構成でオフィス環境全体を1台で賄えることを説明する",
-        "価格帯・サイズのデメリットも正直に記載しフェアな評価を示す"
+        "ユーザータイプ別に本記事の5モデルから1〜2つずつ推奨を絞り込んで提示",
+        "「iPhoneだけ → Uno 30W」「MacBook Air → Uno 65W」「MacBook Pro → Uno 100W or Nexode 100W」「複数台 → Nexode 65W 4ポート / Nexode 140W」"
       ]
     },
     {
       "id": "section7",
-      "h2": "5モデルを徹底比較｜UGREENのGaN充電器スペック一覧表",
+      "h2": "AliExpressのUGREEN公式ストアでも買えるが、Amazon推奨の理由",
       "h3s": [
-        "スペック比較表の見方と注意点",
-        "価格帯別・用途別のおすすめ早見表"
+        "AliExpress公式ストアの価格帯",
+        "PSE取得品・即配の観点でAmazon推奨"
       ],
-      "type": "comparison",
+      "type": "howto",
       "notes": [
-        "最大出力・ポート数・重量・アリエク価格目安・PD対応規格を表で一覧化する",
-        "「一人暮らし向け」「MacBookユーザー向け」「ヘビーユーザー向け」で選びやすくまとめる",
-        "電力按分時の各ポート最大出力についても補足し実用的な情報を提供する"
+        "AliExpressのUGREEN Official Store（shop_id=1103243235）でも充電器の取扱はあるが、日本仕様（PSE取得品）であるか確認しにくい場合があると注意",
+        "AmazonのUGREEN-JAPAN販売元なら間違いなくPSE取得品＋翌日着＋日本語サポートのメリットを訴求",
+        "セール時期（11.11・6.18・Prime Day）の価格差にも触れる"
       ]
     },
     {
       "id": "section8",
-      "h2": "アリエクでUGREEN GaN充電器を選ぶときの3つのポイント",
-      "h3s": [
-        "①用途別に必要なW数・ポート数を確認する方法",
-        "②UGREEN公式ストアで購入する理由と偽物を見抜くコツ",
-        "③クーポン・セールを活用してさらに安く買う方法"
-      ],
-      "type": "howto",
+      "h2": "UGREEN GaN充電器に関するよくある質問（FAQ）",
+      "h3s": [],
+      "type": "faq",
       "notes": [
-        "自分の充電デバイス（スマホ・タブレット・PC）のW数要件を整理する手順を説明する",
-        "アリエクのUGREEN公式ストアのURLと見分け方・評価件数の確認方法を案内する",
-        "コインキャッシュバック・Choiceクーポン・11.11セールを活用した節約術を紹介する"
+        "Q&A形式・5問。リッチリザルト対応の構造化",
+        "「どこの国？」「PSEは？」「Anker/Baseusどっち？」「発熱は？」「MacBook Pro充電は本当に可能？」を網羅"
       ]
     },
     {
       "id": "section9",
-      "h2": "よくある質問｜UGREEN GaN充電器をアリエクで買う前に確認",
-      "h3s": [],
-      "type": "faq",
-      "notes": [
-        "日本のコンセント（100V）対応可否・PSEマークの有無について正確に回答する",
-        "偽物・粗悪品リスクと公式ストア購入で回避できる理由を明記する",
-        "送料・配送日数・返品対応などアリエク購入特有の不安を解消する"
-      ]
-    },
-    {
-      "id": "section10",
-      "h2": "まとめ｜あなたにぴったりのUGREEN GaN充電器をアリエクで手に入れよう",
-      "h3s": [],
+      "h2": "まとめ｜UGREEN GaN充電器は『用途×W数』で選べば失敗しない",
+      "h3s": [
+        "用途別の結論まとめ",
+        "関連記事で深掘り"
+      ],
       "type": "conclusion",
       "notes": [
-        "5モデルの選び方を用途・予算別に3行でまとめ読者の決断を後押しする",
-        "アリエク公式ストアリンクとUGREENケーブルなど関連記事への誘導を行う",
-        "「迷ったら65Wモデルが最もコスパ良し」という明確な編集推薦を出す"
+        "結論：iPhoneだけならUno 30W、MacBook AirならUno 65W、MacBook ProならUno 100W、複数台ならNexodeシリーズ",
+        "関連記事への内部リンク（ugreen-doko-no-kuni、ugreen-mobile-battery-osusume、Baseus charger比較等）"
       ]
     }
   ],
   "faqQuestions": [
-    "UGREENのGaN充電器は日本のコンセント（100V）で使えますか？",
-    "アリエクで買うUGREEN充電器は偽物・粗悪品の心配はありませんか？",
-    "GaN充電器は発熱が少ないと聞きますが、実際はどうですか？",
-    "UGREEN GaN充電器の日本への送料と配送日数はどのくらいですか？",
-    "UGREENの充電器とBaseusの充電器はどちらがおすすめですか？"
+    "UGREEN（ユーグリーン）はどこの国のメーカーですか？",
+    "UGREEN GaN充電器はPSE認証を取得していますか？",
+    "UGREENとAnker、どちらのGaN充電器を選ぶべきですか？",
+    "MacBook Proを100W出力で本当に充電できますか？",
+    "UGREEN GaN充電器に発火・リコールはありますか？"
   ],
   "comparisonTableColumns": [
     "モデル名",
-    "最大出力（W）",
-    "ポート構成",
-    "重量（g）",
-    "アリエク価格目安（円）",
-    "こんな人向け"
+    "最大出力(W)",
+    "ポート数",
+    "GaN世代",
+    "PSE",
+    "参考価格(円)"
   ],
   "internalLinks": [
     {
-      "url": "/basics/ugreen-cable-osusume.html",
-      "anchorText": "UGREENケーブルおすすめ5選"
+      "url": "/guide/ugreen-doko-no-kuni.html",
+      "anchorText": "UGREENはどこの国？信頼性まとめ"
     },
     {
-      "url": "/basics/baseus-mobile-battery-osusume.html",
-      "anchorText": "Baseusモバイルバッテリー完全ガイド"
+      "url": "/gadget/ugreen-mobile-battery-osusume.html",
+      "anchorText": "UGREENモバイルバッテリーおすすめ"
     },
     {
-      "url": "/basics/aliexpress-choice.html",
-      "anchorText": "アリエクのChoiceとは"
-    },
-    {
-      "url": "/basics/aliexpress-what-is.html",
-      "anchorText": "AliExpressの安全性と使い方"
+      "url": "/gadget/baseus-charger-osusume.html",
+      "anchorText": "Baseus GaN充電器との比較"
     }
   ],
   "competitorDifferentiators": [
-    "単なるスペック羅列ではなく「65W・100W・140W・160Wそれぞれが誰に向いているか」を用途シナリオで説明し、読者が自分ごととして選べる構成にしている",
-    "アリエクでの購入特有のリスク（偽物・PSE・電圧）を正直に解説したうえで公式ストア購入で安全に買える方法まで示すことで、不安解消から購買決定まで一記事で完結させている"
+    "Amazon実レビューを各商品に埋め込んでおり、賛否両論まで把握できる",
+    "Anker・Baseusとの違いを冷静に整理し、UGREENが向いているケースを明示",
+    "Anker系リコール検索ユーザーの不安にも独立セクションで応える"
   ],
-  "createdAt": "2026-05-23"
+  "createdAt": "2026-06-03"
 }

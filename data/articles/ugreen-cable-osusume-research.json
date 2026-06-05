@@ -1,8 +1,19 @@
 {
-  "slug": "ugreen-cable-osusume",
   "keyword": "UGREEN ケーブル おすすめ",
+  "slug": "ugreen-cable-osusume",
   "category": "basics",
+  "searchIntent": "おすすめ系|比較系",
+  "searchIntentNote": "UGREENのケーブルを購入したいが種類が多く迷っている層が、用途・規格別の具体的なおすすめ商品を知りたがっている。価格帯や性能の違いを比較しつつ「これを買えば間違いない」という確信を求めている。",
+  "persona": "ガジェット好きが高じてAliExpressでケーブル類を大量買いしてきた自称「ケーブルオタク」。規格や伝送速度の細かい違いを語り出すと止まらないが、結局「コスパ最強はどれか」という実用的な結論を大切にしている。",
+  "targetProductCount": 5,
+  "titles": [
+    "UGREENケーブルおすすめ5選【2026年最新】種類・用途別に徹底比較",
+    "UGREEN ケーブルおすすめ比較【2026年】失敗しない選び方と人気5選",
+    "【2026年最新】UGREENケーブル5選｜充電・映像・データ転送を完全網羅"
+  ],
   "selectedTitle": "UGREENケーブルおすすめ5選【2026年最新】種類・用途別に徹底比較",
+  "metaDescription": "UGREENケーブルのおすすめ5選を2026年最新情報で徹底比較。USB-C充電・映像出力・データ転送など用途別に選び方のポイントも解説。AliExpressで賢く安く手に入れたい方はこの記事をチェック！",
+  "intro": "「UGREENのケーブルって種類が多すぎて、結局どれを買えばいいの？」そんな悩み、ありませんか？充電用・映像出力用・データ転送用と用途はさまざまで、規格もUSB-C、Lightning、HDMIと多岐にわたります。間違えて購入するとせっかくのスペックが活かせないことも。この記事では、AliExpressでUGREENケーブルを買い続けてきた経験をもとに、用途別おすすめ5選を厳選してご紹介します。選び方のポイントも丁寧に解説するので、初めての方でも迷わず選べるはずです。コスパ重視でケーブル選びを成功させたい方は、ぜひ最後まで読んでみてください。",
   "sections": [
     {
       "id": "section1",
@@ -150,147 +161,275 @@
       ]
     }
   ],
-  "researchedAt": "2026-05-20",
+  "faqQuestions": [
+    "UGREENのケーブルは安全性・品質的に問題ないですか？",
+    "AliExpressでUGREENの偽物を買わないようにするには？",
+    "AliExpressからUGREENケーブルが届くまでどのくらいかかる？",
+    "UGREENケーブルに不具合があった場合、返品・返金できる？",
+    "AliExpressでUGREENケーブルをお得に買えるセールやクーポンはある？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "接続規格",
+    "最大出力（W）",
+    "最大転送速度",
+    "ケーブル長",
+    "AliExpress参考価格（円）"
+  ],
+  "internalLinks": [
+    {
+      "url": "/basics/aliexpress-what-is.html",
+      "anchorText": "AliExpressとは何か・安全性について"
+    },
+    {
+      "url": "/basics/aliexpress-choice.html",
+      "anchorText": "アリエクのChoiceとは"
+    },
+    {
+      "url": "/payment/aliexpress-coupon.html",
+      "anchorText": "AliExpressクーポンの使い方"
+    },
+    {
+      "url": "/basics/ugreen-earphone-osusume.html",
+      "anchorText": "UGREENイヤホンのおすすめ比較"
+    }
+  ],
+  "competitorDifferentiators": [
+    "規格（USB2.0/3.0/3.2/4）と用途の対応関係を初心者向けにわかりやすく整理しており、スペック表を見ても「で、結局何が違うの？」と感じる読者の疑問を解消できる",
+    "AliExpressでの購入に特化した視点（Choiceバッジ・公式ストア確認・クーポン活用）を盛り込んでおり、国内EC向けのレビュー記事では得られない実践的な購入ガイドになっている"
+  ],
+  "createdAt": "2026-05-20",
+  "researchedAt": "2026-06-04",
   "products": [
     {
-      "product_id": "1005006471612403",
-      "rawTitle": "Realme, Xiaomi, Samsung S9,UGREEN-USB用のデータコード,急速充電ケーブル,Samsung s21,iPad, Samsung用のUSB-CタイプC",
-      "cleanName": "UGREEN USB-C Data Cable",
-      "price_jpy": "493",
-      "original_price": "3.24",
-      "evaluate_rate": "97.5%",
-      "sales_count": 21340,
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c4KsoBhX",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S2e6296c45cb0497e93de1ae9adf44390X.jpg",
+      "product_id": "B07PYP57TQ",
+      "rawTitle": "UGREEN USB-C Lightning Cable [MFi Certified PD Compatible 1M] Fast Charging Lightning Cable High Durability Nylon Braid Compatible with iPhone 14 / 13 / 12 / 11 / X / 8 Plus and more",
+      "cleanName": "UGREEN USB-C Lightning ケーブル",
+      "section": "amazon",
+      "role": "Lightning ケーブル定番",
+      "price_jpy": 1039,
+      "original_price": 1272,
+      "sales_count": 18171,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "1K+ bought in past month",
+      "modelNumber": "",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4dFBIrh",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15978-1_1fbdb56b-b4ac-4cb1-87cc-8497f0838b58.png?v=1726657283",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/S2e6296c45cb0497e93de1ae9adf44390X.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S1023ad7ffe824bf4bfaf3818ea0c5bf3c.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sbe410a7a2e174319b1cde85981c997894.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S4dce49f9ee074ca39f6fe416a42340f8l.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S68190fa7f268465d981e4b3747e09e0fv.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S69a5e8d9143649b0b8d8c481fd6a4ccad.jpg"
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15978-1_1fbdb56b-b4ac-4cb1-87cc-8497f0838b58.png?v=1726657283",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15978-2_e6740108-98b2-4e39-b581-aac10fd271d2.png?v=1726657284"
       ],
       "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "UGREEN USB-C Data Cable",
-        "asin": null,
-        "url": null
+        "status": "verified",
+        "searchQuery": "UGREEN USB-C Lightning ケーブル",
+        "asin": "B07PYP57TQ",
+        "url": "https://amzn.to/4dFBIrh"
       },
       "specResult": null,
-      "redditReviews": []
+      "features": [
+        "Apple MFi Certified: This USB-C & Lightning cable has obtained Apple's official license \"Made for iPhone/iPad/iPod\" We have adopted the new C94 model Lightning connector with PD 20W support to ensure that you can comfortably charge and transfer data without any error pop-ups, fully compatible with your iOS devices",
+        "Power Delivery Compatible: Tested results show that this iPhone cable can provide up to 20W of power to your device, allowing the iPhone X to charge to 50% in 30 minutes ★Please Note★ To achieve fast charging, please use a PD-compatible USB-C charger \"18W/20W/30W/45W/61W/65W and 87W\"",
+        "Compatible with multiple models: As you know, iPhones sold since 2017 including iPhone 14 / 14 Plus / 14 Pro / 14 Pro Max / iPhone 13 / 13 Pro Max / 13 mini / iPhone 12 / 12 Pro / 12 mini / 12 Pro Max, iPhone 11 Pro Max, iPhone X / XS / XS Max, iPhone XR, iPhone 8 / 8 Plus support fast charging With this Lightning USB C cable, fast charging is also possible Or, for iPads, it supports fast charging for the 1st and 2nd generation iPad Pro 12.9 inch, 10.5 inch, iPad Air 3, and iPad mini 5",
+        "Enhanced durability: Both ends of the USB connectors are integrated with plugs made of aluminum alloy, which increases the durability of insertion/removal by 90% (tested with over 15,000 insertions/removals), and the root is also ergonomically designed and reinforced to make it more comfortable to hold and prevent breakage The durable nylon braided cable is not only less prone to tangling but also sufficiently flexible, making it easy to handle and store in your bag",
+        "Charge and data transfer in one cable: Connect your iPhone, iPod, or iPad with a Lightning connector to a PC with a USB-C port for efficient charging and data transfer Supports data transfer rates up to 480 Mbps Multi-shielded 21AWG cable ensures stable signal transmission"
+      ],
+      "productOverview": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 18,171件レビュー / 星 4.4"
+      }
     },
     {
-      "product_id": "1005008328100460",
-      "rawTitle": "UGREEN USB Cケーブル PD60W急速充電ケーブル iPhone 17 16 15 Samsung S25 S24 iPad MacBook Air Xiaomi対応 急速充電データケーブル",
-      "cleanName": "UGREEN USB-C Cable",
-      "price_jpy": "717",
-      "original_price": "4.74",
-      "evaluate_rate": "98.3%",
-      "sales_count": 8292,
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c44OIJpr",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S3ba41410e0544cf7939134d91b3bdef29.jpg",
+      "product_id": "B07V78HMDQ",
+      "rawTitle": "UGREEN USB Type C Cable, PD Compatible, 100W/5A, Ultra Fast Charging, Nylon Braid, Disconnection Prevention, Compatible with iPhone 17/16/15 Series, iPad, MacBook Pro, Galaxy S24, Matebook, Xperia",
+      "cleanName": "UGREEN US316 USB-C & USB-C ケーブル 100W 1m/1.5m/2m/3m",
+      "section": "amazon",
+      "role": "USB-C/C 100W 長さ豊富",
+      "price_jpy": 788,
+      "original_price": 1299,
+      "sales_count": 14671,
+      "evaluate_rate": 4.3,
+      "monthly_volume": "5K+ bought in past month",
+      "modelNumber": "",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4wYWKsv",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/70428-1.png?v=1726278035",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/S3ba41410e0544cf7939134d91b3bdef29.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S369c5491627044f283c6032cc2e2ba9dT.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sdf230891bc1c41c4abbc1224ad1bb226J.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sdbab3470aeab4bd6948db745b340aad6g.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S6ac8baa3bb924d829b881a39723423bcJ.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S9ffc67fa251545dea68c8c25860917dft.jpg"
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/70428-1.png?v=1726278035",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/70428-2.png?v=1726278035"
       ],
       "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "UGREEN USB-C Cable",
-        "asin": null,
-        "url": null
+        "status": "verified",
+        "searchQuery": "UGREEN US316 USB-C & USB-C ケーブル 100W 1m/1.5m/2m/3m",
+        "asin": "B07V78HMDQ",
+        "url": "https://amzn.to/4wYWKsv"
       },
       "specResult": null,
-      "redditReviews": []
+      "features": [
+        "⚡【Ultra-fast charging support up to 100W】The UGREEN USB-C cable supports USB PD technology and can safely and stably output up to 100W (20V×5A) To achieve PD charging, the device and adapter must support PD functionality Supports 100W 87W 61W 45W 30W 18W power supply PD fast charging 【Does not support video output ]",
+        "🔋【Wide Compatibility】UGREEN usbc cable is compatible with various USB type c devices such as iPhone 17/16/15 series, MacBook Pro, Macbook Air, iMac, ChromeBook Pixel, Dell XPS, Moniteur 4k, Galaxy S24, Mate 20/ Mate 20 Pro/ P20/ P20 Pro/ Mate 10/ P10, HTC U11/ 10 and others Not only for smartphones, but also for various tablets, laptops, and other devices, it significantly reduces the necessary charging time",
+        "【Durable and Flexible】UGREEN 5A USB C cable offers superior quality products with compact and reliable aluminum alloy shell and nylon braided cable With a nylon fiber sheath structure that has passed over 10,000 bend tests, this highly durable Type C cable lasts more than four times longer than a typical USB cable",
+        "【480Mbps Data Transfer】Supports data transfer rate up to 480Mbps under USB 2.0 standard, providing transfer rate every 5 seconds per 100 songs The terminal parts are gold-plated and designed to ensure reliable signal transmission, providing durability and stable transfer",
+        "Safety Protection: Equipped with over-current, over-heating, short-circuit protection, E-marker smart chip and built-in multi-layer shielding to provide a safe and stable power supply Best choice for fast charging and data transmission, enjoy fast charging at home or in the office"
+      ],
+      "productOverview": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 14,671件レビュー / 星 4.3"
+      }
     },
     {
-      "product_id": "1005007661508886",
-      "rawTitle": "UGREEN UNO PD100W急速充電USB Cケーブル iPhone 17 16 15対応 タイプC to タイプC データ転送ケーブル Samsung Xiaomi MacBook対応 充電ケーブル",
-      "cleanName": "UGREEN UNO PD100W USB-C Cable",
-      "price_jpy": "994",
-      "original_price": "6.59",
-      "evaluate_rate": "98.2%",
-      "sales_count": 6280,
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c3jWtCdj",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S5918f357b44848e69e6aa337e574cd70w.jpg",
+      "product_id": "B07PP2RB25",
+      "rawTitle": "UGREEN USB Type C Cable, USB A to USB C Cable, Nylon Braided, 3A Rapid Charging, Quick Charge 3.0/2.0 Compatible, 56K Resistor, Compatible with iPhone 17, Galaxy S24, Pixel, Google, Xperia, LG and",
+      "cleanName": "UGREEN USB Type C ケーブル USB A to USB C ケーブル",
+      "section": "amazon",
+      "role": "USB-A to USB-C 急速",
+      "price_jpy": 543,
+      "original_price": 890,
+      "sales_count": 13346,
+      "evaluate_rate": 4.3,
+      "monthly_volume": "2K+ bought in past month",
+      "modelNumber": "",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4fLSVk8",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/60125-1.png?v=1752143899",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/S5918f357b44848e69e6aa337e574cd70w.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S0221a5edb3e84fb7a0913f9924b0edeeN.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S7c63c8531e0d441082a774423f8981abI.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sbf65dd88ad01489393ee9b9100c34f49Y.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S06ae3c4a592a460d966675a5ce4f439bC.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sf32578eda58d42d994e74ef9b2e2cf2cH.jpg"
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/60125-1.png?v=1752143899",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/60125-2.png?v=1752143899"
       ],
       "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "UGREEN UNO PD100W USB-C Cable",
-        "asin": null,
-        "url": null
+        "status": "verified",
+        "searchQuery": "UGREEN USB Type C ケーブル USB A to USB C ケーブル",
+        "asin": "B07PP2RB25",
+        "url": "https://amzn.to/4fLSVk8"
       },
-      "specResult": null,
-      "redditReviews": []
+      "specResult": {
+        "content": "速く、安全に、ずっと使える。 QC3.0＆FCP対応で最大3Aの急速充電、最大480Mbpsの高速データ転送に対応。56Kレジスタと多重保護チップで安全性も確保し、10,000回以上の耐久テストをクリアした強化ナイロンケーブルで、長く安心して使えます。Xperia・Galaxy・iPadなど幅広い機種に対応。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "QC3.0 fast charging support: The UGREEN USB Type C charging cable supports Huawei FCP fast charging and QC3.0 fast charging (up to 3A) It can fully speed charge all models compatible with Qualcomm Quick Charge Charges your Galaxy S9 to full capacity in just 2 hours, at the same speed as the original cable",
+        "Enhanced Safety and Reliability: Fully complies with USB-C fast charging protocol and intelligent chip with built-in 56K resistor implementation and upgraded multiple protection features to achieve high-quality safety protection This Type-C charging cable offers reliable conductivity and stable charging current, protecting your smartphone from overcurrent, overvoltage, overheating, and short circuits",
+        "Broad compatibility: The UGREEN USB-C fast charging cable is suitable for almost all C-type models such as Xperia XZ/ XZ Premium/ XZ2/ XZ3/ XZs, Galaxy S10/ S9/ S8/ S8/ Note9/ Note 8/ A5 2017, iPad Pro 2018, Nexus 5X/6P, Mate 20/ Mate 20 Pro/ P20/ P20 Pro/ Mate 10/ P10, HTC 10/ U12, LG V20/ V30/ V40/ V50, GoPro Hero, etc",
+        "Enhanced durability: Both ends of the USB connectors are integrated with plugs made of aluminum alloy, improving insertion durability by 90% (tested over 10,000+ insertions and removals), and the root is also ergonomically designed and reinforced for better grip and to prevent breakage The durable nylon braided cable is not only tangle-resistant but also sufficiently flexible, making it easy to handle and store in your bag",
+        "High-speed data transfer: The USB-C to USB-A 2.0 cable supports fast charging and high-speed data transfer synchronization Supports synchronous speeds up to 480 Mbps, completing the transfer of 1 GB files in seconds"
+      ],
+      "productOverview": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 13,346件レビュー / 星 4.3"
+      }
     },
     {
-      "product_id": "1005005659085072",
-      "rawTitle": "UGREEN USB C - 4K 8K HDMI 互換ケーブル 8K/60Hz 4K/120Hz MacBook Pro iMac iPad Pro Samsung Galaxy USB C - HDMI 2.1用",
-      "cleanName": "UGREEN USB C to HDMI Cable 8K",
-      "price_jpy": "2100",
-      "original_price": "13.85",
-      "evaluate_rate": "97.3%",
-      "sales_count": 2942,
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c4Ty09ah",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Se6659d8f127f4b1fae8420e1eb0b2c31U.jpg",
+      "product_id": "B083Q4SHPT",
+      "rawTitle": "UGREEN USB C Cable, L-Shape, 100 W, USB Type-C iPhone Charging Cable, L-Type, PD/PPS, Fast Charging, Data Transfer, Type C to C Cord, High Durability, iPhone 17/16/15 Series, Compatible with USB-C",
+      "cleanName": "UGREEN US334 USB-C & USB-C L型 ケーブル 100W 1m/2m",
+      "section": "amazon",
+      "role": "L型 100W スマート配線",
+      "price_jpy": 1110,
+      "original_price": 1499,
+      "sales_count": 12891,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "500+ bought in past month",
+      "modelNumber": "",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4ubstUL",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/70643-1.png?v=1726278482",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Se6659d8f127f4b1fae8420e1eb0b2c31U.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/A95214b85110d4a9cab6e4f845241794bK.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/A26fbf55a31bd4b16bb77a75bdcf5dfb5Z.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Aee7e0d03b6e64e03976aa6810cb27c27T.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Abea80aa34bea488c8324bfce7c5d2160h.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/A3be08269fa344b679e6f2b2bb17913f9x.jpg"
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/70643-1.png?v=1726278482",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/70645-2.png?v=1726278475"
       ],
       "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "UGREEN USB C to HDMI Cable 8K",
-        "asin": null,
-        "url": null
+        "status": "verified",
+        "searchQuery": "UGREEN US334 USB-C & USB-C L型 ケーブル 100W 1m/2m",
+        "asin": "B083Q4SHPT",
+        "url": "https://amzn.to/4ubstUL"
       },
-      "specResult": null,
-      "redditReviews": []
+      "specResult": {
+        "content": "L 字なら、自由広がる。 革新的な L 字型を採用した USB-C ケーブル！持ち手に干渉しない ので、充電しながらのゲームや動画視聴が快適。過度に折り曲げる ことでの断線や脱線を防ぎます。スマホケースの厚さ（2.5mm 以 上）が干渉する場合はケースを外してご使用ください。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "【Supports super-fast charging over 100W】The UGREEN USB C L-shaped cable supports USB PD technology and can safely and stably output up to a maximum of 100W (20V*5A) To achieve PD charging, both the device and the adapter must support PD functionality Supports 100W 87W 61W 45W 30W 18W power supply PD fast charging (Note: Not compatible with monitors, movies, etc )",
+        "【L-shaped・Reduction of cable load】This L-shaped USB-C cable naturally bends at the connector part, distributing the physical stress (pulling or bending) at the connection point, reducing the risk of breakage or poor contact It is much more convenient and comfortable when playing games, watching videos, or lying on the sofa or bed and charging (Phone cover thickness: within 2.5 mm)",
+        "【High Quality & Safety Improvement】The L-shaped Type C cable design makes it less likely to bump into other objects, preventing accidents from accidentally getting hooked and pulled out Moreover, since the cord does not bend at extreme angles, it also helps reduce the risk of ignition or short circuits Moreover, the C cable features multiple protections such as over-voltage, overheating, over-current, and short-circuit protection to enhance safety and reliability",
+        "【Comfortable for daily charging and data transfer】Equipped with a C port, it can be used with almost all devices such as mobile phones, tablets, laptops, and game consoles, and boasts excellent versatility With a transfer rate of up to 480 Mbps, you can smoothly transfer data between devices such as smartphones and PCs",
+        "【Durable and Flexible】This 100W USB C to C cable is reinforced to withstand over 10,000 bends and has overwhelming durability Double-braided high-durability nylon makes it tangle-resistant, easy to handle, and combines functionality with design"
+      ],
+      "productOverview": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 12,891件レビュー / 星 4.4"
+      }
     },
     {
-      "product_id": "32516394446",
-      "rawTitle": "Ugreen 8 18k displayportケーブルDP1.4 4K144Hzビデオオーディオケーブルxiaomi tvボックスpcのラップトップモニタービデオゲームdpケーブルディスプレイポート",
-      "cleanName": "Ugreen DisplayPort Cable DP1.4",
-      "price_jpy": "1656",
-      "original_price": "15.99",
-      "evaluate_rate": "98.5%",
-      "sales_count": 1375,
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c4ligFGz",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sfd2cfc38d81843e8979fe70efeb20960X.jpg",
+      "product_id": "B0BHY76Y1K",
+      "rawTitle": "UGREEN PD3.1 240W USB C Cable, Ultra Fast Charging, USB Type C Cable, Heavy Duty Nylon, Compatible with iPhone 17/16/15 Series, MacBook Pro, iPad mini, Matebook, iPad Pro, Xperia, Galaxy, and Other Type C Models (3.3 ft (1 m)",
+      "cleanName": "UGREEN USB Cケーブル超急速充電 PD3.1 240W",
+      "section": "amazon",
+      "role": "PD3.1 240W MacBook Pro用",
+      "price_jpy": 1338,
+      "original_price": 1799,
+      "sales_count": 4709,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "50+ bought in past month",
+      "modelNumber": "",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/3RSKV6Y",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/90440-1.png?v=1752143802",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sfd2cfc38d81843e8979fe70efeb20960X.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S4495537eb0764e45be1fe682693c7371o.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sed66a823c7a34588a1e19c1d6743601fZ.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sda8806e8cab6456b887dbf4a384762226.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S4e3633ef34184afcaf9696fa8bce98aeU.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S6295de5f635249678fa1322f232653a8W.jpg"
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/90440-1.png?v=1752143802",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/90440-2.png?v=1752143802"
       ],
       "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "Ugreen DisplayPort Cable DP1.4",
-        "asin": null,
-        "url": null
+        "status": "verified",
+        "searchQuery": "UGREEN USB Cケーブル超急速充電 PD3.1 240W",
+        "asin": "B0BHY76Y1K",
+        "url": "https://amzn.to/3RSKV6Y"
       },
       "specResult": null,
-      "redditReviews": []
+      "features": [
+        "(240W Ultra Fast Charging) USB-PD supports power transmission from 100W to 240W, which is called \"Extended Power Range\" (EPR), and the main condition is that the cable can handle up to 48V and 5A (240W) of power. Also, similar to previous USB standards, the EPR-ready USB-C cable is backwards compatible with existing USB-PD devices (smartphones and laptops)",
+        "Perfect for Laptops: By raising the USB-PD limit to 240W, it is easier to build a larger and more powerful laptop without the need for a unique power cable. Note: Video output is not supported. ]",
+        "【High Quality Safety Protection】It also has a built-in multi-layer shield with over-current/overheat/short circuit protection and built-in E-marker to provide a safe and stable power supply. Best choice for fast charging and data transmission, convenient for daily use. Data Transfer: Supports data transfer up to 480Mbps under USB 2.0 standard, providing transfer rates every 5 seconds per 100 songs",
+        "【Durable and Flexible】UGREEN 5A USB C cable offers superior quality products with compact and reliable aluminum alloy shell and nylon braided cable. Nylon fiber jacket construction passes 15000+ bend test, 4 times longer lifespan than standard USB cables",
+        "【Wide Compatibility】 UGREEN USB C to C Cable for MacBook Pro 2016/ 2017, Macbook Air 2018, iMac 2017, ChromeBook Pixel 2015, Dell XPS 15/ 13, Moniteur 4k, Galaxy S9/ S9 Plus/ S8/ Note 8, Mate 20/ Mate 20 Pro/ P20/ P20/ P20/ P20/ P20 0 Pro/ Mate Smartphone charging cable compatible with a variety of USB type c devices, including 10/P10, HTC U11/10"
+      ],
+      "productOverview": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 4,709件レビュー / 星 4.4"
+      }
     }
-  ]
+  ],
+  "tavilyResults": [],
+  "brandInfo": {
+    "name": "UGREEN",
+    "nameJp": "ユーグリーン",
+    "companyName": "Shenzhen Ugreen Technology Co., Ltd.",
+    "founded": 2012,
+    "headquarters": "中国・広東省深セン市",
+    "stockListing": "深セン証券取引所（300893）",
+    "japanEntity": "Ugreen Japan合同会社",
+    "keyCertifications": [
+      "PSE",
+      "FCC",
+      "CE",
+      "RoHS",
+      "Apple MFi",
+      "PD3.1"
+    ]
+  },
+  "generatedAt": "2026-06-04T12:49:49.591Z"
 }

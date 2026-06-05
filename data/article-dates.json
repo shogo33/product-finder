@@ -76,8 +76,8 @@
     "modified": "2026-05-29"
   },
   "ugreen-gan-charger-osusume": {
-    "published": "2026-05-23",
-    "modified": "2026-05-29"
+    "published": "2026-06-04",
+    "modified": "2026-06-04"
   },
   "ugreen-mouse-osusume": {
     "published": "2026-05-20",
@@ -310,5 +310,9 @@
   "ugreen-doko-no-kuni": {
     "published": "2026-06-02",
     "modified": "2026-06-02"
+  },
+  "ugreen-mobile-battery-osusume": {
+    "published": "2026-06-03",
+    "modified": "2026-06-03"
   }
 }

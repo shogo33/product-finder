@@ -1,316 +1,800 @@
 {
+  "keyword": "UGREEN GaN充電器 おすすめ",
   "slug": "ugreen-gan-charger-osusume",
-  "keyword": "UGREEN GaN充電器 おすすめ アリエク",
-  "category": "basics",
-  "selectedTitle": "UGREENのGaN充電器おすすめ5選【2026年最新】アリエクで安く買う完全ガイド",
+  "category": "gadget",
+  "searchIntent": "おすすめ系|比較系",
+  "searchIntentNote": "UGREENのGaN充電器を買おうとしているが、30W/65W/100W/140Wのどれを選ぶべきか、ポート数やシリーズ違いで迷っているユーザー。Anker・Baseusとの比較も視野に入れる。",
+  "persona": "Anker・UGREEN・Baseusの充電器を5台以上同時に使い分け、出力Wと発熱量とサイズのトレードオフを実感で語れる節約系ガジェットオタク。アリエク・Amazon両刀使いで、PSE/GaN世代/PD3.1認証の違いも詳しい。煽らず事実ベースで読者の不安に応える。",
+  "targetProductCount": 5,
+  "titles": [
+    "UGREEN GaN充電器おすすめ5選｜30W〜140Wを用途別に徹底比較",
+    "UGREEN GaN充電器の選び方｜Nexode・Uno人気5モデル比較",
+    "UGREEN充電器おすすめ｜MacBook対応モデルから30W入門機まで5選"
+  ],
+  "selectedTitle": "UGREEN GaN充電器おすすめ5選｜30W〜140Wを用途別に徹底比較",
+  "metaDescription": "UGREEN（ユーグリーン）GaN充電器のおすすめ5モデルをAmazon実レビューで徹底比較。30W入門機から140W大出力モデル、Nexode・Unoシリーズの違い、PSE取得状況、MacBookやiPhoneに合う1台の選び方を解説します。",
+  "intro": "「UGREENのGaN充電器ってどれを選べばいい？」「30W・65W・100W・140Wのどれが必要？」と迷っていませんか。\n\n結論から言うと、iPhoneだけなら30W、MacBook AirやiPadで65W、MacBook Proを充電するなら100W以上、複数機器の同時充電なら3〜4ポートのNexodeシリーズが正解です。UGREENのGaN充電器はAnker・Baseusと並ぶ深圳系3大ブランドの一角で、Amazon累計1万件超のロングセラーも多数あります。\n\nこの記事では、UGREEN GaN充電器の主要5モデルをAmazon実レビューで比較し、用途別の最適解と購入前に知っておきたい安全性・選び方ポイントまで網羅します。",
   "sections": [
     {
       "id": "section1",
-      "h2": "UGREENのGaN充電器とは？ブランドの特徴と信頼性",
+      "h2": "UGREEN GaN充電器の特徴｜Anker・Baseusとの違い",
       "h3s": [
-        "UGREENはどんなブランド？アリエクでの評判",
-        "GaN（窒化ガリウム）充電器が従来品より優れている理由"
+        "GaN（窒化ガリウム）が小型・低発熱で支持される理由",
+        "深圳系3大ブランドの一角、PSE・PD3.1認証取得"
       ],
       "type": "brand_overview",
       "notes": [
-        "UGREEN社の概要・設立年・製品ラインナップを簡潔に紹介し信頼性を担保する",
-        "GaN素子の特性（小型・低発熱・高効率）をわかりやすく説明し購入動機を高める",
-        "アリエクのUGREEN公式ストアの存在と評価件数・評価スコアに触れて安心感を与える"
+        "GaNは従来のシリコン素子より小型化・高出力・低発熱を両立できる素材であることを簡潔に説明",
+        "UGREENは2012年創業の中国深圳発メーカー。Anker・Baseusと同系譜で、Amazon累計レビュー数十万件規模の実績",
+        "全モデルがPSE取得・PD3.0/3.1対応で日本国内で安心して使える事実を提示"
       ]
     },
     {
       "id": "section2",
-      "h2": "UGREEN Nexode 65W GaN充電器｜1台でPC＋スマホをまかなえる万能モデル",
+      "h2": "UGREEN GaN充電器の選び方｜W数・ポート数・シリーズ",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "出力W数の目安（30W：スマホ、65W：MacBook Air、100W：MacBook Pro、140W：複数機器）",
+        "Unoシリーズ（軽量・コンパクト）とNexodeシリーズ（多ポート・大出力）の違い",
+        "ポート数の選び方（1〜2ポート：単機種、3〜4ポート：複数同時充電）"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "65W・USB-C×2＋USB-A×1構成の使い勝手を具体的に説明する",
-        "MacBook Air・iPad・iPhoneの同時充電シナリオを例示してイメージを持たせる",
-        "アリエクでの実勢価格帯と国内価格との差額メリットを記載する"
+        "用途と出力Wの対応関係を表または箇条書きで明示",
+        "Uno=小型ライト寄り、Nexode=パワー寄りのキャラクター付け",
+        "コンセント1個で何台同時に充電したいかでポート数を選ぶ視点を提供"
       ]
     },
     {
       "id": "section3",
-      "h2": "UGREEN Nexode 100W GaN充電器｜MacBook Proユーザーに最適なハイパワーモデル",
+      "h2": "Amazonで買えるUGREEN GaN充電器おすすめ5選",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "Uno 30W (X550)：iPhone・iPad mini向け入門の決定版",
+        "Uno 65W (CD361)：MacBook Air・iPadも余裕の万能機",
+        "Nexode 65W 4ポート (X559)：複数機器を同時充電するならコレ",
+        "Uno 100W (X688)：MacBook Pro充電できるコンパクト機",
+        "Nexode 140W 3ポート (CD289)：ノートPC2台同時の最大出力モデル"
       ],
       "type": "product",
       "notes": [
-        "100W出力でMacBook Pro 14インチを単体フル充電できる点を強調する",
-        "USB-C×3＋USB-A×1の4ポート構成と電力按分の仕組みを説明する",
-        "出張・テレワーク時にACアダプターをこれ1個に集約できるメリットを伝える"
+        "全5商品が独立した product card として展開される（Amazonコーナー）",
+        "本文には『なぜこの商品か（実績・スペック根拠）』『どんな人向けか』『デメリット/注意点』を簡潔に書く",
+        "Amazon実績（レビュー数・星評価）を信頼性の根拠として必ず1文添える"
+      ]
+    },
+    {
+      "id": "section3b",
+      "h2": "AliExpressで買えるUGREEN GaN充電器おすすめ4選（公式ストア・販売実績300+）",
+      "h3s": [
+        "20W/30W GaN ミニ充電器：販売10,823件のロングセラー入門機",
+        "45W/30W/25W/20W GaN充電器：用途別にW数を切替可能",
+        "45W GaN 充電器：45W単機種でMacBook Air対応",
+        "3ポート GaN充電器 PD3.0：同時充電対応のマルチポート機"
+      ],
+      "type": "product",
+      "notes": [
+        "全4商品が独立した product card として展開される（AliExpressコーナー）",
+        "全商品が UGREEN Official Store（shop_id=1103243235）の公式品であることを必ず明記し、偽物リスクを排除",
+        "AliExpressアフィリエイトリンクは research JSON の promotion_link を使用",
+        "直近販売数を実績エビデンスとして見出し脇に併記",
+        "「Amazonより安く買える可能性が高い」「セール時期を狙うとさらに得」「ただしPSE記載が見にくい場合あり」など実用情報を添える"
       ]
     },
     {
       "id": "section4",
-      "h2": "UGREEN Nexode 140W GaN充電器｜MacBook Pro 16インチも余裕で充電できる最強モデル",
+      "h2": "UGREEN GaN充電器5モデル比較表",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "出力・ポート数・サイズ・価格を一覧で確認",
+        "用途別おすすめ早見"
       ],
-      "type": "product",
+      "type": "comparison",
       "notes": [
-        "140W出力・USB-C×3＋USB-A×1の最上位モデルとして位置付ける",
-        "PD3.1対応による高電圧充電の安全性と急速充電の速さを数値で示す",
-        "価格は高めだが「充電器をこれ1台にまとめる」価値を訴求する"
+        "5モデルを比較表で整理。列：モデル名・最大出力(W)・ポート数・PD対応・参考価格・特徴",
+        "比較表の直下に「iPhoneだけ→Uno 30W」「MacBook Air→Uno 65W」「ノートPC＋複数台→Nexode 100W〜140W」のような早見表を箇条書き"
       ]
     },
     {
       "id": "section5",
-      "h2": "UGREEN Nexode 45W GaN充電器｜軽量コンパクトで旅行・外出に最適なモデル",
+      "h2": "UGREEN GaN充電器の安全性とリコール情報",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "PSE取得済み・PD3.1・GaNIII技術の信頼性",
+        "Anker等の他社リコールとの違い",
+        "もし発熱が気になったときの確認ポイント"
       ],
-      "type": "product",
+      "type": "brand_overview",
       "notes": [
-        "45W・USB-C×2構成で重量約65gという携帯性の高さを具体的に伝える",
-        "iPhone・Android・iPad Miniの急速充電に対応する点を説明する",
-        "旅行・出張のサブ充電器として「鞄に常備したくなる」魅力を訴求する"
+        "UGREENのGaN充電器は発火・破裂を理由とした正式リコールは現時点（2026年6月）でなしを明記",
+        "Ankerは一部の旧モデルでバッテリー発火懸念により自主回収あり（モバイルバッテリー中心、充電器単体は別）と整理",
+        "全モデル過電流・過熱保護回路・短絡保護を標準装備、PSE適合品である事実で信頼性を担保"
       ]
     },
     {
       "id": "section6",
-      "h2": "UGREEN Nexode Pro 160W GaN充電器｜ゲーミングPCユーザー向けの超高出力モデル",
+      "h2": "UGREEN GaN充電器の用途別おすすめ",
       "h3s": [
-        "スペックと主な特徴",
-        "こんな人におすすめ・実際の使用感"
+        "iPhoneユーザー向け",
+        "MacBook Air/Proユーザー向け",
+        "出張・旅行で1台多役を求める人向け"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "160W出力でゲーミングノートPCへの給電も可能な点を強調する",
-        "USB-C×4＋USB-A×1の5ポート構成でオフィス環境全体を1台で賄えることを説明する",
-        "価格帯・サイズのデメリットも正直に記載しフェアな評価を示す"
+        "ユーザータイプ別に本記事の5モデルから1〜2つずつ推奨を絞り込んで提示",
+        "「iPhoneだけ → Uno 30W」「MacBook Air → Uno 65W」「MacBook Pro → Uno 100W or Nexode 100W」「複数台 → Nexode 65W 4ポート / Nexode 140W」"
       ]
     },
     {
       "id": "section7",
-      "h2": "5モデルを徹底比較｜UGREENのGaN充電器スペック一覧表",
+      "h2": "AliExpressのUGREEN公式ストアでも買えるが、Amazon推奨の理由",
       "h3s": [
-        "スペック比較表の見方と注意点",
-        "価格帯別・用途別のおすすめ早見表"
+        "AliExpress公式ストアの価格帯",
+        "PSE取得品・即配の観点でAmazon推奨"
       ],
-      "type": "comparison",
+      "type": "howto",
       "notes": [
-        "最大出力・ポート数・重量・アリエク価格目安・PD対応規格を表で一覧化する",
-        "「一人暮らし向け」「MacBookユーザー向け」「ヘビーユーザー向け」で選びやすくまとめる",
-        "電力按分時の各ポート最大出力についても補足し実用的な情報を提供する"
+        "AliExpressのUGREEN Official Store（shop_id=1103243235）でも充電器の取扱はあるが、日本仕様（PSE取得品）であるか確認しにくい場合があると注意",
+        "AmazonのUGREEN-JAPAN販売元なら間違いなくPSE取得品＋翌日着＋日本語サポートのメリットを訴求",
+        "セール時期（11.11・6.18・Prime Day）の価格差にも触れる"
       ]
     },
     {
       "id": "section8",
-      "h2": "アリエクでUGREEN GaN充電器を選ぶときの3つのポイント",
-      "h3s": [
-        "①用途別に必要なW数・ポート数を確認する方法",
-        "②UGREEN公式ストアで購入する理由と偽物を見抜くコツ",
-        "③クーポン・セールを活用してさらに安く買う方法"
-      ],
-      "type": "howto",
+      "h2": "UGREEN GaN充電器に関するよくある質問（FAQ）",
+      "h3s": [],
+      "type": "faq",
       "notes": [
-        "自分の充電デバイス（スマホ・タブレット・PC）のW数要件を整理する手順を説明する",
-        "アリエクのUGREEN公式ストアのURLと見分け方・評価件数の確認方法を案内する",
-        "コインキャッシュバック・Choiceクーポン・11.11セールを活用した節約術を紹介する"
+        "Q&A形式・5問。リッチリザルト対応の構造化",
+        "「どこの国？」「PSEは？」「Anker/Baseusどっち？」「発熱は？」「MacBook Pro充電は本当に可能？」を網羅"
       ]
     },
     {
       "id": "section9",
-      "h2": "よくある質問｜UGREEN GaN充電器をアリエクで買う前に確認",
-      "h3s": [],
-      "type": "faq",
-      "notes": [
-        "日本のコンセント（100V）対応可否・PSEマークの有無について正確に回答する",
-        "偽物・粗悪品リスクと公式ストア購入で回避できる理由を明記する",
-        "送料・配送日数・返品対応などアリエク購入特有の不安を解消する"
-      ]
-    },
-    {
-      "id": "section10",
-      "h2": "まとめ｜あなたにぴったりのUGREEN GaN充電器をアリエクで手に入れよう",
-      "h3s": [],
+      "h2": "まとめ｜UGREEN GaN充電器は『用途×W数』で選べば失敗しない",
+      "h3s": [
+        "用途別の結論まとめ",
+        "関連記事で深掘り"
+      ],
       "type": "conclusion",
       "notes": [
-        "5モデルの選び方を用途・予算別に3行でまとめ読者の決断を後押しする",
-        "アリエク公式ストアリンクとUGREENケーブルなど関連記事への誘導を行う",
-        "「迷ったら65Wモデルが最もコスパ良し」という明確な編集推薦を出す"
+        "結論：iPhoneだけならUno 30W、MacBook AirならUno 65W、MacBook ProならUno 100W、複数台ならNexodeシリーズ",
+        "関連記事への内部リンク（ugreen-doko-no-kuni、ugreen-mobile-battery-osusume、Baseus charger比較等）"
       ]
-    }
-  ],
-  "researchedAt": "2026-05-23",
-  "products": [
-    {
-      "product_id": "1005004882363331",
-      "rawTitle": "Ugreen-nexode gan急速充電器30w,iphone 14 13,ipad pro,samsung,xiaomi pd用のusbc充電器",
-      "cleanName": "Ugreen Nexode 30W USB-C PD充電器",
-      "price_jpy": "3240",
-      "original_price": "33.32",
-      "sales_count": 16,
-      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvmvR57S69fGyn8Tt4pCtmLccxQz3g0L1ZKu00BPwYOT3BF4QZOqRqMDB0DQG6gn73fwX3zEu1vmopOK1urFbMFHSYKOaDc2LEVzuYu7GzB2ACQ6CBdhxtDrQVEWMTp0lf9br6Q1hV5SuEzlMEcyhnZZsQukiKuBhwfkuJFdhoRj9cDK1Mxv8DVD8FgOsFfKjAVJwpdW4Y7DZo3B4I1JF5x4K71700SJ4DGJBqf7CCg6gNSDyks5IGEIKA1yq3OZ8t4o7fzQvcsHGBQ8k6YVV174uIz6Y1pZcnW2Ie0CeceRhYGpZEGQB7eSJKkc48GPM2F0VwLoeZttxMcYRG8QXYYXXUbs8GIxOR3fIpdli2c2ajbsWvKDhuMeihWc2V8f5vdeVomhFyeAa1s2uH4CSLZsJnlufYDSwWNxdrDBBGOXrhrmVqgolIaAG8I6EfUfZYHJIW6fBTqHtnkIo3QQXxOKiXdQ67OIdusqaSkP8jVYZbpCycjwJKiVVi50Kp5sSQ5tNzvIFHI5MR7vfYznekSS7NxoIQzL4eelH7JVGFMmi126hcf8JTXXn67n82eJ9G2s7jwws3sQ3vZe4xbF94eDHkS99fX0Wpid8XC7MkWIOMIi6ih9udkIerMI0UmbLH7U2pq0Vg8QjZ03IZ70hsgDLKviEedvuNvJZLmRov7MLlxc7fZln47TDcps1FsFp2c01Ydp6rYkgJWmgkR5WkbgZWmaOHmwRJWZMYkIKHH4f",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Aad0aad3c4044461c855d2e90ecc4775eV.jpg",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Aad0aad3c4044461c855d2e90ecc4775eV.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S41f2c770d5db4d8cb979d98d2d49f89dB.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S0f08382b3dbf43e9b9361796a3925e08j.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sf475180351314c42816b6c682263ae32o.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S22970c5ea43c48a1a543870b6836907bH.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S99a542d46f2040ea943096a40739c017x.jpg"
-      ],
-      "amazonPlaceholder": {
-        "status": "confirmed",
-        "searchQuery": "Ugreen Nexode 30W USB-C PD充電器",
-        "asin": null,
-        "url": "https://amzn.to/4wHKrAA"
-      },
-      "specResult": null,
-      "redditReviews": []
-    },
-    {
-      "product_id": "1005011652041579",
-      "rawTitle": "UGREEN Nexode 65W GaN USB C壁掛け充電器、4ポート高速Type-C充電器、MacBook Pro/Air、Phone 17/16/15シリーズ対応",
-      "cleanName": "UGREEN Nexode 65W GaN USB C壁掛け充電器 4ポート",
-      "price_jpy": "5599",
-      "original_price": "235.00",
-      "sales_count": 2,
-      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C3Ry0COKWxKicUM18VqZJl0DcBG5HA983H2PoxuOKWWist18b7xY6RJ6BGh2PumV88jmaKDHTw8NpcWyzN6ijgdzdwGfD2S3fWLfOwYiVjtI6X4tV47ATxyUKgpuWgYqr1AABIbSuNy2oD862NEYD81IrnRpR988rQjNPMNNWmXj3sj1f08t3qgFFEK9lxuX2elnaRHp02sDM75GZHh8CAlwxBFstLayNTU66xayaJwiY6sDL00DKgZTe8CQdISga7L5gjqtxdmhS6TmU1VzcPHurZhnZFO0J3wcdNuuGDghBic3p0c2oRcCEeHQxSjnxbfa7Vndo68skTvkXJy4sOmuYexHrE47YFnMgws2dSQndI9J5s0l14I2MvXNKpucYEE0NA03LtJ2CEsKLbisO80tfVq4H0HE5AhvZ83BoDAXe53OXb8L4EqizXOz0b1jWFDMPy9yBBKbsUQvWoLNeZNLo11m14XaEPSNLhZBhgJHLEM6zrWeXCLFnEPWlKp6OoIjK1mocVK0p2wIbfEVc0s8ctwkrr2yjZcAXZxTReSmeMouSkpSv1YO1E8lYIFLpPrOgVbb4k1jmnWmgcCsWCzqp1wV6qBmsWcxaVUBoIy1o65r8RDB6qVSsdrR89lN0OmAbyEITfbEFA3RSmDmUC8iLUUJdNaWk1xYX2wDr3bbPEChrTaAowgI8itvv3Xb4AV71a9UNvYNLK",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sbb006d4c75a340b6a617ea1cf15e6bded.png",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sbb006d4c75a340b6a617ea1cf15e6bded.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sb0d3e9b024284bbf8bc2a29555f8215eI.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S00009915542c49f18c7c5de04e851f91b.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sc6d484a8ae1b4a0883b946b023c5d7d0k.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S9f7011cf1b2f4a45836fd6c44c11385en.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S7208dbc3c85b4f93bc86c1d58afe3055i.png"
-      ],
-      "amazonPlaceholder": {
-        "status": "confirmed",
-        "searchQuery": "UGREEN Nexode 65W GaN USB C壁掛け充電器 4ポート",
-        "asin": null,
-        "url": "https://amzn.to/4uqRMTr"
-      },
-      "specResult": null,
-      "redditReviews": []
-    },
-    {
-      "product_id": "1005009078588487",
-      "rawTitle": "UGREEN 45W GaN格納式ケーブル充電器 UFCS PPS QC PD 3.0 iPhone 17 16Pro Samsung S25 iPad Macbook Air タブレット対応 急速充電器",
-      "cleanName": "UGREEN 45W GaN格納式ケーブル充電器",
-      "price_jpy": "4921",
-      "original_price": "32.66",
-      "sales_count": 321,
-      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvmvR57S69fGyn8Tt4pCtmLccxQz3g0L1ZKu00BPwYOT3BF4QZOqRqMDB0DHjvmIZ5TcVLpHP6KRZhaAvHnbCsc05PnAO3UHR683FwQ9RMwxkOGgKMWLEoSDqRlOYSJyzDGRCZfbNPF4e2jL5at3oFkJ6zpuuZ4GrEDYtLDN5IbGy2HVk9AHeIHzf8wfjTzbq3n8eP1GqIA2Sy1qXVVxCKnWFZUl3qgRZ4PnuNQ2QuMUr18nqHgOwwgZIpLPs9JaFLyOtNKY6NJe3xaW4yosjTTbPl6WGPFKCksQbtjK5Ce4EOSIsTC9nbXhUYwCsESiK1SO0sDGsJ9g3cz8Oe0ae4habeKlnms6F1Zkh85GkgfswIAW0fNLNy8woIlsdQ8IuyzXtVyc4AK7TGBQFzjqk5IGBXVn6Z4fFsqpksOQhyJOJLpif6fL0ndWx0PN93VXGQDsmH5cH2S3HALT10yjmu1IXUHlQ4dQGgaI9E5Xzf7LXBcosyVQnk2FXjCFARz9Japv67buhNXZLf6HVh8wpoPsdntFknL04jR6ngGSxL54e8AuV8IIc3S40J6fdTCJ2jxvj7987NUlWfK3FogQRKheLKXxzrB6YRNSrev4gUsmImsLRvbEf8hwAX7KaA8usildp4AVr8FuAvmMEcc2hBmMI4cYE0Hti6KPY8NJIKTc1qKbuucwlH1PX0xvopP5Jhlr4H75C6kBZO3P1j7iLJepubjytYDSJOqEs6VnBs767",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sc1f99e266e0541859a63366defa8d858I.jpg",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sc1f99e266e0541859a63366defa8d858I.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S761ee53ebe1249bbaa582daf2635a5bfn.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sddd8f4bf9e16446aa37a5d34d4c83024e.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S8ee50a0e7d1d436280fead12bf47589be.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S7496080c00254fc29e848302050eed4fj.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S902260d3b23c49eaa0fef132c4355c958.jpg"
-      ],
-      "amazonPlaceholder": {
-        "status": "confirmed",
-        "searchQuery": "UGREEN 45W GaN格納式ケーブル充電器",
-        "asin": null,
-        "url": "https://amzn.to/4dZNQDp"
-      },
-      "specResult": null,
-      "redditReviews": []
-    },
-    {
-      "product_id": "1005012249568354",
-      "rawTitle": "UGREEN Nexode 100W GaN USB C格納式充電器（内蔵ケーブル付き）、3ポート高速充電壁掛けアダプター（ノートパソコン用）",
-      "cleanName": "UGREEN Nexode 100W GaN USB-C充電器",
-      "price_jpy": "8121",
-      "original_price": "355.00",
-      "sales_count": 1,
-      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CoV4bsRSZDyLyTbVhcBLUfQVj3luztAj8hatjf9ytwKz0Tei4koxBcZkctBiEKRLSIhMtAaytv1qQwjtIjPpbfpkTSIypWdop2bBVeTxWJd2d4M5SDljnTXiPDeGQbWrzZl3cCe1bl5UlCOKkYHE50ggzjinScKNgl2PF4wMaCbHpdINX6RpduQq89WvgdFKf5nyidljDL60Tuf1R2lE8m1i5YPUAOh7ejftX0zdozmGmtxyWUO251B8vbt9azgITNUubm9Q9Nw2eL4Q6poIgP8Py7nrJvEHFknvPlTnEcgLo3xRn38744VEknEOaOGVv1tgWWYZbCBrZxxWtPxwZdq9NizZyFon4d2xghdpTwMMRh3giCgGGhDjmLGS43gLZfkoZrLjJWHBzcDmoKuBDzYWOU7jlbSctwBT4FRppUhBFNS6ra0pzmX2YOGU1qf4NjZkTor1pok2mZJpz19GhwQAIUnECi6chDZAQ3hRD3cAElZBNM62mWw9LR9TphM0okHYKADQ5LM4D7xDIs5vI77mfJtMZIQbdpxaaSMcK79oOHdbz5GkDxGcd7Kx50ErxEYTNgSlPUOjSa3lqq2qI5bcsVyn8uzGiOI3v6gdLUMW2OWpPvexGrWkkqT8rxfnP2vxBcHocZy0u3AYoVpY0m2ZFr0i8ZSZG1LtSFqSJjyRaVjRjzrBxk3FJJWzoi1JENiyNu0YExRN6g",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S834eecf1355d4d198c29512ab7944433f.jpg",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/S834eecf1355d4d198c29512ab7944433f.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S0e4d1f0167dd4ce6a4fad2953434ba73R.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S29222cdf579b4f9b9dc4668ae9e7517bN.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S1010ac53fc81450d9081f2004fb57affk.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S5026312ea89045e69eedbef490dbb2daZ.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sc5c6fc6331d445db8a073a267a8d4effP.jpg"
-      ],
-      "amazonPlaceholder": {
-        "status": "confirmed",
-        "searchQuery": "UGREEN Nexode 100W GaN USB-C充電器",
-        "asin": null,
-        "url": "https://amzn.to/4nN8wSr"
-      },
-      "specResult": null,
-      "redditReviews": []
-    },
-    {
-      "product_id": "1005012206227120",
-      "rawTitle": "UGREEN Nexode 200W GaN USB C充電ステーション、8ポートデスクトップ充電器（ノートパソコン、スマートフォン充電用）",
-      "cleanName": "UGREEN Nexode 200W GaN USB C充電ステーション 8ポート",
-      "price_jpy": "12581",
-      "original_price": "528.00",
-      "sales_count": 0,
-      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4riEmy5Qe22DJ3iKOEH4StHtOTCNRyZJzOelmVootQMXlWH7W3iRuTLAu57RnLOvCaHNWBQt3N3S2Qa07YcweBB4VJsSngNkl0VQ86f2vYuU9XWjVDGBt3xCbJ5uXA3w2yjx5yBMmMY5rPXyX6g3G3I2nJT1InxpR61YZrp8LIAmrJhIEWJyzHZzxkvJeYr2ifC8ndNf8cgNu6QuSv2PzAELF2uTSABiDUr2fVNjn2HH6K7GLyDUpm6fVe4plzYZ8RpIssKICIAzjdbh7ztCM3akpweM9mp2burIFLxSFKo0Yw6XGZWev1tmMpMhXBGfxffPxhaLlCWRXpNrFpYvnqlT4teJo7Bh1tlxafy1bqlhR0CU0Xb7XGUbef4VBHpTmrTikALZpuooaw1IyOkK5GuudAQBZ1qyyNx1Rd8YI62T4OFLzYuAznPQx8AmFdauVhz22PcuiHMhZtCAKimuCLJvtOgeD0eLKFCC67AfdyTapxabVo08DOH6yQ01HRBRQbV2NV1xWPa30Z2SeQoMV799xQSGFEayETER0Ib17wPcgyrQdO4OdapASItRruyN4aHTmaPJYoeNIEFDi7VAwVm0ussJLjBX0Y2CwBCexGATNfwkbt20ldtljNDyxT4FJjz8wmSwtO3UG2pdHUPcNIhx1om8ZAxjJEveNzOXd71cbUhyXUZKZcekaLjf2THqRVuyDrR1v6QHF",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S04061b6506ac4f59bff836b2cffe7260d.jpg",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/S04061b6506ac4f59bff836b2cffe7260d.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S6cba0a6e780045c0b6f009c864fd2905w.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S678e45cf27af4e219404c36b161ed954Q.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S2a8ef9542221463e8e42bf7c19c40e68Q.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S80bcd5c19d594d0da796157d5cc13e0ff.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S3952f3986edc4c499af8186e4d998090V.jpg"
-      ],
-      "amazonPlaceholder": {
-        "status": "confirmed",
-        "searchQuery": "UGREEN Nexode 200W GaN USB C充電ステーション 8ポート",
-        "asin": null,
-        "url": "https://amzn.to/4dKRJej"
-      },
-      "specResult": null,
-      "redditReviews": []
     }
   ],
   "faqQuestions": [
-    "UGREENのGaN充電器は日本のコンセント（100V）で使えますか？",
-    "アリエクで買うUGREEN充電器は偽物・粗悪品の心配はありませんか？",
-    "GaN充電器は発熱が少ないと聞きますが、実際はどうですか？",
-    "UGREEN GaN充電器の日本への送料と配送日数はどのくらいですか？",
-    "UGREENの充電器とBaseusの充電器はどちらがおすすめですか？"
+    "UGREEN（ユーグリーン）はどこの国のメーカーですか？",
+    "UGREEN GaN充電器はPSE認証を取得していますか？",
+    "UGREENとAnker、どちらのGaN充電器を選ぶべきですか？",
+    "MacBook Proを100W出力で本当に充電できますか？",
+    "UGREEN GaN充電器に発火・リコールはありますか？"
   ],
   "comparisonTableColumns": [
     "モデル名",
-    "最大出力（W）",
-    "ポート構成",
-    "重量（g）",
-    "アリエク価格目安（円）",
-    "こんな人向け"
+    "最大出力(W)",
+    "ポート数",
+    "GaN世代",
+    "PSE",
+    "参考価格(円)"
   ],
   "internalLinks": [
     {
-      "url": "/basics/ugreen-cable-osusume.html",
-      "anchorText": "UGREENケーブルおすすめ5選"
+      "url": "/guide/ugreen-doko-no-kuni.html",
+      "anchorText": "UGREENはどこの国？信頼性まとめ"
     },
     {
-      "url": "/basics/baseus-mobile-battery-osusume.html",
-      "anchorText": "Baseusモバイルバッテリー完全ガイド"
+      "url": "/gadget/ugreen-mobile-battery-osusume.html",
+      "anchorText": "UGREENモバイルバッテリーおすすめ"
     },
     {
-      "url": "/basics/aliexpress-choice.html",
-      "anchorText": "アリエクのChoiceとは"
+      "url": "/gadget/baseus-charger-osusume.html",
+      "anchorText": "Baseus GaN充電器との比較"
+    }
+  ],
+  "competitorDifferentiators": [
+    "Amazon実レビューを各商品に埋め込んでおり、賛否両論まで把握できる",
+    "Anker・Baseusとの違いを冷静に整理し、UGREENが向いているケースを明示",
+    "Anker系リコール検索ユーザーの不安にも独立セクションで応える"
+  ],
+  "createdAt": "2026-06-03",
+  "researchedAt": "2026-06-04",
+  "products": [
+    {
+      "product_id": "B0BZHZ56M9",
+      "rawTitle": "UGREEN Uno 30W PD Charger Robot-shaped USB-C Charger 【Expressions show the situation・Detachable magnetic boots included】 GaNFast equipped PD/PPS/QC4+ standard compliant PSE technical standards",
+      "cleanName": "UGREEN Uno 急速充電器 30W",
+      "section": "amazon",
+      "role": "入門・iPhone単体",
+      "price_jpy": 2100,
+      "original_price": 2950,
+      "sales_count": 7536,
+      "evaluate_rate": 4.3,
+      "monthly_volume": "50+ bought in past month",
+      "modelNumber": "15550",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4fRKnbr",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15550-3_1.png?v=1726656691",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15550-3_1.png?v=1726656691",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45089_25036_2.png?v=1726656691",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45089_25036_15550_1.png?v=1726656691",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15550-2_1.png?v=1726656691",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15550-1_1.png?v=1726656691"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Uno 急速充電器 30W",
+        "asin": "B0BZHZ56M9",
+        "url": "https://amzn.to/4fRKnbr"
+      },
+      "specResult": {
+        "content": "充電作業をワクワク体験に変える近未来的ロボット型充電器！見ているこちらも笑顔になる遊び心いっぱいの絵文字フェイス、実は最大出力 30Wのパワフルな充電器です。USB-Cポート搭載で、持ち運びやすいコンパクトサイズ。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "(Yaba! The charger turns into a robot! ? The UGREEN Uno Series has appeared as a new generation of robot-shaped chargers! An unprecedented, innovative robot-shaped design that is both cute and cool At first glance, it looks like a decorative item, but it is actually a capable charger A recommended item for tech fans and high-tech enthusiasts! Note: This is a PD charger, not a magnetic mobile battery",
+        "【Equipped with 1 30W USB-C Port・No Need to Worry About Rapid Charging with Current Distribution】Equipped with a high-output 30W USB-C port, you can enjoy rapid charging without worrying about momentary disconnections/reconnections caused by current distribution when plugging/unplugging devices, just like a multi-port charger Stable 30W output helps you charge your precious devices quickly",
+        "(Detachable magnetic boots with robot expression to notify you of charging status) No need to pick up your smartphone frequently to check the charging status The robot expression displayed on the LED screen shows a smile with eyes and mouth when charging, and only with eyes when fully charged, so you can easily see the charging status at a glance In addition, the boot part has a magnet so you can conveniently attach it to steel furniture Designed for easy portability, it can be placed in a bag without worrying about getting caught or broken",
+        "【Eco-friendly GaNFast adoption and unique Thermal Guard cooling technology】By adopting the evolved GaNFast chip in combination with UGREEN's unique Thermal Guard cooling technology, we have succeeded in pushing the limits of power density while also improving efficiency, reducing energy usage and footprint size, and reducing heat generation UGREEN supports the \"Innovation for a Decarbonized Society and Lifestyle Leading by GaN Technology\" project, which was implemented by the Japanese Ministry of the Environment until the fiscal year 2021, utilizing high-quality Gallium Nitride (GaN) to thoroughly reduce energy loss in all aspects of society and achieve CO2 emission reduction",
+        "Supports Multiple Rapid Charging Protocols, Excellent Compatibility: Apart from PD3.0, it supports various charging protocols, such as PPS, QC4+ (QC4.0/QC3.0), SCP (10V/2.25A), FCP, AFC, etc Ideal for charging various devices such as iPad Pro/iPad mini/iPhone 16-8 series/Android smartphones/tablet devices/iWatch/Switch game consoles, providing optimal and fastest charging"
+      ],
+      "productOverview": [
+        {
+          "key": "Brand",
+          "value": "UGREEN"
+        },
+        {
+          "key": "Connector Type",
+          "value": "USB Type C"
+        },
+        {
+          "key": "Compatible Devices",
+          "value": ""
+        },
+        {
+          "key": "Compatible Phone Models",
+          "value": ""
+        },
+        {
+          "key": "Included Components",
+          "value": "User Manual"
+        },
+        {
+          "key": "Special Feature",
+          "value": "Fast Charging"
+        },
+        {
+          "key": "Color",
+          "value": "metallic"
+        },
+        {
+          "key": "Input Voltage",
+          "value": "120 Volts"
+        },
+        {
+          "key": "Amperage",
+          "value": "6 Amps"
+        },
+        {
+          "key": "Total USB Ports",
+          "value": "1"
+        }
+      ],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 7,536件レビュー / 星 4.3"
+      }
     },
     {
-      "url": "/basics/aliexpress-what-is.html",
-      "anchorText": "AliExpressの安全性と使い方"
+      "product_id": "B0CY56KRCX",
+      "rawTitle": "UGREEN Uno Charger, 65W Rapid Charger, USB-C x 2 and USB-A x 1, Supports PD/PPS/QC4+/SCP Standards, Compatible with MacBook Air/iPad Pro/iPhone 17-8 Series/Galaxy S24-S10 Series/Xperia Series/Pixel Series, PSE Certified, Pink",
+      "cleanName": "UGREEN Uno 急速充電器 65W",
+      "section": "amazon",
+      "role": "MacBook Air・iPad万能",
+      "price_jpy": 3980,
+      "original_price": 5380,
+      "sales_count": 5263,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "50+ bought in past month",
+      "modelNumber": "CD361",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/4uGSPPh",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15570_35314_35856_2.png?v=1726656789",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15570_35314_35856_2.png?v=1726656789",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35314_35856_1.png?v=1726656789",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15570-2_1.png?v=1726656789",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15570-3_1.png?v=1726656789",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/15570-1_1.png?v=1726656789"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Uno 急速充電器 65W",
+        "asin": "B0CY56KRCX",
+        "url": "https://amzn.to/4uGSPPh"
+      },
+      "specResult": {
+        "content": "充電に、もっと遊び心を。 充電作業をワクワク体験に変える近未来的ロボット型充電器！！見ているこちらも笑顔になる遊び心いっぱいの絵文字フェイス、実は最大出力65Wのパワフルな急速充電器です。USB-C×2、USB-A×1の3ポート搭載。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "Note: This product does not have a mobile battery function. PD compatible cable and PD charging devices are required for PD charging.",
+        "(Yaba! The charger turns into a robot! ? UGREEN Uno charger is now a new generation of robot chargers. Unique robot designs that emphasize their own style and impress you will find anywhere! Thinking of figurines and in fact, it's a powerful charger. Highly recommended for Tech fans",
+        "(Robot's expression to notify you of charging status) The UGREEN Uno type c charger is equipped with an LCD screen that lets you know the charging status with the robot's expression. It expresses a smile with your eyes and mouth while charging, and when fully charged, you can understand the charging status at a glance. In addition, the boot part has a magnet so you can conveniently attach it to steel furniture. Designed to be easy to carry without worrying about snagging or breaking in your bag.",
+        "(Single port up to 65W, compatible with the latest MacBook Air) Uno 65W features 2 USB-C ports and 1 USB-A port, allowing you to charge 3 devices simultaneously. With a maximum of 65 W output, it can charge any USB-C device from the MacBook series to smartphones (1 of 2 devices is compatible with 65 W), so you can use it at home or on business trips. AI detection function automatically adjusts output to your connected device to protect your device and charge at the fastest possible speed.",
+        "Uses Eco-friendly GaNFast / UGREEN's exclusive Thermal Guard cooling technology: By using the advanced GaNFast chip and combined with UGREEN's proprietary Thermal Guard cooling technology, it increases efficiency while simultaneously pushing the limits of power density, and reducing the amount of heat generated by reducing energy usage and reducing the footprint. Fire-resistant PC material is used to protect against overcurrent, overvoltage, overheating, and short circuits for rapid and safe charging."
+      ],
+      "productOverview": [
+        {
+          "key": "Brand",
+          "value": "UGREEN"
+        },
+        {
+          "key": "Connector Type",
+          "value": "USB Type C"
+        },
+        {
+          "key": "Compatible Devices",
+          "value": ""
+        },
+        {
+          "key": "Compatible Phone Models",
+          "value": ""
+        },
+        {
+          "key": "Included Components",
+          "value": "User Manual"
+        },
+        {
+          "key": "Special Feature",
+          "value": "Fast Charging"
+        },
+        {
+          "key": "Color",
+          "value": "Pink"
+        },
+        {
+          "key": "Input Voltage",
+          "value": "100 Volts"
+        },
+        {
+          "key": "Total USB Ports",
+          "value": "3"
+        },
+        {
+          "key": "Wattage",
+          "value": "65 W"
+        }
+      ],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 5,263件レビュー / 星 4.4"
+      }
+    },
+    {
+      "product_id": "B0CYZ52VPX",
+      "rawTitle": "UGREEN 65W Rapid Charger, 4 Ports, USB-C x 3 + USB-A x 1, Type C, PD3.0, GaNII Charger, Compatible with iPhone 16, Android, Galaxy, Macbook, iPad, PC, and Other USB-C Devices, PSE (Black)",
+      "cleanName": "UGREEN Nexode 65W 急速 充電器 4ポート",
+      "section": "amazon",
+      "role": "4ポート同時充電",
+      "price_jpy": 3780,
+      "original_price": 4880,
+      "sales_count": 4100,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "300+ bought in past month",
+      "modelNumber": "X559",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/431RBSK",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-1.png?v=1752144127",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-1.png?v=1752144127",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-3.png?v=1752144127",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-4.png?v=1752144127",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/35530-2.png?v=1752144123"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Nexode 65W 急速 充電器 4ポート",
+        "asin": "B0CYZ52VPX",
+        "url": "https://amzn.to/431RBSK"
+      },
+      "specResult": {
+        "content": "コンパクトなのに、これ一つで全対応。 Nexode Cシリーズは、65W出力ながら4ポート搭載し、PC・スマホからイヤホンまで全デバイスに対応。PD3.0/QC4+対応でMacBook Proは約1.8時間で満充電。進化型GaN Infinity技術により小型・低発熱・高効率を実現、持ち運びにも最適。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "Equipped with 4 ports even at 65 W: NexodeC series chargers add up to 4 ports to conventional 65 W chargers. This single charger can meet all your charging needs regardless of low output devices (earphones, watches, etc.), or high output devices (iPhone, tablet, laptop)",
+        "(PD 3.0/QC4+ compatible, charges your laptop in just 1.8 hours) It efficiently and rapidly charges all types of Type-C related devices, from smartphones, tablets, and laptops. Charge iPhone 16 at about 30 min 60% and charge your MacBook Pro 13 in about 1.8 hours and in a short time. In addition, USB-A is compatible with QuickCharge 3.0 and provides up to 22.5 W of power. Please do not forcefully plug and unplug the cable to avoid deformation of the charger or cable connector",
+        "An infinity generation of advanced GaN technology. Equipped with advanced Infinity generation GaN technology, it is approximately 30% smaller than a typical Type-C charger 65W. In addition, it reduces the operating temperature and provides stronger output power for high efficiency charging without generating excess heat than ordinary GaN technology. And it is equipped with cutting-edge smart recognition technology, it automatically detects and distributes the charging power needed by your device, so you don't have to worry about damaging your device due to excessive power, and also extends the life of the charger",
+        "【Wide Compatibility】MacBook Pro 14'' 2021 (M1 Pro), iPhone 17 16 Series, iPhone 15 (Pro/Plus/Pro Max), iPhone 14 (Pro/Plus/Pro Max), MacBook Pro 13, Macbook Air 2020, iPad Pro, iPhone 13(pro), 12, 11 Pro, XS, XR, 8, 7 Plus, SE 2020, AirPods Pro, Switch, Galaxy Note 20, Note 20 Ultra, S24, S23, S22, S21, Note 10 Plus, S9, S8, A8 2018, A5 2017, A51, A71, Google Pixel 8 fold 7A 7 6A 6 5A 5 4A 4 XL 3A 3 XL;P40 Pro,P4 0, P30 Compatible with various devices such as P20 Pro and More",
+        "Products purchased from our store come with a 24-month warranty. We guarantee the delivery date after 24 months from the date of purchase. Note: If you recognize accidentally damaged by you or a third party, it will not be covered by the warranty."
+      ],
+      "productOverview": [
+        {
+          "key": "Brand",
+          "value": "UGREEN"
+        },
+        {
+          "key": "Connector Type",
+          "value": "USB Type C"
+        },
+        {
+          "key": "Compatible Devices",
+          "value": ""
+        },
+        {
+          "key": "Compatible Phone Models",
+          "value": ""
+        },
+        {
+          "key": "Included Components",
+          "value": "User Manual"
+        },
+        {
+          "key": "Special Feature",
+          "value": "Short circuit protection, fast charging, lightweight design"
+        },
+        {
+          "key": "Color",
+          "value": "Black"
+        },
+        {
+          "key": "Input Voltage",
+          "value": "240 Volts"
+        },
+        {
+          "key": "Amperage",
+          "value": "1.8 Amps"
+        },
+        {
+          "key": "Total USB Ports",
+          "value": "4"
+        }
+      ],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 4,100件レビュー / 星 4.4"
+      }
+    },
+    {
+      "product_id": "B0D3XR6S47",
+      "rawTitle": "UGREEN Uno 100W PD Charger, Robot Type, 4 Ports, USB-C x 3, USB-A x 1 Typec, USB Outlet (See Charging Status by Expressions, Detachable Magnetic Boot), Compatible with PD/PPS/QC4+/SCP Standard, MacBook Air/iPad Pro/iPhone 17-8 Series/Galaxy/Xperia/Pixel Compatible, PSE Certified",
+      "cleanName": "UGREEN Uno 急速充電器 100W",
+      "section": "amazon",
+      "role": "MacBook Pro 100W",
+      "price_jpy": 5980,
+      "original_price": 8480,
+      "sales_count": 1535,
+      "evaluate_rate": 4.4,
+      "monthly_volume": "100+ bought in past month",
+      "modelNumber": "X688",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/435AJuq",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45514-4_1.png?v=1726656642",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45514-4_1.png?v=1726656642",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45514-1_1.png?v=1726656642",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45514-2_1.png?v=1726656642",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/45514-3_1.png?v=1726656642"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Uno 急速充電器 100W",
+        "asin": "B0D3XR6S47",
+        "url": "https://amzn.to/435AJuq"
+      },
+      "specResult": {
+        "content": "充電作業をワクワク体験に変える近未来的ロボット型チャージャー！見ているこちらも笑顔になる遊び心いっぱいの絵文字フェイス、実は最大出力100Wの圧倒的パワーを誇ります。USB-C×3、USB-A×1の4ポート搭載。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "(100W Robot Charger) The near-futuristic UGREEN UNO 100W robot charger that will turn your charging work into an exciting experience! The playful emoji face is sure to bring a smile to your face. In fact, it boasts an overwhelming power of 100W maximum power. Equipped with 3 USB-C and 1 USB-A ports Note: This product does not have a mobile battery function. Equipped with a high-precision display, please be careful of dropping or strong impacts",
+        "[Announcement with facial expression! The UGREEN Uno series charger is a rapid charger that lets you know the charging status with a robot's expression. They will change according to the situation such as \"smiling smile\" and \"cool with sunglasses\". The boots have a built-in magnet so they can be attached to the refrigerator or steel shelves. Compact and easy to carry, this robot charger is like a friend that can be taken anywhere. 【REQUIRED】 Please use USB-C to C cable that supports USB PD",
+        "100 W of outstanding power. 】Equipped with 3 USB-C and 1 USB-A port to charge 4 devices simultaneously. Automatically adjusts the optimal output for all USB devices from MacBook Air to smartphones. Powerful charging at up to 100W while protecting your device. Note: It does not support wireless charging. Before charging, please check whether there are foreign objects inside the connector of the device and the charging cable to make sure it can be used normally",
+        "Eco-friendly GaNInfinity and Safe Thermal Guard: UGREEN Uno 100W rapid charger adopts the advanced GaNInfinity technology. Combined with UGREEN's proprietary Thermal Guard temperature control technology, it has been able to improve energy efficiency and reduce the amount of heat generated on the device body. It also has 8 different safety features",
+        "Wide Compatibility: Compatible with PD3.0/QC4+, it can efficiently and quickly charge all USB related devices from smartphones, tablets, gaming consoles to laptops. Compatible Devices: MacBook Pro 14'' 2021 (M1 Pro), MacBook Pro 13, Macbook Air 2020, iPad Pro, iPhone 16, 15, 14, 13, 12, XS, XR, 8, 7 Plus, SE 2020, AirPods Pro, Switch, Galaxy Note 20, Note 20 Ultra, S24,23, S2 0, S10 , Note 10 Plus, S9, S8, A8 2018, A5 2017, A51, A71, Google Pixel 4A 4 XL 3A 3 XL;P60 Pro,P60,50 Pro,P50,P40 Pro,P30, P20 Pro"
+      ],
+      "productOverview": [
+        {
+          "key": "Brand",
+          "value": "UGREEN"
+        },
+        {
+          "key": "Connector Type",
+          "value": "USB Type C"
+        },
+        {
+          "key": "Compatible Devices",
+          "value": "Laptops"
+        },
+        {
+          "key": "Compatible Phone Models",
+          "value": "MacBook Air/iPad Pro/iPhone16-8 Series/Galaxy/Xperia/Pixel"
+        },
+        {
+          "key": "Included Components",
+          "value": "User Manual"
+        },
+        {
+          "key": "Special Feature",
+          "value": "Fast Charging"
+        },
+        {
+          "key": "Input Voltage",
+          "value": "240 Volts"
+        },
+        {
+          "key": "Total USB Ports",
+          "value": "4"
+        },
+        {
+          "key": "Wattage",
+          "value": "100 W"
+        },
+        {
+          "key": "Number of Items",
+          "value": "1"
+        }
+      ],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 1,535件レビュー / 星 4.4"
+      }
+    },
+    {
+      "product_id": "B0B129DM9T",
+      "rawTitle": "UGREEN Nexode Charger Single Port 140W Can Rapidly Charge Two Laptops Industry First PD3.1+QC5.0 Support [UGREEN's Proprietary GaNFast Technology] 2 USB-C Ports + 1 USB-A Port Foldable Plug Compatible",
+      "cleanName": "UGREEN Nexode 充電器 140W 3ポート",
+      "section": "amazon",
+      "role": "140W大出力 ノートPC2台",
+      "price_jpy": "",
+      "original_price": "",
+      "sales_count": 1241,
+      "evaluate_rate": 4.3,
+      "monthly_volume": "",
+      "modelNumber": "CD289",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://amzn.to/49qTegs",
+      "mainImage": "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/90548-2.png?v=1726230768",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/90548-2.png?v=1726230768",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/90548-1.png?v=1726230768",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/90548-3.png?v=1726230768",
+        "https://cdn.shopify.com/s/files/1/0874/5887/3624/files/90548-4.png?v=1726230768"
+      ],
+      "amazonPlaceholder": {
+        "status": "verified",
+        "searchQuery": "UGREEN Nexode 充電器 140W 3ポート",
+        "asin": "B0B129DM9T",
+        "url": "https://amzn.to/49qTegs"
+      },
+      "specResult": {
+        "content": "  これ1台でなんでもどこでも充電できる！折りたたみ式で持ち歩きやすく、出張や旅行にピッタリ。USB-C×2とUSB-A×1の3ポートで、ノートブックとスマホとタブレットが同時充電できます。MacBook Pro 16インチも1.5時間でフル回復する最大140W。",
+        "source": "ugreen.jp"
+      },
+      "features": [
+        "【Future Technology! Industry's first PD3.1 + 140W rapid charging: UGREEN 140W charger supports PD 3.1 and QC5.0 and delivers 140W output power when using single C1 port Not inferior to even the genuine iPhone charger, it perfectly solves the charging needs of high-output PCs such as MacBook Pro 2021, Legion 5, and RTX3060/3070 equipped gaming laptops PD3.1 responds to the future trends in the charging industry, enabling fast charging for future high-power products with this charger! .",
+        "【Can charge 2 laptops & 3 devices simultaneously】When using C1 and C2 at the same time, both ports support 65W, allowing for fast charging of 2 laptops simultaneously When using the C1 single port, it can output 140W and provide fast charging for the MacBook Pro 2021 Moreover, when using all three ports, you can quickly charge your PC, tablet, and smartphone simultaneously (C1 outputs 65W, C2 outputs 45W, and the A port outputs 22.5W).",
+        "UGREEN's exclusive GaNFast technology: The UGREEN 140W charger has evolved from the GaNII series, and is 22% smaller than the original MacBook 140W charger, with improved charging speed for more efficient charging Achieve an intelligent current distribution system, automatically distributing the appropriate current to the connected device for worry-free and safe use without concern of overload.",
+        "(Multiple Safety Protections) The main unit is made of a fire-resistant PC material that blocks external heat so you don't have to worry about overheating Effectively prevents overcurrent, overvoltage, overheating, short circuits, and more, achieving fast and safe charging (certified with PSE and other electrical safety certifications) With a safety protection system that performs 800 temperature measurements per second, it eliminates overheating issues and ensures the safety of both your devices and family.",
+        "【240W Fast Charging Cable Included】Features a foldable plug, making it less prone to scratches when bumped against other objects, and easy to carry anywhere Comes with a 240W type c rapid charging cable, no need to buy a separate cable (If you are charging 140W on Macbook 2021, you need to use a genuine Macbook 140W charging cable Please note that the included cable cannot charge the Macbook 2021 at 140W."
+      ],
+      "productOverview": [
+        {
+          "key": "Brand",
+          "value": "UGREEN"
+        },
+        {
+          "key": "Connector Type",
+          "value": "USB"
+        },
+        {
+          "key": "Compatible Devices",
+          "value": ""
+        },
+        {
+          "key": "Compatible Phone Models",
+          "value": ""
+        },
+        {
+          "key": "Included Components",
+          "value": "240W Fast Charging Cable"
+        },
+        {
+          "key": "Special Feature",
+          "value": "Fast Charging, Retractable Plug"
+        },
+        {
+          "key": "Color",
+          "value": "Black"
+        },
+        {
+          "key": "Input Voltage",
+          "value": "240 Volts"
+        },
+        {
+          "key": "Wattage",
+          "value": "140 W"
+        },
+        {
+          "key": "Number of Items",
+          "value": "2"
+        }
+      ],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 1,241件レビュー / 星 4.3"
+      }
+    },
+    {
+      "product_id": 1005008702713918,
+      "rawTitle": "【米国プラグ】UGREEN 20W 30W GaN 充電器ミニ PD 3.0 USB C 電話充電器 iPhone 16 15 14 Pro Samsung S25 Xiaomi タブレット iPad Air用",
+      "cleanName": "UGREEN 20W 30W GaN 充電器ミニ PD 3.0 USB C 電話充電器 iPhone 16 15 14 Pro Sam",
+      "section": "aliexpress",
+      "role": "入門・iPhone単体 (10,823販売)",
+      "price_jpy": "975",
+      "original_price": "2062",
+      "sales_count": 10823,
+      "evaluate_rate": "97.0%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVZbiSowkFsJDe2YE5RZf15Va8wfBoXINF8qPJQ7HU5wLPrJCmRwJqCEF83zc4eB33RUdb3glYpUN5Hs1awIVzd07t0OJo8ojVxR0fFUUsxe1BAXuGsIlJ8uRANdG60SMospFuvYh8lSuwvlvioIYFRDEy0Fj9MV5E2XdjfxzrxvlEmJarn0fZOg2mKV68BNRy9gy68eTBv5Fy9Wt8uS57vx5mhndWbGT7XRPIOTy2wzKCvkBd1isGE4ahGVhVoe0E2Rs8H97oEOD2xPimuE2sL2isue8PAM4ooh7971WgHGa0nCwq9wxzna2w443TvmqP9l0hEP8lcJkKCRAqxbqkLqb5Vs27tUghOI3AXkGnAYvcsYXn7TuplEuWjGQnmIX7JohDGMIn3qtAnRn7mNedT4n4JgwfCjUq0BlPCXCCA4Ft9fQrmFYsYhgTVYidDSFkyBxAncaz02MOb5ZRXv2XVlfNls9ncnXz5A1f3TKpWFzsfOi4XiXsMNmDObpD0pRTD2IgiCyvEokZ4HqWCQonas6SlTRonSxx1NMLxkIvHE4MvnO1CLpY1NLAw9MdnWFMVjRMBcw3ImYvMY9j574Mud32ClGfkKeAvGx4JkctfgriWVDHJeYpw22j2A88hvlpbgAFbxijbRJBxRmB2UyamqKsE4e03EtrvjG0CMDzKyovbAaal6T",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S34a9d4ec6be64cd5a8546a45d74b3d78c.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S34a9d4ec6be64cd5a8546a45d74b3d78c.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S34a9d4ec6be64cd5a8546a45d74b3d78c.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S525da0d598c74bbda525536ef8490b58K.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd195be4e24774efaa58151bec4733ab9f.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S65d0b80d3e9544d3b561705fe9eef617N.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2d8c6db91b7d4a2e9ab78d89f071fdbeC.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "【米国プラグ】UGREEN 20W 30W GaN 充電器ミニ PD 3.0 USB C 電話充電器",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "features": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近10,823件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005009570758626,
+      "rawTitle": "UGREEN 45W/30W/25W/20W GaN充電器 PD3.0 PPS QC3.0 USB C急速充電器 iPhone 16 15 14 Pro Max Samsung S25 iPad Air対応 (EUプラグ)",
+      "cleanName": "UGREEN 45W/30W/25W/20W GaN充電器 PD3.0 PPS QC3.0 USB C急速充電器 iPhone 16 ",
+      "section": "aliexpress",
+      "role": "万能W数切替型 (2,165販売)",
+      "price_jpy": "1036",
+      "original_price": "2224",
+      "sales_count": 2165,
+      "evaluate_rate": "97.6%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVYQWkQnTyUbFejkJDQCOyQwZu3BAnZQaLMgatN1HJuptcnTFREu35TjYv7o1MqQDCeB38P694C0Uvfzgsg8JmtsYjaw6JkPEZNEqMADCikpjqmfgTE5cx8UpOqMckzKfXRFn1hnEG6p7g21Ey620obyqDsX1wfXmoTK52ZLQ4CplRpgalebhChyLg2YiGYx0zl4xHRaVvTjeE4KB9Uq2veBwirG98cPtAZdhwjMKxwe3gN6YP4zwaWeWaoDrj4mkjfxGWUDu54kNNx4JkCf3Zp42nPQ5mHmP3u7JHYqoxbh14H6UcvOCpEf87Y3lgny0vu16c4OxrnnHHS9yu4ebrKJzW6Lr2dn6Eq8DPVULcZrj5GCz12OP7CwJ6YOrmbnAVKyK9lpjL5HK59qoF7FPOvgAOVfOqgeTIy44nbpVPUdXc3JPhOj1KIn4caRQrCaVwb009XypRXwh7hidvGCJJYBABjW47HZy5C1Ba599ct0r57UT8dJwujtHo4jcH2wPUhrpbWuSx8tYcCb4D9NPc02bJPSI6n5d2r2er4s6YQA7KguchsYRSnVZWwMUYN4K6NynRbgHI9Vn6iLuRmy7fRYCYl3Zl0212lE65wWmRZDjD8n0BU1FUffZc9F8XGEwtOOrAKzMzocra4UNNFc2Rv9BpF9gaVRvxfGCxhX6Rzy55tL9TGZz",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S2325950e0f704cd0a644617f415066ca4.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2325950e0f704cd0a644617f415066ca4.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2325950e0f704cd0a644617f415066ca4.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sca2750b00fad4ec2be50950f752395f4g.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S7399beae355047f392137bcccbcfab161.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S14198525330349ab9d1706ef4ee11853z.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S094ee5b14dfc4cd2a2eb98d7276865e8a.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN 45W/30W/25W/20W GaN充電器 PD3.0 PPS QC3.0 USB ",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "features": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近2,165件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005009118633225,
+      "rawTitle": "UGREEN 45 ワット GaN 充電器 PD3.0 PPS QC3.0 急速充電サムスン S25 S24 ウルトラ iPhone 16 15 14 プロマックス iPad タブレット急速充電器",
+      "cleanName": "UGREEN 45 ワット GaN 充電器 PD3.0 PPS QC3.0 急速充電サムスン S25 S24 ウルトラ iPhone ",
+      "section": "aliexpress",
+      "role": "45W単機種 (1,682販売)",
+      "price_jpy": "1951",
+      "original_price": "4318",
+      "sales_count": 1682,
+      "evaluate_rate": "97.0%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVYQRGJUoOWFGjVfSra6hmDG9oDmGoh3HfceapxJrh8UXYFrCrDmXOeZ8zSZLlwtt8ypgBywBgfVsgF0UVoi6wBe0XNy3X37aDYANsKsi8yKKGhZwD9XwXrGtRYNWrXSDsbOfHJFiIGv45XVpttDnBwM9zLzRFaSqvWfgPopOrDM3QpO7toOsELU2eMQampi8mjMcsOeKcobo8HGW58rfDvYpC2J0C9efVrMHvpuAOsoF1NA2tTENc6qvZUr7sL1YYa8lZvpyNtz2E9OT9x2AvjJKiNKTvKLQBgjGmR2jeJ2lAa5HUzMz2sXRdgvLsg0Ilf5fyR1TdO93NttBcgNu6Fe0Yr32xsuat9gh7hP9mfkWZaOHhKPBvw9jiS0kCTLNHeUQDZZf0apQPdpyZ3HW887dNqcTq31VDGwuSout8z6TOQ8q9GBBn3vkCSIkC530jeBgpkQIocyUh5Qlr0ko0JhAIrYtEitndcjgehS8DEdSWgb4ZBXLSXT1hstm0MXqkG6XRBcwgRpsDvw8ARKGsx8lQiXM0CpbyVjCxVpsPnNWnfpnPZ8i0kekUADMYOslqWGbem9ypt0NbOe1OFqP3WwaGd2mDjsH6465dtq0L6jLrnR2hnf9xFdymy3uOpvfHF9TqatI83KGJJ7f7AyLXa05CJLAxSg6HUQpoxJrpUiaChsKxLTV",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sa1b55e4748344954a373e1587aa614c4J.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa1b55e4748344954a373e1587aa614c4J.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa1b55e4748344954a373e1587aa614c4J.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sfeb9621161154ab58591d63cf5119143i.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5347580001ce49d1928ace912278daa1P.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sacbead67734541e7b9e11ac1a3c4cea8k.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S24253b14823c4c57a00e7a15d43d307cB.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN 45 ワット GaN 充電器 PD3.0 PPS QC3.0 急速充電サムスン S25",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "features": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近1,682件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005008453117301,
+      "rawTitle": "Ugreen-gan-携帯電話充電器,3ポート,pd 3.0,usb c,iphone 16,15,14 pro max,samsung s25,xiaomiタブレット,ipad air,30w",
+      "cleanName": "UGREEN -gan-携帯電話充電器,3ポート,pd 3.0,usb c,iphone 16,15,14 pro max,samsu",
+      "section": "aliexpress",
+      "role": "3ポートPD3.0 (1,410販売)",
+      "price_jpy": "1670",
+      "original_price": "3341",
+      "sales_count": 1410,
+      "evaluate_rate": "97.6%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVZbRot5csElXhvRHZJdv58yKTlvAPHWl6j1eVMbvq57FyNvi82IJFOsJTYm2fMj4l8tozx56uLXNbimBQVzRe0ccqxcNsUFZPQPvNgbkE1liqLbR3o7gJ96xGejR3CnFGjuEIghmE9SfjkEaLobPbLqZt4n3OQqaD624IArNr4eAjnp3bBKaSFJ9wt2BlgW4hDCElLTqpd1ThnKWuVot62gnPv1Qv6GsuYBn83rEuTjleDSsXWLFWtTkK3jQExdk9YDbQW14DMvKCYYKbeWW356jX0jQUL2fbIGU8TqwFZEXpPwBwuOfiWg5PXMZfdQFzInIHw3GpQXcLV19FwvOSAo7Rt2j6S4LhC2aV1p3FSJRWPWu9feCG62prcVW7HZTEXMDsH5apeg8yD90efRYw1XzxglXbB8mcZWdfsbgnStNc5nda88hGkUCsYLXj4biBtR7M4tiaFZyvWRmyk2Hpxb6y8FrfPl3WFIapDV6jN50vjmcifLdBKGn5s7Nf0GrBgAju3hAw11O60CWblde4A3Rb4jScLF8EY84osAsFt3Z1rfdBPIP41D9kth3VXGwrD00YQZ9U0viL1oX3aNd5Dfz6ntwOZthXXtn8U1LqpxgKU0zR3CjsZNCsYAfQSv2TIGWz3bGv6lJxEnIkymp4uLpI8Etw7NjinqqnxZb7PlMqP4fjsQr",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S11ee74c41fde4309832a0b9ef751aabaV.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S11ee74c41fde4309832a0b9ef751aabaV.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S11ee74c41fde4309832a0b9ef751aabaV.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4bb25b1fa5264d898428178519585a4av.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S47f3eb85653f4b61a5c0caca65196c9dh.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sfae44b00e9224900a89780332469bf60j.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S65d0b80d3e9544d3b561705fe9eef617N.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "Ugreen-gan-携帯電話充電器,3ポート,pd 3.0,usb c,iphone 16,15,",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "features": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近1,410件販売の実績"
+      }
     }
   ],
   "tavilyResults": [],
-  "generatedAt": "2026-05-23T08:05:36.893Z"
+  "brandInfo": {
+    "name": "UGREEN",
+    "nameJp": "ユーグリーン",
+    "companyName": "Shenzhen Ugreen Technology Co., Ltd.",
+    "founded": 2012,
+    "headquarters": "中国・広東省深セン市",
+    "stockListing": "深セン証券取引所（300893）",
+    "japanEntity": "Ugreen Japan合同会社",
+    "keyCertifications": [
+      "PSE",
+      "FCC",
+      "CE",
+      "RoHS",
+      "Apple MFi",
+      "PD3.1"
+    ]
+  },
+  "generatedAt": "2026-06-04T13:04:35.150Z"
 }

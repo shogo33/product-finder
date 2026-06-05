@@ -1,0 +1,686 @@
+[
+  {
+    "slug": "8bitdo-ultimate2-osusume",
+    "brand": "8bitdo",
+    "productId": "1005008545661860",
+    "name": "8BitDo Ultimate 2 ワイヤレスコントローラー",
+    "type": "BRAND_MISMATCH",
+    "shopId": "4982101",
+    "shopName": "AKNES Store"
+  },
+  {
+    "slug": "ajazz-ak820-osusume",
+    "brand": "ajazz",
+    "productId": "1005011869449206",
+    "name": "Ajazz AK820 Pro",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ajazz-akp846-osusume",
+    "brand": "ajazz",
+    "productId": "1005007944229408",
+    "name": "AJAZZ AKP846 シングルモードメカニカルキーボード",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "aliexpress-earphone-osusume",
+    "brand": null,
+    "productId": "1005009390995992",
+    "name": "HAYLOU S40 ANC",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "aliexpress-gamepad-osusume",
+    "brand": null,
+    "productId": "1005007942886977",
+    "name": "Gamesir T4 Cyclone Pro",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "aliexpress-mini-pc-gaming-osusume",
+    "brand": null,
+    "productId": "1005010535413125",
+    "name": "GMKtec K8 Plus",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "aliexpress-mini-pc-gaming-osusume",
+    "brand": null,
+    "productId": "1005009707796111",
+    "name": "GMKtec K12 ミニPC",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "aliexpress-sticker-osusume",
+    "brand": null,
+    "productId": "1005010450431594",
+    "name": "この商品はブランド名が明記されていないため、正確な抽出ができません。\n\n抽出可能な情報：「猫ステッカーパック」（ブランド・型番不明）",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "aliexpress-sticker-osusume",
+    "brand": null,
+    "productId": "1005007151132150",
+    "name": "Holographic Butterfly Sticker",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "aliexpress-sticker-osusume",
+    "brand": null,
+    "productId": "1005005346309428",
+    "name": "和紙テープ マスキングテープ",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "anbernic-rg-ds-osusume",
+    "brand": "anbernic",
+    "productId": "1005010748770593",
+    "name": "ANBERNIC RG DS",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1103862154",
+    "shopName": "Gamer Alliance Store"
+  },
+  {
+    "slug": "anbernic-rg-ds-osusume",
+    "brand": "anbernic",
+    "productId": "1005010662364468",
+    "name": "ANBERNIC RG DS",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1103081614",
+    "shopName": "Xin ChaoYue Handheld Digital Franchise Store"
+  },
+  {
+    "slug": "anbernic-rg35xx-h-osusume",
+    "brand": "anbernic",
+    "productId": "1005006589176691",
+    "name": "ANBERNIC RG35XX H",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1102610021",
+    "shopName": "Junyuan Game Factory Store"
+  },
+  {
+    "slug": "anbernic-rg557-osusume",
+    "brand": "anbernic",
+    "productId": "1005009887382624",
+    "name": "ANBERNIC RG557",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "atk-mouse-osusume",
+    "brand": "atk",
+    "productId": "1005010345950853",
+    "name": "VXE Dragonfly R1 SE",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1104003280",
+    "shopName": "Alloy Midas Store"
+  },
+  {
+    "slug": "atk-mouse-osusume",
+    "brand": "atk",
+    "productId": "1005007675157598",
+    "name": "VXE Dragonfly R1 Pro MAX",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1103757220",
+    "shopName": "InnovaDigital Boutique Store"
+  },
+  {
+    "slug": "atk-mouse-osusume",
+    "brand": "atk",
+    "productId": "1005011587360139",
+    "name": "ATK FIERCE X ゲーミングマウス",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ayaneo-pocket-s-osusume",
+    "brand": "ayaneo",
+    "productId": "1005009384425363",
+    "name": "AYANEO Pocket S G3XGen2",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1104195487",
+    "shopName": "The MVP 3C Store"
+  },
+  {
+    "slug": "ayaneo-pocket-s-osusume",
+    "brand": "ayaneo",
+    "productId": "1005010217295969",
+    "name": "AYANEO POCKET DS",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1103861536",
+    "shopName": "DingDing 3C Store"
+  },
+  {
+    "slug": "ayaneo-pocket-s-osusume",
+    "brand": "ayaneo",
+    "productId": "1005010712716019",
+    "name": "AYANEO Pocket VERT",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "baseus-charger-osusume",
+    "brand": "baseus",
+    "productId": "1005009834580028",
+    "name": "Baseus EnerCore 100W GaN充電器 USB-C格納式ケーブル付き",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "baseus-charger-osusume",
+    "brand": "baseus",
+    "productId": "1005010539333576",
+    "name": "Baseus Bass BP1 Pro",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1102826976",
+    "shopName": "Original Product Store"
+  },
+  {
+    "slug": "baseus-mobile-battery-osusume",
+    "brand": "baseus",
+    "productId": "1005006973916216",
+    "name": "Baseus Power Bank 20000mAh 65W",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "epomaker-ek21-osusume",
+    "brand": "epomaker",
+    "productId": "1005011548201961",
+    "name": "EPOMAKER EK21 20% Programmable Mechanical Numpad",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1102343092",
+    "shopName": "MechLands Store"
+  },
+  {
+    "slug": "epomaker-keyboard-osusume",
+    "brand": "epomaker",
+    "productId": "1005008275158058",
+    "name": "EPOMAKER AULA F75 MAX メカニカルキーボード",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1102343092",
+    "shopName": "MechLands Store"
+  },
+  {
+    "slug": "epomaker-keyboard-osusume",
+    "brand": "epomaker",
+    "productId": "1005011741666556",
+    "name": "EPOMAKER TH80 V2 PRO",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1102343092",
+    "shopName": "MechLands Store"
+  },
+  {
+    "slug": "gamesir-controller-osusume",
+    "brand": "gamesir",
+    "productId": "1005007942886977",
+    "name": "Gamesir T4 Cyclone Pro",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "gamesir-controller-osusume",
+    "brand": "gamesir",
+    "productId": "1005007868285978",
+    "name": "GameSir X2s",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1102745089",
+    "shopName": "Player Choice Store"
+  },
+  {
+    "slug": "gamesir-t4-pro-osusume",
+    "brand": "gamesir",
+    "productId": "4001076841625",
+    "name": "GameSir T4 Pro ワイヤレスモバイルコントローラー",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "gmktec-mini-pc-osusume",
+    "brand": "gmktec",
+    "productId": "1005011542765146",
+    "name": "GMKtec G5 Alder Lake N97",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1105232971",
+    "shopName": "YST-802 Global Select Store"
+  },
+  {
+    "slug": "gmktec-mini-pc-osusume",
+    "brand": "gmktec",
+    "productId": "1005012344299218",
+    "name": "GMKtec G3S ミニPC",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1105513608",
+    "shopName": "Shop1105513608 Store"
+  },
+  {
+    "slug": "gmktec-mini-pc-osusume",
+    "brand": "gmktec",
+    "productId": "1005012358257760",
+    "name": "GMKtec K6 ゲーミングミニPC",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1105232371",
+    "shopName": "TOPTON COMPUTER Store"
+  },
+  {
+    "slug": "kz-iyahon-osusume",
+    "brand": "kz",
+    "productId": "1005009384882890",
+    "name": "KZ ZSN Pro",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "kz-iyahon-osusume",
+    "brand": "kz",
+    "productId": "1005008683340746",
+    "name": "KZ ZVX",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1102859300",
+    "shopName": "ND Global Store"
+  },
+  {
+    "slug": "kz-iyahon-osusume",
+    "brand": "kz",
+    "productId": "1005010280591458",
+    "name": "KZ DQ6",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "kz-iyahon-osusume",
+    "brand": "kz",
+    "productId": "1005009867328325",
+    "name": "KZ PR3 平面磁気IEM イヤホン",
+    "type": "BRAND_MISMATCH",
+    "shopId": "912598202",
+    "shopName": "Earphones Audio Store"
+  },
+  {
+    "slug": "miyoo-mini-flip-osusume",
+    "brand": "miyoo",
+    "productId": "1005010767441237",
+    "name": "MIYOO Mini Flip",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1103935248",
+    "shopName": "Factory Game Direct Store"
+  },
+  {
+    "slug": "moondrop-osusume",
+    "brand": "moondrop",
+    "productId": "1005009077661691",
+    "name": "Moondrop Pill",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "moondrop-osusume",
+    "brand": "moondrop",
+    "productId": "1005009138171383",
+    "name": "MOONDROP RAYS",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1140113",
+    "shopName": "Aoshida-HIFI Audio Store"
+  },
+  {
+    "slug": "n100-mini-pc-osusume",
+    "brand": null,
+    "productId": "1005011796729205",
+    "name": "GMKtec NucBox G3",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "rainy75-pro-osusume",
+    "brand": "rainy",
+    "productId": "1005012058516630",
+    "name": "RAINY75 メカニカルキーボード",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "retroid-pocket5-osusume",
+    "brand": "retroid",
+    "productId": "1005010567223071",
+    "name": "Retroid Pocket 5",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1105241726",
+    "shopName": "Coopreme US Local Store"
+  },
+  {
+    "slug": "retroid-pocket5-osusume",
+    "brand": "retroid",
+    "productId": "1005006544286558",
+    "name": "Retroid Pocket Flip 2",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1103077633",
+    "shopName": "Game Top Store"
+  },
+  {
+    "slug": "retroid-pocket6-osusume",
+    "brand": "retroid",
+    "productId": "1005011984439598",
+    "name": "Retroid Pocket 6 RP6",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1104952086",
+    "shopName": "SEAL Store"
+  },
+  {
+    "slug": "retroid-pocket6-osusume",
+    "brand": "retroid",
+    "productId": "1005012212944422",
+    "name": "Retroid Pocket 5",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "retroid-pocket6-osusume",
+    "brand": "retroid",
+    "productId": "1005008484507763",
+    "name": "Retroid Pocket Flip 2",
+    "type": "BRAND_MISMATCH",
+    "shopId": "1103077633",
+    "shopName": "Game Top Store"
+  },
+  {
+    "slug": "sf3000-game-osusume",
+    "brand": "sf3000",
+    "productId": "1005008463137295",
+    "name": "SF3000",
+    "type": "BRAND_MISMATCH",
+    "shopId": "911969020",
+    "shopName": "luxuglow New-energy Store"
+  },
+  {
+    "slug": "sharge-mobile-battery-osusume",
+    "brand": "sharge",
+    "productId": "1005006997015924",
+    "name": "SHARGEEK 170 パワーバンク 24000mAh",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-brand",
+    "brand": "ugreen",
+    "productId": "1005011652041579",
+    "name": "UGREEN Nexode 65W GaN USB C壁掛け充電器 4ポート",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-brand",
+    "brand": "ugreen",
+    "productId": "1005006471612403",
+    "name": "UGREEN USB-C Data Cable",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "301635",
+    "shopName": "Ugreen Official Store"
+  },
+  {
+    "slug": "ugreen-brand",
+    "brand": "ugreen",
+    "productId": "1005012161988595",
+    "name": "UGREEN Revodok Pro 209 9 in 1 USB C Docking Station",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1104693453",
+    "shopName": "Yours Electronic Store"
+  },
+  {
+    "slug": "ugreen-brand",
+    "brand": "ugreen",
+    "productId": "1005007493318927",
+    "name": "UGREEN Wireless Mouse 4000DPI",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-cable-osusume",
+    "brand": "ugreen",
+    "productId": "1005006471612403",
+    "name": "UGREEN USB-C Data Cable",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "301635",
+    "shopName": "Ugreen Official Store"
+  },
+  {
+    "slug": "ugreen-cable-osusume",
+    "brand": "ugreen",
+    "productId": "1005008328100460",
+    "name": "UGREEN USB-C Cable",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-cable-osusume",
+    "brand": "ugreen",
+    "productId": "1005007661508886",
+    "name": "UGREEN UNO PD100W USB-C Cable",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "301635",
+    "shopName": "Ugreen Official Store"
+  },
+  {
+    "slug": "ugreen-cable-osusume",
+    "brand": "ugreen",
+    "productId": "1005005659085072",
+    "name": "UGREEN USB C to HDMI Cable 8K",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-cable-osusume",
+    "brand": "ugreen",
+    "productId": "32516394446",
+    "name": "Ugreen DisplayPort Cable DP1.4",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "301635",
+    "shopName": "Ugreen Official Store"
+  },
+  {
+    "slug": "ugreen-docking-station-osusume",
+    "brand": "ugreen",
+    "productId": "1005012161988595",
+    "name": "UGREEN Revodok Pro 209 9 in 1 USB C Docking Station",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1104693453",
+    "shopName": "Yours Electronic Store"
+  },
+  {
+    "slug": "ugreen-docking-station-osusume",
+    "brand": "ugreen",
+    "productId": "1005012289574808",
+    "name": "UGREEN Revodok 206 ドッキングステーション",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1105509254",
+    "shopName": "SolaraTech Brand Store"
+  },
+  {
+    "slug": "ugreen-docking-station-osusume",
+    "brand": "ugreen",
+    "productId": "1005012224125276",
+    "name": "UGREEN Revodok Pro 313",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-docking-station-osusume",
+    "brand": "ugreen",
+    "productId": "1005007621498336",
+    "name": "UGREEN Revodok Max 13-in-1 Thunderbolt 4 ドッキング ステーション",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1102303403",
+    "shopName": "UGREEN Digital Store"
+  },
+  {
+    "slug": "ugreen-docking-station-osusume",
+    "brand": "ugreen",
+    "productId": "1005006656046497",
+    "name": "UGREEN Thunderbolt 4 8-in-1 ドッキングステーション",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "301635",
+    "shopName": "Ugreen Official Store"
+  },
+  {
+    "slug": "ugreen-doko-no-kuni",
+    "brand": "ugreen",
+    "productId": 1005006897972401,
+    "name": "UGREEN USB3.0+USB-C SDカードリーダー",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-earphone-osusume",
+    "brand": "ugreen",
+    "productId": "1005008120529417",
+    "name": "Ugreen HiTune X6",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-earphone-osusume",
+    "brand": "ugreen",
+    "productId": "1005007302181092",
+    "name": "Ugreen HiTune T3 Pro Bluetooth Wireless Earbuds",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "5792934",
+    "shopName": "UGREEN Direct Store"
+  },
+  {
+    "slug": "ugreen-earphone-osusume",
+    "brand": "ugreen",
+    "productId": "1005009249740361",
+    "name": "UGREEN HiTune Max5c",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1104195487",
+    "shopName": "The MVP 3C Store"
+  },
+  {
+    "slug": "ugreen-earphone-osusume",
+    "brand": "ugreen",
+    "productId": "1005009828832187",
+    "name": "Ugreen HiTune S5 TWS Open Ear Wireless Earphones",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1104929465",
+    "shopName": "The River Esports Store"
+  },
+  {
+    "slug": "ugreen-earphone-osusume",
+    "brand": "ugreen",
+    "productId": "1005007145786996",
+    "name": "Ugreen HiTune S3",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "5792934",
+    "shopName": "UGREEN Direct Store"
+  },
+  {
+    "slug": "ugreen-gan-charger-osusume",
+    "brand": "ugreen",
+    "productId": "1005004882363331",
+    "name": "Ugreen Nexode 30W USB-C PD充電器",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-gan-charger-osusume",
+    "brand": "ugreen",
+    "productId": "1005011652041579",
+    "name": "UGREEN Nexode 65W GaN USB C壁掛け充電器 4ポート",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1105297254",
+    "shopName": "U.MI Digital Brand Store Store"
+  },
+  {
+    "slug": "ugreen-gan-charger-osusume",
+    "brand": "ugreen",
+    "productId": "1005009078588487",
+    "name": "UGREEN 45W GaN格納式ケーブル充電器",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "301635",
+    "shopName": "Ugreen Official Store"
+  },
+  {
+    "slug": "ugreen-gan-charger-osusume",
+    "brand": "ugreen",
+    "productId": "1005012249568354",
+    "name": "UGREEN Nexode 100W GaN USB-C充電器",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-gan-charger-osusume",
+    "brand": "ugreen",
+    "productId": "1005012206227120",
+    "name": "UGREEN Nexode 200W GaN USB C充電ステーション 8ポート",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1105509254",
+    "shopName": "SolaraTech Brand Store"
+  },
+  {
+    "slug": "ugreen-mouse-osusume",
+    "brand": "ugreen",
+    "productId": "1005007493318927",
+    "name": "UGREEN Wireless Mouse 4000DPI",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-mouse-osusume",
+    "brand": "ugreen",
+    "productId": "1005006505424884",
+    "name": "UGREEN Wireless Silent Mouse",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "301635",
+    "shopName": "Ugreen Official Store"
+  },
+  {
+    "slug": "ugreen-mouse-osusume",
+    "brand": "ugreen",
+    "productId": "1005011907226917",
+    "name": "UGREEN Vertical Wireless Mouse Bluetooth 5.0 2.4G",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "301635",
+    "shopName": "Ugreen Official Store"
+  },
+  {
+    "slug": "ugreen-mouse-osusume",
+    "brand": "ugreen",
+    "productId": "1005012268942587",
+    "name": "UGREEN Wireless Mouse Bluetooth 5.0",
+    "type": "NON_OFFICIAL_STORE",
+    "shopId": "1105438153",
+    "shopName": "GREATLEAVESDSSD05 Store"
+  },
+  {
+    "slug": "ugreen-usb-hub-osusume",
+    "brand": "ugreen",
+    "productId": "1005007433155726",
+    "name": "UGREEN USB3.0 ハブ 4ポート",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-usb-hub-osusume",
+    "brand": "ugreen",
+    "productId": "1005008286489037",
+    "name": "UGREEN USB-C ハブ 7-in-1 デュアル HDMI",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  },
+  {
+    "slug": "ugreen-wifi-osusume",
+    "brand": "ugreen",
+    "productId": "1005004019284852",
+    "name": "UGREEN WiFi Bluetooth アダプター AX900",
+    "type": "DEAD",
+    "detail": "API応答なし（商品削除/非公開の可能性）"
+  }
+]
