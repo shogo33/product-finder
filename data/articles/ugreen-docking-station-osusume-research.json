@@ -1,205 +1,202 @@
 {
   "keyword": "UGREEN ドッキングステーション おすすめ",
   "slug": "ugreen-docking-station-osusume",
-  "category": "basics",
+  "category": "gadget",
   "searchIntent": "おすすめ系|比較系",
-  "searchIntentNote": "UGREENのドッキングステーションを購入したいが、モデルが多くどれを選べばよいか迷っているユーザーが、具体的なおすすめ商品と選び方の根拠を求めている。AliExpressでの購入を検討している節約志向の読者も多い。",
-  "persona": "ガジェット沼にどっぷりはまったリモートワーカーで、デスク環境の最適化に異常な情熱を注ぐコスパ番長。AliExpressでUGREEN製品を買い漁り、細かいスペック差異を熱量高く語りかけるのが得意。",
+  "searchIntentNote": "UGREENのUSB-Cハブ・ドッキングステーションを買いたいが、5-in-1/6-in-1/9-in-1/10-in-1のどれを選ぶか、Revodok/Uno/Thunderboltシリーズの違いで迷っているユーザー。MacBook・Windowsノート対応の確認も重要。",
+  "persona": "Anker・UGREEN・Belkinのハブを5台以上使い分け、USB-PD/HDMI/Ethernet/SDの帯域実測まで体験で語れるガジェットオタク。アリエク・Amazon両刀使いで、Revodok・Uno・Thunderboltシリーズの細かな違いも実感で語れる。煽らず事実ベースで読者の用途別最適解を提示する。",
   "targetProductCount": 5,
   "titles": [
-    "UGREENドッキングステーションおすすめ5選【2026年最新】",
-    "UGREEN ドッキングステーション比較｜選び方とおすすめ5選",
-    "アリエクUGREENドッキングステーションおすすめ徹底比較2026"
+    "UGREENドッキングステーションおすすめ5選｜5-in-1から10-in-1まで用途別比較",
+    "UGREEN USB-Cハブの選び方｜Revodok・Uno・Thunderbolt人気5モデル比較",
+    "UGREENドッキングおすすめ｜MacBook対応の万能5モデルを徹底比較"
   ],
-  "selectedTitle": "UGREENドッキングステーションおすすめ5選【2026年最新】",
-  "metaDescription": "UGREENのドッキングステーションをアリエクで安く買いたい方必見！USB-C Hub・10in1・4K対応など人気5モデルをスペック・価格・用途別に徹底比較。失敗しない選び方のポイントも解説しているので、ぜひ参考にしてください。",
-  "intro": "「ノートPCのポートが足りない…でもどのドッキングステーションを選べばいいかわからない」と悩んでいませんか？\n\nUGREENはケーブル・充電器で世界的に信頼されるブランドですが、ドッキングステーションのラインナップも非常に豊富で、正直どれを選ぶか迷います。ポート数・4K対応・PD充電出力、チェックすべき項目が多すぎて選択肢を絞れないのが現実です。\n\nそこでこの記事では、AliExpressで購入できるUGREENのドッキングステーションを実際のスペックと用途に合わせて厳選し、5モデルをわかりやすく比較・解説します。デスクワーク・出張・クリエイター用途など目的別に最適な1台が見つかります。",
+  "selectedTitle": "UGREENドッキングステーションおすすめ5選｜5-in-1から10-in-1まで用途別比較",
+  "metaDescription": "UGREEN（ユーグリーン）USB-Cハブ・ドッキングステーションのおすすめ5モデルをAmazon実績で徹底比較。5-in-1の定番から10-in-1の高機能、Thunderbolt 5対応モデルまで、MacBook・Windowsノート向けの選び方を解説します。",
+  "intro": "「UGREENのUSB-Cハブ、どれを選べばいい？」「5-in-1と10-in-1の違いは？」「MacBookとWindowsノートで使い回せる？」と迷っていませんか。\n\n結論から言うと、UGREENのドッキングステーションはAmazon累計レビュー数万件のロングセラーが複数あり、用途別に「入門5-in-1」「定番6-in-1 100W」「マルチディスプレイ対応10-in-1」「軽量Uno 6-in-1」「価格バランス9-in-1」の5モデルから選べば失敗しません。\n\nこの記事では、UGREEN正規流通の5モデルをAmazon実績ベースで比較し、用途別の選び方とPD100W対応・HDMI/4K対応状況まで一気通貫で解説します。",
   "sections": [
     {
       "id": "section1",
-      "h2": "UGREENのドッキングステーションはなぜ選ばれるのか",
+      "h2": "UGREENドッキングステーションが選ばれる理由｜Amazon累計29,000件超のロングセラー",
       "h3s": [
-        "世界5000万人以上が信頼するブランド実績",
-        "AliExpress公式ストアで安く買えるメリット"
+        "Anker・Belkinと並ぶ深圳系ハブ・ドックメーカー",
+        "Revodok・Uno・Maxidokの3シリーズ展開",
+        "PD100W給電・4K HDMI・10Gbps転送に標準対応"
       ],
       "type": "brand_overview",
       "notes": [
-        "UGREENブランドの歴史・認知度・品質管理体制を簡潔に紹介",
-        "国内販売価格との価格差と、アリエク公式ストアの安心感（保証・返品）に言及",
-        "ドッキングステーション分野でのUGREENの強み（チップセット品質・発熱管理）を訴求"
+        "UGREENは2012年創業の中国深圳発メーカー。USBハブ・ドックは同社の主力カテゴリでAmazon累計レビュー数万件のロングセラーあり",
+        "Revodok（標準/Pro）= 価格バランス、Uno = 軽量コンパクト、Maxidok = Thunderbolt 5フラッグシップというキャラクター分け",
+        "PD100Wパススルー給電・4K@60Hz HDMI出力・10Gbpsデータ転送を主要モデルで標準装備"
       ]
     },
     {
       "id": "section2",
-      "h2": "失敗しないUGREENドッキングステーションの選び方",
+      "h2": "UGREENハブ・ドックの選び方｜ポート構成・解像度・給電",
       "h3s": [
-        "ポート構成：必要な端子を事前に整理する",
-        "映像出力：4K・デュアルモニター対応かを確認",
-        "PD充電出力：ノートPCへの給電ワット数をチェック",
-        "接続方式：USB-C Thunderbolt対応か見極める"
+        "ポート数の目安（5-in-1：入門、9-in-1〜10-in-1：本格デスク作業、13-in-1以上：開発・配信用）",
+        "HDMI解像度（4K@30Hz：実用、4K@60Hz：作業効率重視、8K：最新Thunderbolt 5）",
+        "PD給電（60W：MacBook Air、100W：MacBook Pro 14・Windowsノート）"
       ],
       "type": "howto",
       "notes": [
-        "用途別（テレワーク・クリエイター・出張）に必要スペックの目安を提示",
-        "よくある失敗例（4K非対応を買ってしまう・PD出力不足）を具体的に説明",
-        "MacBook・Windows・iPad Proなどデバイス別の互換性注意点にも触れる"
+        "用途別にポート数の目安を表または箇条書きで明示",
+        "MacBook Pro 14/16inchはPD100W必須、MacBook AirやUSB-CタブレットならPD60Wでも十分",
+        "シリーズ別：Revodokはコスパ、UnoはMagSafe風コンパクト、Maxidokは未来志向の最高峰という方針"
       ]
     },
     {
       "id": "section3",
-      "h2": "【第1位】UGREEN Revodok Pro 209｜10in1フラッグシップモデル",
+      "h2": "Amazonで買えるUGREENドッキングステーションおすすめ5選",
       "h3s": [
-        "スペックと特徴：4K60Hz＋100W PDで全部入り",
-        "こんな人におすすめ：デスクワーク・テレワーク最強構成"
+        "Revodok 105 5-in-1（CM478）：累計29,349件4.2★のロングセラー定番",
+        "Revodok 6-in-1 100W（AMUH12H）：Steam Deck対応の入門〜中位機",
+        "Revodok Pro 10-in-1（15534）：マルチディスプレイ対応の本格モデル",
+        "Uno 6-in-1（35998）：軽量・iPad対応のロボット型",
+        "Revodok 9-in-1（15375）：RJ45LAN付きで在宅作業に最適"
       ],
       "type": "product",
       "notes": [
-        "10ポート構成（HDMI4K60Hz×2・USB-A×4・SD/TF・PD100W）を詳細に解説",
-        "アルミ筐体による放熱性能と安定動作の強みを訴求",
-        "AliExpressでの実勢価格帯と国内価格との比較を記載"
+        "全5商品が独立した product card として展開される（Amazonコーナー）",
+        "本文には『なぜこの商品か（実績・スペック根拠）』『どんな人向けか』『デメリット/注意点』を簡潔に書く",
+        "Amazon実績（レビュー数・星評価）を信頼性の根拠として必ず1文添える"
+      ]
+    },
+    {
+      "id": "section3b",
+      "h2": "AliExpressで買えるUGREENハブ・ドックおすすめ4選（公式ストア・販売実績300+）",
+      "h3s": [
+        "トリプルディスプレイ 8-in-1 USB-Cハブ 100W：販売2,256件のマルチモニター対応モデル",
+        "Steam Deck対応 6-in-1 100W：販売1,515件・4K120Hz HDMI搭載",
+        "USB3.0 イーサネット 1000Mbps アダプター：販売1,133件・有線LAN追加に最適",
+        "USB3.0 4ポート スリムスプリッター：販売1,122件・税込¥816の最安入門機"
+      ],
+      "type": "product",
+      "notes": [
+        "全4商品が独立した product card として展開される（AliExpressコーナー）",
+        "全商品が UGREEN Official Store（shop_id=1103243235）の公式品であることを必ず明記し、偽物リスクを排除",
+        "AliExpressアフィリエイトリンクは research JSON の promotion_link を使用",
+        "直近販売数を実績エビデンスとして見出し脇に併記",
+        "「Amazonより安く買える可能性が高い」「セール時期を狙うとさらに得」「ただしPD互換確認は要注意」など実用情報を添える"
       ]
     },
     {
       "id": "section4",
-      "h2": "【第2位】UGREEN Revodok 106｜6in1コンパクトハブ",
+      "h2": "UGREENハブ・ドック5モデル比較表",
       "h3s": [
-        "スペックと特徴：持ち運びに最適な薄型設計",
-        "こんな人におすすめ：外出・出張ユーザー向け"
+        "ポート構成・解像度・給電・価格を一覧で確認",
+        "用途別おすすめ早見"
       ],
-      "type": "product",
+      "type": "comparison",
       "notes": [
-        "6ポート（HDMI4K30Hz・USB-A×3・SD/TF・PD100W）の構成を解説",
-        "重量100g以下の軽量設計とポケット収納できるコンパクトさをアピール",
-        "価格帯が安価なのでアリエク初心者にもおすすめしやすい点を記載"
+        "5モデルを比較表で整理。列：モデル名・ポート構成・HDMI解像度・PD給電・参考価格・特徴",
+        "「とりあえず1台→ Revodok 105」「MacBook Pro作業 → Pro 10-in-1」「在宅会議＋LAN → 9-in-1」「軽量持ち運び → Uno 6-in-1」のような用途別の結論"
       ]
     },
     {
       "id": "section5",
-      "h2": "【第3位】UGREEN Revodok Pro 210｜Thunderbolt 4対応モデル",
+      "h2": "UGREENハブ・ドックの選び方｜失敗しない3つのチェックポイント",
       "h3s": [
-        "スペックと特徴：最大40Gbps転送＆4K120Hz出力",
-        "こんな人におすすめ：MacBookユーザー・動画編集者向け"
+        "ノートPCの最大W数を確認（PD60W vs PD100W）",
+        "外部モニターの解像度・フレッシュレート要件",
+        "有線LAN・SDカード読み取りの必要性"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "Thunderbolt 4認証によるデータ転送速度と映像品質の優位性を解説",
-        "MacBook Pro/Airとの相性の良さと充電効率（PD140W対応）を強調",
-        "価格は高めだがクリエイターには費用対効果が高いことを説明"
+        "MacBook Pro 14/16inchはPD100W必須、Air・iPad ProはPD60Wで十分というラインを明示",
+        "4K@60Hzが必要なクリエイティブ作業ならRevodok Pro以上、4K@30Hzで十分なら5-in-1で足りる",
+        "在宅会議や有線LAN必須環境なら 9-in-1 / 10-in-1 などRJ45ポート搭載モデルを選ぶ"
       ]
     },
     {
       "id": "section6",
-      "h2": "【第4位】UGREEN CM498｜デスクトップ型ドッキングステーション",
+      "h2": "UGREENハブ・ドックの用途別おすすめ",
       "h3s": [
-        "スペックと特徴：12in1で縦置き・横置き対応",
-        "こんな人におすすめ：固定デスク環境をガチで整えたい人"
+        "iPad ユーザー向け",
+        "MacBook Air ユーザー向け",
+        "MacBook Pro 14/16inchユーザー向け",
+        "Windowsノート + デスク常設派"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "12ポート構成（デュアルHDMI・DP・USB-A/C・LAN・SD）を詳述",
-        "縦横両対応デザインによるデスク上の省スペース効果を説明",
-        "ACアダプター電源供給で安定動作する点をリモートワーカー目線で訴求"
+        "ユーザータイプ別に本記事5モデルから1〜2つずつ推奨を絞り込む",
+        "「iPad → Uno 6-in-1」「MacBook Air → Revodok 105 or 6-in-1」「MacBook Pro → Revodok Pro 10-in-1」「Windows + デスク → Revodok 9-in-1」"
       ]
     },
     {
       "id": "section7",
-      "h2": "【第5位】UGREEN Revodok Max 213｜USB4対応次世代モデル",
+      "h2": "AliExpressのUGREEN公式ストアでも買える｜どちらで買うべき？",
       "h3s": [
-        "スペックと特徴：USB4×2ポートで拡張性が別次元",
-        "こんな人におすすめ：将来性重視・デュアルモニター派"
+        "AliExpress公式ストアの取扱と価格",
+        "AmazonとAliExpressの価格・到着日数・保証の違い"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "USB4対応による将来的な拡張性と4K×2モニター同時出力の強みを解説",
-        "価格は高めだが長期投資として見たコスパの良さを訴求",
-        "Windows・Mac両対応の汎用性についても記載"
+        "AliExpress UGREEN公式ストア（shop_id=1103243235）でもハブ・ドックは多数取扱い。価格はAmazonより安いことが多い",
+        "急ぎ必要ならAmazon、安く揃えるならAliExpressのセール（11.11・6.18）狙い",
+        "保証・初期不良対応のしやすさはAmazonが優位"
       ]
     },
     {
       "id": "section8",
-      "h2": "UGREENドッキングステーション5モデル比較表",
-      "h3s": [
-        "スペック一覧で一目比較",
-        "用途別おすすめモデルまとめ"
-      ],
-      "type": "comparison",
+      "h2": "UGREENハブ・ドックに関するよくある質問（FAQ）",
+      "h3s": [],
+      "type": "faq",
       "notes": [
-        "全5モデルをポート数・映像出力・PD出力・価格帯・重量で横断比較",
-        "「テレワーク向け」「出張向け」「クリエイター向け」のラベルで用途分類",
-        "表の下に「迷ったらこれを選べ」という簡潔な結論を添える"
+        "Q&A形式・5問",
+        "「MacBook Pro 16inchで本当にPD100W給電できる？」「4K@60Hz出力対応モデルはどれ？」「Windowsノートでも使える？」「UGREENとAnker、どっちのハブが良い？」「Thunderbolt 4/5モデルとの違いは？」を網羅"
       ]
     },
     {
       "id": "section9",
-      "h2": "よくある質問｜UGREENドッキングステーションについて",
+      "h2": "まとめ｜UGREENハブ・ドックは『用途×ポート数』で選べば失敗しない",
       "h3s": [
-        "Q1. AliExpressでUGREENを買っても品質は大丈夫？",
-        "Q2. MacBookとの互換性は問題ない？",
-        "Q3. ドッキングステーションとUSBハブの違いは？",
-        "Q4. 関税・送料はかかる？",
-        "Q5. UGREEN公式ストアと他セラーどちらで買うべき？"
-      ],
-      "type": "faq",
-      "notes": [
-        "公式ストアのバッジ確認方法と保証対応の説明を含める",
-        "MacBook Air/ProのUSB-C互換性とThunderbolt版との違いを簡潔に解説",
-        "関税免税範囲（1万6666円以下）とChoice配送の速度感についても触れる"
-      ]
-    },
-    {
-      "id": "section10",
-      "h2": "まとめ：用途に合ったUGREENドッキングステーションをアリエクで賢く選ぼう",
-      "h3s": [
-        "選び方のポイントを3行で振り返り",
-        "アリエク公式ストアでお得に購入する方法"
+        "用途別の結論まとめ",
+        "関連記事で深掘り"
       ],
       "type": "conclusion",
       "notes": [
-        "各モデルの「こんな人向け」を箇条書きで再整理し、読者が自分に合う1台を即決できるようにする",
-        "アリエクのクーポン・セール活用術（コイン・初回割引）を一言添える",
-        "関連記事（UGREENケーブル・AliExpressおすすめ商品）への内部リンクを自然に配置"
+        "結論：MacBook Pro作業ならRevodok Pro 10-in-1、入門ならRevodok 105、軽量ならUno 6-in-1",
+        "関連記事への内部リンク（ugreen-doko-no-kuni、ugreen-cable-osusume、ugreen-gan-charger-osusume等）"
       ]
     }
   ],
   "faqQuestions": [
-    "AliExpressでUGREENのドッキングステーションを買っても品質は大丈夫ですか？",
-    "UGREENドッキングステーションはMacBook Airで使えますか？",
-    "ドッキングステーションとUSBハブの違いは何ですか？",
-    "AliExpressでUGREENを購入する際に関税はかかりますか？",
-    "UGREENドッキングステーションで4Kモニターを2台同時に接続できますか？"
+    "UGREENのハブはMacBook Pro 16inchでPD100W給電できますか？",
+    "4K@60Hz HDMI出力対応のモデルはどれですか？",
+    "UGREENハブはWindowsノートでも使えますか？",
+    "UGREENとAnker、どちらのハブが良いですか？",
+    "Thunderbolt 4対応モデルとUSB-Cハブの違いは何ですか？"
   ],
   "comparisonTableColumns": [
     "モデル名",
-    "価格目安（円）",
-    "ポート数",
-    "映像出力",
-    "PD充電出力",
-    "おすすめ用途"
+    "ポート構成",
+    "HDMI解像度",
+    "PD給電",
+    "有線LAN",
+    "参考価格(円)"
   ],
   "internalLinks": [
     {
-      "url": "/basics/ugreen-cable-osusume.html",
-      "anchorText": "UGREENケーブルおすすめ5選"
+      "url": "/guide/ugreen-doko-no-kuni.html",
+      "anchorText": "UGREENはどこの国？信頼性まとめ"
     },
     {
-      "url": "/basics/aliexpress-osusume.html",
-      "anchorText": "アリエクおすすめ商品50選"
+      "url": "/gadget/ugreen-cable-osusume.html",
+      "anchorText": "UGREEN USB-Cケーブルおすすめ"
     },
     {
-      "url": "/basics/aliexpress-what-is.html",
-      "anchorText": "AliExpressとは何か"
-    },
-    {
-      "url": "/basics/aliexpress-choice.html",
-      "anchorText": "アリエクのChoice配送について"
+      "url": "/gadget/ugreen-gan-charger-osusume.html",
+      "anchorText": "UGREEN GaN充電器おすすめ"
     }
   ],
   "competitorDifferentiators": [
-    "単なるスペック羅列ではなく「テレワーク・出張・クリエイター」など用途別に最適モデルを明示し、読者が即決できる構成にしている",
-    "AliExpressでの購入特有の注意点（公式ストア確認・関税・クーポン活用）を日本語で丁寧に解説し、国内レビューサイトにない実購入ガイドとして差別化している"
+    "Amazon実績（累計レビュー29,000件超）ベースで5モデルを厳選しており、選定根拠が明確",
+    "Revodok / Uno / Maxidok の3シリーズの違いを明確に整理し、用途別の最適解を提示",
+    "Amazon×AliExpress 2コーナー構成でどちらの買い場ユーザーにも対応"
   ],
-  "createdAt": "2026-05-23",
-  "researchedAt": "2026-06-04",
+  "createdAt": "2026-06-05",
+  "researchedAt": "2026-06-05",
   "products": [
     {
       "product_id": "B0BR3M8XHK",
@@ -461,6 +458,150 @@
       "notes": {
         "whyTrust": "Amazon.co.jp で 673件レビュー / 星 4.3"
       }
+    },
+    {
+      "product_id": 1005007227813985,
+      "rawTitle": "Ugreen-トリプルディスプレイUSB cハブ、10gbps、4k、hdmiアダプター、hdmi dp、usb3.2、pd 100wドック、macbook pro air、pcを備えた8 in1スプリッター",
+      "cleanName": "UGREEN 8-in-1 トリプルディスプレイ スプリッター 4k 100W 10gbps USB-Cハブ",
+      "section": "aliexpress",
+      "role": "トリプルディスプレイ 8-in-1 100W (2,256販売)",
+      "price_jpy": "5174",
+      "original_price": "14785",
+      "sales_count": 2256,
+      "evaluate_rate": "94.5%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLeKHsRf9R2jgKD32Axm5na4bRJdkhGVyv3GcDgMjmYrrZWinWctR9gnPwA4odHd4iKODihWv3gdEHIKYzxJMNizCyy0qe1LJTyeQqU5m2hCrvcKkt1L44hdCBnFLAu5OIvixWEeunCT4nVLigZwdVu8RcrwzgycuFKCXi5Px3t9AC4Qa4NEvRc6ZkNMWCiuE70PqfKaaVve3qIY8zo6A67XowKkiNHiTwjwxI0Fp2iD6aMxuw9De6rZPDBy9M09y40uKeY2ZOJyG02vUieuyQYOBdblNsnKzeFpsmD4vTguk9Gb3rVeThplbCxYt3RZMQmruevqF1frJ7DZxlorx2Sgk5hiFsTyl35CPjHTcYz460iENb5LYXEgUWNC5ELrqvEgqXWEmO5OaEQodbY9MtHUqXxtQ1gm9Cof24QbTqVMGQysfKVZ2ZdS7crG5wGQA4pB7pMPJ6uDF41R2XfNbZwsIAF6v3GIsw1QSPncl3NMzj7FYLFKFGgXmGGYi3MH68TZIX2efbEwGhLpF5TJoVkjorFe7FF1fS6toHnfUrLqL2QLYZPx5Xo3LVNdCMShD5nAETY80x33kFX5mVnkZMA9SBuqpi9IlQJ0Gk6ql2dq486snPNNffcf7Vak966j4b0gN2mMvDOorOP7xig1QwEyXgpUg4Y29BtUnxIWP5LsEy1BDDs3cfNvyDpsBjJkoS3QOKZiAw55alXEjqTV2PBHmINuPHMKY4Z1M2PVv1redbWLvbd3aXdFe9WJSzjbBvkmdKCu5",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sf21f054e892e40aeb6e833a892cb65b28.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sf21f054e892e40aeb6e833a892cb65b28.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sf21f054e892e40aeb6e833a892cb65b28.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Saa4894a8ff3140ebb9e94148ddfff73eQ.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Secb560fa985d48cc862303f4d3a969f8V.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5890dfbb531c40d8936e105eacbf241cS.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S93e94127c16d465b8fdc5a2a3fa8ef1f3.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "Ugreen-トリプルディスプレイUSB cハブ、10gbps、4k、hdmiアダプター、hdmi ",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "features": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近2,256件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005010255498921,
+      "rawTitle": "UGREEN USB C ハブ Steam Deck ドッキングステーション 6-in-1 Type-C to 4K120Hz HDMI 5Gbps USB-A/C PD100W 1000Mbps RJ45 (ROG Ally、Legion対応)",
+      "cleanName": "UGREEN 6-in-1 LAN対応 Steam Deck対応 100W 5Gbps ドッキングステーション",
+      "section": "aliexpress",
+      "role": "Steam Deck 6-in-1 100W (1,515販売)",
+      "price_jpy": "5352",
+      "original_price": "11619",
+      "sales_count": 1515,
+      "evaluate_rate": "97.8%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLeKHsRf9R2jgKD32Axm5na4bRJdkhGVyv3GcDgMjmYrrZWinWctR9gnPwA4k6KUgRzWMt8hSQ0nJXgf7CF8tAi2IIXXywyQjxqA4wQSITDifITXWE0RWE1oLwrgusunQ5QesTe5qY1ZTpg7TvIGVwm3Febnee8duXAAkWQuo17IoKrJjoiTsNwLgSN5UzB8IqMg03SmIdLTzZ4I50NTrlMffXNPTwVLg7KxLktcFxnkz79PzDKz2dUWtNYQfODeX1JUC4T4J18wmmOYqGJj4grU0R42jF4tQLXNAg1tBM8t1CAHyHXxn79YWkiwIL6c0vb5xTnvw3sHKEPOCQ0xnPNw5UEVTElslw4IwP3R82jOYkj2ldQ5KdN7Uvh5SBlutXJbV3PekGpxvvUYOOelolnu5e2w9z0CyrLVwDG3pOWlA2T6jK4mRQJ1M4HgYfvGVBrKmxBdWIa0v8hFOXDCeBhGije76SkDfwHJKPczNDNP7Gi0dBXkPGGelfOSqWdZTE0KpTdGGspXxQguEJpSfZQaYPAOw6Sy3Yt7cVoMcxY7I3ZEl37OX1P4ONO3I2SzzKg1HvtuU2ajrAMWljhwFHKxE7ETY3t7nCCuRDqXD0ovp6wb7Bs1unVpDfV88zCykZEbfatR5Y1P46tPD0gX7Iotrlc9VJUuyscICLS86WznonnyPKZUqS8WC6nk3fcGFQnJ5ip0gBio906cww0BhuteN7VEHUeyDSy1rqoVJ13PNG5XwCgNm6iPWrJPktUU258nNN3lF",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S60776e0734444418af3ae8c2f84af46a2.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S60776e0734444418af3ae8c2f84af46a2.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S60776e0734444418af3ae8c2f84af46a2.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S847e24b2d4e942b8b9229c9f0bc053b1p.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8463ca604487440da48e221a4b5e9aa7t.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sbef731e8e38044c58cfcdb2c298ff8adV.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S33c4c99f532043dbb843660e1b2b5dcej.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN USB C ハブ Steam Deck ドッキングステーション 6-in-1 Type",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "features": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近1,515件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005009126321747,
+      "rawTitle": "UGREEN USB3.0ハブ イーサネットアダプター 1000Mbps USB - RJ45 ノートパソコン Xiaomi Mi Box S/3 Windows イーサネットハブ USB LAN ネットワークカード",
+      "cleanName": "UGREEN LAN対応 USB-Cハブ",
+      "section": "aliexpress",
+      "role": "USB3.0 + Ethernet (1,133販売)",
+      "price_jpy": "2474",
+      "original_price": "5203",
+      "sales_count": 1133,
+      "evaluate_rate": "96.9%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVYRd5r2eIUFDZPjNYrRNGSoOKg9OF2SEgccOWxKStuUBBEsKRHmZuIbJZ5onXPKcVO0xBwZIvpQN9sVciJRIgbSUOkskvL51pOxLBNxqZik4a6JtS0sbFKAj4lg7g5aWPkf0QHfJtgK2Lfz3QlwqqbLunZH5BeXvD3ur7xdyTrdgQqUAI0zabthD1lrSAJa1KJy7LbGVop7J3kUk4eDfYnzitF0aTpoLcL6CfRZZEcKJtmHrsM0OBcHML78IYKHjV9c3rKWeMTqfNHJ9M61uxk0EH0AesPKuQIYwJWNsXYC9dPU1iDWSMjOcsNRLLOsUsJTLov6OLdTlT3EtOL1ggLv1VGdX2MilgQMr5kIoODddDoq7UXkUH9cbgsds6iIsoWApk7gfWVT9NNPHwgTJCXnaDzfViMFHYxWotM0Mp10PnS4PGtl0J6euHVO7tEwne35I6WNHlX51V1hdYmrPXdIqyTHdRrNOh8xPVeX7jJjTY6v1CJDrlVNvhVkbpXJbPfC5IDDHhnO8agfZWtjxD4vwYL3HqQBlYZwHyLUHDnjDdcjHRFFoj1bSnAqNafi2k3XHrSb2ejY8ILLURgAaLpjAsemdFKQ94TRjWxHvC4vRGVObnQg2PEsx57VLsHGfAlIufVHxhpViQR1RzeEKoi7MWqgv6hgaVJD4eDZEmw8zZ4oFLVZv",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S310204cb10bb4312b6036bba4ff2b5a8B.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S310204cb10bb4312b6036bba4ff2b5a8B.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S310204cb10bb4312b6036bba4ff2b5a8B.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sabad356177324a6abf1989eed58856266.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S9bebc0db364b46108ea097cf29a7a635D.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd6b096008d924f8a94fe3a6b4be5fdd6E.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S542cd38814474661bd3f9b8c556b03639.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN USB3.0ハブ イーサネットアダプター 1000Mbps USB - RJ45 ノー",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "features": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近1,133件販売の実績"
+      }
+    },
+    {
+      "product_id": 1005007433155726,
+      "rawTitle": "UGREEN USB3.0 ハブ 4ポート USB-A スプリッター スリム USB 拡張器 マウス キーボード フラッシュドライブ Uディスク プリンター ノートパソコン PC PS5 Xbox対応",
+      "cleanName": "UGREEN 4ポート スプリッター USB-Cハブ",
+      "section": "aliexpress",
+      "role": "4ポート USB-A スプリッター (1,122販売)",
+      "price_jpy": "816",
+      "original_price": "2399",
+      "sales_count": 1122,
+      "evaluate_rate": "97.2%",
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVZDOokIVHqvFjZVM1dZ0UFfJmiXjRkQXyNvg0OQh19EjF1wWiMkRQP8l7VfUUuad1MqvnSBpclYQ0P8wjQ7qWULx7QqYi5ZFlMgvgaGboNY17ZUltjf6ZyuYeQg0Ly20vdodhysYGo6eqkSypfOy9GZSQYO146PFsDufTl2yn7JWlF2qo9Cit7i9j8bqkSbXYV12GzbioEC2CZfCwxPiWSg4W3ydWfFRrjLDOxM39ZTvMRFk8Pxh2YyaIXytj2TuHAxGod1BNchgv22yyonC17166e1aZPkghvOLG0hR2VH8851a170V0zducit8k9mwVLY86bkPabdv7nJCu4qz8CqLHNU6xvmxjjSP2WtazWxRqaFawfCZlMcC5piih0c1i34xX9SFrfBzod3cQduqztlvpVgaHDaA2gvLnkYng99ubOW9dWbhzybOoF2DTAwYv9OAXdri6Bw0w08BNmIBHdQYFRlvKKqU5he79YGrO5kz6MwaTGlRhxRFbWiiTnVNboS3InW3WX1aHHyUQpycFdJ7kV5seLz4Cb87HThcVe83dryHoPcR6Z2lmwBum7cbw796acWRVETvgOMOpBDNji89cIwTImyUvlj7B1W7mIpWLObTSnebn5UbBbeZueyK7UpeUvbr8k9cwPKackcRSmD21GxKuhpEb4Cp82ZaCpVUwv0UhISB",
+      "hasAffiliate": true,
+      "amazonUrl": "",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S1992cbe2eae5459598139e82c81463fcf.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1992cbe2eae5459598139e82c81463fcf.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S1992cbe2eae5459598139e82c81463fcf.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S914b844dd02f4abeaa47236f6d8ef686J.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sab4bb7f2f7cf426da614a02aa413124cu.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S36a2ab2315dd4db0a8cd77b0584b2a99O.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S4c6de8a6ccb44ae4b5c2e5a08b8203a3u.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN USB3.0 ハブ 4ポート USB-A スプリッター スリム USB 拡張器 マウス",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "features": [],
+      "amazonReviews": [],
+      "redditReviews": [],
+      "notes": {
+        "whyTrust": "UGREEN公式ストアで直近1,122件販売の実績"
+      }
     }
   ],
   "tavilyResults": [],
@@ -481,5 +622,5 @@
       "PD3.1"
     ]
   },
-  "generatedAt": "2026-06-04T12:49:49.851Z"
+  "generatedAt": "2026-06-05T08:01:17.585Z"
 }

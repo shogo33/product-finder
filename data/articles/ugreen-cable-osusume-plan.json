@@ -47,7 +47,7 @@
     },
     {
       "id": "section3",
-      "h2": "UGREENケーブルおすすめ5選",
+      "h2": "Amazonで買えるUGREENケーブルおすすめ5選",
       "h3s": [
         "USB-C to Lightning ケーブル：iPhone 14以前なら定番MFi認証品",
         "US316 USB-C/C 100W：1m〜3mの4種類から選べる万能機",
@@ -57,8 +57,27 @@
       ],
       "type": "product",
       "notes": [
-        "全5商品が独立した product card として展開される",
-        "本文には『なぜこの商品か（実績・スペック根拠）』『どんな人向けか』『デメリット/注意点』を簡潔に書く"
+        "全5商品が独立した product card として展開される（Amazonコーナー）",
+        "本文には『なぜこの商品か（実績・スペック根拠）』『どんな人向けか』『デメリット/注意点』を簡潔に書く",
+        "Amazon実績（レビュー数・星評価）を信頼性の根拠として必ず1文添える"
+      ]
+    },
+    {
+      "id": "section3b",
+      "h2": "AliExpressで買えるUGREENケーブルおすすめ4選（公式ストア・販売実績300+）",
+      "h3s": [
+        "USB-C/C 5A E-Markerケーブル：販売4,479件の最人気モデル",
+        "USB-C/C PD100W E-Markerケーブル：販売4,122件・PD100W対応の定番",
+        "8K HDMI ケーブル 48Gbps：4Kテレビ・PS5・8Kモニター対応",
+        "UNO PD100W USB-C/C：UNOシリーズのコンパクトケーブル"
+      ],
+      "type": "product",
+      "notes": [
+        "全4商品が独立した product card として展開される（AliExpressコーナー）",
+        "全商品が UGREEN Official Store（shop_id=1103243235）の公式品であることを必ず明記し、偽物リスクを排除",
+        "AliExpressアフィリエイトリンクは research JSON の promotion_link を使用",
+        "直近販売数を実績エビデンスとして見出し脇に併記",
+        "「Amazonより半額前後で買える」「セール時期を狙うとさらに得」「ただしMFi表記の確認は要注意」など実用情報を添える"
       ]
     },
     {

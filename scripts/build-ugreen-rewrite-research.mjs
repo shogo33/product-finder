@@ -33,6 +33,18 @@ const PICKS_BY_SLUG = {
       { product_id: '1005009118633225', role: '45W単機種 (1,682販売)' },
       { product_id: '1005008453117301', role: '3ポートPD3.0 (1,410販売)' },
     ],
+    'ugreen-cable-osusume': [
+      { product_id: '1005006982273210', role: '最人気USB-C 5A E-Marker (4,479販売)' },
+      { product_id: '1005007707979951', role: 'PD100W定番 (4,122販売)' },
+      { product_id: '1005007423436752', role: '8K HDMI 48Gbps (2,065販売)' },
+      { product_id: '1005007706171004', role: 'UNO PD100W (1,164販売)' },
+    ],
+    'ugreen-docking-station-osusume': [
+      { product_id: '1005007227813985', role: 'トリプルディスプレイ 8-in-1 100W (2,256販売)' },
+      { product_id: '1005010255498921', role: 'Steam Deck 6-in-1 100W (1,515販売)' },
+      { product_id: '1005009126321747', role: 'USB3.0 + Ethernet (1,133販売)' },
+      { product_id: '1005007433155726', role: '4ポート USB-A スプリッター (1,122販売)' },
+    ],
   },
   'ugreen-cable-osusume': [
     { asin: 'B07PYP57TQ', role: 'Lightning ケーブル定番' },
@@ -47,6 +59,9 @@ const PICKS_BY_SLUG = {
     { asin: 'B0BXDQS4BD', role: 'Pro 10-in-1 多機能' },
     { asin: 'B0D2Q5XJY9', role: 'Uno 6-in-1 軽量' },
     { asin: 'B0BNBJFFB2', role: 'Revodok 9-in-1' },
+  ],
+  'ugreen-earphone-osusume': [
+    { asin: 'B0DMZWD4JP', role: 'イヤーカフ型・2,400円・5,168件レビュー' },
   ],
 };
 
@@ -93,19 +108,24 @@ jpProducts.forEach((p) => {
 });
 const amzByAsin = new Map(amzProducts.map((p) => [p.asin, p]));
 
-function pickReviews(reviews) {
+function pickReviews(reviews, mode = 'standard') {
   if (!reviews || reviews.length === 0) return [];
   const sorted = [...reviews].sort((a, b) => (b.helpful || 0) - (a.helpful || 0));
-  const high = sorted.filter((r) => r.rating >= 4).slice(0, 2);
-  const low = sorted.filter((r) => r.rating <= 3).slice(0, 1);
+  const limits = mode === 'deep' ? { high: 5, low: 5 } : { high: 2, low: 1 };
+  const high = sorted.filter((r) => r.rating >= 4).slice(0, limits.high);
+  const low = sorted.filter((r) => r.rating <= 3).slice(0, limits.low);
   return [...high, ...low];
 }
+
+// 単一商品深堀り型の記事には deep モード
+const DEEP_REVIEW_SLUGS = new Set(['ugreen-earphone-osusume']);
+const reviewMode = DEEP_REVIEW_SLUGS.has(slug) ? 'deep' : 'standard';
 
 function buildProduct(pick) {
   const amzData = amzByAsin.get(pick.asin);
   const jpData = jpByAsin.get(pick.asin);
   const affiliate = affiliateByAsin.get(pick.asin);
-  const reviews = pickReviews(reviewsData[pick.asin]?.reviews || []);
+  const reviews = pickReviews(reviewsData[pick.asin]?.reviews || [], reviewMode);
   const modelAttr = amzData?.attributes?.find((a) => /model.?number|品番|model.?no|製造元参照番号/i.test(a.key || ''));
   const modelNo = modelAttr?.value || '';
 
@@ -161,16 +181,90 @@ function buildProduct(pick) {
   };
 }
 
+function buildCleanAeName(rawTitle) {
+  const t = rawTitle || '';
+  if (t.length <= 60 && /UGREEN/i.test(t)) return t;
+
+  const parts = ['UGREEN'];
+
+  // シリーズ名
+  const series = t.match(/\b(UNO|Nexode\s?Pro|Nexode\s?Air|Nexode\s?Mini|Nexode|Revodok\s?Pro|Revodok|MagFlow\s?Air|MagFlow|Maxidok|DigiNest\s?Pro|DigiNest|PowerRoam)\b/i);
+  if (series) parts.push(series[1]);
+
+  // 製品タイプ（判定順が重要：複合製品は具体的なカテゴリを先に判定）
+  let type = null;
+  // ハブ・ドック系（HDMI出力ありの製品が多いが、ハブが主機能）を先に判定
+  if (/ドッキング|docking|thunderbolt\s?[45]/i.test(t)) type = 'ドッキングステーション';
+  else if (/(?:usb-?c\s?)?ハブ|usb\s?hub|usb-?c\s?hub/i.test(t)) type = 'USB-Cハブ';
+  else if (/sd\s?カード\s?リーダー|sd\s?card\s?reader|card\s?reader/i.test(t)) type = 'SDカードリーダー';
+  // ケーブル系
+  else if (/HDMI.*ケーブル|HDMI\s?cable|hdmi.*cord|hdmi[\s,].*\d+k/i.test(t)) type = 'HDMI ケーブル';
+  else if (/displayport|\bdp\b.*ケーブル/i.test(t)) type = 'DisplayPort ケーブル';
+  else if (/lightning/i.test(t)) type = 'Lightning ケーブル';
+  else if (/lan\s?ケーブル|cat[678]/i.test(t)) type = 'LAN ケーブル';
+  else if (/usb[-\s]?c.*usb[-\s]?c|type[-\s]?c\s?(?:to|→)\s?type[-\s]?c|usb-c\s?\/\s?c/i.test(t)) type = 'USB-C/C ケーブル';
+  else if (/usb[-\s]?a.*usb[-\s]?c|type[-\s]?a.*type[-\s]?c/i.test(t)) type = 'USB-A/C ケーブル';
+  else if (/ケーブル|cable/i.test(t)) type = 'USB-C ケーブル';
+  // その他
+  else if (/充電器|チャージャー|charger/i.test(t)) type = '充電器';
+
+  // ハブのポート構成（X-in-Y or Nポート）
+  const inY = t.match(/(\d{1,2})\s*[-\s]?in[-\s]?(\d{1,2})/i);
+  if (inY) parts.push(`${inY[1]}-in-${inY[2]}`);
+  else {
+    const ports = t.match(/(\d{1,2})\s*[-\s]?(?:port|ポート)/i);
+    if (ports) parts.push(`${ports[1]}ポート`);
+  }
+
+  // ハブの特徴
+  if (/ethernet|rj45|有線lan|1000mbps/i.test(t)) parts.push('LAN対応');
+  if (/steam\s?deck/i.test(t)) parts.push('Steam Deck対応');
+  if (/トリプル|triple/i.test(t)) parts.push('トリプルディスプレイ');
+  if (/スプリッター|splitter/i.test(t)) parts.push('スプリッター');
+
+  // 解像度
+  const reso = t.match(/\b(8K|4K|2K)(?:@\d+Hz)?\b/i);
+  if (reso) parts.push(reso[0]);
+
+  // ワット数
+  const w = t.match(/(?:pd\s*)?(\d{2,4})\s*[wW]/);
+  if (w) parts.push(w[1] + 'W');
+
+  // 通信速度
+  const speed = t.match(/(\d{1,3})\s*Gbps/i);
+  if (speed) parts.push(speed[0]);
+
+  // E-Marker / MFi
+  if (/e-?marker/i.test(t)) parts.push('E-Marker');
+  if (/mfi\s?認証/i.test(t)) parts.push('MFi認証');
+
+  // 容量
+  const mah = t.match(/(\d{4,6})\s*mAh/i);
+  if (mah) parts.push(mah[0]);
+
+  if (type) parts.push(type);
+
+  // 同じ単語が重複するのを除く
+  const seen = new Set();
+  const dedup = parts.filter((p) => {
+    const k = p.toLowerCase();
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+
+  return dedup.join(' ');
+}
+
 function buildAeProduct(pick) {
   const ae = aeByPid.get(String(pick.product_id));
   if (!ae) { console.warn('AE not found:', pick.product_id); return null; }
   const images = [ae.product_main_image_url, ...(ae.product_small_image_urls?.string || [])].filter(Boolean).slice(0, 6);
-  // shorten title
   const t = ae.product_title || '';
   return {
     product_id: ae.product_id,
     rawTitle: t,
-    cleanName: t.length > 60 ? 'UGREEN ' + t.replace(/^.*?UGREEN\s*/i, '').slice(0, 60) : t,
+    cleanName: buildCleanAeName(t),
     section: 'aliexpress',
     role: pick.role,
     price_jpy: ae.target_sale_price || ae.sale_price || '',

@@ -18,6 +18,7 @@ const FILE_TO_ASIN = {
   'UGREEN MagFlow Air 10000mAh 15W MagSafe (PB570)': 'B0F6NC41DZ',
   'Nexode 巻き取り20000mAh 165W (PB726)': 'B0DSPXHFBM',
   'Built-In USB-C 5000mAh 22.5W (PB503)': 'B0CXHRNVNW',
+  'UGREEN Earcuff Earphones (45785)': 'B0DMZWD4JP',
 };
 
 function parseReviews(text) {

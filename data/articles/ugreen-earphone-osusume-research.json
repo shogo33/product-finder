@@ -1,259 +1,408 @@
 {
+  "keyword": "UGREEN イヤーカフ イヤホン",
   "slug": "ugreen-earphone-osusume",
-  "keyword": "UGREEN イヤホン おすすめ",
-  "category": "basics",
-  "selectedTitle": "UGREENイヤホン比較【2026年】コスパ・ANC・音質で選ぶおすすめ5選",
+  "category": "gadget",
+  "searchIntent": "レビュー系|問題解決系",
+  "searchIntentNote": "UGREENの2,400円台イヤーカフ型ワイヤレスイヤホンを買おうとしているが、3.9★という評価が気になるユーザー。実機の使用感・耐久性・初期不良リスクを把握してから買うか判断したい意図が強い。",
+  "persona": "Anker Soundcore・SoundPEATS・SHOKZのオープンイヤー型を5機種以上使い分け、骨伝導と空気伝導の違い、IPX防水等級の意味、Bluetoothチップ世代まで実感で語れるオーディオ系ガジェットオタク。価格と耐久性のトレードオフを読者の代わりに体感し、誠実に良い点と悪い点を伝える。",
+  "targetProductCount": 1,
+  "titles": [
+    "UGREEN Earcuff Earphonesレビュー｜2,400円イヤーカフの実力と本音",
+    "UGREEN イヤーカフ型イヤホン実機評価｜★3.9の中身を5,000件レビューから検証",
+    "UGREEN Earcuffは買い？ながら聴き専用と割り切れる人向け"
+  ],
+  "selectedTitle": "UGREEN Earcuff Earphonesレビュー｜2,400円イヤーカフの実力と本音",
+  "metaDescription": "UGREEN Earcuff Earphonesの実機評価。Bluetooth 5.4・ENC・IPX5防水・30時間再生のスペックと、Amazon累計5,168件レビューから見える★4以上の高評価と★1の辛口（耐久性・初期不良）を整理。買って後悔しないための判断材料を提供します。",
+  "intro": "「UGREENのイヤーカフ型イヤホン、2,400円台という安さに惹かれるけど、★3.9という評価が気になる…」「買って後悔しない？」と迷っていませんか。\n\n結論から言うと、UGREEN Earcuff Earphones（B0DMZWD4JP）は**「ながら聴き入門用」として割り切るなら価格相応に優秀**。ただしAmazon 5,168件のレビューを丁寧に読むと、★4・★5の高評価と並んで★1の耐久性問題（2〜5ヶ月で故障・初期不良・片耳のみ届く等）の苦情も多く存在します。\n\nこの記事では、Bluetooth 5.4・ENC・IPX5防水・30時間再生のスペックと、Amazon累計5,168件・3.9★の本音レビューを整理し、「買うべき人・買わない方がいい人」を誠実に切り分けます。",
   "sections": [
     {
       "id": "section1",
-      "h2": "UGREENイヤホンとは？ブランドの特徴とおすすめ理由",
+      "h2": "UGREEN Earcuff Earphonesとは？ スペック早見",
       "h3s": [
-        "UGREENってどんなブランド？信頼性は？",
-        "イヤホンラインナップの全体像と価格帯"
+        "Bluetooth 5.4・ENC通話・IPX5防水の基本情報",
+        "Amazon累計5,168件レビュー（★3.9）、月間1K+販売の実績"
       ],
       "type": "brand_overview",
       "notes": [
-        "UGREENは中国深圳発の総合ガジェットブランドで、充電器・ケーブル分野から音響へ参入した経緯を紹介",
-        "HiTuneシリーズ（TWS）・FlatBudsシリーズ（有線）など主要ラインを整理し、1,000円台〜8,000円台の価格帯を俯瞰",
-        "AliExpressでの購入メリット（国内定価比20〜40%オフになるケースが多い）を簡潔に触れる"
+        "型番45785、価格¥2,399（Amazon）、4色展開（ブラック/ホワイト/シャンパンゴールド/パープル）",
+        "Bluetooth 5.4 / ENC（通話側ノイキャン）/ IPX5防水 / イヤホン単体7時間、ケース込み30時間 / 5.3g軽量",
+        "UGREENは深圳発のガジェットメーカーで、充電器・ハブで実績あり。イヤホンはここ1年で力を入れ始めたカテゴリ"
       ]
     },
     {
       "id": "section2",
-      "h2": "【第1位】UGREEN HiTune X6 ｜ANC×コスパの最強バランス機",
+      "h2": "★4以上の高評価レビューから見えるEarcuffの実力",
       "h3s": [
-        "スペック・音質・ANC性能レビュー",
-        "こんな人におすすめ｜向き不向きを正直に解説"
+        "「ながら聴き」の快適さ（在宅ワーク・家事・運動）",
+        "イヤーカフの軽さ・装着感（5.3g・カナル型より圧迫感ゼロ）",
+        "2,400円とは思えない仕上げ・Bluetooth安定性"
       ],
       "type": "product",
       "notes": [
-        "ハイブリッドANC搭載・最大35時間再生・IPX5防水などスペックを網羅",
-        "低音域の量感と中高域の分離感について具体的に言及し、音楽ジャンル別の相性を伝える",
-        "AliExpressでの最安値目安と購入時の注意点（セラー選び・Choice対応有無）を記載"
+        "高評価★4・★5の代表3〜4件をamazonReviews配列から引用ブロック化",
+        "在宅ワーク・ジョギング・家事しながらラジオを聴くなどの具体的ユースケースを示す",
+        "「3000円とは思えない」「軽くてつけているのを忘れる」「Bluetoothが安定」など共通する高評価ポイントを抽出"
       ]
     },
     {
       "id": "section3",
-      "h2": "【第2位】UGREEN HiTune T3 ｜低遅延ゲーミングモード搭載の万能機",
+      "h2": "★1の辛口レビューから見える注意点（耐久性・初期不良）",
       "h3s": [
-        "スペック・低遅延性能・ゲーム・動画での使い心地",
-        "HiTune X6との違いと使い分け方"
+        "2〜5ヶ月で故障する報告が複数",
+        "初期不良・片耳のみ届く・サイズ不良の苦情",
+        "サポート対応への不満（電話繋がらない・自己責任扱い）"
       ],
       "type": "product",
       "notes": [
-        "65ms低遅延ゲーミングモードの実用性と、aptX対応コーデックによる音質向上を解説",
-        "X6と比較した際の価格差・ANC有無・遅延性能の違いを明確化",
-        "ゲーム・動画視聴メインの人に刺さる訴求ポイントを強調"
+        "★1の代表3〜4件を引用。具体的な故障期間（5ヶ月で充電不可・2ヶ月で30分しかバッテリー持たない等）を示す",
+        "片耳のみ到着・Lチャンネル切断などの初期不良報告",
+        "サポート対応が「再起動して」「掃除して」と自己責任扱いされた苦情",
+        "★1が18件あるという数字も明示し、3.9★という評価がそのまま反映されている事実を伝える"
       ]
     },
     {
       "id": "section4",
-      "h2": "【第3位】UGREEN HiTune X5 ｜軽量コンパクトで毎日使いに最適",
+      "h2": "音質・装着感の本音｜Amazonレビューから整理",
       "h3s": [
-        "スペック・装着感・バッテリー持続時間レビュー",
-        "通勤・運動用途での実力はどうか？"
+        "音質：低音は控えめ、ボーカル・配信ラジオはクリア",
+        "音漏れ：静かな環境では聞こえる可能性大、電車・通勤は不向き",
+        "装着感：5.3gで長時間つけても痛くなりにくい"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "約4gの超軽量イヤホン本体とIPX5防水でスポーツ用途への適性を述べる",
-        "ANCなしのシンプル設計が価格を抑えている点を肯定的に評価",
-        "長時間装着時の耳疲れの少なさをX6と比べながら説明"
+        "オープンイヤー構造の特性として、低音は出ない（バスドラム不可）が事実",
+        "ボーカル中心・配信・ラジオ・Web会議用途には向いている",
+        "音漏れは音量3割でも静かな環境では隣に聞こえるレベル"
       ]
     },
     {
       "id": "section5",
-      "h2": "【第4位】UGREEN FlatBuds ｜有線×平型で音質を妥協したくない人へ",
+      "h2": "競合との比較｜AnkerやEarFunとどう違う？",
       "h3s": [
-        "スペック・音質傾向・有線ならではのメリット",
-        "スマホ・PC・ゲーム機での接続互換性"
+        "Anker Soundcore C30i（イヤーカフ型・¥7,990）との比較",
+        "EarFun OpenJump（オープンイヤー・¥6,990）との比較",
+        "UGREENが選ばれる理由は『価格』が中心"
       ],
-      "type": "product",
+      "type": "comparison",
       "notes": [
-        "平型ケーブル採用による絡まりにくさと、3.5mmジャック接続でバッテリー不要な利便性を解説",
-        "ワイヤレス派が見落としがちな有線の低遅延・高音質メリットを再評価",
-        "タイプCアダプタ同梱モデルとの違いなど購入前の確認ポイントを明記"
+        "Anker Soundcore C30i：上位互換だが価格3倍以上、音質・耐久性は明確に優秀",
+        "EarFun OpenJump：オープンイヤー型の定番、ANC搭載モデルもあり",
+        "UGREEN Earcuffは「2,400円で試してみたい入門機」のポジション",
+        "本物の音質や耐久性を求めるなら7,000〜10,000円帯がベター"
       ]
     },
     {
       "id": "section6",
-      "h2": "【第5位】UGREEN HiTune Max5 ｜ハイレゾ対応のフラッグシップ機",
+      "h2": "こんな人にはおすすめ・こんな人は別商品",
       "h3s": [
-        "スペック・ハイレゾ・LDAC対応の実力を検証",
-        "価格に見合う価値があるか？他モデルとの比較"
+        "おすすめできる人（入門・ながら聴き・割り切り派）",
+        "おすすめできない人（音質重視・通勤通学使用・長期使用想定）"
       ],
-      "type": "product",
+      "type": "howto",
       "notes": [
-        "LDAC・ハイレゾワイヤレス対応による音質向上を具体的に説明し、対応アプリとの連携も紹介",
-        "上位モデルとして価格が高くなる分のスペック差を可視化し「課金する価値がある人」を明確化",
-        "AliExpressで買う場合の国内販売価格との差額メリットを数字で示す"
+        "おすすめできる人：在宅ワークBGM・家事・短時間ジョギング・初めてのイヤーカフ型・2,400円なら壊れても惜しくない人",
+        "おすすめできない人：低音重視・通勤電車・長期間（1年以上）使用前提・サポート対応に時間かけられない人",
+        "「使い捨て前提で買う」「保証書は必ず取っておく」という現実的なアドバイスも入れる"
       ]
     },
     {
       "id": "section7",
-      "h2": "UGREENイヤホン全5選を徹底比較｜一覧表で選ぶ",
-      "h3s": [
-        "スペック比較表の見方と重視すべき列",
-        "予算・用途別のベストバイまとめ"
-      ],
-      "type": "comparison",
+      "h2": "Earcuffに関するよくある質問（FAQ）",
+      "h3s": [],
+      "type": "faq",
       "notes": [
-        "比較表を中心に視覚的に差異を整理し、モバイル閲覧でも見やすいレイアウトを意識",
-        "「予算3,000円以下」「ANCが欲しい」「ゲーム用」など用途別に最適モデルを箇条書きで示す",
-        "「迷ったらこれ」という編集部ピックを1つ明示して意思決定を促す"
+        "Q&A形式・5問",
+        "「★3.9という評価は買って大丈夫？」「保証期間は？」「アプリ連携できる？」「マルチペアリング対応？」「Anker Soundcore C30iとどっち？」を網羅"
       ]
     },
     {
       "id": "section8",
-      "h2": "UGREENイヤホンの失敗しない選び方｜4つのチェックポイント",
+      "h2": "まとめ｜UGREEN Earcuffは『2,400円の入門イヤーカフ』と割り切る人にだけおすすめ",
       "h3s": [
-        "ANCの有無・接続方式・コーデックで絞り込む",
-        "AliExpressでの購入時に確認すべき注意点"
+        "結論：用途を限定すれば優秀、過度な期待はNG",
+        "関連記事で深掘り"
       ],
-      "type": "howto",
+      "type": "conclusion",
       "notes": [
-        "①ANC有無 ②有線/TWS ③対応コーデック（SBC/AAC/aptX/LDAC） ④防水IPX等級の4軸で選び方を体系化",
-        "AliExpressで購入する際のセラー評価・Choiceマーク・配送日数の確認方法を解説",
-        "偽物・並行輸入品のリスクと回避策（公式ストア・高評価セラーの選び方）を補足"
-      ]
-    },
-    {
-      "id": "section9",
-      "h2": "よくある質問｜UGREENイヤホンについてのQ&A",
-      "h3s": [
-        "AliExpressで買って大丈夫？品質・保証は？",
-        "UGREENイヤホンはAmazonと比べてどちらが安い？"
-      ],
-      "type": "faq",
-      "notes": [
-        "FAQは検索クエリ形式の5問に簡潔に回答し、E-E-A-T強化のため実体験ベースの表現を使う",
-        "保証・返品ポリシーや接続トラブル対処法など購入後の不安を解消する内容を含める",
-        "各回答は100〜150文字程度で完結させモバイル読みやすさを優先"
+        "結論：ながら聴き・短期使用・入門用途なら買って後悔しない。音質や耐久性を求めるなら7,000円〜の上位機種へ",
+        "関連記事への内部リンク（ugreen-doko-no-kuni、ugreen-cable-osusume等）"
       ]
     }
   ],
-  "researchedAt": "2026-05-20",
+  "faqQuestions": [
+    "UGREEN Earcuff Earphonesの★3.9という評価は買って大丈夫ですか？",
+    "UGREEN Earcuffの保証期間はどのくらいですか？",
+    "UGREEN Earcuffはアプリと連携してタッチ操作変更できますか？",
+    "UGREEN Earcuffはマルチペアリング（PC＋スマホ同時接続）に対応していますか？",
+    "UGREEN EarcuffとAnker Soundcore C30iならどちらを選ぶべきですか？"
+  ],
+  "comparisonTableColumns": [
+    "モデル名",
+    "価格",
+    "Bluetooth",
+    "防水",
+    "ノイキャン",
+    "連続再生"
+  ],
+  "internalLinks": [
+    {
+      "url": "/guide/ugreen-doko-no-kuni.html",
+      "anchorText": "UGREENはどこの国？信頼性まとめ"
+    },
+    {
+      "url": "/gadget/ugreen-cable-osusume.html",
+      "anchorText": "UGREENケーブルおすすめ"
+    },
+    {
+      "url": "/gadget/ugreen-gan-charger-osusume.html",
+      "anchorText": "UGREEN GaN充電器おすすめ"
+    }
+  ],
+  "competitorDifferentiators": [
+    "Amazon累計5,168件のレビューを高評価・辛口の両方とも誠実に引用",
+    "★3.9という評価の意味（高評価と★1故障報告の両極端）を分析",
+    "競合（Anker・EarFun）との立ち位置を明確にし、『2,400円の入門』としての適切な期待値を提示"
+  ],
+  "createdAt": "2026-06-05",
+  "researchedAt": "2026-06-05",
   "products": [
     {
-      "product_id": "1005008120529417",
-      "rawTitle": "Ugreen HiTune X6 ハイブリッドアクティブノイズキャンセリングイヤホン ワイヤレス Bluetooth 6マイク付き TWS",
-      "cleanName": "Ugreen HiTune X6",
-      "price_jpy": "11191",
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c3XQwaCt",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S5623e79854df47c4b2387350411b7c9cx.jpg",
+      "product_id": "B0DMZWD4JP",
+      "rawTitle": "UGREEN Earcuff Earphones, Bluetooth 5.4, Hi-Fi Sound Quality, ENC Equipped, AI Calls, Noise Cancelling, Open Ear, Pinch Type, Fully Wireless, IPX5 Waterproof, Up to 30 Hours of Playback (Black)",
+      "cleanName": "UGREEN Earcuff Earphones, Bluetooth 5.4, Hi-Fi Sound Quality, ENC Equipped, AI Calls, Noise Cancelling, Open Ear, Pinch Type, Fully Wireless, IPX5 Waterproof, Up to 30 Hours of Playback (Black)",
+      "section": "amazon",
+      "role": "イヤーカフ型・2,400円・5,168件レビュー",
+      "price_jpy": 2399,
+      "original_price": 3099,
+      "sales_count": 5168,
+      "evaluate_rate": 3.9,
+      "monthly_volume": "1K+ bought in past month",
+      "modelNumber": "45785",
+      "affiliateLink": "",
+      "hasAffiliate": false,
+      "amazonUrl": "https://www.amazon.co.jp/dp/B0DMZWD4JP",
+      "mainImage": "https://m.media-amazon.com/images/I/61mLAGzBnXL._AC_SL1500_.jpg",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/S5623e79854df47c4b2387350411b7c9cx.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S5c87a898241745c0b827d63444d1cb72a.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S0dc6d0a83af9438db3802c91d1c23536u.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S753263e4c08e4df49ec6fcf6698d415dL.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S2df0d4267b794042a15b9d987349059bw.png",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sa682b0b3d1ee4e49a6dd2bc59cfbe2e8i.png"
+        "https://m.media-amazon.com/images/I/61mLAGzBnXL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71vovbl-e6L._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71hp0++JrIL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71DDiaPfRLL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61e6dAUUPML._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71JrnXcIfXL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/61NH7QdKcqL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71jtwLtgCnL._AC_SL1500_.jpg"
       ],
       "amazonPlaceholder": {
         "status": "pending",
-        "searchQuery": "Ugreen HiTune X6",
-        "asin": null,
+        "searchQuery": "UGREEN Earcuff Earphones, Bluetooth 5.4, Hi-Fi Sound Quality, ENC Equipped, AI Calls, Noise Cancelling, Open Ear, Pinch Type, Fully Wireless, IPX5 Waterproof, Up to 30 Hours of Playback (Black)",
+        "asin": "B0DMZWD4JP",
         "url": null
       },
       "specResult": null,
-      "redditReviews": []
-    },
-    {
-      "product_id": "1005007302181092",
-      "rawTitle": "Ugreen HiTune T3 Pro Bluetoothワイヤレスヘッドセット アクティブノイズキャンセリング インイヤーヘッドホン",
-      "cleanName": "Ugreen HiTune T3 Pro Bluetooth Wireless Earbuds",
-      "price_jpy": "11361",
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c3A7ev7j",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sa6e08173f0114b1590c2b96d87091af8S.jpg",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sa6e08173f0114b1590c2b96d87091af8S.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S9f6d7bda3cee4959b7efe8b27139fc6eP.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sa5ff2a06421846b08e1447e14df783e47.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S76b9984b3266493589735889ac88a03cl.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S265e73e9cd274e2491e8dc5e8a29554eQ.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S228a39d45fe946f18bf35c23baad61af2.jpg"
+      "features": [
+        "\"Listen While Redefined\": These completely wireless ear cuff open-ear earphones have finally arrived. The open-type design does not cover your ears and allows you to achieve high quality sound. It is light to wear, and it is also popular because it is fashionable as earrings. Please avoid collision during use. This may lead to product malfunction",
+        "(Zero Compromise Sound, Hi-Fi Ultra High Sound Quality) Equipped with a 0.5 inch (12 mm) driver and a composite diaphragm. Delicate, powerful sound quality, especially high and bass reproduction. More control of the diaphragm than a single magnet, minimizes distortion and provides a more natural and immersive sound field",
+        "(Supports 30 Hours of Continuous Playback / Rapid Charge) Built-in high-performance battery that allows for up to 30 hours of continuous playback on a single charge. USB Type-C port provides efficient charging so you can use it with confidence during commutes, business trips, and long trips. Playback time varies depending on the volume and usage environment",
+        "Latest Bluetooth 5.4 / Immersive Experience: Equipped with a state-of-the-art Bluetooth 5.4 chip, making connection more stable and energy-saving. It enters automatic pairing mode at the same time, making it easy for even beginners to use. Directional conduction technology ensures sound reaches directly into the eardrums and minimizes sound leakage. Immerse yourself in the world of video and gaming",
+        "(Only 0.2 oz (5.3 g), Does not cover your ears) No in-ear pressure or vibrations from bone conduction. Ultra lightweight design only 5.3g with air conduction. You can wear it for a long time without getting tired and comfortable during exercisIPX5 waterproof, so you can rest assured even in sweat or light rain. Perfect for jogging, running, yoga, fitness and cycling"
       ],
-      "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "Ugreen HiTune T3 Pro Bluetooth Wireless Earbuds",
-        "asin": null,
-        "url": null
-      },
-      "specResult": null,
-      "redditReviews": []
-    },
-    {
-      "product_id": "1005009249740361",
-      "rawTitle": "UGREEN HiTune Max5c ワイヤレス Bluetooth ヘッドフォン アクティブノイズキャンセリング ハイレゾ オーバーイヤー",
-      "cleanName": "UGREEN HiTune Max5c",
-      "price_jpy": "6469",
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c3CTotkd",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S79f70c2268bb45b5827cb3c10176144dS.jpg",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/S79f70c2268bb45b5827cb3c10176144dS.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Scba05b18ff1b45e2b18da1d73cad2399w.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S7b03fc51da2f4c138d6a7b0bca64ae48u.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sd7fa331cab304a47a20eddaeb329e76de.jpg"
+      "productOverview": [],
+      "amazonReviews": [
+        {
+          "author": "草食ライオン",
+          "rating": 4,
+          "title": "在宅ワーク向けに最適。周囲の音を聞きながら使える実用的なイヤーカフ型",
+          "date": "2025-12-23",
+          "style": "色: ブラック",
+          "body": "【購入理由と使用環境】\n在宅勤務中、カナル型イヤホンを装着していると同居家族や来客からの呼びかけに気づかないことが度々あり、オープンイヤー型を探していました。主に自宅の仕事部屋で、Web会議やBGM再生用として使用しています。\n\n🙆‍♂️メリット\n【周囲の音認識が優秀】\n最大の利点は、音楽や通話をしながらでも周囲の音がしっかり聞こえる点です。「ながら聴き」という表現が的確で、仕事中に話しかけられてもすぐに気づけるようになりました。これはカナル型では実現できない大きなアドバンテージです。\n\n【通話品質が良好】\nWeb会議での使用では、相手の声がクリアに聞こえます。また、ENC（環境ノイズキャンセリング）により、こちらの声から周囲の雑音を除去して相手に届けるため、在宅環境でも通話品質に不安はありません。\n\n【装着時の圧迫感がない】\n1時間程度の連続使用では、耳への負担をほとんど感じません。カナル型特有の耳穴の圧迫感や蒸れがないため、長時間のデスクワークでも快適です。\n\n【コストパフォーマンス】\n約3,000円という価格帯で、Bluetooth 5.4、IPX5防水、最大30時間再生（ケース込み）といったスペックは十分です。\n\n🙅‍♂️デメリット\n【装着に慣れが必要】\nイヤーカフ型を初めて使う場合、正しい装着位置を見つけるまで少し手間取ります。カナル型のように「耳に入れるだけ」という手軽さはありません。ただし、これは使用回数を重ねることで改善される可能性があります。\n\n【音の厚みは控えめ】\n音のバランス自体は良好ですが、カナル型と比較すると音の厚みや没入感は劣ります。これはオープンイヤー型の構造上避けられない特性です。音楽鑑賞を最優先する方には物足りないかもしれません。\n\n【スペック面での評価】\n∙ 接続安定性: Bluetooth 5.4で途切れなし\n∙ バッテリー: 仕様通りの持続時間を体感\n∙ 防水性能: IPX5（室内使用のため未検証）\n\n結論：どんな人におすすめか\n【おすすめできる人】\n∙ 在宅ワークやオフィスで、周囲とのコミュニケーションを取りながら使いたい人\n∙ カナル型の圧迫感や蒸れが苦手な人\n∙ Web会議が多く、通話品質を重視する人\n∙ イヤーカフ型を試してみたいが、まずは手頃な価格で始めたい人\n\n【おすすめできない人】\n∙ 音質の厚みや没入感を最重視する人\n∙ 通勤通学など騒がしい環境で使う人（音漏れ・外音の影響が気になる可能性）\n∙ すぐに装着できる手軽さを求める人\n約3,000円で「ながら聴き」の快適さを体験でき、仕事用途では十分に実用的です。音楽鑑賞用ではなく、実用性重視の方に向いています。",
+          "helpful": 40
+        },
+        {
+          "author": "Kuroda",
+          "rating": 4,
+          "title": "この快適さが3000円で手に入った",
+          "date": "2026-03-18",
+          "style": "色: ブラック",
+          "body": "以下10段階評価\n・音質：7\n・装着感：9\n・音漏れ対策：3\n・快適度：8\n音質については「3000円」の「イヤーカフ型」ではかなり良いと思います。\n耳から遠い、しかもその空間が密閉されていないイヤーカフ型が故、最低音が聞こえません。ただベースラインはちゃんと聴けます。バスドラムは無理です。\n逆にボーカルなどの声を聴きやすくする利点もありますし、その点ではかなりクリアに聞こえます。\nラジオ、配信とかは向いていると思います。\n装着感はかなりいいです。軽いし側圧のかかり方が絶妙です。長時間いけます。\nただ着け外しの時に裏側のタッチパッドに指が当たるときがあります。曲がっている部分を摘むことで回避できます。\n音漏れは結構あります。音量を3割ほどにしても静かな場所で隣り合うと聞こえる可能性があります。\n電車では必然的に音量が上がりますし、座席に座ると隣の人に聞こえると思います。\n外使いするなら散歩や徒歩の時間くらいでしょう。\n自分は家使いで中耳炎回避のためイヤーカフ型をチョイスしたので無問題です。\n全体的な快適度に関しては文句無しです。\n手軽な価格、手軽な装着、早い接続、全体的な音質。\nどれも3000円とは思えないです。",
+          "helpful": 14
+        },
+        {
+          "author": "毒の徒花",
+          "rating": 5,
+          "title": "「耳を塞がずに音楽を楽しみたい」と思い、2,000円ちょっとという手頃な価格に惹かれて購入しました。",
+          "date": "2026-05-15",
+          "style": "色: シャンパンゴールド",
+          "body": "【良かった点】\n\nストレスフリーな装着感： イヤホン自体がとても柔軟なので、どんな耳の形にも優しくフィットする安心感があります。長時間つけていても耳が痛くなりにくく、つけているのを忘れるほど軽快です。\n\n理想的な「ながら聞き」体験： 音楽を最小音量にしても、音楽と周囲の音（会話や環境音）が5：5くらいの割合でしっかり聞こえます。完全に遮断されないので、作業中のBGMとして流しておくのに最高にちょうどいいです。\n\n驚きの低価格： UGREEN製という安心感がありつつ、この機能性で2,000円台。もし壊してしまっても、また買い直せばいいと思える気軽さも魅力です。\n\n【使用感のポイント】\n\n音質について： オープンイヤー型なので、カナル型のような重低音は期待できませんが、BGMとして楽しむには十分すぎるほどクリアな音質です。\n\n操作性と接続： Bluetooth 5.4搭載で接続も安定しており、AI通話ノイズキャンセリングのおかげで、家族との会話やちょっとした通話もスムーズにこなせます。\n\n【総評】\n「音楽に没頭したい」時ではなく、「生活の中に音楽を溶け込ませたい」時にこれ以上の選択肢はありません。耳の穴を塞ぐのが苦手な方や、外の音を常に聞いておきたい方に、自信を持っておすすめできる神コスパアイテムです。",
+          "helpful": 8
+        },
+        {
+          "author": "Amazon カスタマー",
+          "rating": 5,
+          "title": "ながら聞き用途に最適な高コスパのオープンイヤーイヤホン",
+          "date": "2026-05-11",
+          "style": "色: ホワイト",
+          "body": "通話用のノイズキャンセリング機能はあるが、「聞く側」に対するノイズキャンセリングは無いため、電車内の騒音などをカットすることはできない。\n実際に通話を試したところ、相手の声は良く聞こえるが、こちらの声はやや遠く小さく聞こえるとのこと。ただしノイズは無いとのことなので、通話時のノイズキャンセル自体はしっかり機能しているようである。\n\nではなぜ★５なのかというと、もともと通話目的ではなく家で作業中のながら聞きや、ジョギング中のながら聞き用に購入し、とてもよかったからである。\n\n音声や音楽ははっきり聞こえ、遠くのスピーカーから鳴っているような自然な音が出る。オープンイヤーなので、何度か本当にイヤホンから鳴っているかを確認する必要があった。\nこの価格帯のイヤホンとしては優秀で、オープンイヤーイヤホンの入門としてお勧めする。\n\n装着性については、個人差があると思うが自分の場合は特に問題なかった。10kmのジョギングでも一度も外れることはなく、激しい運動でも問題ない。長時間装着しても途中で痛くなることもない。運動時は汗がイヤホンにつくが１年使用しても故障は発生していない。運動後はアルコールとティッシュでふき取ることをお勧めする。\n\nその他、梱包や保護フィルムはしっかりしており、２、３０００円台のイヤホンとは思えないほどの高級感。Bluetoothの接続も安定しており、途切れや遅延、左右の音量差も気にならない。バッテリーも１～２時間の運動では全く問題ない。このあたりは新興の中国ガジェットメーカーの中でもUGREENらしい丁寧な作りだと思う。\n\nまとめると、ながら聞きの入門用としては優秀で、通話はおまけ程度と考えるとよい。声が大きい人にはお勧めする。",
+          "helpful": 7
+        },
+        {
+          "author": "Amazonカスタマー",
+          "rating": 5,
+          "title": "耳がムレにくいのが最高！",
+          "date": "2026-05-22",
+          "style": "色: ブラック",
+          "body": "ながら聞きのお試し用として安くて良い製品ですが\n今買うなら同社のClipBudsも検討してみてください\n\nこの製品(HiTune S3)のほうが優れている点\n・黒以外の色がある※\n・少しだけ安い(タイムセール中こちらは2,399円でClipBudsは2,793円)\n\nClipBudsのほうが優れている点\n・タッチ1回の操作がないので誤操作が発生しにくい\n・2台同時接続できる(PC＋スマホ等)\n\n音質、超低遅延、ノイキャンにこだわる人は別の製品を選びましょう\n\n※このレビューを書いた直後(5/25)にClipBudsの新色(シャンパンゴールドとパープル)が追加されました",
+          "helpful": 3
+        },
+        {
+          "author": "山本",
+          "rating": 1,
+          "title": "対応が悪い",
+          "date": "2026-02-17",
+          "style": "色: ブラック",
+          "body": "まともに再生されない不良品が送られてきました\n左側のイヤホンだけ充電されない鬼畜仕様でした\nUGUEENにメールでやり取りしましたが再起動とか掃除してとかまるで自分が悪いかのような対応をされました\n全部ではないと思いますが不良品でした自分は",
+          "helpful": 9
+        },
+        {
+          "author": "ららら",
+          "rating": 1,
+          "title": "片耳のみはありえない",
+          "date": "2026-04-03",
+          "style": "色: ブラック",
+          "body": "片耳しかなかった。ありえない。",
+          "helpful": 6
+        },
+        {
+          "author": "Amazonのお客様",
+          "rating": 1,
+          "title": "買ったら損します",
+          "date": "2026-02-13",
+          "style": "色: パープル",
+          "body": "直ぐに塗料が剥がれたり充電機器が壊れます。\n返品交換対応も最悪です。\nまず電話が絶対に繋がりません。",
+          "helpful": 6
+        },
+        {
+          "author": "中峰千春",
+          "rating": 1,
+          "title": "すぐ壊れる",
+          "date": "2026-03-15",
+          "style": "色: ブラック",
+          "body": "5ヶ月で充電できなくなりました。\n安いだけあって使い捨てですか？",
+          "helpful": 4
+        },
+        {
+          "author": "さかす",
+          "rating": 1,
+          "title": "安物買いの銭失い",
+          "date": "2026-03-12",
+          "style": "色: ブラック",
+          "body": "購入して2ヶ月経ちました。\n1日充電して30分〜1時間でバッテリー切れになります。\n安いのにはちゃんと理由があるんだなぁと実感できました。",
+          "helpful": 4
+        }
       ],
-      "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "UGREEN HiTune Max5c",
-        "asin": null,
-        "url": null
-      },
-      "specResult": null,
-      "redditReviews": []
-    },
-    {
-      "product_id": "1005009828832187",
-      "rawTitle": "Ugreen HiTune S5 TWSオープンイヤークリップワイヤレスイヤホン Bluetoothスポーツイヤホン マイク付き",
-      "cleanName": "Ugreen HiTune S5 TWS Open Ear Wireless Earphones",
-      "price_jpy": "4294",
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c4XCg42H",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Se5fc9f8fc97f4c1b8aba7d96d324d1faz.jpg",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Se5fc9f8fc97f4c1b8aba7d96d324d1faz.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Scf8043c1a6fa4c6f9554f32523ea6364p.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S4596722f7a2e4013baf5510d0ffa218d8.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sf3992cd967bb448eab69d57b0f16e19av.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S6100d7f899ee4bcf828480523929199cW.jpg"
+      "redditReviews": [
+        {
+          "subreddit": "Amazon★4",
+          "snippet": "【在宅ワーク向けに最適。周囲の音を聞きながら使える実用的なイヤーカフ型】 【購入理由と使用環境】 在宅勤務中、カナル型イヤホンを装着していると同居家族や来客からの呼びかけに気づかないことが度々あり、オープンイヤー型を探していました。主に自宅の仕事部屋で、Web会議やBGM再生用として使用しています。 🙆‍♂️メリット 【周囲の音認識が優秀】 最大の利点は、音楽や通話をしながらでも周囲の音がしっかり聞こえる点です。「ながら聴き」という表現が的確で、仕事中に話しかけられてもすぐに気づけるようになりました。これはカナル型では実現できない大きなアドバンテージです。 【通話品質が良好】 Web会議での使用では、相手の声がクリアに聞こえます。また、ENC（環境ノイズキャンセリ",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "草食ライオン",
+          "date": "2025-12-23",
+          "rating": 4
+        },
+        {
+          "subreddit": "Amazon★4",
+          "snippet": "【この快適さが3000円で手に入った】 以下10段階評価 ・音質：7 ・装着感：9 ・音漏れ対策：3 ・快適度：8 音質については「3000円」の「イヤーカフ型」ではかなり良いと思います。 耳から遠い、しかもその空間が密閉されていないイヤーカフ型が故、最低音が聞こえません。ただベースラインはちゃんと聴けます。バスドラムは無理です。 逆にボーカルなどの声を聴きやすくする利点もありますし、その点ではかなりクリアに聞こえます。 ラジオ、配信とかは向いていると思います。 装着感はかなりいいです。軽いし側圧のかかり方が絶妙です。長時間いけます。 ただ着け外しの時に裏側のタッチパッドに指が当たるときがあります。曲がっている部分を摘むことで回避で",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "Kuroda",
+          "date": "2026-03-18",
+          "rating": 4
+        },
+        {
+          "subreddit": "Amazon★5",
+          "snippet": "【「耳を塞がずに音楽を楽しみたい」と思い、2,000円ちょっとという手頃な価格に惹かれて購入しました。】 【良かった点】 ストレスフリーな装着感： イヤホン自体がとても柔軟なので、どんな耳の形にも優しくフィットする安心感があります。長時間つけていても耳が痛くなりにくく、つけているのを忘れるほど軽快です。 理想的な「ながら聞き」体験： 音楽を最小音量にしても、音楽と周囲の音（会話や環境音）が5：5くらいの割合でしっかり聞こえます。完全に遮断されないので、作業中のBGMとして流しておくのに最高にちょうどいいです。 驚きの低価格： UGREEN製という安心感がありつつ、この機能性で2,000円台。もし壊してしまっても、また買い直せばいいと思える気軽さも魅力です。 【使用感のポイント】 音質について： オ",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "毒の徒花",
+          "date": "2026-05-15",
+          "rating": 5
+        },
+        {
+          "subreddit": "Amazon★5",
+          "snippet": "【ながら聞き用途に最適な高コスパのオープンイヤーイヤホン】 通話用のノイズキャンセリング機能はあるが、「聞く側」に対するノイズキャンセリングは無いため、電車内の騒音などをカットすることはできない。 実際に通話を試したところ、相手の声は良く聞こえるが、こちらの声はやや遠く小さく聞こえるとのこと。ただしノイズは無いとのことなので、通話時のノイズキャンセル自体はしっかり機能しているようである。 ではなぜ★５なのかというと、もともと通話目的ではなく家で作業中のながら聞きや、ジョギング中のながら聞き用に購入し、とてもよかったからである。 音声や音楽ははっきり聞こえ、遠くのスピーカーから鳴っているような自然な音が出る。オープンイヤーなので、何度か本当にイヤホンから",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "Amazon カスタマー",
+          "date": "2026-05-11",
+          "rating": 5
+        },
+        {
+          "subreddit": "Amazon★5",
+          "snippet": "【耳がムレにくいのが最高！】 ながら聞きのお試し用として安くて良い製品ですが 今買うなら同社のClipBudsも検討してみてください この製品(HiTune S3)のほうが優れている点 ・黒以外の色がある※ ・少しだけ安い(タイムセール中こちらは2,399円でClipBudsは2,793円) ClipBudsのほうが優れている点 ・タッチ1回の操作がないので誤操作が発生しにくい ・2台同時接続できる(PC＋スマホ等) 音質、超低遅延、ノイキャンにこだわる人は別の製品を選びましょう ※このレビューを書いた直後(5/25)にClipBudsの新色(シャンパンゴールドとパープル)が追加されました",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "Amazonカスタマー",
+          "date": "2026-05-22",
+          "rating": 5
+        },
+        {
+          "subreddit": "Amazon★1",
+          "snippet": "【対応が悪い】 まともに再生されない不良品が送られてきました 左側のイヤホンだけ充電されない鬼畜仕様でした UGUEENにメールでやり取りしましたが再起動とか掃除してとかまるで自分が悪いかのような対応をされました 全部ではないと思いますが不良品でした自分は",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "山本",
+          "date": "2026-02-17",
+          "rating": 1
+        },
+        {
+          "subreddit": "Amazon★1",
+          "snippet": "【片耳のみはありえない】 片耳しかなかった。ありえない。",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "ららら",
+          "date": "2026-04-03",
+          "rating": 1
+        },
+        {
+          "subreddit": "Amazon★1",
+          "snippet": "【買ったら損します】 直ぐに塗料が剥がれたり充電機器が壊れます。 返品交換対応も最悪です。 まず電話が絶対に繋がりません。",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "Amazonのお客様",
+          "date": "2026-02-13",
+          "rating": 1
+        },
+        {
+          "subreddit": "Amazon★1",
+          "snippet": "【すぐ壊れる】 5ヶ月で充電できなくなりました。 安いだけあって使い捨てですか？",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "中峰千春",
+          "date": "2026-03-15",
+          "rating": 1
+        },
+        {
+          "subreddit": "Amazon★1",
+          "snippet": "【安物買いの銭失い】 購入して2ヶ月経ちました。 1日充電して30分〜1時間でバッテリー切れになります。 安いのにはちゃんと理由があるんだなぁと実感できました。",
+          "url": "https://www.amazon.co.jp/product-reviews/B0DMZWD4JP",
+          "author": "さかす",
+          "date": "2026-03-12",
+          "rating": 1
+        }
       ],
-      "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "Ugreen HiTune S5 TWS Open Ear Wireless Earphones",
-        "asin": null,
-        "url": null
-      },
-      "specResult": null,
-      "redditReviews": []
-    },
-    {
-      "product_id": "1005007145786996",
-      "rawTitle": "Ugreen HiTune S3 マイク付きワイヤレスヘッドセット Bluetoothスポーツ オープンイヤークリップ",
-      "cleanName": "Ugreen HiTune S3",
-      "price_jpy": "3095",
-      "affiliateLink": "https://s.click.aliexpress.com/e/_c44B4lqZ",
-      "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Seaf31e1351e746f48dd80c7fd5062719W.jpg",
-      "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Seaf31e1351e746f48dd80c7fd5062719W.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S43beabccb2024ed590333ed2a4a4d996B.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S1e8647ea0acb40b6a3c4396e1bc83e55T.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S8554eea6bdba4fbf82913c1e4a8be957Y.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Seeb8e4b83f114707bf57299f81b26a1ax.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Seea2ff2477654911b4054eb343923a5eN.jpg"
-      ],
-      "amazonPlaceholder": {
-        "status": "pending",
-        "searchQuery": "Ugreen HiTune S3",
-        "asin": null,
-        "url": null
-      },
-      "specResult": null,
-      "redditReviews": []
+      "notes": {
+        "whyTrust": "Amazon.co.jp で 5,168件レビュー / 星 3.9"
+      }
     }
-  ]
+  ],
+  "tavilyResults": [],
+  "brandInfo": {
+    "name": "UGREEN",
+    "nameJp": "ユーグリーン",
+    "companyName": "Shenzhen Ugreen Technology Co., Ltd.",
+    "founded": 2012,
+    "headquarters": "中国・広東省深セン市",
+    "stockListing": "深セン証券取引所（300893）",
+    "japanEntity": "Ugreen Japan合同会社",
+    "keyCertifications": [
+      "PSE",
+      "FCC",
+      "CE",
+      "RoHS",
+      "Apple MFi",
+      "PD3.1"
+    ]
+  },
+  "generatedAt": "2026-06-05T08:41:59.218Z"
 }

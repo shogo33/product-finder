@@ -26,7 +26,7 @@ html = html.replace(CTA_RE, (full, inner) => {
   if (hasAmazon && !hasAliex) {
     // Amazonのみ
     newInner = newInner.replace(
-      /<p class="cta-lead">([^<]+)をどちらで買う？価格・配送を比較<\/p>/,
+      /<p class="cta-lead">([^<]+)をどちらで買う？(?:価格・配送を比較)?<\/p>/,
       '<p class="cta-lead">$1をAmazonでチェック</p>'
     );
     newInner = newInner.replace(
@@ -37,7 +37,7 @@ html = html.replace(CTA_RE, (full, inner) => {
   } else if (hasAliex && !hasAmazon) {
     // AliExpressのみ
     newInner = newInner.replace(
-      /<p class="cta-lead">([^<]+)をどちらで買う？価格・配送を比較<\/p>/,
+      /<p class="cta-lead">([^<]+)をどちらで買う？(?:価格・配送を比較)?<\/p>/,
       '<p class="cta-lead">$1をAliExpressでチェック</p>'
     );
     newInner = newInner.replace(
