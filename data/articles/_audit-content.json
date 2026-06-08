@@ -1,0 +1,500 @@
+{
+  "ajazz-ak820-osusume": {
+    "file": "public/gadget/ajazz-ak820-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005011869449206"
+      },
+      {
+        "type": "PRICE_MISMATCH",
+        "product": "Ajazz AK820 Pro",
+        "written": 8304,
+        "expected": 10521,
+        "original": 64,
+        "diffPctSale": 21
+      },
+      {
+        "type": "PRICE_MISMATCH",
+        "product": "Ajazz AK820 Pro",
+        "written": 8867,
+        "expected": 10521,
+        "original": 64,
+        "diffPctSale": 16
+      }
+    ]
+  },
+  "ajazz-akp846-osusume": {
+    "file": "public/gadget/ajazz-akp846-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005007944229408"
+      }
+    ]
+  },
+  "aliexpress-chuka-tablet-osusume": {
+    "file": "public/gadget/aliexpress-chuka-tablet-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 2
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 2
+      }
+    ]
+  },
+  "aliexpress-earphone-osusume": {
+    "file": "public/gadget/aliexpress-earphone-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 1
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 2
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005009390995992"
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005009077661691"
+      }
+    ]
+  },
+  "aliexpress-mini-pc-gaming-osusume": {
+    "file": "public/gadget/aliexpress-mini-pc-gaming-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005010535413125"
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005009707796111"
+      }
+    ]
+  },
+  "epomaker-keyboard-osusume": {
+    "file": "public/gadget/epomaker-keyboard-osusume.html",
+    "issues": [
+      {
+        "type": "PENDING_COMMENT",
+        "count": 1
+      },
+      {
+        "type": "PRICE_MISMATCH",
+        "product": "EPOMAKER AULA F75 MAX メカニカルキーボ",
+        "written": 14000,
+        "expected": 11654,
+        "original": 79,
+        "diffPctSale": 20
+      }
+    ]
+  },
+  "gmktec-mini-pc-osusume": {
+    "file": "public/gadget/gmktec-mini-pc-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 3
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 3
+      }
+    ]
+  },
+  "haylou-osusume": {
+    "file": "public/gadget/haylou-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "AliExpressで見る"
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005009390995992"
+      }
+    ]
+  },
+  "kz-iyahon-osusume": {
+    "file": "public/gadget/kz-iyahon-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005009384882890"
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005010280591458"
+      }
+    ]
+  },
+  "moondrop-osusume": {
+    "file": "public/gadget/moondrop-osusume.html",
+    "issues": [
+      {
+        "type": "PENDING_COMMENT",
+        "count": 1
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005009077661691"
+      }
+    ]
+  },
+  "rainy75-pro-osusume": {
+    "file": "public/gadget/rainy75-pro-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005012058516630"
+      }
+    ]
+  },
+  "sharge-mobile-battery-osusume": {
+    "file": "public/gadget/sharge-mobile-battery-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005006997015924"
+      }
+    ]
+  },
+  "ugreen-docking-station-osusume": {
+    "file": "public/gadget/ugreen-docking-station-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005007433155726"
+      }
+    ]
+  },
+  "ugreen-usb-hub-osusume": {
+    "file": "public/gadget/ugreen-usb-hub-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005007433155726"
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005008286489037"
+      }
+    ]
+  },
+  "ugreen-wifi-osusume": {
+    "file": "public/gadget/ugreen-wifi-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 3
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 3
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005004019284852"
+      }
+    ]
+  },
+  "aliexpress-gamepad-osusume": {
+    "file": "public/game/aliexpress-gamepad-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 5
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 5
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005007942886977"
+      }
+    ]
+  },
+  "anbernic-rg-ds-osusume": {
+    "file": "public/game/anbernic-rg-ds-osusume.html",
+    "issues": [
+      {
+        "type": "PRICE_MISMATCH",
+        "product": "ANBERNIC RG DS",
+        "written": 18315,
+        "expected": 14614,
+        "original": 1272,
+        "diffPctSale": 25
+      },
+      {
+        "type": "PRICE_MISMATCH",
+        "product": "ANBERNIC RG DS",
+        "written": 18315,
+        "expected": 14619,
+        "original": 1222,
+        "diffPctSale": 25
+      }
+    ]
+  },
+  "atk-mouse-osusume": {
+    "file": "public/game/atk-mouse-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 1
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 1
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005011587360139"
+      }
+    ]
+  },
+  "gamesir-controller-osusume": {
+    "file": "public/game/gamesir-controller-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 6
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 6
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005007942886977"
+      }
+    ]
+  },
+  "gamesir-t4-pro-osusume": {
+    "file": "public/game/gamesir-t4-pro-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 1
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 1
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "4001076841625"
+      }
+    ]
+  },
+  "retroid-pocket5-osusume": {
+    "file": "public/game/retroid-pocket5-osusume.html",
+    "issues": [
+      {
+        "type": "PENDING_COMMENT",
+        "count": 4
+      },
+      {
+        "type": "PRICE_MISMATCH",
+        "product": "Retroid Pocket 5",
+        "written": 34656,
+        "expected": 44740,
+        "original": 920,
+        "diffPctSale": 23
+      }
+    ]
+  },
+  "retroid-pocket6-osusume": {
+    "file": "public/game/retroid-pocket6-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005012212944422"
+      },
+      {
+        "type": "PRICE_MISMATCH",
+        "product": "Retroid Pocket 5",
+        "written": 34748,
+        "expected": 54118,
+        "original": 3479,
+        "diffPctSale": 36
+      }
+    ]
+  },
+  "aliexpress-sticker-osusume": {
+    "file": "public/guide/aliexpress-sticker-osusume.html",
+    "issues": [
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "DEAD_CTA",
+        "text": "Amazonで見る（確認中）"
+      },
+      {
+        "type": "PENDING_MARKER",
+        "count": 5
+      },
+      {
+        "type": "PENDING_COMMENT",
+        "count": 5
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005010450431594"
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005007151132150"
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005005346309428"
+      }
+    ]
+  },
+  "ugreen-brand": {
+    "file": "public/guide/ugreen-brand.html",
+    "issues": [
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005011652041579"
+      },
+      {
+        "type": "DEAD_PRODUCT_REF",
+        "pid": "1005007493318927"
+      }
+    ]
+  },
+  "onetigris-tent-osusume": {
+    "file": "public/outdoor/onetigris-tent-osusume.html",
+    "issues": [
+      {
+        "type": "PRICE_MISMATCH",
+        "product": "OneTigris SOLO HOMESTEAD TC テン",
+        "written": 50000,
+        "expected": 62163,
+        "original": 512,
+        "diffPctSale": 20
+      }
+    ]
+  },
+  "aliexpress-hyoban": {
+    "file": "public/safety/aliexpress-hyoban.html",
+    "issues": [
+      {
+        "type": "BROKEN_ANCHOR",
+        "anchor": "trouble"
+      }
+    ]
+  }
+}

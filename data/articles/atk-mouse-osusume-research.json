@@ -123,67 +123,32 @@
   "researchedAt": "2026-05-26",
   "products": [
     {
-      "product_id": "1005010345950853",
-      "rawTitle": "新型VXE Dragonfly R1 SE ワイヤレスマウス PAW3395センサー 低遅延 カスタマイズ ゲーミングマウス X スマートスピード オフィスPC ゲーマー向けギフト マウス",
-      "cleanName": "VXE Dragonfly R1 SE",
-      "price_jpy": "4971",
-      "original_price": "416.64",
-      "sales_count": 0,
-      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3Cof4Ao4NOxNRjvhgMACkphW8FG8ksjCk9FEwPyEFxiT8Q8EkD0oX8nP8MQJIjq5N3prfv0SYoc1JWrcOPuaxD4A7fZdAhIh0ibNFMkDoPjJ8sy263TWU1tZ4ORC8u0q0V20NHtJjd3P0dlNZ55C1zrh44e9gg7cwZStoQK1h0JScv2bTyh9XwA00116PxbMTAr0NnXX4PiahcsaOzxaUVUeGaZN9Hy33w9yiGj935CJhdHwedeVp0PeJd0Gr8kCL5r1DRjaW8Pz1nVrwXWxr9McSirGjOewrTmVLjVYlYe8We4N6wAaJoARH2zpEK8g8VdWpnHhwuvefzJZgyrF2z40AbFUhx1LVtJhKX4pQ5qdQ8aLKxxZ1B8TiOEo866WBHf0xh6FFb9fFSyuOzUFLBvuKMfbU8ghWlMP1HGJu51I8vNOpUw6OEYQi3bQKp0rhscw9QWc8B586VQApAPgVcldjAaiotTz64yJOTP4h6R5XhdPg3ewYag0OazycNzTQFsL2yGA2uo0La8xljbc81vXIw6kQEHSLugF58I1KvybLk7lCpHnGmWZgpvnUR0pysmsnq5re59LKgfuTaulLcmf0gWBs8BJ1Z4lubSf9B9cGndZjh41iW6R5HVjybNRCh1sFxyV1NX9btRBkC5NI4rTAeKoQavi84W7OgEyEzRsq7QIjAuL7RFOxzXItSuIzM8Od3F3Kp1SSv2",
+      "product_id": 1005008706702583,
+      "rawTitle": "ATK VXE Dragonfly R1 ゲーム E スポーツのマウス長いバッテリー寿命 Paw3395 軽量人間工学に基づいた 3 モード Bluetooth マウス",
+      "cleanName": "ATK VXE Dragonfly R1 ワイヤレスゲーミングマウス（PAW3395・軽量）",
+      "price_jpy": "3621",
+      "original_price": "8818",
+      "sales_count": 8739,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C2AcACSbH580svZqOajiawM7Uls0BrjC2J4H9vUmcGXln7TnA1qf3ZybH7EQk02JRVQoYMqS4LFrjzkBQQO6dbm7T5sGdhbMUNNmLr0P2hEgclFYFq67XuiZL1JgwwJisR7Y9bkU36YpBUqIcF6PAaTR6XEWzcAKY6olnYE8fvBySliGiCRo7efOq2hlivDemVDsZRB3Bz3jVzbOA2kw1HRYGOHhEaB7HY4gA4fJdVeRoeycj5l9TLTPOfusj0SDg1dIs1mS9woWPS5NHDXMqwzBjXHkLPuFO8EosDvYJDNAavTHCTiPFv1XzA2xrC2wRzmKN84ssoaLSP4FZWL81NisVaq6a6EtjfvPEjxbBLCQVdQ6W59I4PKWVvg1R6zxv5j8CF09DkvtwfyO9GGr8PSjsJ2HvUjCq200jtsRvXybDODDSjfFysHGSnma00ZWiTP6Mw8x63SVQvDKABAqvoFIKwB9WNmzwURTzPprKF6cRwacmU2058Bd9lQOe0pshnAfpOhMV9EmbTI1wmbYkkfvIDey9gl05pnr5utgMHKSgrKaU1WOcbahuyviVJqPaWtwP2RQ5jZGn46uaLjpOIToPJZX8lfvckleVdiPKrAt1a1wCZVOyxhEOsVp5SOUlIfWx9vj4DxUnjHou63aIkGCdGjhk3KSRlfMWyHOedIPlSMsvTeIvqUz1WoWTioQ6HablUBhgGQgxA",
       "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sabeaaf4950e04aa6ac1e4d1a35a66d905.jpg",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S2f6ced6b04ef43f9861e75b32447fc52m.jpg",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sabeaaf4950e04aa6ac1e4d1a35a66d905.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S58a518c484184969a1b53b6cf3b64562w.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S39978022898f4882b469c10c84bebe4aa.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S5febecb9f92a4cd3a01101f607f6cbd4H.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S9d6b744ab29649fe95e7a2ea853e8c45N.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S29436b0e97ad49b596935b654ae4eed0Y.jpg"
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2f6ced6b04ef43f9861e75b32447fc52m.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2f6ced6b04ef43f9861e75b32447fc52m.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S878d2a33df2c466eb851f69e0f117044P.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa2526966199b470aa335a51b758a1dc6S.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S53f3ad59da204ef7b6053d974ad40cecY.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S489f3e7f02ab49989f0f69fe5460e27ee.jpg"
       ],
+      "amazonUrl": "",
       "amazonPlaceholder": {
-        "status": "ready",
-        "searchQuery": "VXE Dragonfly R1 SE",
+        "status": "pending",
+        "searchQuery": "ATK VXE Dragonfly R1 ワイヤレスゲーミングマウス（PAW3395・軽量）",
         "asin": null,
-        "url": "https://amzn.to/42UJyHi"
+        "url": null
       },
       "specResult": null,
-      "redditReviews": [],
-      "productProfile": {
-        "productType": "ゲーミングマウス",
-        "productTypeShort": "ゲーミングマウス",
-        "isInEar": null,
-        "isOverEar": null,
-        "isOpenEar": null,
-        "hasANC": null,
-        "connectivity": "2.4GHz ワイヤレス / USB有線",
-        "batteryLife": null,
-        "keySpecs": [
-          "ゲーミングセンサー搭載",
-          "軽量設計",
-          "カスタマイズ可能ボタン"
-        ],
-        "keyFeatures": [
-          "高精度トラッキング",
-          "低遅延接続",
-          "人間工学設計"
-        ],
-        "targetUseCase": [
-          "ゲーミング",
-          "FPS",
-          "MOBA"
-        ],
-        "notSuitableFor": [
-          "左手持ち使用"
-        ],
-        "pricePosition": "ミドルレンジ",
-        "confidence": "low",
-        "weightG": null,
-        "sensor": null,
-        "pollingRate": null,
-        "shape": "右手持ち",
-        "dpi": null,
-        "searchSources": []
-      }
+      "redditReviews": []
     },
     {
       "product_id": "1005007675157598",
@@ -250,67 +215,32 @@
       }
     },
     {
-      "product_id": "1005011587360139",
-      "rawTitle": "ATK FIERCE X ゲーミングマウス 8Kポーリングレート PAW3950 Proセンサー アルミニウムマグネシウム合金 超軽量 カスタムマウス PC eスポーツギフト",
-      "cleanName": "ATK FIERCE X ゲーミングマウス",
-      "price_jpy": "15310",
-      "original_price": "1283.04",
-      "sales_count": 31,
-      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CohG3OATBc2NFb9vsq8SZkOtCJhYFovZvKNZrUWTlwm7JMheIGFWYCC3Q5D9khruTZl8qCfCcZf3NfaVFX3AjNkrtWsMDDTKcEVOj8VCxTfX13kZpqfXq0qB0qAVjYmexmpkTE0RSifnZruFb3DpTWnuJqluSDoVC3XqjrCeg8hsp3GrrEeFFsOFlAaJIBYM1McYfJBjV6m419FcOpFlqs0Ryrz0iZ41pSlM8tEt3VXOcpc7NhYT5BXci2PANjC8RVoRGScUjcjkd87SjsU5kfchK8IyLtiYAhWyTjD5OIrHGF85MeZqAdXx8D0OGAEcjCIsUyhNG5ZydfBo3sfcmnW2zCRbu6IJb0kAQcuutjzpRuyJflRpfNbNzMTo7XBb5j9t5g2rdFFolCL8RanIl6HaA1UD9tWrM2A3mNp4UsfRpm3oVe1zRQqnsWeH9PWjpU1n5q32RzUkyvEnliWrp4SSlQz4M3td19DQj1JQ36q53H51xW1ACOXQlXuxyGAd5gimzMDMTcJ4kY62YgJECJItECzyGNZHx5bPQVSg8VNktcVtmpuWMf0DEh5Qrxa896hR1nvFCZprkqWH9sSeDqB3XkIu11aakfi9lXkB4cd3Mg6Wq3lMOYycnJduYTsIhefY41eiSdHwRcrQWMes86GOFv3UDKMnx8G7S8rrbhtNjNwwzkt2j5LxQn7BMd9hR6oAKHNZUH3bda",
+      "product_id": 1005007247038480,
+      "rawTitle": "VXE Dragonfly R1 ワイヤレスマウス PAW3395 センサー Nordic 52840 2KHz FPS ゲームマウス インテリジェントスピード 低遅延 ゲーム オフィス",
+      "cleanName": "VXE Dragonfly R1 PAW3395 2KHz FPSマウス",
+      "price_jpy": "3026",
+      "original_price": "7575",
+      "sales_count": 7883,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4Eq2g9QdFKNDE03JVl79tD2jWH33CSiKXIwYhV0lb1mu88eqRjS88zWU698YyZ3pNi8Sx31VAtfqhkIxTkccnHoIhCxQ4l75rkk8AImehBkCsMqXwSH80mc4Y45OMmSZx9uO6yZiqZQdMmixuSGoGQP0mIr4VM0WYQcsQHGLqFYFxQ1JjFGjjR7o4HVxu8oS10v9nTsji9XgZstDNtpRaxbtcPrLtZX7CniYNi3GHGeTjCyJNfwe63grWam9ZXSQIsHNPHtrUWYLKCEXPSsHgy8ctTJcXWeSxMboahIszuT57a2cs1f7BxoaoXdt6yKEOpyqBZ1jb8NZc1LTNRjD1pTfh1NtAxBPowJKDA1S59xVVxaGyNeBaEj2YKyZ1uLNJ9G68bU8QyJKMJ1JJ3mqLfJmwLQYBCR2pSScQhZssiFgHZr4UVgTz1Yu5Iu89DXyBqWuqoDvrWr2ttTwl1Gq8z08ZPv6gsUQsamyE2ac7rtAFS2mc2P5rPGepm3rsavpLXEYzOhMst0Ghq9Hwl1ExCsVyhDNsZJrC4pcVN8yAeuJcqR8GEi1oCrAOR6Bx7Wwwk8hlCxn2mp0aeeaXEyMeBjn0TKtiyp0BJfaVvM0UEBtQen3HapQedjmwrPcoSJwqq217ZK7NkrMUGBRfx5ApPoxrEXnfUuVxFsjov2zUCjkxYSKDpKyyNTRZsDEB6RW9p8nYfeSHB3tq",
       "hasAffiliate": true,
-      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S41e97268791444d79815bd1cf885dab0l.jpg",
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S878d2a33df2c466eb851f69e0f117044P.jpg",
       "images": [
-        "https://ae-pic-a1.aliexpress-media.com/kf/S41e97268791444d79815bd1cf885dab0l.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sa29eee7db70146feb0f4067b55472bb9g.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S94a64d0432454a63bbacdb442db84f6fS.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/S7e0bd109a52e47a0843eb1c93292831cs.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sdaa1f7399fc14045bee3ed8af127e4ccv.jpg",
-        "https://ae-pic-a1.aliexpress-media.com/kf/Sc53de3622cac4bb4bfc86628ae29f873S.jpg"
+        "https://ae-pic-a1.aliexpress-media.com/kf/S878d2a33df2c466eb851f69e0f117044P.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S878d2a33df2c466eb851f69e0f117044P.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sec13751892f546b3b890f9971b2e68e6w.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa2526966199b470aa335a51b758a1dc6S.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S489f3e7f02ab49989f0f69fe5460e27ee.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S53f3ad59da204ef7b6053d974ad40cecY.jpg"
       ],
+      "amazonUrl": "",
       "amazonPlaceholder": {
         "status": "pending",
-        "searchQuery": "ATK FIERCE X ゲーミングマウス",
+        "searchQuery": "VXE Dragonfly R1 PAW3395 2KHz FPSマウス",
         "asin": null,
         "url": null
       },
       "specResult": null,
-      "redditReviews": [],
-      "productProfile": {
-        "productType": "ゲーミングマウス",
-        "productTypeShort": "ゲーミングマウス",
-        "isInEar": false,
-        "isOverEar": false,
-        "isOpenEar": false,
-        "hasANC": null,
-        "connectivity": "2.4GHz ワイヤレス / Bluetooth",
-        "batteryLife": null,
-        "keySpecs": [
-          "ゲーミング向け高精度センサー",
-          "高速ポーリングレート対応",
-          "カスタマイズ可能ボタン"
-        ],
-        "keyFeatures": [
-          "ゲーミング用途最適化",
-          "高応答性",
-          "耐久性設計"
-        ],
-        "targetUseCase": [
-          "ゲーミング",
-          "FPS",
-          "e-sports"
-        ],
-        "notSuitableFor": [
-          "カジュアルユース向けでない"
-        ],
-        "pricePosition": "ミドルレンジ",
-        "confidence": "low",
-        "weightG": null,
-        "sensor": null,
-        "pollingRate": null,
-        "shape": null,
-        "dpi": null,
-        "searchSources": []
-      }
+      "redditReviews": []
     }
   ],
   "faqQuestions": [
