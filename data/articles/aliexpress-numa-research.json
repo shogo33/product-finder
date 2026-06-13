@@ -1,0 +1,307 @@
+{
+  "slug": "aliexpress-numa",
+  "keyword": "アリエク 沼",
+  "category": "guide",
+  "selectedTitle": "気づいたら沼。アリエクにハマる理由とジャンル別ガイド",
+  "sections": [
+    {
+      "id": "section1",
+      "h2": "アリエク沼とは？なぜ抜け出せないのか",
+      "h3s": [
+        "沼になる3つの構造的理由",
+        "「安い・珍しい・届く」のループが止まらない"
+      ],
+      "type": "brand_overview",
+      "notes": [
+        "AliExpressの商品数・価格優位性・レコメンドアルゴリズムが沼を形成する仕組みを説明",
+        "国内で買えない中華ブランド独自製品の魅力（発見欲）を強調",
+        "「一度コスパを知ると国内価格に戻れなくなる」心理を共感ベースで解説"
+      ]
+    },
+    {
+      "id": "section2",
+      "h2": "沼ジャンル①：中華ガジェット沼（ミニPC・タブレット）",
+      "h3s": [
+        "国内の半額以下で買えるミニPCの世界",
+        "中華タブレットで始まるガジェット沼の入り口"
+      ],
+      "type": "product",
+      "notes": [
+        "GMKtec・Beelink等のミニPCが国内比較で圧倒的コスパを誇る点を紹介",
+        "中華タブレットの性能向上でコスパ沼が深まっている現状を解説",
+        "内部リンク：/gadget/aliexpress-chuka-tablet-osusume.html と /gadget/aliexpress-mini-pc-gaming-osusume.html へ誘導"
+      ]
+    },
+    {
+      "id": "section3",
+      "h2": "沼ジャンル②：メカニカルキーボード沼",
+      "h3s": [
+        "打鍵感の沼：軸・ガスケット・ラピッドトリガーの深み",
+        "アリエクでしか買えないキーボードブランドの世界"
+      ],
+      "type": "product",
+      "notes": [
+        "EPOMAKER・AJAZZなどアリエク独自ブランドが充実している点を強調",
+        "軸の種類・打鍵音・カスタムの沼構造（底なし感）を具体的に説明",
+        "内部リンク：/gadget/epomaker-keyboard-osusume.html へ誘導"
+      ]
+    },
+    {
+      "id": "section4",
+      "h2": "沼ジャンル③：イヤホン・オーディオ沼",
+      "h3s": [
+        "1,000円台から始まるKZ・Moondropの沼",
+        "一度沼ると音質向上欲が止まらない理由"
+      ],
+      "type": "product",
+      "notes": [
+        "KZ・Moondrop・HAYLOUなど低価格〜中価格帯で音質が急向上している状況を紹介",
+        "「ドライバー構成」「チューニング」など沼を深める専門用語の世界観を説明",
+        "内部リンク：/gadget/aliexpress-earphone-osusume.html と /gadget/kz-iyahon-osusume.html へ誘導"
+      ]
+    },
+    {
+      "id": "section5",
+      "h2": "沼ジャンル④：充電器・ケーブル・モバイルバッテリー沼",
+      "h3s": [
+        "GaN充電器とUSB-Cケーブルで始まる沼",
+        "Baseus・UGREEN・SHARGEの沼ブランド紹介"
+      ],
+      "type": "product",
+      "notes": [
+        "充電器・ケーブルの沼は「実用性が高いのに安い」ため罪悪感が薄く沼りやすい点を説明",
+        "GaN・PD・240W対応など規格の深みが沼を加速させることを紹介",
+        "Baseus・UGREEN・SHARGEの各ブランドの特徴を簡潔に紹介"
+      ]
+    },
+    {
+      "id": "section6",
+      "h2": "沼ジャンル⑤：プロジェクター・映像機器沼",
+      "h3s": [
+        "1万円以下で買えるプロジェクターの衝撃",
+        "一度大画面を知ると戻れない映像沼の深み"
+      ],
+      "type": "product",
+      "notes": [
+        "国内定価の数分の一で買えるプロジェクターが映像沼の入り口になっている現状を説明",
+        "解像度・輝度・ポータビリティなどスペック沼の構造を解説",
+        "内部リンク：/gadget/aliexpress-projector-under-10000.html へ誘導"
+      ]
+    },
+    {
+      "id": "section7",
+      "h2": "沼ジャンル別コスパ・沼度比較表",
+      "h3s": [
+        "ジャンル別の沼深さ・コスパ・初期費用を一覧で比較",
+        "あなたに合う沼はどれ？選び方の基準"
+      ],
+      "type": "comparison",
+      "notes": [
+        "各沼ジャンルをコスパ・沼深さ・月平均支出・初心者向け度・ハマりやすさで比較表化",
+        "読者が自分に合う沼ジャンルを判断できるよう選び方の軸を提示",
+        "「沼深さ」を星5段階で表現するなど視覚的にわかりやすくする"
+      ]
+    },
+    {
+      "id": "section8",
+      "h2": "アリエク沼との上手な付き合い方と予算管理術",
+      "h3s": [
+        "沼住民が実践する月予算制ルール",
+        "失敗しない買い方：レビュー確認・信頼ショップの見極め方"
+      ],
+      "type": "howto",
+      "notes": [
+        "月予算を決める・ウィッシュリストで一晩置くなど沼を楽しみながら破産しない具体的ルールを紹介",
+        "評価件数・ショップ評価・写真レビュー確認など信頼できる買い方のコツを解説",
+        "「沼は楽しむもの、コントロールできれば最強の趣味」という前向きな締め方をする"
+      ]
+    },
+    {
+      "id": "section9",
+      "h2": "アリエク沼についてよくある質問（FAQ）",
+      "h3s": [
+        "沼に関する素朴な疑問に答える",
+        "初心者が沼に入る前に知っておくべきこと"
+      ],
+      "type": "faq",
+      "notes": [
+        "検索意図に合わせた5つのFAQを構造化データ対応で記述",
+        "「怪しくない？」「関税は？」など初心者の不安を払拭する内容を含める",
+        "FAQ後にまとめセクションへ自然につなげる流れを作る"
+      ]
+    }
+  ],
+  "researchedAt": "2026-06-10",
+  "products": [
+    {
+      "product_id": "1005008114401620",
+      "rawTitle": "GameSir Cyclone 2 ワイヤレス コントローラー Nintendo Switch 2 / iPhone / Android 用、ホール効果トリガー付き Bluetooth ゲームパッド",
+      "cleanName": "GameSir Cyclone 2 ワイヤレスコントローラー",
+      "price_jpy": "7432",
+      "original_price": "55.99",
+      "sales_count": 8220,
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvmvR57S69fGyn8Tt4pCtmLccxQz3g0L1ZKu00BPwYOT3BF4QZOqRqMDB0DRsIVKF0NtF3T3tKwFVJqrwDNnEz646YMUBviNlAay6vrcAAWJobLKdAyjFQEMq4J5w8haaYHTQMw1phnngRJEVl0W9N4gReN0uXEhrXvnzSx7ghY8Qdi1PkQgLFCeyIj6DMiekRCXdKQhWoLsaKi0X4zgz8TEUTFHsJlJxooIKMHkHE2sIgYXeI0N3zgdAcmNRAtwEoYPtn4BrsxAuBz0RYJAYfacbm0c9Ew4n6o5ztci8ZK6hAWbGaqdm6TzTyYeKbHTEzccWzzWvi3E8Okd1zG5AvPPUqQBmplVMLcBu62t134Kt0dbT7Lx648w2cW7EsYeb6h0LfJyInsx0HUCVsf5OJYSz9M3W4DAAvCazGn4S08BzHmlp9kCaVrlx6K61Xf85Av2Ac1b7Rv4i049K1CkeU88T6vFHxT36owswZBue4sboMeUYwAxOkw1tMM8bTn5uTaipZa3z4MOrqMbJVbmfSHC4OCfn4uKURknvcKJwBvtT8VqcXuS6QuQIxEVOcxlrmrrc4Y0YX0C7k4jxzsUIW7Y745YyR0IzHbkQmA6Aj8BiyawaBupMdnrgnRZFqeX1730rYSiCUYIcDzmEmfF7NQc2JsTJyiZue7vf3ldIXzrvptWX1lgFKSSTFMUPYsPjHhREPgMsmK5F77bQhA0SY8JLcWenY6dRQBBo1xxFIfx9",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S5ec29644fdc64304b378209e2cf028043.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5ec29644fdc64304b378209e2cf028043.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S3a82b3d3a73c4f7283e772c462aed371m.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S9c0c08d0108241bb9b61cd51f242f930z.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S5486a60255254ff9a6fe8b0327126fe9H.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd1c5721fa8e94c0f892f3e9bf0b028e3j.png",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sbd7e9c668d9c4a61bf4b22f6f34d3b0fN.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "GameSir Cyclone 2 ワイヤレスコントローラー",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005009384882890",
+      "rawTitle": "KZ ZSN Pro インイヤーモニター IEM イヤホン、ハイブリッドダイナミックドライバーバランスドアーマチュア 1DD 1BA ステレオ低音サウンド人間工学に基づいた快適",
+      "cleanName": "KZ ZSN Pro",
+      "price_jpy": "2753",
+      "original_price": "228.30",
+      "sales_count": 14,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C4aAD5ZRrjvBWS99deI0sNKyOe2sIZ0ak56WPjcE2YbZR9Ku5lmLHhOgTkSZJAdqjY356JtQPzjpUVWSQBKvkJlrL6zvBCK7xwDvI30pmzZUd70Bk43CPuwjajFBGHRVGCFekpJbCXyaO5U15KF2YatY8CppyxXhKdWJCWZNf0lLcscsE1sP1N2Vu2fH1y2gW9N33LSBAZ8fs4ikXImiT0rYqCiYFE3qSYxRITpUh5NxMiO90iizudOH6zPHeDcBFEnEXemyDvfi9AlI6oWZBtWOYP958kzDHUIcMNiHt79EwPEbeIWZV49r2lThToj4VEvPQwmR4q2oVSOePFbJO4ZqPnUr7XYkfl1C73hVRa1PZ6Fs1wJtPGtffpEp89xmnOhFzzVFenl2pXHYputrajLMCdLmh4RvRU3IrZIxdcV4EvLeXw1smaDZM76cw6D0NcnhRGDLQmB86GXDmbZzln93RcuBNSZPuskN0BvNyVbAC4fHReYBPa03bkmEzggaMJit7QBihXqJocaTbVnf448gn3NqvjuYjULY2yYN8TUqS4VzFntRAAVoYEzaJesrmDyndg341uCoIIHobFYcObf0qTy8erZ5nC5sHBVaTzjQiCUpCDOzwn91Evl8jDCwlkcbDnyzTGPNAL2hjj66URafkd2eCIy8o3weRxTRmEF55rbuBivGHXCDlC7gNzSFyyXXon8ekSKeHE",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S91b7332d9e734d599d593362c20fc191y.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S91b7332d9e734d599d593362c20fc191y.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sc9ec512c8b4f497f9d5d7e0d909b2c3ae.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S8f1c5ee32be442828578db85008fc6263.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S16b042d7c7b540fcb338ba30e4d46ac46.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S102115320c2745f8b211a3d921e09b84D.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S297cf4281ad04e8f89a0e88ea780b66fV.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "KZ ZSN Pro",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005008275158058",
+      "rawTitle": "EPOMAKER X AULA F75 MAX コンパクト 75% ANSI レイアウト有線/Bluetooth/2.4GHz ワイヤレス メカニカル キーボード TFT スクリーンとノブ付き",
+      "cleanName": "EPOMAKER AULA F75 MAX",
+      "price_jpy": "11112",
+      "original_price": "79.99",
+      "sales_count": 51,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CoQ0Kd8rUW4pLgKqSWBSc0sgjB2g5xi0QUzeFjwGCNrWeGiE1YXXlexh08IV2oSdpD7TMD23qm8Wm9E5b1TLWv0A61yaWm1OwngdglPIwDgTT7OPHKvW7bdEv5QHWUW5AZ9cdavxOCZSr7Gq50XfDLsjSgJ597dUNE3c7VH4NZcZTdxkHstPoZz6w2Xpi0rpnSTWLqdopWTaBnVfZtERelrnMf08hOy21tNzDUNd0wcFOP8fJ0Gddm3OOCB0o9QBxwAFFH6lp3TR9ecp9VC45JVAeXiF0Rjll08vgMMRofMAWPLiCO3Ow1vNel1XQNFlXDHFOYrWJJX3tUhvND1mSjCK62XfQTGV6BHJXzKTKwhf3BMJz9NZvEJximBpWJrOWAIOJBpEavI2SZhR5KRhi9kl3f9yJg80NarfW4TzgBP5Z2UheWGCIobQWKMgbJLl8yftu1KNJgKtI0viGlsUHXTTlFxD24EULmnKaoKa64DGAHzxgpvnX7xGhuomCIhz0oRHbxgLUpjxQCdTnVtgQu0y9On5DiT0oSDeSv1ldPGl10iqNxvQSDPm6xyNIq5JHcwOAdVUdKJcm6wmGuCWL3Xw8YY5jg0sfhWAoJN4v4yC3eBDWNwj5mcxGnE3Ybznx4AE3yaZHHlOGFIKHue6uIN8odB1ITisvAA5jAdIlvaNM19nHH80DpTpZmtkOFeb8qtvMAIzjOhH1Q",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S190ec2299e194951ab8f22cff2d38771U.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S190ec2299e194951ab8f22cff2d38771U.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/See7f227db07c4213a16ccfdb3f16ebd8c.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sf90e94fa5b274841b516470afcfc78b6X.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sdd37ca12378f45c08738f34e26c619edM.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S96500bc7724f48c791270618f93263015.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S0ffc40b22c9c4de584939b9268d27b70L.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "EPOMAKER AULA F75 MAX",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005008702713918",
+      "rawTitle": "【米国プラグ】UGREEN 20W 30W GaN 充電器ミニ PD 3.0 USB C 電話充電器 iPhone 16 15 14 Pro Samsung S25 Xiaomi タブレット iPad Air用",
+      "cleanName": "UGREEN 20W 30W GaN PD 3.0 USB-C 充電器",
+      "price_jpy": "1407",
+      "original_price": "18.78",
+      "sales_count": 10545,
+      "affiliateLink": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvmvR57S69fGyn8Tt4pCtmLccxQz3g0L1ZKu00BPwYOT3BF4QZOqRqMDB0DQGZFzBIgrO2yAS9LygnkM08DaKbr09ZEWNFih4mb5pA3LVqPxPxxMb15eLECxOUVzodBxANP5GjcHhHMx9AluH4oncKVn3DsSO1pqKI9w1l19cRuD3h186Mf0bzNWLYeZMwXI29Vp9SYH573E2IE28TXFcpC5zdBvXs1hySAXaDkqav3N10lCyarwW5aUokSPirbx4CR063CrqY339HFosobZWeExYCgc55uAJloeAejZ7zAxQIQSsZAfkMFVwDEwW7kGiCAOmx4WOYXieYTf4MWjVzPlFwvicE1acmsd9UuuMkzFUH5J7JI0lJ7zGxYfTsRTIQkZ6YLDYrlGMKKu3kdgU4PtDLeFU2IzikLHgwPNE07nb8JeQkyz5FyceFjj0rCOtLh3CuofDkkK4wVViJkNaA5IyNBtSZ9v3hVGnsEAFkHgmSiATlXoPNYvB6cONKyjP4UdL6i6WynT6giqJ0SmcL4LdfYkzplOEZqas0drisDV2Db8wLuIIRbTaF0UJySRjazOhtyZfTXCZfTxdLHo9BlyP8BsGHDQ61MF1VDaX1XtJ7wLPMQPggGOq6wcuHDlllCYIGczo5fkE4FgFHEze3vSkrPuns9mFzTEvMVFu1TWLFf7BvVW78LKnM2EpZpmCGdKUdKXigzHTI5jmJQhAMK82Uj2LZvkSSW2pWwocdQXp",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/S34a9d4ec6be64cd5a8546a45d74b3d78c.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/S34a9d4ec6be64cd5a8546a45d74b3d78c.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S525da0d598c74bbda525536ef8490b58K.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sd195be4e24774efaa58151bec4733ab9f.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S65d0b80d3e9544d3b561705fe9eef617N.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S2d8c6db91b7d4a2e9ab78d89f071fdbeC.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S99bf7c4d543c4b039c8b8ad423c48f15A.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "UGREEN 20W 30W GaN PD 3.0 USB-C 充電器",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    },
+    {
+      "product_id": "1005010748770593",
+      "rawTitle": "ANBERNIC RG DS 携帯型ゲーム機 デュアルスクリーンフリップ ビデオゲームプレーヤー 4IPSマルチタッチスクリーン RK3568 Android14 PSPゲーム RGDS",
+      "cleanName": "ANBERNIC RG DS",
+      "price_jpy": "14730",
+      "original_price": "1272.44",
+      "sales_count": 12,
+      "affiliateLink": "https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3CmIu62MCj1c9rTGvG9zk1rET3y0gx4upMiSrkMIcasCRrIIjiiG0DI7R9n2lBbIsSClwXA43UtRar38RhWNHFKIfxJEO64lZUogOjLfrrB1pHRJmQ63DALfZeGbMBDHybfoAl8TriycwPJlozKyxGdlbP3Ez8YeveTdhr5chOzzSqyR1Nbyty6qdle1shehh3yRPEigX8eUx0DpLsZSuwvmDEFQhrwargN2xfW0C5TvT0k7YiPRRONIFYvPCOXswWITgCDmfp5dxFkRNE3yj5JSHOzrkEDuDUrJqVXYTuCHFIeZOegXtu7zHWZvHDUATT3Uu6O9RPdepFaUOmj4hNnE63Xwb306nNCD3uTzce3eAGD7yYjm5Fx5GkBiH2l99xY5wlQu6RirxN05mHOFUcwCjMVqsC8pPQdkaOGnt99Tn1ad7IOjE6AqiLOPFyrxYl6rKXb87cOwgu7MGNept2GZenAL3F4QHgyaeBuZ8AIxCzIzPCB8rhDLQubw3EfcTWRDKCLYRQ6hCb2SXg3NwbWittpuvWFlj8joUEIzh86oOzWwujQIxPaxL2q5rBl3msBs7TbreO8k2NRuhgONas5wVpdeCe4HvAvMK9uIj8Djq2sGcHLjVoUn6RnwovxNM8dOgpfT16RcmDM8SaG93GEzcKXJrrsoYk2HeKbKWhFf1tVzQdipudqecPgoWVMAfPrK7ceOvo1CAKY",
+      "hasAffiliate": true,
+      "mainImage": "https://ae-pic-a1.aliexpress-media.com/kf/Sb8db387bbd0648f0b46b12262f2853f9r.jpg",
+      "images": [
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sb8db387bbd0648f0b46b12262f2853f9r.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S3754c7d34db94a88a34bde2f61a70767t.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Sa75f0f00030942c8a4155f038d017825k.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/Se6ede3c5cbc44c12b333b314f8838e69g.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S441f66a97b9a4a3bb57c19ddda545bc5O.jpg",
+        "https://ae-pic-a1.aliexpress-media.com/kf/S739a103d94fd492d83b9c563a7e0b07eV.jpg"
+      ],
+      "amazonPlaceholder": {
+        "status": "pending",
+        "searchQuery": "ANBERNIC RG DS",
+        "asin": null,
+        "url": null
+      },
+      "specResult": null,
+      "redditReviews": []
+    }
+  ],
+  "faqQuestions": [
+    "アリエク沼にハマると月いくらかかるの？",
+    "アリエクの商品は品質が悪くて失敗しない？",
+    "アリエクで買うと関税はかかるの？",
+    "アリエク沼から抜け出せなくなったらどうすればいい？",
+    "アリエク初心者が最初にハマりやすい沼ジャンルはどれ？"
+  ],
+  "comparisonTableColumns": [
+    "沼ジャンル",
+    "コスパ（★5段階）",
+    "沼深さ（★5段階）",
+    "月平均支出目安",
+    "初心者向け度",
+    "代表ブランド例"
+  ],
+  "internalLinks": [
+    {
+      "url": "/gadget/aliexpress-chuka-tablet-osusume.html",
+      "anchorText": "アリエクおすすめ中華タブレット5選"
+    },
+    {
+      "url": "/gadget/epomaker-keyboard-osusume.html",
+      "anchorText": "EPOMAKERキーボードおすすめ4選"
+    },
+    {
+      "url": "/gadget/aliexpress-earphone-osusume.html",
+      "anchorText": "アリエクイヤホンおすすめ5選"
+    },
+    {
+      "url": "/gadget/aliexpress-projector-under-10000.html",
+      "anchorText": "アリエクプロジェクターおすすめ3選"
+    }
+  ],
+  "tavilyResults": [],
+  "generatedAt": "2026-06-10T09:19:20.453Z"
+}

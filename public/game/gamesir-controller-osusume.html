@@ -32,6 +32,13 @@
       --max:    760px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
+    .toc a.product-link::after { content: none; }
+    a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
 
     .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
@@ -165,7 +172,8 @@
 
     /* 読書進捗バー */
     #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
-  </style>
+    .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
+</style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -181,46 +189,95 @@
   <meta name="twitter:description" content="アリエクでGameSirコントローラーを安く買いたい方必見！T4 Pro・G7 SEなどおすすめ5選をスペック・価格・用途別に徹底比較。公式ストアでの安全な購入手順も解説しているので、失敗なく選べます。" />
   <meta name="twitter:image" content="https://aliswipe.com/images/ogp/gamesir-controller-osusume.jpg" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "GameSirコントローラーおすすめ5選【2026年最新】アリエク公式ストアで安く買う完全ガイド",
-    "description": "アリエクでGameSirコントローラーを安く買いたい方必見！T4 Pro・G7 SEなどおすすめ5選をスペック・価格・用途別に徹底比較。公式ストアでの安全な購入手順も解説しているので、失敗なく選べます。",
-    "url": "https://aliswipe.com/game/gamesir-controller-osusume.html",
-    "image": "https://aliswipe.com/images/ogp/gamesir-controller-osusume.jpg",
-    "datePublished": "2026-06-05",
-    "dateModified": "2026-06-05",
-    "author": {
-      "@type": "Organization",
-      "name": "アリエクswipe"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "アリエクswipe",
-      "url": "https://aliswipe.com/"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "ホーム",
-        "item": "https://aliswipe.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "GameSirコントローラーおすすめ5選【2026年最新】アリエク公式ストアで安く買う完全ガイド",
-        "item": "https://aliswipe.com/game/gamesir-controller-osusume.html"
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Q1. アリエクのGameSirコントローラーは偽物が届くことはある？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GameSirの公式ストアから購入する場合、偽物が届くリスクは極めて低い。AliExpressでは「公式ストア（Official Store）」と「授権ストア」のバッジがストアページに表示されており、GameSirブランドの直営ストアからの購入であれば正規品が保証される。"
       }
-    ]
+    },
+    {
+      "@type": "Question",
+      "name": "Q2. GameSirコントローラーはNintendo Switchで使える？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "モデルによって対応状況が異なる。このリストでSwitch対応しているのは、GameSir Tarantula Pro Switch 2（Switch 2対応含む）、GameSir Nova Lite、GameSir Cyclone 2の3モデル。GameSir G7 SEはXbox/PC専用のためSwitchには非対応、GameSir X2sはスマホ専用クリップ式のためSwitch未対応。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q3. アリエクでGameSirを注文してから届くまで何日かかる？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "配送方法によって大きく異なる。一般的な目安は以下の通り："
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q4. GameSirコントローラーのスティックドリフトは起きやすい？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ホールエフェクトスティック搭載モデルとそうでないモデルで、ドリフトリスクに明確な差がある。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q5. アリエクでGameSirを買うのはAmazonより本当に安い？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多くのケースでアリエクのほうが安い。上記の差額シミュレーションを見ると、モデルによって1,700〜4,500円程度の差がある。"
+      }
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "GameSirコントローラーおすすめ5選【2026年最新】アリエク公式ストアで安く買う完全ガイド",
+  "description": "アリエクでGameSirコントローラーを安く買いたい方必見！T4 Pro・G7 SEなどおすすめ5選をスペック・価格・用途別に徹底比較。公式ストアでの安全な購入手順も解説しているので、失敗なく選べます。",
+  "url": "https://aliswipe.com/game/gamesir-controller-osusume.html",
+  "image": "https://aliswipe.com/images/ogp/gamesir-controller-osusume.jpg",
+  "datePublished": "2026-06-05",
+  "dateModified": "2026-06-05",
+  "author": {
+    "@type": "Person",
+    "name": "アリエクパパ",
+    "url": "https://aliswipe.com/info/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "アリエクswipe",
+    "url": "https://aliswipe.com/"
   }
-  </script>
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://aliswipe.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "GameSirコントローラーおすすめ5選【2026年最新】アリエク公式ストアで安く買う完全ガイド",
+      "item": "https://aliswipe.com/game/gamesir-controller-osusume.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -230,6 +287,7 @@
 <section class="article-hero">
   <div class="tag">ゲームコントローラー</div>
   <h1>GameSirコントローラーおすすめ5選【2026年最新】アリエク公式ストアで安く買う完全ガイド</h1>
+<div class="article-date">📅 更新日：2026-06-05　公開日：2026-06-05</div>
   <div class="meta">
     <span>2026年06月05日更新</span>
     <span>読了約8分</span>
@@ -244,10 +302,10 @@
   <p><strong>結論：</strong>マルチ対応万能機なら【GameSir T4 Pro】、Xbox/PC特化ならホールエフェクト搭載の【GameSir G7 SE】、スマホゲームなら【GameSir X2s】がそれぞれ最適解。</p>
   <ul>
     <li>Switch・PC・Android全部まとめたい → GameSir T4 Pro</li>
-    <li>Xbox Game Pass / PCゲームをがっつり → GameSir G7 SE</li>
-    <li>原神・CoD Mobileなどスマホゲーム特化 → GameSir X2s</li>
-    <li>初めての1台・サブ機として低予算で → GameSir Nova Lite</li>
-    <li>FPS/TPSで精度とデスク映えを両立したい → GameSir Cyclone 2</li>
+    <li>Xbox Game Pass / PCゲームをがっつり → <a href="#sec-2" class="product-link" data-dir="down">GameSir G7 SE</a></li>
+    <li>原神・CoD Mobileなどスマホゲーム特化 → <a href="#sec-4" class="product-link" data-dir="down">GameSir X2s</a></li>
+    <li>初めての1台・サブ機として低予算で → <a href="#sec-5" class="product-link" data-dir="down">GameSir Nova Lite</a></li>
+    <li>FPS/TPSで精度とデスク映えを両立したい → <a href="#sec-3" class="product-link" data-dir="down">GameSir Cyclone 2</a></li>
   </ul>
 </div>
 
@@ -276,7 +334,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>GameSir T4 Pro</td>
+        <td><a href="#sec-2" class="product-link" data-dir="down">GameSir T4 Pro</a></td>
         <td>約3,500〜4,500円</td>
         <td>Switch / PC / Android / iOS</td>
         <td>Bluetooth / 有線</td>
@@ -284,7 +342,7 @@
         <td>マルチプラットフォーム万能</td>
       </tr>
       <tr>
-        <td>GameSir G7 SE</td>
+        <td><a href="#sec-3" class="product-link" data-dir="down">GameSir G7 SE</a></td>
         <td>約7,293円</td>
         <td>Xbox / PC</td>
         <td>有線（USB-C）</td>
@@ -292,7 +350,7 @@
         <td>Xbox/PCゲーム・競技向け</td>
       </tr>
       <tr>
-        <td>GameSir X2s</td>
+        <td><a href="#sec-4" class="product-link" data-dir="down">GameSir X2s</a></td>
         <td>約6,762円</td>
         <td>Android / iOS（クリップ式）</td>
         <td>USB-C / Lightning</td>
@@ -300,7 +358,7 @@
         <td>スマホゲーム特化</td>
       </tr>
       <tr>
-        <td>GameSir Nova Lite</td>
+        <td><a href="#sec-5" class="product-link" data-dir="down">GameSir Nova Lite</a></td>
         <td>約3,683円</td>
         <td>Switch / PC / Android</td>
         <td>Bluetooth / 2.4GHz / 有線</td>
@@ -308,7 +366,7 @@
         <td>初心者・サブ機・コスト重視</td>
       </tr>
       <tr>
-        <td>GameSir Cyclone 2</td>
+        <td><a href="#sec-6" class="product-link" data-dir="down">GameSir Cyclone 2</a></td>
         <td>約7,411円</td>
         <td>PC / Android / Switch</td>
         <td>Bluetooth / 2.4GHz / 有線</td>
@@ -320,7 +378,7 @@
 </div>
 
 <figure class="fv-product-image">
-  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2baab2290f3340daa07d6614b965ec465.png" alt="GameSir G7 SE Xbox ゲームコントローラー" loading="eager">
+  <img src="/images/products/gamesir-controller-osusume/5670f12d.png" alt="GameSir G7 SE Xbox ゲームコントローラー" loading="eager">
 </figure>
 <nav class="toc">
   <div class="toc-title">📋 この記事の目次</div>
@@ -350,11 +408,11 @@
 
 <p>AliExpressのGameSir公式ストアを使う最大の理由は、正規品保証とバイヤー保護の両立にある。</p>
 
-<p>AliExpressには購入者を守る「バイヤープロテクション」が標準搭載されており、<a href="/basics/aliexpress-what-is.html">AliExpressとは何か</a>を把握していれば安心して使えるプラットフォームだ。公式ストアからの購入であれば、初期不良時の返品・返金交渉もスムーズに進みやすい。</p>
+<p>AliExpressには購入者を守る「バイヤープロテクション」が標準搭載されており、<a href="/guide/aliexpress-what-is.html">AliExpressとは何か</a>を把握していれば安心して使えるプラットフォームだ。公式ストアからの購入であれば、初期不良時の返品・返金交渉もスムーズに進みやすい。</p>
 
 <p>価格面での差は明確で、日本の家電量販店やAmazon国内販売と比べて2,000〜5,000円ほど安く買えるケースが多い。11.11セールや新生活セールのタイミングをうまく使えば、さらに1,000〜2,000円の上乗せ節約も狙える。</p>
 
-<p>アリエクを使ったことがない方は、まず<a href="/basics/aliexpress-account.html">AliExpressの登録方法と初回注文手順</a>を確認してから購入に進むとスムーズだ。</p>
+<p>アリエクを使ったことがない方は、まず<a href="/guide/aliexpress-account.html">AliExpressの登録方法と初回注文手順</a>を確認してから購入に進むとスムーズだ。</p>
 
 <!-- @product-start id="1005004904927328" type="ガジェット" tag="ガジェット" -->
 <div class="product-section">
@@ -363,10 +421,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2baab2290f3340daa07d6614b965ec465.png" alt="GameSir G7 SE Xbox ゲームコントローラー" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7e5d2abdd9314368bf61782210190d82T.png" alt="GameSir G7 SE 詳細" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5b9ff925344d488fa83ef5966d387236s.png" alt="GameSir G7 SE 背面" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S71c4048651544b9f9fabad31131fcd57X.png" alt="GameSir G7 SE 使用イメージ" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/5670f12d.png" alt="GameSir G7 SE Xbox ゲームコントローラー" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/8108aa03.png" alt="GameSir G7 SE 詳細" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/9d4d6225.png" alt="GameSir G7 SE 背面" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/c378945e.png" alt="GameSir G7 SE 使用イメージ" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -420,9 +478,9 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5ec29644fdc64304b378209e2cf028043.jpg" alt="GameSir Cyclone 2 ワイヤレスコントローラー" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S3a82b3d3a73c4f7283e772c462aed371m.png" alt="GameSir Cyclone 2 詳細" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S9c0c08d0108241bb9b61cd51f242f930z.png" alt="GameSir Cyclone 2 RGB照明" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/c7d40772.jpg" alt="GameSir Cyclone 2 ワイヤレスコントローラー" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/40fd79fb.png" alt="GameSir Cyclone 2 詳細" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/fe2e5e2d.png" alt="GameSir Cyclone 2 RGB照明" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -484,10 +542,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0043855318fd4510a0282e6f8ea40e7fP.jpg" alt="GameSir X2s クリップ式コントローラー" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7fa62110df4e4caaa89448b88e853ab8k.jpg" alt="GameSir X2s スマホ装着" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S878ad830587540b5adbc29ac477c493dM.jpg" alt="GameSir X2s 詳細" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S660d9e4ffd2647139368c2fa407e9458u.jpg" alt="GameSir X2s 使用イメージ" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/ea339a5d.jpg" alt="GameSir X2s クリップ式コントローラー" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/42d0e83f.jpg" alt="GameSir X2s スマホ装着" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/da318cbe.jpg" alt="GameSir X2s 詳細" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/c7d9b455.jpg" alt="GameSir X2s 使用イメージ" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -520,7 +578,7 @@
 
 <p>原神、CoD Mobile、Diablo Immortalなど、スマホで本格的なゲームを遊んでいる人向け。タッチ操作のイライラから解放されたい、でも据え置きゲーム機を持ち歩くのは無理という状況にぴったりハマる。</p>
 
-<p>外出先のカフェや移動中でも「コントローラーゲームの操作感」で遊べる点は、スマホゲーマーにとってゲームチェンジャーになりうる。<a href="/basics/aliexpress-gamepad-osusume.html">アリエクのゲームパッドおすすめ10選</a>でもクリップ式コントローラーを複数紹介しているが、GameSir X2sはその中でも完成度が高い部類に入る。</p>
+<p>外出先のカフェや移動中でも「コントローラーゲームの操作感」で遊べる点は、スマホゲーマーにとってゲームチェンジャーになりうる。<a href="/game/aliexpress-gamepad-osusume.html">アリエクのゲームパッドおすすめ10選</a>でもクリップ式コントローラーを複数紹介しているが、GameSir X2sはその中でも完成度が高い部類に入る。</p>
 
 <div class="cta-box">
   <p class="cta-lead">GameSir X2s をAliExpressでチェック</p>
@@ -540,10 +598,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S721996005f5c44108158a6a3d3662f7az.png" alt="GameSir Nova Lite ワイヤレスコントローラー" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S01c1e7321da04913af3780e03e2e50f6w.jpg" alt="GameSir Nova Lite 詳細" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S452716f7980c415fb6c1737a4a39b448u.jpg" alt="GameSir Nova Lite カラーバリエーション" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S691f3c9379d04f8eac6d98c51ee536924.jpg" alt="GameSir Nova Lite 使用イメージ" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/d5f7a922.png" alt="GameSir Nova Lite ワイヤレスコントローラー" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/1f159772.jpg" alt="GameSir Nova Lite 詳細" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/5a408125.jpg" alt="GameSir Nova Lite カラーバリエーション" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/5999605a.jpg" alt="GameSir Nova Lite 使用イメージ" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -595,10 +653,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7d678ac72a0448478388f53812600933i.jpg" alt="GameSir Tarantula Pro Switch 2" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S4c3a56b7f7934044a67f2e7193c99dc6G.png" alt="GameSir Tarantula Pro Switch 2 詳細" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sf6e1c829b7164dae817cef95b32ed7c7h.png" alt="GameSir Tarantula Pro Switch 2 背面ボタン" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S57de67302e3b49669c8f474c32bf05af6.png" alt="GameSir Tarantula Pro Switch 2 使用イメージ" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/3446f60a.jpg" alt="GameSir Tarantula Pro Switch 2" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/a3f0f7f9.png" alt="GameSir Tarantula Pro Switch 2 詳細" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/9fbe06cc.png" alt="GameSir Tarantula Pro Switch 2 背面ボタン" loading="lazy">
+    <img src="/images/products/gamesir-controller-osusume/a6b49c12.png" alt="GameSir Tarantula Pro Switch 2 使用イメージ" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -663,7 +721,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><strong>GameSir Tarantula Pro Switch 2</strong></td>
+        <td><a href="#sec-2" class="product-link" data-dir="down"><strong>GameSir Tarantula Pro Switch 2</strong></a></td>
         <td>約8,509円</td>
         <td>Switch 2 / Switch / PC / Android</td>
         <td>Bluetooth / 2.4GHz / 有線</td>
@@ -671,7 +729,7 @@
         <td>Switch 2メイン・マルチ対応万能</td>
       </tr>
       <tr>
-        <td><strong>GameSir G7 SE</strong></td>
+        <td><a href="#sec-3" class="product-link" data-dir="down"><strong>GameSir G7 SE</strong></a></td>
         <td>約7,293円</td>
         <td>Xbox / PC</td>
         <td>有線（USB-C）</td>
@@ -679,7 +737,7 @@
         <td>Xbox/PCゲーム・競技向け</td>
       </tr>
       <tr>
-        <td><strong>GameSir X2s</strong></td>
+        <td><a href="#sec-4" class="product-link" data-dir="down"><strong>GameSir X2s</strong></a></td>
         <td>約6,762円</td>
         <td>Android / iOS（クリップ式）</td>
         <td>USB-C直結</td>
@@ -687,7 +745,7 @@
         <td>スマホゲーム特化・外出時携帯</td>
       </tr>
       <tr>
-        <td><strong>GameSir Cyclone 2</strong></td>
+        <td><a href="#sec-5" class="product-link" data-dir="down"><strong>GameSir Cyclone 2</strong></a></td>
         <td>約7,411円</td>
         <td>PC / Android / Switch</td>
         <td>Bluetooth / 2.4GHz / 有線</td>
@@ -695,7 +753,7 @@
         <td>FPS/TPS精度追求・デスク映え</td>
       </tr>
       <tr>
-        <td><strong>GameSir Nova Lite</strong></td>
+        <td><a href="#sec-6" class="product-link" data-dir="down"><strong>GameSir Nova Lite</strong></a></td>
         <td>約3,683円</td>
         <td>Switch / PC / Android</td>
         <td>Bluetooth / 2.4GHz / 有線</td>
@@ -708,11 +766,11 @@
 
 <p><strong>予算別のざっくり指針：</strong></p>
 <ul>
-  <li>〜4,000円で済ませたい → GameSir Nova Lite一択</li>
-  <li>5,000〜7,500円でスマホゲームをしたい → GameSir X2s</li>
-  <li>7,000〜8,000円でPC/Xbox派 → GameSir G7 SE</li>
-  <li>7,000〜8,000円でFPS精度重視 → GameSir Cyclone 2</li>
-  <li>Switch 2持ちでマルチ対応したい → GameSir Tarantula Pro Switch 2</li>
+  <li>〜4,000円で済ませたい → <a href="#sec-5" class="product-link" data-dir="up">GameSir Nova Lite</a>一択</li>
+  <li>5,000〜7,500円でスマホゲームをしたい → <a href="#sec-4" class="product-link" data-dir="up">GameSir X2s</a></li>
+  <li>7,000〜8,000円でPC/Xbox派 → <a href="#sec-2" class="product-link" data-dir="up">GameSir G7 SE</a></li>
+  <li>7,000〜8,000円でFPS精度重視 → <a href="#sec-3" class="product-link" data-dir="up">GameSir Cyclone 2</a></li>
+  <li>Switch 2持ちでマルチ対応したい → <a href="#sec-6" class="product-link" data-dir="up">GameSir Tarantula Pro Switch 2</a></li>
 </ul>
 
 <h3>アリエクと国内価格の差額シミュレーション</h3>
@@ -729,31 +787,31 @@
     </thead>
     <tbody>
       <tr>
-        <td>GameSir G7 SE</td>
+        <td><a href="#sec-2" class="product-link" data-dir="down">GameSir G7 SE</a></td>
         <td>約7,293円</td>
         <td>約9,000〜10,000円</td>
         <td>約1,700〜2,700円お得</td>
       </tr>
       <tr>
-        <td>GameSir Cyclone 2</td>
+        <td><a href="#sec-3" class="product-link" data-dir="down">GameSir Cyclone 2</a></td>
         <td>約7,411円</td>
         <td>約9,500〜11,000円</td>
         <td>約2,000〜3,500円お得</td>
       </tr>
       <tr>
-        <td>GameSir X2s</td>
+        <td><a href="#sec-4" class="product-link" data-dir="down">GameSir X2s</a></td>
         <td>約6,762円</td>
         <td>約8,000〜9,500円</td>
         <td>約1,200〜2,700円お得</td>
       </tr>
       <tr>
-        <td>GameSir Nova Lite</td>
+        <td><a href="#sec-5" class="product-link" data-dir="down">GameSir Nova Lite</a></td>
         <td>約3,683円</td>
         <td>約5,000〜6,000円</td>
         <td>約1,300〜2,300円お得</td>
       </tr>
       <tr>
-        <td>GameSir Tarantula Pro Switch 2</td>
+        <td><a href="#sec-6" class="product-link" data-dir="down">GameSir Tarantula Pro Switch 2</a></td>
         <td>約8,509円</td>
         <td>約11,000〜13,000円</td>
         <td>約2,500〜4,500円お得</td>
@@ -762,7 +820,7 @@
   </table>
 </div>
 
-<p>※国内価格は流通状況により変動する。アリエクのセール期間中（11.11・6.18・新生活セール）に購入できれば、差額はさらに広がる。<a href="/basics/aliexpress-choice.html">アリエクのChoice配送について</a>も合わせて確認しておくと、送料や配送日数の見通しが立てやすい。</p>
+<p>※国内価格は流通状況により変動する。アリエクのセール期間中（11.11・6.18・新生活セール）に購入できれば、差額はさらに広がる。<a href="/guide/aliexpress-choice.html">アリエクのChoice配送について</a>も合わせて確認しておくと、送料や配送日数の見通しが立てやすい。</p>
 
 <h2 id="sec-8">アリエクでGameSirを失敗なく選ぶための3つのポイント</h2>
 
@@ -787,9 +845,9 @@
 
 <p>このリストでホールエフェクトを採用しているモデルは：</p>
 <ul>
-  <li>GameSir G7 SE（スティックのみホールエフェクト）</li>
-  <li>GameSir Cyclone 2（スティック＋トリガー両方ホールエフェクト）</li>
-  <li>GameSir Tarantula Pro Switch 2（ホールエフェクトスティック採用）</li>
+  <li><a href="#sec-2" class="product-link" data-dir="up">GameSir G7 SE</a>（スティックのみホールエフェクト）</li>
+  <li><a href="#sec-3" class="product-link" data-dir="up">GameSir Cyclone 2</a>（スティック＋トリガー両方ホールエフェクト）</li>
+  <li><a href="#sec-6" class="product-link" data-dir="up">GameSir Tarantula Pro Switch 2</a>（ホールエフェクトスティック採用）</li>
 </ul>
 
 <p>「コントローラーを1年以上使い続けるつもり」「競技ゲームをやる」という人はホールエフェクト搭載モデルを選ぶことを強くすすめる。</p>
@@ -807,7 +865,7 @@
 
 <p>また、GameSir公式ストアのページを「フォロー」しておくと、ストア限定クーポンが発行された際に通知が来る。購入直前に「クーポン」タブを確認する習慣をつけるだけで、追加で数百円〜数千円の節約になることがある。</p>
 
-<p>AliExpressの使い方に不慣れな方は、<a href="/basics/aliexpress-account.html">AliExpressの登録方法と初回注文手順</a>で基本的な操作を確認してから購入に進むとスムーズだ。</p>
+<p>AliExpressの使い方に不慣れな方は、<a href="/guide/aliexpress-account.html">AliExpressの登録方法と初回注文手順</a>で基本的な操作を確認してから購入に進むとスムーズだ。</p>
 
 <h2 id="faq">よくある質問｜GameSirコントローラー×アリエク</h2>
 
@@ -844,7 +902,7 @@
           <li>Choice配送（倉庫在庫あり）：5〜15日程度</li>
           <li>DHL / FedEx などの速達便：5〜10日（送料が高め）</li>
         </ul>
-        <p><a href="/basics/aliexpress-choice.html">アリエクのChoice配送について</a>を確認すると、配送スピードの選び方を詳しく理解できる。急ぎの場合はChoice対応商品や速達便を選ぶと待ち時間を大幅に短縮できる。</p>
+        <p><a href="/guide/aliexpress-choice.html">アリエクのChoice配送について</a>を確認すると、配送スピードの選び方を詳しく理解できる。急ぎの場合はChoice対応商品や速達便を選ぶと待ち時間を大幅に短縮できる。</p>
       </div>
     </div>
   </div>
@@ -880,11 +938,11 @@
 <p>最後に、自分に合うモデルをすぐ選べるように整理しておく。</p>
 
 <ul>
-  <li><strong>Nintendo Switch 2を持っていてマルチ対応したい → GameSir Tarantula Pro Switch 2</strong>（約8,509円）<br>Switch 2対応・ジャイロ・背面ボタン搭載で「これ1本で全部」が実現できる</li>
-  <li><strong>Xbox Game Pass / PCゲームを有線でがっつりやる → GameSir G7 SE</strong>（約7,293円）<br>Xbox公式ライセンス×ホールエフェクトスティックの安心感は他では代えがたい</li>
-  <li><strong>原神やCoD Mobileなどスマホゲームがメイン → GameSir X2s</strong>（約6,762円）<br>USB-C直結のクリップ式でBluetooth不要・低遅延・充電不要の三拍子</li>
-  <li><strong>FPS/TPSで精度を突き詰めたい・デスク映えも欲しい → GameSir Cyclone 2</strong>（約7,411円）<br>スティック＋トリガー両方ホールエフェクトのフル搭載、評価97.7%の実績</li>
-  <li><strong>初めてのコントローラー・サブ機・とにかく安く → GameSir Nova Lite</strong>（約3,683円）<br>3接続対応でこの価格はエントリー機として現実的な選択肢</li>
+  <li><strong>Nintendo Switch 2を持っていてマルチ対応したい → <a href="#sec-6" class="product-link" data-dir="up">GameSir Tarantula Pro Switch 2</a></strong>（約8,509円）<br>Switch 2対応・ジャイロ・背面ボタン搭載で「これ1本で全部」が実現できる</li>
+  <li><strong>Xbox Game Pass / PCゲームを有線でがっつりやる → <a href="#sec-2" class="product-link" data-dir="up">GameSir G7 SE</a></strong>（約7,293円）<br>Xbox公式ライセンス×ホールエフェクトスティックの安心感は他では代えがたい</li>
+  <li><strong>原神やCoD Mobileなどスマホゲームがメイン → <a href="#sec-4" class="product-link" data-dir="up">GameSir X2s</a></strong>（約6,762円）<br>USB-C直結のクリップ式でBluetooth不要・低遅延・充電不要の三拍子</li>
+  <li><strong>FPS/TPSで精度を突き詰めたい・デスク映えも欲しい → <a href="#sec-3" class="product-link" data-dir="up">GameSir Cyclone 2</a></strong>（約7,411円）<br>スティック＋トリガー両方ホールエフェクトのフル搭載、評価97.7%の実績</li>
+  <li><strong>初めてのコントローラー・サブ機・とにかく安く → <a href="#sec-5" class="product-link" data-dir="up">GameSir Nova Lite</a></strong>（約3,683円）<br>3接続対応でこの価格はエントリー機として現実的な選択肢</li>
 </ul>
 
 <h3>今すぐアリエクの公式ストアをチェックする</h3>
@@ -893,7 +951,7 @@
 
 <p>次の11.11セール・6.18セールのタイミングを狙えば、さらに節約できる可能性がある。購入を迷っているなら、まずアリエクの公式ストアページをブックマークしておいて、セール時期に合わせて購入するのが賢い戦略だ。</p>
 
-<p>ゲームパッド選びをもっと広い視点で比較したい方は、<a href="/basics/aliexpress-gamepad-osusume.html">アリエクのゲームパッドおすすめ10選</a>も合わせてチェックしてほしい。GameSir以外の選択肢も含めて、用途別に比較している。</p>
+<p>ゲームパッド選びをもっと広い視点で比較したい方は、<a href="/game/aliexpress-gamepad-osusume.html">アリエクのゲームパッドおすすめ10選</a>も合わせてチェックしてほしい。GameSir以外の選択肢も含めて、用途別に比較している。</p>
 
 <!-- VOICE-START --><!-- VOICE-END -->
 
@@ -903,21 +961,29 @@
   <div class="related">
     <div class="related-title">関連記事</div>
     <div class="related-grid">
-      <a href="/basics/aliexpress-gamepad-osusume.html" class="related-card">
-        <div class="rc-tag">ゲームパッド</div>
-        <div class="rc-title">アリエクのゲームパッドおすすめ10選｜中華コンの選び方完全ガイド</div>
+      <a href="/game/sf3000-game-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">SF3000レビュー【2026年最新】2,000円台で買えるアリエクの激安レトロゲーム機を徹底検証</div>
       </a>
-      <a href="/basics/aliexpress-what-is.html" class="related-card">
-        <div class="rc-tag">基礎知識</div>
-        <div class="rc-title">AliExpressとは何か｜初心者向けに仕組みと安全性を解説</div>
+      <a href="/game/retroid-pocket5-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">Retroid Pocket 5・6・Flip2比較【2026年最新】アリエクで買えるハイエンド中華ゲーム機を徹底解説</div>
       </a>
-      <a href="/basics/aliexpress-choice.html" class="related-card">
-        <div class="rc-tag">配送・購入</div>
-        <div class="rc-title">アリエクのChoice配送とは｜速さ・料金・追跡方法を徹底解説</div>
+      <a href="/game/retroid-pocket6-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">Retroid Pocket 6レビュー【2026年最新】PS2エミュ性能を徹底検証</div>
       </a>
-      <a href="/basics/aliexpress-account.html" class="related-card">
-        <div class="rc-tag">始め方</div>
-        <div class="rc-title">AliExpressの登録方法と初回注文手順｜スマホから5分でできる</div>
+      <a href="/guide/ugreen-doko-no-kuni.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">UGREENはどこの国のメーカー？信頼性・評判・買って大丈夫かを徹底解説</div>
+      </a>
+      <a href="/guide/ugreen-brand.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">UGREEN充電器は危険？どこの国か・評判・信頼性を徹底解説【2026年最新】</div>
+      </a>
+      <a href="/payment/aliexpress-shiharai.html" class="related-card">
+        <div class="rc-tag">支払い</div>
+        <div class="rc-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</div>
       </a>
     </div>
   </div>

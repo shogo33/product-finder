@@ -32,6 +32,13 @@
       --max:    760px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
+    .toc a.product-link::after { content: none; }
+    a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
 
     .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
@@ -165,7 +172,8 @@
 
     /* 読書進捗バー */
     #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
-  </style>
+    .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
+</style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -181,46 +189,95 @@
   <meta name="twitter:description" content="AliExpressで買えるゲームパッド・コントローラーのおすすめ10選を徹底比較。Switch・Android・PC対応別に価格・遅延・接続方式を丁寧に解説します。失敗しない選び方のポイントも網羅しているので、ぜひ購入前にチェックしてくだ" />
   <meta name="twitter:image" content="https://aliswipe.com/images/ogp/aliexpress-gamepad-osusume.jpg" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイド",
-    "description": "AliExpressで買えるゲームパッド・コントローラーのおすすめ10選を徹底比較。Switch・Android・PC対応別に価格・遅延・接続方式を丁寧に解説します。失敗しない選び方のポイントも網羅しているので、ぜひ購入前にチェックしてください。",
-    "url": "https://aliswipe.com/game/aliexpress-gamepad-osusume.html",
-    "image": "https://aliswipe.com/images/ogp/aliexpress-gamepad-osusume.jpg",
-    "datePublished": "2026-06-05",
-    "dateModified": "2026-06-05",
-    "author": {
-      "@type": "Organization",
-      "name": "アリエクswipe"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "アリエクswipe",
-      "url": "https://aliswipe.com/"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "ホーム",
-        "item": "https://aliswipe.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイド",
-        "item": "https://aliswipe.com/game/aliexpress-gamepad-osusume.html"
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Q1: アリエクのゲームパッドはちゃんと使えるの？品質は大丈夫？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GameSir・8BitDo・Flydigiといった専業ブランドの製品であれば、品質は国内販売品と同等水準のものが多い。GameSir G7 SEはXbox公式ライセンス取得済みであり、品質基準は第三者機関によって担保されている。"
       }
-    ]
+    },
+    {
+      "@type": "Question",
+      "name": "Q2: Switchで使えるゲームパッドはアリエクにある？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ある。GameSir Cyclone 2・8BitDo Ultimate 2C ワイヤレス・Flydigi Vader 4 ProはいずれもSwitch対応を謳っている。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q3: アリエクのコントローラーが届かない・壊れた場合の対処法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AliExpressにはバイヤー保護制度があり、商品が届かない・説明と異なる・破損していた場合に「Open Dispute（紛争を開く）」から返品・返金を申請できる。申請期間は配達予定日から一定期間内（通常15〜30日）なので、届いたらすぐに動作確認するのが重要だ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q4: ホールエフェクトスティックって何？普通のスティックと何が違うの？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "従来のスティックは「ポテンショメータ」という抵抗体を物理的に擦って位置を検出する仕組みで、使い込むほど接触部が摩耗する。これがドリフト（スティックが勝手に動く現象）の主な原因だ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q5: アリエクのゲームパッドはAndroidスマホのゲームに使えますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "使えるモデルは多い。GameSir Cyclone 2・GameSir X2s・8BitDo Ultimate 2C ワイヤレス・Flydigi Vader 4 ProはAndroid対応を明記している。"
+      }
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイド",
+  "description": "AliExpressで買えるゲームパッド・コントローラーのおすすめ10選を徹底比較。Switch・Android・PC対応別に価格・遅延・接続方式を丁寧に解説します。失敗しない選び方のポイントも網羅しているので、ぜひ購入前にチェックしてくだ",
+  "url": "https://aliswipe.com/game/aliexpress-gamepad-osusume.html",
+  "image": "https://aliswipe.com/images/ogp/aliexpress-gamepad-osusume.jpg",
+  "datePublished": "2026-06-05",
+  "dateModified": "2026-06-05",
+  "author": {
+    "@type": "Person",
+    "name": "アリエクパパ",
+    "url": "https://aliswipe.com/info/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "アリエクswipe",
+    "url": "https://aliswipe.com/"
   }
-  </script>
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://aliswipe.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイド",
+      "item": "https://aliswipe.com/game/aliexpress-gamepad-osusume.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -230,6 +287,7 @@
 <section class="article-hero">
   <div class="tag">ゲームパッド</div>
   <h1>アリエク ゲームパッドおすすめ10選【2026年最新】コントローラー比較完全ガイド</h1>
+<div class="article-date">📅 更新日：2026-06-05　公開日：2026-06-05</div>
   <div class="meta">
     <span>2026年06月05日更新</span>
     <span>読了約8分</span>
@@ -264,7 +322,7 @@
 </div>
 
 <figure class="fv-product-image">
-  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2baab2290f3340daa07d6614b965ec465.png" alt="GameSir G7 SE" loading="eager">
+  <img src="/images/products/aliexpress-gamepad-osusume/5670f12d.png" alt="GameSir G7 SE" loading="eager">
 </figure>
 <nav class="toc">
   <div class="toc-title">📋 この記事の目次</div>
@@ -308,10 +366,10 @@
 
 <h3>AliExpressで安全に買うための注意点</h3>
 
-<p>AliExpressの安全な使い方については<a href="/basics/aliexpress-what-is.html">AliExpressとは何か・安全性については初心者向け解説記事</a>でも詳しくまとめているが、ゲームパッドを買う際に特に重要なポイントを3つ挙げておく。</p>
+<p>AliExpressの安全な使い方については<a href="/guide/aliexpress-what-is.html">AliExpressとは何か・安全性については初心者向け解説記事</a>でも詳しくまとめているが、ゲームパッドを買う際に特に重要なポイントを3つ挙げておく。</p>
 
 <ul>
-  <li><strong>Choiceバッジ・評価件数</strong>：Choiceバッジ付きの商品はAliExpressが品質基準を設けて選定したもので、初心者には安心しやすい。<a href="/basics/aliexpress-choice.html">Choiceバッジとは何かを詳しく解説した記事</a>も参考にしてほしい。評価件数が1,000件を超えているものは不良品率の傾向が掴みやすい。</li>
+  <li><strong>Choiceバッジ・評価件数</strong>：Choiceバッジ付きの商品はAliExpressが品質基準を設けて選定したもので、初心者には安心しやすい。<a href="/guide/aliexpress-choice.html">Choiceバッジとは何かを詳しく解説した記事</a>も参考にしてほしい。評価件数が1,000件を超えているものは不良品率の傾向が掴みやすい。</li>
   <li><strong>出荷元の確認</strong>：「Ships from Japan」と書かれた商品は国内倉庫発送で1週間前後で届く場合がある。急ぎでない場合は中国発送の方が安いことが多い。</li>
   <li><strong>バイヤー保護制度</strong>：AliExpressには購入後一定期間内であれば返品・返金を申請できるバイヤー保護がある。問題があった場合は「Open Dispute」から手続きできる。</li>
 </ul>
@@ -323,10 +381,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2baab2290f3340daa07d6614b965ec465.png" alt="GameSir G7 SE 全体像" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7e5d2abdd9314368bf61782210190d82T.png" alt="GameSir G7 SE ボタン配置" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5b9ff925344d488fa83ef5966d387236s.png" alt="GameSir G7 SE フェイスプレート" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S71c4048651544b9f9fabad31131fcd57X.png" alt="GameSir G7 SE 背面" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/5670f12d.png" alt="GameSir G7 SE 全体像" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/8108aa03.png" alt="GameSir G7 SE ボタン配置" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/9d4d6225.png" alt="GameSir G7 SE フェイスプレート" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/c378945e.png" alt="GameSir G7 SE 背面" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -364,7 +422,7 @@
 
 <p>一方で、Switch専用・Android専用で使いたい人にはこのモデルは合わない。あくまでWindows・Xbox環境向けの特化モデルだ。</p>
 
-<p>GameSirブランドをもっと掘り下げたい方は<a href="/basics/gamesir-controller-osusume.html">GameSirコントローラーをもっと詳しく知りたい方はこちら</a>もチェックしてほしい。</p>
+<p>GameSirブランドをもっと掘り下げたい方は<a href="/game/gamesir-controller-osusume.html">GameSirコントローラーをもっと詳しく知りたい方はこちら</a>もチェックしてほしい。</p>
 
 <div class="cta-box">
   <p class="cta-lead">GameSir G7 SEをAliExpressでチェック</p>
@@ -384,10 +442,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5ec29644fdc64304b378209e2cf028043.jpg" alt="GameSir Cyclone 2 全体像" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5ec29644fdc64304b378209e2cf028043.jpg" alt="GameSir Cyclone 2 上面" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S3a82b3d3a73c4f7283e772c462aed371m.png" alt="GameSir Cyclone 2 ボタン詳細" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S9c0c08d0108241bb9b61cd51f242f930z.png" alt="GameSir Cyclone 2 カラーバリエーション" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/c7d40772.jpg" alt="GameSir Cyclone 2 全体像" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/c7d40772.jpg" alt="GameSir Cyclone 2 上面" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/40fd79fb.png" alt="GameSir Cyclone 2 ボタン詳細" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/fe2e5e2d.png" alt="GameSir Cyclone 2 カラーバリエーション" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -449,10 +507,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0043855318fd4510a0282e6f8ea40e7fP.jpg" alt="GameSir X2s 全体像" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S7fa62110df4e4caaa89448b88e853ab8k.jpg" alt="GameSir X2s スマホ装着イメージ" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S878ad830587540b5adbc29ac477c493dM.jpg" alt="GameSir X2s グリップ部分" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S660d9e4ffd2647139368c2fa407e9458u.jpg" alt="GameSir X2s 収納状態" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/ea339a5d.jpg" alt="GameSir X2s 全体像" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/42d0e83f.jpg" alt="GameSir X2s スマホ装着イメージ" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/da318cbe.jpg" alt="GameSir X2s グリップ部分" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/c7d9b455.jpg" alt="GameSir X2s 収納状態" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -506,10 +564,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2e77b82f4d1948858fb2dfeccc3d3997q.jpg" alt="8BitDo Ultimate 2C ワイヤレス 全体像" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0dcb3259f105419aa706f3ce1461bbdd7.jpg" alt="8BitDo Ultimate 2C ボタン配置" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sf2f473c47b304782905a9c378af5e6fdZ.jpg" alt="8BitDo Ultimate 2C 背面・グリップ" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sbced058cac604d6fa292910ea370a6622.jpg" alt="8BitDo Ultimate 2C カラーバリエーション" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/a61d664d.jpg" alt="8BitDo Ultimate 2C ワイヤレス 全体像" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/6af0d234.jpg" alt="8BitDo Ultimate 2C ボタン配置" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/a1591b3c.jpg" alt="8BitDo Ultimate 2C 背面・グリップ" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/4ef8306e.jpg" alt="8BitDo Ultimate 2C カラーバリエーション" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -565,10 +623,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sc776aa5a8fb546f987a4835219ca9766H.jpg" alt="Flydigi Vader 4 Pro 全体像" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S6db6426509b148ba85027d39c405b3ccW.jpg" alt="Flydigi Vader 4 Pro トリガー部分" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S70ac22998e7a407c9a7b5a04de379df3z.jpg" alt="Flydigi Vader 4 Pro 背面パドル" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S4d5974315c8d43b48b4e9bc69dec0c2bH.jpg" alt="Flydigi Vader 4 Pro カラーバリエーション" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/cd454e88.jpg" alt="Flydigi Vader 4 Pro 全体像" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/a11fdf60.jpg" alt="Flydigi Vader 4 Pro トリガー部分" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/f63cc911.jpg" alt="Flydigi Vader 4 Pro 背面パドル" loading="lazy">
+    <img src="/images/products/aliexpress-gamepad-osusume/a625ed7e.jpg" alt="Flydigi Vader 4 Pro カラーバリエーション" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -631,7 +689,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>GameSir G7 SE</td>
+        <td><a href="#sec-2" class="product-link" data-dir="down">GameSir G7 SE</a></td>
         <td>約7,293円</td>
         <td>有線（USB-C）</td>
         <td>PC・Xbox</td>
@@ -639,7 +697,7 @@
         <td>あり</td>
       </tr>
       <tr>
-        <td>GameSir Cyclone 2</td>
+        <td><a href="#sec-3" class="product-link" data-dir="down">GameSir Cyclone 2</a></td>
         <td>約7,411円</td>
         <td>2.4GHz＋Bluetooth</td>
         <td>PC・Switch・Android・iOS</td>
@@ -647,7 +705,7 @@
         <td>あり</td>
       </tr>
       <tr>
-        <td>GameSir X2s</td>
+        <td><a href="#sec-4" class="product-link" data-dir="down">GameSir X2s</a></td>
         <td>約6,762円</td>
         <td>有線（USB-C直結）</td>
         <td>Android・PC</td>
@@ -655,7 +713,7 @@
         <td>あり</td>
       </tr>
       <tr>
-        <td>8BitDo Ultimate 2C ワイヤレス</td>
+        <td><a href="#sec-5" class="product-link" data-dir="down">8BitDo Ultimate 2C ワイヤレス</a></td>
         <td>約5,531円</td>
         <td>2.4GHz＋Bluetooth</td>
         <td>Switch・PC・Android・Raspberry Pi</td>
@@ -663,7 +721,7 @@
         <td>あり</td>
       </tr>
       <tr>
-        <td>Flydigi Vader 4 Pro</td>
+        <td><a href="#sec-6" class="product-link" data-dir="down">Flydigi Vader 4 Pro</a></td>
         <td>約28,303円</td>
         <td>2.4GHz＋Bluetooth＋有線</td>
         <td>PC・Switch・Android・iOS・Steam Deck</td>
@@ -722,12 +780,12 @@
 <p>AliExpressの商品ページで見るべき項目は以下の3点だ：</p>
 
 <ol>
-  <li><strong>Choiceバッジの有無</strong>：品質基準を満たしているかのひとつの目安。<a href="/basics/aliexpress-choice.html">Choiceバッジとは何かを詳しく解説した記事</a>も参照してほしい。</li>
+  <li><strong>Choiceバッジの有無</strong>：品質基準を満たしているかのひとつの目安。<a href="/guide/aliexpress-choice.html">Choiceバッジとは何かを詳しく解説した記事</a>も参照してほしい。</li>
   <li><strong>レビュー件数と内容</strong>：100件以上あると不良品率の傾向が掴める。「接続できない」「スティックがおかしい」という複数報告があれば要注意。</li>
   <li><strong>出荷元（Ships from）</strong>：「Japan」なら1週間前後で届く。急ぎでない場合は中国発送の方が安い場合が多い。</li>
 </ol>
 
-<p>AliExpressのおすすめ商品をカテゴリ別に探したい方は<a href="/basics/aliexpress-osusume.html">AliExpressのおすすめ商品をカテゴリ別に探したい方はこちら</a>もあわせて見てほしい。</p>
+<p>AliExpressのおすすめ商品をカテゴリ別に探したい方は<a href="/guide/aliexpress-osusume.html">AliExpressのおすすめ商品をカテゴリ別に探したい方はこちら</a>もあわせて見てほしい。</p>
 
 <h2 id="sec-9">アリエクのゲームパッドに関するよくある質問（FAQ）</h2>
 
@@ -775,21 +833,29 @@
   <div class="related">
     <div class="related-title">関連記事</div>
     <div class="related-grid">
-      <a href="/basics/aliexpress-what-is.html" class="related-card">
-        <div class="rc-tag">AliExpress基礎</div>
-        <div class="rc-title">AliExpressとは何か・安全性を初心者向けに解説</div>
+      <a href="/game/sf3000-game-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">SF3000レビュー【2026年最新】2,000円台で買えるアリエクの激安レトロゲーム機を徹底検証</div>
       </a>
-      <a href="/basics/gamesir-controller-osusume.html" class="related-card">
-        <div class="rc-tag">コントローラー</div>
-        <div class="rc-title">GameSirコントローラーおすすめ完全ガイド</div>
+      <a href="/game/retroid-pocket5-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">Retroid Pocket 5・6・Flip2比較【2026年最新】アリエクで買えるハイエンド中華ゲーム機を徹底解説</div>
       </a>
-      <a href="/basics/aliexpress-choice.html" class="related-card">
-        <div class="rc-tag">AliExpress基礎</div>
-        <div class="rc-title">Choiceバッジとは？信頼できる商品の見分け方</div>
+      <a href="/game/retroid-pocket6-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">Retroid Pocket 6レビュー【2026年最新】PS2エミュ性能を徹底検証</div>
       </a>
-      <a href="/basics/aliexpress-osusume.html" class="related-card">
-        <div class="rc-tag">おすすめ特集</div>
-        <div class="rc-title">AliExpressのおすすめ商品をカテゴリ別に紹介</div>
+      <a href="/guide/ugreen-doko-no-kuni.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">UGREENはどこの国のメーカー？信頼性・評判・買って大丈夫かを徹底解説</div>
+      </a>
+      <a href="/guide/ugreen-brand.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">UGREEN充電器は危険？どこの国か・評判・信頼性を徹底解説【2026年最新】</div>
+      </a>
+      <a href="/payment/aliexpress-shiharai.html" class="related-card">
+        <div class="rc-tag">支払い</div>
+        <div class="rc-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</div>
       </a>
     </div>
   </div>

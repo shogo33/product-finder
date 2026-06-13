@@ -257,6 +257,7 @@ async function buildTextPersonaOgp({ title, category, slug, outPath }) {
     'naturehike-brand':            ['Naturehike\nってどこ？', '評判・品質\n徹底解説'],
     'aliexpress-vs-temu':          ['Temu vs\nアリエク', 'どっちがいい？\n徹底比較'],
     'aliexpress-sale-calendar':    ['セール\nカレンダー', '年間日程と\n攻略法2026'],
+    'aliexpress-numa':             ['気づいたら\n沼ってた', 'ジャンル別\n沼ガイド'],
   };
 
   const copy = ARTICLE_COPY[slug];
