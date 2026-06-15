@@ -32,6 +32,13 @@
       --max:    760px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    a.product-link { color: #2563eb; font-weight: 600; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+    a.product-link::after { font-size: 0.75em; opacity: 0.6; }
+    a.product-link[data-dir="up"]::after { content: ' ↑'; }
+    a.product-link[data-dir="down"]::after { content: ' ↓'; }
+    .toc a.product-link::after { content: none; }
+    a.product-link:hover { color: #1d4ed8; text-decoration-style: solid; }
     body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
 
     .article-hero { background: linear-gradient(135deg, #fff1f2 0%, #fff 60%); border-bottom: 1px solid var(--border); padding: 48px 20px 36px; text-align: center; }
@@ -165,7 +172,8 @@
 
     /* 読書進捗バー */
     #reading-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: var(--red); z-index: 9999; transition: width 0.15s; }
-  </style>
+    .article-date{font-size:.75rem;color:#9ca3af;margin:6px 0 20px;letter-spacing:.02em;}
+</style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y2RN13F5S"></script>
@@ -181,46 +189,95 @@
   <meta name="twitter:description" content="ATK公式のVXE Dragonfly R1シリーズ3モデルをAliExpress実販売実績で徹底比較。PAW3395センサー・軽量設計・2.4Gワイヤレスの人気モデルから自分に合う1台が見つかります。" />
   <meta name="twitter:image" content="https://aliswipe.com/images/ogp/atk-mouse-osusume.jpg" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "ATK Dragonfly R1 マウスおすすめ｜軽量PAW3395系の人気モデルを徹底比較",
-    "description": "ATK公式のVXE Dragonfly R1シリーズ3モデルをAliExpress実販売実績で徹底比較。PAW3395センサー・軽量設計・2.4Gワイヤレスの人気モデルから自分に合う1台が見つかります。",
-    "url": "https://aliswipe.com/game/atk-mouse-osusume.html",
-    "image": "https://aliswipe.com/images/ogp/atk-mouse-osusume.jpg",
-    "datePublished": "2026-06-08",
-    "dateModified": "2026-06-08",
-    "author": {
-      "@type": "Organization",
-      "name": "アリエクswipe"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "アリエクswipe",
-      "url": "https://aliswipe.com/"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "ホーム",
-        "item": "https://aliswipe.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "ATK Dragonfly R1 マウスおすすめ｜軽量PAW3395系の人気モデルを徹底比較",
-        "item": "https://aliswipe.com/game/atk-mouse-osusume.html"
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Q1：ATKマウスはアリエクで本物が買えますか？偽物は出回っていますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AliExpressの「ATK GEAR Global Store」「VXE Official Store」などブランド公式のストアから購入すれば、偽物を掴むリスクは大幅に下がる。ストアページに「Official Store」バッジや「Brand Store」表記があるか確認するのが基本だ。第三者セラーからの購入は価格が安くても偽造品のリスクが上がるため、多少高くても公式ストアを優先することを強く勧める。"
       }
-    ]
+    },
+    {
+      "@type": "Question",
+      "name": "Q2：ATKマウスの日本への配送期間はどのくらいかかりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AliExpressの標準配送（AliExpress Standard Shipping）で2〜4週間が目安。急ぐ場合はExpressオプション（追加送料あり）を選ぶと7〜12日程度に短縮できるケースが多い。配送業者・時期によっては多少前後するため、余裕をもったスケジュールで注文するのが無難だ。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q3：VXE Dragonfly R1 SE+とR1 Proの違いは何ですか？どちらを買うべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "本記事で紹介しているのは ATK VXE Dragonfly R1・VXE Dragonfly R1 Pro MAX・VXE Dragonfly R1 PAW3395 2KHz の3モデルのみ。R1 SE+やR1 Pro（無印）は別バリアントに当たり、本記事での詳細比較は対象外となる。購入前にAliExpressの商品ページで「ポーリングレート・接続方式・プロファイル保存の有無」の3点を確認することで、自分に合うバリアントを判断しやすくなる。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q4：ATK FIERCE Xとは何ですか？どんな人向けですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ATK FIERCE Xは ATKブランドが展開するVXE Dragonfly R1シリーズとは別ラインのモデルで、本記事の対象外となる。本記事で扱っているのはVXE Dragonfly R1系3モデルのみのため、FIERCE Xの詳細比較は割愛している。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Q5：ATKマウスをアリエクで最安値で購入するコツはありますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "いくつかのポイントがある。 セール時期を狙う： 11.11（独身の日）・6.18セール・夏セール（7〜8月）などAliExpress主催のセールで追加割引が入ることが多い ストアクーポンを使う： ATK GEAR公式ストアのフォロー（お気に入り登録）でストア限定クーポンが発行される場合がある コイン・キャッシュバックを活用： AliExpressアプリのデイリーチェックインで貯まるコインを決済時に充当できる カート追加後に待つ： カートに入れたまま数日放置するとセラーからオファーが来るケースがある"
+      }
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "ATK Dragonfly R1 マウスおすすめ｜軽量PAW3395系の人気モデルを徹底比較",
+  "description": "ATK公式のVXE Dragonfly R1シリーズ3モデルをAliExpress実販売実績で徹底比較。PAW3395センサー・軽量設計・2.4Gワイヤレスの人気モデルから自分に合う1台が見つかります。",
+  "url": "https://aliswipe.com/game/atk-mouse-osusume.html",
+  "image": "https://aliswipe.com/images/ogp/atk-mouse-osusume.jpg",
+  "datePublished": "2026-06-08",
+  "dateModified": "2026-06-08",
+  "author": {
+    "@type": "Person",
+    "name": "アリエクパパ",
+    "url": "https://aliswipe.com/info/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "アリエクswipe",
+    "url": "https://aliswipe.com/"
   }
-  </script>
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://aliswipe.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ATK Dragonfly R1 マウスおすすめ｜軽量PAW3395系の人気モデルを徹底比較",
+      "item": "https://aliswipe.com/game/atk-mouse-osusume.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -230,6 +287,7 @@
 <section class="article-hero">
   <div class="tag">ゲーミングマウス</div>
   <h1>ATK Dragonfly R1 マウスおすすめ｜軽量PAW3395系の人気モデルを徹底比較</h1>
+<div class="article-date">📅 更新日：2026-06-08　公開日：2026-06-08</div>
   <div class="meta">
     <span>2026年06月08日更新</span>
     <span>読了約8分</span>
@@ -273,21 +331,21 @@
     </thead>
     <tbody>
       <tr>
-        <td>ATK VXE Dragonfly R1</td>
+        <td><a href="#sec-2" class="product-link" data-dir="down">ATK VXE Dragonfly R1</a></td>
         <td>¥3,621〜</td>
         <td>左右対称・軽量人間工学</td>
         <td>入門・買い替え・マルチ用途</td>
         <td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C2AcACSbH580svZqOajiawM7Uls0BrjC2J4H9vUmcGXln7TnA1qf3ZybH7EQk02JRVQoYMqS4LFrjzkBQQO6dbm7T5sGdhbMUNNmLr0P2hEgclFYFq67XuiZL1JgwwJisR7Y9bkU36YpBUqIcF6PAaTR6XEWzcAKY6olnYE8fvBySliGiCRo7efOq2hlivDemVDsZRB3Bz3jVzbOA2kw1HRYGOHhEaB7HY4gA4fJdVeRoeycj5l9TLTPOfusj0SDg1dIs1mS9woWPS5NHDXMqwzBjXHkLPuFO8EosDvYJDNAavTHCTiPFv1XzA2xrC2wRzmKN84ssoaLSP4FZWL81NisVaq6a6EtjfvPEjxbBLCQVdQ6W59I4PKWVvg1R6zxv5j8CF09DkvtwfyO9GGr8PSjsJ2HvUjCq200jtsRvXybDODDSjfFysHGSnma00ZWiTP6Mw8x63SVQvDKABAqvoFIKwB9WNmzwURTzPprKF6cRwacmU2058Bd9lQOe0pshnAfpOhMV9EmbTI1wmbYkkfvIDey9gl05pnr5utgMHKSgrKaU1WOcbahuyviVJqPaWtwP2RQ5jZGn46uaLjpOIToPJZX8lfvckleVdiPKrAt1a1wCZVOyxhEOsVp5SOUlIfWx9vj4DxUnjHou63aIkGCdGjhk3KSRlfMWyHOedIPlSMsvTeIvqUz1WoWTioQ6HablUBhgGQgxA" target="_blank" rel="noopener sponsored">見る</a></td>
       </tr>
       <tr>
-        <td>VXE Dragonfly R1 Pro MAX</td>
+        <td><a href="#sec-3" class="product-link" data-dir="down">VXE Dragonfly R1 Pro MAX</a></td>
         <td>¥4,231〜</td>
         <td>エルゴノミクス・上位設計</td>
         <td>ガチ勢・長時間プレイ・カスタム重視</td>
         <td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C2gFwVkbiV6i8TP85f01lLb5qFzOFwucAUsd3TLgwBGCu4jEWcz5fQJ2I0aKTzQkwXnq1Bv84mggXbpIWbPTjl0Vj9AFAwF3DyMYrJ1eJ389ojOwMoWA5uSaz4NrwTCUthCw3tcbfNyxOlK9l1yMGZWg6BHn9cuTIfGqh2PGdk1Pw9cvhjMbehDpWmS3dTwcQTB6SCOKvgIxKU1WBlI9NUrimcHPVKgfEJu6NXLrgFCJjjZagN5z6loBUNBYwlcM8OquAMMVpwrw3mgozJPwtP4leV7Bvf5O3cxwQ2Tgg6r2tJjle7y3INbWLjunN8ZjnlbGcgkYfxLo4rFaMv6viq9boYcsCjErVmXnPRuG7Pj7K4NOkksS0jp2h27uU8HmCTDhV8bDwOQAjHXi20rA8Zuc0LrQtwM58gLxtuYLtdjfZoSFpkTQwAM7WbpxP5v1I6wHBKk0wAU28aYryQ6elVfZSM0pcEsVsEAus2w0Yo0hCcrnzKFDuPGEWcUCxKBzWjtvxZKdiAxs0YGhqeamSbZfRiB7aQbudGdjfv9ZXoFcq7p1dXglbd6w0d6V2inCVaNthHt2XGoRJjVAUxwFgOesFUdieKGoPXzANRd7CuaJaHxIPuZkCdvCJkY21Dbh6AyxRMsBf9fHTWiYz9zX7hAbrnd6lAmCXG8fzPUHlLwcrtMYaqf0u2QH9nMQq5nWOb2xD6kDrjWLTa" target="_blank" rel="noopener sponsored">見る</a></td>
       </tr>
       <tr>
-        <td>VXE Dragonfly R1 PAW3395 2KHz</td>
+        <td><a href="#sec-4" class="product-link" data-dir="down">VXE Dragonfly R1 PAW3395 2KHz</a></td>
         <td>¥3,026〜</td>
         <td>左右対称・FPS特化</td>
         <td>応答速度最優先・FPS廃人向け</td>
@@ -298,7 +356,7 @@
 </div>
 
 <figure class="fv-product-image">
-  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2f6ced6b04ef43f9861e75b32447fc52m.jpg" alt="ATK VXE Dragonfly R1 ワイヤレスゲーミングマウス（PAW3395・軽量）" loading="eager">
+  <img src="/images/products/atk-mouse-osusume/6fca8486.jpg" alt="ATK VXE Dragonfly R1 ワイヤレスゲーミングマウス（PAW3395・軽量）" loading="eager">
 </figure>
 <nav class="toc">
   <div class="toc-title">📋 この記事の目次</div>
@@ -345,9 +403,9 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2f6ced6b04ef43f9861e75b32447fc52m.jpg" alt="ATK VXE Dragonfly R1 ワイヤレスゲーミングマウス" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S878d2a33df2c466eb851f69e0f117044P.jpg" alt="ATK VXE Dragonfly R1 センサー詳細" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa2526966199b470aa335a51b758a1dc6S.jpg" alt="ATK VXE Dragonfly R1 装着イメージ" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/6fca8486.jpg" alt="ATK VXE Dragonfly R1 ワイヤレスゲーミングマウス" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/f9d49a53.jpg" alt="ATK VXE Dragonfly R1 センサー詳細" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/ee9bdc48.jpg" alt="ATK VXE Dragonfly R1 装着イメージ" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -403,10 +461,10 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sd0fdda9e0f0643c8b653c418123fec1dL.jpg" alt="VXE Dragonfly R1 Pro MAX ゲーミングマウス" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S2398b5bc76bb464abfc6c6168ecc352eR.jpg" alt="VXE Dragonfly R1 Pro MAX 側面" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S147c10b1976c42a4bcf47fb7f943b25fl.jpg" alt="VXE Dragonfly R1 Pro MAX ボタン配置" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S834a0349ba1b4df79978acd5c9b7806eq.jpg" alt="VXE Dragonfly R1 Pro MAX 全体像" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/e4542c67.jpg" alt="VXE Dragonfly R1 Pro MAX ゲーミングマウス" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/e75ec3df.jpg" alt="VXE Dragonfly R1 Pro MAX 側面" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/dad3be6c.jpg" alt="VXE Dragonfly R1 Pro MAX ボタン配置" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/48b5f32f.jpg" alt="VXE Dragonfly R1 Pro MAX 全体像" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -466,9 +524,9 @@
 
 <div class="product-carousel" data-carousel>
   <div class="carousel-track">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S878d2a33df2c466eb851f69e0f117044P.jpg" alt="VXE Dragonfly R1 PAW3395 2KHz FPSマウス" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sec13751892f546b3b890f9971b2e68e6w.jpg" alt="VXE Dragonfly R1 2KHz センサー部" loading="lazy">
-    <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sa2526966199b470aa335a51b758a1dc6S.jpg" alt="VXE Dragonfly R1 2KHz 底面" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/f9d49a53.jpg" alt="VXE Dragonfly R1 PAW3395 2KHz FPSマウス" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/5769bc63.jpg" alt="VXE Dragonfly R1 2KHz センサー部" loading="lazy">
+    <img src="/images/products/atk-mouse-osusume/ee9bdc48.jpg" alt="VXE Dragonfly R1 2KHz 底面" loading="lazy">
   </div>
   <button class="carousel-btn prev" aria-label="前の画像">&#8249;</button>
   <button class="carousel-btn next" aria-label="次の画像">&#8250;</button>
@@ -527,21 +585,21 @@
     </thead>
     <tbody>
       <tr>
-        <td>ATK VXE Dragonfly R1</td>
+        <td><a href="#sec-2" class="product-link" data-dir="down">ATK VXE Dragonfly R1</a></td>
         <td>¥3,621〜</td>
         <td>左右対称・軽量人間工学</td>
         <td>入門・買い替え・マルチ用途</td>
         <td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C2AcACSbH580svZqOajiawM7Uls0BrjC2J4H9vUmcGXln7TnA1qf3ZybH7EQk02JRVQoYMqS4LFrjzkBQQO6dbm7T5sGdhbMUNNmLr0P2hEgclFYFq67XuiZL1JgwwJisR7Y9bkU36YpBUqIcF6PAaTR6XEWzcAKY6olnYE8fvBySliGiCRo7efOq2hlivDemVDsZRB3Bz3jVzbOA2kw1HRYGOHhEaB7HY4gA4fJdVeRoeycj5l9TLTPOfusj0SDg1dIs1mS9woWPS5NHDXMqwzBjXHkLPuFO8EosDvYJDNAavTHCTiPFv1XzA2xrC2wRzmKN84ssoaLSP4FZWL81NisVaq6a6EtjfvPEjxbBLCQVdQ6W59I4PKWVvg1R6zxv5j8CF09DkvtwfyO9GGr8PSjsJ2HvUjCq200jtsRvXybDODDSjfFysHGSnma00ZWiTP6Mw8x63SVQvDKABAqvoFIKwB9WNmzwURTzPprKF6cRwacmU2058Bd9lQOe0pshnAfpOhMV9EmbTI1wmbYkkfvIDey9gl05pnr5utgMHKSgrKaU1WOcbahuyviVJqPaWtwP2RQ5jZGn46uaLjpOIToPJZX8lfvckleVdiPKrAt1a1wCZVOyxhEOsVp5SOUlIfWx9vj4DxUnjHou63aIkGCdGjhk3KSRlfMWyHOedIPlSMsvTeIvqUz1WoWTioQ6HablUBhgGQgxA" target="_blank" rel="noopener sponsored">見る</a></td>
       </tr>
       <tr>
-        <td>VXE Dragonfly R1 Pro MAX</td>
+        <td><a href="#sec-3" class="product-link" data-dir="down">VXE Dragonfly R1 Pro MAX</a></td>
         <td>¥4,231〜</td>
         <td>エルゴノミクス・上位設計</td>
         <td>ガチ勢・長時間・カスタム重視</td>
         <td><a href="https://s.click.aliexpress.com/s/pyFri10M6ltAv61YZY9TfrxiDaaFXRreuZWJMeLtD8jig1wPxn51K2eq59ds8iT5Wl5L3w5KJyrl7SjOO3B0oJ0Xjwnc7n8AQA7gf5qnT4sCyU05LNms9JvyWQNFHNKtzBcoBpSguMg3UBR1FOODkmGTloXosMhqhnKgzzuJPYPxewVvzupiAiKSJA5SK0iQRxmaQ7UPG0AP2HC7uLitVpvXIfjMl7RnsnN7B8FrGfP9TWP7emQeaXV90Bp9fLEiLe5mOF3ZxRkgXTxDel4NhdR1WLVYSoygR9Mm1fajL9UmwmCVRVHwLPp0N3C2gFwVkbiV6i8TP85f01lLb5qFzOFwucAUsd3TLgwBGCu4jEWcz5fQJ2I0aKTzQkwXnq1Bv84mggXbpIWbPTjl0Vj9AFAwF3DyMYrJ1eJ389ojOwMoWA5uSaz4NrwTCUthCw3tcbfNyxOlK9l1yMGZWg6BHn9cuTIfGqh2PGdk1Pw9cvhjMbehDpWmS3dTwcQTB6SCOKvgIxKU1WBlI9NUrimcHPVKgfEJu6NXLrgFCJjjZagN5z6loBUNBYwlcM8OquAMMVpwrw3mgozJPwtP4leV7Bvf5O3cxwQ2Tgg6r2tJjle7y3INbWLjunN8ZjnlbGcgkYfxLo4rFaMv6viq9boYcsCjErVmXnPRuG7Pj7K4NOkksS0jp2h27uU8HmCTDhV8bDwOQAjHXi20rA8Zuc0LrQtwM58gLxtuYLtdjfZoSFpkTQwAM7WbpxP5v1I6wHBKk0wAU28aYryQ6elVfZSM0pcEsVsEAus2w0Yo0hCcrnzKFDuPGEWcUCxKBzWjtvxZKdiAxs0YGhqeamSbZfRiB7aQbudGdjfv9ZXoFcq7p1dXglbd6w0d6V2inCVaNthHt2XGoRJjVAUxwFgOesFUdieKGoPXzANRd7CuaJaHxIPuZkCdvCJkY21Dbh6AyxRMsBf9fHTWiYz9zX7hAbrnd6lAmCXG8fzPUHlLwcrtMYaqf0u2QH9nMQq5nWOb2xD6kDrjWLTa" target="_blank" rel="noopener sponsored">見る</a></td>
       </tr>
       <tr>
-        <td>VXE Dragonfly R1 PAW3395 2KHz</td>
+        <td><a href="#sec-4" class="product-link" data-dir="down">VXE Dragonfly R1 PAW3395 2KHz</a></td>
         <td>¥3,026〜</td>
         <td>左右対称・FPS特化</td>
         <td>応答速度最優先・FPS廃人向け</td>
@@ -555,7 +613,7 @@
 
 <ul>
   <li><strong>FPS重視・とにかく遅延を削りたい：</strong>VXE Dragonfly R1 PAW3395 2KHz一択。¥3,026〜で2KHz対応はこのクラスでは貴重</li>
-  <li><strong>バランス重視・入門・買い替え：</strong>ATK VXE Dragonfly R1。3モード接続対応で汎用性が高く、PAW3395の実力をストレートに体験できる</li>
+  <li><strong>バランス重視・入門・買い替え：</strong><a href="#sec-2" class="product-link" data-dir="up">ATK VXE Dragonfly R1</a>。3モード接続対応で汎用性が高く、PAW3395の実力をストレートに体験できる</li>
   <li><strong>複数ゲームをプレイ・設定を保存したいガチ勢：</strong>VXE Dragonfly R1 Pro MAX。カスタムプロファイルとエルゴノミクス設計が長時間プレイを支える</li>
 </ul>
 
@@ -566,7 +624,7 @@
 <p>マウスの持ち方は大きく3種類に分かれる。</p>
 
 <ul>
-  <li><strong>つかみ持ち：</strong>手の根元を浮かせて指の中間で操作する。ATK VXE Dragonfly R1・2KHzモデルの左右対称形状と相性が良い</li>
+  <li><strong>つかみ持ち：</strong>手の根元を浮かせて指の中間で操作する。<a href="#sec-2" class="product-link" data-dir="up">ATK VXE Dragonfly R1</a>・2KHzモデルの左右対称形状と相性が良い</li>
   <li><strong>かぶせ持ち：</strong>手全体をマウスに乗せる。手が大きい人はR1シリーズが「少し小ぶりに感じる」可能性があるため、ショップのサイズ表記を実測と照らし合わせて確認を</li>
   <li><strong>つまみ持ち：</strong>指先だけで操作する。軽量設計のR1シリーズ全般と相性が良く、素早いエイム調整がしやすい</li>
 </ul>
@@ -637,7 +695,7 @@
 <h3>用途別おすすめモデル早見表</h3>
 
 <ul>
-  <li><strong>まずATKを試したい・入門層・買い替え：</strong>ATK VXE Dragonfly R1（¥3,621〜）。3モード接続対応でPAW3395が素直に体験できる</li>
+  <li><strong>まずATKを試したい・入門層・買い替え：</strong><a href="#sec-2" class="product-link" data-dir="up">ATK VXE Dragonfly R1</a>（¥3,621〜）。3モード接続対応でPAW3395が素直に体験できる</li>
   <li><strong>2KHzで遅延を極限まで削りたいFPS勢：</strong>VXE Dragonfly R1 PAW3395 2KHz（¥3,026〜）。3モデル最安でノルディックチップの安定性も確保</li>
   <li><strong>複数ゲーム・長時間セッション・カスタムプロファイル重視：</strong>VXE Dragonfly R1 Pro MAX（¥4,231〜）。フラッグシップ設計でガチ勢の要求に応える</li>
 </ul>
@@ -658,21 +716,29 @@
   <div class="related">
     <div class="related-title">関連記事</div>
     <div class="related-grid">
-      <a href="/gadget/ugreen-mouse-osusume.html" class="related-card">
-        <div class="rc-tag">マウス</div>
-        <div class="rc-title">UGREENマウスおすすめ比較｜AliExpressで買えるコスパモデルを厳選</div>
+      <a href="/game/sf3000-game-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">SF3000レビュー【2026年最新】2,000円台で買えるアリエクの激安レトロゲーム機を徹底検証</div>
       </a>
-      <a href="/gadget/aliexpress-mini-pc-gaming-osusume.html" class="related-card">
-        <div class="rc-tag">ゲーミングPC</div>
-        <div class="rc-title">アリエクゲーミングミニPCおすすめ｜コスパで選ぶ中華ミニPC比較</div>
+      <a href="/game/retroid-pocket6-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">Retroid Pocket 6レビュー【2026年最新】PS2エミュ性能を徹底検証</div>
       </a>
-      <a href="/gadget/epomaker-keyboard-osusume.html" class="related-card">
-        <div class="rc-tag">キーボード</div>
-        <div class="rc-title">EPOMAKERゲーミングキーボードおすすめ｜AliExpressで人気の中華キーボード比較</div>
+      <a href="/game/retroid-pocket5-osusume.html" class="related-card">
+        <div class="rc-tag">ゲーム</div>
+        <div class="rc-title">Retroid Pocket 5・6・Flip2比較【2026年最新】アリエクで買えるハイエンド中華ゲーム機を徹底解説</div>
       </a>
-      <a href="/gadget/index.html" class="related-card">
-        <div class="rc-tag">ガジェット一覧</div>
-        <div class="rc-title">アリエクのガジェット・周辺機器おすすめ一覧｜2026年最新まとめ</div>
+      <a href="/guide/ugreen-doko-no-kuni.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">UGREENはどこの国のメーカー？信頼性・評判・買って大丈夫かを徹底解説</div>
+      </a>
+      <a href="/guide/ugreen-brand.html" class="related-card">
+        <div class="rc-tag">ガイド</div>
+        <div class="rc-title">UGREEN充電器は危険？どこの国か・評判・信頼性を徹底解説【2026年最新】</div>
+      </a>
+      <a href="/payment/aliexpress-shiharai.html" class="related-card">
+        <div class="rc-tag">支払い</div>
+        <div class="rc-title">AliExpressで安全な支払い方法7選【失敗しない完全対策】</div>
       </a>
     </div>
   </div>
